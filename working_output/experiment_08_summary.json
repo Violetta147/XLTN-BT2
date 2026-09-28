@@ -1,0 +1,53 @@
+{
+  "data": "TinHieuHuanLuyen only",
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "leave one file out, four folds",
+  "ACF": {
+    "mean_macro_f1": 0.8363427059749999,
+    "mean_balanced_accuracy": 0.87093898655,
+    "mean_recall_V": 0.8799378142000001,
+    "mean_recall_UV": 0.86194015895,
+    "F0mean_MAE_hz": 5.127749836675,
+    "F0std_MAE_hz": 16.41102670875,
+    "TP": 533,
+    "TN": 157,
+    "FP": 23,
+    "FN": 81,
+    "NumF0": 600,
+    "FP_SIL": 44
+  },
+  "AMDF_Gaussian": {
+    "mean_macro_f1": 0.86947781805,
+    "mean_balanced_accuracy": 0.91276309525,
+    "mean_recall_V": 0.8910059707,
+    "mean_recall_UV": 0.934520219725,
+    "F0mean_MAE_hz": 4.278656778475,
+    "F0std_MAE_hz": 14.58080863275,
+    "TP": 541,
+    "TN": 168,
+    "FP": 12,
+    "FN": 73,
+    "NumF0": 604,
+    "FP_SIL": 51
+  },
+  "AMDF_Gaussian_energy": {
+    "mean_macro_f1": 0.8646263239365338,
+    "mean_balanced_accuracy": 0.9206197592948743,
+    "mean_recall_V": 0.8763026321942367,
+    "mean_recall_UV": 0.9649368863955119,
+    "F0mean_MAE_hz": 2.9286197559809146,
+    "F0std_MAE_hz": 6.502161769252168,
+    "TP": 535,
+    "TN": 171,
+    "FP": 9,
+    "FN": 79,
+    "NumF0": 545,
+    "FP_SIL": 1
+  },
+  "keep_by_preregistered_rule": true,
+  "full_train_frozen_thresholds": {
+    "T_pitch": 0.41249330632749887,
+    "T_energy": 0.061544615883604575
+  }
+}
