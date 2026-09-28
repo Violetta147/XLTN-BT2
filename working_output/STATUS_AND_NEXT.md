@@ -23,8 +23,12 @@ Bốn lượt leave-one-file-out theo file, cùng frame 25 ms/hop 10 ms, cùng L
 
 Không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F0std và SIL đặt trước, nên chưa đổi cấu hình cuối. Các kết quả 01/03 cho thấy GMM không nhãn bỏ lỡ nhiều V, nhưng nới ngưỡng đơn không đủ: nhận thêm UV/SIL và F0 bất thường. Cổng năng lượng xử lý SIL rất tốt; sai số F0mean còn lại ở `phone_F1` và `studio_M1`. [Chẩn đoán F0](EXPERIMENT_04_DIAGNOSIS.md) cho thấy đó không chỉ là vấn đề SIL.
 
+## So sánh thuật toán ở đúng 25 ms
+
+[Thí nghiệm 07](EXPERIMENT_07_RESULT.md) tái fit ba phương pháp ngưỡng của từng notebook trên ba file training rồi đánh giá file còn lại. AMDF cao hơn ACF về macro F1 **0.8695 so với 0.8363**, BA **0.9128 so với 0.8709**, F0mean MAE **4.28 so với 5.13 Hz** và F0std MAE **14.58 so với 16.41 Hz**. ACF ít false voiced trên SIL hơn: **44 so với 51**. Điều kiện vượt trội đặt trước không đạt cho cả hai; chưa chọn thuật toán cuối.
+
 ## Bước tiếp theo duy nhất nên xét
 
-So sánh **ACF gốc 25 ms** với AMDF 25 ms bằng cùng giao thức leave-one-file-out theo file training, tái fit ngưỡng ACF từ ba file từng fold theo đúng phương pháp có sẵn trong notebook ACF. Đặt trước cùng định nghĩa metric và cách xử lý SIL/F0, rồi báo số liệu từng file. Đây là bước chọn *thuật toán* phù hợp yêu cầu thầy; không thử thêm ngưỡng AMDF mới trước khi có phép so sánh này. Cấu hình Gaussian AMDF ở thí nghiệm 06 đã không đạt cổng F0/SIL. Vì bảng TEST của các biến thể đã được xem, số TEST cũ chỉ có giá trị mô tả, không được gọi là đánh giá độc lập của cấu hình mới.
+Thử **một cổng năng lượng V/SIL** cho cấu hình AMDF Gaussian 25 ms của thí nghiệm 07, giữ nguyên ngưỡng pitch và F0 estimator. Fit cổng chỉ trên ba file training trong mỗi fold như thí nghiệm 04, so trực tiếp với ACF/AMDF 25 ms của thí nghiệm 07. Đặt trước cổng F1/BA/F0/SIL và báo số F0; không đổi notebook nếu không đạt. Đây là một thay đổi nhằm xử lý đúng điểm yếu SIL của AMDF trong phép so sánh 07. Vì bảng TEST của các biến thể đã được xem, số TEST cũ chỉ có giá trị mô tả, không được gọi là đánh giá độc lập của cấu hình mới.
 
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF gốc 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
