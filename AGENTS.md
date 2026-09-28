@@ -1,6 +1,6 @@
 # Quy tắc làm việc cho BT2
 
-- Chạy trên máy local, dùng `TinHieuHuanLuyen/` và `TinHieuKiemThu/` trong working folder. Không mount hoặc phụ thuộc Colab/Google Drive.
+- Chạy trên máy local, dùng `TinHieuHuanLuyen/` và `TinHieuKiemThu/` trong working folder. Tuyệt đối không truy cập, mount, đọc, ghi, đồng bộ hoặc thao tác với Google Drive/G Drive dưới bất kỳ hình thức nào.
 - Không dùng deep learning. Chỉ dùng dữ liệu và thuật toán tín hiệu/học máy cổ điển cần thiết cho bài.
 - Mỗi thay đổi có một giả thuyết rõ ràng và một commit riêng. Không gộp thay đổi đường dẫn, thư viện, frame length, đặc trưng, ngưỡng và metric vào cùng một thí nghiệm.
 - Trước khi đổi thuật toán, lưu baseline local. Sau mỗi thay đổi, chạy cùng dữ liệu, cùng cách chia khung, cùng metric; ghi số liệu trước/sau và kết luận cải thiện hay suy giảm.
