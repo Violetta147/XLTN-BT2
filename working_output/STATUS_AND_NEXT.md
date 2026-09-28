@@ -5,7 +5,7 @@
 - Toàn bộ WAV/LAB, bản export output và ba notebook chạy local nằm trong working folder. Output nhúng đã bỏ khỏi notebook để giảm từ khoảng 5.44 MB còn khoảng 289 KB hiện tại; bản gốc và 89 output có thể khôi phục/đối chiếu từ Git và `working_output/`.
 - [AGENTS.md](../AGENTS.md) cấm tuyệt đối Google Drive/G Drive, yêu cầu mỗi thay đổi một commit, training-only validation và điểm quay lại. Colab trong Chrome chỉ là phương án dự phòng khi máy thiếu tài nguyên; các lượt đo hiện tại chạy local.
 - Ba notebook đã có ma trận nhầm lẫn V/UV và biểu đồ F1/BA, sai số F0, NumF0 theo file. Hình waveform/F0 từng file mặc định tắt (`SHOW_DETAILED_TEST_PLOTS = False`) và có thể bật lại. [Ảnh xem trước](visualization_review/) được lưu ngoài notebook.
-- **Chưa có thuật toán mới được áp dụng vào notebook**. Điểm quay lại thuật toán gọn ban đầu: `6b332a0`; các script thí nghiệm nằm riêng và đều đã commit.
+- Notebook AMDF đã cố định cấu hình cuối ở 25 ms, Gaussian từ training; **cổng năng lượng chưa được áp dụng vào notebook**. [Biên bản tích hợp 09](INTEGRATION_09_RESULT.md) và [số QA](integration_09_qa.json) lưu kiểm tra code. Điểm quay lại trước thay đổi cấu hình: `328a9ce`; các script thí nghiệm nằm riêng và đều đã commit.
 
 ## Sáu phép thử AMDF 25 ms trên training
 
@@ -31,6 +31,6 @@ Không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F
 
 ## Bước tiếp theo duy nhất nên xét
 
-Chuẩn bị notebook AMDF cho ứng viên đã đạt bằng **một thay đổi cấu hình riêng**: cố định frame cuối ở 25 ms và dùng ngưỡng Gaussian 25 ms học từ training như thí nghiệm 07, thay cho lựa chọn tự động 30 ms hiện tại. Kiểm tra tính nhất quán của cấu hình và số liệu, commit riêng, chưa thêm cổng năng lượng trong cùng commit. Sau đó mới thêm cổng năng lượng theo thí nghiệm 08 trong một commit khác. Nếu chạy TEST để kiểm tra code sau khi đóng băng cấu hình, ghi rõ đó là kết quả mô tả vì bảng TEST trước đã được xem.
+Thêm **riêng** cổng năng lượng V/SIL từ thí nghiệm 08 vào notebook AMDF 25 ms trong một commit mới. Giữ nguyên score AMDF, ngưỡng Gaussian, frame/hop và cách tính metric; xác nhận các ngưỡng chỉ học từ training và số local khớp script LOFO trước khi xem TEST. Nếu chạy TEST để kiểm tra code sau khi đóng băng cấu hình, ghi rõ đó là kết quả mô tả vì bảng TEST trước đã được xem.
 
-Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF gốc 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
+Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
