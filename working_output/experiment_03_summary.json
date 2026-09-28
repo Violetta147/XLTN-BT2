@@ -1,0 +1,32 @@
+{
+  "data": "TinHieuHuanLuyen only",
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "leave one file out, four folds",
+  "baseline": {
+    "mean_macro_f1": 0.8050679204258859,
+    "mean_balanced_accuracy": 0.8835602615609253,
+    "F0mean_MAE_hz": 2.0850746181258266,
+    "F0std_MAE_hz": 8.419585471230153,
+    "TP": 490,
+    "TN": 175,
+    "FP": 5,
+    "FN": 124,
+    "NumF0": 520,
+    "FP_SIL": 25
+  },
+  "labeled": {
+    "mean_macro_f1": 0.8733291417172354,
+    "mean_balanced_accuracy": 0.8939039603717187,
+    "F0mean_MAE_hz": 5.299211846520372,
+    "F0std_MAE_hz": 19.55403067315851,
+    "TP": 559,
+    "TN": 159,
+    "FP": 21,
+    "FN": 55,
+    "NumF0": 668,
+    "FP_SIL": 88
+  },
+  "classifier_gate": true,
+  "full_acceptance_gate": false
+}
