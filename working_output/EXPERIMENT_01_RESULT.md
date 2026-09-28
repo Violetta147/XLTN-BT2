@@ -14,4 +14,6 @@ Chạy bằng `.venv\Scripts\python.exe experiment_01_hysteresis.py` (scikit-lea
 
 Ngưỡng lõi qua bốn fold: 0.3413–0.3508; ngưỡng duy trì: 0.4557–0.4739. Cả ba điều kiện giữ đặt trước đều đạt: F1 +0.0811 ≥ 0.01; balanced accuracy +0.0188 ≥ −0.01; FP tăng 15 ≤ FN giảm 74. Điều này **chỉ** xác nhận tiêu chí V/UV đã đăng ký, không xác nhận cải thiện toàn bài. Sai số F0 và false voiced trên SIL tăng đáng kể; giữ script và số liệu để đối chiếu nhưng chưa đưa ngưỡng trễ vào notebook/cấu hình nộp.
 
+Fit lại cùng quy tắc trên **đủ bốn file training**, không lấy trung bình ngưỡng fold: `T_core = 0.3472469093`, `T_weak = 0.4670503216`. Chưa áp dụng hai ngưỡng này trên TEST vì mục tiêu F0 trong validation đang xấu đi; chúng được đóng băng để tái lập, không phải cấu hình cuối.
+
 Không thay đổi tiêu chí sau khi xem kết quả. Thí nghiệm kế tiếp, nếu làm, phải đặt trước ràng buộc riêng cho F0 và SIL, rồi kiểm tra bằng validation training. Những số TEST đã xem trước đây được coi là dữ liệu tham khảo, không dùng để chỉnh quy tắc.

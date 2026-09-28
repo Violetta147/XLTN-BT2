@@ -128,9 +128,15 @@ def main():
     keep = (changed["mean_macro_f1"] - baseline["mean_macro_f1"] >= .01
             and changed["mean_balanced_accuracy"] - baseline["mean_balanced_accuracy"] >= -.01
             and changed["FP"] - baseline["FP"] <= baseline["FN"] - changed["FN"])
+    all_vu_scores = np.concatenate([item["scores"][np.isin(item["labels"], ("v", "uv"))]
+                                    for item in files])
+    all_uv_scores = np.concatenate([item["scores"][item["labels"] == "uv"] for item in files])
+    final_core = fit_core(all_vu_scores)
+    final_weak = max(final_core, float(all_uv_scores.mean() - all_uv_scores.std()))
     result = {"data": "TinHieuHuanLuyen only", "frame_ms": 25, "hop_ms": 10,
               "cv": "leave one file out, four folds", "sklearn_version": sklearn.__version__,
-              "baseline": baseline, "hysteresis": changed, "keep_by_preregistered_rule": bool(keep)}
+              "baseline": baseline, "hysteresis": changed, "keep_by_preregistered_rule": bool(keep),
+              "full_train_frozen_thresholds": {"T_core": final_core, "T_weak": final_weak}}
     (OUT / "experiment_01_summary.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     print(json.dumps(result, indent=2))
 

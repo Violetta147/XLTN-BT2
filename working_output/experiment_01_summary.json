@@ -28,5 +28,9 @@
     "NumF0": 641,
     "FP_SIL": 57
   },
-  "keep_by_preregistered_rule": true
+  "keep_by_preregistered_rule": true,
+  "full_train_frozen_thresholds": {
+    "T_core": 0.347246909276725,
+    "T_weak": 0.4670503216159724
+  }
 }
