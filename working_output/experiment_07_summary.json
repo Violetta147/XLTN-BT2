@@ -1,0 +1,56 @@
+{
+  "data": "TinHieuHuanLuyen only",
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "leave one file out, four folds",
+  "ACF": {
+    "mean_macro_f1": 0.8363427059624089,
+    "mean_balanced_accuracy": 0.8709389865735436,
+    "mean_recall_V": 0.8799378141943056,
+    "mean_recall_UV": 0.8619401589527816,
+    "F0mean_MAE_hz": 5.127749836755669,
+    "F0std_MAE_hz": 16.411026709768073,
+    "TP": 533,
+    "TN": 157,
+    "FP": 23,
+    "FN": 81,
+    "NumF0": 600,
+    "FP_SIL": 44
+  },
+  "AMDF": {
+    "mean_macro_f1": 0.869477818048441,
+    "mean_balanced_accuracy": 0.9127630952229144,
+    "mean_recall_V": 0.8910059707169837,
+    "mean_recall_UV": 0.9345202197288452,
+    "F0mean_MAE_hz": 4.278656778311248,
+    "F0std_MAE_hz": 14.580808633060727,
+    "TP": 541,
+    "TN": 168,
+    "FP": 12,
+    "FN": 73,
+    "NumF0": 604,
+    "FP_SIL": 51
+  },
+  "full_train_parity_check_only": {
+    "ACF": {
+      "method": "Histogram V/UV intersection",
+      "threshold": 0.6840817762403983,
+      "candidate_thresholds": {
+        "Gaussian": 0.6437970413839915,
+        "Histogram M1/M2": 0.6453507841023411,
+        "Histogram V/UV intersection": 0.6840817762403983
+      }
+    },
+    "AMDF": {
+      "method": "Gaussian",
+      "threshold": 0.41249330632749887,
+      "candidate_thresholds": {
+        "Gaussian": 0.41249330632749887,
+        "Histogram M1/M2": 0.3402410900050413,
+        "Histogram V/UV intersection": 0.406274068847145
+      }
+    }
+  },
+  "ACF_dominates": false,
+  "AMDF_dominates": false
+}
