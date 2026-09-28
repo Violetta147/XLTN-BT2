@@ -1,0 +1,25 @@
+file,method,label,count,mean_candidate_F0,outside_2std
+phone_F1.wav,GMM core,v,129,211.127405,5
+phone_F1.wav,GMM core,uv,0,,0
+phone_F1.wav,GMM core,sil,1,393.7589811,1
+phone_F1.wav,Labeled + energy,v,140,210.1651538,6
+phone_F1.wav,Labeled + energy,uv,6,199.0680352,1
+phone_F1.wav,Labeled + energy,sil,2,236.8377657,2
+phone_M1.wav,GMM core,v,182,122.317406,7
+phone_M1.wav,GMM core,uv,2,136.4977443,0
+phone_M1.wav,GMM core,sil,0,,0
+phone_M1.wav,Labeled + energy,v,214,121.9430501,11
+phone_M1.wav,Labeled + energy,uv,6,136.2666547,0
+phone_M1.wav,Labeled + energy,sil,0,,0
+studio_F1.wav,GMM core,v,108,230.1922349,4
+studio_F1.wav,GMM core,uv,1,299.6084164,0
+studio_F1.wav,GMM core,sil,15,255.831465,8
+studio_F1.wav,Labeled + energy,v,116,229.9102811,4
+studio_F1.wav,Labeled + energy,uv,0,,0
+studio_F1.wav,Labeled + energy,sil,1,162.0810685,0
+studio_M1.wav,GMM core,v,71,113.2937472,4
+studio_M1.wav,GMM core,uv,2,71.76973637,0
+studio_M1.wav,GMM core,sil,9,133.9440126,1
+studio_M1.wav,Labeled + energy,v,81,115.8827249,7
+studio_M1.wav,Labeled + energy,uv,2,206.4546492,1
+studio_M1.wav,Labeled + energy,sil,0,,0
