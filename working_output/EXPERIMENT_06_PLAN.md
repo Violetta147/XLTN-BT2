@@ -1,0 +1,8 @@
+# Thí nghiệm 06: giao điểm Gaussian có nhãn, AMDF 25 ms
+
+- Điểm quay lại: commit `90d475d`; chưa đưa bất kỳ thuật toán thử nghiệm 01–05 vào notebook.
+- Giả thuyết: ngưỡng giao điểm hai Gaussian fit riêng score V và UV có thể nằm giữa GMM lõi quá chặt và ngưỡng tối đa F1 quá rộng, cải thiện V/UV mà giữ sai số F0.
+- **Một biến** so với GMM lõi: thay ngưỡng bằng hàm `gaussian_threshold(v_scores, u_scores)` hiện có trong notebook AMDF: fit mean/std riêng hai nhãn bằng training; giải giao điểm mật độ chuẩn **không trọng số prior**, ưu tiên nghiệm nằm giữa hai mean, rồi gần trung điểm. Giữ AMDF 25 ms, hop 10 ms, score, nhãn tâm khung, F0 estimator và quyết định `score < threshold`.
+- Bốn lượt leave-one-file-out trên `TinHieuHuanLuyen`: mỗi lượt fit GMM và Gaussian có nhãn **chỉ trên ba file**; áp dụng lên file thứ tư gồm V/UV/SIL. Không cố định ngưỡng 0.4125 từ bảng cũ. Báo theo file và trung bình đều theo file: macro F1 V/UV, recall V/UV, balanced accuracy, TP/TN/FP/FN, F0mean/F0std MAE, NumF0, false voiced SIL.
+- Cổng giữ như thí nghiệm 03: macro F1 trung bình tăng ≥0.01; BA giảm không quá 0.01; FP tăng không quá FN giảm; cả F0mean/F0std MAE không tăng; tổng false voiced SIL không tăng so với GMM lõi cùng fold. Nếu không đạt, giữ kết quả thất bại, không đổi notebook. Nếu đạt, fit lại trên bốn file training và đóng băng cấu hình trước mọi xem xét TEST.
+- Giới hạn: phương pháp Gaussian có nhãn đã nằm trong notebook và một bảng TEST về các biến thể đã được xem trước khi chọn thử hướng này. LOFO training là phép kiểm tra hợp lệ cho giả thuyết, nhưng không biến bảng TEST cũ thành đánh giá độc lập của cấu hình mới.
