@@ -1,0 +1,4 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+PROJECT_DIR: /content/drive/MyDrive/Seventh Semester/Spoken Language Processing/BT2
+TRAIN_DIR tồn tại: True
+TEST_DIR tồn tại : True

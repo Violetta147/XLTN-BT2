@@ -1,0 +1,19 @@
+  Algorithm       TEST WAV  Correct V/UV  N V/UV Accuracy V/UV  \
+0       ACF   phone_F2.wav           228     302        75.50%   
+1       ACF   phone_M2.wav           161     199        80.90%   
+2       ACF  studio_F2.wav           135     160        84.38%   
+3       ACF  studio_M2.wav           118     148        79.73%   
+4      AMDF   phone_F2.wav           237     302        78.48%   
+5      AMDF   phone_M2.wav           164     199        82.41%   
+6      AMDF  studio_F2.wav           143     160        89.38%   
+7      AMDF  studio_M2.wav           123     148        83.11%   
+
+   Correct V/UV/SIL  N V/UV/SIL Accuracy V/UV/SIL  False voiced on SIL  
+0               405         479            84.55%                    0  
+1               240         279            86.02%                    1  
+2               288         313            92.01%                    0  
+3               207         237            87.34%                    0  
+4               412         478            86.19%                    1  
+5               241         278            86.69%                    2  
+6               296         313            94.57%                    0  
+7               211         236            89.41%                    0  

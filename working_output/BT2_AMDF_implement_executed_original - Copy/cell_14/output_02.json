@@ -1,0 +1,7 @@
+{
+  "output_type": "stream",
+  "name": "stdout",
+  "text": [
+    "Final configuration: frame 30 ms; shift 10 ms; F0 70–400 Hz; threshold 0.4204 (Gaussian); training balanced accuracy 91.54%\n"
+  ]
+}

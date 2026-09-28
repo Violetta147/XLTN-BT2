@@ -1,0 +1,3 @@
+  Algorithm  files Macro accuracy V/UV Macro accuracy V/UV/SIL
+0       ACF      4              80.13%                  87.48%
+1      AMDF      4              83.34%                  89.21%

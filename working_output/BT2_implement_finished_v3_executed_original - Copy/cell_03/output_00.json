@@ -1,0 +1,9 @@
+{
+  "output_type": "stream",
+  "name": "stdout",
+  "text": [
+    "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n",
+    "TRAIN_DIR: /content/drive/MyDrive/Seventh Semester/Spoken Language Processing/BT2/TinHieuHuanLuyen\n",
+    "TEST_DIR : /content/drive/MyDrive/Seventh Semester/Spoken Language Processing/BT2/TinHieuKiemThu\n"
+  ]
+}

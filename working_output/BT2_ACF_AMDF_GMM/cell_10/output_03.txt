@@ -1,0 +1,7 @@
+  Algorithm  Frame (ms)              Method Threshold Accuracy V/UV  \
+0       ACF          20  GMM (2 components)    0.8480        78.84%   
+1      AMDF          25  GMM (2 components)    0.3472        84.26%   
+
+  Balanced accuracy V/UV  
+0                 85.34%  
+1                 88.84%  

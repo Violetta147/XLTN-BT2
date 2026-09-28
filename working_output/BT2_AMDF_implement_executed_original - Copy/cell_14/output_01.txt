@@ -1,0 +1,9 @@
+   Frame (ms)                Chosen method Threshold Accuracy V/UV  \
+0          20  Histogram V/UV intersection    0.3818        86.65%   
+1          25                     Gaussian    0.4125        89.67%   
+2          30                     Gaussian    0.4204        90.55%   
+
+  Balanced accuracy V/UV  
+0                 88.42%  
+1                 90.97%  
+2                 91.54%  

@@ -1,0 +1,7 @@
+{
+  "output_type": "stream",
+  "name": "stdout",
+  "text": [
+    "Final configuration: frame 25 ms; shift 10 ms; F0 70–400 Hz; threshold 0.6841 (Histogram V/UV intersection); training balanced accuracy 88.84%\n"
+  ]
+}

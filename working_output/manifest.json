@@ -1,0 +1,1177 @@
+{
+  "notebooks": [
+    {
+      "name": "BT2_ACF_AMDF_GMM.ipynb",
+      "sha256": "48ab60baf5752df255024f4312e81b8ff13deed487c28f0cef31246a848e1572",
+      "cells": 20,
+      "outputs": [
+        {
+          "cell": 2,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_02/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_02/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 4,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_04/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_04/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 8,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_08/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_08/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 10,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_10/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_10/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 10,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_10/output_01.json",
+            "BT2_ACF_AMDF_GMM/cell_10/output_01.txt",
+            "BT2_ACF_AMDF_GMM/cell_10/output_01.html",
+            "BT2_ACF_AMDF_GMM/cell_10/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 10,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_10/output_02.json",
+            "BT2_ACF_AMDF_GMM/cell_10/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 10,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_10/output_03.json",
+            "BT2_ACF_AMDF_GMM/cell_10/output_03.txt",
+            "BT2_ACF_AMDF_GMM/cell_10/output_03.html",
+            "BT2_ACF_AMDF_GMM/cell_10/output_03.colab.json"
+          ]
+        },
+        {
+          "cell": 12,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_12/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_12/output_00.txt",
+            "BT2_ACF_AMDF_GMM/cell_12/output_00.png"
+          ]
+        },
+        {
+          "cell": 12,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_12/output_01.json",
+            "BT2_ACF_AMDF_GMM/cell_12/output_01.txt",
+            "BT2_ACF_AMDF_GMM/cell_12/output_01.png"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_14/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_14/output_00.txt",
+            "BT2_ACF_AMDF_GMM/cell_14/output_00.png"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_14/output_01.json",
+            "BT2_ACF_AMDF_GMM/cell_14/output_01.txt",
+            "BT2_ACF_AMDF_GMM/cell_14/output_01.png"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 2,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_14/output_02.json",
+            "BT2_ACF_AMDF_GMM/cell_14/output_02.txt",
+            "BT2_ACF_AMDF_GMM/cell_14/output_02.png"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_14/output_03.json",
+            "BT2_ACF_AMDF_GMM/cell_14/output_03.txt",
+            "BT2_ACF_AMDF_GMM/cell_14/output_03.png"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 4,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_14/output_04.json",
+            "BT2_ACF_AMDF_GMM/cell_14/output_04.stream.txt"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 5,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_14/output_05.json",
+            "BT2_ACF_AMDF_GMM/cell_14/output_05.txt",
+            "BT2_ACF_AMDF_GMM/cell_14/output_05.html",
+            "BT2_ACF_AMDF_GMM/cell_14/output_05.colab.json"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_00.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_00.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_01.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_01.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_01.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 2,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_02.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_02.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_02.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 3,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_03.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_03.stream.txt"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 4,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_04.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_04.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_04.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 5,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_05.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_05.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_05.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 6,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_06.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_06.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_06.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 7,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_07.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_07.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_07.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 8,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_08.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_08.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_08.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 9,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_09.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_09.stream.txt"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 10,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_10.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_10.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_10.html",
+            "BT2_ACF_AMDF_GMM/cell_16/output_10.colab.json"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 11,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_11.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_11.stream.txt"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 12,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_16/output_12.json",
+            "BT2_ACF_AMDF_GMM/cell_16/output_12.txt",
+            "BT2_ACF_AMDF_GMM/cell_16/output_12.html",
+            "BT2_ACF_AMDF_GMM/cell_16/output_12.colab.json"
+          ]
+        },
+        {
+          "cell": 18,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_18/output_00.json",
+            "BT2_ACF_AMDF_GMM/cell_18/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 18,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_18/output_01.json",
+            "BT2_ACF_AMDF_GMM/cell_18/output_01.txt",
+            "BT2_ACF_AMDF_GMM/cell_18/output_01.html",
+            "BT2_ACF_AMDF_GMM/cell_18/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 18,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_18/output_02.json",
+            "BT2_ACF_AMDF_GMM/cell_18/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 18,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_ACF_AMDF_GMM/cell_18/output_03.json",
+            "BT2_ACF_AMDF_GMM/cell_18/output_03.txt",
+            "BT2_ACF_AMDF_GMM/cell_18/output_03.html",
+            "BT2_ACF_AMDF_GMM/cell_18/output_03.colab.json"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BT2_AMDF_implement_executed_original - Copy.ipynb",
+      "sha256": "59f585cea85fb54b6d1538061c5e942914565965e21597d028f9697a0edc017f",
+      "cells": 25,
+      "outputs": [
+        {
+          "cell": 1,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_01/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_01/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 3,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_03/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_03/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 10,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_10/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_10/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 10,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_10/output_01.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_10/output_01.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_10/output_01.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_10/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 12,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_00.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_00.png"
+          ]
+        },
+        {
+          "cell": 12,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_01.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_01.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_01.png"
+          ]
+        },
+        {
+          "cell": 12,
+          "index": 2,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_02.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_02.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_12/output_02.png"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_01.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_01.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_01.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_02.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_14/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_00.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_00.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_01.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_01.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_01.png"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_02.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 16,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_03.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_03.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_03.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_16/output_03.colab.json"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_00.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_00.png"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_01.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_01.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_01.png"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 2,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_02.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_02.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_02.png"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_03.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_03.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_03.png"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 4,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_04.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_04.stream.txt"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 5,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_05.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_05.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_05.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_05.colab.json"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 6,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_06.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_06.stream.txt"
+          ]
+        },
+        {
+          "cell": 21,
+          "index": 7,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_07.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_07.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_07.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_21/output_07.colab.json"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_00.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_01.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_01.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_01.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_02.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_03.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_03.txt",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_03.html",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_03.colab.json"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 4,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_04.json",
+            "BT2_AMDF_implement_executed_original - Copy/cell_23/output_04.stream.txt"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BT2_implement_finished_v3_executed_original - Copy.ipynb",
+      "sha256": "77823d941e9e7bd3f331e5c281f65428ece9eacf6916355a8ab54fd824648d3d",
+      "cells": 37,
+      "outputs": [
+        {
+          "cell": 3,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_03/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_03/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 7,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_07/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_07/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 13,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_13/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_13/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 13,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "application/vnd.jupyter.widget-view+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_13/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_13/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_13/output_01.widget.json"
+          ]
+        },
+        {
+          "cell": 14,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_14/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_14/output_00.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_14/output_00.png"
+          ]
+        },
+        {
+          "cell": 22,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_22/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_22/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 22,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_22/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_22/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_22/output_01.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_22/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_00.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_00.png"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_01.png"
+          ]
+        },
+        {
+          "cell": 23,
+          "index": 2,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_02.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_02.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_23/output_02.png"
+          ]
+        },
+        {
+          "cell": 25,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 25,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_01.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 25,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_02.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_25/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 27,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_00.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_00.png"
+          ]
+        },
+        {
+          "cell": 27,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_01.png"
+          ]
+        },
+        {
+          "cell": 27,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_02.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 27,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_03.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_03.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_03.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_27/output_03.colab.json"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 0,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_00.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_00.png"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_01.png"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 2,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_02.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_02.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_02.png"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "image/png"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_03.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_03.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_03.png"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 4,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_04.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_04.stream.txt"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 5,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_05.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_05.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_05.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_05.colab.json"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 6,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_06.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_06.stream.txt"
+          ]
+        },
+        {
+          "cell": 33,
+          "index": 7,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_07.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_07.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_07.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_33/output_07.colab.json"
+          ]
+        },
+        {
+          "cell": 35,
+          "index": 0,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_00.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_00.stream.txt"
+          ]
+        },
+        {
+          "cell": 35,
+          "index": 1,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_01.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_01.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_01.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_01.colab.json"
+          ]
+        },
+        {
+          "cell": 35,
+          "index": 2,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_02.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_02.stream.txt"
+          ]
+        },
+        {
+          "cell": 35,
+          "index": 3,
+          "type": "display_data",
+          "mime_types": [
+            "text/plain",
+            "text/html",
+            "application/vnd.google.colaboratory.intrinsic+json"
+          ],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_03.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_03.txt",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_03.html",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_03.colab.json"
+          ]
+        },
+        {
+          "cell": 35,
+          "index": 4,
+          "type": "stream",
+          "mime_types": [],
+          "files": [
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_04.json",
+            "BT2_implement_finished_v3_executed_original - Copy/cell_35/output_04.stream.txt"
+          ]
+        }
+      ]
+    }
+  ]
+}

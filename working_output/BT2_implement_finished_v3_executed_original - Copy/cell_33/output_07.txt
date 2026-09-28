@@ -1,0 +1,11 @@
+        TEST WAV  Correct V/UV  N V/UV Accuracy V/UV  Correct V/UV/SIL  \
+0   phone_F2.wav           243     302        80.46%               418   
+1   phone_M2.wav           174     199        87.44%               247   
+2  studio_F2.wav           146     160        91.25%               299   
+3  studio_M2.wav           132     148        89.19%               216   
+
+   N V/UV/SIL Accuracy V/UV/SIL  False voiced on SIL  
+0         478            87.45%                    1  
+1         278            88.85%                    6  
+2         313            95.53%                    0  
+3         236            91.53%                    4  

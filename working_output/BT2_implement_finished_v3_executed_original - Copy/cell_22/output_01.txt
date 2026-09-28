@@ -1,0 +1,21 @@
+   Frame (ms)                       Method Threshold   meanV    stdV   meanU  \
+0          20                     Gaussian    0.6846  0.8764  0.1404  0.4710   
+1          20              Histogram M1/M2    0.7185  0.8764  0.1404  0.4710   
+2          20  Histogram V/UV intersection    0.6915  0.8764  0.1404  0.4710   
+3          25                     Gaussian    0.6438  0.8587  0.1493  0.4080   
+4          25              Histogram M1/M2    0.6454  0.8587  0.1493  0.4080   
+5          25  Histogram V/UV intersection    0.6841  0.8587  0.1493  0.4080   
+6          30                     Gaussian    0.6371  0.8483  0.1495  0.4022   
+7          30              Histogram M1/M2    0.6169  0.8483  0.1495  0.4022   
+8          30  Histogram V/UV intersection    0.6978  0.8483  0.1495  0.4022   
+
+     stdU Accuracy V/UV Balanced accuracy V/UV Selected  
+0  0.1906        88.41%                 86.62%      Yes  
+1  0.1906        86.52%                 86.18%           
+2  0.1906        88.04%                 86.37%           
+3  0.1823        89.67%                 88.81%           
+4  0.1823        89.67%                 88.81%           
+5  0.1823        87.91%                 88.84%      Yes  
+6  0.1923        88.41%                 86.62%           
+7  0.1923        89.29%                 86.40%           
+8  0.1923        85.89%                 87.74%      Yes  

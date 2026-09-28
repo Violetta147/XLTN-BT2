@@ -1,0 +1,160 @@
+
+  <div id="df-94d5e3b6-c5c1-4667-8452-1b14c8e0536b" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TEST WAV</th>
+      <th>LAB F0mean</th>
+      <th>Pred F0mean</th>
+      <th>F0mean MAE</th>
+      <th>LAB F0std</th>
+      <th>Pred F0std</th>
+      <th>F0std MAE</th>
+      <th>NumF0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>phone_F2.wav</td>
+      <td>145.0</td>
+      <td>145.5483</td>
+      <td>0.5483</td>
+      <td>33.7</td>
+      <td>36.1224</td>
+      <td>2.4224</td>
+      <td>215</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>phone_M2.wav</td>
+      <td>129.0</td>
+      <td>125.5323</td>
+      <td>3.4677</td>
+      <td>18.6</td>
+      <td>20.8747</td>
+      <td>2.2747</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>studio_F2.wav</td>
+      <td>200.0</td>
+      <td>191.7749</td>
+      <td>8.2251</td>
+      <td>46.1</td>
+      <td>53.9712</td>
+      <td>7.8712</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>studio_M2.wav</td>
+      <td>155.0</td>
+      <td>152.4550</td>
+      <td>2.5450</td>
+      <td>30.8</td>
+      <td>37.1822</td>
+      <td>6.3822</td>
+      <td>122</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-94d5e3b6-c5c1-4667-8452-1b14c8e0536b')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-94d5e3b6-c5c1-4667-8452-1b14c8e0536b button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-94d5e3b6-c5c1-4667-8452-1b14c8e0536b');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>

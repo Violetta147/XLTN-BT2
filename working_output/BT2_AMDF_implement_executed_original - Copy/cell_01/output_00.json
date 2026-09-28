@@ -1,0 +1,10 @@
+{
+  "output_type": "stream",
+  "name": "stdout",
+  "text": [
+    "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n",
+    "PROJECT_DIR: /content/drive/MyDrive/Seventh Semester/Spoken Language Processing/BT2\n",
+    "TRAIN_DIR tồn tại: True\n",
+    "TEST_DIR tồn tại : True\n"
+  ]
+}

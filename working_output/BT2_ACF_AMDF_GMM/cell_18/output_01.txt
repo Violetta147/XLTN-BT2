@@ -1,0 +1,7 @@
+  Algorithm  files F0mean MAE F0mean RMSE F0mean MAPE F0std MAE F0std RMSE  \
+0       ACF      4     7.5363      8.9832       4.51%    4.3347     4.6656   
+1      AMDF      4     3.7229      4.1385       2.25%    0.6372     0.9422   
+
+  F0std MAPE Macro F1 (V/UV)  
+0     12.92%          0.7524  
+1      1.63%          0.7858  

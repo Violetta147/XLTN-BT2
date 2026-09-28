@@ -1,0 +1,287 @@
+
+  <div id="df-51d4aea0-776b-4a02-8b6c-a0adde144fa0" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Algorithm</th>
+      <th>Example</th>
+      <th>File</th>
+      <th>Center (s)</th>
+      <th>GT</th>
+      <th>Frame (ms)</th>
+      <th>Score</th>
+      <th>Threshold</th>
+      <th>Predicted</th>
+      <th>Best lag (samples)</th>
+      <th>F0 (Hz)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ACF</td>
+      <td>Voiced</td>
+      <td>phone_F1.wav</td>
+      <td>0.835</td>
+      <td>v</td>
+      <td>20</td>
+      <td>0.9725</td>
+      <td>0.8480</td>
+      <td>v</td>
+      <td>67.9894</td>
+      <td>235.3310</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ACF</td>
+      <td>Voiced</td>
+      <td>phone_F1.wav</td>
+      <td>0.835</td>
+      <td>v</td>
+      <td>25</td>
+      <td>0.9738</td>
+      <td>0.8389</td>
+      <td>v</td>
+      <td>67.9620</td>
+      <td>235.4257</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ACF</td>
+      <td>Voiced</td>
+      <td>phone_F1.wav</td>
+      <td>0.835</td>
+      <td>v</td>
+      <td>30</td>
+      <td>0.9726</td>
+      <td>0.8231</td>
+      <td>v</td>
+      <td>67.8879</td>
+      <td>235.6827</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AMDF</td>
+      <td>Voiced</td>
+      <td>phone_F1.wav</td>
+      <td>0.835</td>
+      <td>v</td>
+      <td>20</td>
+      <td>0.1143</td>
+      <td>0.3152</td>
+      <td>v</td>
+      <td>68.1265</td>
+      <td>234.8571</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AMDF</td>
+      <td>Voiced</td>
+      <td>phone_F1.wav</td>
+      <td>0.835</td>
+      <td>v</td>
+      <td>25</td>
+      <td>0.1088</td>
+      <td>0.3472</td>
+      <td>v</td>
+      <td>68.0601</td>
+      <td>235.0862</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>AMDF</td>
+      <td>Voiced</td>
+      <td>phone_F1.wav</td>
+      <td>0.835</td>
+      <td>v</td>
+      <td>30</td>
+      <td>0.1098</td>
+      <td>0.3494</td>
+      <td>v</td>
+      <td>67.9912</td>
+      <td>235.3246</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ACF</td>
+      <td>Unvoiced</td>
+      <td>phone_F1.wav</td>
+      <td>1.175</td>
+      <td>uv</td>
+      <td>20</td>
+      <td>0.4052</td>
+      <td>0.8480</td>
+      <td>uv</td>
+      <td>92.5993</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ACF</td>
+      <td>Unvoiced</td>
+      <td>phone_F1.wav</td>
+      <td>1.175</td>
+      <td>uv</td>
+      <td>25</td>
+      <td>0.3827</td>
+      <td>0.8389</td>
+      <td>uv</td>
+      <td>74.4255</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>ACF</td>
+      <td>Unvoiced</td>
+      <td>phone_F1.wav</td>
+      <td>1.175</td>
+      <td>uv</td>
+      <td>30</td>
+      <td>0.4126</td>
+      <td>0.8231</td>
+      <td>uv</td>
+      <td>74.0628</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AMDF</td>
+      <td>Unvoiced</td>
+      <td>phone_F1.wav</td>
+      <td>1.175</td>
+      <td>uv</td>
+      <td>20</td>
+      <td>0.5789</td>
+      <td>0.3152</td>
+      <td>uv</td>
+      <td>219.1728</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>AMDF</td>
+      <td>Unvoiced</td>
+      <td>phone_F1.wav</td>
+      <td>1.175</td>
+      <td>uv</td>
+      <td>25</td>
+      <td>0.5732</td>
+      <td>0.3472</td>
+      <td>uv</td>
+      <td>131.2060</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>AMDF</td>
+      <td>Unvoiced</td>
+      <td>phone_F1.wav</td>
+      <td>1.175</td>
+      <td>uv</td>
+      <td>30</td>
+      <td>0.5516</td>
+      <td>0.3494</td>
+      <td>uv</td>
+      <td>74.0740</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-51d4aea0-776b-4a02-8b6c-a0adde144fa0')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-51d4aea0-776b-4a02-8b6c-a0adde144fa0 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-51d4aea0-776b-4a02-8b6c-a0adde144fa0');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>

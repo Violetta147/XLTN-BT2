@@ -1,0 +1,27 @@
+   Algorithm   Example          File  Center (s)  GT  Frame (ms)   Score  \
+0        ACF    Voiced  phone_F1.wav       0.835   v          20  0.9725   
+1        ACF    Voiced  phone_F1.wav       0.835   v          25  0.9738   
+2        ACF    Voiced  phone_F1.wav       0.835   v          30  0.9726   
+3       AMDF    Voiced  phone_F1.wav       0.835   v          20  0.1143   
+4       AMDF    Voiced  phone_F1.wav       0.835   v          25  0.1088   
+5       AMDF    Voiced  phone_F1.wav       0.835   v          30  0.1098   
+6        ACF  Unvoiced  phone_F1.wav       1.175  uv          20  0.4052   
+7        ACF  Unvoiced  phone_F1.wav       1.175  uv          25  0.3827   
+8        ACF  Unvoiced  phone_F1.wav       1.175  uv          30  0.4126   
+9       AMDF  Unvoiced  phone_F1.wav       1.175  uv          20  0.5789   
+10      AMDF  Unvoiced  phone_F1.wav       1.175  uv          25  0.5732   
+11      AMDF  Unvoiced  phone_F1.wav       1.175  uv          30  0.5516   
+
+    Threshold Predicted  Best lag (samples)   F0 (Hz)  
+0      0.8480         v             67.9894  235.3310  
+1      0.8389         v             67.9620  235.4257  
+2      0.8231         v             67.8879  235.6827  
+3      0.3152         v             68.1265  234.8571  
+4      0.3472         v             68.0601  235.0862  
+5      0.3494         v             67.9912  235.3246  
+6      0.8480        uv             92.5993       NaN  
+7      0.8389        uv             74.4255       NaN  
+8      0.8231        uv             74.0628       NaN  
+9      0.3152        uv            219.1728       NaN  
+10     0.3472        uv            131.2060       NaN  
+11     0.3494        uv             74.0740       NaN  

@@ -1,0 +1,15 @@
+    Example          File  Center (s)  GT  Frame (ms)   Score  Threshold  \
+0    Voiced  phone_F1.wav       0.835   v          20  0.9725     0.6846   
+1    Voiced  phone_F1.wav       0.835   v          25  0.9738     0.6841   
+2    Voiced  phone_F1.wav       0.835   v          30  0.9726     0.6978   
+3  Unvoiced  phone_F1.wav       1.175  uv          20  0.4052     0.6846   
+4  Unvoiced  phone_F1.wav       1.175  uv          25  0.3827     0.6841   
+5  Unvoiced  phone_F1.wav       1.175  uv          30  0.4126     0.6978   
+
+  Predicted  Best lag (samples)   F0 (Hz)  
+0         v             67.9894  235.3310  
+1         v             67.9620  235.4257  
+2         v             67.8879  235.6827  
+3        uv             92.5993       NaN  
+4        uv             74.4255       NaN  
+5        uv             74.0628       NaN  

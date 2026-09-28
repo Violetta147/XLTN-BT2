@@ -1,0 +1,5 @@
+   files F0mean MAE F0mean RMSE F0mean MAPE F0std MAE F0std RMSE F0std MAPE  \
+0      4     2.2375      2.5935       1.38%    2.8172     3.0215      9.04%   
+
+  Macro F1 (V/UV)  
+0          0.8220  

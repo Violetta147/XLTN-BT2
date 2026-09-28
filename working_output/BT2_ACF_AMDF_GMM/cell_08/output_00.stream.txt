@@ -1,0 +1,2 @@
+/tmp/ipykernel_1252/2605833816.py:2: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  fs, signal = wavfile.read(path)

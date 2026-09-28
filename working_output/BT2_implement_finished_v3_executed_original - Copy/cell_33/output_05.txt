@@ -1,0 +1,11 @@
+        TEST WAV  LAB F0mean  Pred F0mean  F0mean MAE  LAB F0std  Pred F0std  \
+0   phone_F2.wav       145.0     145.5483      0.5483       33.7     36.1224   
+1   phone_M2.wav       129.0     125.5323      3.4677       18.6     20.8747   
+2  studio_F2.wav       200.0     191.7749      8.2251       46.1     53.9712   
+3  studio_M2.wav       155.0     152.4550      2.5450       30.8     37.1822   
+
+   F0std MAE  NumF0  
+0     2.4224    215  
+1     2.2747    121  
+2     7.8712    135  
+3     6.3822    122  

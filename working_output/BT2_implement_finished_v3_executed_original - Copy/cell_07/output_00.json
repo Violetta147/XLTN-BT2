@@ -1,0 +1,17 @@
+{
+  "output_type": "stream",
+  "name": "stdout",
+  "text": [
+    "Training WAV:\n",
+    " - phone_F1.wav\n",
+    " - phone_M1.wav\n",
+    " - studio_F1.wav\n",
+    " - studio_M1.wav\n",
+    "\n",
+    "Testing WAV:\n",
+    " - phone_F2.wav\n",
+    " - phone_M2.wav\n",
+    " - studio_F2.wav\n",
+    " - studio_M2.wav\n"
+  ]
+}

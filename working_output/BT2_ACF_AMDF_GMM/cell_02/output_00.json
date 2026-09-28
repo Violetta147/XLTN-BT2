@@ -1,0 +1,9 @@
+{
+  "output_type": "stream",
+  "name": "stdout",
+  "text": [
+    "Mounted at /content/drive\n",
+    "PROJECT_DIR: /content/drive/MyDrive/Seventh Semester/Spoken Language Processing/BT2\n",
+    "Frame lengths (ms): (20, 25, 30) | frame shift (ms): 10\n"
+  ]
+}
