@@ -1,6 +1,7 @@
 # Quy tắc làm việc cho BT2
 
 - Chạy trên máy local, dùng `TinHieuHuanLuyen/` và `TinHieuKiemThu/` trong working folder. Tuyệt đối không truy cập, mount, đọc, ghi, đồng bộ hoặc thao tác với Google Drive/G Drive dưới bất kỳ hình thức nào.
+- Nếu máy local thiếu tài nguyên, có thể dùng Google Colab trong Chrome của người dùng cho thí nghiệm đã định; chuyển dữ liệu cần thiết trực tiếp, không qua Google Drive/G Drive. Giữ nguyên cách chia dữ liệu, cấu hình và metric, rồi lưu kết quả về working folder để đối chiếu và commit.
 - Không dùng deep learning. Chỉ dùng dữ liệu và thuật toán tín hiệu/học máy cổ điển cần thiết cho bài.
 - Mỗi thay đổi có một giả thuyết rõ ràng và một commit riêng. Không gộp thay đổi đường dẫn, thư viện, frame length, đặc trưng, ngưỡng và metric vào cùng một thí nghiệm.
 - Trước mỗi thí nghiệm, ghi commit đang được chấp nhận làm điểm quay lại. Nếu kết quả không đạt tiêu chí đã định, giữ số liệu thất bại, quay về điểm đó và thử một giả thuyết khác trong commit mới; có thể hỏi Gemini kèm bằng chứng để tìm hướng mới. Không gộp nhiều hướng thử vào một commit.
