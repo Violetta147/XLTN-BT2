@@ -1,0 +1,43 @@
+{
+  "data": "TinHieuHuanLuyen only",
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "leave one file out, four folds",
+  "GMM_core": {
+    "mean_macro_f1": 0.8050679204258859,
+    "mean_balanced_accuracy": 0.8835602615609253,
+    "F0mean_MAE_hz": 2.0850746181258266,
+    "F0std_MAE_hz": 8.419585471230153,
+    "TP": 490,
+    "TN": 175,
+    "FP": 5,
+    "FN": 124,
+    "NumF0": 520,
+    "FP_SIL": 25
+  },
+  "labeled_plus_energy": {
+    "mean_macro_f1": 0.8746727605427734,
+    "mean_balanced_accuracy": 0.9166428379165996,
+    "F0mean_MAE_hz": 3.748154790142028,
+    "F0std_MAE_hz": 8.396302593811708,
+    "TP": 551,
+    "TN": 166,
+    "FP": 14,
+    "FN": 63,
+    "NumF0": 568,
+    "FP_SIL": 3
+  },
+  "labeled_plus_energy_plus_median3": {
+    "mean_macro_f1": 0.8746727605427734,
+    "mean_balanced_accuracy": 0.9166428379165996,
+    "F0mean_MAE_hz": 2.9662924471876444,
+    "F0std_MAE_hz": 6.617540275573944,
+    "TP": 551,
+    "TN": 166,
+    "FP": 14,
+    "FN": 63,
+    "NumF0": 568,
+    "FP_SIL": 3
+  },
+  "keep_by_preregistered_rule": false
+}
