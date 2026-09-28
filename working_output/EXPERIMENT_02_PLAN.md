@@ -1,0 +1,8 @@
+# Thí nghiệm 02: lấp đúng một khung V yếu ở giữa hai khung lõi
+
+- Điểm quay lại được chấp nhận: commit `5767527`; không đưa ngưỡng trễ của thí nghiệm 01 vào notebook vì F0 MAE và false voiced SIL tăng.
+- Giả thuyết từ chẩn đoán training và rà soát độc lập của subagent: lấp một lỗ khung V ở *giữa* hai khung lõi có thể cứu một phần FN mà không kéo vùng V sang biên SIL như cách lấy cả block `weak`.
+- Biến duy nhất so với GMM một ngưỡng: thêm dự đoán V cho frame `i` nếu `score[i] <= T_weak` **và** `score[i−1] < T_core` **và** `score[i+1] < T_core`. Giữ toàn bộ core V. Không áp dụng cho frame đầu/cuối file; không nối qua file. `T_core` và `T_weak` được fit trong từng lượt đúng như thí nghiệm 01. AMDF 25 ms, hop 10 ms, score, nhãn tâm khung, GMM và F0 estimator không đổi.
+- Leave-one-file-out trên bốn file `TinHieuHuanLuyen`; so sánh cùng score/frame với GMM core. Metric chính: trung bình macro F1 V/UV theo file. Báo thêm balanced accuracy, TP/TN/FP/FN, NumF0, F0mean/F0std MAE theo file, false voiced SIL.
+- Tiêu chí giữ, đặt trước khi chạy: tăng macro F1 ít nhất **0.01** tuyệt đối; balanced accuracy giảm không quá **0.01**; FP tăng không quá FN giảm; **cả hai** F0 MAE không cao hơn baseline core; tổng false voiced SIL không cao hơn baseline. Baseline tham chiếu từ thí nghiệm 01: F1 0.8051, BA 0.8836, F0mean MAE 2.0851 Hz, F0std MAE 8.4196 Hz, false voiced SIL 25.
+- Nếu không đạt, giữ kết quả thất bại và không sửa notebook. Không thử biến thể khác dựa trên TEST. Rủi ro dự kiến: nhiều FN là chuỗi dài hơn một khung nên F1 có thể tăng quá ít; một lỗ khung có lag không ổn định vẫn có thể làm F0 MAE xấu đi.
