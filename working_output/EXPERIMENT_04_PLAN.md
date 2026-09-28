@@ -1,0 +1,8 @@
+# Thí nghiệm 04: cổng năng lượng SIL cho ngưỡng pitch có nhãn
+
+- Điểm quay lại được chấp nhận: commit `5178885`; notebook vẫn dùng cấu hình cũ. Thí nghiệm 03 chỉ cho thấy lợi ích phân loại, chưa đạt tiêu chí F0.
+- Giả thuyết: nhiều F0 ứng viên mới từ khung SIL làm sai F0mean/F0std. Cổng năng lượng khung có thể loại SIL trước khi chấp nhận F0, giữ phần lớn lợi ích V/UV của ngưỡng pitch có nhãn.
+- Biến thêm duy nhất so với thí nghiệm 03: `voiced = (AMDF score < T_label) AND (relative RMS >= T_energy)`. RMS là căn trung bình bình phương biên độ của frame 25 ms; chia cho phân vị 95% RMS của **cùng file** để giảm khác biệt gain. Không đổi pitch estimator, frame/hop, LAB mapping hoặc quy tắc tìm `T_label`.
+- Mỗi lượt leave-one-file-out: fit `T_label` trên V/UV của ba file training như thí nghiệm 03. Tìm `T_energy` trên V/SIL của đúng ba file đó, tối đa hóa trung bình theo file của balanced accuracy V/SIL; hòa điểm chọn ngưỡng năng lượng nhỏ hơn để giữ V. Ứng viên là các điểm giữa hai giá trị relative RMS kề nhau và hai biên. Áp dụng hai ngưỡng đã fit lên file thứ tư. Không dùng LAB file holdout ở suy luận; LAB chỉ tính metric.
+- So sánh GMM core, ngưỡng pitch có nhãn không cổng, và có cổng trên cùng fold. Báo macro F1 V/UV, BA, TP/TN/FP/FN, F0mean/F0std MAE, NumF0, false voiced SIL theo file.
+- Chỉ áp dụng vào notebook nếu **so với GMM core**: macro F1 tăng ≥0.01, BA giảm ≤0.01, FP tăng không quá FN giảm, F0mean và F0std MAE đều không tăng, false voiced SIL không tăng. Đồng thời so với ngưỡng có nhãn không cổng, false voiced SIL phải giảm. Nếu không đạt, giữ số liệu thất bại và không chạy TEST để sửa ngưỡng.
