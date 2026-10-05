@@ -1,0 +1,37 @@
+{
+  "ACF": {
+    "variant": "near_0.05",
+    "train_mape": 23.311172435024687,
+    "lofo_mape": 22.75703895127001,
+    "baseline_lofo_mape": 29.11082781780771,
+    "lofo_f1_delta": 0.0
+  },
+  "AMDF": {
+    "variant": "near_0.02",
+    "train_mape": 25.477082201783794,
+    "lofo_mape": 25.167127849875506,
+    "baseline_lofo_mape": 27.03042836877323,
+    "lofo_f1_delta": 0.0
+  },
+  "AMDF_energy": {
+    "variant": "near_0.05",
+    "train_mape": 7.8153963015463095,
+    "lofo_mape": 9.508680661737632,
+    "baseline_lofo_mape": 13.695884117541652,
+    "lofo_f1_delta": 0.0
+  },
+  "GMM_ACF": {
+    "variant": "near_0.1",
+    "train_mape": 12.622605061944691,
+    "lofo_mape": 13.106393064426534,
+    "baseline_lofo_mape": 28.801490553579082,
+    "lofo_f1_delta": 0.0
+  },
+  "GMM_AMDF": {
+    "variant": "near_0.05",
+    "train_mape": 9.971797292651317,
+    "lofo_mape": 12.018633446704731,
+    "baseline_lofo_mape": 16.956907448538242,
+    "lofo_f1_delta": 0.0
+  }
+}
