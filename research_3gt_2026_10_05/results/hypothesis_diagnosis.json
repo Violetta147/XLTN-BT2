@@ -1,0 +1,154 @@
+{
+  "phone_F1_low_F0_frames": 14,
+  "phone_F1_low_frames_in_v": 12,
+  "phone_F1_low_frames_at_boundary": 0,
+  "phone_F1_double_candidate_within_0_02": 3,
+  "phone_F1_double_candidate_within_0_05": 4,
+  "phone_F1_variance_by_label": [
+    {
+      "model": "ACF",
+      "file": "phone_F1.wav",
+      "label": "v",
+      "count": 135,
+      "mean": 205.4060975169396,
+      "std": 41.582164229601865,
+      "variance_contribution": 1644.4702652610376,
+      "variance_share": 0.6866840028017963
+    },
+    {
+      "model": "ACF",
+      "file": "phone_F1.wav",
+      "label": "uv",
+      "count": 5,
+      "mean": 152.4949996437835,
+      "std": 63.9853207216675,
+      "variance_contribution": 245.7927835489531,
+      "variance_share": 0.1026360743837461
+    },
+    {
+      "model": "ACF",
+      "file": "phone_F1.wav",
+      "label": "sil",
+      "count": 2,
+      "mean": 395.4828927720638,
+      "std": 1.297822421488462,
+      "variance_contribution": 504.5360997813525,
+      "variance_share": 0.2106799228144573
+    }
+  ],
+  "phone_F1_low_F0_evidence": [
+    {
+      "time_s": 0.5725,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 72.1836113908519,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 0.5925,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 72.69117522366685,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 0.6025,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 72.73845168092832,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 0.9225,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 82.25807738552463,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 0.9325,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 81.61171886939323,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 0.9425,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 122.0944684401335,
+      "alternative_near_double": 243.81617414369103,
+      "score_loss_to_double": 0.00652927336673359
+    },
+    {
+      "time_s": 1.5725,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 93.07820492557914,
+      "alternative_near_double": 186.25784139907955,
+      "score_loss_to_double": 0.006116974025967448
+    },
+    {
+      "time_s": 1.6425,
+      "label": "uv",
+      "boundary": false,
+      "f0_selected": 71.60764485445534,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 1.6625,
+      "label": "uv",
+      "boundary": false,
+      "f0_selected": 82.78539903038642,
+      "alternative_near_double": 161.3661428402072,
+      "score_loss_to_double": 0.7339419601862959
+    },
+    {
+      "time_s": 1.8525,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 97.91862555770342,
+      "alternative_near_double": 204.07067599355173,
+      "score_loss_to_double": 0.13883670076336452
+    },
+    {
+      "time_s": 1.8625,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 101.61107410297107,
+      "alternative_near_double": 208.7820790973189,
+      "score_loss_to_double": 0.027810460270992765
+    },
+    {
+      "time_s": 1.9525,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 111.93332576777597,
+      "alternative_near_double": 223.96502913265283,
+      "score_loss_to_double": 0.011958339408651097
+    },
+    {
+      "time_s": 1.9625,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 74.39252982985087,
+      "alternative_near_double": null,
+      "score_loss_to_double": null
+    },
+    {
+      "time_s": 2.0425,
+      "label": "v",
+      "boundary": false,
+      "f0_selected": 93.78305924562768,
+      "alternative_near_double": 184.74745552865275,
+      "score_loss_to_double": 0.05436625157404906
+    }
+  ],
+  "population_vs_sample_std_max_relative_pct_at_n82": 0.6153904237490737
+}

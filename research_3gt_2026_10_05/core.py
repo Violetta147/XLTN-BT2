@@ -82,6 +82,7 @@ def extract_functions(filename, names):
 ACF = None
 AMDF = None
 GMM = None
+FIT_CACHE = {}
 
 
 def init_functions():
@@ -246,8 +247,12 @@ def fit_energy(items):
 
 def fit(items, config):
     algorithm = config['algorithm']
-    return {'pitch_threshold': fit_pitch_threshold(items, algorithm, config.get('threshold_method', 'original')),
-            'energy_threshold': fit_energy(items) if config.get('energy', False) else 0.}
+    key = (algorithm, config.get('threshold_method', 'original'), config.get('energy', False),
+           tuple(sorted((item['file'], item['frame_ms'], item['preprocess']) for item in items)))
+    if key not in FIT_CACHE:
+        FIT_CACHE[key] = {'pitch_threshold': fit_pitch_threshold(items, algorithm, config.get('threshold_method', 'original')),
+                          'energy_threshold': fit_energy(items) if config.get('energy', False) else 0.}
+    return dict(FIT_CACHE[key])
 
 
 def voiced_runs(pred):
