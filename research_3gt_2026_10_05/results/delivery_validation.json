@@ -1,0 +1,74 @@
+{
+  "verified_at_vietnam": "2026-10-05T23:00:47+07:00",
+  "python": "3.12.10 (main, May 30 2025, 05:39:07) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.uv-cache-bt2-final\\archive-v0\\oddOTo5D9yxfnQNnNk2kA\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "notebooks": [
+    {
+      "notebook": "BT2_ACF_AMDF_GMM_improved_train_only.ipynb",
+      "code_cells_executed": 8,
+      "figures": 12,
+      "source_sha256": "4823be4b3c406bba9015990a6bdbddd3b094adff240ce3d51ba2f3164e8bb55a",
+      "executed_sha256": "4830859df0ee1c959379177583945833a154fea29ca3949d4ec193637fd43bc7",
+      "train_test_parity_atol": 1e-10,
+      "code_identical_to_executed": true
+    },
+    {
+      "notebook": "BT2_ACF_improved_train_only.ipynb",
+      "code_cells_executed": 8,
+      "figures": 6,
+      "source_sha256": "9aee0b13131c577d4da2414f972bbe4dfad09268b90f155eee62c2416853b999",
+      "executed_sha256": "bf813a6f925071e6181c92960a85b9190a0f7ac64c682a4526828cb90e742919",
+      "train_test_parity_atol": 1e-10,
+      "code_identical_to_executed": true
+    },
+    {
+      "notebook": "BT2_AMDF_improved_with_energy_train_only.ipynb",
+      "code_cells_executed": 8,
+      "figures": 6,
+      "source_sha256": "3a628277a18f9d4e583f9c089c5bae9e5e84d20f373263f16500e8506cbcd16b",
+      "executed_sha256": "d4748803a57639a7f3c7f48ee6fea5f59d2e9bd25c427c3b3e07650471b149b0",
+      "train_test_parity_atol": 1e-10,
+      "code_identical_to_executed": true
+    },
+    {
+      "notebook": "BT2_AMDF_improved_without_energy_train_only.ipynb",
+      "code_cells_executed": 8,
+      "figures": 6,
+      "source_sha256": "97b5f73614fa995378cd19382f12726bb6066f3876dd3a24f42b240ca65b79d7",
+      "executed_sha256": "a9e9a13bc556cd33c4390e87b8807e5b1dccb3131d46869eb750d02382f4d382",
+      "train_test_parity_atol": 1e-10,
+      "code_identical_to_executed": true
+    }
+  ],
+  "originals": [
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\turn-in-assignment\\BT2_ACF_best_energy_set.ipynb",
+      "sha256": "b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c",
+      "unchanged_from_snapshot": true
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\turn-in-assignment\\BT2_AMDF_best_energy_set.ipynb",
+      "sha256": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+      "unchanged_from_snapshot": true
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\turn-in-assignment - Copy\\BT2_AMDF_best_no_energy_set.ipynb",
+      "sha256": "08013735a5b199824e971db1408ee6dc237555fd9d8016172218d26480434b66",
+      "unchanged_from_snapshot": true
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\turn-in-assignment\\BT2_ACF_AMDF_GMM_best_energy_set.ipynb",
+      "sha256": "d55ba2ab5ec1c2abe44a8e27c8750f86b957065cafbd2e68ac79ef8256a8ff89",
+      "unchanged_from_snapshot": true
+    }
+  ],
+  "all_six_original_notebooks_unchanged": true
+}
