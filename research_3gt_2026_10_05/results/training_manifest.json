@@ -1,0 +1,37 @@
+[
+  {
+    "file": "phone_F1.wav",
+    "wav_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "segments_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+    "three_gt_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192"
+  },
+  {
+    "file": "phone_M1.wav",
+    "wav_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "segments_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+    "three_gt_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e"
+  },
+  {
+    "file": "studio_F1.wav",
+    "wav_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "segments_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+    "three_gt_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5"
+  },
+  {
+    "file": "studio_M1.wav",
+    "wav_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+    "segments_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+    "three_gt_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b"
+  },
+  {
+    "baseline_notebooks": {
+      "ACF.ipynb": "b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c",
+      "AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+      "GMM.ipynb": "d55ba2ab5ec1c2abe44a8e27c8750f86b957065cafbd2e68ac79ef8256a8ff89",
+      "AMDF_no_energy.ipynb": "08013735a5b199824e971db1408ee6dc237555fd9d8016172218d26480434b66"
+    },
+    "python": "3.12.10 (main, May 30 2025, 05:39:07) [MSC v.1943 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.uv-cache-bt2-final\\archive-v0\\oddOTo5D9yxfnQNnNk2kA\\Scripts\\python.exe",
+    "test_accessed": false
+  }
+]
