@@ -1,0 +1,427 @@
+[
+  {
+    "model": "ACF",
+    "outer_held_out": "phone_F1.wav",
+    "inner_selected_id": "ACF_030",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 25,
+      "candidate": "near",
+      "margin": 0.05,
+      "median": 1,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.6349906966527329,
+      "energy_threshold": 0.05466060583995211
+    },
+    "held_out_average_mape": 25.36551092302773,
+    "inner_validation_mape": 4.156749177633114
+  },
+  {
+    "model": "ACF",
+    "outer_held_out": "phone_M1.wav",
+    "inner_selected_id": "ACF_051",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.0,
+      "median": 1,
+      "energy": true,
+      "threshold_method": "hist_modes",
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.5789547975799575,
+      "energy_threshold": 0.05773046922547663
+    },
+    "held_out_average_mape": 2.949910561008759,
+    "inner_validation_mape": 8.458930247111704
+  },
+  {
+    "model": "ACF",
+    "outer_held_out": "studio_F1.wav",
+    "inner_selected_id": "ACF_045",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.03,
+      "median": 3,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.660405580237204,
+      "energy_threshold": 0.06683658871639932
+    },
+    "held_out_average_mape": 3.4059973820520733,
+    "inner_validation_mape": 3.3833294879720577
+  },
+  {
+    "model": "ACF",
+    "outer_held_out": "studio_M1.wav",
+    "inner_selected_id": "ACF_045",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.03,
+      "median": 3,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.695147773994129,
+      "energy_threshold": 0.061544615883604575
+    },
+    "held_out_average_mape": 2.4845398406581727,
+    "inner_validation_mape": 5.33186810368017
+  },
+  {
+    "model": "AMDF_energy",
+    "outer_held_out": "phone_F1.wav",
+    "inner_selected_id": "AMDF_energy_040",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "energy": true,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.0,
+      "median": 1,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.4096917277020603,
+      "energy_threshold": 0.05466060583995211
+    },
+    "held_out_average_mape": 13.303347308008213,
+    "inner_validation_mape": 6.830116105442951
+  },
+  {
+    "model": "AMDF_energy",
+    "outer_held_out": "phone_M1.wav",
+    "inner_selected_id": "AMDF_energy_033",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "energy": true,
+      "candidate": "near",
+      "margin": 0.1,
+      "median": 3,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.40830540776511665,
+      "energy_threshold": 0.05773046922547663
+    },
+    "held_out_average_mape": 17.829436040627268,
+    "inner_validation_mape": 7.248738675456636
+  },
+  {
+    "model": "AMDF_energy",
+    "outer_held_out": "studio_F1.wav",
+    "inner_selected_id": "AMDF_energy_043",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "energy": true,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.01,
+      "median": 3,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.41622733555156766,
+      "energy_threshold": 0.06683658871639932
+    },
+    "held_out_average_mape": 4.474936315604526,
+    "inner_validation_mape": 3.4361890860289086
+  },
+  {
+    "model": "AMDF_energy",
+    "outer_held_out": "studio_M1.wav",
+    "inner_selected_id": "AMDF_energy_040",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "energy": true,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.0,
+      "median": 1,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.41373072127314126,
+      "energy_threshold": 0.061544615883604575
+    },
+    "held_out_average_mape": 4.417637822488017,
+    "inner_validation_mape": 5.83726342356146
+  },
+  {
+    "model": "GMM_ACF",
+    "outer_held_out": "phone_F1.wav",
+    "inner_selected_id": "GMM_ACF_019",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 20,
+      "threshold_method": "gmm",
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.01,
+      "median": 1,
+      "energy": false,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.8424359570550687,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 13.460255606720176,
+    "inner_validation_mape": 9.380344685114848
+  },
+  {
+    "model": "GMM_ACF",
+    "outer_held_out": "phone_M1.wav",
+    "inner_selected_id": "GMM_ACF_014",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 20,
+      "threshold_method": "gmm",
+      "candidate": "path",
+      "jump_cost": 0.15,
+      "octave_cost": 0.01,
+      "median": 3,
+      "energy": false,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.8886769991105691,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 16.62480841688088,
+    "inner_validation_mape": 11.107114959938713
+  },
+  {
+    "model": "GMM_ACF",
+    "outer_held_out": "studio_F1.wav",
+    "inner_selected_id": "GMM_ACF_018",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 20,
+      "threshold_method": "gmm",
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.0,
+      "median": 3,
+      "energy": false,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.8412472358819468,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 8.333980592501328,
+    "inner_validation_mape": 12.23567996846491
+  },
+  {
+    "model": "GMM_ACF",
+    "outer_held_out": "studio_M1.wav",
+    "inner_selected_id": "GMM_ACF_012",
+    "inner_config": {
+      "algorithm": "ACF",
+      "frame_ms": 20,
+      "threshold_method": "gmm",
+      "candidate": "path",
+      "jump_cost": 0.15,
+      "octave_cost": 0.0,
+      "median": 3,
+      "energy": false,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.8441176385009702,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 14.62475461924314,
+    "inner_validation_mape": 13.169630558934763
+  },
+  {
+    "model": "GMM_AMDF",
+    "outer_held_out": "phone_F1.wav",
+    "inner_selected_id": "GMM_AMDF_031",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "threshold_method": "gmm",
+      "candidate": "near",
+      "margin": 0.05,
+      "median": 3,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.3508002832540056,
+      "energy_threshold": 0.05466060583995211
+    },
+    "held_out_average_mape": 12.496680304753491,
+    "inner_validation_mape": 8.888485841442824
+  },
+  {
+    "model": "GMM_AMDF",
+    "outer_held_out": "phone_M1.wav",
+    "inner_selected_id": "GMM_AMDF_030",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "threshold_method": "gmm",
+      "candidate": "near",
+      "margin": 0.05,
+      "median": 1,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.3413394690556672,
+      "energy_threshold": 0.05773046922547663
+    },
+    "held_out_average_mape": 12.108441017778276,
+    "inner_validation_mape": 9.43233004047501
+  },
+  {
+    "model": "GMM_AMDF",
+    "outer_held_out": "studio_F1.wav",
+    "inner_selected_id": "GMM_AMDF_031",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "threshold_method": "gmm",
+      "candidate": "near",
+      "margin": 0.05,
+      "median": 3,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.3478425120054532,
+      "energy_threshold": 0.06683658871639932
+    },
+    "held_out_average_mape": 6.317452750275689,
+    "inner_validation_mape": 8.692342809235411
+  },
+  {
+    "model": "GMM_AMDF",
+    "outer_held_out": "studio_M1.wav",
+    "inner_selected_id": "GMM_AMDF_029",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "threshold_method": "gmm",
+      "candidate": "near",
+      "margin": 0.02,
+      "median": 3,
+      "energy": true,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.3495215137826417,
+      "energy_threshold": 0.061544615883604575
+    },
+    "held_out_average_mape": 9.483652491236827,
+    "inner_validation_mape": 8.07777684502984
+  },
+  {
+    "model": "AMDF_no_energy",
+    "outer_held_out": "phone_F1.wav",
+    "inner_selected_id": "AMDF_no_energy_025",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.0,
+      "median": 1,
+      "energy": false,
+      "threshold_method": "gaussian",
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.4096917277020603,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 13.303347308008213,
+    "inner_validation_mape": 18.261950247791756
+  },
+  {
+    "model": "AMDF_no_energy",
+    "outer_held_out": "phone_M1.wav",
+    "inner_selected_id": "AMDF_no_energy_020",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.01,
+      "median": 3,
+      "energy": false,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.40830540776511665,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 11.744402400061873,
+    "inner_validation_mape": 16.751208846946824
+  },
+  {
+    "model": "AMDF_no_energy",
+    "outer_held_out": "studio_F1.wav",
+    "inner_selected_id": "AMDF_no_energy_031",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.0,
+      "median": 1,
+      "energy": false,
+      "threshold_method": "hist_classes",
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.40765209755094944,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 21.584138471155583,
+    "inner_validation_mape": 16.106060464296743
+  },
+  {
+    "model": "AMDF_no_energy",
+    "outer_held_out": "studio_M1.wav",
+    "inner_selected_id": "AMDF_no_energy_020",
+    "inner_config": {
+      "algorithm": "AMDF",
+      "frame_ms": 25,
+      "candidate": "path",
+      "jump_cost": 0.35,
+      "octave_cost": 0.01,
+      "median": 3,
+      "energy": false,
+      "preprocess": "raw"
+    },
+    "outer_fit": {
+      "pitch_threshold": 0.41373072127314126,
+      "energy_threshold": 0.0
+    },
+    "held_out_average_mape": 30.997552539139473,
+    "inner_validation_mape": 14.5461143246114
+  }
+]

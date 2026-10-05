@@ -1,0 +1,102 @@
+{
+  "frozen_at_vietnam": "2026-10-05T22:38:17+07:00",
+  "test_opened_during_selection": false,
+  "models": {
+    "ACF": {
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      },
+      "fitted": {
+        "pitch_threshold": 0.6840817762403983,
+        "energy_threshold": 0.061544615883604575
+      },
+      "accepted_improvement": true,
+      "selected_id": "ACF_045"
+    },
+    "AMDF_energy": {
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "preprocess": "raw"
+      },
+      "fitted": {
+        "pitch_threshold": 0.41249330632749887,
+        "energy_threshold": 0.061544615883604575
+      },
+      "accepted_improvement": true,
+      "selected_id": "AMDF_energy_040"
+    },
+    "GMM_ACF": {
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      },
+      "fitted": {
+        "pitch_threshold": 0.8479970822267061,
+        "energy_threshold": 0.0
+      },
+      "accepted_improvement": true,
+      "selected_id": "GMM_ACF_020"
+    },
+    "GMM_AMDF": {
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      },
+      "fitted": {
+        "pitch_threshold": 0.347246909276725,
+        "energy_threshold": 0.061544615883604575
+      },
+      "accepted_improvement": true,
+      "selected_id": "GMM_AMDF_031"
+    },
+    "AMDF_no_energy": {
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      },
+      "fitted": {
+        "pitch_threshold": 0.406274068847145,
+        "energy_threshold": 0.0
+      },
+      "accepted_improvement": true,
+      "selected_id": "AMDF_no_energy_031"
+    }
+  },
+  "candidate_registry_sha256": "59e87dfdd26e2a4a4649930da36653d474a3b4cbca22df594f30f526b122f52a",
+  "training_manifest_sha256": "c601da68a0f1b7f87970730a6f1e23c0e9db65c2dbe9b37a58e015c910e226f8",
+  "selection_summary_sha256": "9273fc944f20ee8602551a986a03d2d95fb505f74370cf86cfd77881691a2ed9",
+  "inference_code_sha256": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb"
+}
