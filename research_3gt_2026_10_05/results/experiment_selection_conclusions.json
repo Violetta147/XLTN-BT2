@@ -1,0 +1,23 @@
+{
+  "ACF": {
+    "variant": "hist_classes",
+    "train_mape": 29.83471057738782,
+    "lofo_mape": 29.11082781780771,
+    "baseline_lofo_mape": 29.11082781780771,
+    "lofo_f1_delta": 0.0
+  },
+  "AMDF": {
+    "variant": "hist_modes",
+    "train_mape": 15.573600745460535,
+    "lofo_mape": 14.979038254564728,
+    "baseline_lofo_mape": 27.03042836877323,
+    "lofo_f1_delta": -0.049924437495016516
+  },
+  "AMDF_energy": {
+    "variant": "gaussian",
+    "train_mape": 12.270266669330649,
+    "lofo_mape": 13.695884117541652,
+    "baseline_lofo_mape": 13.695884117541652,
+    "lofo_f1_delta": 0.0
+  }
+}
