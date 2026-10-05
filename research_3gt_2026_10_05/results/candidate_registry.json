@@ -1,0 +1,3020 @@
+{
+  "ACF": [
+    {
+      "id": "ACF_000",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_001",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_002",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 5,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_003",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_004",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_005",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_006",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_007",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_008",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_009",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_010",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_011",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_012",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_013",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_014",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_015",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_016",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_017",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_018",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_019",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_020",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_021",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_022",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_023",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_024",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_025",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 5,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_026",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_027",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_028",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_029",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_030",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_031",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_032",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_033",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_034",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_035",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_036",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_037",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_038",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_039",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_040",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_041",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_042",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_043",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_044",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_045",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_046",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": true,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_047",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": true,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_048",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_049",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": true,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_050",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": true,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_051",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_052",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": true,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_053",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": true,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "ACF_054",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    }
+  ],
+  "AMDF_energy": [
+    {
+      "id": "AMDF_energy_000",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "best",
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_001",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "best",
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_002",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "best",
+        "median": 5,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_003",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_004",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_005",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_006",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_007",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_008",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_009",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_010",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_011",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_012",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_013",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_014",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_015",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_016",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_017",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_018",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_019",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_020",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_021",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_022",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": false,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_023",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "best",
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_024",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "best",
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_025",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "best",
+        "median": 5,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_026",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_027",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_028",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_029",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_030",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_031",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_032",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_033",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_034",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_035",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_036",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_037",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_038",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_039",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_040",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_041",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_042",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_043",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_044",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_045",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_046",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "best",
+        "median": 1,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_047",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_048",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_049",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "best",
+        "median": 1,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_050",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_051",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_052",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "best",
+        "median": 1,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_053",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_energy_054",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "energy": true,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    }
+  ],
+  "GMM_ACF": [
+    {
+      "id": "GMM_ACF_000",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_001",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_002",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 5,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_003",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_004",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_005",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_006",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_007",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_008",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_009",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_010",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_011",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_012",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_013",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_014",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_015",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_016",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_017",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_018",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_019",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_020",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_021",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_022",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_023",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_024",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_025",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 5,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_026",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_027",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_028",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_029",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_030",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_031",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_032",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_033",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_034",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_035",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_036",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_037",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_038",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_039",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_040",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_041",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_042",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_043",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_044",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_ACF_045",
+      "config": {
+        "algorithm": "ACF",
+        "frame_ms": 20,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    }
+  ],
+  "GMM_AMDF": [
+    {
+      "id": "GMM_AMDF_000",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_001",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_002",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 5,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_003",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_004",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_005",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_006",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_007",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_008",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_009",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_010",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_011",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_012",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_013",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_014",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_015",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_016",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_017",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_018",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_019",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_020",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_021",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_022",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_023",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_024",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_025",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "best",
+        "median": 5,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_026",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_027",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_028",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_029",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_030",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_031",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_032",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_033",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_034",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_035",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_036",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_037",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_038",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_039",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_040",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_041",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_042",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_043",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_044",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "GMM_AMDF_045",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "threshold_method": "gmm",
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": true,
+        "preprocess": "raw"
+      }
+    }
+  ],
+  "AMDF_no_energy": [
+    {
+      "id": "AMDF_no_energy_000",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_001",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_002",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 5,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_003",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_004",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_005",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_006",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.02,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_007",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_008",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_009",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_010",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.1,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_011",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_012",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_013",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_014",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_015",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_016",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.15,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_017",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_018",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_019",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_020",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.01,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_021",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 1,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_022",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.03,
+        "median": 3,
+        "energy": false,
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_023",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_024",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_025",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "gaussian",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_026",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_027",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_028",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_modes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_029",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "best",
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_030",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "near",
+        "margin": 0.05,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    },
+    {
+      "id": "AMDF_no_energy_031",
+      "config": {
+        "algorithm": "AMDF",
+        "frame_ms": 25,
+        "candidate": "path",
+        "jump_cost": 0.35,
+        "octave_cost": 0.0,
+        "median": 1,
+        "energy": false,
+        "threshold_method": "hist_classes",
+        "preprocess": "raw"
+      }
+    }
+  ]
+}

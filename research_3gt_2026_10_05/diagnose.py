@@ -24,16 +24,25 @@ def main():
     for index in np.flatnonzero(low):
         candidates, strengths = phone['ACF_candidate_f0'][index], phone['ACF_candidate_strength'][index]
         double = np.isfinite(candidates) & (np.abs(np.log2(candidates / f0[index]) - 1) < .08)
+        multiples = []
+        for factor in (2, 3, 4):
+            mask = np.isfinite(candidates) & (np.abs(np.log2(candidates / (factor * f0[index]))) < .08)
+            if mask.any():
+                best = np.flatnonzero(mask)[np.argmax(strengths[mask])]
+                multiples.append({'factor': factor, 'f0': float(candidates[best]),
+                                  'score_loss': float(strengths.max() - strengths[best])})
         evidence.append({'time_s': phone['times'][index], 'label': phone['labels'][index],
                          'boundary': bool(phone['boundary'][index]), 'f0_selected': f0[index],
                          'alternative_near_double': float(candidates[double][0]) if double.any() else None,
-                         'score_loss_to_double': float(strengths.max() - strengths[double].max()) if double.any() else None})
+                         'score_loss_to_double': float(strengths.max() - strengths[double].max()) if double.any() else None,
+                         'integer_multiple_alternatives': multiples})
     contributions = variance[(variance.model == 'ACF') & (variance.file == 'phone_F1.wav')].to_dict('records')
     stats = {'phone_F1_low_F0_frames': len(evidence),
              'phone_F1_low_frames_in_v': int((low & (phone['labels'] == 'v')).sum()),
              'phone_F1_low_frames_at_boundary': int((low & phone['boundary']).sum()),
              'phone_F1_double_candidate_within_0_02': sum(x['score_loss_to_double'] is not None and x['score_loss_to_double'] < .02 for x in evidence),
              'phone_F1_double_candidate_within_0_05': sum(x['score_loss_to_double'] is not None and x['score_loss_to_double'] < .05 for x in evidence),
+             'phone_F1_2_3_4_candidate_within_0_02': sum(any(a['score_loss'] < .02 for a in x['integer_multiple_alternatives']) for x in evidence),
              'phone_F1_variance_by_label': contributions,
              'phone_F1_low_F0_evidence': evidence,
              'population_vs_sample_std_max_relative_pct_at_n82': 100 * (np.sqrt(82 / 81) - 1)}
@@ -69,8 +78,8 @@ def main():
            f'phone_F1 chỉ giữ V vẫn std={phone_v:.2f} Hz (GT20.6); studio_M1 chỉ giữ V std={studio_v:.2f} (GT26.4). ddof chỉ khoảng 0.62%.',
            'SIL giải thích studio_M1; phone_F1 còn sai ứng viên trong vùng V. Không dùng oracle trong cải tiến.')
     record('H2: kiểm tra bội chu kỳ ở phone_F1',
-           f'{len(evidence)} F0 thấp; {stats["phone_F1_low_frames_in_v"]} nằm trong V; {stats["phone_F1_double_candidate_within_0_05"]} có ứng viên gần gấp đôi chỉ kém score <0.05.',
-           'Bằng chứng phù hợp nhầm bội chu kỳ; thiếu GT F0 từng khung nên không khẳng định mọi F0 thấp đều sai.')
+           f'{len(evidence)} F0 thấp; {stats["phone_F1_low_frames_in_v"]} trong V; {stats["phone_F1_2_3_4_candidate_within_0_02"]} có ứng viên 2/3/4 lần F0 chỉ kém score <0.02. Waveform 0.573s có chu kỳ khoảng4.6ms nhưng cực đại tại3T0 sinh72Hz.',
+           'Xác nhận một lỗi chọn bội chu kỳ bằng waveform; không chỉ octave đôi. Thiếu GT từng khung nên không khẳng định mọi F0 thấp đều sai.')
     print(json.dumps(stats, indent=2), flush=True)
 
 

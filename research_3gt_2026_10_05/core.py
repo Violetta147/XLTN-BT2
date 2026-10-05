@@ -276,7 +276,11 @@ def infer(item, config, fitted):
             if valid.any():
                 f0[index] = candidates[index][valid].max()
     elif mode == 'path':
-        candidates, strengths = item[algorithm + '_candidate_f0'], item[algorithm + '_candidate_strength']
+        candidates = item[algorithm + '_candidate_f0'].copy()
+        strengths = item[algorithm + '_candidate_strength'].copy()
+        empty = ~np.isfinite(candidates).any(axis=1)
+        candidates[empty, 0] = np.clip(item['fs'] / item[algorithm + '_lag'][empty], 70, 400)
+        strengths[empty, 0] = score[empty] if algorithm == 'ACF' else 1 - score[empty]
         octave, jump = config.get('octave_cost', 0.), config['jump_cost']
         for start, stop in voiced_runs(pred):
             previous, backpointers = None, []
