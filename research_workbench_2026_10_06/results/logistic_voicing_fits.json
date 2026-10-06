@@ -1,0 +1,256 @@
+{
+  "folds": [
+    {
+      "split": "train",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6425183356956693,
+        0.3930961239795244
+      ],
+      "scaler_scale": [
+        0.27779425840657096,
+        0.3501962544663931
+      ],
+      "coefficient": [
+        2.8168252465837527,
+        1.1150491012168036
+      ],
+      "intercept": -0.08110159090857051,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.061544615883604575
+    },
+    {
+      "split": "train",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6425183356956693,
+        0.3930961239795244
+      ],
+      "scaler_scale": [
+        0.27779425840657096,
+        0.3501962544663931
+      ],
+      "coefficient": [
+        2.8168252465837527,
+        1.1150491012168036
+      ],
+      "intercept": -0.08110159090857051,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.061544615883604575
+    },
+    {
+      "split": "train",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6425183356956693,
+        0.3930961239795244
+      ],
+      "scaler_scale": [
+        0.27779425840657096,
+        0.3501962544663931
+      ],
+      "coefficient": [
+        2.8168252465837527,
+        1.1150491012168036
+      ],
+      "intercept": -0.08110159090857051,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.061544615883604575
+    },
+    {
+      "split": "train",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6425183356956693,
+        0.3930961239795244
+      ],
+      "scaler_scale": [
+        0.27779425840657096,
+        0.3501962544663931
+      ],
+      "coefficient": [
+        2.8168252465837527,
+        1.1150491012168036
+      ],
+      "intercept": -0.08110159090857051,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.061544615883604575
+    },
+    {
+      "split": "lofo",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6485905633806107,
+        0.42284559288679313
+      ],
+      "scaler_scale": [
+        0.2659756312824325,
+        0.35393618272124466
+      ],
+      "coefficient": [
+        2.7522877825448435,
+        1.074876051598554
+      ],
+      "intercept": -0.09055349346337718,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.05466060583995211
+    },
+    {
+      "split": "lofo",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6480005836512581,
+        0.4059991085311104
+      ],
+      "scaler_scale": [
+        0.2846695225378911,
+        0.3614151226658188
+      ],
+      "coefficient": [
+        2.826547605075728,
+        1.1447019987119003
+      ],
+      "intercept": -0.19479383189929889,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.05773046922547663
+    },
+    {
+      "split": "lofo",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6354149481939029,
+        0.3674189546005534
+      ],
+      "scaler_scale": [
+        0.2761096426926562,
+        0.34597873599765094
+      ],
+      "coefficient": [
+        2.647862110952418,
+        1.101586276371324
+      ],
+      "intercept": -0.004475703190768136,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.06683658871639932
+    },
+    {
+      "split": "lofo",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6380672475569009,
+        0.3761208398996388
+      ],
+      "scaler_scale": [
+        0.2837694388714137,
+        0.33609176316637485
+      ],
+      "coefficient": [
+        2.934481055850133,
+        1.1587055924948466
+      ],
+      "intercept": -0.022096082303958348,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class",
+      "energy_threshold": 0.061544615883604575
+    }
+  ]
+}

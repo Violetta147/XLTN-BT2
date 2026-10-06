@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "logistic_voicing_boundary",
+      "png": "figures/logistic_voicing_boundary.png",
+      "svg": "figures/logistic_voicing_boundary.svg",
+      "sources": [
+        {
+          "path": "results\\logistic_voicing_predictions.csv",
+          "sha256": "81ad2d4238193b47a5794ebc1367fc20f64911ea3704c76610b4d212de7ec5d5"
+        }
+      ],
+      "caption_vi": "Đường biên logistic dùng hai đặc trưng đã có, fit trongfold.",
+      "limits_vi": "Không thêmfeature hoặc chọnC/threshold bằngtest; score chưacalibrated vàscatterframechồngnhau.",
+      "generator": "logistic_voicing_experiment.py",
+      "generator_sha256": "7453e4760144c9585f1b7b35f6040d0672f2bd4f5d95e609755c364908dc2fd8",
+      "command": "python research_workbench_2026_10_06/logistic_voicing_experiment.py"
+    },
+    {
+      "name": "logistic_voicing_lofo",
+      "png": "figures/logistic_voicing_lofo.png",
+      "svg": "figures/logistic_voicing_lofo.svg",
+      "sources": [
+        {
+          "path": "results\\logistic_voicing_metrics.csv",
+          "sha256": "a2167d8a116112d7c27af40449b72df15ccff8b87739aaa9fe7293578a33aeee"
+        }
+      ],
+      "caption_vi": "Held-file classification và file-statMAPE cùngđượcbáo.",
+      "limits_vi": "Metric3GTkhôngxácminhpitchmỗiUV/Vframe; chỉ4file nênthăm dò.",
+      "generator": "logistic_voicing_experiment.py",
+      "generator_sha256": "7453e4760144c9585f1b7b35f6040d0672f2bd4f5d95e609755c364908dc2fd8",
+      "command": "python research_workbench_2026_10_06/logistic_voicing_experiment.py"
+    }
+  ]
+}
