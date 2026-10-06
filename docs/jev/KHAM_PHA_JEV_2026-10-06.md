@@ -66,4 +66,3 @@ Jev phù hợp để rà một câu giải thích có vượt số liệu không
 Agent vẫn chịu trách nhiệm đọc notebook, tính metric, kiểm tra format GT, giữ split train/test, xác minh source/output và viết lời giải A tới Z. Người dùng có thể xem chính xác Jev đã được hỏi gì, không cần suy đoán từ phần tóm tắt.
 
 Xem [hướng dẫn từng trường hợp](HUONG_DAN_JEV.md), [input/output nguyên vẹn](exploration_runs_2026-10-06.json) và [validation](exploration_validation_2026-10-06.json).
-

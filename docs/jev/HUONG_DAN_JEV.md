@@ -315,4 +315,3 @@ Nguồn chính thức: [Custom instructions with AGENTS.md](https://learn.chatgp
 - [Đối chiếu LAB và số đếm bằng code](source_audit_2026-10-06.json).
 
 Các resource và schema là snapshot ngày 2026-10-06. Kiểm tra khả năng đang cung cấp khi bắt đầu phiên khác, không xem snapshot là bảo đảm kết nối còn hoạt động.
-
