@@ -1,0 +1,24 @@
+{
+  "figures": [
+    {
+      "name": "mask_vote_changes",
+      "png": "figures/mask_vote_changes.png",
+      "svg": "figures/mask_vote_changes.svg",
+      "sources": [
+        {
+          "path": "results\\mask_vote_changed_frames.csv",
+          "sha256": "42aed55139868a14432f37c0a25f716a89a2215a5468ba69e40aa9c86b051b3d"
+        },
+        {
+          "path": "results\\mask_vote_changes_summary.csv",
+          "sha256": "1711156fd8642c6fabf252a0c0172de9dbf76978b4f0c8ae99131d30bea24b53"
+        }
+      ],
+      "caption_vi": "Khung hữu thanh được thêm/bỏ bởi majority3, báo theo nhãn thật.",
+      "limits_vi": "Các frame chồng nhau; đây là thay đổi decision, không chứng minh cao độ các khung thêm đã đúng.",
+      "generator": "mask_vote_experiment.py",
+      "generator_sha256": "fcdefb3eaa1cd49dc95537fb60eb9ac97055d134f5606a93bde1537e8045f384",
+      "command": "python research_workbench_2026_10_06/mask_vote_experiment.py"
+    }
+  ]
+}

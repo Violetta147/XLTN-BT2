@@ -1,0 +1,15 @@
+split,label,boundary,change,frames
+lofo,uv,False,added,1
+lofo,uv,False,removed,1
+lofo,uv,True,removed,3
+lofo,v,False,added,15
+lofo,v,False,removed,3
+lofo,v,True,added,2
+lofo,v,True,removed,2
+train,uv,False,added,1
+train,uv,False,removed,2
+train,uv,True,removed,1
+train,v,False,added,16
+train,v,False,removed,4
+train,v,True,added,2
+train,v,True,removed,4
