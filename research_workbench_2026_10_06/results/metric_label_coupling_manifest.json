@@ -1,0 +1,25 @@
+{
+  "figures": [
+    {
+      "name": "metric_label_coupling",
+      "png": "figures/metric_label_coupling.png",
+      "svg": "figures/metric_label_coupling.svg",
+      "sources": [
+        {
+          "path": "results\\label_variance_hysteresis.csv",
+          "sha256": "c527223c11c5bc51ba60233abd98668a753cbeba37e0ab532c586e520b076a11"
+        },
+        {
+          "path": "results\\nonv_estimate_context_changes.csv",
+          "sha256": "9cd965210abfcba936c603ddff57d756c2da1b1c4e2d3fd1cae5c8345289ca6b"
+        }
+      ],
+      "caption_vi": "Variance contribution và true-center-V subset tách metric gain do non-V estimates.",
+      "limits_vi": "Oracle dùng nhãn để phân tích, không triển khai; không có frameF0truth. Mixed boundary windows có thể chứa một phầnV.",
+      "generator": "metric_label_coupling.py",
+      "generator_sha256": "6d8351663ca7dc0283f7010ceca45d49942f6775886adedcbdfc6645ba41a259",
+      "command": "python research_workbench_2026_10_06/metric_label_coupling.py"
+    }
+  ],
+  "variance_identity_verified": true
+}

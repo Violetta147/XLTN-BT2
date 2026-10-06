@@ -1,0 +1,3 @@
+split,file,time_s,center_label,old_estimated_hz,new_estimated_hz,v_overlap_fraction_in_window,old_mask,new_mask,pitch_truth_known
+train,phone_F1.wav,1.6425,uv,71.60764485445534,247.0503494896952,0.0,True,True,False
+train,phone_F1.wav,1.6625,uv,82.78539903038642,240.54121803703455,0.0,True,True,False
