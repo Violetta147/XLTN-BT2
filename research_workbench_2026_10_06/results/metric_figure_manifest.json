@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "15_metric_identifiability",
+      "png": "figures/15_metric_identifiability.png",
+      "svg": "figures/15_metric_identifiability.svg",
+      "sources": [
+        {
+          "path": "results\\synthetic_metric_counterexample.csv",
+          "sha256": "6bffdf57bd3bfad4f351db6179af79c4a11ece85d54f2475a096dd91abe59008"
+        }
+      ],
+      "caption_vi": "Phản ví dụ tổng hợp: hoán vị F0 giữ mean/std/count nhưng đổi từng khung.",
+      "limits_vi": "Không phải số đo frame error của WAV thật; metric chính giữ nguyên.",
+      "generator": "metric_audit.py",
+      "generator_sha256": "ab243499435583ffb779a23fb2c7c6c1ece16a51b6e2ed099d66a151f35bd467",
+      "command": "python research_workbench_2026_10_06/metric_audit.py"
+    },
+    {
+      "name": "16_count_protocol",
+      "png": "figures/16_count_protocol.png",
+      "svg": "figures/16_count_protocol.svg",
+      "sources": [
+        {
+          "path": "results\\count_protocol_diagnostic.csv",
+          "sha256": "a884c06487970c7380339ea6a50e25ca8d95c3731e95356d52a0db30db68f0b2"
+        }
+      ],
+      "caption_vi": "So sánh count3GT với số V theo center-labels.",
+      "limits_vi": "Chỉ khi mỗi center-V đều có F0 hữu hạn; không phải bound cho mọi thuật toán, không chứng minh LAB sai.",
+      "generator": "metric_audit.py",
+      "generator_sha256": "ab243499435583ffb779a23fb2c7c6c1ece16a51b6e2ed099d66a151f35bd467",
+      "command": "python research_workbench_2026_10_06/metric_audit.py"
+    }
+  ]
+}

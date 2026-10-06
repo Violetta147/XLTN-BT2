@@ -1,0 +1,13 @@
+{
+  "scope": "Synthetic conceptual counterexample; not an error measurement on recorded speech",
+  "reference_mean_hz": 173.33333333333334,
+  "reference_std_hz_ddof0": 51.20763831912405,
+  "permuted_mean_hz": 173.33333333333334,
+  "permuted_std_hz_ddof0": 51.20763831912405,
+  "reference_count": 6,
+  "permuted_count": 6,
+  "file_stats_average_mape_percent": 0.0,
+  "synthetic_frame_mape_percent": 61.59090909090909,
+  "synthetic_frame_mae_hz": 93.33333333333333,
+  "synthetic_mean_absolute_cents": 983.772647454919
+}

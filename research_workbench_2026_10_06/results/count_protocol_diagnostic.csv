@@ -1,0 +1,5 @@
+file,v_frames,gt_count,center_v_minus_3gt,count_mape_if_perfect_center_v_and_finite_f0
+phone_F1.wav,153,148.0,5.0,3.3783783783783785
+phone_M1.wav,244,232.0,12.0,5.172413793103448
+studio_F1.wav,123,127.0,-4.0,3.1496062992125986
+studio_M1.wav,94,82.0,12.0,14.634146341463415

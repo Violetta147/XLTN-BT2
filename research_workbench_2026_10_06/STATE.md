@@ -15,7 +15,7 @@
 ## Hàng đợi
 
 - [x] H00: audit.py, H00_AUDIT_REPORT.md, results/audit_validation.json; 20 PNG/SVG, baseline khớp 1e-8, cache/labels khớp, 15 notebook giữ hash, poisoned scoring GT không đổi inference.
-- [ ] H00b: metric identifiability và count protocol mismatch; chỉ chẩn đoán, không đổi GT/metric.
+- [x] H00b: metric_audit.py, H00B_METRIC_REPORT.md, 2 PNG/SVG. Synthetic hoán vị: stats MAPE0%, frame MAPE61.5909%; không phải đo trên WAV.
 - [ ] Đọc/lưu Gemini critique, đối chiếu và bổ sung quyết định trước chạy.
 - [ ] Jev rà phạm vi một hoặc vài claim/chọn phương án khi còn ngữ nghĩa chưa rõ.
 - [ ] H10 YIN adapter: implementation + synthetic known-F0 checks + real training evaluation/LOFO, commit/push riêng.
