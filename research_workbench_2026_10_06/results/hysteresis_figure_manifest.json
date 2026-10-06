@@ -1,0 +1,40 @@
+{
+  "figures": [
+    {
+      "name": "hysteresis_selection",
+      "png": "figures/hysteresis_selection.png",
+      "svg": "figures/hysteresis_selection.svg",
+      "sources": [
+        {
+          "path": "results\\hysteresis_margin_choices.csv",
+          "sha256": "818376158032db1030a83e5c4f1b1c1fe6a8e06cb69d4017c37d4e90c3e7821e"
+        },
+        {
+          "path": "results\\hysteresis_metrics.csv",
+          "sha256": "e385b0fd8e7ed4feee12bdea2db5addea88d5142bb9b625a0751590de6656c8d"
+        }
+      ],
+      "caption_vi": "Margin sensitivity và nested evaluation của hysteresis.",
+      "limits_vi": "Selected LOFO dùng chọn margin; chỉ nested loại outerheld khỏi lựa chọn mới, n=4 vẫn exploratory.",
+      "generator": "hysteresis_experiment.py",
+      "generator_sha256": "82694c1a9f166d99398b76b71d1c729b6ee8d5258a686cd8d8aea3b4998fc4d4",
+      "command": "python research_workbench_2026_10_06/hysteresis_experiment.py"
+    },
+    {
+      "name": "hysteresis_nested_tradeoffs",
+      "png": "figures/hysteresis_nested_tradeoffs.png",
+      "svg": "figures/hysteresis_nested_tradeoffs.svg",
+      "sources": [
+        {
+          "path": "results\\hysteresis_metrics.csv",
+          "sha256": "e385b0fd8e7ed4feee12bdea2db5addea88d5142bb9b625a0751590de6656c8d"
+        }
+      ],
+      "caption_vi": "Recall/F1/SIL theo outerheld file.",
+      "limits_vi": "Không đánh đổi SIL/UV chỉ để đạt count3GT; raw labels và scoring giữ nguyên.",
+      "generator": "hysteresis_experiment.py",
+      "generator_sha256": "82694c1a9f166d99398b76b71d1c729b6ee8d5258a686cd8d8aea3b4998fc4d4",
+      "command": "python research_workbench_2026_10_06/hysteresis_experiment.py"
+    }
+  ]
+}

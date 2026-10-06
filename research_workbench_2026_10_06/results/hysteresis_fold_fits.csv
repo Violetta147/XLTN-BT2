@@ -1,0 +1,13 @@
+split,held_file,fit_files,pitch_threshold,energy_threshold
+train,phone_F1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,0.6840817762403983,0.061544615883604575
+train,phone_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,0.6840817762403983,0.061544615883604575
+train,studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,0.6840817762403983,0.061544615883604575
+train,studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,0.6840817762403983,0.061544615883604575
+lofo,phone_F1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav,0.6349906966527329,0.05466060583995211
+lofo,phone_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav,0.695147773994129,0.05773046922547663
+lofo,studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav,0.660405580237204,0.06683658871639932
+lofo,studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav,0.695147773994129,0.061544615883604575
+nested,phone_F1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav,0.6349906966527329,0.05466060583995211
+nested,phone_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav,0.695147773994129,0.05773046922547663
+nested,studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav,0.660405580237204,0.06683658871639932
+nested,studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav,0.695147773994129,0.061544615883604575

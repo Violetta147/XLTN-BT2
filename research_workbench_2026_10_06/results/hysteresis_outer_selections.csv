@@ -1,0 +1,13 @@
+split,held_file,margin,selection_files
+train,phone_F1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+train,phone_M1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+train,studio_F1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+train,studio_M1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+lofo,phone_F1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+lofo,phone_M1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+lofo,studio_F1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+lofo,studio_M1.wav,0.06,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+nested,phone_F1.wav,0.06,phone_M1.wav|studio_F1.wav|studio_M1.wav
+nested,phone_M1.wav,0.06,phone_F1.wav|studio_F1.wav|studio_M1.wav
+nested,studio_F1.wav,0.04,phone_F1.wav|phone_M1.wav|studio_M1.wav
+nested,studio_M1.wav,0.02,phone_F1.wav|phone_M1.wav|studio_F1.wav

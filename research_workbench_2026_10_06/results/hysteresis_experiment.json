@@ -1,0 +1,205 @@
+{
+  "final_margin": 0.06,
+  "registry": [
+    0.0,
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.12
+  ],
+  "final_gate": {
+    "checks": {
+      "train_mape_relative_10_percent": true,
+      "lofo_mape_relative_5_percent": true,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true
+    },
+    "eligible": true,
+    "nested_status": "Final selected LOFO reused for selection; nested score reported separately.",
+    "champion_promoted": false
+  },
+  "nested_gate": {
+    "checks": {
+      "train_mape_relative_10_percent": true,
+      "lofo_mape_relative_5_percent": true,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true
+    },
+    "eligible": true,
+    "nested_status": "Outer held file excluded from margin selection; inner held-file fits only other two.",
+    "champion_promoted": false
+  },
+  "eligible": true,
+  "promoted": false,
+  "test_read": false,
+  "toy_transition_pass": true,
+  "zero_margin_matches_champion": true,
+  "poisoned_gt_inference_invariant": true,
+  "nested_leakage_assertions_pass": true,
+  "summaries": {
+    "final": {
+      "accepted": {
+        "train": {
+          "average_mape": 6.17796777191857,
+          "F0mean_mape": 0.583561698694036,
+          "F0std_mape": 11.307828831831527,
+          "F0num_mape": 6.642512785230149,
+          "F0mean_abs_error": 0.854435759418017,
+          "F0std_abs_error": 2.331584105201392,
+          "macro_f1": 0.8503706832465335,
+          "balanced_accuracy": 0.9002145356590191,
+          "recall_v": 0.869122970336271,
+          "recall_uv": 0.9313061009817671,
+          "TP": 530,
+          "TN": 167,
+          "FP": 13,
+          "FN": 84,
+          "false_voiced_sil": 1,
+          "F0num": 544
+        },
+        "lofo": {
+          "average_mape": 7.279236147400932,
+          "F0mean_mape": 1.0557123244608002,
+          "F0std_mape": 14.666099413703003,
+          "F0num_mape": 6.115896704038993,
+          "F0mean_abs_error": 1.8402465429841364,
+          "F0std_abs_error": 3.0132973047556737,
+          "macro_f1": 0.8413979679771644,
+          "balanced_accuracy": 0.8931490327894082,
+          "recall_v": 0.8658615298144405,
+          "recall_uv": 0.9204365357643759,
+          "TP": 527,
+          "TN": 164,
+          "FP": 16,
+          "FN": 87,
+          "false_voiced_sil": 3,
+          "F0num": 546
+        }
+      },
+      "candidate": {
+        "train": {
+          "average_mape": 2.697086052020179,
+          "F0mean_mape": 0.4969037238432073,
+          "F0std_mape": 3.7458941098790035,
+          "F0num_mape": 3.8484603223383247,
+          "F0mean_abs_error": 0.802208885388275,
+          "F0std_abs_error": 0.766816992580166,
+          "macro_f1": 0.867187636807528,
+          "balanced_accuracy": 0.9081572033496783,
+          "recall_v": 0.8926637521879025,
+          "recall_uv": 0.9236506545114539,
+          "TP": 548,
+          "TN": 165,
+          "FP": 15,
+          "FN": 66,
+          "false_voiced_sil": 1,
+          "F0num": 564
+        },
+        "lofo": {
+          "average_mape": 6.182752566341011,
+          "F0mean_mape": 0.8738099630273253,
+          "F0std_mape": 13.582538697496204,
+          "F0num_mape": 4.091909038499503,
+          "F0mean_abs_error": 1.6012493569062336,
+          "F0std_abs_error": 2.7564956518810835,
+          "macro_f1": 0.8610215895457478,
+          "balanced_accuracy": 0.902315557342551,
+          "recall_v": 0.8918500253910395,
+          "recall_uv": 0.9127810892940627,
+          "TP": 547,
+          "TN": 162,
+          "FP": 18,
+          "FN": 67,
+          "false_voiced_sil": 3,
+          "F0num": 568
+        }
+      }
+    },
+    "nested": {
+      "accepted": {
+        "train": {
+          "average_mape": 6.17796777191857,
+          "F0mean_mape": 0.583561698694036,
+          "F0std_mape": 11.307828831831527,
+          "F0num_mape": 6.642512785230149,
+          "F0mean_abs_error": 0.854435759418017,
+          "F0std_abs_error": 2.331584105201392,
+          "macro_f1": 0.8503706832465335,
+          "balanced_accuracy": 0.9002145356590191,
+          "recall_v": 0.869122970336271,
+          "recall_uv": 0.9313061009817671,
+          "TP": 530,
+          "TN": 167,
+          "FP": 13,
+          "FN": 84,
+          "false_voiced_sil": 1,
+          "F0num": 544
+        },
+        "lofo": {
+          "average_mape": 7.279236147400932,
+          "F0mean_mape": 1.0557123244608002,
+          "F0std_mape": 14.666099413703003,
+          "F0num_mape": 6.115896704038993,
+          "F0mean_abs_error": 1.8402465429841364,
+          "F0std_abs_error": 3.0132973047556737,
+          "macro_f1": 0.8413979679771644,
+          "balanced_accuracy": 0.8931490327894082,
+          "recall_v": 0.8658615298144405,
+          "recall_uv": 0.9204365357643759,
+          "TP": 527,
+          "TN": 164,
+          "FP": 16,
+          "FN": 87,
+          "false_voiced_sil": 3,
+          "F0num": 546
+        }
+      },
+      "candidate": {
+        "train": {
+          "average_mape": 2.697086052020179,
+          "F0mean_mape": 0.4969037238432073,
+          "F0std_mape": 3.7458941098790035,
+          "F0num_mape": 3.8484603223383247,
+          "F0mean_abs_error": 0.802208885388275,
+          "F0std_abs_error": 0.766816992580166,
+          "macro_f1": 0.867187636807528,
+          "balanced_accuracy": 0.9081572033496783,
+          "recall_v": 0.8926637521879025,
+          "recall_uv": 0.9236506545114539,
+          "TP": 548,
+          "TN": 165,
+          "FP": 15,
+          "FN": 66,
+          "false_voiced_sil": 1,
+          "F0num": 564
+        },
+        "lofo": {
+          "average_mape": 6.670683421127575,
+          "F0mean_mape": 0.9900973675254594,
+          "F0std_mape": 14.123437366095999,
+          "F0num_mape": 4.898515529761267,
+          "F0mean_abs_error": 1.7508369269829167,
+          "F0std_abs_error": 2.9173822195405554,
+          "macro_f1": 0.8541513469408085,
+          "balanced_accuracy": 0.8986397227118643,
+          "recall_v": 0.884498356129666,
+          "recall_uv": 0.9127810892940627,
+          "TP": 544,
+          "TN": 162,
+          "FP": 18,
+          "FN": 70,
+          "false_voiced_sil": 3,
+          "F0num": 565
+        }
+      }
+    }
+  },
+  "code_sha256": "82694c1a9f166d99398b76b71d1c729b6ee8d5258a686cd8d8aea3b4998fc4d4"
+}
