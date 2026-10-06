@@ -1,0 +1,53 @@
+{
+  "figures": [
+    {
+      "name": "mpm_synthetic_accuracy",
+      "png": "figures/mpm_synthetic_accuracy.png",
+      "svg": "figures/mpm_synthetic_accuracy.svg",
+      "sources": [
+        {
+          "path": "results\\mpm_synthetic.csv",
+          "sha256": "8217b86ccd9fb01c3c38fa0d1b1193907143b6dee78942859c68e818c53bcd27"
+        }
+      ],
+      "caption_vi": "Pitch error có điều kiện trên synthetic frame được trả F0; coverage trong CSV riêng.",
+      "limits_vi": "Không thay thế WAV thật; NaN/abstentions được báo riêng, không tính như lỗi0.",
+      "generator": "estimator_experiment.py",
+      "generator_sha256": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6",
+      "command": "python research_workbench_2026_10_06/estimator_experiment.py mpm"
+    },
+    {
+      "name": "mpm_lofo_metrics",
+      "png": "figures/mpm_lofo_metrics.png",
+      "svg": "figures/mpm_lofo_metrics.svg",
+      "sources": [
+        {
+          "path": "results\\mpm_metrics_per_file.csv",
+          "sha256": "1875755aa41ee6d938ac9d8f60a60bea10501c8cb5ff6d427f7f51de6239f088"
+        }
+      ],
+      "caption_vi": "Các thành phần MAPE LOFO: accepted ACF/path, ACF single peak, estimator mới.",
+      "limits_vi": "Cùng voiced mask/RMS/median3. Chỉ bốn file; không có pitch GT từng khung.",
+      "generator": "estimator_experiment.py",
+      "generator_sha256": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6",
+      "command": "python research_workbench_2026_10_06/estimator_experiment.py mpm"
+    },
+    {
+      "name": "mpm_lofo_contours",
+      "png": "figures/mpm_lofo_contours.png",
+      "svg": "figures/mpm_lofo_contours.svg",
+      "sources": [
+        {
+          "path": "results\\mpm_lofo_contours.csv",
+          "sha256": "82a048ab4c30766848e74fa94b46c3c488816cfdf5c56a92c588fb9818002553"
+        }
+      ],
+      "caption_vi": "F0 ước lượng theo thời gian ở held file.",
+      "limits_vi": "Không phải đường truth, không kết luận contour mượt là đúng.",
+      "generator": "estimator_experiment.py",
+      "generator_sha256": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6",
+      "command": "python research_workbench_2026_10_06/estimator_experiment.py mpm"
+    }
+  ],
+  "fold_fit_csv": "results\\mpm_fold_fits.csv"
+}

@@ -40,7 +40,7 @@ def synthetic_evaluate(method):
     rows = []
     for fs, truth, seed, kind, snr, frame in synthetic_signals():
         estimate, strength = estimator(frame, fs)
-        assert np.isfinite(estimate) and 70 <= estimate <= 400
+        assert np.isnan(estimate) or 70 <= estimate <= 400
         rows.append({'method': method, 'fs': fs, 'truth_hz': truth, 'phase_seed': seed, 'signal_kind': kind,
                      'snr_db': snr, 'estimate_hz': estimate, 'strength': strength,
                      'absolute_cents': abs(1200 * np.log2(estimate / truth)),
@@ -59,10 +59,13 @@ def synthetic_evaluate(method):
         checks['fft_direct_difference_max_error'] = float(abs(difference - direct).max())
         assert checks['fft_direct_difference_max_error'] < 1e-10
     clean = frame[(frame.signal_kind.isin(['sine', 'harmonic'])) & np.isinf(frame.snr_db) & frame.truth_hz.between(80, 380)]
+    checks['synthetic_cases'] = len(frame)
+    checks['synthetic_abstentions'] = int(frame.estimate_hz.isna().sum())
+    checks['clean_interior_coverage'] = float(clean.estimate_hz.notna().mean())
     checks['clean_interior_median_cents'] = float(clean.absolute_cents.median())
     checks['clean_interior_p95_cents'] = float(clean.absolute_cents.quantile(.95))
     assert all(checks[k] for k in ('silence_returns_nan', 'constant_returns_nan', 'gain_invariance', 'dc_invariance'))
-    assert checks['clean_interior_median_cents'] < 5 and checks['clean_interior_p95_cents'] < 15
+    assert checks['clean_interior_coverage'] == 1 and checks['clean_interior_median_cents'] < 5 and checks['clean_interior_p95_cents'] < 15
     return frame, checks
 
 
@@ -103,6 +106,9 @@ def run(method):
     started = time.perf_counter()
     synthetic, checks = synthetic_evaluate(method)
     p_synthetic = audit.csv_write(method + '_synthetic.csv', synthetic)
+    coverage = synthetic.groupby(['signal_kind', 'snr_db'], dropna=False).agg(cases=('estimate_hz', 'size'), answered=('estimate_hz', 'count'), conditional_median_cents=('absolute_cents', 'median')).reset_index()
+    coverage['coverage'] = coverage.answered / coverage.cases
+    audit.csv_write(method + '_synthetic_coverage.csv', coverage)
     audit.json_write(HERE / 'results' / (method + '_synthetic_validation.json'), checks)
     items = core.load_training()
     config = json.loads((core.RESULTS / 'frozen_config.json').read_text(encoding='utf-8'))['models']['ACF']['config']
@@ -152,7 +158,7 @@ def run(method):
         plot = group.groupby('snr_db').absolute_cents.median()
         axes[1].plot(plot.index, plot, 'o-', label=kind)
     axes[1].set(xlabel='Injected SNR (dB)', ylabel='Median absolute cents', title='Noise stress: simulated, not natural speech')
-    audit.save_figure(method + '_synthetic_accuracy', fig, [p_synthetic], 'Pitch error trên tín hiệu tổng hợp có F0 biết trước.', 'Không thay thế kết quả trên WAV thật; đây là kiểm tra thuật toán trong25ms.')
+    audit.save_figure(method + '_synthetic_accuracy', fig, [p_synthetic], 'Pitch error có điều kiện trên synthetic frame được trả F0; coverage trong CSV riêng.', 'Không thay thế WAV thật; NaN/abstentions được báo riêng, không tính như lỗi0.')
     fig, axes = audit.plt.subplots(1, 3, figsize=(12, 4))
     lofo = per_file[per_file.split == 'lofo']
     for ax, component in zip(axes, ('F0mean_mape', 'F0std_mape', 'F0num_mape')):
@@ -184,6 +190,7 @@ def run(method):
               'Train-only; same frame25/hop10, ACF mask/RMS fold fit, median3. Fixed parameter, không tune/test. Accepted champion giữ nguyên.', '',
               '## Số đo', '', audit.markdown_table(summary_table), '',
               '## Validation synthetic', '', '~~~json', json.dumps(checks, indent=2), '~~~', '',
+              'Synthetic error là conditional trên cases có estimate. Coverage được báo riêng; clean interior yêu cầu100% coverage theo gate đăng ký.', '', audit.markdown_table(coverage), '',
               '## Gate đăng ký trước', '', '~~~json', json.dumps(decision, indent=2), '~~~', '',
               'Không có bước chọn tham số bên trong cho model fixed này, nên LOFO là đánh giá held-file; không tạo thêm nested score bằng việc chạy lại giống nhau. Với model tune tiếp theo, phải nested selection thật. Dữ liệu train đã dùng chọn champion trước đây, n=4 nên kết quả thăm dò.', '',
               '## Tái lập', '', '~~~powershell', f'python research_workbench_2026_10_06/estimator_experiment.py {method}', '~~~', '',

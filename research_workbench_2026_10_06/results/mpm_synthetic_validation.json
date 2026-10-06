@@ -1,0 +1,11 @@
+{
+  "silence_returns_nan": true,
+  "constant_returns_nan": true,
+  "gain_invariance": true,
+  "dc_invariance": true,
+  "synthetic_cases": 1600,
+  "synthetic_abstentions": 12,
+  "clean_interior_coverage": 1.0,
+  "clean_interior_median_cents": 0.008496768760039314,
+  "clean_interior_p95_cents": 0.0893245630290476
+}

@@ -14,3 +14,7 @@
 - Hoàn tất số liệu, kiểm tra và 20 figure PNG/SVG; bước viết Markdown dùng pandas.to_markdown bị lỗi vì môi trường không có optional dependency tabulate.
 - Sửa bước xuất report bằng hàm Markdown table nhỏ dùng thư viện có sẵn; không cài thêm dependency và không đổi số liệu hoặc biểu đồ.
 - Chạy lại để manifest code hash, figures và report cùng một phiên bản.
+# H11 synthetic validation stop
+
+Lần đầu `python research_workbench_2026_10_06/estimator_experiment.py mpm` dừng ở assertion đòi mọi noisy/synthetic frame phải có pitch hữu hạn. NSDF numerical checks đã pass1e-10. MPM thiết kế trả NaN khi không có positive-lobe peak hợp lệ, nên không ép fallback pitch để làm đẹp coverage. Chẩn đoán abstention theo case trước sửa harness; clean interior gate vẫn giữ và phải có đủ coverage. Bổ sung coverage và lỗi có điều kiện trên frame được trả lời, không gọi missing estimates là pitch đúng.
+

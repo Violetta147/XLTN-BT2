@@ -1,0 +1,10 @@
+{
+  "fft_direct_nsdf_max_errors": [
+    1.554312234475219e-14,
+    4.5075054799781356e-14
+  ],
+  "nsdf_zero_lag_one": true,
+  "bounded": true,
+  "zero_lobe_ignored": true,
+  "unfinished_lobe_without_local_peak_ignored": true
+}
