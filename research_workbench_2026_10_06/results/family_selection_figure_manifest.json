@@ -1,0 +1,28 @@
+{
+  "figures": [
+    {
+      "name": "family_selection_nested",
+      "png": "figures/family_selection_nested.png",
+      "svg": "figures/family_selection_nested.svg",
+      "sources": [
+        {
+          "path": "results\\family_selection_metrics.csv",
+          "sha256": "d0fda8db063eb5c1a96df3edf5dd1d11a3f11c978e9aefe56a67edf538819e4b"
+        },
+        {
+          "path": "results\\family_selection_inner_summary.csv",
+          "sha256": "d0a54d89d605bd0d2b0002ebebde61f8fe39d68114053110e02dbd93d95a5d32"
+        },
+        {
+          "path": "results\\family_selection_choices.csv",
+          "sha256": "085df7556e0e2487c1340f805548d935faf3da122896db9659c492b2d1b97297"
+        }
+      ],
+      "caption_vi": "Joint selection giữaACF/hysteresis/logistic vànestedheld-file evaluation.",
+      "limits_vi": "Registryđềxuấtsaukhixemtraindata; nestedkhôngxóahistory, n=4, khôngphảichứngminhgeneralization.",
+      "generator": "family_selection.py",
+      "generator_sha256": "16e7315ba1b70408d11289c4ae8dc44aa47a159abea52af71bd20ee12fccdf2f",
+      "command": "python research_workbench_2026_10_06/family_selection.py"
+    }
+  ]
+}

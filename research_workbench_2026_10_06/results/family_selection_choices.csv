@@ -1,0 +1,13 @@
+split,held_file,option_id,selection_files,fit_files
+train,phone_F1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+train,phone_M1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+train,studio_F1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+train,studio_M1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav
+lofo,phone_F1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav
+lofo,phone_M1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav
+lofo,studio_F1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav
+lofo,studio_M1.wav,logistic_2D_C1,phone_F1.wav|phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav
+nested,phone_F1.wav,hysteresis_0.06,phone_M1.wav|studio_F1.wav|studio_M1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav
+nested,phone_M1.wav,logistic_2D_C1,phone_F1.wav|studio_F1.wav|studio_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav
+nested,studio_F1.wav,hysteresis_0.04,phone_F1.wav|phone_M1.wav|studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav
+nested,studio_M1.wav,hysteresis_0.02,phone_F1.wav|phone_M1.wav|studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav

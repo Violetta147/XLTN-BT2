@@ -1,0 +1,389 @@
+{
+  "registry": [
+    {
+      "id": "accepted_ACF",
+      "kind": "acf",
+      "margin": 0.0
+    },
+    {
+      "id": "hysteresis_0.02",
+      "kind": "hysteresis",
+      "margin": 0.02
+    },
+    {
+      "id": "hysteresis_0.04",
+      "kind": "hysteresis",
+      "margin": 0.04
+    },
+    {
+      "id": "hysteresis_0.06",
+      "kind": "hysteresis",
+      "margin": 0.06
+    },
+    {
+      "id": "hysteresis_0.08",
+      "kind": "hysteresis",
+      "margin": 0.08
+    },
+    {
+      "id": "hysteresis_0.12",
+      "kind": "hysteresis",
+      "margin": 0.12
+    },
+    {
+      "id": "logistic_2D_C1",
+      "kind": "logistic",
+      "margin": 0.0
+    }
+  ],
+  "final_option": {
+    "id": "logistic_2D_C1",
+    "kind": "logistic",
+    "margin": 0.0
+  },
+  "decisions": {
+    "lofo": {
+      "checks": {
+        "train_mape_relative_10_percent": true,
+        "lofo_mape_relative_5_percent": true,
+        "lofo_f1_drop_at_most_01": true,
+        "lofo_recall_v_drop_at_most_01": true,
+        "lofo_sil_increase_at_most_1": true,
+        "lofo_no_file_mape_worse_by_over_2pp": true,
+        "lofo_phone_f1_std_not_worse": true
+      },
+      "eligible": true,
+      "nested_status": "Final option selected using these LOFO cases; optimistic selection score",
+      "champion_promoted": false
+    },
+    "nested": {
+      "checks": {
+        "train_mape_relative_10_percent": true,
+        "lofo_mape_relative_5_percent": false,
+        "lofo_f1_drop_at_most_01": true,
+        "lofo_recall_v_drop_at_most_01": true,
+        "lofo_sil_increase_at_most_1": true,
+        "lofo_no_file_mape_worse_by_over_2pp": true,
+        "lofo_phone_f1_std_not_worse": true
+      },
+      "eligible": false,
+      "nested_status": "Joint shortlist innerLOFO choice with outerheld excluded",
+      "champion_promoted": false
+    }
+  },
+  "eligible": false,
+  "promoted": false,
+  "test_read": false,
+  "outer_held_excluded": true,
+  "exploration_history_not_erased": true,
+  "classifiers_by_fit_files": [
+    {
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6485905633806107,
+        0.42284559288679313
+      ],
+      "scaler_scale": [
+        0.2659756312824325,
+        0.35393618272124466
+      ],
+      "coefficient": [
+        2.7522877825448435,
+        1.074876051598554
+      ],
+      "intercept": -0.09055349346337718,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6480005836512581,
+        0.4059991085311104
+      ],
+      "scaler_scale": [
+        0.2846695225378911,
+        0.3614151226658188
+      ],
+      "coefficient": [
+        2.826547605075728,
+        1.1447019987119003
+      ],
+      "intercept": -0.19479383189929889,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6354149481939029,
+        0.3674189546005534
+      ],
+      "scaler_scale": [
+        0.2761096426926562,
+        0.34597873599765094
+      ],
+      "coefficient": [
+        2.647862110952418,
+        1.101586276371324
+      ],
+      "intercept": -0.004475703190768136,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6380672475569009,
+        0.3761208398996388
+      ],
+      "scaler_scale": [
+        0.2837694388714137,
+        0.33609176316637485
+      ],
+      "coefficient": [
+        2.934481055850133,
+        1.1587055924948466
+      ],
+      "intercept": -0.022096082303958348,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6425183356956693,
+        0.3930961239795244
+      ],
+      "scaler_scale": [
+        0.27779425840657096,
+        0.3501962544663931
+      ],
+      "coefficient": [
+        2.8168252465837527,
+        1.1150491012168036
+      ],
+      "intercept": -0.08110159090857051,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6598500491564748,
+        0.4570748041678123
+      ],
+      "scaler_scale": [
+        0.2704262606253615,
+        0.36884514441557
+      ],
+      "coefficient": [
+        2.7749239539335306,
+        1.1497133712438121
+      ],
+      "intercept": -0.2537819597958464,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.640971595970439,
+        0.39920457327197517
+      ],
+      "scaler_scale": [
+        0.25740757471261216,
+        0.35279248327701174
+      ],
+      "coefficient": [
+        2.4769608863806574,
+        1.0004576757871673
+      ],
+      "intercept": -0.003051449032897339,
+      "iterations": 7,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6449500450149338,
+        0.41225740122060134
+      ],
+      "scaler_scale": [
+        0.26952181599031466,
+        0.3368390431438275
+      ],
+      "coefficient": [
+        2.889846173684384,
+        1.0644397210163081
+      ],
+      "intercept": -0.03361262175333762,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6400866263764081,
+        0.3739348467384496
+      ],
+      "scaler_scale": [
+        0.2858066904258364,
+        0.36204969715152935
+      ],
+      "coefficient": [
+        2.4993229716743715,
+        1.1365703350759568
+      ],
+      "intercept": -0.07918938405861511,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6440650754209027,
+        0.38698767468707584
+      ],
+      "scaler_scale": [
+        0.2967757666662315,
+        0.34747326619799784
+      ],
+      "coefficient": [
+        2.917718423472362,
+        1.219695349466195
+      ],
+      "intercept": -0.15774312909634214,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    },
+    {
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "features": [
+        "ACF_score",
+        "relative_rms"
+      ],
+      "C": 1.0,
+      "score_threshold": 0.5,
+      "scaler_mean": [
+        0.6251866222348589,
+        0.32911744379123437
+      ],
+      "scaler_scale": [
+        0.2839157638957759,
+        0.3178703347095606
+      ],
+      "coefficient": [
+        2.8364709068379903,
+        1.2191600075532039
+      ],
+      "intercept": 0.12179659720448799,
+      "iterations": 8,
+      "sample_weights": "equal total per-file/per-V-UV-class"
+    }
+  ],
+  "code_sha256": {
+    "family_selection.py": "16e7315ba1b70408d11289c4ae8dc44aa47a159abea52af71bd20ee12fccdf2f",
+    "hysteresis_experiment.py": "82694c1a9f166d99398b76b71d1c729b6ee8d5258a686cd8d8aea3b4998fc4d4",
+    "logistic_voicing_experiment.py": "7453e4760144c9585f1b7b35f6040d0672f2bd4f5d95e609755c364908dc2fd8"
+  }
+}

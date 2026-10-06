@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-06T23:50:08.062189+00:00",
+  "method": "Read-only verification of saved folds, IDs, source hashes, metrics and figure provenance; no experiment rerun.",
+  "registry_options": 7,
+  "choices": 12,
+  "metrics_rows": 24,
+  "inner_trace_rows": 112,
+  "outer_held_excluded_verified": true,
+  "code_and_source_hashes_match": true,
+  "mean_average_mape": {
+    "train/accepted": 6.177967771918571,
+    "train/candidate": 5.119155909801816,
+    "lofo/accepted": 7.279236147400932,
+    "lofo/candidate": 5.470734815689077,
+    "nested/accepted": 7.279236147400932,
+    "nested/candidate": 7.374764910956569
+  },
+  "eligible": false,
+  "promoted": false,
+  "figures": [
+    {
+      "name": "family_selection_nested",
+      "width": 2856,
+      "height": 935,
+      "png_sha256": "cae4e480323b77f6c927b9cc204c9c3cd351625f20c81b3b46f9e11897fcc70a",
+      "svg_sha256": "87adade6ad99927f9cd5454deb1ad3203371d1f982d9a410213b7fcdb667f15f",
+      "sources_and_generator_hashes_match": true
+    }
+  ],
+  "test_read_during_recovery": false
+}
