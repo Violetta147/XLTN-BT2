@@ -4,6 +4,7 @@
 - Nếu máy local thiếu tài nguyên, có thể dùng Google Colab trong Chrome của người dùng cho thí nghiệm đã định; chuyển dữ liệu cần thiết trực tiếp, không qua Google Drive/G Drive. Giữ nguyên cách chia dữ liệu, cấu hình và metric, rồi lưu kết quả về working folder để đối chiếu và commit.
 - Không dùng deep learning. Chỉ dùng dữ liệu và thuật toán tín hiệu/học máy cổ điển cần thiết cho bài.
 - Mỗi thay đổi có một giả thuyết rõ ràng và một commit riêng. Không gộp thay đổi đường dẫn, thư viện, frame length, đặc trưng, ngưỡng và metric vào cùng một thí nghiệm.
+- Sau mỗi thay đổi đã kiểm tra, commit riêng và push ngay lên nhánh GitHub đang làm. Xác minh HEAD local khớp remote; không báo thành công nếu push chưa thành công. Không gộp vào main nếu người dùng chưa yêu cầu.
 - Trước mỗi thí nghiệm, ghi commit đang được chấp nhận làm điểm quay lại. Nếu kết quả không đạt tiêu chí đã định, giữ số liệu thất bại, quay về điểm đó và thử một giả thuyết khác trong commit mới; có thể hỏi Gemini kèm bằng chứng để tìm hướng mới. Không gộp nhiều hướng thử vào một commit.
 - Không dừng công việc để chờ câu trả lời cho thông tin bổ sung. Nếu người dùng vắng mặt, ghi rõ giả định hợp lý, tiếp tục mọi phần độc lập và chỉ hỏi khi thiếu dữ liệu khiến bước cần thiết thực sự không thể thực hiện.
 - Trước khi đổi thuật toán, lưu baseline local. Sau mỗi thay đổi, chạy cùng dữ liệu, cùng cách chia khung, cùng metric; ghi số liệu trước/sau và kết luận cải thiện hay suy giảm.
