@@ -1,0 +1,59 @@
+{
+  "figures": [
+    {
+      "name": "hysteresis_influence_std",
+      "png": "figures/hysteresis_influence_std.png",
+      "svg": "figures/hysteresis_influence_std.svg",
+      "sources": [
+        {
+          "path": "results\\hysteresis_influence_effects.csv",
+          "sha256": "36a795da90f66167f9b3d9c86dbe996eeac4d2cfb3224b995f7910d5e2cb78f0"
+        }
+      ],
+      "caption_vi": "Tách thêm khung và tái tính F0 trong voiced run.",
+      "limits_vi": "Append-only là counterfactual diagnostic dùng estimate, không deploy và không biết pitch thật từng frame.",
+      "generator": "hysteresis_influence.py",
+      "generator_sha256": "e6acd8a1508dc0080ee4693d440ae4d37d78bfc033adf797ce86389734967993",
+      "command": "python research_workbench_2026_10_06/hysteresis_influence.py"
+    },
+    {
+      "name": "hysteresis_threshold_events",
+      "png": "figures/hysteresis_threshold_events.png",
+      "svg": "figures/hysteresis_threshold_events.svg",
+      "sources": [
+        {
+          "path": "results\\hysteresis_influence_frames.csv",
+          "sha256": "ee3fe9fe0b8cdb3c3941b6d48cbd0ee3073e13ee94a589a76b6182ad321e3f18"
+        }
+      ],
+      "caption_vi": "Các khung được thêm khi score ở giữa onset/offset và run còn active.",
+      "limits_vi": "Score curve không phải probability; RMSfail vẫn reset, không cứu mọi onsetFN.",
+      "generator": "hysteresis_influence.py",
+      "generator_sha256": "e6acd8a1508dc0080ee4693d440ae4d37d78bfc033adf797ce86389734967993",
+      "command": "python research_workbench_2026_10_06/hysteresis_influence.py"
+    },
+    {
+      "name": "hysteresis_added_and_context",
+      "png": "figures/hysteresis_added_and_context.png",
+      "svg": "figures/hysteresis_added_and_context.svg",
+      "sources": [
+        {
+          "path": "results\\hysteresis_influence_labels.csv",
+          "sha256": "7622093568ed9b9713ee00b75c1fffddc7e8e689612f7178aa15271f61262ced"
+        },
+        {
+          "path": "results\\hysteresis_influence_effects.csv",
+          "sha256": "36a795da90f66167f9b3d9c86dbe996eeac4d2cfb3224b995f7910d5e2cb78f0"
+        }
+      ],
+      "caption_vi": "Hysteresis thêm frame và đổi context F0 ở frame cũ.",
+      "limits_vi": "Estimate thay đổi không đồng nghĩa error đã sửa đúng; chỉ V/UV/SIL được xác minh từ LAB.",
+      "generator": "hysteresis_influence.py",
+      "generator_sha256": "e6acd8a1508dc0080ee4693d440ae4d37d78bfc033adf797ce86389734967993",
+      "command": "python research_workbench_2026_10_06/hysteresis_influence.py"
+    }
+  ],
+  "reproduced_h12_metrics": true,
+  "selection_repeated": false,
+  "test_read": false
+}

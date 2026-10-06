@@ -39,3 +39,4 @@ Các artifacts từ analysis phải là số đo thật. Không tạo placeholde
 - RUN_LOG.md giữ lỗi nfft và tabulate của hai lần audit đầu; lần sau chạy thành công, không thay môi trường.
 - Voicing diagnostic: train FN84 gồm pitch-only76,both3,energy-only5;16interior+2boundary isolated mask gaps. Boundary FN chỉ5có previousV,13có followingV: hysteresis forward chỉ tác động offset, không cứu hết onset. Report VOICING_DIAGNOSTIC_REPORT.md,2PNG/SVG.
 - Google Translate milestoneH12 đã phát tiếng Việt, UI Dừng nghe xác nhận playback được yêu cầu; không thể xác nhận người dùng nghe được. Gemini reviewer02 vẫn chưa có text phản hồi; tiếp tục độc lập.
+- H12mechanism: train thêm18V+2UV+0SIL; nested thêm17V+2UV+0SIL. phone_F1train chỉ3sharedframes đổiF0, std26.5516→20.9325; append-only26.3657. Phần lớn std gain train này do path/median context, không chỉ thêmcount. LOFOphone_F1std29.2614→29.1584, gain nhỏ hơn; không suy diễn mọi frame đã đúng. HYSTERESIS_MECHANISM_REPORT.md,3PNG/SVG.
