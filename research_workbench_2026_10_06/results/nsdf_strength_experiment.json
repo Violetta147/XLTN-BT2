@@ -1,0 +1,103 @@
+{
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 6.17796777191857,
+        "F0mean_mape": 0.583561698694036,
+        "F0std_mape": 11.307828831831527,
+        "F0num_mape": 6.642512785230149,
+        "F0mean_abs_error": 0.854435759418017,
+        "F0std_abs_error": 2.331584105201392,
+        "macro_f1": 0.8503706832465335,
+        "balanced_accuracy": 0.9002145356590191,
+        "recall_v": 0.869122970336271,
+        "recall_uv": 0.9313061009817671,
+        "TP": 530,
+        "TN": 167,
+        "FP": 13,
+        "FN": 84,
+        "false_voiced_sil": 1,
+        "F0num": 544
+      },
+      "lofo": {
+        "average_mape": 7.279236147400932,
+        "F0mean_mape": 1.0557123244608002,
+        "F0std_mape": 14.666099413703003,
+        "F0num_mape": 6.115896704038993,
+        "F0mean_abs_error": 1.8402465429841364,
+        "F0std_abs_error": 3.0132973047556737,
+        "macro_f1": 0.8413979679771644,
+        "balanced_accuracy": 0.8931490327894082,
+        "recall_v": 0.8658615298144405,
+        "recall_uv": 0.9204365357643759,
+        "TP": 527,
+        "TN": 164,
+        "FP": 16,
+        "FN": 87,
+        "false_voiced_sil": 3,
+        "F0num": 546
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 5.088628973933049,
+        "F0mean_mape": 0.4378540455791552,
+        "F0std_mape": 8.185520090989842,
+        "F0num_mape": 6.642512785230149,
+        "F0mean_abs_error": 0.5402509416191528,
+        "F0std_abs_error": 1.6547068609378552,
+        "macro_f1": 0.8503706832465335,
+        "balanced_accuracy": 0.9002145356590191,
+        "recall_v": 0.869122970336271,
+        "recall_uv": 0.9313061009817671,
+        "TP": 530,
+        "TN": 167,
+        "FP": 13,
+        "FN": 84,
+        "false_voiced_sil": 1,
+        "F0num": 544
+      },
+      "lofo": {
+        "average_mape": 7.207656605125675,
+        "F0mean_mape": 0.9927973814764468,
+        "F0std_mape": 14.514275729861588,
+        "F0num_mape": 6.115896704038993,
+        "F0mean_abs_error": 1.7034191018254745,
+        "F0std_abs_error": 2.961852024841356,
+        "macro_f1": 0.8413979679771644,
+        "balanced_accuracy": 0.8931490327894082,
+        "recall_v": 0.8658615298144405,
+        "recall_uv": 0.9204365357643759,
+        "TP": 527,
+        "TN": 164,
+        "FP": 16,
+        "FN": 87,
+        "false_voiced_sil": 3,
+        "F0num": 546
+      }
+    }
+  },
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": true,
+      "lofo_mape_relative_5_percent": false,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true
+    },
+    "eligible": false,
+    "nested_status": "No newly tuned parameter: fixed candidate evaluated by LOFO; no distinct inner selection estimate.",
+    "champion_promoted": false
+  },
+  "candidate_f0_unchanged": true,
+  "voiced_mask_unchanged": true,
+  "cached_acf_strength_verified": true,
+  "poisoned_gt_inference_invariant": true,
+  "train_only": true,
+  "code_sha256": {
+    "nsdf_strength_experiment.py": "b8066834a10ec210fa9ddaf794749177a6847cf3a2781e8a75e5736dfad553c9",
+    "mpm_estimator.py": "91e06d4e59b7bd1e0ae9d4553c7b2d359401ece62dfe04b3d6416d6055aa5501"
+  }
+}

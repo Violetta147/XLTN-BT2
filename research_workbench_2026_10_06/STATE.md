@@ -21,7 +21,8 @@
 - [x] H10 YIN adapter: 1600 synthetic cases, FFT/direct error4.3e-13, clean p95 .475cents; train9.3674%, LOFO12.2374% AvgMAPE. Gate FAIL, champion không đổi. Report YIN_EXPERIMENT_REPORT.md; 3 PNG/SVG.
 - [x] H11 NSDF/MPM: numerical error<4.6e-14; 1600synthetic,12abstentions ở70Hz+noise, clean interior100%coverage/p95.0893cents. Train6.9604%, LOFO8.1883% AvgMAPE, gateFAIL. Report MPM_EXPERIMENT_REPORT.md,3PNG/SVG.
 - [x] H12 hysteresis: registry0/.02/.04/.06/.08/.12, final margin.06; train2.697086%, selectedLOFO6.182753%, nested6.670683%. GatesPASS, provisional eligible, chưa promote/freeze/test. Nested recallV.884498/F1.854151/SIL3 vs accepted.865862/.841398/3. HYSTERESIS_EXPERIMENT_REPORT.md,2PNG/SVG.
-- [ ] H13 NSDF candidates + giữ path: một yếu tố candidate strength; đăng ký trước chạy.
+- [x] H13 cùngACF candidates/path, chỉNSDFstrength: train5.0886%, LOFO7.2077%, cải thiệnLOFO<5% nên gateFAIL; không gộpH12. NSDF_STRENGTH_REPORT.md,2PNG/SVG.
+- [ ] H14 mask majority3: kiểm tra các isolated gaps, cùngRMS/path; đăng ký trước chạy.
 - [ ] Robustness/stability/stratification/threshold plots.
 - [ ] Freeze trước test; test mô tả một lượt, không tune.
 - [ ] Figure manifests, final reports/gallery/repro commands, validation.

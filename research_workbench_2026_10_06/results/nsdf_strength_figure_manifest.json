@@ -1,0 +1,40 @@
+{
+  "figures": [
+    {
+      "name": "nsdf_strength_diagnostic",
+      "png": "figures/nsdf_strength_diagnostic.png",
+      "svg": "figures/nsdf_strength_diagnostic.svg",
+      "sources": [
+        {
+          "path": "results\\nsdf_candidate_strengths.csv",
+          "sha256": "d44fafbfd7f2345c6ceca6190fcd81866ff58a120cdbac11d11a1605fcfa468c"
+        },
+        {
+          "path": "results\\nsdf_strength_metrics.csv",
+          "sha256": "d558884c6c248de77532346c8509c851261ab04737f58dd6256f2019e1f6aa0c"
+        }
+      ],
+      "caption_vi": "Cùng lag candidates: thay energy normalization của strength và đo LOFO.",
+      "limits_vi": "Không có F0 truth từng khung; score khác nhau không chứng minh pitch đúng.",
+      "generator": "nsdf_strength_experiment.py",
+      "generator_sha256": "b8066834a10ec210fa9ddaf794749177a6847cf3a2781e8a75e5736dfad553c9",
+      "command": "python research_workbench_2026_10_06/nsdf_strength_experiment.py"
+    },
+    {
+      "name": "nsdf_strength_contours",
+      "png": "figures/nsdf_strength_contours.png",
+      "svg": "figures/nsdf_strength_contours.svg",
+      "sources": [
+        {
+          "path": "results\\nsdf_strength_contours.csv",
+          "sha256": "32ea76f96f13da57bc0f59f58d7f6914fc0601616ea3b4e2fc53695664832f60"
+        }
+      ],
+      "caption_vi": "Ảnh hưởng candidate strength tới path giữ cùng mask.",
+      "limits_vi": "Đường F0 là estimate; tính đúng chỉ được kiểm tra trên file statistics.",
+      "generator": "nsdf_strength_experiment.py",
+      "generator_sha256": "b8066834a10ec210fa9ddaf794749177a6847cf3a2781e8a75e5736dfad553c9",
+      "command": "python research_workbench_2026_10_06/nsdf_strength_experiment.py"
+    }
+  ]
+}
