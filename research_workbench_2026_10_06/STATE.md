@@ -5,7 +5,7 @@
 - Thư mục: research_workbench_2026_10_06; protocol PROTOCOL.md.
 - Người dùng yêu cầu push sau từng thay đổi; không hỏi, dùng Gemini và Jev, figures/plots/reports.
 - Automation heartbeat đã tạo: bt2-nghi-n-c-u-n-04-00, deadline RRULE UNTIL21:00UTC.
-- Hiện đang làm: H00 hoàn thành, chuẩn bị H10; chưa đọc lại WAV test trong vòng mới. Không có audit process đang chạy.
+- Hiện đang làm: H00/H10–H14 hoàn thành. H15robustness đang chạy ởtoolsession21440, đọc results/robustness_progress.json và process trước khi resume; không chạy trùng. Chưa đọc WAVtest vòngmới. Nếu process dừng, chỉ resume nguyêncode/registry; deadline21:00UTC.
 - Đã đọc: root/repo AGENTS, core/standalone_pipeline và frozen configs.
 - Gemini Chrome: tab184651875, URL gemini.google.com/app/cd94cd87d07bc5c5; đã chọn Pro, đã gửi prompt reviewer đầu tiên. Cần đọc câu trả lời và lưu log.
 - Google Translate tab184651878 đã đọc thông báo đầu (UI Dừng nghe). Chrome hiện có tab Drive, không đọc/thao tác tab đó.
@@ -41,3 +41,4 @@ Các artifacts từ analysis phải là số đo thật. Không tạo placeholde
 - Google Translate milestoneH12 đã phát tiếng Việt, UI Dừng nghe xác nhận playback được yêu cầu; không thể xác nhận người dùng nghe được. Gemini reviewer02 vẫn chưa có text phản hồi; tiếp tục độc lập.
 - H12mechanism: train thêm18V+2UV+0SIL; nested thêm17V+2UV+0SIL. phone_F1train chỉ3sharedframes đổiF0, std26.5516→20.9325; append-only26.3657. Phần lớn std gain train này do path/median context, không chỉ thêmcount. LOFOphone_F1std29.2614→29.1584, gain nhỏ hơn; không suy diễn mọi frame đã đúng. HYSTERESIS_MECHANISM_REPORT.md,3PNG/SVG.
 - CRITICAL metric-labelcoupling: phone_F1train2sharedUV ở1.6425/1.6625s đổiF0~71.608/82.785→247.050/240.541Hz, cùngFP, Voverlap0 ởcảhai. True-center-V stdaccepted20.7632/hysteresis20.6690 đã gầnGT20.6. UVcontributionvariance40.31%→6.55% explains mosttrainstatgain. GatesPASSgiữ nguyên nhưng không gọi đây là sửa F0 thật ởV; H12provisional. METRIC_LABEL_COUPLING_REPORT.md,1PNG/SVG.
+- H15registry1744cases,3488modelrows: noise3types×7SNR×20seed×4file plusgain/DC/clip/impulses. Frozencleanheld-filefits và nestedH12margins; không tune từnoise. Rawextractor phải khớpcache trước. Đang chạy, chưaclaimcomplete.
