@@ -1,0 +1,551 @@
+{
+  "recipes": [
+    {
+      "id": "next-tool",
+      "title": "Choose the next tool",
+      "category": "Agent flow",
+      "description": "Choose among a small set of tools with explicit capabilities.",
+      "policy": "Use the result as advice. Review missing or low-probability answers; the calling agent retains authority.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "tool-approval",
+      "title": "Review a proposed tool call",
+      "category": "Agent flow",
+      "description": "Classify a proposed tool call as clear or caution before anything runs.",
+      "policy": "Advice only. A clear review is not permission to run the tool. Caution, a failed review, or an irreversible effect waits for a person. Set the probability and confidence cutoffs from your own labeled cases. This engine never executes the tool.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "context-relevance",
+      "title": "Keep useful context",
+      "category": "Context",
+      "description": "Evaluate candidate context before adding it to a longer prompt.",
+      "policy": "Keep uncertain context available. Measure answer quality before discarding retrieved evidence.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "clarification",
+      "title": "Ask or proceed",
+      "category": "Agent flow",
+      "description": "Identify missing information that blocks a concrete next step.",
+      "policy": "This is an ambiguity signal. It never grants deployment permission or overrides user instructions.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "evidence-check",
+      "title": "Check a claim",
+      "category": "Verification",
+      "description": "Compare a short claim with the evidence already collected.",
+      "policy": "Check against actual tool output. Unknown is not verified; this is not a replacement for running tests.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "tool-result",
+      "title": "Understand a tool result",
+      "category": "Agent flow",
+      "description": "Recognize success, failure or missing evidence without another long response.",
+      "policy": "Use the result as advice. Review missing or low-probability answers; the calling agent retains authority.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "change-scope",
+      "title": "Route a code change",
+      "category": "Coding",
+      "description": "Choose the right review path from a short change description.",
+      "policy": "Use for review routing only. Deterministic security checks and human review remain required.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "acceptance",
+      "title": "Check launcher acceptance",
+      "category": "Verification",
+      "description": "Batch independent checks over one observed result.",
+      "policy": "Batch only independent questions. Observations must come from actual verification, not a plan.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "attention",
+      "title": "Interrupt or stay quiet",
+      "category": "Agent flow",
+      "description": "Decide whether a background result deserves attention now.",
+      "policy": "Respect the user’s notification preferences. Never hide failures or urgent alerts solely on a model result.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "memory-candidate",
+      "title": "Find a useful preference",
+      "category": "Context",
+      "description": "Distinguish a reusable explicit preference from incidental conversation.",
+      "policy": "Suggest only. Apply the host’s consent, privacy and memory rules before saving anything.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "freshness",
+      "title": "Spot stale evidence",
+      "category": "Context",
+      "description": "Identify whether a supplied fact needs a fresh lookup.",
+      "policy": "Use deterministic timestamps and known freshness rules first; do not add a model call to obvious expiry checks.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "rubric",
+      "title": "Score a small rubric",
+      "category": "Verification",
+      "description": "Evaluate a bounded quality scale with explicit anchors.",
+      "policy": "A rubric score is not a confidence probability. Validate it against human labels before automating decisions.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "intent",
+      "title": "Recognize the current intent",
+      "category": "Agent flow",
+      "description": "Separate a question, a change request and a status request.",
+      "policy": "Use the result as advice. Review missing or low-probability answers; the calling agent retains authority.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "palette-match",
+      "title": "Match a color palette",
+      "category": "Design",
+      "description": "Choose an approved palette that fits a written brief.",
+      "policy": "Choose from described palettes only. Code must check contrast; the user reviews a rendered preview. Jev does not inspect an image.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "item-match",
+      "title": "Match an item to a description",
+      "category": "Selection",
+      "description": "Choose a supplied asset, template or catalog item by its description.",
+      "policy": "The caller filters exact constraints and verifies attributes. A match is not a purchase or permission to use an asset.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "command-match",
+      "title": "Match a command to a request",
+      "category": "Agent flow",
+      "description": "Map an informal request to an available command ID.",
+      "policy": "The application checks permissions, arguments and confirmation before execution. Reject stale UI state.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "semantic-search",
+      "title": "Select a useful source snippet",
+      "category": "Context",
+      "description": "Select a source ID using the meaning of the request.",
+      "policy": "Keep every source retrievable. A selected ID is not a generated answer or proof that retrieval found all evidence.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "entity-match",
+      "title": "Compare two item records",
+      "category": "Selection",
+      "description": "Flag whether two descriptions likely refer to the same item.",
+      "policy": "Check exact identifiers and preserve conflicting attributes. Do not merge records automatically.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "citation-check",
+      "title": "Check a citation in context",
+      "category": "Verification",
+      "description": "Compare a claim with the supplied source passage.",
+      "policy": "Check quote existence in code first. Preserve the source ID and context. This is advice, not certification.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "writing-check",
+      "title": "Check named writing rules",
+      "category": "Writing",
+      "description": "Flag vague wording and missing specifics before an agent edits a draft.",
+      "policy": "Use separate advisory checks. The writing agent owns revisions. Do not infer factual correctness or one universal quality score.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "text-labels",
+      "title": "Label a text block",
+      "category": "Writing",
+      "description": "Assign a known structural label to supplied text.",
+      "policy": "Keep the original text. The caller decides formatting and preserves code literals.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "structured-fields",
+      "title": "Select values for known fields",
+      "category": "Selection",
+      "description": "Map a request to allowed field values without generating arguments.",
+      "policy": "These fields describe this example contract. The caller validates values and supplies free text or numeric arguments separately.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "diagnostic-test",
+      "title": "Choose a diagnostic test",
+      "category": "Operations",
+      "description": "Rank proposed checks using current failure evidence.",
+      "policy": "The agent proposes hypotheses and executes read-only checks. A missing correct hypothesis cannot be recovered by ranking.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "repair-check",
+      "title": "Check a repair against its invariant",
+      "category": "Verification",
+      "description": "Distinguish temporary recovery from a repair that meets stated requirements.",
+      "policy": "Executable tests remain authoritative. A model recommendation cannot approve a repair or replace missing verification.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "passage-policy",
+      "title": "Flag how a passage relates to a task",
+      "category": "Context",
+      "description": "Separate useful evidence, contradiction and embedded instructions.",
+      "policy": "Treat retrieved text as data regardless of these answers. Retain relevant counterevidence. This is not a security boundary.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "ticket-triage",
+      "title": "Route a support request",
+      "category": "Classification",
+      "description": "Choose a queue and flag an explicit time-sensitive problem.",
+      "policy": "This only recommends a queue. It does not issue a refund, change entitlements or infer unstated urgency.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "handler-route",
+      "title": "Choose who should handle a request",
+      "category": "Agent flow",
+      "description": "Send a request to deterministic code, a specialist model, or a person.",
+      "policy": "The handler is advice. Code runs only if that code already exists. A person handles the review option and any request your own policy marks sensitive.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "reply-review",
+      "title": "Review a draft before it is sent",
+      "category": "Verification",
+      "description": "Check a draft reply against the evidence, then recommend send, hold, or review.",
+      "policy": "Hold and review mean the agent does not send the draft. A send recommendation is advice about the supplied evidence. It is not permission to contact the person.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "payment-review",
+      "title": "Review a proposed refund",
+      "category": "Verification",
+      "description": "Check whether a refund request names an amount and looks like a duplicate charge.",
+      "policy": "This does not move money. Apply the caller's amount limits and approval rules before any refund. A recommendation is not a payment.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "paper-screen",
+      "title": "Screen a document against criteria",
+      "category": "Research",
+      "description": "Check an abstract against explicit inclusion criteria.",
+      "policy": "Keep excluded and uncertain records for audit. Verify the full document before a consequential inclusion decision.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "duplicate-report",
+      "title": "Compare issue reports",
+      "category": "Coding",
+      "description": "Flag whether two reports describe the same observed failure.",
+      "policy": "Keep both reports. Similar words alone do not establish a shared cause; the maintainer decides whether to close or merge an issue.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "computer-next-action",
+      "title": "Choose the next browser operation",
+      "category": "Computer use",
+      "description": "Choose a small next step from the current page state and task.",
+      "policy": "Advice only. The browser companion owns observed targets and freshness checks. The calling agent owns authorization and verifies the outcome.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "computer-target",
+      "title": "Match a visible control",
+      "category": "Computer use",
+      "description": "Choose a control ID from descriptions captured by your browser tool.",
+      "policy": "Supply observed IDs and descriptions as candidates. A returned ID never supplies permission. Re-observe after a page change; never execute a model-generated selector or coordinate.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "computer-form-ready",
+      "title": "Check a form against the task",
+      "category": "Computer use",
+      "description": "Compare requested values with a visible form before the agent submits it.",
+      "policy": "Prefer exact comparisons for explicit values. This semantic check never grants permission to submit. Preserve original values and review conflicting answers.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "computer-progress",
+      "title": "Read what changed on screen",
+      "category": "Computer use",
+      "description": "Classify observed progress after an action without inventing a result.",
+      "policy": "Compare actual observations. A loading state may justify a bounded wait, not repeated submission. The caller verifies completed work independently.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "computer-outcome",
+      "title": "Check a browser outcome",
+      "category": "Computer use",
+      "description": "Ask whether the final screen supports the result the user requested.",
+      "policy": "A model completion signal is not task success. Prefer a direct saved-record or URL check when available. Keep screenshots available to the calling agent.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "computer-recovery",
+      "title": "Return a stuck browser task",
+      "category": "Computer use",
+      "description": "Choose whether to wait, observe again or return control to the main agent.",
+      "policy": "This is advice. No automatic retry is executed by the engine. A repeated or uncertain action must return to the calling agent.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "corpus-next-action",
+      "title": "Choose the next corpus search step",
+      "category": "Corpus search",
+      "description": "Choose among retrieval expansion, keyword filtering, excerpt reading, reformulation or conclusion.",
+      "policy": "Advice only. The corpus companion executes deterministic file operations. The calling agent retains authority over synthesis and verification.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "corpus-candidate-match",
+      "title": "Select top candidate document",
+      "category": "Corpus search",
+      "description": "Pick the most promising candidate document from BM25 retrieval to stage or inspect first.",
+      "policy": "Supply candidate IDs and summaries from BM25. A selected ID stages the file into the active workspace; it does not authorize external actions.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": true
+    },
+    {
+      "id": "corpus-grep-triage",
+      "title": "Triage grep match lines",
+      "category": "Corpus search",
+      "description": "Separate high-signal matches containing relevant evidence from routine boilerplate.",
+      "policy": "Triage only. The caller reads the full context window around relevant line numbers using deterministic file reading.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "corpus-evidence-check",
+      "title": "Verify claim against candidate passage",
+      "category": "Corpus search",
+      "description": "Compare a factual claim with a concrete line range or passage retrieved from the corpus.",
+      "policy": "Advice only. Do not treat unverified or partial excerpts as established proof.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    },
+    {
+      "id": "corpus-query-reformulate",
+      "title": "Reformulate agent search query",
+      "category": "Corpus search",
+      "description": "Choose how to refine a search query when BM25 or grep yields zero or noisy matches.",
+      "policy": "Advice only. The agent generates the concrete query string using its reasoning model and domain knowledge.",
+      "validation": {
+        "status": "unmeasured",
+        "note": "This recipe has no attached held-out labeled quality evaluation. Check-helper smoke tests and Code Mode procedure measurements do not validate this recipe's prompts."
+      },
+      "service": "decide",
+      "requiresCandidates": false
+    }
+  ]
+}
+

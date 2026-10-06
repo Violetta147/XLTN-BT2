@@ -1,0 +1,201 @@
+{
+  "method": "Read LAB formats; filter CSV model=ACF split=train; integer sums. No notebook execution.",
+  "acfTrain": [
+    {
+      "file": "phone_F1.wav",
+      "version": "improved",
+      "false_voiced_sil": 0,
+      "TP": 135,
+      "FN": 18
+    },
+    {
+      "file": "phone_M1.wav",
+      "version": "improved",
+      "false_voiced_sil": 0,
+      "TP": 201,
+      "FN": 43
+    },
+    {
+      "file": "studio_F1.wav",
+      "version": "improved",
+      "false_voiced_sil": 1,
+      "TP": 117,
+      "FN": 6
+    },
+    {
+      "file": "studio_M1.wav",
+      "version": "improved",
+      "false_voiced_sil": 0,
+      "TP": 77,
+      "FN": 17
+    },
+    {
+      "file": "phone_F1.wav",
+      "version": "baseline",
+      "false_voiced_sil": 2,
+      "TP": 135,
+      "FN": 18
+    },
+    {
+      "file": "phone_M1.wav",
+      "version": "baseline",
+      "false_voiced_sil": 0,
+      "TP": 201,
+      "FN": 43
+    },
+    {
+      "file": "studio_F1.wav",
+      "version": "baseline",
+      "false_voiced_sil": 21,
+      "TP": 118,
+      "FN": 5
+    },
+    {
+      "file": "studio_M1.wav",
+      "version": "baseline",
+      "false_voiced_sil": 22,
+      "TP": 81,
+      "FN": 13
+    }
+  ],
+  "totals": [
+    {
+      "version": "baseline",
+      "fileCount": 4,
+      "false_voiced_sil": 45,
+      "TP": 535,
+      "FN": 79
+    },
+    {
+      "version": "improved",
+      "fileCount": 4,
+      "false_voiced_sil": 1,
+      "TP": 530,
+      "FN": 84
+    }
+  ],
+  "date": "2026-10-06",
+  "labAudit": [
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.lab",
+      "rows": 18,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.lab",
+      "rows": 15,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.lab",
+      "rows": 16,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.lab",
+      "rows": 12,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\phone_F2.lab",
+      "rows": 18,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\phone_M2.lab",
+      "rows": 18,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\studio_F2.lab",
+      "rows": 13,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\studio_M2.lab",
+      "rows": 14,
+      "types": [
+        "file_stat",
+        "segment_class"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\train_3gt\\phone_F1.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\train_3gt\\phone_M1.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\train_3gt\\studio_F1.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\train_3gt\\studio_M1.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\test_3gt\\phone_F2.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\test_3gt\\phone_M2.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\test_3gt\\studio_F2.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    },
+    {
+      "path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_3gt_2026_10_05\\test_3gt\\studio_M2.lab",
+      "rows": 3,
+      "types": [
+        "file_stat"
+      ]
+    }
+  ],
+  "verified": true
+}

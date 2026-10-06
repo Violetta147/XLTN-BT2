@@ -1,0 +1,46 @@
+{
+  "mcpCalls": 6,
+  "modelCalls": 7,
+  "inputTokens": 5200,
+  "outputTokens": 495,
+  "providerLatencySumMs": 2118,
+  "idChecks": [
+    {
+      "test": "check",
+      "valid": true
+    },
+    {
+      "test": "find",
+      "valid": true
+    },
+    {
+      "test": "select",
+      "valid": true
+    },
+    {
+      "test": "decide",
+      "valid": true
+    },
+    {
+      "test": "code",
+      "valid": true
+    }
+  ],
+  "allReturnedIdsValid": true,
+  "recipeCount": 42,
+  "recipeValidationStatuses": [
+    "unmeasured"
+  ],
+  "findSignals": {
+    "none": 1,
+    "answerExists": 0.56,
+    "rankingProbabilities": [
+      0,
+      0,
+      0
+    ],
+    "requiresOriginalEvidenceReview": true
+  },
+  "scope": "Controlled demonstrations; no held-out accuracy or savings benchmark"
+}
+

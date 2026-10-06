@@ -1,0 +1,447 @@
+{
+  "date": "2026-10-06",
+  "scope": "Six controlled MCP demonstrations requested by the user; exact args and actual results. Separate from initial guide review.",
+  "runs": [
+    {
+      "id": "check",
+      "tool": "mcp__system_one__sysone_check",
+      "purpose": "Thử phát hiện kết luận nhân quả quá rộng từ phép chẩn đoán.",
+      "expected": "Nhận định bị bằng chứng phản bác; bỏ SIL chưa giải quyết đủ.",
+      "args": {
+        "claim": "Chỉ loại các khung khoảng lặng là đã giải quyết đầy đủ sai số F0std của phone_F1.",
+        "evidence": [
+          {
+            "id": "phone_F1_all_predictions",
+            "text": "ACF baseline phone_F1: F0std dự đoán 48,936685 Hz; F0std chuẩn 3GT của cả file là 20,6 Hz."
+          },
+          {
+            "id": "phone_F1_remove_sil_diagnostic",
+            "text": "Dùng nhãn thật SIL chỉ để chẩn đoán: bỏ riêng hai F0 tại 3,1725 s và 3,1825 s; std còn 43,70 Hz, MAPE std còn 112,15%. Không dùng phép bỏ SIL theo nhãn thật trong pipeline chấm chính thức."
+          },
+          {
+            "id": "phone_F1_v_only_diagnostic",
+            "text": "Chỉ giữ dự đoán thuộc nhãn V thật để chẩn đoán vẫn cho std 41,582164 Hz. Có ứng viên lag gần bội nhau ở các khung V, nhưng không có F0 chuẩn từng khung."
+          }
+        ]
+      },
+      "output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"requestId\":\"55b51cca-2419-4c0f-97dc-f6f81c0ba0e2\",\"check\":\"check\",\"result\":{\"supported\":0.05,\"contradicted\":0.91,\"contradictedBy\":{\"id\":\"phone_F1_remove_sil_diagnostic\",\"probability\":1}},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":881,\"outputTokens\":88,\"cached\":false,\"latencyMs\":478}}"
+          }
+        ],
+        "structuredContent": {
+          "requestId": "55b51cca-2419-4c0f-97dc-f6f81c0ba0e2",
+          "check": "check",
+          "result": {
+            "supported": 0.05,
+            "contradicted": 0.91,
+            "contradictedBy": {
+              "id": "phone_F1_remove_sil_diagnostic",
+              "probability": 1
+            }
+          },
+          "meta": {
+            "model": "vercel:typesafe-ai/jev",
+            "calls": 1,
+            "inputTokens": 881,
+            "outputTokens": 88,
+            "cached": false,
+            "latencyMs": 478
+          }
+        }
+      },
+      "elapsedMs": 865
+    },
+    {
+      "id": "find",
+      "tool": "mcp__system_one__sysone_find",
+      "purpose": "Thử tìm theo vai trò của bằng chứng và nhận ra không có đáp án.",
+      "expected": "Không đoạn nào chứa F0 chuẩn từng khung; answerExists thấp, none cao.",
+      "args": {
+        "question": "Đoạn nào cung cấp GIÁ TRỊ F0 CHUẨN của chính khung có tâm 0,5725 s trong phone_F1? Cần tham chiếu thật cho khung đó, không phải thống kê cả file hay ứng viên thuật toán. Nếu không có, hãy biểu thị thiếu câu trả lời.",
+        "sources": [
+          {
+            "id": "lab_3gt_phone_F1",
+            "text": "Nội dung toàn bộ LAB 3GT: F0mean 215.6; F0std 20.6; F0num 148."
+          },
+          {
+            "id": "lab_segments_phone_F1",
+            "text": "Trích LAB cũ: 0.00 0.53 sil; 0.53 1.14 v; 1.14 1.21 uv. Cuối file có F0mean 217 và F0std 23. Không có cột F0 cho mỗi timestamp."
+          },
+          {
+            "id": "acf_candidate_0_5725",
+            "text": "Số đo từ thuật toán ACF ở tâm 0,5725 s: cực trị mạnh nhất được chọn cho F0 72,183611 Hz; một cực trị khác cho ứng viên 217,416512 Hz với score thấp hơn 0,0004927728. Đây là các ứng viên thuật toán tính từ WAV, không phải nhãn F0 đo chuẩn."
+          }
+        ]
+      },
+      "output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"requestId\":\"51606af7-ac9d-4b74-bfda-65fab2143a0b\",\"check\":\"find\",\"result\":{\"ranking\":[{\"id\":\"lab_3gt_phone_F1\",\"probability\":0},{\"id\":\"lab_segments_phone_F1\",\"probability\":0},{\"id\":\"acf_candidate_0_5725\",\"probability\":0}],\"none\":1,\"answerExists\":0.56,\"conflict\":0.15},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":975,\"outputTokens\":83,\"cached\":false,\"latencyMs\":260}}"
+          }
+        ],
+        "structuredContent": {
+          "requestId": "51606af7-ac9d-4b74-bfda-65fab2143a0b",
+          "check": "find",
+          "result": {
+            "ranking": [
+              {
+                "id": "lab_3gt_phone_F1",
+                "probability": 0
+              },
+              {
+                "id": "lab_segments_phone_F1",
+                "probability": 0
+              },
+              {
+                "id": "acf_candidate_0_5725",
+                "probability": 0
+              }
+            ],
+            "none": 1,
+            "answerExists": 0.56,
+            "conflict": 0.15
+          },
+          "meta": {
+            "model": "vercel:typesafe-ai/jev",
+            "calls": 1,
+            "inputTokens": 975,
+            "outputTokens": 83,
+            "cached": false,
+            "latencyMs": 260
+          }
+        }
+      },
+      "elapsedMs": 518
+    },
+    {
+      "id": "select",
+      "tool": "mcp__system_one__sysone_select",
+      "purpose": "Thử từ chối tất cả phương án thay vì ép chọn phương án ít tệ nhất.",
+      "expected": "Không phương án nào chứng nhận reference thực; choice none, fits thấp.",
+      "args": {
+        "task": "Cần chứng nhận F0 thật chính xác của từng khung WAV để tính sai số từng khung so với reference. Hiện chỉ có waveform, LAB V/UV/SIL và 3GT mean/std/count của mỗi file. Chọn một phương án bên dưới CHỈ NẾU nó thực sự tạo ra tham chiếu F0 từng khung đã được xác minh. Nếu mọi phương án chưa đủ, trả none.",
+        "options": [
+          {
+            "id": "mean_as_reference",
+            "description": "Gán F0mean chuẩn của cả file cho tất cả các khung V và coi đó là F0 thật."
+          },
+          {
+            "id": "old_acf_as_reference",
+            "description": "Dùng output ACF cũ làm ground truth, vì nó là chương trình có thể tái lập."
+          },
+          {
+            "id": "smooth_as_reference",
+            "description": "Lấy contour của bản cải tiến làm ground truth vì nó mượt hơn và có MAPE thống kê thấp."
+          }
+        ]
+      },
+      "output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"requestId\":\"809c541d-2296-4c55-8b8c-f05a715b3760\",\"check\":\"select\",\"result\":{\"choice\":{\"id\":null,\"probability\":1},\"none\":1,\"fits\":[{\"id\":\"mean_as_reference\",\"probability\":0.03},{\"id\":\"old_acf_as_reference\",\"probability\":0.07},{\"id\":\"smooth_as_reference\",\"probability\":0.05}]},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":1130,\"outputTokens\":103,\"cached\":false,\"latencyMs\":271}}"
+          }
+        ],
+        "structuredContent": {
+          "requestId": "809c541d-2296-4c55-8b8c-f05a715b3760",
+          "check": "select",
+          "result": {
+            "choice": {
+              "id": null,
+              "probability": 1
+            },
+            "none": 1,
+            "fits": [
+              {
+                "id": "mean_as_reference",
+                "probability": 0.03
+              },
+              {
+                "id": "old_acf_as_reference",
+                "probability": 0.07
+              },
+              {
+                "id": "smooth_as_reference",
+                "probability": 0.05
+              }
+            ]
+          },
+          "meta": {
+            "model": "vercel:typesafe-ai/jev",
+            "calls": 1,
+            "inputTokens": 1130,
+            "outputTokens": 103,
+            "cached": false,
+            "latencyMs": 271
+          }
+        }
+      },
+      "elapsedMs": 522
+    },
+    {
+      "id": "decide",
+      "tool": "mcp__system_one__sysone_decide",
+      "purpose": "Thử ba loại câu hỏi boolean/choice/score trong một lượt với bản nháp có lỗi.",
+      "expected": "Boolean thấp; chọn multiple_changes; rubric thấp.",
+      "args": {
+        "state": {
+          "evidence": "ACF train: Average MAPE 29,8347→6,1780%; false_voiced_sil 45→1; TP 535→530; FN 79→84. Bản cuối thay đổi chọn ứng viên path, thêm RMS gate và median3. Ground truth chỉ có mean/std/count mỗi file và V/UV/SIL theo đoạn, không có F0 chuẩn từng khung.",
+          "draft": "Bản mới chính xác hơn ở mọi loại khung và tất cả F0 đã được xác minh. Toàn bộ cải thiện là do cổng năng lượng, vì đó là thay đổi duy nhất."
+        },
+        "questions": {
+          "universal_accuracy": {
+            "type": "boolean",
+            "instructions": "Bằng chứng có thiết lập được toàn bộ nhận định 'bản mới chính xác hơn ở mọi loại khung và tất cả F0 đã được xác minh' không? Chỉ đánh giá tính được hỗ trợ, không suy diễn từ việc contour có thể mượt hơn."
+          },
+          "attribution": {
+            "type": "choice",
+            "instructions": "Chọn phát biểu được bằng chứng hỗ trợ về tác động nhân quả của các thay đổi.",
+            "criteria": {
+              "one_cause": "Đã chứng minh riêng RMS gây toàn bộ cải thiện và không có thay đổi khác.",
+              "unknown": "Không thể nói bất kỳ điều gì về kết quả trước–sau.",
+              "multiple_changes": "Đo được lợi ích của pipeline kết hợp cùng đánh đổi phát hiện; để tách tác động riêng của mỗi thay đổi cần ablation."
+            }
+          },
+          "draft_quality": {
+            "type": "score",
+            "instructions": "Chấm mức bám sát bằng chứng của bản nháp theo rubric đã cho. Điểm là độ phù hợp với rubric, không phải xác suất đúng.",
+            "criteria": [
+              "0: Gán kết luận vượt dữ liệu hoặc khẳng định cơ chế nhân quả chưa được cô lập.",
+              "1: Nêu đúng cải thiện tổng thể nhưng còn thiếu phạm vi GT hoặc đánh đổi.",
+              "2: Nêu đúng cải thiện tổng thể, phạm vi GT, đánh đổi và giới hạn suy luận nhân quả."
+            ]
+          }
+        }
+      },
+      "output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"requestId\":\"703d4a5b-3a66-4f5c-8a1c-782091b2f883\",\"service\":\"decide\",\"result\":{\"answers\":{\"universal_accuracy\":{\"type\":\"boolean\",\"probability\":0.05},\"attribution\":{\"type\":\"choice\",\"choice\":\"multiple_changes\",\"probabilities\":{\"multiple_changes\":1,\"one_cause\":0,\"unknown\":0},\"confidence\":1},\"draft_quality\":{\"type\":\"score\",\"score\":0.04,\"probabilities\":{\"0\":0.97,\"1\":0.02,\"2\":0.01},\"confidence\":0.94}},\"signals\":{\"universal_accuracy\":{\"kind\":\"boolean\",\"probability\":0.05,\"complement\":0.95},\"attribution\":{\"kind\":\"choice\",\"choice\":\"multiple_changes\",\"probability\":1,\"confidence\":1},\"draft_quality\":{\"kind\":\"score\",\"score\":0.04,\"confidence\":0.94}},\"status\":\"evaluated\"},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":797,\"outputTokens\":78,\"cached\":false,\"latencyMs\":316}}"
+          }
+        ],
+        "structuredContent": {
+          "requestId": "703d4a5b-3a66-4f5c-8a1c-782091b2f883",
+          "service": "decide",
+          "result": {
+            "answers": {
+              "universal_accuracy": {
+                "type": "boolean",
+                "probability": 0.05
+              },
+              "attribution": {
+                "type": "choice",
+                "choice": "multiple_changes",
+                "probabilities": {
+                  "multiple_changes": 1,
+                  "one_cause": 0,
+                  "unknown": 0
+                },
+                "confidence": 1
+              },
+              "draft_quality": {
+                "type": "score",
+                "score": 0.04,
+                "probabilities": {
+                  "0": 0.97,
+                  "1": 0.02,
+                  "2": 0.01
+                },
+                "confidence": 0.94
+              }
+            },
+            "signals": {
+              "universal_accuracy": {
+                "kind": "boolean",
+                "probability": 0.05,
+                "complement": 0.95
+              },
+              "attribution": {
+                "kind": "choice",
+                "choice": "multiple_changes",
+                "probability": 1,
+                "confidence": 1
+              },
+              "draft_quality": {
+                "kind": "score",
+                "score": 0.04,
+                "confidence": 0.94
+              }
+            },
+            "status": "evaluated"
+          },
+          "meta": {
+            "model": "vercel:typesafe-ai/jev",
+            "calls": 1,
+            "inputTokens": 797,
+            "outputTokens": 78,
+            "cached": false,
+            "latencyMs": 316
+          }
+        }
+      },
+      "elapsedMs": 833
+    },
+    {
+      "id": "recipe",
+      "tool": "mcp__system_one__sysone_run",
+      "purpose": "Thử recipe sẵn để phát hiện cách viết thiếu cụ thể bằng tiếng Việt.",
+      "expected": "Nhận ra broad claims; không nêu hành động cụ thể hay bước tiếp theo.",
+      "args": {
+        "pattern": "writing-check",
+        "state": "Bản nháp cho người mới học: Thuật toán của chúng tôi cực kỳ mạnh mẽ, mang lại chất lượng vượt trội và xử lý vấn đề một cách hoàn hảo."
+      },
+      "output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"requestId\":\"7ef124b6-69bf-4a8f-8625-309412f6cae5\",\"service\":\"decide\",\"result\":{\"answers\":{\"specific\":{\"type\":\"boolean\",\"probability\":0.12},\"vague\":{\"type\":\"boolean\",\"probability\":0.97},\"actionable\":{\"type\":\"boolean\",\"probability\":0.03}},\"signals\":{\"specific\":{\"kind\":\"boolean\",\"probability\":0.12,\"complement\":0.88},\"vague\":{\"kind\":\"boolean\",\"probability\":0.97,\"complement\":0.03},\"actionable\":{\"kind\":\"boolean\",\"probability\":0.03,\"complement\":0.97}},\"status\":\"evaluated\"},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":424,\"outputTokens\":55,\"cached\":false,\"latencyMs\":278},\"recipe\":{\"id\":\"writing-check\",\"policy\":\"Use separate advisory checks. The writing agent owns revisions. Do not infer factual correctness or one universal quality score.\"}}"
+          }
+        ],
+        "structuredContent": {
+          "requestId": "7ef124b6-69bf-4a8f-8625-309412f6cae5",
+          "service": "decide",
+          "result": {
+            "answers": {
+              "specific": {
+                "type": "boolean",
+                "probability": 0.12
+              },
+              "vague": {
+                "type": "boolean",
+                "probability": 0.97
+              },
+              "actionable": {
+                "type": "boolean",
+                "probability": 0.03
+              }
+            },
+            "signals": {
+              "specific": {
+                "kind": "boolean",
+                "probability": 0.12,
+                "complement": 0.88
+              },
+              "vague": {
+                "kind": "boolean",
+                "probability": 0.97,
+                "complement": 0.03
+              },
+              "actionable": {
+                "kind": "boolean",
+                "probability": 0.03,
+                "complement": 0.97
+              }
+            },
+            "status": "evaluated"
+          },
+          "meta": {
+            "model": "vercel:typesafe-ai/jev",
+            "calls": 1,
+            "inputTokens": 424,
+            "outputTokens": 55,
+            "cached": false,
+            "latencyMs": 278
+          },
+          "recipe": {
+            "id": "writing-check",
+            "policy": "Use separate advisory checks. The writing agent owns revisions. Do not infer factual correctness or one universal quality score."
+          }
+        }
+      },
+      "elapsedMs": 545
+    },
+    {
+      "id": "code",
+      "tool": "mcp__system_one__sysone_code",
+      "purpose": "Thử chuỗi phụ thuộc: nhận diện hiểu nhầm, rồi chọn đúng bộ bằng chứng để kiểm tra nhận định.",
+      "expected": "Nhận std_range, dùng probe tương ứng, phản bác việc coi mean±std là giới hạn bắt buộc.",
+      "args": {
+        "code": "async () => {\n const learnerQuestion = \"Std chuẩn là 20,6 Hz thì mọi F0 đúng phải nằm trong mean cộng trừ 20,6 Hz, phải không?\";\n const route = await jev.choice({\n  state: learnerQuestion,\n  instructions: \"Xác định khái niệm mà người học đang hiểu nhầm; unknown nếu không đủ thông tin.\",\n  criteria: {\n   period_multiple: \"Quan hệ giữa lag T, 2T, 3T và F0\",\n   reference_scope: \"Sự khác nhau giữa chuẩn cả file và chuẩn từng khung\",\n   std_range: \"Ý nghĩa của độ lệch chuẩn và khoảng mean ± std\",\n   unknown: \"Không xác định được khái niệm\"\n  }\n });\n const category = route.value.choice;\n const probes = {\n  period_multiple: {claim:\"Mọi đỉnh ACF tại lag lớn đều phải chia lag cho 3.\", evidence:\"Một tín hiệu lặp tại T cũng giống tại 2T và 3T; chưa biết đỉnh được chọn đang là T hay 3T. Chia một lag T đúng cho 3 làm F0 tăng sai ba lần.\"},\n  reference_scope: {claim:\"Ba thống kê mean/std/count của file xác định duy nhất F0 chuẩn từng khung.\", evidence:\"LAB 3GT chỉ chứa mean, std và count của cả file. Hoán vị thứ tự các F0 giữ nguyên cả ba thống kê nhưng thay đổi giá trị gán cho thời điểm.\"},\n  std_range: {claim:\"Mọi F0 đúng phải nằm trong khoảng mean ± std.\", evidence:\"Std là căn trung bình bình phương khoảng cách tới mean. Nó đo độ phân tán, không định nghĩa giá trị nhỏ nhất/lớn nhất hay giới hạn bắt buộc của từng phần tử. LAB cung cấp mean/std của cả file, không có giới hạn theo khung.\"}\n };\n if (!Object.prototype.hasOwnProperty.call(probes, category)) {\n  return {category, route:route.value, status:\"needs_review\", routeMeta:route.meta};\n }\n const review = await jev.check(probes[category]);\n return {category, route:route.value, chosenProbe:probes[category], review:review.value, routeMeta:route.meta, reviewMeta:review.meta};\n}"
+      },
+      "output": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"result\":{\"category\":\"std_range\",\"route\":{\"choice\":\"std_range\",\"probabilities\":{\"period_multiple\":0,\"reference_scope\":0.02,\"unknown\":0,\"std_range\":0.98},\"selectedProbability\":0.98,\"confidence\":0.96},\"chosenProbe\":{\"claim\":\"Mọi F0 đúng phải nằm trong khoảng mean ± std.\",\"evidence\":\"Std là căn trung bình bình phương khoảng cách tới mean. Nó đo độ phân tán, không định nghĩa giá trị nhỏ nhất/lớn nhất hay giới hạn bắt buộc của từng phần tử. LAB cung cấp mean/std của cả file, không có giới hạn theo khung.\"},\"review\":{\"supported\":0.04,\"contradicted\":0.92},\"routeMeta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":448,\"outputTokens\":49,\"cached\":false,\"latencyMs\":262},\"reviewMeta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":545,\"outputTokens\":39,\"cached\":false,\"latencyMs\":253}},\"calls\":2,\"execution\":{\"id\":\"dadb1289-e5ad-407a-884b-0dd501643d4d\",\"startedAt\":1791291465841,\"status\":\"completed\",\"sdkCalls\":2,\"modelAttempts\":2,\"wallTimeMs\":557,\"children\":[{\"requestId\":\"db44b896-5d0c-4b08-8b6d-ff81f80ac66d\",\"method\":\"choice\",\"service\":\"decide\",\"calls\":1,\"cached\":false,\"latencyMs\":262,\"outcome\":\"ok\"},{\"requestId\":\"511bb16d-7177-4ac3-b607-d2e1f3b7e7ea\",\"method\":\"check\",\"service\":\"decide\",\"calls\":1,\"cached\":false,\"latencyMs\":253,\"outcome\":\"ok\"}]}}"
+          }
+        ],
+        "structuredContent": {
+          "result": {
+            "category": "std_range",
+            "route": {
+              "choice": "std_range",
+              "probabilities": {
+                "period_multiple": 0,
+                "reference_scope": 0.02,
+                "unknown": 0,
+                "std_range": 0.98
+              },
+              "selectedProbability": 0.98,
+              "confidence": 0.96
+            },
+            "chosenProbe": {
+              "claim": "Mọi F0 đúng phải nằm trong khoảng mean ± std.",
+              "evidence": "Std là căn trung bình bình phương khoảng cách tới mean. Nó đo độ phân tán, không định nghĩa giá trị nhỏ nhất/lớn nhất hay giới hạn bắt buộc của từng phần tử. LAB cung cấp mean/std của cả file, không có giới hạn theo khung."
+            },
+            "review": {
+              "supported": 0.04,
+              "contradicted": 0.92
+            },
+            "routeMeta": {
+              "model": "vercel:typesafe-ai/jev",
+              "calls": 1,
+              "inputTokens": 448,
+              "outputTokens": 49,
+              "cached": false,
+              "latencyMs": 262
+            },
+            "reviewMeta": {
+              "model": "vercel:typesafe-ai/jev",
+              "calls": 1,
+              "inputTokens": 545,
+              "outputTokens": 39,
+              "cached": false,
+              "latencyMs": 253
+            }
+          },
+          "calls": 2,
+          "execution": {
+            "id": "dadb1289-e5ad-407a-884b-0dd501643d4d",
+            "startedAt": 1791291465841,
+            "status": "completed",
+            "sdkCalls": 2,
+            "modelAttempts": 2,
+            "wallTimeMs": 557,
+            "children": [
+              {
+                "requestId": "db44b896-5d0c-4b08-8b6d-ff81f80ac66d",
+                "method": "choice",
+                "service": "decide",
+                "calls": 1,
+                "cached": false,
+                "latencyMs": 262,
+                "outcome": "ok"
+              },
+              {
+                "requestId": "511bb16d-7177-4ac3-b607-d2e1f3b7e7ea",
+                "method": "check",
+                "service": "decide",
+                "calls": 1,
+                "cached": false,
+                "latencyMs": 253,
+                "outcome": "ok"
+              }
+            ]
+          }
+        }
+      },
+      "elapsedMs": 837
+    }
+  ]
+}
+
