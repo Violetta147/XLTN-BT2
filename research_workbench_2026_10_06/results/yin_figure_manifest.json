@@ -1,0 +1,53 @@
+{
+  "figures": [
+    {
+      "name": "yin_synthetic_accuracy",
+      "png": "figures/yin_synthetic_accuracy.png",
+      "svg": "figures/yin_synthetic_accuracy.svg",
+      "sources": [
+        {
+          "path": "results\\yin_synthetic.csv",
+          "sha256": "47fd16526e54b1f5bfaa3c156da9fefa45ac949ffde32ca737f19ccfe3bc5e29"
+        }
+      ],
+      "caption_vi": "Pitch error trên tín hiệu tổng hợp có F0 biết trước.",
+      "limits_vi": "Không thay thế kết quả trên WAV thật; đây là kiểm tra thuật toán trong25ms.",
+      "generator": "estimator_experiment.py",
+      "generator_sha256": "680b0fd76c2c9703251ecf95e46ed820ff7fadead3f5aa13850d5dbad8daf160",
+      "command": "python research_workbench_2026_10_06/estimator_experiment.py yin"
+    },
+    {
+      "name": "yin_lofo_metrics",
+      "png": "figures/yin_lofo_metrics.png",
+      "svg": "figures/yin_lofo_metrics.svg",
+      "sources": [
+        {
+          "path": "results\\yin_metrics_per_file.csv",
+          "sha256": "e5360db390bfaa3171abad6f0840ea33df009665a689fd07e6fbb9d143b9c774"
+        }
+      ],
+      "caption_vi": "Các thành phần MAPE LOFO: accepted ACF/path, ACF single peak, estimator mới.",
+      "limits_vi": "Cùng voiced mask/RMS/median3. Chỉ bốn file; không có pitch GT từng khung.",
+      "generator": "estimator_experiment.py",
+      "generator_sha256": "680b0fd76c2c9703251ecf95e46ed820ff7fadead3f5aa13850d5dbad8daf160",
+      "command": "python research_workbench_2026_10_06/estimator_experiment.py yin"
+    },
+    {
+      "name": "yin_lofo_contours",
+      "png": "figures/yin_lofo_contours.png",
+      "svg": "figures/yin_lofo_contours.svg",
+      "sources": [
+        {
+          "path": "results\\yin_lofo_contours.csv",
+          "sha256": "a98952c8cedeb940c305bd4e01448de0f4b94a9e156e4704d2b36f962a11dab4"
+        }
+      ],
+      "caption_vi": "F0 ước lượng theo thời gian ở held file.",
+      "limits_vi": "Không phải đường truth, không kết luận contour mượt là đúng.",
+      "generator": "estimator_experiment.py",
+      "generator_sha256": "680b0fd76c2c9703251ecf95e46ed820ff7fadead3f5aa13850d5dbad8daf160",
+      "command": "python research_workbench_2026_10_06/estimator_experiment.py yin"
+    }
+  ],
+  "fold_fit_csv": "results\\yin_fold_fits.csv"
+}

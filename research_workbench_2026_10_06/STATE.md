@@ -18,7 +18,7 @@
 - [x] H00b: metric_audit.py, H00B_METRIC_REPORT.md, 2 PNG/SVG. Synthetic hoán vị: stats MAPE0%, frame MAPE61.5909%; không phải đo trên WAV.
 - [ ] Đọc/lưu Gemini critique, đối chiếu và bổ sung quyết định trước chạy.
 - [ ] Jev rà phạm vi một hoặc vài claim/chọn phương án khi còn ngữ nghĩa chưa rõ.
-- [ ] H10 YIN adapter: implementation + synthetic known-F0 checks + real training evaluation/LOFO, commit/push riêng.
+- [x] H10 YIN adapter: 1600 synthetic cases, FFT/direct error4.3e-13, clean p95 .475cents; train9.3674%, LOFO12.2374% AvgMAPE. Gate FAIL, champion không đổi. Report YIN_EXPERIMENT_REPORT.md; 3 PNG/SVG.
 - [ ] H11 NSDF/MPM: implementation + synthetic checks + same protocol evaluation, commit/push riêng.
 - [ ] H12+ từ kết quả mới: ghi hypothesis/registry/gates trước mỗi experiment.
 - [ ] Robustness/stability/stratification/threshold plots.

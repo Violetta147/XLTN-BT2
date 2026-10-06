@@ -1,0 +1,9 @@
+{
+  "silence_returns_nan": true,
+  "constant_returns_nan": true,
+  "gain_invariance": true,
+  "dc_invariance": true,
+  "fft_direct_difference_max_error": 4.263256414560601e-13,
+  "clean_interior_median_cents": 0.029224275423532203,
+  "clean_interior_p95_cents": 0.4748415859068376
+}
