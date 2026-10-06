@@ -1,0 +1,56 @@
+{
+  "figures": [
+    {
+      "name": "robustness_noise_curves",
+      "png": "figures/robustness_noise_curves.png",
+      "svg": "figures/robustness_noise_curves.svg",
+      "sources": [
+        {
+          "path": "results\\robustness_noise_summary.csv",
+          "sha256": "ab9e612c3d8005b728dbd6e95f79c270dc8983715352feb611248983539dc79e"
+        },
+        {
+          "path": "results\\robustness_noise_per_file.csv",
+          "sha256": "33adebd72792a30973e2fdc129c1363ef1824a9fa141d78bc874e61c6b81c027"
+        }
+      ],
+      "caption_vi": "Sensitivity hai cấu hình cố định theo simulatednoise/SNR.",
+      "limits_vi": "4file,20noise realizations/cell; AvgMAPE conditional khi cóF0, phải đọc coverage. Không chứng minh pitch đúng từng khung.",
+      "generator": "robustness_analysis.py",
+      "generator_sha256": "54352ae3722614767d17479d75504b2199e5e25c19f47a81b4f7e76f2b272d6c",
+      "command": "python research_workbench_2026_10_06/robustness_analysis.py"
+    },
+    {
+      "name": "robustness_stat_coverage",
+      "png": "figures/robustness_stat_coverage.png",
+      "svg": "figures/robustness_stat_coverage.svg",
+      "sources": [
+        {
+          "path": "results\\robustness_noise_summary.csv",
+          "sha256": "ab9e612c3d8005b728dbd6e95f79c270dc8983715352feb611248983539dc79e"
+        }
+      ],
+      "caption_vi": "Tỷ lệ cases có đủ mean/std/AvgMAPE để so sánh.",
+      "limits_vi": "Empty-F0 mean/std undefined, không bị tính nhưerror0; coverage phải đi cùngconditional error.",
+      "generator": "robustness_analysis.py",
+      "generator_sha256": "54352ae3722614767d17479d75504b2199e5e25c19f47a81b4f7e76f2b272d6c",
+      "command": "python research_workbench_2026_10_06/robustness_analysis.py"
+    },
+    {
+      "name": "robustness_other_conditions",
+      "png": "figures/robustness_other_conditions.png",
+      "svg": "figures/robustness_other_conditions.svg",
+      "sources": [
+        {
+          "path": "results\\robustness_gain_dc_clip_impulse.csv",
+          "sha256": "a68c08858298a8437bf1c2628c32999a96c2e1dfe21ea60f320598458095b72e"
+        }
+      ],
+      "caption_vi": "Gain/DC/clipping/impulses riêng từng condition.",
+      "limits_vi": "Gain là float lý tưởng không quantize; DC theofileRMS, clipping theopeak; không chồngperturbations.",
+      "generator": "robustness_analysis.py",
+      "generator_sha256": "54352ae3722614767d17479d75504b2199e5e25c19f47a81b4f7e76f2b272d6c",
+      "command": "python research_workbench_2026_10_06/robustness_analysis.py"
+    }
+  ]
+}

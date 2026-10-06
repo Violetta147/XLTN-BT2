@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "completed_cases": 1744,
+  "registered_cases": 1744,
+  "updated_at_utc": "2026-10-06T15:47:43.286569+00:00",
+  "registry_sha256": "2e46459d3bc863911b4db2aa008d10365c4d2ba89dbc450376b9840d6d55483f",
+  "code_sha256": {
+    "audio_features.py": "4973bd22354a5581d3cb8bb8fed4e015434f92a98912e43ec4773bfc7b30b30c",
+    "robustness_analysis.py": "54352ae3722614767d17479d75504b2199e5e25c19f47a81b4f7e76f2b272d6c",
+    "hysteresis_experiment.py": "82694c1a9f166d99398b76b71d1c729b6ee8d5258a686cd8d8aea3b4998fc4d4"
+  },
+  "raw_wav_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "test_read": false,
+  "deadline_utc": "2026-10-06T21:00:00+00:00",
+  "selection_tuned_from_noise": false,
+  "raw_extractor_reproduced": true,
+  "wall_time_s": 570.3163440999997
+}

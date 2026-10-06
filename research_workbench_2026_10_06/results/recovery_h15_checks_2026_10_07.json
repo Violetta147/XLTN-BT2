@@ -1,0 +1,37 @@
+{
+  "checked_at_utc": "2026-10-06T23:50:07.929334+00:00",
+  "method": "Read-only check of saved artifacts, hashes, cases, SNR and figure sources; no experiment rerun.",
+  "registered_cases": 1744,
+  "model_rows": 3488,
+  "noise_rows": 3360,
+  "hashes_match": true,
+  "unique_case_model_pairs": true,
+  "all_registered_cases_present": true,
+  "figures": [
+    {
+      "name": "robustness_noise_curves",
+      "width": 3576,
+      "height": 2376,
+      "png_sha256": "56a32e38df6a44343d0874b3462c0cbac5abcb09cd3f5f0a931bdc5b51d12a39",
+      "svg_sha256": "db7a8ff68719ea8488801f3790e98772896441d88df53993697f9c1255faab1e",
+      "sources_and_generator_hashes_match": true
+    },
+    {
+      "name": "robustness_stat_coverage",
+      "width": 2856,
+      "height": 937,
+      "png_sha256": "db180707bbd4ba5754f0e46992a6192c7c990ee31229c9d436548a8310aef33e",
+      "svg_sha256": "1e906c122b77b3da2c2bf8d51ca5d7de1cbc93980f00d40967eb5e106b2cf86c",
+      "sources_and_generator_hashes_match": true
+    },
+    {
+      "name": "robustness_other_conditions",
+      "width": 3577,
+      "height": 1656,
+      "png_sha256": "9ebff43c10a570d1ab909b8f6a6864a786c2205a2b44944842213a2a77d7bd2a",
+      "svg_sha256": "7cea0da3a2e8be562e2d58d60354a4398be6d7c9bae3f4f77c447cfd998a6e12",
+      "sources_and_generator_hashes_match": true
+    }
+  ],
+  "test_read_during_recovery": false
+}
