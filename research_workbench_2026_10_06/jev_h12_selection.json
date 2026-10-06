@@ -1,0 +1,98 @@
+{
+  "purpose": "Prospective H12 single-factor hypothesis shortlist, not numerical evaluation or model promotion",
+  "input": {
+    "task": "Prospective H12 experiment choice, not proof of improvement. Four train WAVs, 25ms frames/hop10/range70–400; ACF normalized overlap score and relative RMS gate fit inside each file fold. Accepted path tracking+median3 train mean/std/count AvgMAPE6.178%, LOFO7.279%; manual segment labels available but NO frame F0 truth. Accepted TRAIN errors: V boundary33FN/66, interior51FN/548; UVboundary6FP/59, interior7FP/121; SILboundary1FP/14, interior0/483. Boundary means center within half-window of annotated endpoint. False voiced SIL1 total; recallV .8691. Thus some errors might be mixed-content windows or hard threshold dynamics; which single classical modification is most useful to test AFTER fixed YIN/MPM estimator experiments, while reporting label alignment and avoiding GT-stat-based correction? Require train-only fold fitting and preserve raw labels/metrics. No claimed causal diagnosis from these counts. Include none if evidence insufficient. Select one hypothesis, not hyperparameters or promotion.",
+    "options": [
+      {
+        "id": "hysteresis",
+        "description": "Replace a single ACF voicing threshold by onset/offset hysteresis, retain same features and RMS gate. Fit two score thresholds only on training files/inner LOFO. Could recover adjacent weak V; risk extending voiced runs into UV/SIL."
+      },
+      {
+        "id": "overlap_diagnostic",
+        "description": "Keep deployment unchanged; recompute label-overlap fractions and compare center-vs-majority labels only as diagnostic. Establish sensitivity to mixed windows; cannot itself improve recall under unchanged official labels."
+      },
+      {
+        "id": "rms_hysteresis",
+        "description": "Keep ACF threshold unchanged, replace RMS gate by two energy thresholds conditional on previous voiced frame, fold fit; helps energy cutouts but evidence does not show how many boundary errors fail RMS."
+      },
+      {
+        "id": "voicing_median3",
+        "description": "Replace raw voiced mask with 3-frame majority vote, same ACF/RMS features/thresholds, no tuning. Removes isolated mask flicker but can remove true short voiced events; affects both boundaries."
+      },
+      {
+        "id": "spectral_harmonicity",
+        "description": "Add spectral harmonic evidence to V/UV classifier, train-only calibration; may discriminate mixed/noisy windows but adds a feature and classifier rather than small threshold change."
+      },
+      {
+        "id": "none",
+        "description": "No single modification is justified yet; stratify FN by which score/RMS condition failed and by temporal neighbors before choosing a deployment experiment."
+      }
+    ]
+  },
+  "output": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"requestId\":\"861be323-31f9-4871-9cc6-8685349ad66f\",\"check\":\"select\",\"result\":{\"choice\":{\"id\":\"hysteresis\",\"probability\":0.7},\"none\":0.02,\"fits\":[{\"id\":\"hysteresis\",\"probability\":0.78},{\"id\":\"overlap_diagnostic\",\"probability\":0.19},{\"id\":\"rms_hysteresis\",\"probability\":0.44},{\"id\":\"voicing_median3\",\"probability\":0.42},{\"id\":\"spectral_harmonicity\",\"probability\":0.4},{\"id\":\"none\",\"probability\":0.54}]},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":2221,\"outputTokens\":182,\"cached\":false,\"latencyMs\":545}}"
+      }
+    ],
+    "structuredContent": {
+      "requestId": "861be323-31f9-4871-9cc6-8685349ad66f",
+      "check": "select",
+      "result": {
+        "choice": {
+          "id": "hysteresis",
+          "probability": 0.7
+        },
+        "none": 0.02,
+        "fits": [
+          {
+            "id": "hysteresis",
+            "probability": 0.78
+          },
+          {
+            "id": "overlap_diagnostic",
+            "probability": 0.19
+          },
+          {
+            "id": "rms_hysteresis",
+            "probability": 0.44
+          },
+          {
+            "id": "voicing_median3",
+            "probability": 0.42
+          },
+          {
+            "id": "spectral_harmonicity",
+            "probability": 0.4
+          },
+          {
+            "id": "none",
+            "probability": 0.54
+          }
+        ]
+      },
+      "meta": {
+        "model": "vercel:typesafe-ai/jev",
+        "calls": 1,
+        "inputTokens": 2221,
+        "outputTokens": 182,
+        "cached": false,
+        "latencyMs": 545
+      }
+    }
+  },
+  "id_validation": {
+    "valid": true,
+    "allowed_ids": [
+      "hysteresis",
+      "overlap_diagnostic",
+      "rms_hysteresis",
+      "voicing_median3",
+      "spectral_harmonicity",
+      "none"
+    ]
+  },
+  "interpretation": "Choice hysteresis .70; independent fit .78. Explicit none option fit .54 is meaningful uncertainty despite tool none .02. No calibration data; use only as a candidate hypothesis. Stratify FN score/RMS/temporal failures before implementation; retain all options and evidence.",
+  "no_retry": true
+}
