@@ -2,7 +2,7 @@
 
 ## Hợp đồng nghiên cứu
 
-- Thời hạn: 04:00 ngày 07/10/2026 Asia/Saigon = 2026-10-06T21:00:00Z. Không khởi động thí nghiệm mới sau hạn.
+- Phiên chạy đêm trước có thời hạn 04:00 ngày 07/10/2026 Asia/Saigon = 2026-10-06T21:00:00Z. Người dùng đã xóa schedule và chuyển sang làm trực tiếp trong chat ngày 07/10. Mốc cũ chỉ mô tả phiên lịch sử, không chặn phiên trực tiếp hiện tại.
 - Điểm quay lại ban đầu: commit 009fd2c, nhánh codex/train-mape-investigation.
 - Người dùng yêu cầu phân tích rất sâu, error analysis toàn diện, sáng tạo phương pháp mới, figures/plots/reports, dùng Gemini Chrome và Jev, không hỏi lại và commit/push sau mỗi thay đổi.
 - Không Google Drive, không deep learning, không sửa notebook đã giao. Không tạo PDF.
@@ -54,7 +54,7 @@ So với frozen accepted ACF refit train-only từng fold:
 - Không per-file Average MAPE LOFO tăng quá 2 điểm phần trăm; nếu vi phạm, chỉ giữ như phương án thăm dò, không thay champion.
 - Nếu mọi hướng thất bại: giữ champion, công bố failures và cơ chế học được.
 - Selection nếu tune: inner LOFO chọn chỉ từ registry đã chốt; outer đánh giá rule selection không thấy held file; report final selected LOFO riêng với nested.
-- Vòng tối đa theo thời gian còn lại, không lặp vô hạn để tìm test tốt. Quyết định trước 03:40 để còn thời gian xuất report/push.
+- Mỗi vòng có phạm vi và tiêu chí dừng trước chạy; không lặp vô hạn để tìm test tốt. Mốc chốt 03:40 chỉ thuộc phiên lịch sử đã kết thúc. Phiên trực tiếp theo STATE.md hiện tại.
 
 ## Pipeline 7 stage được chuyển vào bài này
 
@@ -71,7 +71,7 @@ So với frozen accepted ACF refit train-only từng fold:
 ## Nối tiếp và thông báo
 
 Đọc STATE.md trước khi tiếp tục. Tick việc đã hoàn thành, ghi lệnh và artifacts.
-Heartbeat bt2-nghi-n-c-u-n-04-00 chạy trong chat này mỗi giờ vào phút00/30 tới21:00UTC; không phải tiến trình compute đảm bảo nếu máy/app ngủ.
+Heartbeat bt2-nghi-n-c-u-n-04-00 là lịch của phiên đêm cũ; người dùng đã xóa ngày 07/10 và yêu cầu làm trực tiếp. Không tạo lại lịch. Lịch không bảo đảm local compute tiếp tục khi máy/app ngủ.
 Gemini: tab Chrome người dùng đã mở, Pro được chọn để phản biện; không gửi dữ liệu cá nhân, credentials hoặc waveform.
-Google Translate: thông báo tiếng Việt ở mốc quan trọng. Nếu không phản hồi sau2–3phút: bỏ bước cần phản hồi, tiếp tục độc lập; im lặng không cấp thêm quyền.
+Phiên đêm đã dùng Google Translate cho mốc quan trọng; phiên trực tiếp cập nhật trong chat. Im lặng không cấp thêm quyền và không tự chuyển công việc thành schedule.
 Jev: đọc docs/jev/HUONG_DAN_JEV.md, gửi bằng chứng tối thiểu, lưu raw input/output; không retry tự động.

@@ -1,46 +1,67 @@
-# Trạng thái nghiên cứu — đọc trước khi nối tiếp
+# Trạng thái nghiên cứu BT2 — nối tiếp trực tiếp trong chat
 
-- Mốc dừng cứng: 2026-10-07 04:00 Asia/Saigon (2026-10-06T21:00:00Z).
-- Nhánh: codex/train-mape-investigation. Baseline accepted gốc: 009fd2c.
-- Thư mục: research_workbench_2026_10_06; protocol PROTOCOL.md.
-- Người dùng yêu cầu push sau từng thay đổi; không hỏi, dùng Gemini và Jev, figures/plots/reports.
-- Automation heartbeat đã tạo: bt2-nghi-n-c-u-n-04-00, deadline RRULE UNTIL21:00UTC.
-- Hiện đang làm: H00/H10–H14 hoàn thành. H15robustness đang chạy ởtoolsession21440, đọc results/robustness_progress.json và process trước khi resume; không chạy trùng. Chưa đọc WAVtest vòngmới. Nếu process dừng, chỉ resume nguyêncode/registry; deadline21:00UTC.
-- Đã đọc: root/repo AGENTS, core/standalone_pipeline và frozen configs.
-- Gemini Chrome: tab184651875, URL gemini.google.com/app/cd94cd87d07bc5c5; đã chọn Pro, đã gửi prompt reviewer đầu tiên. Cần đọc câu trả lời và lưu log.
-- Google Translate tab184651878 đã đọc thông báo đầu (UI Dừng nghe). Chrome hiện có tab Drive, không đọc/thao tác tab đó.
-- Python: C:/Users/violet/miniconda3/python.exe; numpy2.4.3 scipy1.17.1 pandas3.0.1 matplotlib3.10.8 sklearn1.8.0.
-- Nguồn Claude Science official đã xác minh. Đã đọc MPM paper tác giả: cs.otago.ac.nz/graphics/Geoff/tartini/papers/A_Smarter_Way_to_Find_Pitch.pdf; librosa official YIN docs/source. YIN paper gốc URL ENS chưa truy cập được.
+Cập nhật ngày 07/10/2026. Người dùng xác nhận phần đang thấy mất là câu trả lời/tiến trình trong chat. Các artifacts tối 06/10 còn trên máy và đã được đối chiếu, lưu Git và push bổ sung.
 
-## Hàng đợi
+## Chế độ làm việc hiện tại
 
-- [x] H00: audit.py, H00_AUDIT_REPORT.md, results/audit_validation.json; 20 PNG/SVG, baseline khớp 1e-8, cache/labels khớp, 15 notebook giữ hash, poisoned scoring GT không đổi inference.
-- [x] H00b: metric_audit.py, H00B_METRIC_REPORT.md, 2 PNG/SVG. Synthetic hoán vị: stats MAPE0%, frame MAPE61.5909%; không phải đo trên WAV.
-- [ ] Đọc/lưu Gemini critique, đối chiếu và bổ sung quyết định trước chạy.
-- [x] Jev chọn shortlist prospectiveH12;1call logged jev_h12_selection.json. Chọn score hysteresis(.70/fit.78), none-optionfit.54; không xem confidence như kiểm định.
-- [x] H10 YIN adapter: 1600 synthetic cases, FFT/direct error4.3e-13, clean p95 .475cents; train9.3674%, LOFO12.2374% AvgMAPE. Gate FAIL, champion không đổi. Report YIN_EXPERIMENT_REPORT.md; 3 PNG/SVG.
-- [x] H11 NSDF/MPM: numerical error<4.6e-14; 1600synthetic,12abstentions ở70Hz+noise, clean interior100%coverage/p95.0893cents. Train6.9604%, LOFO8.1883% AvgMAPE, gateFAIL. Report MPM_EXPERIMENT_REPORT.md,3PNG/SVG.
-- [x] H12 hysteresis: registry0/.02/.04/.06/.08/.12, final margin.06; train2.697086%, selectedLOFO6.182753%, nested6.670683%. GatesPASS, provisional eligible, chưa promote/freeze/test. Nested recallV.884498/F1.854151/SIL3 vs accepted.865862/.841398/3. HYSTERESIS_EXPERIMENT_REPORT.md,2PNG/SVG.
-- [x] H13 cùngACF candidates/path, chỉNSDFstrength: train5.0886%, LOFO7.2077%, cải thiệnLOFO<5% nên gateFAIL; không gộpH12. NSDF_STRENGTH_REPORT.md,2PNG/SVG.
-- [x] H14 majority3mask: train4.2254%, LOFO5.8177%, Recall/F1tăng/SILkhôngtăng nhưng phone_F1std tăng, gateFAIL. Không bỏ gate chỉ vì AvgMAPE thấp hơn H12; MASK_VOTE_REPORT.md,1PNG/SVG.
-- [ ] Robustness/stability/stratification/threshold plots.
-- [ ] Freeze trước test; test mô tả một lượt, không tune.
-- [ ] Figure manifests, final reports/gallery/repro commands, validation.
-- [ ] 03:40 chốt để 04:00 dừng, lưu trạng thái và push.
+- Làm trực tiếp trong chat. Người dùng đã xóa schedule bt2-nghi-n-c-u-n-04-00; không tạo lại lịch.
+- Mốc 04:00 ngày 07/10 chỉ thuộc phiên chạy đêm cũ, không phải thời hạn của phiên trực tiếp hiện tại.
+- Đọc AGENTS.md của workspace/repo; commit và push sau mỗi thay đổi đã kiểm tra, xác minh remote; không merge main.
+- Chỉ local, không Google Drive, không deep learning. Người dùng cho phép Gemini Chrome và Jev để phản biện; ghi log, không retry lỗi System One.
+- Giữ notebook đã giao, baseline và đăng ký/tiêu chí trước mỗi thí nghiệm mới. Không âm thầm bỏ gate để chấp nhận kết quả đẹp.
+- Chọn cấu hình bằng train/LOFO/nested. Test từng được xem trong lịch sử: chỉ báo mô tả sau khi chốt, không dùng để tune.
+- Bản kể lại tiến trình: [TIEN_TRINH_KHOI_PHUC_2026_10_07.md](TIEN_TRINH_KHOI_PHUC_2026_10_07.md).
+- Trạng thái ghi tối qua được giữ nguyên tại [STATE_OVERNIGHT_SNAPSHOT_2026_10_06.md](STATE_OVERNIGHT_SNAPSHOT_2026_10_06.md). Không coi trạng thái process/tab trong snapshot là đang hoạt động.
 
-Các artifacts từ analysis phải là số đo thật. Không tạo placeholder metric hoặc ảnh giả.
+## Điểm quay lại và bảo toàn artifacts
 
-## Phát hiện đã đo H00
+- Nhánh: codex/train-mape-investigation.
+- Baseline repository trước vòng nghiên cứu: 009fd2c. Champion là frozen accepted ACF; không phương án mới nào đã được promote.
+- Trước phục hồi: HEAD local/remote fa759d0; còn 24 tệp H15/H17 chưa được Git theo dõi.
+- H15 đã kiểm tra và push riêng: 23bdb0c.
+- H17 đã kiểm tra và push riêng: 79c3830.
+- Kiểm tra phục hồi chỉ đọc artifacts: [H15 receipt](results/recovery_h15_checks_2026_10_07.json), [H17 receipt](results/recovery_h17_checks_2026_10_07.json). Không chạy lại inference hoặc đọc WAV test trong bước này.
+- Thư mục figures hiện có 45 PNG và 45 SVG, gồm kết quả tốt, không đạt và phân tích cơ chế; không coi số figure là số thí nghiệm độc lập.
+- Trạng thái runner H15 cũ không cần resume: progress JSON complete, đủ 1744 cases/3488 model rows, hoàn thành lúc 22:47 ngày 06/10 Asia/Saigon.
 
-- Accepted ACF: train Avg MAPE 6.177967772%, LOFO 7.279236147%; original tương ứng 29.834710577%, 29.110827818%.
-- Train SIL false voiced 45→1, TP535→530, FN79→84. Recall V/UV và confusion được báo riêng.
-- Accepted train V boundary33FN/66, interior51FN/548. Không có nhãn phoneme để kết luận loại phụ âm gây lỗi.
-- Manual V center counts153/244/123/94 khác 3GT148/232/127/82 (phone_F1,phone_M1,studio_F1,studio_M1). Chưa biết protocol tạo 3GT; không sửa GT để khớp nhãn.
-- RUN_LOG.md giữ lỗi nfft và tabulate của hai lần audit đầu; lần sau chạy thành công, không thay môi trường.
-- Voicing diagnostic: train FN84 gồm pitch-only76,both3,energy-only5;16interior+2boundary isolated mask gaps. Boundary FN chỉ5có previousV,13có followingV: hysteresis forward chỉ tác động offset, không cứu hết onset. Report VOICING_DIAGNOSTIC_REPORT.md,2PNG/SVG.
-- Google Translate milestoneH12 đã phát tiếng Việt, UI Dừng nghe xác nhận playback được yêu cầu; không thể xác nhận người dùng nghe được. Gemini reviewer02 vẫn chưa có text phản hồi; tiếp tục độc lập.
-- H12mechanism: train thêm18V+2UV+0SIL; nested thêm17V+2UV+0SIL. phone_F1train chỉ3sharedframes đổiF0, std26.5516→20.9325; append-only26.3657. Phần lớn std gain train này do path/median context, không chỉ thêmcount. LOFOphone_F1std29.2614→29.1584, gain nhỏ hơn; không suy diễn mọi frame đã đúng. HYSTERESIS_MECHANISM_REPORT.md,3PNG/SVG.
-- CRITICAL metric-labelcoupling: phone_F1train2sharedUV ở1.6425/1.6625s đổiF0~71.608/82.785→247.050/240.541Hz, cùngFP, Voverlap0 ởcảhai. True-center-V stdaccepted20.7632/hysteresis20.6690 đã gầnGT20.6. UVcontributionvariance40.31%→6.55% explains mosttrainstatgain. GatesPASSgiữ nguyên nhưng không gọi đây là sửa F0 thật ởV; H12provisional. METRIC_LABEL_COUPLING_REPORT.md,1PNG/SVG.
-- H15registry1744cases,3488modelrows: noise3types×7SNR×20seed×4file plusgain/DC/clip/impulses. Frozencleanheld-filefits và nestedH12margins; không tune từnoise. Rawextractor phải khớpcache trước. Đang chạy, chưaclaimcomplete.
-- H16fixedlogistic C1/.5 trênACFscore+relativeRMS, perfile/classbalancedfit+scaleronlytrain; không thêmfeature. Train5.1192%, LOFO5.4707%, F1.863433/RecallV.884072/SIL1, fixedmethodgatesPASS, provisional. phone_F1LOFOFP8→3/SIL2→0 nhưngTP138→135/FN15→18; khôngtốtởmọifile/lớp. LOGISTIC_VOICING_REPORT.md,2PNG/SVG.
-- Next H17: register joint family/margin shortlist và innerLOFOselection→outerheld evaluation, khôngchọnfamilybằngouter/test. Registry đượcđềxuấtsaucácphân tích trên4file, nênchỉexploratory, khôngxóaselectionhistory.
+## Những gì đã hoàn thành
+
+- [x] H00 audit/tái lập, 20 cặp figure, kiểm tra nguồn/cache/labels/notebooks và inference không dùng scoring GT.
+- [x] H00b: minh họa thống kê mean/std/count không xác định F0 từng thời điểm; kiểm tra protocol count.
+- [x] H10 YIN fixed-support: train AvgMAPE 9.367355%, LOFO 12.237352%, gate FAIL. Không kết luận mọi cách triển khai YIN đều kém.
+- [x] H11 NSDF/MPM: train 6.960350%, LOFO 8.188307%, gate FAIL; báo coverage/abstention.
+- [x] H12 hysteresis: train 2.697086%, selected LOFO 6.182753%, nested 6.670683%; gates PASS nhưng provisional, chưa promote.
+- [x] H13 chỉ đổi NSDF strength với cùng ACF lags/path: train 5.088629%, LOFO 7.207657%, gate FAIL vì lợi ích LOFO chưa đủ 5%.
+- [x] H14 majority3 voiced mask: train 4.225410%, LOFO 5.817675%, gate FAIL vì std phone_F1 tăng.
+- [x] Chẩn đoán V/UV/SIL, mixed windows, hysteresis influence và metric-label coupling; không diễn giải cải thiện stats thành mọi pitch đã đúng.
+- [x] H15 robustness: 1744/1744 cases, hai mô hình/case, noise/gain/DC/clipping/impulses; synthetic perturbations, không tune trên noise.
+- [x] H16 logistic 2D cố định ACF_score + relative_rms: train 5.119156%, LOFO 5.470735%; fixed-method gates PASS, chưa promote.
+- [x] H17 joint family/margin selection: selected LOFO 5.470735% nhưng nested procedure 7.374765% so với accepted 7.279236%; gate FAIL, champion giữ nguyên.
+- [x] Bảo toàn 24 artifacts chưa commit thành hai commit riêng và xác minh remote.
+- [x] Kể lại tiến trình trong tài liệu và cập nhật trạng thái cho phiên trực tiếp.
+
+## Các phát hiện cần giữ khi giải thích
+
+- Original ACF train AvgMAPE 29.834711%, accepted 6.177968%; accepted LOFO 7.279236%.
+- Train false_voiced_sil 45→1 là số khung SIL bị dự đoán hữu thanh trên 4 file; TP 535→530, FN 79→84.
+- Ground truth có mean/std/count từng file và nhãn loại đoạn, chưa có F0 reference mỗi timestamp trong LAB đang dùng.
+- Manual V center counts 153/244/123/94 khác 3GT 148/232/127/82. Protocol tạo 3GT chưa được xác nhận; không sửa GT cho khớp.
+- H12 phone_F1 train: một phần lớn std gain liên quan tới hai khung nhãn UV vẫn bị đoán V nhưng F0 đổi gần mean. Cần đọc METRIC_LABEL_COUPLING_REPORT.md, không gọi đây là sửa F0 thật của V.
+- H17: chọn phương pháp tốt nhất trên LOFO rồi báo chính LOFO đó tạo ước lượng lạc quan cho quy trình chọn. Nested tách outer held file khỏi chọn phương án/fit, nhưng không xóa lịch sử đã quan sát bốn file để đề xuất registry.
+- n=4 file train; các frame chồng nhau và seeds noise không tạo hàng nghìn người nói độc lập.
+
+## Việc còn lại
+
+- [ ] Đọc phản hồi Gemini reviewer02 nếu vẫn có thể truy cập và ghi đúng phần quan sát; không gửi lại prompt chỉ để có câu trả lời.
+- [ ] Tạo tổng hợp uncertainty/stability theo file và gallery/captions giúp người dùng đọc toàn bộ findings.
+- [ ] Đăng ký câu hỏi và gate cho vòng mới trước chạy, ưu tiên nguồn GT/count, phân loại lỗi voicing và thất bại dưới brown noise.
+- [ ] Quyết định freeze/promote bằng đầy đủ điều kiện đã đăng ký; giữ kết quả không đạt.
+- [ ] Chỉ đọc test sau khi cấu hình đã chốt cho một câu hỏi cụ thể; báo rõ test đã từng được xem.
+
+## Môi trường và log
+
+Python đã dùng: C:/Users/violet/miniconda3/python.exe. Môi trường và hashes của phiên gốc nằm trong manifests/results; kiểm tra runtime trước run mới.
+
+AI_REVIEW_LOG.md giữ critique Gemini reviewer01 đã sửa các nhầm lẫn về metric/phoneme/interpolation; reviewer02 lúc lưu chưa có text để đọc. Jev H12 là 1 call lựa chọn semantic có log, không phải chạy F0. Tab IDs trong snapshot có thể lỗi thời; không suy ra tab còn tồn tại.
+
+RUN_LOG.md giữ cả lần chạy lỗi và cách sửa. Không dựng lại câu trả lời chat cũ như thể nguyên văn đã được khôi phục; tài liệu hiện tại là tổng hợp mới từ bằng chứng.
