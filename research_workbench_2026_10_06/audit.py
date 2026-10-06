@@ -50,6 +50,8 @@ def save_figure(name, figure, sources, caption, limits):
     for suffix in ('png', 'svg'):
         path = FIGURES / f'{name}.{suffix}'
         figure.savefig(path, bbox_inches='tight')
+        if suffix == 'svg':
+            path.write_text('\n'.join(line.rstrip() for line in path.read_text(encoding='utf-8').splitlines()) + '\n', encoding='utf-8')
     ARTIFACTS.append({'name': name, 'png': f'figures/{name}.png', 'svg': f'figures/{name}.svg',
                       'sources': [{'path': str(p.relative_to(HERE)), 'sha256': digest(p)} for p in sources],
                       'caption_vi': caption, 'limits_vi': limits,
@@ -279,7 +281,7 @@ def main():
         frequencies, spectrum = frequencies[plotted_band], spectrum[plotted_band]
         spec_csv = csv_write('spectrogram_' + stem + '.csv', pd.DataFrame({'time_s': np.tile(tt, len(frequencies)), 'frequency_hz': np.repeat(frequencies, len(tt)), 'power_db': 10 * np.log10(spectrum.ravel() + 1e-20)}))
         fig, ax = plt.subplots(figsize=(11, 4))
-        image = ax.pcolormesh(tt, frequencies, 10 * np.log10(spectrum + 1e-20), shading='auto', cmap='magma')
+        image = ax.pcolormesh(tt, frequencies, 10 * np.log10(spectrum + 1e-20), shading='auto', cmap='magma', rasterized=True)
         fig.colorbar(image, ax=ax, label='PSD (dB relative to 1 signal-unit²/Hz)')
         ax.plot(item['times'], predictions['improved'][item['file']][1], '.', color='#28dbb4', ms=2, label='accepted F0 estimate')
         ax.set(ylim=(0, 2000), xlabel='Time (s)', ylabel='Frequency (Hz)', title=stem + ': spectrum and estimated F0')

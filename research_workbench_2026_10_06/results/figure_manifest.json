@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-06T14:56:49.266882+00:00",
+  "created_at_utc": "2026-10-06T14:59:33.884070+00:00",
   "figures": [
     {
       "name": "01_label_support",
@@ -14,7 +14,7 @@
       "caption_vi": "Số khung theo nhãn thật của bốn file train.",
       "limits_vi": "Khung chồng nhau; không phải mẫu độc lập.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -34,7 +34,7 @@
       "caption_vi": "Waveform, nhãn đoạn và F0 trước/sau của phone_F1.",
       "limits_vi": "Đường GT mean chỉ là chuẩn cả file, không phải contour chuẩn từng khung.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -54,7 +54,7 @@
       "caption_vi": "Phổ thời gian và F0 ước lượng của phone_F1.",
       "limits_vi": "Không phải xác nhận mọi khung F0 bằng ground truth; đồ thị phổ là chẩn đoán.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -74,7 +74,7 @@
       "caption_vi": "Waveform, nhãn đoạn và F0 trước/sau của phone_M1.",
       "limits_vi": "Đường GT mean chỉ là chuẩn cả file, không phải contour chuẩn từng khung.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -94,7 +94,7 @@
       "caption_vi": "Phổ thời gian và F0 ước lượng của phone_M1.",
       "limits_vi": "Không phải xác nhận mọi khung F0 bằng ground truth; đồ thị phổ là chẩn đoán.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -114,7 +114,7 @@
       "caption_vi": "Waveform, nhãn đoạn và F0 trước/sau của studio_F1.",
       "limits_vi": "Đường GT mean chỉ là chuẩn cả file, không phải contour chuẩn từng khung.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -134,7 +134,7 @@
       "caption_vi": "Phổ thời gian và F0 ước lượng của studio_F1.",
       "limits_vi": "Không phải xác nhận mọi khung F0 bằng ground truth; đồ thị phổ là chẩn đoán.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -154,7 +154,7 @@
       "caption_vi": "Waveform, nhãn đoạn và F0 trước/sau của studio_M1.",
       "limits_vi": "Đường GT mean chỉ là chuẩn cả file, không phải contour chuẩn từng khung.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -174,7 +174,7 @@
       "caption_vi": "Phổ thời gian và F0 ước lượng của studio_M1.",
       "limits_vi": "Không phải xác nhận mọi khung F0 bằng ground truth; đồ thị phổ là chẩn đoán.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -190,7 +190,7 @@
       "caption_vi": "Phân bố đặc trưng theo V/UV/SIL.",
       "limits_vi": "Dữ liệu train gộp; histogram không chứng minh khả năng tổng quát hay feature importance nhân quả.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -210,7 +210,7 @@
       "caption_vi": "ROC và precision–recall của ACF score theo từng file.",
       "limits_vi": "SIL không thuộc ROC này. Chưa hiệu chỉnh score thành xác suất. Các khung tương quan.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -226,7 +226,7 @@
       "caption_vi": "Ba thành phần MAPE của ACF trước/sau trên train.",
       "limits_vi": "Mean/std/count là thống kê cả file; không phải MAPE F0 từng khung.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -242,7 +242,7 @@
       "caption_vi": "Ma trận V/UV và số khung SIL bị gán hữu thanh.",
       "limits_vi": "SIL được báo riêng; giảm SIL vẫn có thể làm tăng FN V.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -258,7 +258,7 @@
       "caption_vi": "Vị trí lỗi V/UV/SIL trước/sau theo thời gian.",
       "limits_vi": "Đây là lỗi lớp theo nhãn đoạn; không chấm độ đúng cao độ của từng khung.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -274,7 +274,7 @@
       "caption_vi": "Phân rã phương sai F0 theo nhãn: within và between cộng đúng tổng phương sai.",
       "limits_vi": "Tỷ lệ đóng góp phương sai không phải tỷ lệ gây MAPE; oracle nhãn chỉ chẩn đoán.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -290,7 +290,7 @@
       "caption_vi": "Lỗi lớp ở khung sát ranh giới và khung bên trong.",
       "limits_vi": "So sánh mô tả, không coi các khung chồng nhau là quan sát độc lập.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -306,7 +306,7 @@
       "caption_vi": "Độ nhạy ngưỡng ACF: balanced accuracy, recall V và lỗi SIL.",
       "limits_vi": "Dùng train đã biết để chẩn đoán; không chọn threshold mới từ đồ thị này hay từ test.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -326,7 +326,7 @@
       "caption_vi": "Chênh lệch LOFO theo file và bootstrap lấy file làm đơn vị.",
       "limits_vi": "Chỉ n=4 và cấu hình từng được chọn trên train; không phải kiểm định xác nhận.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -342,7 +342,7 @@
       "caption_vi": "Số chu kỳ nằm trong cửa sổ 20/25/30 ms theo F0.",
       "limits_vi": "Công thức hình học F0×duration, không phải phép đo pitch accuracy.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     },
     {
@@ -362,7 +362,7 @@
       "caption_vi": "Tương quan đặc trưng để nhận ra thông tin trùng lặp.",
       "limits_vi": "Pooled frames tương quan thời gian; không suy diễn nhân quả hay p-value độc lập.",
       "generator": "audit.py",
-      "generator_sha256": "3e811ea9aa3b4fb204a96ef4d247c62d5ec47db4785acb7e0aa52bef0533e73a",
+      "generator_sha256": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
       "command": "python research_workbench_2026_10_06/audit.py"
     }
   ]
