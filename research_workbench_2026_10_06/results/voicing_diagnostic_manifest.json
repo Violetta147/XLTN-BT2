@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "17_voicing_failure_reasons",
+      "png": "figures/17_voicing_failure_reasons.png",
+      "svg": "figures/17_voicing_failure_reasons.svg",
+      "sources": [
+        {
+          "path": "results\\voicing_fn_reason_summary.csv",
+          "sha256": "3cd0cde911e227855481da318dec4bee69915833f9744246a1cf08a1baf47098"
+        }
+      ],
+      "caption_vi": "Tách FN hữu thanh theo điều kiện ACF/RMS thất bại.",
+      "limits_vi": "Điều kiện logic trực tiếp; không suy diễn nguyên nhân sinh lý/phoneme.",
+      "generator": "voicing_diagnostic.py",
+      "generator_sha256": "623e8efbd0789bc82d9d2b9c2a5fe7ce9d97a97611b6098df3b4480536ea5463",
+      "command": "python research_workbench_2026_10_06/voicing_diagnostic.py"
+    },
+    {
+      "name": "18_overlap_vs_voicing",
+      "png": "figures/18_overlap_vs_voicing.png",
+      "svg": "figures/18_overlap_vs_voicing.svg",
+      "sources": [
+        {
+          "path": "results\\voicing_failure_reasons.csv",
+          "sha256": "5991b10fbeaa080f0b9afc2b3d30075be874a0a564bdb170bb2cd14a5dcddf79"
+        }
+      ],
+      "caption_vi": "Tỷ lệ V trong cửa sổ và khoảng cách ngưỡng ACF.",
+      "limits_vi": "Nhãn chính vẫn center-label; chỉ chẩn đoán window mixing, không đổi label để tăng score.",
+      "generator": "voicing_diagnostic.py",
+      "generator_sha256": "623e8efbd0789bc82d9d2b9c2a5fe7ce9d97a97611b6098df3b4480536ea5463",
+      "command": "python research_workbench_2026_10_06/voicing_diagnostic.py"
+    }
+  ]
+}

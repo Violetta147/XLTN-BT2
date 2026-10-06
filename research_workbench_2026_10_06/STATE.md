@@ -17,7 +17,7 @@
 - [x] H00: audit.py, H00_AUDIT_REPORT.md, results/audit_validation.json; 20 PNG/SVG, baseline khớp 1e-8, cache/labels khớp, 15 notebook giữ hash, poisoned scoring GT không đổi inference.
 - [x] H00b: metric_audit.py, H00B_METRIC_REPORT.md, 2 PNG/SVG. Synthetic hoán vị: stats MAPE0%, frame MAPE61.5909%; không phải đo trên WAV.
 - [ ] Đọc/lưu Gemini critique, đối chiếu và bổ sung quyết định trước chạy.
-- [ ] Jev rà phạm vi một hoặc vài claim/chọn phương án khi còn ngữ nghĩa chưa rõ.
+- [x] Jev chọn shortlist prospectiveH12;1call logged jev_h12_selection.json. Chọn score hysteresis(.70/fit.78), none-optionfit.54; không xem confidence như kiểm định.
 - [x] H10 YIN adapter: 1600 synthetic cases, FFT/direct error4.3e-13, clean p95 .475cents; train9.3674%, LOFO12.2374% AvgMAPE. Gate FAIL, champion không đổi. Report YIN_EXPERIMENT_REPORT.md; 3 PNG/SVG.
 - [x] H11 NSDF/MPM: numerical error<4.6e-14; 1600synthetic,12abstentions ở70Hz+noise, clean interior100%coverage/p95.0893cents. Train6.9604%, LOFO8.1883% AvgMAPE, gateFAIL. Report MPM_EXPERIMENT_REPORT.md,3PNG/SVG.
 - [ ] H12+ từ kết quả mới: ghi hypothesis/registry/gates trước mỗi experiment.
@@ -35,3 +35,4 @@ Các artifacts từ analysis phải là số đo thật. Không tạo placeholde
 - Accepted train V boundary33FN/66, interior51FN/548. Không có nhãn phoneme để kết luận loại phụ âm gây lỗi.
 - Manual V center counts153/244/123/94 khác 3GT148/232/127/82 (phone_F1,phone_M1,studio_F1,studio_M1). Chưa biết protocol tạo 3GT; không sửa GT để khớp nhãn.
 - RUN_LOG.md giữ lỗi nfft và tabulate của hai lần audit đầu; lần sau chạy thành công, không thay môi trường.
+- Voicing diagnostic: train FN84 gồm pitch-only76,both3,energy-only5;16interior+2boundary isolated mask gaps. Boundary FN chỉ5có previousV,13có followingV: hysteresis forward chỉ tác động offset, không cứu hết onset. Report VOICING_DIAGNOSTIC_REPORT.md,2PNG/SVG.

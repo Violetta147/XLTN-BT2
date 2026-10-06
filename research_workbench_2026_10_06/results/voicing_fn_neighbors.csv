@@ -1,0 +1,5 @@
+split,boundary,fn,isolated_mask_gaps,previous_voiced,following_voiced
+lofo,False,52,15,28,25
+lofo,True,35,2,6,14
+train,False,51,16,27,25
+train,True,33,2,5,13

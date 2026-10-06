@@ -1,0 +1,13 @@
+split,boundary,reason,false_negative_frames
+lofo,False,both_fail,1
+lofo,False,energy_only_fail,3
+lofo,False,pitch_only_fail,48
+lofo,True,both_fail,3
+lofo,True,energy_only_fail,3
+lofo,True,pitch_only_fail,29
+train,False,both_fail,1
+train,False,energy_only_fail,3
+train,False,pitch_only_fail,47
+train,True,both_fail,2
+train,True,energy_only_fail,2
+train,True,pitch_only_fail,29
