@@ -1,0 +1,38 @@
+{
+  "baseline_reproduced": true,
+  "cache_labels_times_match": true,
+  "notebook_hashes_unchanged": true,
+  "notebook_count": 15,
+  "poisoned_gt_inference_invariant": true,
+  "variance_identity_verified": true,
+  "raw_training_manifest": [
+    {
+      "file": "phone_F1.wav",
+      "wav_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+      "segment_lab_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+      "stats_lab_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192"
+    },
+    {
+      "file": "phone_M1.wav",
+      "wav_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+      "segment_lab_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+      "stats_lab_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e"
+    },
+    {
+      "file": "studio_F1.wav",
+      "wav_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+      "segment_lab_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+      "stats_lab_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5"
+    },
+    {
+      "file": "studio_M1.wav",
+      "wav_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+      "segment_lab_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+      "stats_lab_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b"
+    }
+  ],
+  "figure_count": 20,
+  "test_files_read_in_this_audit": false,
+  "started_at_utc": "2026-10-06T14:56:49.266882+00:00",
+  "wall_time_s": 28.363961899998685
+}

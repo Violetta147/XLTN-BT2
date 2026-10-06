@@ -1,0 +1,11 @@
+{
+  "n_independent_units": 4,
+  "unit": "file",
+  "paired_mean_delta_pp": -21.831591670406777,
+  "descriptive_file_bootstrap_95_interval_pp": [
+    -31.652091156361553,
+    -9.83974733124244
+  ],
+  "exploratory_exact_two_sided_sign_flip_p": 0.125,
+  "warning": "Only 4 files; earlier selected accepted configuration and exploratory repeated analyses. Not a confirmatory hypothesis test or population confidence guarantee."
+}
