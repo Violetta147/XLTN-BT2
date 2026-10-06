@@ -1,6 +1,8 @@
 # Phân tích và cải tiến BT2: vì sao train gần 30% còn test khoảng 9%?
 
 Ngày 05/10/2026. Số liệu được chạy lại local; giờ trong nhật ký là giờ Việt Nam (UTC+7).
+Cập nhật 06/10/2026: thêm mục5.1 về score T/2T/3T và mục5.2 về nhận nhầm khoảng lặng,
+tính bằng chứng trực tiếp từ WAV train trong mọi notebook mới.
 
 ## 1. Kết luận đọc trước
 
@@ -93,6 +95,17 @@ Praat cũng mô tả việc ACF có đỉnh ở bội chu kỳ và phải giải
 
 ![Waveform và các đỉnh cạnh tranh](figures/phone_F1_competing_periods.png)
 
+Trong notebook mới, mục **5.1. Bằng chứng số liệu** hiện in độ cao từng đỉnh tới10 chữ số thập phân,
+độ trễ, F0 sau nội suy, chênh với đỉnh cao nhất và lựa chọn của bản cũ ở ba khung liên tiếp.
+Bảng và hình được tính khi chạy từ WAV, không dùng các score ghi sẵn. Output đã chạy lưu trong `executed_local/`.
+
+![Minh chứng được chạy ngay trong notebook](figures/notebook_acf_greedy_peak_evidence.png)
+
+Chênh lệch score chứng minh lựa chọn `argmax` tại bội chu kỳ trong khung được kiểm tra.
+Nó chưa chứng minh riêng rằng nhiễu gây ra thứ tự đỉnh này: chưa có tín hiệu sạch để đối chiếu,
+và sóng tuần hoàn lý tưởng cũng có đỉnh ở bội chu kỳ. Nhiễu, biến đổi giọng nói, lấy mẫu và tính toán
+đều có thể góp phần; không quy hết nguyên nhân cho nhiễu chỉ từ một waveform.
+
 Chẩn đoán train thấy 14 dự đoán thấp hơn 60% GT mean ở phone_F1; 12 nằm trong V, không khung nào
 ở vùng sát ranh giới nhãn theo tiêu chí nửa độ dài khung. Trong 9/14 khung có ứng viên gần 2/3/4 lần F0
 với chênh strength <0,02. Con số này xác định các trường hợp nghi ngờ, không phải số lỗi F0 đã có GT từng khung.
@@ -101,6 +114,35 @@ Phân rã phương sai của phone_F1 theo nhóm nhãn: V góp **68,67%**, UV g�
 Đây là phần phương sai của mỗi nhóm quanh mean chung, gồm độ phân tán trong nhóm và độ lệch mean nhóm;
 không phải tỷ lệ “lỗi có thể loại bỏ” tương ứng. Chỉ hai F0 SIL quanh 395 Hz đã góp hơn một phần năm phương sai.
 Giữ V thật để chẩn đoán vẫn cho std **41,58 Hz**, nên cổng năng lượng một mình chưa giải quyết phone_F1.
+
+#### Nhận nhầm khoảng lặng: bằng chứng mới trong mục 5.2 của notebook
+
+| Tâm khung (s) | Nhãn | ACF score | RMS tương đối | F0 (Hz) |
+| --- | --- | --- | --- | --- |
+| 3.1725 | SIL | 0.75776514 | 0.05900031 | 394.19 |
+| 3.1825 | SIL | 0.75263366 | 0.05652544 | 396.78 |
+
+Hai khung này có nhãn SIL trong LAB và không sát ranh giới theo tiêu chí nửa độ dài khung.
+Score ACF vượt ngưỡng học trên train dù RMS tương đối chỉ khoảng 0,057–0,059.
+ACF chuẩn hóa đo độ giống nhau khi dịch tín hiệu; biên độ nhỏ không tự bảo đảm score nhỏ.
+Thuật toán gán V rồi đổi độ trễ thành F0, tạo hai dự đoán sai trong vùng khoảng lặng có nhãn.
+
+| Phép tính | F0num | Mean (Hz) | Std (Hz) | MAPE std (%) |
+| --- | --- | --- | --- | --- |
+| Mọi F0 hữu hạn: điểm chính thức | 142 | 206.22 | 48.94 | 137.56 |
+| Bỏ riêng F0 trong SIL: chỉ chẩn đoán | 140 | 203.52 | 43.70 | 112.15 |
+
+Phép bỏ riêng SIL thật cho thấy ảnh hưởng của hai giá trị xa mean lên std.
+Đây là chẩn đoán bằng nhãn thật, không dùng để sửa đầu ra hoặc làm đẹp bảng chấm điểm.
+Std vẫn cao sau khi bỏ SIL vì còn lỗi chọn bội chu kỳ và nhận nhầm UV.
+Tỷ lệ 21,07% là phần phương sai quanh mean chung, không phải tỷ lệ std giảm khi bỏ hai điểm.
+
+![Waveform khoảng lặng và ACF vượt ngưỡng](figures/notebook_acf_silence_evidence.png)
+
+Notebook cũng in số SIL nhận V và F0 hữu hạn trong SIL của baseline và cấu hình đang chạy,
+kèm ngưỡng năng lượng nếu có. So sánh là giữa cả pipeline; chưa tách riêng hiệu quả cổng năng lượng.
+Đã xác minh lỗi nhận SIL và tác động thống kê, nhưng chưa xác định nguồn vật lý của tín hiệu nền
+hoặc chứng minh nó là nhiễu môi trường ngẫu nhiên. Câu giải thích về loại nhiễu đó được ghi là giả thuyết.
 
 ![phone_F1 trước và sau cải tiến](figures/phone_F1_before_after.png)
 
@@ -434,7 +476,8 @@ $bt2Python = 'C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\.uv-cache-bt2-
 Nếu muốn bảo toàn nhật ký gốc, tái lập trong một bản copy thư mục nghiên cứu; các script ghi thêm sự kiện và ghi lại kết quả.
 Không xem việc chạy lại selection sau khi đã biết test là một thí nghiệm mới có test chưa xem.
 
-Kiểm chứng thực hiện: bốn notebook ×8 code cell, tổng30 hình; train/test khớp phép đánh giá độc lập tới1e-10;
+Kiểm chứng thực hiện: bốn notebook ×10 code cell,
+tổng38 hình; train/test khớp phép đánh giá độc lập tới1e-10;
 bỏ labels/stats/segments vẫn cho prediction giống hệt; SHA256 sáu notebook gốc không đổi.
 Đã xem hình waveform/ACF cạnh tranh, contour trước/sau, phân bố train và một hình test từ output notebook.
 Các bảng còn lại được đối chiếu số liệu tự động; không khẳng định đã xem thủ công mọi hình.

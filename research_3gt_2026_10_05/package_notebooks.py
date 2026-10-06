@@ -203,6 +203,59 @@ for name, config in MODEL_CONFIGS.items():
     TRAIN_ROWS[name] = evaluate(items, config, FITTED[name])
     show_results(TRAIN_ROWS[name], 'KẾT QUẢ TẬP TRAIN — ' + name)
 '''))
+        cells.append(cell('markdown', '''## 5.1. Bằng chứng số liệu: vì sao bản cũ chọn nhầm bội chu kỳ?
+Cập nhật 06/10/2026. Mục này **tính trực tiếp từ WAV `phone_F1` của train**, dùng ACF gốc khung 25 ms.
+Đây là phép chẩn đoán chung về ACF, ngay cả khi notebook đang chạy AMDF hoặc GMM ACF khung 20 ms.
+
+Trong từng khung, bản cũ dùng `argmax`: chọn đỉnh ACF có score cao nhất trong miền tìm kiếm.
+Bảng dưới in score đến **10 chữ số thập phân**, độ trễ và F0 sau nội suy, chênh lệch với score cao nhất,
+cùng cột đánh dấu đỉnh bản cũ chọn. Ba tâm khung là **0,5725; 0,5925; 0,6025 giây**.
+Các ký hiệu ~T/~2T/~3T được đọc từ ba đỉnh theo độ trễ và mẫu rung lặp trên waveform;
+chúng không phải nhãn F0 chuẩn từng khung của thầy.
+
+Ở khung đầu, ứng viên khoảng217,4165 Hz chỉ kém đỉnh tạo72,1836 Hz khoảng0,0004927728 điểm ACF.
+Đỉnh nhỉnh hơn được bản cũ chọn, dù ứng viên này có độ trễ gần ba lần chu kỳ rung thấy trên waveform.
+Số liệu này chứng minh **cơ chế chọn đỉnh lớn nhất có thể chọn bội chu kỳ** trong đoạn đã kiểm tra.
+
+**Giới hạn về nguyên nhân:** nhiễu có thể làm thay đổi thứ tự các đỉnh. Tuy nhiên, ba bảng và waveform này
+chưa tách riêng ảnh hưởng của nhiễu khỏi biến đổi giọng nói, lấy mẫu và tính toán.
+Ngay cả sóng tuần hoàn lý tưởng cũng có các đỉnh ở T,2T,3T, nên không kết luận “chắc chắn do nhiễu”
+chỉ từ việc đỉnh3T cao hơn đỉnhT. Muốn chứng minh riêng nhiễu, cần tín hiệu sạch tham chiếu hoặc thí nghiệm thêm nhiễu có kiểm soát.
+
+Sau hình, bảng mean/std/count của **toàn file ACF gốc** liên hệ lỗi với cách chấm.
+Std cao gồm nhiều nguồn: chọn bội chu kỳ và nhận nhầm UV/SIL; ba khung minh họa không giải thích toàn bộ sai số.
+'''))
+        cells.append(cell('code', '''GREEDY_PEAK_EVIDENCE = greedy_period_evidence(train_by_frame[25])
+'''))
+        cells.append(cell('markdown', '''## 5.2. Bằng chứng số liệu: nhận nhầm khoảng lặng thành hữu thanh
+SIL là nhãn khoảng lặng trong LAB theo thời gian; khoảng lặng của bản ghi thực tế không nhất thiết có biên độ bằng 0.
+Trong vùng này, tín hiệu nền đôi khi có mức tự tương quan đủ cao để vượt ngưỡng ACF.
+ACF chuẩn hóa đo độ giống nhau khi dịch tín hiệu, không đo riêng độ lớn âm thanh:
+một khung biên độ nhỏ vẫn có thể có score cao và bị nhận thành hữu thanh (V).
+Sau đó thuật toán đổi độ trễ thành một F0; F0 này là **dự đoán sai trong vùng nhãn SIL**, không phải bằng chứng có tiếng nói.
+
+Ví dụ ACF gốc trên `phone_F1`: hai khung tâm khoảng 3,1725 và 3,1825 giây sinh F0 khoảng 394 và 397 Hz.
+Bảng đầu tính trực tiếp thời điểm, nhãn SIL, score so với ngưỡng học từ train, RMS và F0 từ WAV.
+Hình cho thấy vùng có nhãn SIL, waveform khung và đỉnh ACF vượt ngưỡng.
+Nhãn khung được lấy theo tâm khung; cột sát ranh giới cho biết khung có gần chỗ chuyển nhãn hay không.
+
+Bảng thứ hai so sánh std của mọi dự đoán với std sau khi **bỏ riêng F0 có nhãn SIL thật để chẩn đoán**.
+Đây là phép đo ảnh hưởng thống kê, không phải thuật toán được phép sử dụng khi gặp WAV chưa có nhãn.
+Tỷ lệ phương sai của nhóm SIL được tính quanh mean chung; nó không bằng phần trăm std sẽ giảm khi bỏ SIL.
+Điểm train/test chính thức vẫn tính mọi F0 hữu hạn, kể cả dự đoán sai trong SIL.
+
+Bảng cuối đối chiếu baseline ACF 25 ms với cấu hình đang chạy trong notebook này:
+số SIL bị nhận V, số F0 trong SIL và ngưỡng RMS nếu mô hình có cổng năng lượng.
+Cổng năng lượng loại khung RMS quá thấp; sửa cách chọn bội chu kỳ xử lý một nguồn lỗi khác.
+Các cấu hình có thể thay đổi cả đường F0 và lọc trung vị, nên không quy mọi cải thiện cho riêng cổng năng lượng.
+
+**Giới hạn về nguyên nhân:** đã đo được nhận nhầm SIL và tác động lên std.
+Chưa xác minh nguồn vật lý của tín hiệu nền hoặc tính ngẫu nhiên của nó, nên
+“nhiễu môi trường có dạng tuần hoàn ngẫu nhiên” là một giả thuyết giải thích, chưa phải kết luận đã chứng minh.
+'''))
+        cells.append(cell('code', '''SILENCE_F0_EVIDENCE, SILENCE_STD_DIAGNOSTIC, SILENCE_MODEL_COMPARISON = silence_f0_evidence(
+    train_by_frame, MODEL_CONFIGS, FITTED)
+'''))
         cells.append(cell('markdown', '''## 6. Train cao/thấp chưa đủ: kiểm tra giữ riêng file
 Train ở trên là chẩn đoán trên dữ liệu đã học ngưỡng. LOFO (leave one file out) giữ riêng một file,
 học ngưỡng từ ba file còn lại rồi chấm file giữ riêng; lặp đủ bốn lần.

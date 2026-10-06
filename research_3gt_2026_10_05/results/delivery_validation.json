@@ -1,5 +1,5 @@
 {
-  "verified_at_vietnam": "2026-10-05T23:00:47+07:00",
+  "verified_at_vietnam": "2026-10-06T08:19:00+07:00",
   "python": "3.12.10 (main, May 30 2025, 05:39:07) [MSC v.1943 64 bit (AMD64)]",
   "python_executable": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.uv-cache-bt2-final\\archive-v0\\oddOTo5D9yxfnQNnNk2kA\\Scripts\\python.exe",
   "platform": "Windows-10-10.0.19045-SP0",
@@ -13,37 +13,37 @@
   "notebooks": [
     {
       "notebook": "BT2_ACF_AMDF_GMM_improved_train_only.ipynb",
-      "code_cells_executed": 8,
-      "figures": 12,
-      "source_sha256": "4823be4b3c406bba9015990a6bdbddd3b094adff240ce3d51ba2f3164e8bb55a",
-      "executed_sha256": "4830859df0ee1c959379177583945833a154fea29ca3949d4ec193637fd43bc7",
+      "code_cells_executed": 10,
+      "figures": 14,
+      "source_sha256": "f08dd4190980b08c77ca924376d2629973316934558ffbefb329de35fc66ab8e",
+      "executed_sha256": "60bb592eeffc541f84d432bfe230795f1431c3ea7f2a2a9b65294a44cb3d3884",
       "train_test_parity_atol": 1e-10,
       "code_identical_to_executed": true
     },
     {
       "notebook": "BT2_ACF_improved_train_only.ipynb",
-      "code_cells_executed": 8,
-      "figures": 6,
-      "source_sha256": "9aee0b13131c577d4da2414f972bbe4dfad09268b90f155eee62c2416853b999",
-      "executed_sha256": "bf813a6f925071e6181c92960a85b9190a0f7ac64c682a4526828cb90e742919",
+      "code_cells_executed": 10,
+      "figures": 8,
+      "source_sha256": "78e9c58ecb03e0817cdcfa8def8f2962ec3f8b63d2fd06d6a025dd4ee9a9a144",
+      "executed_sha256": "4ab52afbbd8cb6a55cdf65aa921b178e70ea6e4774d2ce8840b4afb0de0c0a92",
       "train_test_parity_atol": 1e-10,
       "code_identical_to_executed": true
     },
     {
       "notebook": "BT2_AMDF_improved_with_energy_train_only.ipynb",
-      "code_cells_executed": 8,
-      "figures": 6,
-      "source_sha256": "3a628277a18f9d4e583f9c089c5bae9e5e84d20f373263f16500e8506cbcd16b",
-      "executed_sha256": "d4748803a57639a7f3c7f48ee6fea5f59d2e9bd25c427c3b3e07650471b149b0",
+      "code_cells_executed": 10,
+      "figures": 8,
+      "source_sha256": "5a25c6323760f160be3450bffb7a9220dc9d1ba77ef66877303cb70c9e102ca3",
+      "executed_sha256": "39ff1361d1640cc8b5bede947b817beb533f956743db858c9c58229f0a22ce4d",
       "train_test_parity_atol": 1e-10,
       "code_identical_to_executed": true
     },
     {
       "notebook": "BT2_AMDF_improved_without_energy_train_only.ipynb",
-      "code_cells_executed": 8,
-      "figures": 6,
-      "source_sha256": "97b5f73614fa995378cd19382f12726bb6066f3876dd3a24f42b240ca65b79d7",
-      "executed_sha256": "a9e9a13bc556cd33c4390e87b8807e5b1dccb3131d46869eb750d02382f4d382",
+      "code_cells_executed": 10,
+      "figures": 8,
+      "source_sha256": "d914dc52072eae0443ecc21d16627717d471a68c6d91afe3278bd0deb67d4511",
+      "executed_sha256": "5843df893dc96be1e3b3bcce6d09478d65afc96b10f92bbdb4cd76435aad7837",
       "train_test_parity_atol": 1e-10,
       "code_identical_to_executed": true
     }

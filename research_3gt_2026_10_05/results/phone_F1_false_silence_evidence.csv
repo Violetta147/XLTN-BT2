@@ -1,0 +1,3 @@
+model,file,time_s,label,boundary,relative_rms,score,f0,candidate_count,double_f0_candidate,double_candidate_score_gap
+ACF,phone_F1.wav,3.1725,sil,False,0.0590003074445647,0.7577651351337155,394.18507035057536,10,,
+ACF,phone_F1.wav,3.1825,sil,False,0.056525435610577,0.7526336643746816,396.7807151935523,10,,

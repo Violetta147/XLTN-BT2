@@ -111,3 +111,161 @@ def detailed_plot(item, config, fitted, signal_path, title):
         ax.grid(alpha=.2)
     fig.tight_layout()
     plt.show()
+
+
+def greedy_period_evidence(items):
+    item = next(x for x in items if x['file'].lower() == 'phone_f1.wav')
+    fs, signal = load_audio(TRAIN_DIR / item['file'])
+    frame_len, hop_len = round(fs * .025), round(fs * .010)
+    centers = (.5725, .5925, .6025)
+    rows, examples = [], []
+    for center in centers:
+        frame_index = int(np.argmin(abs(item['times'] - center)))
+        start = frame_index * hop_len
+        frame = signal[start:start + frame_len]
+        score, lag, curve = ACF['detect_pitch_acf'](frame, fs)
+        grid = np.arange(max(1, math.ceil(fs / 400)), min(len(frame) - 2, math.floor(fs / 70)) + 1)
+        peaks = grid[(curve[grid] >= curve[grid - 1]) & (curve[grid] >= curve[grid + 1])]
+        chosen = int(peaks[np.argmax(curve[peaks])])
+        for rank, peak in enumerate(peaks):
+            refined = refine_lag(curve, int(peak), float(peak))
+            rows.append({'Tâm khung (s)': float(item['times'][frame_index]),
+                         'Nhãn LAB': item['labels'][frame_index].upper(),
+                         'Đỉnh theo độ trễ': f'{rank + 1} (~{rank + 1}T)',
+                         'Độ trễ nguyên (mẫu)': int(peak),
+                         'Độ trễ nội suy (ms)': 1000 * refined / fs,
+                         'F0 từ đỉnh (Hz)': fs / refined,
+                         'ACF score': float(curve[peak]),
+                         'Score_max − score': float(score - curve[peak]),
+                         'Bản cũ chọn': 'CÓ' if peak == chosen else ''})
+        examples.append((frame_index, frame, curve, peaks, chosen, fs / lag))
+    evidence = pd.DataFrame(rows)
+    printable = evidence.copy()
+    for key in ('ACF score', 'Score_max − score'):
+        printable[key] = printable[key].map(lambda x: f'{x:.10f}')
+    for key in ('Độ trễ nội suy (ms)', 'F0 từ đỉnh (Hz)'):
+        printable[key] = printable[key].map(lambda x: f'{x:.6f}')
+    print('BẰNG CHỨNG TỪ WAV TRAIN: ACF gốc, khung 25 ms, bước 10 ms')
+    display(printable)
+    first = evidence[evidence['Tâm khung (s)'] == evidence['Tâm khung (s)'].iloc[0]]
+    short = first.iloc[0]
+    picked = first[first['Bản cũ chọn'] == 'CÓ'].iloc[0]
+    print(f'Khung {short["Tâm khung (s)"]:.4f}s: đỉnh sớm khoảng {short["F0 từ đỉnh (Hz)"]:.6f} Hz; '
+          f'bản cũ chọn khoảng {picked["F0 từ đỉnh (Hz)"]:.6f} Hz.')
+    print(f'Đỉnh được chọn cao hơn đỉnh sớm chỉ {short["Score_max − score"]:.10f} điểm ACF.')
+    index, frame, curve, peaks, chosen, old_f0 = examples[0]
+    fig, axes = plt.subplots(1, 2, figsize=(13, 4))
+    axes[0].plot(np.arange(len(frame)) / fs * 1000, frame, color='tab:blue')
+    axes[0].set(title=f'phone_F1 — tâm khung {item["times"][index]:.4f}s',
+                xlabel='Thời gian trong khung (ms)', ylabel='Biên độ')
+    lo, hi = max(1, math.ceil(fs / 400)), min(len(frame) - 2, math.floor(fs / 70))
+    grid = np.arange(lo, hi + 1)
+    axes[1].plot(grid / fs * 1000, curve[grid], color='tab:blue')
+    for rank, peak in enumerate(peaks):
+        color = 'tab:red' if peak == chosen else ('tab:green' if rank == 0 else 'tab:gray')
+        delay = peak / fs * 1000
+        axes[1].scatter(delay, curve[peak], color=color, s=40, zorder=3)
+        axes[1].axvline(delay, color=color, ls='--', alpha=.5)
+        axes[1].annotate(f'~{rank + 1}T\n{curve[peak]:.7f}', (delay, curve[peak]),
+                         xytext=(delay, .45), ha='center', color=color,
+                         arrowprops={'arrowstyle': '->', 'color': color})
+    axes[1].set(title=f'Đỉnh đỏ: bản cũ chọn {old_f0:.2f} Hz', xlabel='Độ trễ (ms)', ylabel='ACF chuẩn hóa')
+    for ax in axes:
+        ax.grid(alpha=.2)
+    fig.tight_layout()
+    plt.show()
+    original_config = {'algorithm': 'ACF', 'frame_ms': 25}
+    original_fit = fit(items, original_config)
+    original_row = score_file(item, *infer(item, original_config, original_fit))
+    display(pd.DataFrame([
+        {'Nguồn': '3GT của thầy', 'F0mean (Hz)': item['stats']['F0mean'],
+         'F0std (Hz)': item['stats']['F0std'], 'F0num': item['stats']['F0num']},
+        {'Nguồn': 'ACF gốc: toàn bộ dự đoán hữu hạn', 'F0mean (Hz)': original_row['F0mean'],
+         'F0std (Hz)': original_row['F0std'], 'F0num': original_row['F0num']}
+    ]).round(6))
+    print(f'MAPE F0std của cả file = {original_row["F0std_mape"]:.6f}%.')
+    print('Bảng cả file gồm cả lỗi bội chu kỳ và lỗi UV/SIL; không quy toàn bộ MAPE std cho ba khung minh họa.')
+    return evidence
+
+
+def silence_f0_evidence(train_by_frame, configs, fitted_models):
+    items = train_by_frame[25]
+    item = next(x for x in items if x['file'].lower() == 'phone_f1.wav')
+    config = {'algorithm': 'ACF', 'frame_ms': 25}
+    fitted = fit(items, config)
+    pred, f0 = infer(item, config, fitted)
+    finite = np.isfinite(f0)
+    false_sil = finite & (item['labels'] == 'sil')
+    indices = np.flatnonzero(false_sil)
+    assert len(indices), 'Không tìm thấy F0 trong SIL của baseline này'
+    fs, signal = load_audio(TRAIN_DIR / item['file'])
+    segments = read_segments(TRAIN_DIR / Path(item['file']).with_suffix('.lab'))
+    length, hop = round(fs * .025), round(fs * .010)
+    rows = []
+    for index in indices:
+        frame = signal[index * hop:index * hop + length]
+        rows.append({'Tâm khung (s)': item['times'][index], 'Nhãn LAB': 'SIL',
+                     'Sát ranh giới nhãn': any(abs(item['times'][index] - edge) < .0125
+                                               for a, b, _ in segments for edge in (a, b)),
+                     'ACF score': item['ACF_score'][index], 'Ngưỡng ACF TRAIN': fitted['pitch_threshold'],
+                     'RMS khung': float(np.sqrt(np.mean(frame ** 2))),
+                     'RMS tương đối': item['relative_rms'][index],
+                     'F0 bản cũ (Hz)': f0[index], 'Bản cũ nhận V': bool(pred[index])})
+    evidence = pd.DataFrame(rows)
+    print('NHẬN NHẦM KHOẢNG LẶNG — ACF gốc 25 ms, phone_F1 TRAIN')
+    display(evidence.round(8))
+    mean, variance = float(f0[finite].mean()), float(f0[finite].var())
+    contribution = float(np.sum((f0[false_sil] - mean) ** 2) / finite.sum())
+    print(f'{false_sil.sum()} F0 trong SIL; chiếm {100 * contribution / variance:.6f}% phương sai quanh mean chung.')
+    diagnostic_rows = []
+    for name, mask in [('Bản cũ: mọi F0 hữu hạn (điểm chính thức)', finite),
+                       ('Chẩn đoán: bỏ riêng F0 có nhãn SIL thật', finite & ~false_sil)]:
+        values = f0[mask]
+        std = float(values.std())
+        diagnostic_rows.append({'Phép tính': name, 'F0mean (Hz)': values.mean(), 'F0std (Hz)': std,
+                                'F0num': len(values), 'MAPE F0std (%)': 100 * abs(std - item['stats']['F0std']) / item['stats']['F0std']})
+    display(pd.DataFrame(diagnostic_rows).round(6))
+    print('Bỏ SIL thật chỉ đo ảnh hưởng thống kê; không dùng nhãn thật để sửa dự đoán hay điền bảng chấm điểm.')
+    comparison = []
+    for name, cfg, fitted_cfg, model_items in [('ACF gốc 25 ms', config, fitted, items)] + [
+            (name, cfg, fitted_models[name], train_by_frame[cfg['frame_ms']]) for name, cfg in configs.items()]:
+        model_item = next(x for x in model_items if x['file'].lower() == 'phone_f1.wav')
+        model_pred, model_f0 = infer(model_item, cfg, fitted_cfg)
+        sil = model_item['labels'] == 'sil'
+        comparison.append({'Mô hình / cấu hình': name, 'Khung (ms)': cfg['frame_ms'],
+                           'Có cổng năng lượng': cfg.get('energy', False),
+                           'Ngưỡng RMS tương đối': fitted_cfg['energy_threshold'] if cfg.get('energy', False) else np.nan,
+                           'Số khung SIL theo LAB': int(sil.sum()), 'SIL nhận V': int((sil & model_pred).sum()),
+                           'F0 hữu hạn trong SIL': int((sil & np.isfinite(model_f0)).sum()),
+                           'F0std toàn file (Hz)': float(np.nanstd(model_f0))})
+    display(pd.DataFrame(comparison).round(6))
+    print('So sánh cả pipeline; không quy toàn bộ cải thiện std chỉ cho cổng năng lượng.')
+    index = int(indices[0])
+    frame = signal[index * hop:index * hop + length]
+    score, lag, curve = ACF['detect_pitch_acf'](frame, fs)
+    fig, axes = plt.subplots(1, 3, figsize=(16, 4))
+    center = float(item['times'][index])
+    left, right = max(0., center - .15), min(len(signal) / fs, center + .15)
+    start, stop = int(left * fs), int(right * fs)
+    axes[0].plot(np.arange(start, stop) / fs, signal[start:stop], lw=.6)
+    for a, b, label in segments:
+        if label == 'sil' and b > left and a < right:
+            axes[0].axvspan(max(a, left), min(b, right), color='gray', alpha=.2)
+    axes[0].scatter(item['times'][indices], np.zeros(len(indices)), color='tab:red', label='F0 trong SIL', zorder=3)
+    axes[0].set(xlim=(left, right), title='Vùng tô xám: nhãn SIL của LAB', xlabel='Thời gian (s)', ylabel='Biên độ')
+    axes[0].legend(fontsize=8)
+    axes[1].plot(np.arange(length) / fs * 1000, frame, lw=.8)
+    axes[1].set(title=f'Khung SIL tại {center:.4f}s — biên độ nhỏ', xlabel='Thời gian trong khung (ms)', ylabel='Biên độ')
+    lo, hi = max(1, math.ceil(fs / 400)), min(len(frame) - 2, math.floor(fs / 70))
+    grid = np.arange(lo, hi + 1)
+    peak = int(grid[np.argmax(curve[grid])])
+    axes[2].plot(grid / fs * 1000, curve[grid])
+    axes[2].axhline(fitted['pitch_threshold'], color='black', ls='--', label=f'Ngưỡng {fitted["pitch_threshold"]:.4f}')
+    axes[2].scatter(peak / fs * 1000, score, color='tab:red', label=f'Score {score:.4f} → F0 {fs / lag:.2f} Hz')
+    axes[2].set(title='ACF chuẩn hóa vượt ngưỡng dù LAB là SIL', xlabel='Độ trễ (ms)', ylabel='ACF score')
+    axes[2].legend(fontsize=8)
+    for ax in axes:
+        ax.grid(alpha=.2)
+    fig.tight_layout()
+    plt.show()
+    return evidence, pd.DataFrame(diagnostic_rows), pd.DataFrame(comparison)

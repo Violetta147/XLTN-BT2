@@ -29,9 +29,20 @@ không dùng để sửa F0 dự đoán. Nhãn train cũ vẫn cần để học
 
 ## Đọc kết quả đã chạy
 
-`executed_local/` chứa cùng notebook với output local đã kiểm chứng: tám cell mỗi notebook, tổng30 hình,
+`executed_local/` chứa cùng notebook với output local đã kiểm chứng: 10 cell mỗi notebook, tổng 38 hình,
 train/test khớp phép đánh giá tham chiếu tới1e-10. Source vẫn là Colab; output đã chạy bằng đường dẫn local trong bộ nhớ.
 Các notebook ở ngay thư mục gốc là bản sạch để upload. Sáu notebook gốc của bạn vẫn giữ nguyên ở hai thư mục assignment.
+
+## Minh chứng chọn nhầm bội chu kỳ, cập nhật06/10/2026
+
+Mục5.1 tự tính từ WAV train: bảng score ACF tới10 chữ số thập phân tại T/2T/3T của ba khung phone_F1,
+chênh lệch với đỉnh cao nhất, lựa chọn của bản cũ, waveform/ACF và thống kê toàn file.
+Đã xác nhận cơ chế chọn đỉnh mạnh nhất tại bội chu kỳ trong các khung đó; chưa chứng minh riêng nhiễu là nguyên nhân.
+
+Mục5.2 đo lỗi nhận nhầm khoảng lặng: hai F0 khoảng394/397 Hz có nhãn SIL ở phone_F1,
+score/ngưỡng/RMS, waveform và ACF; bảng std trước/sau bỏ riêng hai SIL thật chỉ để chẩn đoán.
+Bảng cuối đối chiếu số SIL nhận V và ngưỡng năng lượng của cấu hình đang chạy.
+Nhãn thật không dùng để lọc F0 trong bảng chấm điểm. Nguồn nhiễu môi trường và tính ngẫu nhiên chưa được chứng minh riêng.
 
 Trong ZIP có báo cáo phân tích, nhật ký sự kiện, hình và CSV kết quả. Báo cáo chấm điểm:
 

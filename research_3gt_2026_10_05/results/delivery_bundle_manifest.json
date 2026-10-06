@@ -1,7 +1,7 @@
 {
-  "zip_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\BT2_CAI_TIEN_TRAIN_ONLY_2026-10-05.zip",
-  "zip_sha256": "7eb92314effcf357192f30908f04b8a85053d5de92f746d17e513370950a6a67",
-  "zip_bytes": 5231701,
+  "zip_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\BT2_CAI_TIEN_CO_BANG_CHUNG_F0_2026-10-06.zip",
+  "zip_sha256": "f01f29dc88d6aeebbb954c91b3a8c093c5d04d267d3e9e0ed9a43a284d6fca3d",
+  "zip_bytes": 6734340,
   "zip_verified": true,
   "clean_notebooks": [
     "BT2_ACF_AMDF_GMM_improved_train_only.ipynb",

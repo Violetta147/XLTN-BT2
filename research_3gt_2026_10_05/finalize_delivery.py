@@ -8,6 +8,9 @@ from events import record
 
 def main():
     folder = ROOT / 'improved-training-only'
+    validation = json.loads((RESULTS / 'delivery_validation.json').read_text(encoding='utf-8'))
+    cell_count = validation['notebooks'][0]['code_cells_executed']
+    figure_count = sum(x['figures'] for x in validation['notebooks'])
     readme = '''# BT2 — notebook cải tiến chọn bằng TRAIN
 
 ## Chạy trên Colab
@@ -39,9 +42,20 @@ không dùng để sửa F0 dự đoán. Nhãn train cũ vẫn cần để học
 
 ## Đọc kết quả đã chạy
 
-`executed_local/` chứa cùng notebook với output local đã kiểm chứng: tám cell mỗi notebook, tổng30 hình,
+`executed_local/` chứa cùng notebook với output local đã kiểm chứng: CELL_COUNT cell mỗi notebook, tổng FIGURE_COUNT hình,
 train/test khớp phép đánh giá tham chiếu tới1e-10. Source vẫn là Colab; output đã chạy bằng đường dẫn local trong bộ nhớ.
 Các notebook ở ngay thư mục gốc là bản sạch để upload. Sáu notebook gốc của bạn vẫn giữ nguyên ở hai thư mục assignment.
+
+## Minh chứng chọn nhầm bội chu kỳ, cập nhật06/10/2026
+
+Mục5.1 tự tính từ WAV train: bảng score ACF tới10 chữ số thập phân tại T/2T/3T của ba khung phone_F1,
+chênh lệch với đỉnh cao nhất, lựa chọn của bản cũ, waveform/ACF và thống kê toàn file.
+Đã xác nhận cơ chế chọn đỉnh mạnh nhất tại bội chu kỳ trong các khung đó; chưa chứng minh riêng nhiễu là nguyên nhân.
+
+Mục5.2 đo lỗi nhận nhầm khoảng lặng: hai F0 khoảng394/397 Hz có nhãn SIL ở phone_F1,
+score/ngưỡng/RMS, waveform và ACF; bảng std trước/sau bỏ riêng hai SIL thật chỉ để chẩn đoán.
+Bảng cuối đối chiếu số SIL nhận V và ngưỡng năng lượng của cấu hình đang chạy.
+Nhãn thật không dùng để lọc F0 trong bảng chấm điểm. Nguồn nhiễu môi trường và tính ngẫu nhiên chưa được chứng minh riêng.
 
 Trong ZIP có báo cáo phân tích, nhật ký sự kiện, hình và CSV kết quả. Báo cáo chấm điểm:
 
@@ -50,14 +64,14 @@ TỔNG CỘNG=trung bình bốn file; FINAL SCORE=100−TỔNG CỘNG TEST; đi�
 
 Chỉ có bốn file mỗi tập và chưa có F0 chuẩn từng khung. Test baseline đã được biết trong phiên trước;
 test lần này độc lập với bước chọn cải tiến, chưa phải bộ test hoàn toàn chưa từng xem.
-'''
+'''.replace('CELL_COUNT', str(cell_count)).replace('FIGURE_COUNT', str(figure_count))
     (folder / 'README.md').write_text(readme, encoding='utf-8')
     (HERE / 'deliverables' / 'README.md').write_text(readme, encoding='utf-8')
     record('Bàn giao notebook, output và báo cáo', '4 notebook tự chứa đã PASS, 5 pipeline; train ACF29,83→6,18%, test9,33→3,29%; sáu bản gốc giữ nguyên.',
-           'Dừng thí nghiệm sau khi đủ kiểm chứng; không tune theo test. Âm thanh đã bấm phát lại nhưng vẫn chưa có xác nhận nghe được.')
+           'Cập nhật minh chứng trong notebook, không đổi cấu hình hay prediction; kiểm chứng lại toàn bộ cell.')
     timeline = ROOT / 'BAO_CAO_SU_KIEN_BT2_2026-10-05.md'
     shutil.copy2(timeline, HERE / timeline.name)
-    zip_path = ROOT / 'BT2_CAI_TIEN_TRAIN_ONLY_2026-10-05.zip'
+    zip_path = ROOT / 'BT2_CAI_TIEN_CO_BANG_CHUNG_F0_2026-10-06.zip'
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(folder.rglob('*')):
             if path.is_file():
@@ -67,7 +81,7 @@ test lần này độc lập với bước chọn cải tiến, chưa phải b�
         archive.write(timeline, timeline.name)
         for path in sorted((HERE / 'figures').glob('*.png')):
             archive.write(path, 'figures/' + path.name)
-        for filename in ['final_train_test_per_file.csv', 'final_tradeoffs_summary.csv', 'frozen_config.json', 'delivery_validation.json']:
+        for filename in ['final_train_test_per_file.csv', 'final_tradeoffs_summary.csv', 'frozen_config.json', 'delivery_validation.json', 'phone_F1_false_silence_evidence.csv']:
             archive.write(RESULTS / filename, 'results/' + filename)
     with zipfile.ZipFile(zip_path) as archive:
         assert archive.testzip() is None
