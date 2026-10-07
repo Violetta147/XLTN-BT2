@@ -1,0 +1,20 @@
+{
+  "control_groups_replayed": 8,
+  "changed_frames": 19,
+  "studio_M1_changed_frames": 3,
+  "count_net_change_identity_checked": true,
+  "control_statistics_and_voicing_matched": true,
+  "new_wav_or_native_or_test_read": false,
+  "new_threshold_or_hypothesis_selected": false,
+  "generator_sha256": "e9ff3e0171f5817103ac5de593bcb6c710e7e64bb3cdd0ba4ad43bafd5178c94",
+  "input_output_sha256": {
+    "results\\H34_nested_contours.csv": "36819f3a639090f15913000873f73dce8ba9b98783d07b59ec3466e64671a66b",
+    "results\\H35_nested_contours.csv": "4590579d753628cec25dbe622009bbe97a462469e70e43bfe1bfb704eb248369",
+    "results\\H34_fixed_lofo.csv": "2e4faa12b7fe094703a7357d12ad73d2e98aa83eeb90544264c3770153cdd87b",
+    "results\\H35_fixed_lofo.csv": "ec00250baa3cdb311d28ee31d1840d167889e7b5178de8d2e8c77021b08eb4f7",
+    "results\\H35_swipe_usage.csv": "9e51d634de53c9f5ac0f8ed4c7d088dce90aa09e8d6f9e025d31baacceb6dddc",
+    "results\\H35_gate_changes_summary.csv": "5cc9ef253511d8d609c6d08288a73be4b724a363668089c003e73943f9f89f15",
+    "results\\H35_gate_changed_frames.csv": "517ab2274a6c0d1e046996e447d61c1a1920834cddadd34d13153531b34dbcc8",
+    "H35_ERROR_ANALYSIS.md": "4cbc45d23b403d94c1d3a32d9e1bc539d7f2ecb8b37927326c0c73378a13cc01"
+  }
+}

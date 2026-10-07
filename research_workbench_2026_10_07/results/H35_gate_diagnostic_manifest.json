@@ -1,0 +1,24 @@
+{
+  "figures": [
+    {
+      "name": "H35_gate_changed_contour",
+      "png": "figures/H35_gate_changed_contour.png",
+      "svg": "figures/H35_gate_changed_contour.svg",
+      "sources": [
+        {
+          "path": "results\\H34_nested_contours.csv",
+          "sha256": "36819f3a639090f15913000873f73dce8ba9b98783d07b59ec3466e64671a66b"
+        },
+        {
+          "path": "results\\H35_nested_contours.csv",
+          "sha256": "4590579d753628cec25dbe622009bbe97a462469e70e43bfe1bfb704eb248369"
+        }
+      ],
+      "caption_vi": "Contours cố định và ba khung đổi quyết định V/UV ở studio_M1.",
+      "limits_vi": "Nhãn đoạn V không cho biết F0 đúng ở từng khung; không xóa các khung này theo GT.",
+      "generator": "swipe_gate_diagnostics.py",
+      "generator_sha256": "e9ff3e0171f5817103ac5de593bcb6c710e7e64bb3cdd0ba4ad43bafd5178c94",
+      "command": "python research_workbench_2026_10_07/swipe_gate_diagnostics.py"
+    }
+  ]
+}
