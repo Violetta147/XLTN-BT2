@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-10-07T01:37:50.217907+00:00",
+  "baseline_commit": "9456632",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "9456632",
+  "family": "H25",
+  "algorithm": "AMDF",
+  "options": [
+    {
+      "id": "amdf_control",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "C": null
+    },
+    {
+      "id": "amdf_lr0.1",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "C": 0.1
+    },
+    {
+      "id": "amdf_lr1",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "C": 1.0
+    },
+    {
+      "id": "amdf_lr10",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "C": 10.0
+    }
+  ]
+}
