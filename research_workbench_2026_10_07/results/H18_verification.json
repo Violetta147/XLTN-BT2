@@ -1,0 +1,11 @@
+{
+  "family": "H18",
+  "registry_options": 81,
+  "inner_trace_rows": 1296,
+  "outer_contour_stats_and_labels_recomputed": true,
+  "fit_selection_exclusions_verified": true,
+  "hashes_and_figures_verified": true,
+  "raw_baseline_reproduced_by_runner": true,
+  "eligible": false,
+  "champion_promoted": false
+}
