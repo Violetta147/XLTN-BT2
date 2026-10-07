@@ -13,6 +13,6 @@ C:/Users/violet/miniconda3/python.exe research_workbench_2026_10_07/execute_amdf
 C:/Users/violet/miniconda3/python.exe research_workbench_2026_10_07/verify_amdf_anchor_notebook.py
 ```
 
-Source hiện chờ replay. Chỉ ghi đã chạy/verified sau khi đủ receipt và kiểm tra hình. Lỗi cell được giữ trong notebook; không tự chạy lại để bỏ lỗi. Curves của replay lưu với prefix riêng, giữ nguyên curves benchmark. Source/provenance/params/calls/fit exclusions/choices/contours/status/PNG/SVG được kiểm tra độc lập. Chỉ local train, giữ notebook gốc và frozen, không đọc test.
+Source b05027d đã push và xác minh trước replay. Cả năm code cells đã chạy thành công; verifier kiểm tra đủ 48 dòng, contour/statistics/MAPE/VUV, nguồn, native binary/calls, fit exclusions, choices và status. Receipt: `results/amdf_anchor_notebook_verification.json`; execution log giữ đầy đủ. Figure PNG/SVG được kiểm tra cấu trúc và bố cục PNG được xem trực tiếp. Đây là Python exec/headless display, không phải một lần chạy Jupyter kernel. Curves của replay lưu với prefix riêng, giữ nguyên curves benchmark. Chỉ local train, giữ notebook gốc và frozen, không đọc test.
 
 Đọc `H41_REPORT.md`, `H41_ERROR_ANALYSIS.md` và `AMDF_ANCHOR_SOURCE_NOTE.md`. Bài Aligned AMDF mới được đọc abstract HTML; H41 không phải tái hiện chính xác AAMDF của paper. Workflow Scientific Agent Skills đã được trích dẫn trong tài liệu nguồn; không extract PDF. Bốn file đã được xem nhiều lần khiến nested vẫn là nghiên cứu thăm dò, chưa chứng minh tổng quát hóa trên dữ liệu mới.

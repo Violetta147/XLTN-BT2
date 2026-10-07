@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "amdf_anchor_notebook_H41_components",
+      "png": "figures/amdf_anchor_notebook_H41_components.png",
+      "svg": "figures/amdf_anchor_notebook_H41_components.svg",
+      "sources": [
+        {
+          "path": "results\\amdf_anchor_notebook_per_file.csv",
+          "sha256": "d7b31932c8c524efc25c06f2fbf02a2df3e0aa14a6b01a04024902d259bb24fd"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_amdf_anchor_notebook.py",
+      "generator_sha256": "fa84b3d413354f8bf14d5c2e495c4123f5c190a29173ee0387d53e00e86d8bfc",
+      "command": "python research_workbench_2026_10_07/execute_amdf_anchor_notebook.py"
+    }
+  ]
+}
