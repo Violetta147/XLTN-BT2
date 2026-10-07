@@ -1,0 +1,36 @@
+{
+  "registered_utc": "2026-10-07T05:06:29.935739+00:00",
+  "baseline_commit": "63c9b9c",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "63c9b9c",
+  "family": "H37",
+  "algorithm": "REAPER pitch with fixed Praat filtered .30 voicing gate",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.3",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "praat_gate_reaper_c0.6",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "hybrid",
+      "unvoiced_cost": 0.6,
+      "gate_voicing_threshold": 0.3
+    },
+    {
+      "id": "praat_gate_reaper_c0.9",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "hybrid",
+      "unvoiced_cost": 0.9,
+      "gate_voicing_threshold": 0.3
+    }
+  ]
+}
