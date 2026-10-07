@@ -1,0 +1,99 @@
+{
+  "registered_utc": "2026-10-07T06:19:40.031638+00:00",
+  "baseline_commit": "4526d57",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "4526d57",
+  "family": "H41",
+  "algorithm": "NAMDF local candidate selection under fixed Praat filtered .30 gate",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.3",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "amdf_anchor_w25_b50",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 25,
+      "method": "amdf_anchor",
+      "agreement_cents": 50,
+      "amdf_window_ms": 25
+    },
+    {
+      "id": "amdf_anchor_w25_b100",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 25,
+      "method": "amdf_anchor",
+      "agreement_cents": 100,
+      "amdf_window_ms": 25
+    },
+    {
+      "id": "amdf_anchor_w25_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 25,
+      "method": "amdf_anchor",
+      "agreement_cents": 200,
+      "amdf_window_ms": 25
+    },
+    {
+      "id": "amdf_anchor_w40_b50",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "amdf_anchor",
+      "agreement_cents": 50,
+      "amdf_window_ms": 40
+    },
+    {
+      "id": "amdf_anchor_w40_b100",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "amdf_anchor",
+      "agreement_cents": 100,
+      "amdf_window_ms": 40
+    },
+    {
+      "id": "amdf_anchor_w40_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "amdf_anchor",
+      "agreement_cents": 200,
+      "amdf_window_ms": 40
+    },
+    {
+      "id": "amdf_anchor_w55_b50",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 55,
+      "method": "amdf_anchor",
+      "agreement_cents": 50,
+      "amdf_window_ms": 55
+    },
+    {
+      "id": "amdf_anchor_w55_b100",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 55,
+      "method": "amdf_anchor",
+      "agreement_cents": 100,
+      "amdf_window_ms": 55
+    },
+    {
+      "id": "amdf_anchor_w55_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 55,
+      "method": "amdf_anchor",
+      "agreement_cents": 200,
+      "amdf_window_ms": 55
+    }
+  ]
+}

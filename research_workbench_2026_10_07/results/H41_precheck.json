@@ -1,0 +1,40 @@
+{
+  "family": "H41",
+  "runner_sha256": "5c9b9ec9ef574b7f4b9886a22552456017be361c13eb116571c6a6ca1264ac4e",
+  "rule_sha256": "8dfa3fed10629e06d8df989cb680832a26c76f255b9deffa16a696a6554af51f",
+  "known_tone_checks": [
+    {
+      "fs": 16000,
+      "window_ms": 25,
+      "estimate_hz": 173.0211095048765
+    },
+    {
+      "fs": 16000,
+      "window_ms": 40,
+      "estimate_hz": 173.02297958565867
+    },
+    {
+      "fs": 16000,
+      "window_ms": 55,
+      "estimate_hz": 173.0240325893176
+    },
+    {
+      "fs": 44100,
+      "window_ms": 25,
+      "estimate_hz": 172.97276510557393
+    },
+    {
+      "fs": 44100,
+      "window_ms": 40,
+      "estimate_hz": 172.97301886457169
+    },
+    {
+      "fs": 44100,
+      "window_ms": 55,
+      "estimate_hz": 172.9731736836662
+    }
+  ],
+  "zero_half_band_boundary_uv_and_time_checked": true,
+  "historical_AMDF_parity_checked": true,
+  "H41_real_WAV_measured": false
+}

@@ -1,0 +1,13 @@
+# H41 — AMDF local dips dưới gate Praat
+
+Trước bất kỳ phép đo mới H41 trên BT2. Repository rollback **4526d57**, mathematicalcontrol **H31 fixed Praatfiltered.30**, original/frozen009fd2c giữ. H40 đã xong, khôngrerun; giảthuyếtcácđáy NAMDF trên rawwave quanhanchor có thểtinh chỉnh F0mean/std tốt hơn giữ nguyênPraat. Đây là boundedcandidateengineering, không exactAAMDFpaperreplication; sourceknowledgegap tạiAMDF_ANCHOR_SOURCE_NOTE.md.
+
+Grid10options: Praat.30control + cửa sổNAMDF **25/40/55ms×band50/100/200cents**, chungcả4file. GatePraat .30/range70–400/hop10/canonical25/10 giữ. Khôngblendweight/smoothing mới. Candidatekernel frozenNAMDFoverlap/amplitude-normalized, DCremoval theo kernel cũ, allvalidlocaldips/parabolicrefine; chọndip thấp nhấttrongband, tiecents rồiF0. GầnPraat khôngchứngminhđúng, fallback giữPraat khiunsupportedwindow/flat/noallowedcandidate. RawPCMfloat64normalized, khôngnoise/resample/filter/clip/GTmatching/gender/device/name routing. KhôngAMDFthresholdfit; actual_fit_files=[]/classifierNone. GiữV/count/SILexactcontrol saucanonicalprojection, chỉF0đổi.
+
+4actualPraatcalls/cache4sourcegroups;12AMDFfeaturegroups (3windows×4files) vớiNPZcurves/lag/frame-inputSHA/time/start/source SHA,40option-filefixedgroups. NativeframesPraat, nearestcanonical≤5ms+mộtmẫu/tiesearlier; khôngtimeoffset/LABdependentprocessing. Trướcđo syntheticfs16/44.1×3windows two173toneaccuracy<2Hz, zero0candidates, half/bandboundary/UV/time tests và frozenAMDFparity; check/commit/pushsource+prereg+verifier trướcbenchmark.
+
+Innerselection minimaxworst-fileAverageMAPE rồimean/ID; finiteMAPE vàF1/recallVdrop≤.01/SIL+1 trướcxếphạng. Outerfile vắng khỏifit/selection. Támgates khôngđổi: trainrelativegain≥10%, selectedLOFO/nestedgain≥5%, F1/recallVdrop≤.01,SIL+1,nofileworse>2pp, phoneF1stdnotworse. Báo riêng **mỗi nestedfileAverageMAPE≤2%**; mean≤2% khôngđủ. Nestedexploratory saulịch sửn4, khôngtuyênbốcorpusmới/generalization.
+
+Sauđo verify160traces/168–172fitlogs/24metrics/40fixedgroups, độc lậprawcurvesformula/allVframe-inputSHA/parabolicdip/band/tie/fallback/tags/selectedindex/nativealignment/MAPEstd(ddof0)/count/VUV/support, cached4actualPraatcalls/binary/config/hash/source/unchangedLABWAV/GTpoison/controlH31parity/PNGSVG/layout. GiữNaNundefinedstats vàfailures. Khôngpromote/frozen/notebookgốc/test/Drive/deeplearning/PDF/retryJev. AAMDFexactpending khônggánimplemented. Notebook riêng replayregisteredH41 saubenchmark, originalAMDFđượcđốichiếu thựcWAV.
+
+Lệnh: amdf_praat_anchor.py register/check/H41 và verify_amdf_anchor.py. Failedoptions giữ đầy đủ; đổiband/window/kernel/voicing/controller phảiprereg vòngkhác trước đo.
