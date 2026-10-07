@@ -1,0 +1,50 @@
+{
+  "registered_utc": "2026-10-07T05:02:29.881642+00:00",
+  "baseline_commit": "fc34e81",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "fc34e81",
+  "family": "H36",
+  "algorithm": "SPTK4.4 REAPER reference pipeline; highpass True, Hilbert False",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.45
+    },
+    {
+      "id": "reaper_c0.6",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "reaper",
+      "unvoiced_cost": 0.6
+    },
+    {
+      "id": "reaper_c0.9",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "reaper",
+      "unvoiced_cost": 0.9
+    },
+    {
+      "id": "reaper_c1.2",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "reaper",
+      "unvoiced_cost": 1.2
+    },
+    {
+      "id": "reaper_c1.5",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "reaper",
+      "unvoiced_cost": 1.5
+    }
+  ]
+}

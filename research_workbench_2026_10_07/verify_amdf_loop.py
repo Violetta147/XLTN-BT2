@@ -24,7 +24,7 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            if family in ('H25','H26','H27','H28','H29','H30','H31','H32','H33','H34','H35'):
+            if family in ('H25','H26','H27','H28','H29','H30','H31','H32','H33','H34','H35','H36'):
                 ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
             else:
                 ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
@@ -95,18 +95,18 @@ def verify(family, baseline):
         nested = metrics[(metrics.split == 'nested') & (metrics.model == 'candidate')]
         assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape <= 2).all())
         extra['raw_harvest_reproduced_and_gate_fit_pool_verified'] = True
-    if family in ('H30','H31','H32','H33','H34'):
+    if family in ('H30','H31','H32','H33','H34','H36'):
         proof = json.loads((HERE / 'results/praat_native_7002_provenance.json').read_text())
         assert verify_results.digest(proof['exe']) == proof['exe_sha256'] == result['environment']['native_exe_sha256']
         for fit in fits:
-            if fit['option_id'].startswith(('praat7_','pyin_','swipe_')):
+            if fit['option_id'].startswith(('praat7_','pyin_','swipe_','reaper_')):
                 assert fit['fitted']['requires_fit'] is False
                 assert fit['fitted']['actual_fit_files'] == [] and fit['classifier'] is None
         fixed = pd.read_csv(HERE / f'results/{family}_fixed_lofo.csv').set_index(['option_id','file'])
         native = pd.read_csv(HERE / f'results/{family}_raw_native_frames.csv')
         contours = pd.read_csv(HERE / f'results/{family}_nested_contours.csv')
         options = json.loads((HERE / f'{family}_REGISTRY.json').read_text())['options']
-        identities = {option['id'] for option in options if option['method'] != 'control' or family in ('H33','H34')}
+        identities = {option['id'] for option in options if option['method'] != 'control' or family in ('H33','H34','H36')}
         assert set(native.option_id) == identities
         assert len(result['native_calls']) == len(identities)*4
         for (identity, file), group in native.groupby(['option_id', 'file']):
@@ -123,16 +123,16 @@ def verify(family, baseline):
             valid = raw[indices][pred]
             saved = fixed.loc[(identity,file)]
             statistics = {'F0mean': valid.mean(), 'F0std': valid.std(), 'F0num': len(valid)}
-            assert all(np.isclose(saved[key], value, atol=1e-8) for key,value in statistics.items())
-            if family in ('H32','H33','H34'):
+            assert all(np.isclose(saved[key], value, atol=1e-8, equal_nan=family=='H36') for key,value in statistics.items())
+            if family in ('H32','H33','H34','H36'):
                 gt = {}
                 for line in (verify_results.REPO / 'research_3gt_2026_10_05/train_3gt' / file.replace('.wav','.lab')).read_text().splitlines():
                     parts = line.split()
                     if parts[0] in statistics:
                         gt[parts[0]] = float(parts[1])
                 errors = {key: 100*abs(value-gt[key])/gt[key] for key,value in statistics.items()}
-                assert all(np.isclose(saved[key+'_mape'], value, atol=1e-8) for key,value in errors.items())
-                assert np.isclose(saved.average_mape, np.mean(list(errors.values())), atol=1e-8)
+                assert all(np.isclose(saved[key+'_mape'], value, atol=1e-8, equal_nan=family=='H36') for key,value in errors.items())
+                assert np.isclose(saved.average_mape, np.mean(list(errors.values())), atol=1e-8, equal_nan=family=='H36')
             labels = canonical.label.to_numpy()
             counts = {'TP': int(((labels=='v') & pred).sum()), 'FN': int(((labels=='v') & ~pred).sum()),
                       'FP': int(((labels=='uv') & pred).sum()), 'TN': int(((labels=='uv') & ~pred).sum()),
@@ -157,7 +157,7 @@ def verify(family, baseline):
                 assert np.array_equal(group.raw_voiced.to_numpy(),raw>0)
                 assert group.voiced_probability.between(0,1).all()
                 assert call['adapter_sha256']==verify_results.digest(HERE/'pyin_adapter.py')
-            elif family == 'H34' and identity.startswith('swipe_'):
+            elif (family == 'H34' and identity.startswith('swipe_')) or (family=='H36' and identity.startswith('reaper_')):
                 import hashlib
                 from scipy.io import wavfile
                 native_proof = json.loads((HERE/'results/sptk_native_provenance.json').read_text())
@@ -166,7 +166,9 @@ def verify(family, baseline):
                 assert call['source_commit']=='0ebff5a9b1fb5851709130efa1d3efb186ef702a'
                 option = next(x for x in options if x['id']==identity)
                 hop = round(fs*.01)
-                expected_command = [native_proof['exe'],'-a','1','-p',str(hop),'-s',str(fs/1000),'-L','70','-H','400','-t1',str(option['voicing_threshold']),'-o','1']
+                code='2' if family=='H36' else '1'
+                threshold=option['unvoiced_cost'] if family=='H36' else option['voicing_threshold']
+                expected_command = [native_proof['exe'],'-a',code,'-p',str(hop),'-s',str(fs/1000),'-L','70','-H','400','-t'+code,str(threshold),'-o','1']
                 assert call['command']==expected_command
                 actual_fs, pcm = wavfile.read(verify_results.REPO/'TinHieuHuanLuyen'/file)
                 assert actual_fs==fs and pcm.dtype==np.int16 and pcm.ndim==1
@@ -175,6 +177,9 @@ def verify(family, baseline):
                 assert np.allclose(times,np.arange(len(group))*hop/fs,atol=1e-12)
                 assert np.array_equal(group.raw_voiced,raw>0)
                 assert call['adapter_sha256']==verify_results.digest(HERE/'sptk_adapter.py')
+                if family=='H36':
+                    assert pcm.any() and call['native_called'] is True and call['status']=='native_success'
+                    assert call['reaper_adapter_sha256']==verify_results.digest(HERE/'reaper_adapter.py')
             else:
                 assert call['returncode'] == 0 and call['exe_sha256'] == proof['exe_sha256']
                 script = 'praat_extract_silence.praat' if family == 'H32' else 'praat_extract_native.praat'
@@ -183,7 +188,7 @@ def verify(family, baseline):
         extra['native_all_fixed_f0_stats_voicing_range_projection_and_calls_replayed'] = True
         nested = metrics[(metrics.split=='nested') & (metrics.model=='candidate')]
         assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape<=2).all())
-        if family in ('H32','H33','H34'):
+        if family in ('H32','H33','H34','H36'):
             extra['all_fixed_mape_components_independently_recomputed'] = True
         if family == 'H33':
             for path,expected in result['environment']['pyin_runtime_source_sha256'].items():
@@ -193,7 +198,7 @@ def verify(family, baseline):
             keys = ['F0mean','F0std','F0num','average_mape','macro_f1','recall_v','false_voiced_sil']
             assert np.allclose(control[keys],prior[keys],atol=1e-8)
             extra['pyin_runtime_parameters_time_alignment_and_control_parity_checked'] = True
-        if family == 'H34':
+        if family in ('H34','H36'):
             root = Path(result['environment']['sptk_source_root'])
             for path,expected in result['environment']['sptk_key_source_sha256'].items():
                 assert verify_results.digest(root/path)==expected,path
@@ -201,7 +206,7 @@ def verify(family, baseline):
             control = fixed.loc['praat7_filtered_v0.45'].sort_index()
             keys = ['F0mean','F0std','F0num','average_mape','macro_f1','recall_v','false_voiced_sil']
             assert np.allclose(control[keys],prior[keys],atol=1e-8)
-            extra['swipe_native_parameters_time_alignment_pcm_input_and_control_checked'] = True
+            extra[('reaper' if family=='H36' else 'swipe')+'_native_parameters_time_alignment_pcm_input_and_control_checked'] = True
     if family == 'H24':
         contours = pd.read_csv(HERE / 'results/H24_nested_contours.csv')
         for file, group in contours.groupby('file'):

@@ -1,0 +1,13 @@
+{
+  "retrieved_utc": "2026-10-07T05:00:05.662318+00:00",
+  "requests": [
+    "https://api.github.com/repos/google/REAPER/commits/master",
+    "https://raw.githubusercontent.com/google/REAPER/1d6e9b95e6b08b500fccbc9a043989dbda747276/epoch_tracker/epoch_tracker.cc"
+  ],
+  "author_repository": "https://github.com/google/REAPER",
+  "author_commit": "1d6e9b95e6b08b500fccbc9a043989dbda747276",
+  "author_commit_date": "2019-12-21T11:03:32Z",
+  "epoch_tracker_cc_sha256": "12479e2bdba27096ecdf8f02c4c1aea7f134098da8cdb541b0d71f7a88a1eb6d",
+  "level": "author source and README/manual; not paper full text",
+  "SPTK_vendor_same_as_author_claim": false
+}
