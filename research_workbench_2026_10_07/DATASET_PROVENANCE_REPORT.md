@@ -122,4 +122,26 @@ Theo đề thi hiện được người dùng xác nhận, giữ 3GT thầy cung
 
 Chưa cần Jev để phân xử. Các phép đối chiếu số, byte và lịch sử Git đã được kiểm tra trực tiếp; Jev không có bằng chứng về ý định cập nhật của giảng viên hay cách tạo reference chưa được cung cấp. Jev có thể rà một lời giải thích cụ thể sau khi có nguồn, nhưng không xác nhận thay giảng viên rằng một con số là lỗi ghi nhầm. Không gọi Jev trong lượt này và không thử lại nhánh MCP đã lỗi.
 
-Người dùng cũng hỏi khả năng thầy dùng công cụ: có thể đo một chuỗi F0 rồi xuất ba thống kê bằng phần mềm. Tài liệu BT2 local gợi ý WaveSurfer để xem pitch contour, nhưng không nói ground truth được tạo bằng WaveSurfer. Đây là một giả thuyết về cách đo, không phải nguồn đã xác minh. Hướng truy nguồn bằng transcript cũng được người dùng đề xuất: cần lời nói thực được nghe/chép từ WAV, rồi tìm và đối chiếu bản thu ứng viên. Công cụ audio hiện tại không hỗ trợ nghe WAV trực tiếp; chưa có transcript đã xác minh và chưa có kết quả tìm nguồn theo lời nói. Không chạy ASR bằng deep learning để vượt giới hạn BT2.
+Người dùng cũng hỏi khả năng thầy dùng công cụ: có thể đo một chuỗi F0 rồi xuất ba thống kê bằng phần mềm. Tài liệu BT2 local gợi ý WaveSurfer để xem pitch contour, nhưng không nói ground truth được tạo bằng WaveSurfer. Đây là một giả thuyết về cách đo, không phải nguồn đã xác minh.
+
+## 10. Truy nguồn theo câu nói và nhận xét về người đọc
+
+Ngày 07/10/2026, người dùng cung cấp câu **“Anh vẫn có thể làm trọng tài”** cho cả bốn file studio của train/test, rồi nhận xét nghe sơ qua có vẻ là bốn người khác nhau, hai nam và hai nữ. Đây là transcript và nhận xét do người dùng nghe, chưa được agent xác minh bằng audio hoặc nhận dạng người nói. Công cụ audio hiện tại không hỗ trợ nghe WAV trực tiếp; không chạy ASR bằng deep learning.
+
+Phân tích dấu thanh trên văn bản câu đã cung cấp:
+
+| Âm tiết viết | Thanh |
+| --- | --- |
+| Anh | ngang |
+| vẫn | ngã |
+| có | sắc |
+| thể | hỏi |
+| làm | huyền |
+| trọng | nặng |
+| tài | huyền |
+
+Câu có bảy âm tiết viết và đủ sáu loại thanh. Kết hợp với nhận xét nhiều người cùng đọc, điều này gợi ý một câu được chọn để khảo sát tiếng nói hoặc cao độ. Đây là suy luận từ nội dung và lời người dùng, không chứng minh mục đích của người thu, nguồn corpus, danh tính hoặc ngày thu. Hậu tố F/M/1/2 cũng không đủ để chứng nhận bốn speaker ID độc lập.
+
+Đã tìm web theo câu nguyên văn, các biến thể “vẫn có thể làm trọng tài”, “Anh vẫn có thể làm trọng tài được”, bản không dấu “anh van co the lam trong tai” và kết hợp với `F0`, `wav`, `ngữ âm`, `studio`. Chưa tìm được nguồn có bản thu hoặc metadata cho phép đối chiếu với bốn WAV. Một câu trùng hoặc gần trùng trong văn bản web không xác nhận nguồn âm thanh; không có bản thu ứng viên được xác minh trong lượt này. Không tải hoặc extract PDF từ kết quả tìm kiếm.
+
+Những người khác nhau đọc cùng câu có thể có F0mean/F0std khác nhau giữa các bản thu. Điều này không giải thích việc **cùng một WAV trùng byte** lại có mean/std khác nhau giữa LAB gốc và LAB 3GT. Hai câu hỏi cần giữ riêng: ai đọc/thu câu này và quy trình nào tạo mỗi phiên bản thống kê.
