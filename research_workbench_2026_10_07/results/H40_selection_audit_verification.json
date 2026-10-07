@@ -1,0 +1,10 @@
+{
+  "candidate_pools_replayed": 20,
+  "selections_matched": 5,
+  "source_sha256": "fd8eaa3df65219d6549def51f88b4ff6d41a689463cfe17eb2e2cf3bc4293e62",
+  "experiment_sha256": "ef43a1fc0a58b5d0665dd6777382974f60af0bea6262ac14377f8e7a3c6a4adf",
+  "csv_sha256": "dde6fdf265482b2af989462112b8cf0763fbcf9dc34bc959b84c04dad1e9ba60",
+  "report_sha256": "115f2fc21b102397a2d239ddcec6cdd86a4d6732658d172d5aca648271ff955a",
+  "generator_sha256": "c40287458df90aa704653bc06eebe6b1116cb2856b3222e70ebf7172a90ee53d",
+  "no_new_WAV_backend_or_selection": true
+}
