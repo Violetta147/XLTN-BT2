@@ -1,0 +1,17 @@
+{
+  "family": "H30",
+  "selection_replayed": true,
+  "fits_checked": 88,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": true,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "native_all_fixed_f0_stats_voicing_range_projection_and_calls_replayed": true,
+  "verifier_sha256": "467d45310d33b3cd062d003dd9639a2d44ee6bc64176d7b89300e58eb67124e9"
+}

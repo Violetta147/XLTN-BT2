@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H30_nested",
+      "png": "figures/H30_nested.png",
+      "svg": "figures/H30_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H30_metrics.csv",
+          "sha256": "4e8bd425003bbd6406f9ab8e78802a8b8c4dce9bb9420451d19cb46ad247de49"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "praat_filtered_reference.py",
+      "generator_sha256": "06e9326f0afec57f08c231f5b22b93764d4fccd3be26af1bf4f514434853a2e2",
+      "command": "python research_workbench_2026_10_07/praat_filtered_reference.py H30"
+    }
+  ]
+}
