@@ -1,0 +1,46 @@
+{
+  "registered_utc": "2026-10-07T04:12:21.883137+00:00",
+  "baseline_commit": "f9e986e",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "f9e986e",
+  "family": "H32",
+  "algorithm": "Praat7 filtered silence threshold",
+  "options": [
+    {
+      "id": "praat7_filtered_s0.09",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.3,
+      "silence_threshold": 0.09
+    },
+    {
+      "id": "praat7_filtered_s0.11",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.3,
+      "silence_threshold": 0.11
+    },
+    {
+      "id": "praat7_filtered_s0.13",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.3,
+      "silence_threshold": 0.13
+    },
+    {
+      "id": "praat7_filtered_s0.15",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.3,
+      "silence_threshold": 0.15
+    }
+  ]
+}

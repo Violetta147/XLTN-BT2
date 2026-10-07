@@ -24,7 +24,7 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            if family in ('H25','H26','H27','H28','H29','H30','H31'):
+            if family in ('H25','H26','H27','H28','H29','H30','H31','H32'):
                 ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
             else:
                 ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
@@ -95,7 +95,7 @@ def verify(family, baseline):
         nested = metrics[(metrics.split == 'nested') & (metrics.model == 'candidate')]
         assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape <= 2).all())
         extra['raw_harvest_reproduced_and_gate_fit_pool_verified'] = True
-    if family in ('H30','H31'):
+    if family in ('H30','H31','H32'):
         proof = json.loads((HERE / 'results/praat_native_7002_provenance.json').read_text())
         assert verify_results.digest(proof['exe']) == proof['exe_sha256'] == result['environment']['native_exe_sha256']
         for fit in fits:
@@ -123,6 +123,15 @@ def verify(family, baseline):
             saved = fixed.loc[(identity,file)]
             statistics = {'F0mean': valid.mean(), 'F0std': valid.std(), 'F0num': len(valid)}
             assert all(np.isclose(saved[key], value, atol=1e-8) for key,value in statistics.items())
+            if family == 'H32':
+                gt = {}
+                for line in (verify_results.REPO / 'research_3gt_2026_10_05/train_3gt' / file.replace('.wav','.lab')).read_text().splitlines():
+                    parts = line.split()
+                    if parts[0] in statistics:
+                        gt[parts[0]] = float(parts[1])
+                errors = {key: 100*abs(value-gt[key])/gt[key] for key,value in statistics.items()}
+                assert all(np.isclose(saved[key+'_mape'], value, atol=1e-8) for key,value in errors.items())
+                assert np.isclose(saved.average_mape, np.mean(list(errors.values())), atol=1e-8)
             labels = canonical.label.to_numpy()
             counts = {'TP': int(((labels=='v') & pred).sum()), 'FN': int(((labels=='v') & ~pred).sum()),
                       'FP': int(((labels=='uv') & pred).sum()), 'TN': int(((labels=='uv') & ~pred).sum()),
@@ -133,9 +142,14 @@ def verify(family, baseline):
             assert result['range_rejected_frames'][identity+'|'+file] == int(((raw>0)&((raw<70)|(raw>400))).sum())
             call = result['native_calls'][identity+'|'+file]
             assert call['returncode'] == 0 and call['exe_sha256'] == proof['exe_sha256']
-            assert call['script_sha256'] == verify_results.digest(HERE / 'praat_extract_native.praat')
+            script = 'praat_extract_silence.praat' if family == 'H32' else 'praat_extract_native.praat'
+            assert call['script_sha256'] == verify_results.digest(HERE / script)
             assert Path(call['command'][3]).resolve() == (verify_results.REPO / 'TinHieuHuanLuyen' / file).resolve()
         extra['native_all_fixed_f0_stats_voicing_range_projection_and_calls_replayed'] = True
+        nested = metrics[(metrics.split=='nested') & (metrics.model=='candidate')]
+        assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape<=2).all())
+        if family == 'H32':
+            extra['all_fixed_mape_components_independently_recomputed'] = True
     if family == 'H24':
         contours = pd.read_csv(HERE / 'results/H24_nested_contours.csv')
         for file, group in contours.groupby('file'):
