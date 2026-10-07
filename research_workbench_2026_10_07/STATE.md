@@ -35,3 +35,5 @@ Lượt nối tiếp H21/H22 dùng hai ý tưởng Gemini đã lưu, không gử
 
 - [x] H27 Praat raw ACF: prereg 4b4a500, so sánh pipeline mới từ tài liệu HTML. Final minimax chọn AMDF control; nested 12.044393% so control 5.721646%, gate FAIL. Outer phone_F1 chọn Praat 0.55 và xấu thêm; SIL 1→6. Fixed Praat 0.45 đạt studio_M1 0.753428% nhưng không đạt các file khác; không chọn cấu hình riêng bằng kết quả chính held file. Verify 64 inner traces/68 fit logs/24 rows, no-fit Praat và contour/LAB/hash/gates. Không promote.
 - [x] Cách đọc paper không PDF: PAPER_KNOWLEDGE_WITHOUT_PDF.md, commit a61a131 đã push/verify. Đọc HTML, abstract và mã tác giả có provenance; Harvest source pin d625e7, hàm tạo/refine/filter/fix/smooth và bước cơ sở 1 ms đã đối chiếu. Chưa chạy Harvest khi ghi dòng này.
+
+- [x] AMDF_TARGET_2PCT.ipynb: bốn code cells chạy nguyên source qua Python/display adapter (không Jupyter kernel), tính lại 24 rows từ train WAV/LOFO fit, khớp H24-H26 1e-8. Đã verify nguồn, output, status và figure PNG/SVG; mục tiêu mỗi file ≤2% chưa đạt. Notebook gốc được giữ.

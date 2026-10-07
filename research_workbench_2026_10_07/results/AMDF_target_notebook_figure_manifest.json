@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "AMDF_target_components",
+      "png": "figures/AMDF_target_components.png",
+      "svg": "figures/AMDF_target_components.svg",
+      "sources": [
+        {
+          "path": "results\\AMDF_target_notebook_per_file.csv",
+          "sha256": "9dae7fd04d5f7a75ab044b420875c42aa965762db35df0c15271eefec1de9eec"
+        }
+      ],
+      "caption_vi": "Tính lại từ WAV train; so ba cấu hình cố định, không chọn best theo held.",
+      "limits_vi": "File-stat metrics không xác minh F0 từng thời điểm; n4 và lịch sử nghiên cứu.",
+      "generator": "build_amdf_target_notebook.py",
+      "generator_sha256": "82998f7bd234c2d97fb5582fd9dbc16e7291a01c3baa457a0a1e2b77ff7ec166",
+      "command": "python research_workbench_2026_10_07/execute_amdf_target_notebook.py"
+    }
+  ]
+}
