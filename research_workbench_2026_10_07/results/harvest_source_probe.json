@@ -1,0 +1,58 @@
+{
+  "repo": "mmorise/World",
+  "commit": "d625e7608ca23a870018f01e7c562ac683d9847f",
+  "url": "https://raw.githubusercontent.com/mmorise/World/d625e7608ca23a870018f01e7c562ac683d9847f/src/harvest.cpp",
+  "source_sha256": "e9e80047a9d9ed3ff8521b966985c0b912ac09415565da1cc821319dc454975e",
+  "lines": 1262,
+  "function_locations": {
+    "GetF0CandidatesFromRawEvent": [],
+    "GetRawF0Candidates": [
+      332,
+      334,
+      1127
+    ],
+    "RefineF0Candidates": [
+      622,
+      1194
+    ],
+    "RemoveUnreliableCandidates": [
+      652,
+      670,
+      672,
+      683,
+      1197
+    ],
+    "FixF0Contour": [
+      1025,
+      1027,
+      1201
+    ],
+    "SmoothF0Contour": [
+      1077,
+      1079,
+      1203
+    ],
+    "HarvestGeneralBody": [
+      1116,
+      1118,
+      1143,
+      1145,
+      1189,
+      1231,
+      1242
+    ],
+    "Harvest(": [
+      18,
+      1173,
+      1219,
+      1223,
+      1239,
+      1246
+    ],
+    "InitializeHarvestOption": [
+      1257
+    ]
+  },
+  "content_level": "source function locations and main pipeline inspected; not full paper",
+  "pdf_extracted": false
+}
