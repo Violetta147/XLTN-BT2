@@ -1,0 +1,50 @@
+{
+  "registered_utc": "2026-10-07T04:41:54.015272+00:00",
+  "baseline_commit": "b000433",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "b000433",
+  "family": "H34",
+  "algorithm": "SPTK4.4 SWIPE prime reference pipeline",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.45
+    },
+    {
+      "id": "swipe_t0.2",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "swipe",
+      "voicing_threshold": 0.2
+    },
+    {
+      "id": "swipe_t0.3",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "swipe",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "swipe_t0.4",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "swipe",
+      "voicing_threshold": 0.4
+    },
+    {
+      "id": "swipe_t0.5",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "swipe",
+      "voicing_threshold": 0.5
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "next_fix": "Force include standard algorithm header as compiler flag, preserve reference sources",
+  "cause": "Source uses std::fill without explicitly including algorithm; exposed by libc++ toolchain",
+  "error": "no member named 'fill' in namespace 'std'",
+  "source_modified": false,
+  "stage": "LLVM-MinGW native build",
+  "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+  "source": "third_party/REAPER/wave/wave.cc:135"
+}
