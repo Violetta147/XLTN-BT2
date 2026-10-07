@@ -1,0 +1,258 @@
+{
+  "family": "H27",
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": false,
+      "lofo_mape_relative_5_percent": false,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": false,
+      "lofo_no_file_mape_worse_by_over_2pp": false,
+      "lofo_phone_f1_std_not_worse": false,
+      "selected_lofo_mape_relative_5_percent": false
+    },
+    "eligible": false,
+    "nested_status": "Outer file excluded from every inner fit and selection; selected LOFO is separate.",
+    "champion_promoted": false
+  },
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 3.6834719755721217,
+        "F0mean_mape": 0.7481824475116785,
+        "F0std_mape": 3.748681026067457,
+        "F0num_mape": 6.55355245313723,
+        "F0mean_abs_error": 1.2233758145895273,
+        "F0std_abs_error": 0.9938579404404608,
+        "macro_f1": 0.8697159353828922,
+        "balanced_accuracy": 0.9231729047033777,
+        "recall_v": 0.8814089230112432,
+        "recall_uv": 0.9649368863955119,
+        "TP": 539,
+        "TN": 171,
+        "FP": 9,
+        "FN": 75,
+        "false_voiced_sil": 0,
+        "F0num": 548
+      },
+      "lofo": {
+        "average_mape": 5.721646010448398,
+        "F0mean_mape": 0.8008263720674587,
+        "F0std_mape": 9.459351869289673,
+        "F0num_mape": 6.904759789988064,
+        "F0mean_abs_error": 1.3613414678881846,
+        "F0std_abs_error": 2.1970296301571492,
+        "macro_f1": 0.8646263239365338,
+        "balanced_accuracy": 0.9206197592948743,
+        "recall_v": 0.8763026321942367,
+        "recall_uv": 0.9649368863955119,
+        "TP": 535,
+        "TN": 171,
+        "FP": 9,
+        "FN": 79,
+        "false_voiced_sil": 1,
+        "F0num": 545
+      },
+      "nested": {
+        "average_mape": 5.721646010448398,
+        "F0mean_mape": 0.8008263720674587,
+        "F0std_mape": 9.459351869289673,
+        "F0num_mape": 6.904759789988064,
+        "F0mean_abs_error": 1.3613414678881846,
+        "F0std_abs_error": 2.1970296301571492,
+        "macro_f1": 0.8646263239365338,
+        "balanced_accuracy": 0.9206197592948743,
+        "recall_v": 0.8763026321942367,
+        "recall_uv": 0.9649368863955119,
+        "TP": 535,
+        "TN": 171,
+        "FP": 9,
+        "FN": 79,
+        "false_voiced_sil": 1,
+        "F0num": 545
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 3.6834719755721217,
+        "F0mean_mape": 0.7481824475116785,
+        "F0std_mape": 3.748681026067457,
+        "F0num_mape": 6.55355245313723,
+        "F0mean_abs_error": 1.2233758145895273,
+        "F0std_abs_error": 0.9938579404404608,
+        "macro_f1": 0.8697159353828922,
+        "balanced_accuracy": 0.9231729047033777,
+        "recall_v": 0.8814089230112432,
+        "recall_uv": 0.9649368863955119,
+        "TP": 539,
+        "TN": 171,
+        "FP": 9,
+        "FN": 75,
+        "false_voiced_sil": 0,
+        "F0num": 548
+      },
+      "lofo": {
+        "average_mape": 5.721646010448398,
+        "F0mean_mape": 0.8008263720674587,
+        "F0std_mape": 9.459351869289673,
+        "F0num_mape": 6.904759789988064,
+        "F0mean_abs_error": 1.3613414678881846,
+        "F0std_abs_error": 2.1970296301571492,
+        "macro_f1": 0.8646263239365338,
+        "balanced_accuracy": 0.9206197592948743,
+        "recall_v": 0.8763026321942367,
+        "recall_uv": 0.9649368863955119,
+        "TP": 535,
+        "TN": 171,
+        "FP": 9,
+        "FN": 79,
+        "false_voiced_sil": 1,
+        "F0num": 545
+      },
+      "nested": {
+        "average_mape": 12.044392996598866,
+        "F0mean_mape": 1.4646795366629748,
+        "F0std_mape": 27.594820744226638,
+        "F0num_mape": 7.073678708906983,
+        "F0mean_abs_error": 2.7926088907561173,
+        "F0std_abs_error": 5.932936218394165,
+        "macro_f1": 0.8641715182088936,
+        "balanced_accuracy": 0.9176359570783356,
+        "recall_v": 0.8812045929785506,
+        "recall_uv": 0.9540673211781205,
+        "TP": 538,
+        "TN": 168,
+        "FP": 12,
+        "FN": 76,
+        "false_voiced_sil": 6,
+        "F0num": 556
+      }
+    }
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "amdf_control",
+        "frame_ms": 25,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "C": null,
+        "method": "control",
+        "voicing_threshold": null
+      }
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat_raw_v0.55",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "C": null,
+        "method": "praat_raw",
+        "voicing_threshold": 0.55
+      }
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "amdf_control",
+        "frame_ms": 25,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "C": null,
+        "method": "control",
+        "voicing_threshold": null
+      }
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "amdf_control",
+        "frame_ms": 25,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "C": null,
+        "method": "control",
+        "voicing_threshold": null
+      }
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option": {
+        "id": "amdf_control",
+        "frame_ms": 25,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "C": null,
+        "method": "control",
+        "voicing_threshold": null
+      }
+    }
+  ],
+  "long_window_fallback_counts": {
+    "phone_F1.wav": 2,
+    "phone_M1.wav": 2,
+    "studio_F1.wav": 1,
+    "studio_M1.wav": 2
+  },
+  "registry_sha256": "cf72b635baf4a92b063c8d5445decca3e11695ba376fa14f4fb8e7257b372b36",
+  "code_sha256": {
+    "research_workbench_2026_10_07\\praat_reference.py": "1bea666e319c3325772b9ae3f263cf2be626d75b91e0f7c168c0d6dae623a42b",
+    "research_workbench_2026_10_07\\amdf_dual_window.py": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_06\\audit.py": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_06\\estimator_experiment.py": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6"
+  },
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "wall_time_s": 62.255733800004236,
+  "completed_utc": "2026-10-07T02:03:47.447483+00:00",
+  "selection_objective": "minimize worst-file Average MAPE, then mean, then id",
+  "goal_all_nested_files_le_2": false,
+  "train_only": true,
+  "baseline_reproduced": true,
+  "poisoned_gt_inference_invariant": true,
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "parselmouth": "0.4.7",
+    "praat": "6.1.38"
+  }
+}

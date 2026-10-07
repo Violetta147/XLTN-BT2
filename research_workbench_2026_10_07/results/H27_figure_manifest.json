@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H27_nested",
+      "png": "figures/H27_nested.png",
+      "svg": "figures/H27_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H27_metrics.csv",
+          "sha256": "97ef38a998bf6a1b098c22de255436f43c6b308691b6d879be3a8f3b94447ecc"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "praat_reference.py",
+      "generator_sha256": "1bea666e319c3325772b9ae3f263cf2be626d75b91e0f7c168c0d6dae623a42b",
+      "command": "python research_workbench_2026_10_07/praat_reference.py H27"
+    }
+  ]
+}
