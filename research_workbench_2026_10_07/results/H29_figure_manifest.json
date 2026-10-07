@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H29_nested",
+      "png": "figures/H29_nested.png",
+      "svg": "figures/H29_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H29_metrics.csv",
+          "sha256": "1c4a78313279b7b1ae6d3096ebb5da478d61a47fd0b5770aa315b38595e71428"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "harvest_voicing.py",
+      "generator_sha256": "4f357b16b97141f6b2855b3dcb95a92867059fded4c480b6e6e66080b6c5d063",
+      "command": "python research_workbench_2026_10_07/harvest_voicing.py H29"
+    }
+  ]
+}

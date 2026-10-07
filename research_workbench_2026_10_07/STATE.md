@@ -43,3 +43,5 @@ Lượt nối tiếp H21/H22 dùng hai ý tưởng Gemini đã lưu, không gử
 - [ ] Hướng tiếp sau literature: khảo sát cổng V/UV khi dùng pitch từ Harvest, filtered ACF thích hợp cho speech, pYIN/SWIPE/REAPER. Chưa đăng ký hoặc đo các hướng này. Giữ H24 control và failures, không mở grid theo test; goal mỗi file≤2% vẫn active.
 
 - [x] Figures mọi cấu hình cố định H27/H28 và H28_ERROR_ANALYSIS.md đã kiểm tra/push ở 88686f7. Tài liệu PAPER_KNOWLEDGE_WITHOUT_PDF.md được cập nhật liên kết với thí nghiệm thực. Notebook AMDF mới đã chạy, mọi commit giữ nguyên branch; mục tiêu mỗi file≤2% vẫn chưa đạt. Không có schedule hoặc retry MCP mới.
+
+- [x] H29 gated Harvest: prereg fc0037a, raw Harvest tái lập H28; verify64 traces/72 fits/24 rows, gate pool/GT-poison/minimax/contours/hash. Final chọn Harvest+AMDF: selected LOFO 4.060681% so control5.721646%, phone_F1 fixed1.565693% (stdMAPE1.208581%). Count/VUV giữ như control ở fixed fullgate. Nhưng outer selection chỉ phone_M1 chọn hybrid; nested6.149822%, train3.925458%, gateFAIL; không promote và chưa đạt mỗi file≤2%. Energy-only không đủ cho phonefiles.
