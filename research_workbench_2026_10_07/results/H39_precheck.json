@@ -1,0 +1,9 @@
+{
+  "family": "H39",
+  "runner_sha256": "eb2cff9e77c00088d79a458b4d63a34b2634619d77b2efbe0ed289a17f7f7929",
+  "adapter_and_source_provenance_checked": true,
+  "18_synthetic_native_calls_checked": true,
+  "historical_amdf_parity_checked": true,
+  "nearest_time_tie_and_unsupported_checked": true,
+  "H39_BT2_measured": false
+}

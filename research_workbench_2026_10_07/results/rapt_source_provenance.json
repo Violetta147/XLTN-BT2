@@ -1,0 +1,52 @@
+{
+  "recorded_utc": "2026-10-07T05:39:40.124678+00:00",
+  "sptk_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+  "exe": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+  "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+  "source_root": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference",
+  "source_sha256": {
+    "third_party\\Snack\\jkGetF0.cc": "4e3064dc1584eee2f316494e4cabc3995ef9d298ab6b1788fafb626a627e372c",
+    "third_party\\Snack\\jkGetF0.h": "e8d3bc4a1f2bbfff7e7e5594821928a2f736367a5a41b7384b7de8525b480d39",
+    "third_party\\Snack\\LICENSE": "11842a2637fbe8ff4e67d5bce0ce5db8af8786c0395f1aad0be61164bdbe80ec",
+    "third_party\\Snack\\sigproc.cc": "d3d772cc7c48b48611a50508b4d3de785fa8aa7d8d501108fd49f0530848781e",
+    "src\\analysis\\pitch_extraction_by_rapt.cc": "4f4bfe9ca5778edd37cfdc5479a3657a892e6721ef5d12baf24cd67cb17e27f8",
+    "include\\SPTK\\analysis\\pitch_extraction_by_rapt.h": "b348486871848e44086878343792673162fa64d444011e0865e54c6d0ab609d9",
+    "src\\main\\pitch.cc": "6e53313a850ff2b8f7716fe1696b1bfb2586cc6fca5a24dcea19af551898e6f6",
+    "src\\generation\\normal_distributed_random_value_generation.cc": "a837478fe56acbf9125f4c38f10e0a0be761412724816fb16990ca28a0ffa600"
+  },
+  "content_level": "Official SPTK HTML manual and pinned Snack RAPT implementation; chapter fulltext not read",
+  "native_internal_noise": {
+    "std_pcm_units": 50.0,
+    "generator_seed": 1,
+    "agent_noise_added": false
+  },
+  "internal_window_s": 0.0075,
+  "native_output_policy": "ceil(N/hop), wrapper truncates or repeats last native F0; adapter assigns 0-origin sequence grid",
+  "metadata_reference": {
+    "author": "D. Talkin",
+    "year": 1995,
+    "title": "A robust algorithm for pitch tracking",
+    "venue": "Speech Coding and Synthesis",
+    "pages_in_sptk_manual": "497-518",
+    "doi_verified": false
+  },
+  "discovery_log": [
+    {
+      "type": "primary_manual",
+      "url": "https://sp-nitech.github.io/sptk/latest/main/pitch.html",
+      "query": "direct open pitch manual; algorithm0/default/range/citation"
+    },
+    {
+      "type": "supplementary_ranked_web",
+      "query": "\"A robust algorithm for pitch tracking\" \"1995\" publisher Talkin",
+      "used_for_technical_claims": false
+    },
+    {
+      "type": "supplementary_ranked_web",
+      "query": "\"RAPT\" Talkin normalized cross correlation dynamic programming source",
+      "used_for_technical_claims": false
+    }
+  ],
+  "primary_pinned_source_url": "https://github.com/sp-nitech/SPTK/blob/0ebff5a9b1fb5851709130efa1d3efb186ef702a/third_party/Snack/jkGetF0.cc",
+  "pdf_downloaded_or_extracted": false
+}

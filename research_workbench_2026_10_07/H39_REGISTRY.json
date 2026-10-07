@@ -1,0 +1,50 @@
+{
+  "registered_utc": "2026-10-07T05:45:12.049076+00:00",
+  "baseline_commit": "ac20514",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "ac20514",
+  "family": "H39",
+  "algorithm": "SPTK4.4 native RAPT NCCF and dynamic programming",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.45
+    },
+    {
+      "id": "rapt_b-0.3",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "rapt",
+      "voicing_bias": -0.3
+    },
+    {
+      "id": "rapt_b0",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "rapt",
+      "voicing_bias": 0.0
+    },
+    {
+      "id": "rapt_b0.3",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "rapt",
+      "voicing_bias": 0.3
+    },
+    {
+      "id": "rapt_b0.6",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "rapt",
+      "voicing_bias": 0.6
+    }
+  ]
+}
