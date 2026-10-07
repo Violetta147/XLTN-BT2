@@ -1,0 +1,71 @@
+{
+  "registered_utc": "2026-10-07T05:26:10.788215+00:00",
+  "baseline_commit": "cd23e9c",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "cd23e9c",
+  "family": "H38",
+  "algorithm": "Bounded log-frequency fusion of REAPER .9 with fixed Praat filtered .30 gate",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.3",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "praat_gate_reaper_c0.9",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "unvoiced_cost": 0.9,
+      "gate_voicing_threshold": 0.3,
+      "method": "raw"
+    },
+    {
+      "id": "praat_reaper_b100_a0.5",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "unvoiced_cost": 0.9,
+      "gate_voicing_threshold": 0.3,
+      "method": "bounded",
+      "agreement_cents": 100,
+      "reaper_weight": 0.5
+    },
+    {
+      "id": "praat_reaper_b100_a1",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "unvoiced_cost": 0.9,
+      "gate_voicing_threshold": 0.3,
+      "method": "bounded",
+      "agreement_cents": 100,
+      "reaper_weight": 1.0
+    },
+    {
+      "id": "praat_reaper_b200_a0.5",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "unvoiced_cost": 0.9,
+      "gate_voicing_threshold": 0.3,
+      "method": "bounded",
+      "agreement_cents": 200,
+      "reaper_weight": 0.5
+    },
+    {
+      "id": "praat_reaper_b200_a1",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "unvoiced_cost": 0.9,
+      "gate_voicing_threshold": 0.3,
+      "method": "bounded",
+      "agreement_cents": 200,
+      "reaper_weight": 1.0
+    }
+  ]
+}

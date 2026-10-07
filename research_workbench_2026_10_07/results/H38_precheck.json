@@ -1,0 +1,13 @@
+{
+  "family": "H38",
+  "bounded_rule_options_checked": [
+    "praat_reaper_b100_a0.5",
+    "praat_reaper_b100_a1",
+    "praat_reaper_b200_a0.5",
+    "praat_reaper_b200_a1"
+  ],
+  "runner_sha256": "625ffe4461edcfdb03c343a837732dba97321573b6e602a744be450ea60bd687",
+  "uv_missing_range_unsupported_tie_band_boundary_blend_checked": true,
+  "native_identity_and_historical_amdf_parity_checked": true,
+  "new_H38_BT2_measured": false
+}
