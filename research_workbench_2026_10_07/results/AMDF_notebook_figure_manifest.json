@@ -1,0 +1,21 @@
+{
+  "figures": [
+    {
+      "name": "AMDF_before_after",
+      "png": "figures/AMDF_before_after.png",
+      "svg": "figures/AMDF_before_after.svg",
+      "sources": [
+        {
+          "path": "results\\AMDF_notebook_summary.csv",
+          "sha256": "9b77906fa373bdbfb9d301e341d62e71f5a06f7cb6df8c5e484a47745b29b278"
+        }
+      ],
+      "caption_vi": "AMDF trước/sau, tính lại trên train local; LOFO giữ cố định cấu hình.",
+      "limits_vi": "Cấu hình đã chọn trên dữ liệu này trước đó; không phải nested mới hoặc pitch error từng khung.",
+      "generator": "execute_amdf_notebook.py",
+      "generator_sha256": "b220be51ddff7f44a694da8665989096e7e3c927cd41c6a3193389a203ca5caa",
+      "command": "python research_workbench_2026_10_07/execute_amdf_notebook.py"
+    }
+  ],
+  "builder_sha256": "1dc40f4e405723b75dd2dcd89abccddd90c9e5798a17fe261a9acf0a6deb204e"
+}
