@@ -1,0 +1,352 @@
+{
+  "family": "H49",
+  "summaries": {
+    "candidate": {
+      "files": 10,
+      "frames": 32514,
+      "gpe20_pct": 0.8001040785793274,
+      "vde_pct": 5.8559389801316355,
+      "ffe20_pct": 6.2342375592052655,
+      "rpa50_pct": 78.73820754716981,
+      "file_mean_average_mape": 5.9191573136493965,
+      "worst_file_average_mape": 11.733912913247872,
+      "files_average_mape_lt2": 0
+    },
+    "control": {
+      "files": 10,
+      "frames": 32514,
+      "gpe20_pct": 0.7805893449554414,
+      "vde_pct": 5.8559389801316355,
+      "ffe20_pct": 6.225010764593714,
+      "rpa50_pct": 79.72877358490567,
+      "file_mean_average_mape": 5.974605897950921,
+      "worst_file_average_mape": 12.00864137692237,
+      "files_average_mape_lt2": 0
+    }
+  },
+  "predeclared_engineering_good_gate": false,
+  "registry_sha256": "644d17d43f9f0a957e1cf3f4dba159670c8022ba39d9b7f382f38bef4f5f6885",
+  "dataset_manifest_sha256": "6fd5b490f4ff3b14906228988f46d0790bfeff0844c272d0c10b9e1d189a89c0",
+  "source_calls": {
+    "f1nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\f1nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "b64d6c417c89f38367606cc2b875f94d81f6ea830e73443922ae44348e13e85e",
+        "native_frames": 3217,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_f1nw0000.npz",
+          "sha256": "7fb436c90237625e6321a6b264c3593004449b3b509b9ee2f1d84ce93cd092b9"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_f1nw0000.npz",
+          "sha256": "40e991a5ca59fa6e3dcbfc2bee0cf9833e700dce39117416e3a7c5df14bc553d"
+        }
+      },
+      "path": "results\\H49_native_f1nw0000.npz",
+      "sha256": "1099aa6d6d6a8e9c60caed53c24a56a0feb53a1b6ebb672505e500d780f410e0"
+    },
+    "f2nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\f2nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "05887128d51dd0988d00b336c55be9b1c0d04a3a0107fd34e13bd0c0cc3e028e",
+        "native_frames": 3366,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_f2nw0000.npz",
+          "sha256": "b47ace1088ad305e1fbd1a48c9c2fd7cae0c4d2a0e161be7429c7ec8172ce865"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_f2nw0000.npz",
+          "sha256": "c2d3a04519142b47da523667920e287fb5f783313c17b041035a0429a1426972"
+        }
+      },
+      "path": "results\\H49_native_f2nw0000.npz",
+      "sha256": "8334c0d2a073efb4d49400c48efc7979239d41f157a8bdb22ffbf4362200a684"
+    },
+    "f3nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\f3nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "44331df535f40b42e6b5c5d658cc320a1e2a25561a94ffb9d6e5f799c54b41a4",
+        "native_frames": 3046,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_f3nw0000.npz",
+          "sha256": "2c255bc174a3130d060d368241683a8146f6309906f94cc0d25ba68f253f45a1"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_f3nw0000.npz",
+          "sha256": "67490b969ab9f80d46d80886bbbe133b2dbe2fedf016c9f76e5ac21d1e3eeecc"
+        }
+      },
+      "path": "results\\H49_native_f3nw0000.npz",
+      "sha256": "151b5becba20785c8e06ba76cac42dd75b9a60fcd958b3980d9d6ffbf4da0ab7"
+    },
+    "f4nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\f4nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "4854faaf83423c21185f033083a047b540af14afc05c222e38078c827ffda7ef",
+        "native_frames": 3156,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_f4nw0000.npz",
+          "sha256": "024e047ebae32eb1387b9b594c7cb35c22ba0a2b706601b487c92174a5b97908"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_f4nw0000.npz",
+          "sha256": "7def97da5fc8d53a4aacebd68cc0f363f251e018979b3daa96835f4e661ed7e2"
+        }
+      },
+      "path": "results\\H49_native_f4nw0000.npz",
+      "sha256": "a9061fc0a8732421102a19f1e7afa01025fba98d3d6ed848a3927252c555bd77"
+    },
+    "f5nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\f5nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "5edd46943d7be28e05e7a22bed8cdd01b6a31d9bc51c3003ef9aed1a39f68091",
+        "native_frames": 3866,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_f5nw0000.npz",
+          "sha256": "4b1386f9919801d4850a2c2db56c0c9199663526baa74684b408972b69dff33a"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_f5nw0000.npz",
+          "sha256": "dffef985b722bbc3ad47352dcfffc8653601a5cdc109db24f0548441b11f6437"
+        }
+      },
+      "path": "results\\H49_native_f5nw0000.npz",
+      "sha256": "33d28d2e4cd83f53d69f875e6236d176aec44f672983b845d6b6065d9f3b7ff3"
+    },
+    "m1nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\m1nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "c746804c7a1472e59e8bcbd8146a48e6b7bb7d5845dc70a5e3736784450dc2f1",
+        "native_frames": 3734,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_m1nw0000.npz",
+          "sha256": "e7e2320d166bd05c54173f55cb113f493fc64b4109bc11d44339d46bffbe62d1"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_m1nw0000.npz",
+          "sha256": "a778c350d6a8f8de2ed76c0d85804311f1024d62769715a8be4d7d10420c2124"
+        }
+      },
+      "path": "results\\H49_native_m1nw0000.npz",
+      "sha256": "ce3a7d9dd9792a3f1c1f73a3ecf4f8961d024c89538c11ac657d8bc342ba009d"
+    },
+    "m2nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\m2nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "2ff193b0acabd558a111669292ff8edf82868ed44fa77322c6cc89351399a929",
+        "native_frames": 3184,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_m2nw0000.npz",
+          "sha256": "717431ccc148f578208c2bef6e60b298cce5760d6821086bf8600b7428876d1c"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_m2nw0000.npz",
+          "sha256": "e4988e4adbd154f1f45a48dae17063ffd80b8c087472d482d4a6b8da7faeeb41"
+        }
+      },
+      "path": "results\\H49_native_m2nw0000.npz",
+      "sha256": "183225aef5a65e8dc36cfdfceee3714d029907571addc9d932172ca245f7528d"
+    },
+    "m3nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\m3nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "8d051524926e3089437c20be4631f6b01588e462781f447e0a8442e3d056dc04",
+        "native_frames": 2714,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_m3nw0000.npz",
+          "sha256": "ceb11225db98b83b43f9f50fc68b0d5e67cd9a80f9287cf9f360cae4e3e1835c"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_m3nw0000.npz",
+          "sha256": "0e01bdcc1ea9ca733a9900bdd7398ac10ce48105f34888712079b2a944a259e1"
+        }
+      },
+      "path": "results\\H49_native_m3nw0000.npz",
+      "sha256": "4d13f02ec0006b2a4cb10b53abb47b4c23123eb614b6e1b7a349ff1de819ff2f"
+    },
+    "m4nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\m4nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "ee9e50e6938da1a267f689c1beda59e4e44099c7fed0fc254082ef171670d92b",
+        "native_frames": 3366,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_m4nw0000.npz",
+          "sha256": "8f88388b6599caf8b2f77a8f04897d9c868e21459110d010cedcf43068428d02"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_m4nw0000.npz",
+          "sha256": "860b3cc820b013750d1fb32a813b467bf381666fda73b6bd04214fb5022a538f"
+        }
+      },
+      "path": "results\\H49_native_m4nw0000.npz",
+      "sha256": "e020c122ae2a1e000f2ec8db3e05a5da65f38ad4e3c16a4c76019daf27fa59de"
+    },
+    "m5nw0000": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\benchmark_data\\KEELE\\m5nw0000\\signal.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "cf78a5499b4106b43a99105cc1f9039123fb69530a63fce422e1cfe8d8c0d0a9",
+        "native_frames": 4026,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "curves": {
+        "25": {
+          "path": "results\\H49_curves_w25_m5nw0000.npz",
+          "sha256": "2585fc9561166ec359c0614c65cae6128098398570e5939819c2cadb9c3b9e07"
+        },
+        "40": {
+          "path": "results\\H49_curves_w40_m5nw0000.npz",
+          "sha256": "a8a820603c921277dc60448f8b6cd8bd277cbea4dabd9022b758e0442d2ca456"
+        }
+      },
+      "path": "results\\H49_native_m5nw0000.npz",
+      "sha256": "6e99cbbe46b42b02ef01f37ba6d4d8965f8be4b4d63cea4e6459510fd5048357"
+    }
+  },
+  "new_native_calls": 10,
+  "completed_utc": "2026-10-07T10:28:14.517957+00:00",
+  "wall_time_s": 218.64171749999878,
+  "fit_files": [],
+  "tuned_on_benchmark": false,
+  "reference_limitations": "README discourages treating .pev as exact GT for different analysis windows; negative references unknown or lx without speech. Diagnostic benchmark only.",
+  "output_hashes": {
+    "H49_metrics.csv": "b9dcdad68cb138a04d0f41baff8bf271a3baee2ca3cc062d8a3c7852ede11efc",
+    "H49_frames.csv": "61f94fbd68efa5abf526bb6aaab185654928f8f4de496b6e9c442d5f535ae640"
+  }
+}

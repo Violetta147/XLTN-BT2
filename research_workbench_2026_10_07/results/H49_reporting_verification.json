@@ -1,0 +1,10 @@
+{
+  "metrics_sha256": "b9dcdad68cb138a04d0f41baff8bf271a3baee2ca3cc062d8a3c7852ede11efc",
+  "experiment_sha256": "03c5b9ecde5d640e934eb113b7273b2cef2cc356937ba16d59be6beff7e9dbad",
+  "benchmark_verification_sha256": "666ce3420e3f49e1d68fcad6d2fd75809e057fe7e13232f593cbb36b91c961ca",
+  "report_sha256": "3baaf75c22f78e8dc697dd833b26047fc403c39d38ebd21dd4853790cbf74cf1",
+  "generator_sha256": "576964b0d88a40cbf6c773f9a27d8e5da4cc0894897fb61faddc7b9f54e1e955",
+  "weighted_mae_hz_both_voiced": 2.9960878148127046,
+  "pooled_voiced_recall": 0.9064268867924529,
+  "no_new_measurements": true
+}

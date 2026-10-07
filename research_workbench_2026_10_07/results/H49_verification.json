@@ -1,0 +1,14 @@
+{
+  "family": "H49",
+  "recordings_checked": 10,
+  "curve_groups": 20,
+  "independent_curve_rows": 31910,
+  "metric_groups_recomputed": 20,
+  "full_fft_and_independent_candidate_pick": true,
+  "numeric_reference_and_source_hashes": true,
+  "fixed_config_no_benchmark_fit": true,
+  "new_native_calls_in_verifier": 0,
+  "reference_window_caveat_preserved": true,
+  "experiment_sha256": "03c5b9ecde5d640e934eb113b7273b2cef2cc356937ba16d59be6beff7e9dbad",
+  "verifier_sha256": "2272fbff808e3397086f9cc6324bf6014c956439910b0207c115ef455c228ac4"
+}
