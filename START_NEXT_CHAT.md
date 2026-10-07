@@ -7,6 +7,7 @@ Người dùng yêu cầu dừng để tiết kiệm token và chuyển sang cha
 1. `AGENTS.md` của workspace XLTN và repository XLTN-BT2.
 2. File này và `research_workbench_2026_10_07/STATE.md` (đọc phần mới nhất, không quét lại toàn lịch sử).
 3. Với câu hỏi gần nhất về chất lượng dữ liệu: `research_workbench_2026_10_07/DATASET_QUALITY_REPORT.md` và `results/dataset_quality_verification.json`.
+   Truy nguồn đã được bổ sung ở `research_workbench_2026_10_07/DATASET_PROVENANCE_REPORT.md` và `results/dataset_provenance.json`: 8 WAV trùng byte bản GitHub `dthle/TinHieuHuanLuyen`, LAB gốc trùng nội dung sau chuẩn hóa xuống dòng; lịch sử người dùng nhận train 3GT từ thầy và cache local đã đối chiếu. Hai phiên bản LAB đổi cả mean/std, không chỉ thêm count. Chưa rõ tác giả thu âm hoặc quy trình tạo reference; chỉ đọc log lịch sử, không truy cập lại Drive.
 4. Nếu tiếp tục H44: `H44_REGISTRATION.md`, source và precheck cùng workbench.
 
 ## Trạng thái đã xác minh

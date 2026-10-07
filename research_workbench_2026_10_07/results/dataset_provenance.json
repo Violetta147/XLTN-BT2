@@ -1,0 +1,872 @@
+{
+  "checked_at": "2026-10-07T15:02:17.768690+07:00",
+  "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+  "auditor_sha256": "786ba48c6ee21a42e16c605821dd26eb97991c96d4e4c572cb5843263d28239c",
+  "public_repo": "dthle/TinHieuHuanLuyen",
+  "public_pin": "e38529d6485b59e49dddeccb44c129a6f93e48f3",
+  "local_baseline": "874aca1a77a79b91c73be46ae3d1d91758baab4a",
+  "policy": {
+    "local_and_public_github_only": true,
+    "accessed_google_drive": false,
+    "ran_F0_inference": false,
+    "historical_logs_are_not_live_source_verification": true,
+    "public_copy_is_not_proof_of_original_authorship": true
+  },
+  "files": [
+    {
+      "local_path": "TinHieuHuanLuyen/phone_F1.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_F1.lab",
+      "local_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+      "local_bytes": 240,
+      "remote_sha256": "e30d41cc8e84112819bd7c6ab4a2c8d3adeadd4cb85054dd37f3dc824c1ca522",
+      "remote_bytes": 223,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\phone_F1.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/phone_F1.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_F1.wav",
+      "local_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+      "local_bytes": 103724,
+      "remote_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+      "remote_bytes": 103724,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 16
+          },
+          {
+            "tag": "data",
+            "size": 103680
+          }
+        ],
+        "xmp_fields": []
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\phone_F1.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/phone_M1.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_M1.lab",
+      "local_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+      "local_bytes": 199,
+      "remote_sha256": "02e83baed2b024143766389e7dfaf601d3531a84df7f500f744ebd089323773e",
+      "remote_bytes": 185,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\phone_M1.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/phone_M1.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_M1.wav",
+      "local_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+      "local_bytes": 133164,
+      "remote_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+      "remote_bytes": 133164,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 16
+          },
+          {
+            "tag": "data",
+            "size": 133120
+          }
+        ],
+        "xmp_fields": []
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\phone_M1.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/README",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/README",
+      "local_sha256": "0bbc198837a9562b02be32330f44b401fa086c6711cec240cad99e5e80086f63",
+      "local_bytes": 889,
+      "remote_sha256": "25aed208f4a58fc31946193228c8313897f64bc538c0d2301c77850cbafe5ccb",
+      "remote_bytes": 871,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\README",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/studio_F1.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_F1.lab",
+      "local_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+      "local_bytes": 212,
+      "remote_sha256": "46d1bd99df6deb67998c707dcaf32d153076a06593efffd3bce2c0c10895cfd4",
+      "remote_bytes": 197,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\studio_F1.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/studio_F1.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_F1.wav",
+      "local_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+      "local_bytes": 258716,
+      "remote_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+      "remote_bytes": 258716,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 18
+          },
+          {
+            "tag": "Fake",
+            "size": 2
+          },
+          {
+            "tag": "data",
+            "size": 252534
+          },
+          {
+            "tag": "_PMX",
+            "size": 6117
+          }
+        ],
+        "xmp_fields": [
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/}MetadataDate",
+            "text": "2013-12-09T20:43:52+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/}ModifyDate",
+            "text": "2013-12-09T20:43:52+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/mm/}InstanceID",
+            "text": "xmp.iid:C56050D2D760E311B2B4BFFAA88019CA"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/mm/}DocumentID",
+            "text": "xmp.did:C56050D2D760E311B2B4BFFAA88019CA"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/mm/}OriginalDocumentID",
+            "text": "xmp.did:420A168E895DE311B6F9CACD01B7A99F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:420A168E895DE311B6F9CACD01B7A99F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-05T15:46:59+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:430A168E895DE311B6F9CACD01B7A99F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-05T15:46:59+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:C46050D2D760E311B2B4BFFAA88019CA"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-09T20:43:52+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:C56050D2D760E311B2B4BFFAA88019CA"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-09T20:43:52+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/;/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceRef#}instanceID",
+            "text": "xmp.iid:C46050D2D760E311B2B4BFFAA88019CA"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceRef#}documentID",
+            "text": "xmp.did:420A168E895DE311B6F9CACD01B7A99F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceRef#}originalDocumentID",
+            "text": "xmp.did:420A168E895DE311B6F9CACD01B7A99F"
+          },
+          {
+            "tag": "{http://purl.org/dc/elements/1.1/}format",
+            "text": "audio/x-wav"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}trackName",
+            "text": "CuePoint Markers"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}trackType",
+            "text": "Cue"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}frameRate",
+            "text": "f254016000000"
+          }
+        ]
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\studio_F1.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/studio_M1.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_M1.lab",
+      "local_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+      "local_bytes": 158,
+      "remote_sha256": "ca3bda7a6c9c136546032ce553fde6c057646eea1f5b69ea1e8c7905878d95e8",
+      "remote_bytes": 147,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\studio_M1.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuHuanLuyen/studio_M1.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_M1.wav",
+      "local_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+      "local_bytes": 240844,
+      "remote_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+      "remote_bytes": 240844,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 16
+          },
+          {
+            "tag": "data",
+            "size": 240800
+          }
+        ],
+        "xmp_fields": []
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuHuanLuyen\\studio_M1.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/phone_F2.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_F2.lab",
+      "local_sha256": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565",
+      "local_bytes": 242,
+      "remote_sha256": "694f67d9fa05389593b574455dbbd130eaf3ff44e54847a46a632fd1b6658df9",
+      "remote_bytes": 225,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\phone_F2.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/phone_F2.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_F2.wav",
+      "local_sha256": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+      "local_bytes": 153644,
+      "remote_sha256": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+      "remote_bytes": 153644,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 16
+          },
+          {
+            "tag": "data",
+            "size": 153600
+          }
+        ],
+        "xmp_fields": []
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\phone_F2.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/phone_M2.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_M2.lab",
+      "local_sha256": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
+      "local_bytes": 245,
+      "remote_sha256": "372aee9175328999a654c547eb353600e0ba5bf262d57db7eb7fa532f30a94ea",
+      "remote_bytes": 228,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\phone_M2.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/phone_M2.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/phone_M2.wav",
+      "local_sha256": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+      "local_bytes": 89644,
+      "remote_sha256": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+      "remote_bytes": 89644,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 16
+          },
+          {
+            "tag": "data",
+            "size": 89600
+          }
+        ],
+        "xmp_fields": []
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\phone_M2.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/studio_F2.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_F2.lab",
+      "local_sha256": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
+      "local_bytes": 173,
+      "remote_sha256": "b34dfed30f8f59b10d4febef70ec8faa5bc0fac97a863ccd697eb53cf4d93037",
+      "remote_bytes": 161,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\studio_F2.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/studio_F2.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_F2.wav",
+      "local_sha256": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+      "local_bytes": 277828,
+      "remote_sha256": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+      "remote_bytes": 277828,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 16
+          },
+          {
+            "tag": "data",
+            "size": 277784
+          }
+        ],
+        "xmp_fields": []
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\studio_F2.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/studio_M2.lab",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_M2.lab",
+      "local_sha256": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
+      "local_bytes": 187,
+      "remote_sha256": "a88cd1ec912477bb03641fdea5c46dcbafe88a1651e653efa65b922ede38be52",
+      "remote_bytes": 174,
+      "exact_bytes_equal": false,
+      "equal_after_line_ending_normalization": true,
+      "verified": true,
+      "baseline_git_bytes_equal": false,
+      "baseline_text_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\studio_M2.lab",
+      "outer_bytes_equal": false,
+      "outer_text_equal": true,
+      "unchanged_baseline": true
+    },
+    {
+      "local_path": "TinHieuKiemThu/studio_M2.wav",
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/studio_M2.wav",
+      "local_sha256": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+      "local_bytes": 216884,
+      "remote_sha256": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+      "remote_bytes": 216884,
+      "exact_bytes_equal": true,
+      "verified": true,
+      "wav_metadata": {
+        "chunks": [
+          {
+            "tag": "fmt ",
+            "size": 18
+          },
+          {
+            "tag": "Fake",
+            "size": 2
+          },
+          {
+            "tag": "data",
+            "size": 210080
+          },
+          {
+            "tag": "_PMX",
+            "size": 6739
+          }
+        ],
+        "xmp_fields": [
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/}MetadataDate",
+            "text": "2013-12-11T22:36:12+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/}ModifyDate",
+            "text": "2013-12-10T22:46:42+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/mm/}InstanceID",
+            "text": "xmp.iid:CF0E34F77962E311A849E2DFE87F8EA6"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/mm/}DocumentID",
+            "text": "xmp.did:34493444B261E311A776A7E575BF443F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/mm/}OriginalDocumentID",
+            "text": "xmp.did:6EB1C9F95A5EE31185DEEE989B0BAEF1"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:6EB1C9F95A5EE31185DEEE989B0BAEF1"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-06T16:44:18+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:6FB1C9F95A5EE31185DEEE989B0BAEF1"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-06T16:44:18+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:33493444B261E311A776A7E575BF443F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-10T22:46:42+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:34493444B261E311A776A7E575BF443F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-10T22:46:42+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Audition 4.0.0.1815 (XMPDocOpsTemporal:2008.11.05)"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/;/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}action",
+            "text": "saved"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}instanceID",
+            "text": "xmp.iid:CF0E34F77962E311A849E2DFE87F8EA6"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}when",
+            "text": "2013-12-11T22:36:12+07:00"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}softwareAgent",
+            "text": "Adobe Premiere Pro 5.5"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceEvent#}changed",
+            "text": "/metadata"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceRef#}instanceID",
+            "text": "xmp.iid:33493444B261E311A776A7E575BF443F"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceRef#}documentID",
+            "text": "xmp.did:6EB1C9F95A5EE31185DEEE989B0BAEF1"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xap/1.0/sType/ResourceRef#}originalDocumentID",
+            "text": "xmp.did:6EB1C9F95A5EE31185DEEE989B0BAEF1"
+          },
+          {
+            "tag": "{http://purl.org/dc/elements/1.1/}format",
+            "text": "audio/x-wav"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}trackName",
+            "text": "CuePoint Markers"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}trackType",
+            "text": "Cue"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}frameRate",
+            "text": "f254016000000"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}audioSampleRate",
+            "text": "44100"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}audioSampleType",
+            "text": "16Int"
+          },
+          {
+            "tag": "{http://ns.adobe.com/xmp/1.0/DynamicMedia/}audioChannelType",
+            "text": "Mono"
+          }
+        ]
+      },
+      "baseline_git_bytes_equal": true,
+      "outer_local_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\TinHieuKiemThu\\studio_M2.wav",
+      "outer_bytes_equal": true,
+      "unchanged_baseline": true
+    }
+  ],
+  "three_gt": [
+    {
+      "split": "train",
+      "path": "research_3gt_2026_10_05/train_3gt/phone_F1.lab",
+      "sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-3gt\\phone_F1.lab",
+      "cached_source_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "217",
+        "F0std": "23"
+      },
+      "new_stats": {
+        "F0mean": "215.6",
+        "F0std": "20.6",
+        "F0num": "148"
+      }
+    },
+    {
+      "split": "train",
+      "path": "research_3gt_2026_10_05/train_3gt/phone_M1.lab",
+      "sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-3gt\\phone_M1.lab",
+      "cached_source_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "122",
+        "F0std": "18"
+      },
+      "new_stats": {
+        "F0mean": "123.7",
+        "F0std": "16.8",
+        "F0num": "232"
+      }
+    },
+    {
+      "split": "train",
+      "path": "research_3gt_2026_10_05/train_3gt/studio_F1.lab",
+      "sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-3gt\\studio_F1.lab",
+      "cached_source_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "232",
+        "F0std": "40"
+      },
+      "new_stats": {
+        "F0mean": "229.6",
+        "F0std": "36.8",
+        "F0num": "127"
+      }
+    },
+    {
+      "split": "train",
+      "path": "research_3gt_2026_10_05/train_3gt/studio_M1.lab",
+      "sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-3gt\\studio_M1.lab",
+      "cached_source_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "113",
+        "F0std": "26"
+      },
+      "new_stats": {
+        "F0mean": "116.9",
+        "F0std": "26.4",
+        "F0num": "82"
+      }
+    },
+    {
+      "split": "test",
+      "path": "research_3gt_2026_10_05/test_3gt/phone_F2.lab",
+      "sha256": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-test-3gt\\phone_F2.lab",
+      "cached_source_sha256": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "145",
+        "F0std": "33.7"
+      },
+      "new_stats": {
+        "F0mean": "150.2",
+        "F0std": "30.7",
+        "F0num": "219"
+      }
+    },
+    {
+      "split": "test",
+      "path": "research_3gt_2026_10_05/test_3gt/phone_M2.lab",
+      "sha256": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-test-3gt\\phone_M2.lab",
+      "cached_source_sha256": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "129",
+        "F0std": "18.6"
+      },
+      "new_stats": {
+        "F0mean": "130.2",
+        "F0std": "15.4",
+        "F0num": "123"
+      }
+    },
+    {
+      "split": "test",
+      "path": "research_3gt_2026_10_05/test_3gt/studio_F2.lab",
+      "sha256": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-test-3gt\\studio_F2.lab",
+      "cached_source_sha256": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "200",
+        "F0std": "46.1"
+      },
+      "new_stats": {
+        "F0mean": "198.6",
+        "F0std": "47.8",
+        "F0num": "139"
+      }
+    },
+    {
+      "split": "test",
+      "path": "research_3gt_2026_10_05/test_3gt/studio_M2.lab",
+      "sha256": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975",
+      "cached_source_path": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.validation-test-3gt\\studio_M2.lab",
+      "cached_source_sha256": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975",
+      "cached_source_bytes_equal": true,
+      "old_stats": {
+        "F0mean": "155",
+        "F0std": "30.8"
+      },
+      "new_stats": {
+        "F0mean": "154.7",
+        "F0std": "30.3",
+        "F0num": "116"
+      }
+    }
+  ],
+  "public_history": {
+    "phone_F1.wav": {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits?sha=e38529d6485b59e49dddeccb44c129a6f93e48f3&path=phone_F1.wav&per_page=100",
+      "commits": [
+        {
+          "sha": "153765674a795d4be37db8d0aabc4b78a790a28e",
+          "author_date": "2022-10-09T10:24:15Z",
+          "committer_date": "2022-10-09T10:24:15Z",
+          "message": "abc"
+        }
+      ]
+    },
+    "phone_F1.lab": {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits?sha=e38529d6485b59e49dddeccb44c129a6f93e48f3&path=phone_F1.lab&per_page=100",
+      "commits": [
+        {
+          "sha": "153765674a795d4be37db8d0aabc4b78a790a28e",
+          "author_date": "2022-10-09T10:24:15Z",
+          "committer_date": "2022-10-09T10:24:15Z",
+          "message": "abc"
+        }
+      ]
+    },
+    "studio_M2.wav": {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits?sha=e38529d6485b59e49dddeccb44c129a6f93e48f3&path=studio_M2.wav&per_page=100",
+      "commits": [
+        {
+          "sha": "2aac39f9bdc86b99b1799a628d0bea74d9a61b2f",
+          "author_date": "2022-10-06T12:51:43Z",
+          "committer_date": "2022-10-06T12:51:43Z",
+          "message": "abc"
+        }
+      ]
+    }
+  },
+  "original_inputs_unchanged_during_audit": true,
+  "summary": {
+    "wav_exact_byte_matches": 8,
+    "lab_text_matches": 8,
+    "three_gt_cache_byte_matches": 8,
+    "baseline_matches": 17
+  }
+}

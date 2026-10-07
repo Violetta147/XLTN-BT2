@@ -1,5 +1,7 @@
 # Kiểm tra chất lượng bộ dữ liệu BT2 hiện tại
 
+**Bổ sung truy nguồn ngày 07/10/2026:** [DATASET_PROVENANCE_REPORT.md](DATASET_PROVENANCE_REPORT.md) đã đối chiếu một bản GitHub công khai trùng byte cả 8 WAV, trùng nội dung 8 LAB gốc; lần theo lịch sử cung cấp/cache local của 3GT và đọc metadata WAV. Nguồn trực tiếp của các bản sao đã rõ hơn, nhưng người thu âm và quy trình đo reference vẫn chưa xác minh. Phần QA bên dưới giữ nguyên số đo.
+
 Đọc mới 8 WAV và 16 LAB, tổng 26.124694 giây. Đây là kiểm tra dữ liệu mô tả, không chạy thuật toán F0, không fit/chọn tham số, không sửa WAV/LAB. Test được đọc chỉ cho QA; kết quả này không được dùng để tune mô hình rồi gọi test là độc lập. Không gọi Jev/Gemini và không retry System One.
 
 ## Kết quả định dạng và tín hiệu
