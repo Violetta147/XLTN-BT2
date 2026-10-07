@@ -1,0 +1,19 @@
+{
+  "family": "H37",
+  "source_calls": 12,
+  "fixed_groups_replayed": 12,
+  "fit_logs": 52,
+  "independent_fusion_two_stage_alignment_and_fallback_replayed": true,
+  "voicing_and_count_match_control_every_fixed_file": true,
+  "control_H31_fixed_03_parity": true,
+  "fixed_mape_components_recomputed": true,
+  "native_input_and_source_binary_parameters_checked": true,
+  "generator_sha256": "025c20023eb793e0d487f3c834753ad0a21ba74514284b7821aede09bb7e02de",
+  "input_sha256": {
+    "H37_experiment.json": "f1ceef5b4bbb23fc9ea3fe49ce0859f565b75da292910eb2b954a77f765b2f76",
+    "H37_source_native_frames.csv": "a193bbc498e817bad95a6c4f85970b3941c43b15ebcda19531d98fd1c19a5cb2",
+    "H37_raw_native_frames.csv": "82569eaa5a361e86780f149cc90b10cb0688c5f4e636837753a9d23354d157c0",
+    "H37_fixed_lofo.csv": "cde9a6cce5e13d8c9a4e06f7b5ae856b1b665823baaf8282057ded85fcbbbaba",
+    "H37_reaper_usage.csv": "459a5db2b27bb30f9995dba920db672d87cae1d0f477804bc6bb94fe55467e45"
+  }
+}

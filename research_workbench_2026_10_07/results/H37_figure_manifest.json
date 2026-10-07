@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H37_nested",
+      "png": "figures/H37_nested.png",
+      "svg": "figures/H37_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H37_metrics.csv",
+          "sha256": "805361eba3cf251cf344bfe7443b58dfb6610592b544534e21fbb02882a90eac"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "reaper_praat_hybrid.py",
+      "generator_sha256": "604a06277d60dfa4090ec1d74fdded29d9164f675d8998a7553e5a91ca54fb12",
+      "command": "python research_workbench_2026_10_07/reaper_praat_hybrid.py H37"
+    }
+  ]
+}

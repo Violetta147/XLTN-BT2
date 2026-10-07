@@ -1,0 +1,16 @@
+{
+  "family": "H37",
+  "selection_replayed": true,
+  "fits_checked": 52,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": false,
+    "lofo_mape_relative_5_percent": false,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": false
+  },
+  "verifier_sha256": "a07e7973700ecfbdd3fa5e2edc8790aa3d3b1db60b9d800804bbb9b6ab2229ae"
+}
