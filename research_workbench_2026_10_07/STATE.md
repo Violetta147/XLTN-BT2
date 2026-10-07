@@ -37,3 +37,7 @@ Lượt nối tiếp H21/H22 dùng hai ý tưởng Gemini đã lưu, không gử
 - [x] Cách đọc paper không PDF: PAPER_KNOWLEDGE_WITHOUT_PDF.md, commit a61a131 đã push/verify. Đọc HTML, abstract và mã tác giả có provenance; Harvest source pin d625e7, hàm tạo/refine/filter/fix/smooth và bước cơ sở 1 ms đã đối chiếu. Chưa chạy Harvest khi ghi dòng này.
 
 - [x] AMDF_TARGET_2PCT.ipynb: bốn code cells chạy nguyên source qua Python/display adapter (không Jupyter kernel), tính lại 24 rows từ train WAV/LOFO fit, khớp H24-H26 1e-8. Đã verify nguồn, output, status và figure PNG/SVG; mục tiêu mỗi file ≤2% chưa đạt. Notebook gốc được giữ.
+
+- [x] H28 Harvest: prereg a01c04f, PyWORLD 0.3.5 official cp313 wheel trong môi trường riêng ../.venv-bt2-world, không sửa Python gốc. Sdist harvest.cpp hash trùng source tác giả pin d625e7; native binary hash lưu riêng. Synthetic failure hai harmonic giữ nguyên, không thêm noise vào WAV thật.
+- [x] H28 đã đo: cả final và bốn outer chọn AMDF control; nested 5.721646% không đổi, gate FAIL. Fixed Harvest10 ms nhận V gần hết nhưng SIL false voiced 268 (control1), mean/std/count xấu; chưa đạt mỗi file≤2%. Verify 64 traces/68 fit logs/24 rows, baseline/no-fit/native hash/minimax/gates/contour/LAB/WAV hashes và PNG/SVG. Không promote.
+- [ ] Hướng tiếp sau literature: khảo sát cổng V/UV khi dùng pitch từ Harvest, filtered ACF thích hợp cho speech, pYIN/SWIPE/REAPER. Chưa đăng ký hoặc đo các hướng này. Giữ H24 control và failures, không mở grid theo test; goal mỗi file≤2% vẫn active.

@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H28_nested",
+      "png": "figures/H28_nested.png",
+      "svg": "figures/H28_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H28_metrics.csv",
+          "sha256": "edb4c3da0a6358a6a8cd36d54bb19fc995ec4e7880426d764842947c80054cc8"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "harvest_reference.py",
+      "generator_sha256": "c77bba827ce4526fcc1baf5e444e0f33def301734c572a12ba08b039975617a2",
+      "command": "python research_workbench_2026_10_07/harvest_reference.py H28"
+    }
+  ]
+}

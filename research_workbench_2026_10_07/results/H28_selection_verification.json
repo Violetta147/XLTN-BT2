@@ -1,0 +1,17 @@
+{
+  "family": "H28",
+  "selection_replayed": true,
+  "fits_checked": 68,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": false,
+    "lofo_mape_relative_5_percent": false,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": false
+  },
+  "harvest_no_training_fit_and_native_hash_verified": true,
+  "verifier_sha256": "d3e446936628bad0aeea0b30ed04f3044ff2e040360596c2fce87ed37ea051da"
+}
