@@ -1,0 +1,30 @@
+{
+  "version": "0.3.6",
+  "files": [
+    {
+      "filename": "pyworld-0.3.6-cp36-cp36m-win32.whl",
+      "sha256": "df908259f2364dc161b2c032568156b98e2bb56627f5da15201b944fb44ba344",
+      "url": "https://files.pythonhosted.org/packages/1b/db/7c6985210f447135a148d90e16593a371aedb3f8a2e0971ca769c0cc1f42/pyworld-0.3.6-cp36-cp36m-win32.whl"
+    },
+    {
+      "filename": "pyworld-0.3.6-cp36-cp36m-win_amd64.whl",
+      "sha256": "aab33ba14f8e8909c5226acc58ca19086a8b0194ade226a4ba186ca259c7b674",
+      "url": "https://files.pythonhosted.org/packages/48/c0/9be9403682366d9e0fc06eaec0cec024711307e1d97399bedd6c3dc6aea0/pyworld-0.3.6-cp36-cp36m-win_amd64.whl"
+    },
+    {
+      "filename": "pyworld-0.3.6-cp37-cp37m-win32.whl",
+      "sha256": "bdbdb3f8da2d7115102a93321d0c081afce375aad1fbb1e98b3c5e148222cf57",
+      "url": "https://files.pythonhosted.org/packages/e3/e3/6dc7757abb33a6cc568298e03b00879337e613b3ced62e0108736d7da27b/pyworld-0.3.6-cp37-cp37m-win32.whl"
+    },
+    {
+      "filename": "pyworld-0.3.6-cp37-cp37m-win_amd64.whl",
+      "sha256": "832907e0ccc2509302440093df563599193867a135f87a4baf6a2ec08540f893",
+      "url": "https://files.pythonhosted.org/packages/4a/4a/c848a53d9c86fbad7ff5f31835879435c5711099c9e958cd8da0ac038b35/pyworld-0.3.6-cp37-cp37m-win_amd64.whl"
+    },
+    {
+      "filename": "pyworld-0.3.6-cp38-cp38-win_amd64.whl",
+      "sha256": "180bcaf4f25b3db64cc6c53751e275e5b6330833530632926e52896243de7043",
+      "url": "https://files.pythonhosted.org/packages/3f/b4/10e1c23beb61b7ce129443ecd7742f128ec0d5ebfbb8b56e8f8fddb687d2/pyworld-0.3.6-cp38-cp38-win_amd64.whl"
+    }
+  ]
+}

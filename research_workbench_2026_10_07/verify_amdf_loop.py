@@ -24,7 +24,7 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            if family in ('H25','H26'):
+            if family in ('H25','H26','H27'):
                 ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
             else:
                 ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
@@ -55,6 +55,18 @@ def verify(family, baseline):
             assert all(np.isfinite(classifier[key]).all() for key in ('mean','scale','coefficient'))
             assert len(classifier['feature_names']) == len(classifier['coefficient'])
     extra = {}
+    if family == 'H27':
+        praat_fits = [fit for fit in fits if fit['option_id'].startswith('praat_')]
+        assert praat_fits
+        for fit in praat_fits:
+            assert fit['fitted']['requires_fit'] is False
+            assert fit['fitted']['actual_fit_files'] == []
+            assert fit['classifier'] is None
+        nested = metrics[(metrics.split == 'nested') & (metrics.model == 'candidate')]
+        assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape <= 2).all())
+        assert metrics.projection_coverage.between(0, 1).all()
+        assert any(path.endswith('amdf_dual_window.py') for path in result['code_sha256'])
+        extra['praat_no_training_fit_verified'] = True
     if family == 'H24':
         contours = pd.read_csv(HERE / 'results/H24_nested_contours.csv')
         for file, group in contours.groupby('file'):

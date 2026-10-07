@@ -1,0 +1,46 @@
+{
+  "registered_utc": "2026-10-07T01:55:02.630975+00:00",
+  "baseline_commit": "556a9b9",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "556a9b9",
+  "family": "H27",
+  "algorithm": "Praat raw autocorrelation versus AMDF control",
+  "options": [
+    {
+      "id": "amdf_control",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "C": null,
+      "method": "control",
+      "voicing_threshold": null
+    },
+    {
+      "id": "praat_raw_v0.35",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "C": null,
+      "method": "praat_raw",
+      "voicing_threshold": 0.35
+    },
+    {
+      "id": "praat_raw_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "C": null,
+      "method": "praat_raw",
+      "voicing_threshold": 0.45
+    },
+    {
+      "id": "praat_raw_v0.55",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "C": null,
+      "method": "praat_raw",
+      "voicing_threshold": 0.55
+    }
+  ]
+}
