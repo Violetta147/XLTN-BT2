@@ -1,0 +1,19 @@
+# H42 — Cửa sổ AMDF theo năng lượng phổ
+
+Đăng ký trước phép đo BT2 mới. Rollback repository: **18fe81a**, mathematical control **H31 fixed Praat filtered.30**; frozen/original009fd2c không đổi. H41 đã hoàn tất benchmark và notebook: cả bốn nested Average MAPE≤2%, nhưng phone_F1 std regression làm gate FAIL. Vòng trước có tiến bộ được đo/kiểm tra, không phải no-progress hoặc chờ process. Không chạy lại các benchmark cũ.
+
+Giả thuyết: NAMDF25ms và40ms phản ứng khác với đặc tính phổ; dùng phổ của chính khung để chọn cửa sổ có thể giữ cải thiện mean/std mà giảm std regression của H41. Đây là engineering hypothesis định hướng bởi bốn train đã xem, không paper replication hoặc independent corpus validation. Không lấy QA test để chọn feature/grid/ngưỡng. Đã đọc mô tả test trong QA trước đó; test không còn chưa từng xem, và H42 không inference/tune test.
+
+Một yếu tố thay đổi: bộ chọn cửa sổ dựa trên phổ, giữ band200cents/gatePraat.30 và toàn bộ kernel/candidate/tie/fallback của H41. Grid **7options**: controlPraat.30, fixed25/b200 (H41selected), fixed40/b200 ablation, adaptive thresholds **.05/.10/.20/.35**. Cấu hình dùng chung mọi file; tênfile chỉ làm key để ghép evidence/cache, không tham gia route.
+
+Feature tại từng tâm nativePraat có gateF0∈70–400: raw40ms nguyên PCM chuẩn hóa, start=round(time×fs−N/2), N=round(fs×.040); bỏ mean, nhân Hann symmetric w[n]=.5−.5cos(2πn/(N−1)), RFFT N điểm không padding. Power=absFFT² với hệ số2 ở bins positive trừ Nyquist nếu N chẵn. Ratio=sum(power[f≥1000])/sum(power[f>0]); không dùng binDC. Nếu meanabs(centered)<1e−8, nonfinite hoặc window unsupported, ratio undefined. Adaptive dùng40ms nếu ratio finite và≤threshold, còn lại25ms. Đây là tỷ lệ phổ, không tỷ lệ SNR hay độ chính xác pitch. Các rate16k/44.1k dùng cùng cutoffHz/lengthms, không thiết bị/giới tính/ngưỡngGT routing.
+
+AMDF curve/dips của25/40ms đã đo ởH41 và verified từrawPCM; tái sử dụng có hash/source/input/frame proof. Gate/times4historicalPraatgroups từH41; **0newnativecalls**, 8curvegroups cũ được đọc,4spectralfeaturegroups mới. Chọn đáy trongband200cents bằngH41, UV/mask/count/F1/SIL giữcontrol. Nếu cửa sổ được route không hỗ trợ/flat/noallowedcandidate giữPraat, không chuyển cửa sổ bằng LAB. Không blend/filter/noise/clip/resample/smoothing/GTmatching.
+
+Selection giữ minimax worst-file Average MAPE, mean,ID; finite/F1 vàrecallVdrop≤.01/SIL+1 trước xếp hạng. Innerfit/selection chỉ dùng pooltraining; actual_fit_files=[] vì không estimatorfit. Outer file không ởinnerpool/fit. Támgate soH31 không đổi: traingain≥10%,selectedLOFO/nestedgain≥5%,F1/recallVdrop≤.01,SIL+1,nofileworse>2pp,phone_F1stdnotworse. Báo riêng mỗi nested fileAverageMAPE≤2%, cả mean/std/count MAE vàMAPE/VUV/BA/SIL. Target hiện trainfile-stat, không per-frameaccuracy.
+
+Precheck syntheticlow200/high2000tone fs16/44.1k, zero, gain/DC invariance, threshold boundaries/routing, chưađọcBT2. Source/registry/precheck/verifier checked/commit/pushremote trước đo. Sauđo độc lậpverify112innertraces/116–120fits/24metrics/28fixedgroups; allrawspectralfeatures bằngfullcomplexFFT vàsymmetricweights/Hannformula, allwindow/frameSHA/NAMDFrawkernel/inputhash/localdip/parabolicrefine/band/tie/fallback/routingtags/windowselection/nativeCSVfrequencySHA/canonicalalignment/count/std(ddof0)/MAPE/VUV/support/unchangedLAB/H31 &H41fixedparity/gates/pools/PNGSVG/layout. Sourceknowledge đã ghi ởAMDF_SPECTRAL_SOURCE_NOTE.md; không dùngJev cho tính chính xác hay retry lỗiH32.
+
+Giữ mọi failedoption/receipt/output. Kết quảPASS vẫn không tự sửa original/frozen; cần completion audit notebook/gates/provenance. Nếu thất bại giữH41target milestone vàH31control làm điểm đối chiếu; không đổigrid/gate sauđo. Đổi cutoff,feature,window,band hoặcselection cần đăng ký vòng khác.
+
+Lệnh: `amdf_spectral_controller.py register`, `check`, `H42`; `verify_amdf_spectral.py`. Local only, noDrive/deeplearning/PDF/testmodelcalls/MCP retry.

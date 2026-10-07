@@ -1,0 +1,66 @@
+{
+  "registered_utc": "2026-10-07T06:50:38.144555+00:00",
+  "baseline_commit": "18fe81a",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "18fe81a",
+  "family": "H42",
+  "algorithm": "NAMDF spectral window controller under fixed Praat filtered .30 gate",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.3",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "amdf_anchor_w25_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 25,
+      "method": "fixed_window",
+      "amdf_window_ms": 25
+    },
+    {
+      "id": "amdf_anchor_w40_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "fixed_window",
+      "amdf_window_ms": 40
+    },
+    {
+      "id": "amdf_spectral_hf05",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.05
+    },
+    {
+      "id": "amdf_spectral_hf10",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.1
+    },
+    {
+      "id": "amdf_spectral_hf20",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.2
+    },
+    {
+      "id": "amdf_spectral_hf35",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.35
+    }
+  ]
+}
