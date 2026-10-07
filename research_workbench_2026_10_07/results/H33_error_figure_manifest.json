@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "H33_fixed_components",
+      "png": "figures/H33_fixed_components.png",
+      "svg": "figures/H33_fixed_components.svg",
+      "sources": [
+        {
+          "path": "results\\H33_fixed_lofo.csv",
+          "sha256": "6d7093a6b8e28f3f6fa9590b2e8b0bbf062962c3d9ef036677bc727b9ea30dd8"
+        }
+      ],
+      "caption_vi": "Mỗi lỗi mean/std/count chia3; cộng thành Average MAPE.",
+      "limits_vi": "Chỉ file-stat, không đo accuracy cao độ từng khung.",
+      "generator": "pyin_diagnostics.py",
+      "generator_sha256": "4a96839fcb3e9fa000d8744aaf6b50164fdd839941a70c3920a3f19bdad91555",
+      "command": "python research_workbench_2026_10_07/pyin_diagnostics.py"
+    },
+    {
+      "name": "H33_fixed_voicing",
+      "png": "figures/H33_fixed_voicing.png",
+      "svg": "figures/H33_fixed_voicing.svg",
+      "sources": [
+        {
+          "path": "results\\H33_fixed_lofo.csv",
+          "sha256": "6d7093a6b8e28f3f6fa9590b2e8b0bbf062962c3d9ef036677bc727b9ea30dd8"
+        }
+      ],
+      "caption_vi": "V/UV F1/recall và SIL cùng các cấu hình cố định.",
+      "limits_vi": "Không quy thành kết luận về giới/speaker từ bốn file.",
+      "generator": "pyin_diagnostics.py",
+      "generator_sha256": "4a96839fcb3e9fa000d8744aaf6b50164fdd839941a70c3920a3f19bdad91555",
+      "command": "python research_workbench_2026_10_07/pyin_diagnostics.py"
+    }
+  ]
+}

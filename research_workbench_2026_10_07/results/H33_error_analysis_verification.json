@@ -1,0 +1,17 @@
+{
+  "fixed_pyin_groups_replayed": 12,
+  "fixed_stats_voicing_and_support_matched": true,
+  "new_wav_or_test_read": false,
+  "source_sha256": {
+    "results\\H33_fixed_lofo.csv": "6d7093a6b8e28f3f6fa9590b2e8b0bbf062962c3d9ef036677bc727b9ea30dd8",
+    "results\\H33_raw_native_frames.csv": "ae1e99dd266feb457d8fba789be920f783704e579b8eea6b4026f086dcc6441d",
+    "results\\H33_nested_contours.csv": "36819f3a639090f15913000873f73dce8ba9b98783d07b59ec3466e64671a66b",
+    "results\\H33_probability_by_label.csv": "86fdaa4d3538fb5bdd9bce2cc556e38d79f5c09e57688cb83d11b3dbe4efc0c0",
+    "results\\H33_error_summary.csv": "5d9e68f44cb6227dc0acc93f8d4345c676b2753f0cd933d554ed24f1dc55d759"
+  },
+  "generator_sha256": "4a96839fcb3e9fa000d8744aaf6b50164fdd839941a70c3920a3f19bdad91555",
+  "new_hypothesis_or_threshold_selected": false,
+  "summary_and_probability_totals_independently_checked": true,
+  "png_svg_sources_verified": true,
+  "figures_visually_inspected": true
+}

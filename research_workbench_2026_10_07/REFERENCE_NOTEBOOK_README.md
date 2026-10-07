@@ -49,4 +49,4 @@ Nhãn đoạn V chưa cung cấp cao độ từng khung. F0num chuẩn còn ph�
 
 Nguồn và mức đọc ở [PAPER_KNOWLEDGE_WITHOUT_PDF.md](PAPER_KNOWLEDGE_WITHOUT_PDF.md). Harvest từ abstract ISCA và source tác giả; Praat từ manual HTML và native implementation. Chúng là các nguồn khác nhau, không coi đọc code/manual là đọc toàn bộ paper. Không extract PDF, không nhập số benchmark paper vào bảng BT2.
 
-Jev prospective review trước H32 bị validation error, không có phán xét và không retry. Mọi phép tính trong notebook/verifier do code thực hiện. Hướng reference chưa đo còn gồm pYIN/SWIPE/REAPER; chưa có số liệu BT2 cho những pipeline ấy trong notebook này.
+Jev prospective review trước H32 bị validation error, không có phán xét và không retry. Mọi phép tính trong notebook/verifier do code thực hiện. pYIN được đo riêng ở H33 sau khi notebook này đã chạy; kết quả và failures xem [H33_REPORT.md](H33_REPORT.md) và [H33_ERROR_ANALYSIS.md](H33_ERROR_ANALYSIS.md). Notebook này chưa chứa H33. SWIPE/REAPER vẫn chưa đo.
