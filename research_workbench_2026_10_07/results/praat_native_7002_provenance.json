@@ -1,0 +1,27 @@
+{
+  "official_download_page": "https://www.fon.hum.uva.nl/praat/download_win.html",
+  "official_page_link": "https://github.com/praat/praat/releases/download/v7.0.02/praat7002_win-x64v1.zip",
+  "api_canonical_url": "https://api.github.com/repositories/18684635/releases/tags/v7.0.02",
+  "release_tag": "v7.0.02",
+  "release_url": "https://github.com/praat/praat.github.io/releases/tag/v7.0.02",
+  "zip_url": "https://github.com/praat/praat.github.io/releases/download/v7.0.02/praat7002_win-x64v1.zip",
+  "zip_sha256": "d8c741104faec65c5e6d77f460140f60b0568143b22506c079a4b7aa0b8d45a0",
+  "github_asset_digest": "sha256:d8c741104faec65c5e6d77f460140f60b0568143b22506c079a4b7aa0b8d45a0",
+  "inventory": [
+    {
+      "name": "Praat.exe",
+      "size": 96780624
+    }
+  ],
+  "exe": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+  "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+  "version_stdout": "7.0.02",
+  "stderr": "",
+  "cli_version_returncode": 0,
+  "real_wav_read": false,
+  "headless": true,
+  "url_literal_mismatch_attempt_retained": true,
+  "version_stdout_initial": "7\u0000.\u00000\u0000.\u00000\u00002\u0000\n\u0000\n\u0000",
+  "stdout_encoding": "UTF-16LE detected from bytes during synthetic call",
+  "native_script_file_write_rejection_retained": true
+}

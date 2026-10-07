@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.githubusercontent.com/praat/praat/v7.0.02/fon/praat_Sound.cpp",
+  "sha256": "dab47bf93c14d845d471f11c5778c8d0623cc19c753bde1fda4c145991713583",
+  "content_level": "Read command parameter definitions raw ac and filtered autocorrelation; lines1626-1648/1731-1756",
+  "pdf_extracted": false
+}

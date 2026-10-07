@@ -1,0 +1,14 @@
+{
+  "rows": [
+    {
+      "fs": 16000,
+      "signal": "tone",
+      "method": "raw",
+      "returncode": 4294967295,
+      "stdout": "",
+      "stderr": "Error: The following potentially dangerous action was requested by the script \u201cC:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat\u201d but is not allowed without --FULL-TRUST:\r\n\r\nsave a line of text to the file\r\n\u201cC:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\tone_16000_raw.csv\u201d\r\n\r\nUse --FULL-TRUST to prevent this message, but of course only if you indeed trust the intentions and skills of the authors of the script and of the scripts or notebooks it calls.\r\nFormula not run.\r\nScript line 17 not performed or completed:\r\n\u00ab writeFileLine: output_file$, \"time_s,f0_hz\" \u00bb\r\nScript \u201cC:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat\u201d not completed.\r\nPraat: script command <<C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat>> not completed.\r\n\r\n"
+    }
+  ],
+  "real_wav_read": false,
+  "script": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat"
+}

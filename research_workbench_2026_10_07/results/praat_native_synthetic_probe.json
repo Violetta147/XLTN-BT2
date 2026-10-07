@@ -1,0 +1,208 @@
+{
+  "rows": [
+    {
+      "fs": 16000,
+      "signal": "tone",
+      "method": "raw",
+      "frames": 96,
+      "voiced_frames": 96,
+      "max_error_hz": 0.0012653692473634237,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\tone_16000.wav",
+          "raw",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "fd5bb42b10179a7d04097117faeb17a9b5a5d9b7a1b06c8d492eb6e7aea2c1ce",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 16000,
+      "signal": "tone",
+      "method": "filtered",
+      "frames": 96,
+      "voiced_frames": 96,
+      "max_error_hz": 0.0011753186545320204,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\tone_16000.wav",
+          "filtered",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "12cb529361a1334cd43a477d2e385b943b127305d41cb640b057d92029bddaed",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 16000,
+      "signal": "silence",
+      "method": "raw",
+      "frames": 96,
+      "voiced_frames": 0,
+      "max_error_hz": null,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\silence_16000.wav",
+          "raw",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "1affd3eb0d2787ce1a5a4e83af36c8ffe683ad0bae6c017375f555edb449aa2c",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 16000,
+      "signal": "silence",
+      "method": "filtered",
+      "frames": 96,
+      "voiced_frames": 0,
+      "max_error_hz": null,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\silence_16000.wav",
+          "filtered",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "1affd3eb0d2787ce1a5a4e83af36c8ffe683ad0bae6c017375f555edb449aa2c",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 44100,
+      "signal": "tone",
+      "method": "raw",
+      "frames": 96,
+      "voiced_frames": 96,
+      "max_error_hz": 0.0010167940257872488,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\tone_44100.wav",
+          "raw",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "e9d6166e7108a15a73995c6ce3954944fab3e26c5a9c7f291c4d2e6af2032cf1",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 44100,
+      "signal": "tone",
+      "method": "filtered",
+      "frames": 96,
+      "voiced_frames": 96,
+      "max_error_hz": 0.000975932909398125,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\tone_44100.wav",
+          "filtered",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "47c653e8401b1f520ba34087bc58b118baa4b7ca3f8b303b3360df0926cfc97b",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 44100,
+      "signal": "silence",
+      "method": "raw",
+      "frames": 96,
+      "voiced_frames": 0,
+      "max_error_hz": null,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\silence_44100.wav",
+          "raw",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "1affd3eb0d2787ce1a5a4e83af36c8ffe683ad0bae6c017375f555edb449aa2c",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    },
+    {
+      "fs": 44100,
+      "signal": "silence",
+      "method": "filtered",
+      "frames": 96,
+      "voiced_frames": 0,
+      "max_error_hz": null,
+      "call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\probe\\silence_44100.wav",
+          "filtered",
+          "0.5"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "1affd3eb0d2787ce1a5a4e83af36c8ffe683ad0bae6c017375f555edb449aa2c",
+        "native_frames": 96,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      }
+    }
+  ],
+  "real_wav_read": false,
+  "generator_sha256": "ed0585e265f6263982eae374b2804d44a365e5eb29256ac5cbf4358595a55fe6",
+  "adapter_sha256": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+  "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+}

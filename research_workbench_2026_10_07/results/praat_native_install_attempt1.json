@@ -1,0 +1,8 @@
+{
+  "stage": "Verify download URL before downloading",
+  "error": "URL literal mismatch assertion",
+  "official_page_link": "https://github.com/praat/praat/releases/download/v7.0.02/praat7002_win-x64v1.zip",
+  "github_asset_link": "https://github.com/praat/praat.github.io/releases/download/v7.0.02/praat7002_win-x64v1.zip",
+  "download_started": false,
+  "real_wav_read": false
+}
