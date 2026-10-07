@@ -1,0 +1,16 @@
+{
+  "family": "H26",
+  "selection_replayed": true,
+  "fits_checked": 52,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": false,
+    "lofo_mape_relative_5_percent": false,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": false,
+    "selected_lofo_mape_relative_5_percent": false
+  },
+  "verifier_sha256": "4e00f178fe62892cd81cac1847eaae37cac1ff17224dc6f18ce225e904a0d3b2"
+}

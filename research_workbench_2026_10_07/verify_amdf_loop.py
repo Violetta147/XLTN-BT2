@@ -24,7 +24,7 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            if family == 'H25':
+            if family in ('H25','H26'):
                 ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
             else:
                 ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))

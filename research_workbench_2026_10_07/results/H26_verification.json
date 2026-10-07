@@ -1,0 +1,29 @@
+{
+  "family": "H26",
+  "registry_options": 3,
+  "inner_trace_rows": 48,
+  "outer_contour_stats_and_labels_recomputed": true,
+  "fit_selection_exclusions_verified": true,
+  "hashes_and_figures_verified": true,
+  "raw_baseline_reproduced_by_runner": true,
+  "label_hashes_unchanged_since_H00": {
+    "studio_M1.wav": {
+      "segment_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+      "stats_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b"
+    },
+    "phone_M1.wav": {
+      "segment_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+      "stats_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e"
+    },
+    "studio_F1.wav": {
+      "segment_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+      "stats_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5"
+    },
+    "phone_F1.wav": {
+      "segment_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+      "stats_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192"
+    }
+  },
+  "eligible": false,
+  "champion_promoted": false
+}

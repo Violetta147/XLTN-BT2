@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H26_nested",
+      "png": "figures/H26_nested.png",
+      "svg": "figures/H26_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H26_metrics.csv",
+          "sha256": "e58c2ee4913bc28a4d7677261afebb0fefc10083d953748dfbda5002056433d0"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "amdf_joint_periodicity.py",
+      "generator_sha256": "0fd3dfd34c5d438ee0bbbde9b200430761ba132482e54df1ee4de077fe38ac6f",
+      "command": "python research_workbench_2026_10_07/amdf_joint_periodicity.py H26"
+    }
+  ]
+}
