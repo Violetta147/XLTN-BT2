@@ -1,0 +1,52 @@
+{
+  "figures": [
+    {
+      "name": "H38_nested",
+      "png": "figures/H38_nested.png",
+      "svg": "figures/H38_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H38_metrics.csv",
+          "sha256": "a18578dc8cd2b9e25329af8b7f9a31b32f1c14b4b9bf93cec264e1b9ce80f35f"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "reaper_praat_bounded.py",
+      "generator_sha256": "625ffe4461edcfdb03c343a837732dba97321573b6e602a744be450ea60bd687",
+      "command": "python research_workbench_2026_10_07/reaper_praat_bounded.py H38"
+    },
+    {
+      "name": "H38_fixed_mape",
+      "png": "figures/H38_fixed_mape.png",
+      "svg": "figures/H38_fixed_mape.svg",
+      "sources": [
+        {
+          "path": "results\\H38_fixed_lofo.csv",
+          "sha256": "ed08740ff0fa6b493f85cae9c45dc4c4213effdd54064863bca4584b124aa6b3"
+        }
+      ],
+      "caption_vi": "Average MAPE (%) của đủ sáu cấu hình fixed; line2 là mốc tham khảo.",
+      "limits_vi": "Fixed results không thay nested; std riêng≤2% không phải mục tiêu Average MAPE. LAB không có F0 chuẩn từng khung.",
+      "generator": "reaper_praat_bounded.py",
+      "generator_sha256": "625ffe4461edcfdb03c343a837732dba97321573b6e602a744be450ea60bd687",
+      "command": "python research_workbench_2026_10_07/reaper_praat_bounded.py H38"
+    },
+    {
+      "name": "H38_fixed_std",
+      "png": "figures/H38_fixed_std.png",
+      "svg": "figures/H38_fixed_std.svg",
+      "sources": [
+        {
+          "path": "results\\H38_fixed_lofo.csv",
+          "sha256": "ed08740ff0fa6b493f85cae9c45dc4c4213effdd54064863bca4584b124aa6b3"
+        }
+      ],
+      "caption_vi": "Std MAPE (%) của đủ sáu cấu hình fixed; line2 là mốc tham khảo.",
+      "limits_vi": "Fixed results không thay nested; std riêng≤2% không phải mục tiêu Average MAPE. LAB không có F0 chuẩn từng khung.",
+      "generator": "reaper_praat_bounded.py",
+      "generator_sha256": "625ffe4461edcfdb03c343a837732dba97321573b6e602a744be450ea60bd687",
+      "command": "python research_workbench_2026_10_07/reaper_praat_bounded.py H38"
+    }
+  ]
+}
