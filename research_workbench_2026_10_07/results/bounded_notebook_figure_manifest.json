@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "bounded_notebook_H38_components",
+      "png": "figures/bounded_notebook_H38_components.png",
+      "svg": "figures/bounded_notebook_H38_components.svg",
+      "sources": [
+        {
+          "path": "results\\bounded_notebook_per_file.csv",
+          "sha256": "2f83d19563ddd54c1d4f892a46d916197d1e77c93c198bdfb56ff62e89fa006c"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_bounded_notebook.py",
+      "generator_sha256": "b2615a82b53b91d06ab3f570d8dc2eb090336264d75bf7ae9839024ea7bf2353",
+      "command": "python research_workbench_2026_10_07/execute_bounded_notebook.py"
+    }
+  ]
+}
