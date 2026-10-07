@@ -1,8 +1,8 @@
-# Kết quả thử nghiệm ngày 07/10: bộ lọc, tuning, F/M và clipping
+# Kết quả thử nghiệm ngày 07/10: ACF, AMDF, tuning, F/M và clipping
 
-Đã hoàn thành hai vòng tuning và một vòng stress trên bốn file train local. Các ứng viên giảm lỗi ở một số điều kiện nhiễu, nhưng chưa đạt toàn bộ tiêu chí thay baseline trên dữ liệu sạch. Giữ frozen accepted ACF, giữ notebook gốc và tất cả kết quả không đạt.
+Các vòng đầu H18–H22 tập trung ACF/logistic. Lượt mới đã chuyển sang AMDF, tạo và chạy notebook local nguyên source cho cả hai nhánh AMDF trước/sau cùng H23. Có cải thiện trên một số chỉ số, gồm AMDF40ms giảm AvgMAPE fixedLOFO6.77→5.63%, nhưng có đánh đổi phân lớp. Giữ cấu hình hiện tại và lưu các ứng viên có đánh đổi; “chưa promote” không có nghĩa mọi chỉ số đều không cải thiện. Đọc [audit phạm vi và kết quả AMDF](AMDF_SCOPE_AUDIT.md).
 
-Phiên này chạy 81 cấu hình H18; 243 cấu hình logistic + một fallback ACF ở H19; 120 trường hợp stress, mỗi trường hợp ba model, ở H20. Có 12 cặp figures PNG/SVG kèm CSV, generator/hash và captions, cùng một ảnh xác nhận phản hồi Gemini. Không dùng test, Google Drive hoặc deep learning.
+H18 chạy81cấu hình; H19 chạy243cấu hình logistic+mộtfallback ACF; H20 có120case stress×3models; H21/H22/H23 mỗi vòng3options. Hiện có20cặpPNG/SVG khoa học và1ảnhGeminiUI, cùng notebook AMDF đã chạy6codecells. Các lượt mới không đọc WAV test hoặc truy cậpDrive, không deep learning. Nguồn số liệu lịch sử đã có cảtest nên không xem đó là corpus chưa từng biết.
 
 ## 1. Phân biệt các bước trong pipeline
 
@@ -16,7 +16,8 @@ F0 là tần số cơ bản, đo bằng Hz. ACF là hàm tự tương quan, tìm
 | C của logistic | Điều chỉnh mức phạt hệ số; C nhỏ tăng regularization |
 | Path và median | Chọn chuỗi ứng viên F0, làm mượt trong voiced run |
 | Hard clipping | Cắt đỉnh vượt giới hạn biên độ; được tạo để stress |
-| Center clipping | Loại phần biên độ nhỏ quanh zero trước ACF; chưa thử ở lượt này |
+| Center clipping | Loại phần biên độ nhỏ quanh zero trước ACF; đã thử H21 |
+| AMDF | Tìm chu kỳ qua đáy sai khác tuyệt đối; H23 thử riêng frame length |
 
 Đọc [giải thích bộ lọc/frame](FILTER_AND_FRAME_EXPLANATION.md) và [registry trước đo](REGISTRATION.md). C là inverse regularization strength theo [tài liệu scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html); phiên bản runtime thực là1.8.0, không suy phiên bản cài từ trang stable.
 
@@ -155,3 +156,13 @@ Cả hai registry/runner được kiểm tra vàpush trướcđo. Mỗi vòng48i
 Các commit đãpush riêng vàverifyremote: đăngkýH21 `45f405b`, kết quảH21 `dc87b79`, đăngkýH22 `ad11efe`, kết quảH22 `0e20eb9`, kiểm trađộclập `fbded31`, phân tíchkhung `4cf4653`. Tổnghợp/STATE đượccommit riêng khihoàn tất. Không merge main, không tạo schedule.
 
 Hai ý tưởng lấy từ phảnbiệnGemini đã lưu; lượt nối tiếp không gửi thêmGemini hoặc gọiJev mới, vì các sốđếm/gate/tính toán cần code chứkhông cầnphánđoánngữnghĩa. Không discovery hoặc retry SystemOne. Nguồn cơ chếcenterclipping: [Columbia autocorrelation demonstration](https://www.ee.columbia.edu/~dpwe/classes/e6820-2001-01/matlab/MAD/auto/auto.htm); API [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). Không dùng nguồnweb hoặc phảnhồiAI như sốđo thực nghiệm.
+
+## 11. AMDF và notebook thực
+
+Đã tính lại các cải tiến AMDF có từ ngày05/10: nhánh khôngenergy train26.78→16.51%, fixedLOFO27.03→16.66%; nhánh cóenergy train12.27→4.88%, fixedLOFO13.70→6.77%. Không nhận các kết quả cũ này là thuật toán mới của H23.
+
+H23 mới:20/25/40ms, chỉ thay frame length so accepted AMDF_energy. Fixed40ms AvgMAPE5.632639% so25ms6.767627%, stdMAPE bình quân5.814854% so12.855443%. Nhưng macroF1/recallV giảm và phone_M1AvgMAPE5.003046→10.686380%. Theo gate đã đăng ký, final/outer đều chọn25ms; nested giữ6.767627%. Giữ40ms trong bảng ứng viên có đánh đổi.
+
+[AMDF_LOCAL_TRAIN.ipynb](AMDF_LOCAL_TRAIN.ipynb) đã chạy cả6codecells nguyên source bằng Python local và adapter hiển thị, chưa chạy bằngJupyterkernel. Source có đường dẫnlocal, không mãDrive/test;32dòng train/LOFO trước/sau khớp lịch sử trong1e-8. Original/Colab notebooks giữ nguyên. [Audit và cách đọc](AMDF_SCOPE_AUDIT.md), [H23 report](H23_REPORT.md), [verification](results/AMDF_notebook_verification.json).
+
+H23 đăngký `c1c3072`; notebook/source trước chạy `0054572`; output/verification `89c7aeb` đãpush vàkhớpremote. Ưu tiên tiếp theo là chẩn đoán AMDF40ms theo khung ở hai fileM và cân nhắc tách cửa sổ V/UV với tìmF0; chưa chạy giả thuyết này. Không mở lại mộtgridACF theo quán tính hoặc hạ gate sauđo.
