@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-10-07T00:52:39.703879+00:00",
+  "baseline_commit": "009fd2c",
+  "rollback_repository_commit": "dc87b79",
+  "family": "H22",
+  "options": [
+    {
+      "id": "raw_0_0_f25_h10",
+      "kind": "raw",
+      "low_hz": 0,
+      "high_hz": 0,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": null,
+      "use_zcr": false
+    },
+    {
+      "id": "raw_lr1_2d",
+      "kind": "raw",
+      "low_hz": 0,
+      "high_hz": 0,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": 1.0,
+      "use_zcr": false
+    },
+    {
+      "id": "raw_lr1_3d_zcr",
+      "kind": "raw",
+      "low_hz": 0,
+      "high_hz": 0,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": 1.0,
+      "use_zcr": true
+    }
+  ]
+}
