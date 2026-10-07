@@ -1,0 +1,24 @@
+{
+  "figures": [
+    {
+      "name": "H43_fixed_components",
+      "png": "figures/H43_fixed_components.png",
+      "svg": "figures/H43_fixed_components.svg",
+      "sources": [
+        {
+          "path": "results\\H43_fixed_lofo.csv",
+          "sha256": "f799ed9ae4013d9d778231b59584d33e8deaaaca4cd36b33d2b838e08e4eb0d6"
+        },
+        {
+          "path": "results\\H43_selection_pools.csv",
+          "sha256": "2d5719df7025f27c1d16479ffb8e646c6d5a8b418f8a48be1d0234e1b2982127"
+        }
+      ],
+      "caption_vi": "Đủ7options, giữ cảfailedfixedrows. Ngưỡng0 làH42HF05control.",
+      "limits_vi": "Fixedfile-stat dùngcùngcấuhình, khôngnested hoặc F0groundtruth từngkhung.",
+      "generator": "h43_diagnostics.py",
+      "generator_sha256": "6128d7856e7b91c9ee5924498feeffb19c39073cee6d39eb10bf7565826374e3",
+      "command": "python research_workbench_2026_10_07/h43_diagnostics.py"
+    }
+  ]
+}

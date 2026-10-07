@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H43_nested",
+      "png": "figures/H43_nested.png",
+      "svg": "figures/H43_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H43_metrics.csv",
+          "sha256": "33698283ca0e0a8d8d560ce14daece222e2d683a056d6817ff4fc68c29747071"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "amdf_pitch_spectral_controller.py",
+      "generator_sha256": "777863742dfeabd544de09c8c1a209dcddc063c69449c77480d110dd8e3bb98d",
+      "command": "python research_workbench_2026_10_07/amdf_pitch_spectral_controller.py H43"
+    }
+  ]
+}

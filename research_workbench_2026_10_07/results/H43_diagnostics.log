@@ -1,0 +1,10 @@
+         file  average_mape  F0std_mape
+ phone_F1.wav   0.340079645 0.089632409
+ phone_M1.wav   0.776150655 0.908680974
+studio_F1.wav   1.473576137 0.186248926
+studio_M1.wav   2.523879960 3.643256390
+         file  average_mape
+ phone_F1.wav   0.340079645
+ phone_M1.wav   0.776150655
+studio_F1.wav   1.473576137
+studio_M1.wav   1.909922761
