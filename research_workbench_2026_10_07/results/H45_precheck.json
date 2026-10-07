@@ -1,0 +1,12 @@
+{
+  "synthetic_only": true,
+  "uses_BT2_WAV": false,
+  "top_k": [
+    1,
+    3,
+    5,
+    9
+  ],
+  "aggregation": "equal-weight log2 frequency mean",
+  "rule_sha256": "eea751f54a5461dd4f53e622e4851498636f0826391681f2fa3d7aa7754a0eaf"
+}
