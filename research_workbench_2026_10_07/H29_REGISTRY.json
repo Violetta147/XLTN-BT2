@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-10-07T02:17:06.017319+00:00",
+  "baseline_commit": "4b29af2",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "4b29af2",
+  "family": "H29",
+  "algorithm": "Harvest voicing gate versus AMDF control",
+  "options": [
+    {
+      "id": "amdf_control",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "gate": "control"
+    },
+    {
+      "id": "harvest_raw",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "gate": "none"
+    },
+    {
+      "id": "harvest_energy",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "gate": "energy"
+    },
+    {
+      "id": "harvest_amdf",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "gate": "amdf"
+    }
+  ]
+}
