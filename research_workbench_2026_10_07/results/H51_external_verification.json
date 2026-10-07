@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "model_refits": 12,
+  "verification_source_sha256": "c84e93f19c387a2b768e0dd0c9892f29f88a61c5d19f16d752d3de9ee0d2bae5",
+  "feature_verifier_sha256": "e6b22d3ef9b841ae7eca5a5b7881cfe289365dd2cc4044399232c3fac3c4c2c4",
+  "independent_metric_groups": 294,
+  "fullfft_dct_acf_pcm_frames": 35000,
+  "native_calls": 0,
+  "freeze_unchanged": true,
+  "reference_unknown_and_denominators_verified": true,
+  "experiment_sha256": "e0bfb7dd2fcd10a96906fc21cc437291bb252886a406329eb7b278f0c8f4e862"
+}

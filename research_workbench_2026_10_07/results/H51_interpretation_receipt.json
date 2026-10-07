@@ -3,7 +3,7 @@
   "variance_decomposition_verified": true,
   "final_equals_control_fixed_lofo": true,
   "artifacts": {
-    "research_workbench_2026_10_07\\H51_INTERPRETATION.md": "8be6dc6cda28b4bf44cfd0551b01a54b79962cc1532b0c3a80b274378778242f",
+    "research_workbench_2026_10_07\\H51_INTERPRETATION.md": "48571e0b113c79dcf8f9b6400e227aeb483c053ea907673f15adf23bfd38eddd",
     "research_workbench_2026_10_07\\results\\H51_selected_recovery_decomposition.csv": "c2dec5c83eb114aaf57181f03a956d5faa653351c0fa0102a47918ca18f402c6",
     "research_workbench_2026_10_07\\results\\H51_selected_recovery_cases.csv": "7c7da124bbe3350bdcf9a870fce9648f6927374133c5d5306050b5873d45c1f3",
     "research_workbench_2026_10_07\\results\\H51_label_count_tradeoff.csv": "466d5bbc335052bcf5ef30f86cf8ed1ea839e66fe9b73480feb1af9d49f78493"

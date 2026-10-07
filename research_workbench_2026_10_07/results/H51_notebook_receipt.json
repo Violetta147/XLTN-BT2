@@ -1,0 +1,9 @@
+{
+  "exact_code_cells_executed": 6,
+  "execution": "Python exec with captured stdout, not a Jupyter kernel",
+  "new_training_or_native_calls": 0,
+  "notebook_sha256": "404095481ce6c8bbf088cd36c1e4fec95358fe09f12b7f85a4f2ed8d6d1dd64d",
+  "source_builder_sha256": "2ad7cd19a97fac56e5690be59584150f578214a8a181777db5ff97cd06ea4618",
+  "nbformat_schema_validated": false,
+  "structural_validation_only": true
+}

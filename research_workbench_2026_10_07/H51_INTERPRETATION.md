@@ -1,6 +1,6 @@
 # Diễn giải cơ chế và lỗi H51
 
-Cấu hình final là gmm_PE. Kết quả fixed LOFO của nó có bằng control hard170 ở mọi file và seed không: **True**. Nếu bằng nhau, lựa chọn này là hòa điểm theo ID, không phải mô hình đã cải thiện pipeline. Các outer folds vẫn phải đánh giá recipe riêng do bước chọn bên trong quyết định.
+Cấu hình final là gmm_PE. Fixed LOFO của nó bằng control hard170 ở mọi file và seed: **True**. Khi hòa điểm, quy tắc chọn ID đã đăng ký quyết định cấu hình; đây không phải cải thiện pipeline. Các outer folds vẫn đánh giá recipe riêng do bước chọn bên trong quyết định.
 
 Bảng dưới phân rã những khung mới của cấu hình được chọn ở từng outer fold. Chỉ trình bày seed 11 cho gọn; CSV lưu đủ ba seed. V/UV/SIL là nhãn tại tâm khung, không xác nhận F0 của khung đó.
 
@@ -21,6 +21,8 @@ Chi tiết khung mới và F0 ước lượng gần nhất của baseline:
 Khi thêm một nhóm F0 có mean xa mean cũ, phương sai tăng qua thành phần giữa hai nhóm: w0×w1×(mean0−mean1)². Đã kiểm độc lập rằng phương sai trong nhóm cộng thành phần này khớp phương sai toàn bộ output. Vì vậy một khung có nhãn V đúng vẫn có thể làm F0std MAPE tăng mạnh nếu cao độ ước lượng của nó lệch xa phần còn lại. Cần tách hai câu hỏi: khung có hữu thanh không, và cao độ được ước lượng có đúng không.
 
 Ma trận H51 cô lập các đầu vào/mô hình phân loại nhưng dùng chung ACF để lấy pitch của khung khôi phục. Nó chưa cô lập được chất lượng pitch này với quyết định khôi phục. Kết quả thất bại không chứng minh ML, MFCC hoặc miền tần số nói chung không hữu ích. Các estimated pitch gần nhau cũng chưa thay thế ground truth.
+
+ML ở đây học quyết định V so với UV/SIL, không học hồi quy F0 từng khung: BT2 chưa có nhãn cao độ chuẩn theo thời gian. Ba thống kê mean/std/count của cả file chỉ dùng đánh giá và chọn cấu hình trên train. Chúng không xác định duy nhất contour; đảo thứ tự cùng các giá trị F0 vẫn giữ ba thống kê nhưng có thể sai ở từng timestamp. Vì vậy không thể lấy một MAPE nhỏ để kết luận toàn bộ cao độ đã đúng.
 
 LAB và F0num đo những thứ khác nhau:
 

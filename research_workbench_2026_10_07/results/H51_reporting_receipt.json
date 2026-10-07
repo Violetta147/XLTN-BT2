@@ -1,0 +1,31 @@
+{
+  "verified_input_only": true,
+  "artifacts": {
+    "research_workbench_2026_10_07\\H51_REPORT.md": "7bf530de974661fefc0dbde59624fb461af70e73a2a506dfe770359acbfe32f6",
+    "research_workbench_2026_10_07\\results\\H51_seed_summary.csv": "159263522c47a6b96f4e8b6dd5220db3e267bf308834f141e2d4fd54250d8a40",
+    "research_workbench_2026_10_07\\results\\H51_pair_interactions.csv": "bbf492790b36069e0963ec33b9eb52d8d1c07626de9b1a7f19cea0d03c54d1f6",
+    "research_workbench_2026_10_07\\results\\H51_leave_one_block_out.csv": "56d8e71f53ca06ae998dd71ee331a79e44c8ff48fc4fb5fc37a7976da1f78811",
+    "research_workbench_2026_10_07\\results\\H51_keele_pooled.csv": "3177f6f250ecc6fca5823624c15202833d7a6439aa60841661523b6a021ad5b9",
+    "research_workbench_2026_10_07\\results\\H51_error_by_boundary.csv": "d9581e6a1509fefb481980eb180f9427fdc4072a7253f831481269fc466fe633",
+    "research_workbench_2026_10_07\\results\\H51_qualitative_cases.csv": "76f046b86e99a9f83bf17f9e667accb3f4f87a4775d53f3ed0f7e95eeac36975",
+    "research_workbench_2026_10_07\\results\\H51_all8_target.csv": "bed32f14f96b4323ff5a030f1b1a73311a10782ab66f05d2d3dcb70f702b2bd9",
+    "research_workbench_2026_10_07\\figures\\H51_matrix.png": "bb9bd807e9f8cea0302cd90502bddf92388374e2b3d3d1bbc4537d025c848783",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_phone_F1.png": "258768bc41a58d6c9b5dcdea5f2b310736254fb82a116a90fe38842701d23591",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_phone_M1.png": "42eb5a6489d006f171e063a545cd04833e1129a014f9291d79cb51c6acfeb58c",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_studio_F1.png": "9b161165ba7f65552506ce0f9d7eb8ec1cde03b396ddd7477b084c45529b2252",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_studio_M1.png": "a91292d4e409aea3ff4bf8d0b40912d7d0c39c0db727537307f0276ebd812b78",
+    "research_workbench_2026_10_07\\figures\\H51_matrix.svg": "58e88b156df4130821b588126f1737504671e180e52cd8b9bf36cfca696d6679",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_phone_F1.svg": "c1a90b81ade09ef2eda6aeb5cad139fef7390207bf766193c635285366dd6002",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_phone_M1.svg": "225665082a7613bfc1d2be88fad1e85e97d7cab9756e480d7fe2da9a941e0b3e",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_studio_F1.svg": "7f078afce4f4cac8f15673206c995e62c495a34b8b370fc44404d5ce456e2fa9",
+    "research_workbench_2026_10_07\\figures\\H51_qualitative_studio_M1.svg": "1f7f6c26e5d6781ee2ccac59b4bb990f42d5892ba5896d2796c70ab4fbcf8971"
+  },
+  "fixed_rows": 1872,
+  "recipes": 156,
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "each_cell_present": true
+}

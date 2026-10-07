@@ -1,0 +1,27 @@
+{
+  "frozen_commit": "9b3ddc947076446e054926b50d7d566e89d774c8",
+  "freeze_sha256": "b3f359c23aac1d79b80c68945e390d64ba80cb735f955ad03002c3039256be08",
+  "registry_sha256": "7fe94d4a9073c971155e8c29921a3b294e8d0dd37272d8d83d357f1a8b1d809d",
+  "native_calls": 0,
+  "test_or_KEELE_tuning": false,
+  "historical_exposure": true,
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H51_test_phone_F2.npz": "5f8640a20812cbcc8384b8aaa8e37969b87b72e68602801971a135caf72bbbce",
+    "research_workbench_2026_10_07\\results\\H51_test_phone_M2.npz": "5c3461c190a6dd2e2cb8dc7bf555b2fb60f42aeed15b8f3617fcecf1ab0cd45c",
+    "research_workbench_2026_10_07\\results\\H51_test_studio_F2.npz": "add7393bac5b8229f2bbcfaa68057ba2dd0a68b89674d6bed5ad7de677a94c03",
+    "research_workbench_2026_10_07\\results\\H51_test_studio_M2.npz": "a491db27153849afe31f22c2e0168533ed099fac89b1507cdc1518465fb9784c",
+    "research_workbench_2026_10_07\\results\\H51_keele_f1nw0000.npz": "4429b5ad2d1e4f3b51fab1bf25c96b2bd3b0423889645314aaf863bc59a179f8",
+    "research_workbench_2026_10_07\\results\\H51_keele_f2nw0000.npz": "a1511f6c2d73c0b5c64b6c030c87124ae4bf2428326af22e13e27432c3bf4c22",
+    "research_workbench_2026_10_07\\results\\H51_keele_f3nw0000.npz": "a4b57a8783c793cb5037cfe19745fca3cf2f16f3667e1da37339b53cf606d116",
+    "research_workbench_2026_10_07\\results\\H51_keele_f4nw0000.npz": "ba0dbca1cc11165f51d280c301e8fabf27b03b153ef97fb10f463c79e3c3e35a",
+    "research_workbench_2026_10_07\\results\\H51_keele_f5nw0000.npz": "8b2c016016fa6aa28e3e9212156739449893393e99f6d8b2b8d4f498a6329b1e",
+    "research_workbench_2026_10_07\\results\\H51_keele_m1nw0000.npz": "016c236953158ff0bcb988f10b0ade5d2637c8d5c2a47efb2de3e4bd5334997c",
+    "research_workbench_2026_10_07\\results\\H51_keele_m2nw0000.npz": "fa479aadc41f871c929de0f2e02e20df4d26c6925580c4bc77b013e794b9b328",
+    "research_workbench_2026_10_07\\results\\H51_keele_m3nw0000.npz": "e09c9c9557f859a0d84fad8709e2d90d646c7fac458bd5a1fb04be130e0a97f8",
+    "research_workbench_2026_10_07\\results\\H51_keele_m4nw0000.npz": "1601a34cc294939d1adc2d4aa0fd84a37b585b7d6615870303ebf1ee04bbcac4",
+    "research_workbench_2026_10_07\\results\\H51_keele_m5nw0000.npz": "1f68f0f869560c828c08b47e753036d72ca37df79f4654e1763f0b83f898b42d",
+    "research_workbench_2026_10_07\\results\\H51_test_metrics.csv": "d7b5be930a6813ee1c9e5ba3bf731f8241c174337c0178b71269c85a3f203ab1",
+    "research_workbench_2026_10_07\\results\\H51_keele_metrics.csv": "e3606d8995a917a907b99e45f9d845198e5ee611ddea25236bdbfc3c2d913e19",
+    "research_workbench_2026_10_07\\results\\H51_external_fits.json": "84d8e1793ebbdb04a261c1250d1cf638bf25ba22c5b7a09239ce2ce9bfdd5809"
+  }
+}
