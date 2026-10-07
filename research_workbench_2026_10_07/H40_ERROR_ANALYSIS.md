@@ -18,7 +18,7 @@ YAAPT25 đạt phone_F1 1.043199% và phone_M1 1.160040%, nhưng studio_F1 3.150
 | yaapt_f35 | 2.60249 | 9.9763 | 13.4146 | 8.66448 | 93 | 0.83779 | 0.925532 | 1 | 0 |
 | yaapt_f45 | 3.48407 | 11.6735 | 17.0732 | 10.7436 | 96 | 0.832955 | 0.93617 | 0.99262 | 1 |
 
-Cả count và std đều xấu hơn khi tăng frame_length25→35→45. Đây là lỗi thống kê cả file, không chứng minh những khung mất hay tần số nào sai nếu thiếu F0 chuẩn từng khung. Missing support ở đầu/cuối khác với quyết định UV; raw frames/support giữ để tách cơ chế. Không bù count/std bằng GT.
+YAAPT studio_M1 có count89/93/96 ở25/35/45ms soGT82: số khung dự đoán dư tăng, và std cũng xaGT hơn. Đây là lỗi thống kê cả file, không xác minh khung nào sai nếu thiếu F0 chuẩn từng khung. Missing support ở đầu/cuối khác với quyết định UV; raw frames/support giữ để tách cơ chế. Không bù count/std bằng GT.
 
 ## Tất cả thành phần và đánh đổi
 
@@ -41,6 +41,6 @@ Cả count và std đều xấu hơn khi tăng frame_length25→35→45. Đây l
 | yaapt_f45 | studio_F1.wav | 0.0352701 | 4.70495 | 1.5748 | 2.10501 | 129 | 0.893091 | 0.98374 | 2 | 0.992958 |
 | yaapt_f45 | studio_M1.wav | 3.48407 | 11.6735 | 17.0732 | 10.7436 | 96 | 0.832955 | 0.93617 | 1 | 0.99262 |
 
-SIL thấp không đủ: count thiếu và phân bố F0 sai vẫn làm MAPE lớn. Hai file điện thoại/studio và nhãn F/M chỉ là bốn quan sát, không đủ suy rộng về giới tính hoặc thiết bị.
+SIL thấp không đủ: count lệch và phân bố F0 lệch vẫn làm MAPE lớn. Hai file điện thoại/studio và nhãn F/M chỉ là bốn quan sát, không đủ suy rộng về giới tính hoặc thiết bị.
 
 Nguồn: YAAPT_SOURCE_NOTE.md (abstract/manual/code, không fullpaper/PDF). Synthetic rich/sine octave failures giữ. H40 verifier:64traces/68fits/24metrics/16fixedsourcegroups; input normalizedPCM,UV0,timing/params/hash/source/control verified. Không mới WAV/test/backend/MCP call trong diagnostic.

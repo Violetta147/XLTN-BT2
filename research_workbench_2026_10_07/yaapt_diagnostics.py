@@ -60,9 +60,9 @@ def main():
     note=['# H40 — Phân tích lỗi YAAPT','',audit.markdown_table(summary.reset_index()),'',
         'YAAPT25 đạt phone_F1 1.043199% và phone_M1 1.160040%, nhưng studio_F1 3.150820%/studio_M1 6.334329%. Không được chọn YAAPT riêng cho phone dựa kết quả chính file đó. Final và cả outer folds chọn controlH30. Nestedmean2.156992%, worst2.769856%, targetfalse/gateFAIL.','',
         '## Studio nam: cửa sổ lớn chưa giúp','',audit.markdown_table(studio[['option_id','F0mean_mape','F0std_mape','F0num_mape','average_mape','F0num','macro_f1','recall_v','projection_coverage','false_voiced_sil']]),'',
-        'Cả count và std đều xấu hơn khi tăng frame_length25→35→45. Đây là lỗi thống kê cả file, không chứng minh những khung mất hay tần số nào sai nếu thiếu F0 chuẩn từng khung. Missing support ở đầu/cuối khác với quyết định UV; raw frames/support giữ để tách cơ chế. Không bù count/std bằng GT.','',
+        'YAAPT studio_M1 có count89/93/96 ở25/35/45ms soGT82: số khung dự đoán dư tăng, và std cũng xaGT hơn. Đây là lỗi thống kê cả file, không xác minh khung nào sai nếu thiếu F0 chuẩn từng khung. Missing support ở đầu/cuối khác với quyết định UV; raw frames/support giữ để tách cơ chế. Không bù count/std bằng GT.','',
         '## Tất cả thành phần và đánh đổi','',audit.markdown_table(table[['option_id','file',*keys,'average_mape','F0num','macro_f1','recall_v','false_voiced_sil','projection_coverage']]),'',
-        'SIL thấp không đủ: count thiếu và phân bố F0 sai vẫn làm MAPE lớn. Hai file điện thoại/studio và nhãn F/M chỉ là bốn quan sát, không đủ suy rộng về giới tính hoặc thiết bị.','',
+        'SIL thấp không đủ: count lệch và phân bố F0 lệch vẫn làm MAPE lớn. Hai file điện thoại/studio và nhãn F/M chỉ là bốn quan sát, không đủ suy rộng về giới tính hoặc thiết bị.','',
         'Nguồn: YAAPT_SOURCE_NOTE.md (abstract/manual/code, không fullpaper/PDF). Synthetic rich/sine octave failures giữ. H40 verifier:64traces/68fits/24metrics/16fixedsourcegroups; input normalizedPCM,UV0,timing/params/hash/source/control verified. Không mới WAV/test/backend/MCP call trong diagnostic.']
     path=HERE/'H40_ERROR_ANALYSIS.md'
     path.write_text('\n'.join(note)+'\n',encoding='utf-8')

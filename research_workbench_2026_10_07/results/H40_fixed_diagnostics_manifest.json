@@ -13,7 +13,7 @@
       "caption_vi": "Tất cả cấu hình fixed, không chọn riêng từng file.",
       "limits_vi": "GT file-stat/nhãn đoạn; không có F0 chuẩn từng khung, nested là exploratory.",
       "generator": "yaapt_diagnostics.py",
-      "generator_sha256": "a3baf4b89d944ec6b10fe1ef4fcdc7dc0368065bcc8ad1c1ecccbd01a0454199",
+      "generator_sha256": "a77fce4b15ad6debcd4ce160a5885f272b251b842751d93b92b0584cccfdbd1e",
       "command": "python research_workbench_2026_10_07/yaapt_diagnostics.py"
     },
     {
@@ -29,7 +29,7 @@
       "caption_vi": "Tất cả cấu hình fixed, không chọn riêng từng file.",
       "limits_vi": "GT file-stat/nhãn đoạn; không có F0 chuẩn từng khung, nested là exploratory.",
       "generator": "yaapt_diagnostics.py",
-      "generator_sha256": "a3baf4b89d944ec6b10fe1ef4fcdc7dc0368065bcc8ad1c1ecccbd01a0454199",
+      "generator_sha256": "a77fce4b15ad6debcd4ce160a5885f272b251b842751d93b92b0584cccfdbd1e",
       "command": "python research_workbench_2026_10_07/yaapt_diagnostics.py"
     }
   ]
