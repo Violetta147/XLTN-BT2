@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\XLTN-BT2\research_workbench_2026_10_07\verify_spectral_notebook.py", line 159, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\XLTN-BT2\research_workbench_2026_10_07\verify_spectral_notebook.py", line 31, in main
+    assert len(table)==68 and not table.duplicated(['evaluation','method','file']).any()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

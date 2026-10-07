@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "spectral_notebook_H42_components",
+      "png": "figures/spectral_notebook_H42_components.png",
+      "svg": "figures/spectral_notebook_H42_components.svg",
+      "sources": [
+        {
+          "path": "results\\spectral_notebook_per_file.csv",
+          "sha256": "dfb30c12f0db629926f5343184857ea0c81989aa701f7b14f1b301c6632dce78"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_spectral_notebook.py",
+      "generator_sha256": "3ed775c93c22db0598925cce0a8fc80ca21d65cc3a1f1e2d601349bf3cb2ea10",
+      "command": "python research_workbench_2026_10_07/execute_spectral_notebook.py"
+    },
+    {
+      "name": "spectral_notebook_H43_components",
+      "png": "figures/spectral_notebook_H43_components.png",
+      "svg": "figures/spectral_notebook_H43_components.svg",
+      "sources": [
+        {
+          "path": "results\\spectral_notebook_per_file.csv",
+          "sha256": "dfb30c12f0db629926f5343184857ea0c81989aa701f7b14f1b301c6632dce78"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_spectral_notebook.py",
+      "generator_sha256": "3ed775c93c22db0598925cce0a8fc80ca21d65cc3a1f1e2d601349bf3cb2ea10",
+      "command": "python research_workbench_2026_10_07/execute_spectral_notebook.py"
+    }
+  ]
+}

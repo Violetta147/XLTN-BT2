@@ -28,7 +28,7 @@ def main():
     assert any('image/png' in x.get('data',{}) for cell in code for x in cell['outputs'])
     table = pd.read_csv(HERE/'results/spectral_notebook_per_file.csv')
     contours = pd.read_csv(HERE/'results/spectral_notebook_contours.csv')
-    assert len(table)==68 and not table.duplicated(['evaluation','method','file']).any()
+    assert len(table)==68 and not table.duplicated(['family','evaluation','method','file']).any()
     provenance = json.loads((HERE/'results/spectral_notebook_provenance.json').read_text())
     for relative, expected in provenance['source_sha256'].items():
         assert digest(REPO/relative)==expected,relative
@@ -91,8 +91,8 @@ def main():
     checked = 0
     keys = ['F0mean','F0std','F0num','F0mean_mape','F0std_mape','F0num_mape','average_mape',
             'macro_f1','recall_v','recall_uv','balanced_accuracy','TP','FN','FP','TN','false_voiced_sil']
-    for (evaluation,method,file),group in contours.groupby(['evaluation','method','file']):
-        measured = table[(table.evaluation==evaluation)&(table.method==method)&(table.file==file)].iloc[0]
+    for (family,evaluation,method,file),group in contours.groupby(['family','evaluation','method','file']):
+        measured = table[(table.family==family)&(table.evaluation==evaluation)&(table.method==method)&(table.file==file)].iloc[0]
         stats = {'F0mean':group.f0_hz.dropna().mean(),'F0std':group.f0_hz.dropna().std(ddof=0),'F0num':group.f0_hz.notna().sum()}
         gt = {}
         for line in (REPO/'research_3gt_2026_10_05/train_3gt'/file.replace('.wav','.lab')).read_text().splitlines():
