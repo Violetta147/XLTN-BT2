@@ -1,0 +1,6308 @@
+{
+  "fits": [
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "54d05f0071f71bdf94a0662eba9e6e722abb47a764d78a61099abf101023ee99"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "c29ef8a77bd1dfe23ff05aef89036620430e14327ce1726f8af482ec027d3047"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "1961560d30f6a6c9c04d00cdc331891cf839366f0dba502aae480ebef0d939ab"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "5c895ab7fd37819bfa85aa4c1ced439933f98ac7eb8594e013fae9cf416ada06"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5d536e1461dff8b37291aa4578b02c7f9e89ad21b05a934e95c93febdb2fa874"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "334e762f11f10b03f0ff4ff6713c929894b5c659009bb7d4a539e7e2f0f1516e"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "97a41106b553d64ed6cf8795e6433bb379a988c860be70bed14f478887500d6c"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8487014857347819,
+          -0.5784029798913525,
+          0.05174894149180803,
+          0.11794968392175781
+        ],
+        "scale": [
+          0.16207351309044213,
+          0.5658920428348885,
+          0.04881174803546279,
+          0.15035248777641871
+        ],
+        "coefficient": [
+          1.3397147428036604,
+          0.1440873842122021,
+          0.14337318698194582,
+          -0.42358571344898244
+        ],
+        "intercept": 5.185090116973952,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 431,
+        "negative_frames": 10
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "c9a2aafb0f011711b6ec6282bdd6a4f7a41e8b5f4b985d5986de4a0601a576c8"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8672111212807969,
+          -0.5282298039753031,
+          0.04018645474688359,
+          0.09448676560380942
+        ],
+        "scale": [
+          0.1682988487766796,
+          0.5421679162456772,
+          0.028212210059918422,
+          0.1375505941779964
+        ],
+        "coefficient": [
+          0.9907603830132511,
+          0.39314329397477493,
+          -0.31438717967894947,
+          -0.44203078754843567
+        ],
+        "intercept": 4.646940556124635,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 344,
+        "negative_frames": 11
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8501112383937776,
+          -0.678746526543105,
+          0.06255503639886963,
+          0.08599297590415435
+        ],
+        "scale": [
+          0.17065065687950032,
+          0.5963107558836263,
+          0.04889491594598432,
+          0.10844940477388533
+        ],
+        "coefficient": [
+          0.9653162269423231,
+          0.11151247501958116,
+          0.01619430724292837,
+          -0.12038850562771641
+        ],
+        "intercept": 4.484831721164965,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 456,
+        "negative_frames": 9
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.858460965126978,
+          -0.6743817190956054,
+          0.06385631852533138,
+          0.10345924350547628
+        ],
+        "scale": [
+          0.16925037323661388,
+          0.6032924897112805,
+          0.04859581161531591,
+          0.1485930800624438
+        ],
+        "coefficient": [
+          1.0099077750782246,
+          0.6453075123488915,
+          0.15859242065076035,
+          -0.6689903390800451
+        ],
+        "intercept": 5.486077766058569,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 494,
+        "negative_frames": 9
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "67bbec17c4023f8bfe44e8367905753faf7af7bcc555793d9c18eed16a5f46ca"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8487014857347819,
+          -0.5784029798913525,
+          0.05174894149180803,
+          0.11794968392175781
+        ],
+        "scale": [
+          0.16207351309044213,
+          0.5658920428348885,
+          0.04881174803546279,
+          0.15035248777641871
+        ],
+        "coefficient": [
+          1.3397147428036604,
+          0.1440873842122021,
+          0.14337318698194582,
+          -0.42358571344898244
+        ],
+        "intercept": 5.185090116973952,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 431,
+        "negative_frames": 10
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "9ade0085fb095f0242b6331ffd4871f233db3dcc880ee0f415d397ae0187f958"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8672111212807969,
+          -0.5282298039753031,
+          0.04018645474688359,
+          0.09448676560380942
+        ],
+        "scale": [
+          0.1682988487766796,
+          0.5421679162456772,
+          0.028212210059918422,
+          0.1375505941779964
+        ],
+        "coefficient": [
+          0.9907603830132511,
+          0.39314329397477493,
+          -0.31438717967894947,
+          -0.44203078754843567
+        ],
+        "intercept": 4.646940556124635,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 344,
+        "negative_frames": 11
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "a7fd13dd43541cec150d876820fcc22d0e00091b3a82b769adbeb2ba3a8432ac"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8501112383937776,
+          -0.678746526543105,
+          0.06255503639886963,
+          0.08599297590415435
+        ],
+        "scale": [
+          0.17065065687950032,
+          0.5963107558836263,
+          0.04889491594598432,
+          0.10844940477388533
+        ],
+        "coefficient": [
+          0.9653162269423231,
+          0.11151247501958116,
+          0.01619430724292837,
+          -0.12038850562771641
+        ],
+        "intercept": 4.484831721164965,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 456,
+        "negative_frames": 9
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.858460965126978,
+          -0.6743817190956054,
+          0.06385631852533138,
+          0.10345924350547628
+        ],
+        "scale": [
+          0.16925037323661388,
+          0.6032924897112805,
+          0.04859581161531591,
+          0.1485930800624438
+        ],
+        "coefficient": [
+          1.0099077750782246,
+          0.6453075123488915,
+          0.15859242065076035,
+          -0.6689903390800451
+        ],
+        "intercept": 5.486077766058569,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 494,
+        "negative_frames": 9
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "97a41106b553d64ed6cf8795e6433bb379a988c860be70bed14f478887500d6c"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8425918934989707,
+          -0.5791158583132109,
+          0.06081900709795618,
+          0.12253041411414184
+        ],
+        "scale": [
+          0.16317060761190824,
+          0.5632054002692545,
+          0.05203984499977311,
+          0.1489540691144175
+        ],
+        "coefficient": [
+          1.4216783234966872,
+          0.020429628074514337,
+          -0.016257428639728143,
+          -0.38115187131875117
+        ],
+        "intercept": 5.398409139383517,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1725,
+        "negative_frames": 40
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "e7c58c2cf3f7f5f4c14aac68a4e4b432f94a473837d501d6ce4646b7225f14ee"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8630346998746988,
+          -0.5262769763533328,
+          0.0493351889814978,
+          0.09878300672493404
+        ],
+        "scale": [
+          0.16714778331846544,
+          0.537875329156079,
+          0.03502927913375125,
+          0.13645958207603281
+        ],
+        "coefficient": [
+          1.0184528912541213,
+          0.11523971045728493,
+          -0.4440832283932199,
+          -0.41906089221400067
+        ],
+        "intercept": 4.899439135760382,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1375,
+        "negative_frames": 41
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8443683711941058,
+          -0.6757529343710068,
+          0.07133034967830157,
+          0.09128788220531854
+        ],
+        "scale": [
+          0.17000954658063377,
+          0.5915006330869821,
+          0.05183140017056701,
+          0.10772183786583733
+        ],
+        "coefficient": [
+          1.004865530749721,
+          -0.04709698051041972,
+          -0.13628621473514055,
+          -0.09983677556130233
+        ],
+        "intercept": 4.668136653486886,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1822,
+        "negative_frames": 33
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8528037766071745,
+          -0.6689055918443803,
+          0.07294830415292126,
+          0.10919487387885955
+        ],
+        "scale": [
+          0.1692524777639943,
+          0.5966239623235297,
+          0.0521677127268533,
+          0.14742185071852346
+        ],
+        "coefficient": [
+          1.0967644372069576,
+          0.5162486495417776,
+          -0.07557874075059655,
+          -0.7071704138868354
+        ],
+        "intercept": 5.961439089268278,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1972,
+        "negative_frames": 33
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "fcfea9a9943154fc2856525974fdfdcd839938995ae8d7c237685ce3b3ae0757"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8425918934989707,
+          -0.5791158583132109,
+          0.06081900709795618,
+          0.12253041411414184
+        ],
+        "scale": [
+          0.16317060761190824,
+          0.5632054002692545,
+          0.05203984499977311,
+          0.1489540691144175
+        ],
+        "coefficient": [
+          1.4216783234966872,
+          0.020429628074514337,
+          -0.016257428639728143,
+          -0.38115187131875117
+        ],
+        "intercept": 5.398409139383517,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1725,
+        "negative_frames": 40
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "bd98658d1f9757b7078dd337ac1f05e6a7b783073d315316c1f3cf5451d89090"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8630346998746988,
+          -0.5262769763533328,
+          0.0493351889814978,
+          0.09878300672493404
+        ],
+        "scale": [
+          0.16714778331846544,
+          0.537875329156079,
+          0.03502927913375125,
+          0.13645958207603281
+        ],
+        "coefficient": [
+          1.0184528912541213,
+          0.11523971045728493,
+          -0.4440832283932199,
+          -0.41906089221400067
+        ],
+        "intercept": 4.899439135760382,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1375,
+        "negative_frames": 41
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8443683711941058,
+          -0.6757529343710068,
+          0.07133034967830157,
+          0.09128788220531854
+        ],
+        "scale": [
+          0.17000954658063377,
+          0.5915006330869821,
+          0.05183140017056701,
+          0.10772183786583733
+        ],
+        "coefficient": [
+          1.004865530749721,
+          -0.04709698051041972,
+          -0.13628621473514055,
+          -0.09983677556130233
+        ],
+        "intercept": 4.668136653486886,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1822,
+        "negative_frames": 33
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8528037766071745,
+          -0.6689055918443803,
+          0.07294830415292126,
+          0.10919487387885955
+        ],
+        "scale": [
+          0.1692524777639943,
+          0.5966239623235297,
+          0.0521677127268533,
+          0.14742185071852346
+        ],
+        "coefficient": [
+          1.0967644372069576,
+          0.5162486495417776,
+          -0.07557874075059655,
+          -0.7071704138868354
+        ],
+        "intercept": 5.961439089268278,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1972,
+        "negative_frames": 33
+      }
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "c29ef8a77bd1dfe23ff05aef89036620430e14327ce1726f8af482ec027d3047"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "1961560d30f6a6c9c04d00cdc331891cf839366f0dba502aae480ebef0d939ab"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "5c895ab7fd37819bfa85aa4c1ced439933f98ac7eb8594e013fae9cf416ada06"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "334e762f11f10b03f0ff4ff6713c929894b5c659009bb7d4a539e7e2f0f1516e"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "98bc51166cb16c66b7c04aaa7ee850b7728de798936c96310268840edd5d414c"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8616265052552072,
+          -0.4300686610473052,
+          0.028729718776591594,
+          0.11771033982075264
+        ],
+        "scale": [
+          0.1607345371602642,
+          0.47463626626648325,
+          0.016568314314138702,
+          0.1566534306842884
+        ],
+        "coefficient": [
+          1.3557049958926093,
+          0.683475306433378,
+          -0.7342441912836913,
+          -0.22131254678340193
+        ],
+        "intercept": 5.296546358315942,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 200,
+        "negative_frames": 8
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8359766809246753,
+          -0.6558437448990052,
+          0.06228259125457038,
+          0.10496965527126983
+        ],
+        "scale": [
+          0.16286655393547297,
+          0.5874295747079387,
+          0.05531937066499329,
+          0.11974814662288119
+        ],
+        "coefficient": [
+          1.2132789672211892,
+          -0.14615069534165376,
+          -0.04562452391612015,
+          0.05080543938528314
+        ],
+        "intercept": 4.677674796912271,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 312,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "ae578d5516bca7c8d6ac798a64cc02404dbc59cc26302dc716463c22a730cdbe"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8485012710244698,
+          -0.649296533727752,
+          0.06423451444426256,
+          0.13116905667325196
+        ],
+        "scale": [
+          0.16159625068826272,
+          0.5977644048679561,
+          0.05492072928468064,
+          0.1690988040513395
+        ],
+        "coefficient": [
+          1.7521187612986027,
+          0.24773360744684988,
+          0.16426565686619854,
+          -0.8359536163443254
+        ],
+        "intercept": 7.223624646160278,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 350,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "7c35afbe6a024332feb2e8a69b7f457fa038102dd1d46597a428321ac0c2c6ac"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8616265052552072,
+          -0.4300686610473052,
+          0.028729718776591594,
+          0.11771033982075264
+        ],
+        "scale": [
+          0.1607345371602642,
+          0.47463626626648325,
+          0.016568314314138702,
+          0.1566534306842884
+        ],
+        "coefficient": [
+          1.3557049958926093,
+          0.683475306433378,
+          -0.7342441912836913,
+          -0.22131254678340193
+        ],
+        "intercept": 5.296546358315942,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 200,
+        "negative_frames": 8
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "a7fd13dd43541cec150d876820fcc22d0e00091b3a82b769adbeb2ba3a8432ac"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8359766809246753,
+          -0.6558437448990052,
+          0.06228259125457038,
+          0.10496965527126983
+        ],
+        "scale": [
+          0.16286655393547297,
+          0.5874295747079387,
+          0.05531937066499329,
+          0.11974814662288119
+        ],
+        "coefficient": [
+          1.2132789672211892,
+          -0.14615069534165376,
+          -0.04562452391612015,
+          0.05080543938528314
+        ],
+        "intercept": 4.677674796912271,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 312,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "ae578d5516bca7c8d6ac798a64cc02404dbc59cc26302dc716463c22a730cdbe"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8485012710244698,
+          -0.649296533727752,
+          0.06423451444426256,
+          0.13116905667325196
+        ],
+        "scale": [
+          0.16159625068826272,
+          0.5977644048679561,
+          0.05492072928468064,
+          0.1690988040513395
+        ],
+        "coefficient": [
+          1.7521187612986027,
+          0.24773360744684988,
+          0.16426565686619854,
+          -0.8359536163443254
+        ],
+        "intercept": 7.223624646160278,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 350,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "eb730b03f66e797d3ecf369aafba2b06b6ca4d321382adfa7f6be21906d094fe"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8570405194730112,
+          -0.43306357155883385,
+          0.03801486916384066,
+          0.12107204279698375
+        ],
+        "scale": [
+          0.16107026852582992,
+          0.4757665746445654,
+          0.02672562447358896,
+          0.15532153852239358
+        ],
+        "coefficient": [
+          1.4354930000020123,
+          0.13975623917481958,
+          -0.5974080255721346,
+          -0.18417286136843397
+        ],
+        "intercept": 5.3328815004200925,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 802,
+        "negative_frames": 32
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8290410264521008,
+          -0.6572775085853334,
+          0.07100761020904524,
+          0.10982935601755825
+        ],
+        "scale": [
+          0.16368853410957,
+          0.585013435586393,
+          0.057337255899172525,
+          0.11856639566874985
+        ],
+        "coefficient": [
+          1.316474648771867,
+          -0.3143507624029034,
+          -0.21806539258899882,
+          0.199100345057777
+        ],
+        "intercept": 4.845647242335411,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1249,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "ae578d5516bca7c8d6ac798a64cc02404dbc59cc26302dc716463c22a730cdbe"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.841694134571769,
+          -0.6470064947954453,
+          0.07343454192098056,
+          0.13668984352787888
+        ],
+        "scale": [
+          0.1635334192207912,
+          0.5924160385660725,
+          0.057789518306577733,
+          0.16737753864061725
+        ],
+        "coefficient": [
+          2.255099705053227,
+          0.11252584086326703,
+          -0.026191627255898145,
+          -0.9721530452733369
+        ],
+        "intercept": 8.928889475606868,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1399,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "2abd47d23e3ae04dc52caeae958b2f46f1acda90e60683c785a3d4f69c6b51ba"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8570405194730112,
+          -0.43306357155883385,
+          0.03801486916384066,
+          0.12107204279698375
+        ],
+        "scale": [
+          0.16107026852582992,
+          0.4757665746445654,
+          0.02672562447358896,
+          0.15532153852239358
+        ],
+        "coefficient": [
+          1.4354930000020123,
+          0.13975623917481958,
+          -0.5974080255721346,
+          -0.18417286136843397
+        ],
+        "intercept": 5.3328815004200925,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 802,
+        "negative_frames": 32
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8290410264521008,
+          -0.6572775085853334,
+          0.07100761020904524,
+          0.10982935601755825
+        ],
+        "scale": [
+          0.16368853410957,
+          0.585013435586393,
+          0.057337255899172525,
+          0.11856639566874985
+        ],
+        "coefficient": [
+          1.316474648771867,
+          -0.3143507624029034,
+          -0.21806539258899882,
+          0.199100345057777
+        ],
+        "intercept": 4.845647242335411,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1249,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "ae578d5516bca7c8d6ac798a64cc02404dbc59cc26302dc716463c22a730cdbe"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.841694134571769,
+          -0.6470064947954453,
+          0.07343454192098056,
+          0.13668984352787888
+        ],
+        "scale": [
+          0.1635334192207912,
+          0.5924160385660725,
+          0.057789518306577733,
+          0.16737753864061725
+        ],
+        "coefficient": [
+          2.255099705053227,
+          0.11252584086326703,
+          -0.026191627255898145,
+          -0.9721530452733369
+        ],
+        "intercept": 8.928889475606868,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1399,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "54d05f0071f71bdf94a0662eba9e6e722abb47a764d78a61099abf101023ee99"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "1961560d30f6a6c9c04d00cdc331891cf839366f0dba502aae480ebef0d939ab"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "5c895ab7fd37819bfa85aa4c1ced439933f98ac7eb8594e013fae9cf416ada06"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5d536e1461dff8b37291aa4578b02c7f9e89ad21b05a934e95c93febdb2fa874"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "d4115a14d5b57b81ceb971b6a8b8d94c6830b620989cab03ea4b7fdc356aff28"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8616265052552072,
+          -0.4300686610473052,
+          0.028729718776591594,
+          0.11771033982075264
+        ],
+        "scale": [
+          0.1607345371602642,
+          0.47463626626648325,
+          0.016568314314138702,
+          0.1566534306842884
+        ],
+        "coefficient": [
+          1.3557049958926093,
+          0.683475306433378,
+          -0.7342441912836913,
+          -0.22131254678340193
+        ],
+        "intercept": 5.296546358315942,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 200,
+        "negative_frames": 8
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "a7fd13dd43541cec150d876820fcc22d0e00091b3a82b769adbeb2ba3a8432ac"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8637411342436875,
+          -0.5805839810249239,
+          0.04493886113718313,
+          0.0697752777943461
+        ],
+        "scale": [
+          0.173378695964025,
+          0.5616139330771016,
+          0.030746757203484593,
+          0.08651319106869343
+        ],
+        "coefficient": [
+          0.837240824526828,
+          0.20922671734715714,
+          -0.301523631784908,
+          -0.2058553090437971
+        ],
+        "intercept": 4.13106317739621,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 225,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8762657243434812,
+          -0.574036769853669,
+          0.04689078432687519,
+          0.09597467919632786
+        ],
+        "scale": [
+          0.1701544276989068,
+          0.5715535890696143,
+          0.0311307576352399,
+          0.15356908017595194
+        ],
+        "coefficient": [
+          0.8805262199047682,
+          0.7780851694885758,
+          0.032351802005081476,
+          -0.7276797233410054
+        ],
+        "intercept": 5.17063416868276,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 263,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "ffc9c3c87096f31e4d3f559a89a310f47d531382f5fedfa85659235896d2703e"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8616265052552072,
+          -0.4300686610473052,
+          0.028729718776591594,
+          0.11771033982075264
+        ],
+        "scale": [
+          0.1607345371602642,
+          0.47463626626648325,
+          0.016568314314138702,
+          0.1566534306842884
+        ],
+        "coefficient": [
+          1.3557049958926093,
+          0.683475306433378,
+          -0.7342441912836913,
+          -0.22131254678340193
+        ],
+        "intercept": 5.296546358315942,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 200,
+        "negative_frames": 8
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "df043bcdd5edf16a0b0a98d7f234efad2a3b70392bc94aa8518c5a6e33b2a147"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8637411342436875,
+          -0.5805839810249239,
+          0.04493886113718313,
+          0.0697752777943461
+        ],
+        "scale": [
+          0.173378695964025,
+          0.5616139330771016,
+          0.030746757203484593,
+          0.08651319106869343
+        ],
+        "coefficient": [
+          0.837240824526828,
+          0.20922671734715714,
+          -0.301523631784908,
+          -0.2058553090437971
+        ],
+        "intercept": 4.13106317739621,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 225,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8762657243434812,
+          -0.574036769853669,
+          0.04689078432687519,
+          0.09597467919632786
+        ],
+        "scale": [
+          0.1701544276989068,
+          0.5715535890696143,
+          0.0311307576352399,
+          0.15356908017595194
+        ],
+        "coefficient": [
+          0.8805262199047682,
+          0.7780851694885758,
+          0.032351802005081476,
+          -0.7276797233410054
+        ],
+        "intercept": 5.17063416868276,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 263,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "fcfea9a9943154fc2856525974fdfdcd839938995ae8d7c237685ce3b3ae0757"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8570405194730112,
+          -0.43306357155883385,
+          0.03801486916384066,
+          0.12107204279698375
+        ],
+        "scale": [
+          0.16107026852582992,
+          0.4757665746445654,
+          0.02672562447358896,
+          0.15532153852239358
+        ],
+        "coefficient": [
+          1.4354930000020123,
+          0.13975623917481958,
+          -0.5974080255721346,
+          -0.18417286136843397
+        ],
+        "intercept": 5.3328815004200925,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 802,
+        "negative_frames": 32
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8597052360157461,
+          -0.5780191856455509,
+          0.053781883034361225,
+          0.07420824493375343
+        ],
+        "scale": [
+          0.17112030745384188,
+          0.5574055992744903,
+          0.036304571938790074,
+          0.0859129694100498
+        ],
+        "coefficient": [
+          0.8288856381376909,
+          -0.019509745935747298,
+          -0.42565031664312036,
+          -0.24423346050525824
+        ],
+        "intercept": 4.348660203733193,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 899,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8723583441353904,
+          -0.5677481718556446,
+          0.056208814746294494,
+          0.10106873244407055
+        ],
+        "scale": [
+          0.1686873068970375,
+          0.5637276987877294,
+          0.03812742822169478,
+          0.15248570225140642
+        ],
+        "coefficient": [
+          0.9293834197458833,
+          0.6503054158094895,
+          -0.3211743310100472,
+          -0.7832129014173217
+        ],
+        "intercept": 5.754594548947654,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1049,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "fcfea9a9943154fc2856525974fdfdcd839938995ae8d7c237685ce3b3ae0757"
+      },
+      "classifier": {
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8570405194730112,
+          -0.43306357155883385,
+          0.03801486916384066,
+          0.12107204279698375
+        ],
+        "scale": [
+          0.16107026852582992,
+          0.4757665746445654,
+          0.02672562447358896,
+          0.15532153852239358
+        ],
+        "coefficient": [
+          1.4354930000020123,
+          0.13975623917481958,
+          -0.5974080255721346,
+          -0.18417286136843397
+        ],
+        "intercept": 5.3328815004200925,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 802,
+        "negative_frames": 32
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "df043bcdd5edf16a0b0a98d7f234efad2a3b70392bc94aa8518c5a6e33b2a147"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8597052360157461,
+          -0.5780191856455509,
+          0.053781883034361225,
+          0.07420824493375343
+        ],
+        "scale": [
+          0.17112030745384188,
+          0.5574055992744903,
+          0.036304571938790074,
+          0.0859129694100498
+        ],
+        "coefficient": [
+          0.8288856381376909,
+          -0.019509745935747298,
+          -0.42565031664312036,
+          -0.24423346050525824
+        ],
+        "intercept": 4.348660203733193,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 899,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8723583441353904,
+          -0.5677481718556446,
+          0.056208814746294494,
+          0.10106873244407055
+        ],
+        "scale": [
+          0.1686873068970375,
+          0.5637276987877294,
+          0.03812742822169478,
+          0.15248570225140642
+        ],
+        "coefficient": [
+          0.9293834197458833,
+          0.6503054158094895,
+          -0.3211743310100472,
+          -0.7832129014173217
+        ],
+        "intercept": 5.754594548947654,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1049,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "54d05f0071f71bdf94a0662eba9e6e722abb47a764d78a61099abf101023ee99"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "c29ef8a77bd1dfe23ff05aef89036620430e14327ce1726f8af482ec027d3047"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "5c895ab7fd37819bfa85aa4c1ced439933f98ac7eb8594e013fae9cf416ada06"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5d536e1461dff8b37291aa4578b02c7f9e89ad21b05a934e95c93febdb2fa874"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "334e762f11f10b03f0ff4ff6713c929894b5c659009bb7d4a539e7e2f0f1516e"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5e200a8d0f4ae8d6656f6c2324e8a322f77ec0cfe3be91ebd067c867a733e8b4"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8359766809246753,
+          -0.6558437448990052,
+          0.06228259125457038,
+          0.10496965527126983
+        ],
+        "scale": [
+          0.16286655393547297,
+          0.5874295747079387,
+          0.05531937066499329,
+          0.11974814662288119
+        ],
+        "coefficient": [
+          1.2132789672211892,
+          -0.14615069534165376,
+          -0.04562452391612015,
+          0.05080543938528314
+        ],
+        "intercept": 4.677674796912271,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 312,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "4d93c458e7abc974a688b4f09a6052da47a357686718e9c13b347df2227a5843"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8637411342436875,
+          -0.5805839810249239,
+          0.04493886113718313,
+          0.0697752777943461
+        ],
+        "scale": [
+          0.173378695964025,
+          0.5616139330771016,
+          0.030746757203484593,
+          0.08651319106869343
+        ],
+        "coefficient": [
+          0.837240824526828,
+          0.20922671734715714,
+          -0.301523631784908,
+          -0.2058553090437971
+        ],
+        "intercept": 4.13106317739621,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 225,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8506159000129483,
+          -0.7998118537053679,
+          0.08044365680485374,
+          0.08323399464684507
+        ],
+        "scale": [
+          0.17433714181474708,
+          0.6176233492097448,
+          0.050360063240201564,
+          0.11326486334943017
+        ],
+        "coefficient": [
+          0.7141783113341564,
+          0.9899129437394801,
+          -0.5934945772411281,
+          0.5912516983515089
+        ],
+        "intercept": 5.4887785508946685,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 375,
+        "negative_frames": 5
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "c499efa774280b800dccaddf134ccb43f420adefc9b44f2819455f4a0fa5e10e"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8359766809246753,
+          -0.6558437448990052,
+          0.06228259125457038,
+          0.10496965527126983
+        ],
+        "scale": [
+          0.16286655393547297,
+          0.5874295747079387,
+          0.05531937066499329,
+          0.11974814662288119
+        ],
+        "coefficient": [
+          1.2132789672211892,
+          -0.14615069534165376,
+          -0.04562452391612015,
+          0.05080543938528314
+        ],
+        "intercept": 4.677674796912271,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 312,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "ca11ca9a563611cdc30c545dbe4e416e94d745f900d7ba3cd83d69589c1bb900"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8637411342436875,
+          -0.5805839810249239,
+          0.04493886113718313,
+          0.0697752777943461
+        ],
+        "scale": [
+          0.173378695964025,
+          0.5616139330771016,
+          0.030746757203484593,
+          0.08651319106869343
+        ],
+        "coefficient": [
+          0.837240824526828,
+          0.20922671734715714,
+          -0.301523631784908,
+          -0.2058553090437971
+        ],
+        "intercept": 4.13106317739621,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 225,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8506159000129483,
+          -0.7998118537053679,
+          0.08044365680485374,
+          0.08323399464684507
+        ],
+        "scale": [
+          0.17433714181474708,
+          0.6176233492097448,
+          0.050360063240201564,
+          0.11326486334943017
+        ],
+        "coefficient": [
+          0.7141783113341564,
+          0.9899129437394801,
+          -0.5934945772411281,
+          0.5912516983515089
+        ],
+        "intercept": 5.4887785508946685,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 375,
+        "negative_frames": 5
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5e200a8d0f4ae8d6656f6c2324e8a322f77ec0cfe3be91ebd067c867a733e8b4"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8290410264521008,
+          -0.6572775085853334,
+          0.07100761020904524,
+          0.10982935601755825
+        ],
+        "scale": [
+          0.16368853410957,
+          0.585013435586393,
+          0.057337255899172525,
+          0.11856639566874985
+        ],
+        "coefficient": [
+          1.316474648771867,
+          -0.3143507624029034,
+          -0.21806539258899882,
+          0.199100345057777
+        ],
+        "intercept": 4.845647242335411,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1249,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "4d93c458e7abc974a688b4f09a6052da47a357686718e9c13b347df2227a5843"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8597052360157461,
+          -0.5780191856455509,
+          0.053781883034361225,
+          0.07420824493375343
+        ],
+        "scale": [
+          0.17112030745384188,
+          0.5574055992744903,
+          0.036304571938790074,
+          0.0859129694100498
+        ],
+        "coefficient": [
+          0.8288856381376909,
+          -0.019509745935747298,
+          -0.42565031664312036,
+          -0.24423346050525824
+        ],
+        "intercept": 4.348660203733193,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 899,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8443588511145014,
+          -0.7919621088821651,
+          0.08920155579150146,
+          0.08982604566464736
+        ],
+        "scale": [
+          0.17367640874221388,
+          0.610966018424359,
+          0.05316452222074023,
+          0.11285086325908701
+        ],
+        "coefficient": [
+          0.6962494426561928,
+          1.0018366490161514,
+          -0.8248435292679448,
+          0.6687460172271048
+        ],
+        "intercept": 6.040672130591369,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1496,
+        "negative_frames": 17
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "c499efa774280b800dccaddf134ccb43f420adefc9b44f2819455f4a0fa5e10e"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8290410264521008,
+          -0.6572775085853334,
+          0.07100761020904524,
+          0.10982935601755825
+        ],
+        "scale": [
+          0.16368853410957,
+          0.585013435586393,
+          0.057337255899172525,
+          0.11856639566874985
+        ],
+        "coefficient": [
+          1.316474648771867,
+          -0.3143507624029034,
+          -0.21806539258899882,
+          0.199100345057777
+        ],
+        "intercept": 4.845647242335411,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1249,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "f822669676ba917b63f5b7bb32d0bad001b6a25675f284cd811ff18f629f6a88"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__clean",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr30",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__white_snr20",
+            "frames": 85
+          },
+          {
+            "origin_file": "studio_M1.wav",
+            "case_id": "studio_M1__pink_snr20",
+            "frames": 87
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8597052360157461,
+          -0.5780191856455509,
+          0.053781883034361225,
+          0.07420824493375343
+        ],
+        "scale": [
+          0.17112030745384188,
+          0.5574055992744903,
+          0.036304571938790074,
+          0.0859129694100498
+        ],
+        "coefficient": [
+          0.8288856381376909,
+          -0.019509745935747298,
+          -0.42565031664312036,
+          -0.24423346050525824
+        ],
+        "intercept": 4.348660203733193,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 899,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8443588511145014,
+          -0.7919621088821651,
+          0.08920155579150146,
+          0.08982604566464736
+        ],
+        "scale": [
+          0.17367640874221388,
+          0.610966018424359,
+          0.05316452222074023,
+          0.11285086325908701
+        ],
+        "coefficient": [
+          0.6962494426561928,
+          1.0018366490161514,
+          -0.8248435292679448,
+          0.6687460172271048
+        ],
+        "intercept": 6.040672130591369,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1496,
+        "negative_frames": 17
+      }
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "54d05f0071f71bdf94a0662eba9e6e722abb47a764d78a61099abf101023ee99"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "c29ef8a77bd1dfe23ff05aef89036620430e14327ce1726f8af482ec027d3047"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "1961560d30f6a6c9c04d00cdc331891cf839366f0dba502aae480ebef0d939ab"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5d536e1461dff8b37291aa4578b02c7f9e89ad21b05a934e95c93febdb2fa874"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "334e762f11f10b03f0ff4ff6713c929894b5c659009bb7d4a539e7e2f0f1516e"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "97a41106b553d64ed6cf8795e6433bb379a988c860be70bed14f478887500d6c"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8485012710244698,
+          -0.649296533727752,
+          0.06423451444426256,
+          0.13116905667325196
+        ],
+        "scale": [
+          0.16159625068826272,
+          0.5977644048679561,
+          0.05492072928468064,
+          0.1690988040513395
+        ],
+        "coefficient": [
+          1.7521187612986027,
+          0.24773360744684988,
+          0.16426565686619854,
+          -0.8359536163443254
+        ],
+        "intercept": 7.223624646160278,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 350,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "d0ecaba737262be9209d6636a84c0715d746c779539d6c30740afe12ab63900f"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8762657243434812,
+          -0.574036769853669,
+          0.04689078432687519,
+          0.09597467919632786
+        ],
+        "scale": [
+          0.1701544276989068,
+          0.5715535890696143,
+          0.0311307576352399,
+          0.15356908017595194
+        ],
+        "coefficient": [
+          0.8805262199047682,
+          0.7780851694885758,
+          0.032351802005081476,
+          -0.7276797233410054
+        ],
+        "intercept": 5.17063416868276,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 263,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8506159000129483,
+          -0.7998118537053679,
+          0.08044365680485374,
+          0.08323399464684507
+        ],
+        "scale": [
+          0.17433714181474708,
+          0.6176233492097448,
+          0.050360063240201564,
+          0.11326486334943017
+        ],
+        "coefficient": [
+          0.7141783113341564,
+          0.9899129437394801,
+          -0.5934945772411281,
+          0.5912516983515089
+        ],
+        "intercept": 5.4887785508946685,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 375,
+        "negative_frames": 5
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "67bbec17c4023f8bfe44e8367905753faf7af7bcc555793d9c18eed16a5f46ca"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8485012710244698,
+          -0.649296533727752,
+          0.06423451444426256,
+          0.13116905667325196
+        ],
+        "scale": [
+          0.16159625068826272,
+          0.5977644048679561,
+          0.05492072928468064,
+          0.1690988040513395
+        ],
+        "coefficient": [
+          1.7521187612986027,
+          0.24773360744684988,
+          0.16426565686619854,
+          -0.8359536163443254
+        ],
+        "intercept": 7.223624646160278,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 350,
+        "negative_frames": 6
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "e950a4f64225df708df5baca46b7d4d6b07fa7ea3ce7ee9afcd67238beba1088"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8762657243434812,
+          -0.574036769853669,
+          0.04689078432687519,
+          0.09597467919632786
+        ],
+        "scale": [
+          0.1701544276989068,
+          0.5715535890696143,
+          0.0311307576352399,
+          0.15356908017595194
+        ],
+        "coefficient": [
+          0.8805262199047682,
+          0.7780851694885758,
+          0.032351802005081476,
+          -0.7276797233410054
+        ],
+        "intercept": 5.17063416868276,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 263,
+        "negative_frames": 7
+      }
+    },
+    {
+      "option_id": "voicing_clean_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": false,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8506159000129483,
+          -0.7998118537053679,
+          0.08044365680485374,
+          0.08323399464684507
+        ],
+        "scale": [
+          0.17433714181474708,
+          0.6176233492097448,
+          0.050360063240201564,
+          0.11326486334943017
+        ],
+        "coefficient": [
+          0.7141783113341564,
+          0.9899129437394801,
+          -0.5934945772411281,
+          0.5912516983515089
+        ],
+        "intercept": 5.4887785508946685,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 375,
+        "negative_frames": 5
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "97a41106b553d64ed6cf8795e6433bb379a988c860be70bed14f478887500d6c"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.841694134571769,
+          -0.6470064947954453,
+          0.07343454192098056,
+          0.13668984352787888
+        ],
+        "scale": [
+          0.1635334192207912,
+          0.5924160385660725,
+          0.057789518306577733,
+          0.16737753864061725
+        ],
+        "coefficient": [
+          2.255099705053227,
+          0.11252584086326703,
+          -0.026191627255898145,
+          -0.9721530452733369
+        ],
+        "intercept": 8.928889475606868,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1399,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "e950a4f64225df708df5baca46b7d4d6b07fa7ea3ce7ee9afcd67238beba1088"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8723583441353904,
+          -0.5677481718556446,
+          0.056208814746294494,
+          0.10106873244407055
+        ],
+        "scale": [
+          0.1686873068970375,
+          0.5637276987877294,
+          0.03812742822169478,
+          0.15248570225140642
+        ],
+        "coefficient": [
+          0.9293834197458833,
+          0.6503054158094895,
+          -0.3211743310100472,
+          -0.7832129014173217
+        ],
+        "intercept": 5.754594548947654,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1049,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8443588511145014,
+          -0.7919621088821651,
+          0.08920155579150146,
+          0.08982604566464736
+        ],
+        "scale": [
+          0.17367640874221388,
+          0.610966018424359,
+          0.05316452222074023,
+          0.11285086325908701
+        ],
+        "coefficient": [
+          0.6962494426561928,
+          1.0018366490161514,
+          -0.8248435292679448,
+          0.6687460172271048
+        ],
+        "intercept": 6.040672130591369,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1496,
+        "negative_frames": 17
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "67bbec17c4023f8bfe44e8367905753faf7af7bcc555793d9c18eed16a5f46ca"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.841694134571769,
+          -0.6470064947954453,
+          0.07343454192098056,
+          0.13668984352787888
+        ],
+        "scale": [
+          0.1635334192207912,
+          0.5924160385660725,
+          0.057789518306577733,
+          0.16737753864061725
+        ],
+        "coefficient": [
+          2.255099705053227,
+          0.11252584086326703,
+          -0.026191627255898145,
+          -0.9721530452733369
+        ],
+        "intercept": 8.928889475606868,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1399,
+        "negative_frames": 24
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "c9a2aafb0f011711b6ec6282bdd6a4f7a41e8b5f4b985d5986de4a0601a576c8"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__clean",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr30",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__white_snr20",
+            "frames": 123
+          },
+          {
+            "origin_file": "studio_F1.wav",
+            "case_id": "studio_F1__pink_snr20",
+            "frames": 123
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8723583441353904,
+          -0.5677481718556446,
+          0.056208814746294494,
+          0.10106873244407055
+        ],
+        "scale": [
+          0.1686873068970375,
+          0.5637276987877294,
+          0.03812742822169478,
+          0.15248570225140642
+        ],
+        "coefficient": [
+          0.9293834197458833,
+          0.6503054158094895,
+          -0.3211743310100472,
+          -0.7832129014173217
+        ],
+        "intercept": 5.754594548947654,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1049,
+        "negative_frames": 25
+      }
+    },
+    {
+      "option_id": "voicing_aug_p50",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "logistic",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": {
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "augmented": true,
+        "fit_cases": [
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__clean",
+            "frames": 147
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr30",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__white_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_F1.wav",
+            "case_id": "phone_F1__pink_snr20",
+            "frames": 145
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__clean",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr30",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__white_snr20",
+            "frames": 233
+          },
+          {
+            "origin_file": "phone_M1.wav",
+            "case_id": "phone_M1__pink_snr20",
+            "frames": 232
+          }
+        ],
+        "feature_names": [
+          "periodicity_at_praat_lag",
+          "log_relative_rms",
+          "zcr_per_sample",
+          "high_frequency_ratio"
+        ],
+        "mean": [
+          0.8443588511145014,
+          -0.7919621088821651,
+          0.08920155579150146,
+          0.08982604566464736
+        ],
+        "scale": [
+          0.17367640874221388,
+          0.610966018424359,
+          0.05316452222074023,
+          0.11285086325908701
+        ],
+        "coefficient": [
+          0.6962494426561928,
+          1.0018366490161514,
+          -0.8248435292679448,
+          0.6687460172271048
+        ],
+        "intercept": 6.040672130591369,
+        "C": 1.0,
+        "class_weight": "natural prior, equal origin and variant weights",
+        "positive_frames": 1496,
+        "negative_frames": 17
+      }
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "54d05f0071f71bdf94a0662eba9e6e722abb47a764d78a61099abf101023ee99"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "5d536e1461dff8b37291aa4578b02c7f9e89ad21b05a934e95c93febdb2fa874"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "c29ef8a77bd1dfe23ff05aef89036620430e14327ce1726f8af482ec027d3047"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "334e762f11f10b03f0ff4ff6713c929894b5c659009bb7d4a539e7e2f0f1516e"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "1961560d30f6a6c9c04d00cdc331891cf839366f0dba502aae480ebef0d939ab"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "36606b2ca0a7e92f3f5a13203b0b560856a188ea0400b2257cf97aeaf5325a2d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "output_f0_sha256": "5c895ab7fd37819bfa85aa4c1ced439933f98ac7eb8594e013fae9cf416ada06"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "output_f0_sha256": "809d72e72040ee84dd9488a4622f898f99d39b7044569defcc859fda9b9bd483"
+      },
+      "classifier": null
+    }
+  ]
+}

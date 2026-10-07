@@ -1,0 +1,29 @@
+{
+  "family": "H47",
+  "fit_records_replayed": 104,
+  "independently_refitted_models": 20,
+  "feature_groups_recomputed": 16,
+  "metric_rows_recomputed": 144,
+  "origin_variant_exclusion": true,
+  "target_strict_lt_2": true,
+  "feature_hashes": {
+    "H47_design_phone_F1__clean.npz": "8cd78a33ba1a9f489cf9d6357589c9f0cd411588813fe5115ce63d8470427afc",
+    "H47_design_phone_F1__white_snr30.npz": "ed6f410c85ee41aabcbe633bbfb9540f9d53cde24480abae56f762322a79d413",
+    "H47_design_phone_F1__white_snr20.npz": "1d97b38824a76cc87844c41cea5c4064ddc59e2ce42f8ebd57c7778918b6fece",
+    "H47_design_phone_F1__pink_snr20.npz": "4e6687e42e8fa5e35ff631ebc9fd9555ac856d2c5cc64938d3466a1bd1a0f449",
+    "H47_design_phone_M1__clean.npz": "cb0c81a46a062e790ecc3294387a1c2084d0b7047d350ec672465225676af43f",
+    "H47_design_phone_M1__white_snr30.npz": "bb09de94c5cffe702c2aac24d1bde738bf4eeb81f302f95cc7c1033a114c24d7",
+    "H47_design_phone_M1__white_snr20.npz": "b38b91837c5019da95f0c370a4a1b9780c6c56ad39b6903e8e61b2ec2b19a091",
+    "H47_design_phone_M1__pink_snr20.npz": "4182807cff59c36e97bcadd7a58a5eb2f59da068bdd42f419dfe48bdf5e0a303",
+    "H47_design_studio_F1__clean.npz": "781ad1b12d81ae9d4f567c00d95ddcf3fa4e9a14343295f4dba6c2df286e53c0",
+    "H47_design_studio_F1__white_snr30.npz": "e133c7629889bf3b475607fc5f33d33b8bd15304942f5c8d0e1da07f640f2528",
+    "H47_design_studio_F1__white_snr20.npz": "9e52d5fa77184d75f6cf6caa57f4d0ddd2199402abaf602135c571068a6fb425",
+    "H47_design_studio_F1__pink_snr20.npz": "2b791dbfc5be99211d99dd114ba9d60260e6be22b4c787939072bf179f58603e",
+    "H47_design_studio_M1__clean.npz": "17fa0caca0890500f7b4e7ca504a003271ed2725c87d231e1ef617595139198e",
+    "H47_design_studio_M1__white_snr30.npz": "b52ce2abba8e17d1d746f2c88b646f88866d3231c82f9570eb0abeb17b67289f",
+    "H47_design_studio_M1__white_snr20.npz": "409ceb582fc5dd219c16fdf70de1cdde3965f5a88734506e109007d076276695",
+    "H47_design_studio_M1__pink_snr20.npz": "c0f262ee3df8526384beb589e47c96f1dea7cb07d6983fa720f5a936aaf3ebc3"
+  },
+  "experiment_sha256": "4f2d4e9581cfeacdeadf67cd74b58469e9ea7bcaee5a211077b0dada1f2229be",
+  "verifier_sha256": "2acb3f5bb314d4356dbb708bc65fae36ffafb0fe2bbf9cb01d89ee704f01e9dc"
+}

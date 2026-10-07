@@ -1,5 +1,7 @@
 # Điểm nối tiếp cho chat mới — 07/10/2026
 
+**Cập nhật H47:** người dùng yêu cầu strict mỗi file Average MAPE **<2%**. H47 đã prereg commit `78be446`, đo và replay104fits/20classifier fits/16feature groups/144metrics. Mọi inner/outer chọn H43 hard170: bốn train0.340080/0.776151/1.473576/1.909923%, tám gatePASS. Đây là fallback cấu hình train đã biết, không augmentation improvement hoặc independent validation; thay candidate set sau H45/H46 phải nêu rõ. Chưa kết luận cả8files; bước tiếp theo chốt hard170 và đo test cấu hình duy nhất, không tune test. Original/frozen giữ nguyên.
+
 Ngày 07/10/2026, người dùng đã yêu cầu tiếp tục: **cải thiện BT2 tìm F0 trước, rồi làm bài phân đoạn mới thầy giao trong XLTN-BT1-BO-SUNG**. Yêu cầu mới thay trạng thái dừng trước đó; không schedule. Giữ mục tiêu mỗi file Average MAPE≤2%, kiểm tra các gate và notebook chạy thực; audit nguồn chỉ phục vụ mục tiêu này.
 
 ## Đọc tối thiểu

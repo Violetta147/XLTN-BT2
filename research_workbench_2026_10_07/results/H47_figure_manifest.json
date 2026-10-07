@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H47_nested",
+      "png": "figures/H47_nested.png",
+      "svg": "figures/H47_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H47_metrics.csv",
+          "sha256": "2895a691d0419b2e40edef2078be09d30f76e5d90326c1256877563401f1453e"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "augmented_voicing_controller.py",
+      "generator_sha256": "ed2896fc6846d4d50858070a8339fc9ad255d844ce73def4018451dab445ae3f",
+      "command": "python research_workbench_2026_10_07/augmented_voicing_controller.py H47"
+    }
+  ]
+}
