@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\XLTN-BT2\research_workbench_2026_10_07\verify_dataset_quality.py", line 130, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\XLTN-BT2\research_workbench_2026_10_07\verify_dataset_quality.py", line 95, in main
+    assert len(interior) == detail.interior_samples
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

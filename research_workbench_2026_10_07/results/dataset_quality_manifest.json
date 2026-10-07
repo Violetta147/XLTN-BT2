@@ -1,0 +1,148 @@
+{
+  "timestamp_utc": "2026-10-07T06:41:39.154057+00:00",
+  "policy": {
+    "scope": "Read-only descriptive WAV/LAB quality audit of both splits; no F0 inference, fitting or tuning",
+    "reference_grid": "full frames, length round(fs*0.025), hop round(fs*0.010), center label",
+    "exact_clipping": "native integer min/max rails; float abs>=1",
+    "near_rail": "abs(normalized PCM)>=0.99; descriptive flag, not proof of clipping",
+    "segment_energy": "RMS from segment interiors with fixed 20 ms guard; exact decimal LAB boundaries mapped by ceil(time*fs); no denoising",
+    "energy_ratio": "20log10(interior V RMS / interior SIL RMS); energy separation proxy, not clean-reference SNR",
+    "duplicates": "whole-file SHA256 and exact native PCM SHA256 including fs/dtype/shape; no near-duplicate or speaker claim",
+    "stats": "report original segment LAB and current 3GT separately, without changing either"
+  },
+  "python": "3.13.11",
+  "numpy": "2.4.3",
+  "scipy": "1.17.1",
+  "generator_sha256": "7bdd95c8ca098bd9d79796e90e33b124c1276d056839ace65d326443d1edfc12",
+  "inputs": [
+    {
+      "path": "TinHieuHuanLuyen/phone_F1.wav",
+      "sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12"
+    },
+    {
+      "path": "TinHieuHuanLuyen/phone_F1.lab",
+      "sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31"
+    },
+    {
+      "path": "research_3gt_2026_10_05/train_3gt/phone_F1.lab",
+      "sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192"
+    },
+    {
+      "path": "TinHieuHuanLuyen/phone_M1.wav",
+      "sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22"
+    },
+    {
+      "path": "TinHieuHuanLuyen/phone_M1.lab",
+      "sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5"
+    },
+    {
+      "path": "research_3gt_2026_10_05/train_3gt/phone_M1.lab",
+      "sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e"
+    },
+    {
+      "path": "TinHieuHuanLuyen/studio_F1.wav",
+      "sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5"
+    },
+    {
+      "path": "TinHieuHuanLuyen/studio_F1.lab",
+      "sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3"
+    },
+    {
+      "path": "research_3gt_2026_10_05/train_3gt/studio_F1.lab",
+      "sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5"
+    },
+    {
+      "path": "TinHieuHuanLuyen/studio_M1.wav",
+      "sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+    },
+    {
+      "path": "TinHieuHuanLuyen/studio_M1.lab",
+      "sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98"
+    },
+    {
+      "path": "research_3gt_2026_10_05/train_3gt/studio_M1.lab",
+      "sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b"
+    },
+    {
+      "path": "TinHieuKiemThu/phone_F2.wav",
+      "sha256": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519"
+    },
+    {
+      "path": "TinHieuKiemThu/phone_F2.lab",
+      "sha256": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565"
+    },
+    {
+      "path": "research_3gt_2026_10_05/test_3gt/phone_F2.lab",
+      "sha256": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f"
+    },
+    {
+      "path": "TinHieuKiemThu/phone_M2.wav",
+      "sha256": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297"
+    },
+    {
+      "path": "TinHieuKiemThu/phone_M2.lab",
+      "sha256": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec"
+    },
+    {
+      "path": "research_3gt_2026_10_05/test_3gt/phone_M2.lab",
+      "sha256": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238"
+    },
+    {
+      "path": "TinHieuKiemThu/studio_F2.wav",
+      "sha256": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38"
+    },
+    {
+      "path": "TinHieuKiemThu/studio_F2.lab",
+      "sha256": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94"
+    },
+    {
+      "path": "research_3gt_2026_10_05/test_3gt/studio_F2.lab",
+      "sha256": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852"
+    },
+    {
+      "path": "TinHieuKiemThu/studio_M2.wav",
+      "sha256": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681"
+    },
+    {
+      "path": "TinHieuKiemThu/studio_M2.lab",
+      "sha256": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a"
+    },
+    {
+      "path": "research_3gt_2026_10_05/test_3gt/studio_M2.lab",
+      "sha256": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/dataset_quality_per_file.csv",
+      "sha256": "016009f2d694370be513104a9f4aa635358d93d98f925412c62ced3dc48a9bf1"
+    },
+    {
+      "path": "results/dataset_quality_segments.csv",
+      "sha256": "3ced68b096d5965116e96f6de693e311b55d37400a72828e5a762e3cdf7ab665"
+    },
+    {
+      "path": "results/dataset_quality_duplicate_pairs.csv",
+      "sha256": "23e373fd61ea7638e4ca2211d3c8ba47d7ffcf5d00df3fd2b8e02b2c490737cf"
+    },
+    {
+      "path": "DATASET_QUALITY_REPORT.md",
+      "sha256": "6ed87daf7bba86aefbb9f0529316a15e0734cc3a69f0dcc88cd1ac6fb17e2899"
+    },
+    {
+      "path": "figures/dataset_quality_waveforms.png",
+      "sha256": "3db07907c7f0c854faab93ece2f942b5b815fbde40ce829f8caad29bea688322"
+    },
+    {
+      "path": "figures/dataset_quality_waveforms.svg",
+      "sha256": "fa72e168073333d1b19b95a35d0520f3a8975f7d2278f9e22d3fa28f4f041041"
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "duration_s": 26.12469387755102,
+    "rail_samples": 0,
+    "lab_issues": 0,
+    "pair_count": 28
+  }
+}

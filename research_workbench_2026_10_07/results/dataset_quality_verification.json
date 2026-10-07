@@ -1,0 +1,13 @@
+{
+  "files_verified": 8,
+  "input_hashes_verified": 24,
+  "pair_checks": 28,
+  "cross_split_pairs": 16,
+  "independent_reader": "stdlib wave with native int16 PCM; no scipy audio decoder or F0 inference",
+  "original_lab_and_3gt_verified": true,
+  "segment_sample_energy_and_grid_counts_verified": true,
+  "previous_train_profile_parity": true,
+  "immutable_inputs_verified": true,
+  "verifier_sha256": "8092a167f7e2bb67fead0c3d5453f7228991236452cb736d5a7c12521f332b82",
+  "manifest_sha256": "7fc3af4bb439e57ce5d2db5a53c7255efc9a0b546991139de52711b1529109b5"
+}

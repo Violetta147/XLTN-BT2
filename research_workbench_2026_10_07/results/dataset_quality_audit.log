@@ -1,0 +1,10 @@
+split          file  duration_s  rail_samples  tail_unlabeled_ms  v_sil_energy_ratio_db
+train  phone_F1.wav    3.240000             0          10.000000              25.926072
+train  phone_M1.wav    4.160000             0          10.000000              24.234726
+train studio_F1.wav    2.863197             0           3.197279              40.351643
+train studio_M1.wav    2.730159             0           0.158730              38.816620
+ test  phone_F2.wav    4.800000             0           0.000000              26.009560
+ test  phone_M2.wav    2.800000             0           0.000000              28.938821
+ test studio_F2.wav    3.149478             0           9.478458              52.832599
+ test studio_M2.wav    2.381859             0           1.859410              39.008787
+Wrote read-only QA outputs; no F0 model or parameter selection.
