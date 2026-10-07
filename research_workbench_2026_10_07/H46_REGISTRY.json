@@ -1,0 +1,56 @@
+{
+  "registered_utc": "2026-10-07T09:00:22.959725+00:00",
+  "baseline_commit": "29f712a",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "3d03ad098ba44c637880803085a99cb2fdc34f4b",
+  "family": "H46",
+  "algorithm": "Top-K H44 ensemble ranked using origin-grouped noise augmentation in fit pool",
+  "options": [
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "praat7_filtered_v0.3",
+      "method": "control"
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_pitch_spectral_p170",
+      "method": "hard_control"
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_ensemble_k01",
+      "method": "ensemble",
+      "top_k": 1
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_ensemble_k03",
+      "method": "ensemble",
+      "top_k": 3
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_ensemble_k05",
+      "method": "ensemble",
+      "top_k": 5
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_ensemble_k09",
+      "method": "ensemble",
+      "top_k": 9
+    }
+  ]
+}
