@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "H22_fixed_feature_control",
+      "png": "figures/H22_fixed_feature_control.png",
+      "svg": "figures/H22_fixed_feature_control.svg",
+      "sources": [
+        {
+          "path": "results\\H22_fixed_lofo_metrics.csv",
+          "sha256": "9da28b7538177a885cbc8b423e839b4d32e9d01802a4f9b052bda055ba823678"
+        }
+      ],
+      "caption_vi": "Fixed LOFO3D so2D: chỉ thêm ZCR, giữ C1 và cách fit/score.",
+      "limits_vi": "Bốn file đã xem nhiều lần; không phải held-out corpus mới. Không dùng fixed-control scores để mở grid sau đo.",
+      "generator": "zcr_logistic.py",
+      "generator_sha256": "a285521c8694c20438961a7bc104d67e8b8731c8699cccbe8d5e11b1471c574d",
+      "command": "python research_workbench_2026_10_07/zcr_logistic.py H22"
+    },
+    {
+      "name": "H22_nested",
+      "png": "figures/H22_nested.png",
+      "svg": "figures/H22_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H22_metrics.csv",
+          "sha256": "b3f0aae227b258d0f6b03145956ac2f04308070ff2374b0f08d241dbddce04b7"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "zcr_logistic.py",
+      "generator_sha256": "a285521c8694c20438961a7bc104d67e8b8731c8699cccbe8d5e11b1471c574d",
+      "command": "python research_workbench_2026_10_07/zcr_logistic.py H22"
+    }
+  ]
+}
