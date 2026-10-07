@@ -1,0 +1,5 @@
+file,center_v_frames,reference_F0num,count_mape_if_exact_v_and_all_finite,average_mape_contribution_if_other_components_zero
+phone_F1.wav,153,148.0,3.3783783783783785,1.1261261261261262
+phone_M1.wav,244,232.0,5.172413793103448,1.7241379310344829
+studio_F1.wav,123,127.0,3.1496062992125986,1.0498687664041995
+studio_M1.wav,94,82.0,14.634146341463415,4.878048780487805

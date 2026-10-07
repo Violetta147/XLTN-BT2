@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "model_refits": 2793,
+  "verification_source_sha256": "1c51b0dbbe8bb75bfafa9c4c58ce33ccf2bdd4e070414016acafd114f8195a63",
+  "independent_metric_groups": 10668,
+  "robustness_pcm_fullfft_dct_acf_frames": 3873,
+  "fit_selection_exclusion": true,
+  "seed_never_selected": true,
+  "permutation_groups": 900,
+  "experiment_sha256": "b1f7a02f1db9843d5fe2be045871ee3d458c420093c7cfe0217b7fc5b8d55d26",
+  "freeze_sha256": "b3f359c23aac1d79b80c68945e390d64ba80cb735f955ad03002c3039256be08"
+}
