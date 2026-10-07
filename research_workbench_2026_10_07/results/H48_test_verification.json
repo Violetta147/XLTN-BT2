@@ -1,0 +1,10 @@
+{
+  "independent_curve_rows": 1206,
+  "independent_test_metric_rows": 8,
+  "source_config_wav_lab_hashes": true,
+  "full_fft_and_candidate_pick_verified": true,
+  "new_native_calls_in_verifier": 0,
+  "all_8_files_lt_2": false,
+  "experiment_sha256": "003d5fecf7361aa54e4467a95b7e8887177e389377e0a73b002a6252b333ca40",
+  "verifier_sha256": "125f19c002c8d2e1077372c973d503a6bd87b58ad0d99eb040fa6a51b9f91153"
+}

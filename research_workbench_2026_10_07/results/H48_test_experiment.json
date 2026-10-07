@@ -1,0 +1,168 @@
+{
+  "family": "H48",
+  "config": {
+    "registered_utc": "2026-10-07T09:27:06.654720+00:00",
+    "config": {
+      "option_id": "amdf_pitch_spectral_p170",
+      "gate_method": "filtered",
+      "voicing_threshold": 0.3,
+      "range_hz": [
+        70,
+        400
+      ],
+      "short_window_ms": 25,
+      "long_window_ms": 40,
+      "hop_ms": 10,
+      "minimum_gate_hz": 170,
+      "hf_threshold": 0.05,
+      "hf_cutoff_hz": 1000,
+      "agreement_cents": 200,
+      "canonical_frame_ms": 25,
+      "target": "every file average_mape < 2 percent"
+    },
+    "rollback_repository_commit": "77cae08e14fa6e29ff33c1d1f6ef40472b8816cb",
+    "chosen_using": "H47 train inner minimax; hard170 final and all outer selections",
+    "source_sha256": {
+      "research_workbench_2026_10_07\\fixed_hard170_test.py": "abbc751e5f9faa0135e3c93a4e5774e4b4bf00e00b655b88f27d64928cc0cb85",
+      "research_workbench_2026_10_07\\amdf_anchor.py": "8dfa3fed10629e06d8df989cb680832a26c76f255b9deffa16a696a6554af51f",
+      "research_workbench_2026_10_07\\amdf_soft_spectral.py": "011cf01129a161901d1560cf9cf9b6ea7798f5d6251faadef9dabefe74be19b7",
+      "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+      "research_workbench_2026_10_07\\praat_extract_native.praat": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+      "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+      "research_workbench_2026_10_07\\augmented_voicing_controller.py": "ed2896fc6846d4d50858070a8339fc9ad255d844ce73def4018451dab445ae3f"
+    },
+    "goal_strict_lt_2": true,
+    "test_parameter_grid": null
+  },
+  "config_sha256": "3abb716fe331a263f38d4d614504e95150fbba9ed587f719310a52df689e2346",
+  "train_source_sha256": "2895a691d0419b2e40edef2078be09d30f76e5d90326c1256877563401f1453e",
+  "native_calls": {
+    "phone_F2.wav": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\phone_F2.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "9054644bc28007b331074fe52b87e36f9648a4d74408e99e6c49fbd497dbb30c",
+        "native_frames": 476,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "evidence_path": "results\\H48_native_phone_F2.npz",
+      "evidence_sha256": "8eff1ca96126d33c19fc2f59f3329630fa6b7bc06109d5d3a3923d8fe2a74bc6",
+      "wav_sha256": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+      "curves": {
+        "25": "91fa56ba79812b381f0f4a89bd538cfaa5b0ba05ff11526c49030809f5ecdc8c",
+        "40": "aa75bfed11c2a16e00e505fd7276921b9396a754d45a82351c034ff979b23bee"
+      },
+      "labels_sha256": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565",
+      "stats_sha256": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f"
+    },
+    "phone_M2.wav": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\phone_M2.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "20624f4d1896d6baf3a1c2ad4dfc725cc6e1c430bb9d3a8f8bcb789eec24766f",
+        "native_frames": 276,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "evidence_path": "results\\H48_native_phone_M2.npz",
+      "evidence_sha256": "ab2a4a22b167718fa8d72a84d354292b7229e51810e5efc655bde4d8e4009281",
+      "wav_sha256": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+      "curves": {
+        "25": "0c8a687c8ed5c9b65ba49770c1d5acbbb610034657727f0a27d3031aa8a3b603",
+        "40": "aee21f8bced5ee92f651b66747d9e6fab62d9bc38f5a677fa323f5edeaecfde9"
+      },
+      "labels_sha256": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
+      "stats_sha256": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238"
+    },
+    "studio_F2.wav": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\studio_F2.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "ea05c97502ab25c60b51962be5b1892f109a472952ac1d46e8f974cfa4d70f82",
+        "native_frames": 311,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "evidence_path": "results\\H48_native_studio_F2.npz",
+      "evidence_sha256": "2ac5156a49c15c02f124093d1d94fcfcfc47e5671e693ee927a42e34da8ff2d7",
+      "wav_sha256": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+      "curves": {
+        "25": "846dcc81c5e28277e4c6664fdc10c43ca71e5e89242476db833698f647020534",
+        "40": "502482fe6cc2ea9c9547b125cc08831d12906af04f429916cd81bb9db5bebf3c"
+      },
+      "labels_sha256": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
+      "stats_sha256": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852"
+    },
+    "studio_M2.wav": {
+      "native_call": {
+        "command": [
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+          "--run",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+          "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuKiemThu\\studio_M2.wav",
+          "filtered",
+          "0.3"
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "stdout_sha256": "ce7f604d797f468c5284ecd140f734d4e6bc947780b5148f9ecfa6369dcabc0b",
+        "native_frames": 234,
+        "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+        "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+        "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+      },
+      "evidence_path": "results\\H48_native_studio_M2.npz",
+      "evidence_sha256": "966d68951784a5930d8477ac5d4cfd3476249aeb2f68fc964aeb15f92ecfb8df",
+      "wav_sha256": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+      "curves": {
+        "25": "d5bb293e452a6687e90c759bea535b7bfc41d55209bb788a0020d245f8440217",
+        "40": "270ca09423e3a5539066247584d5d397c28145f71d57ad0ff5c27862ee0493d1"
+      },
+      "labels_sha256": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
+      "stats_sha256": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975"
+    }
+  },
+  "new_native_calls": 4,
+  "test_used_for_selection": false,
+  "test_history": "Test seen in earlier notebook and QA history; fixed before this measurement, not a pristine held-out set.",
+  "goal_all_8_files_lt_2": false,
+  "goal_all_test_files_lt_2": false,
+  "train_only_source": "H47 hard170 replay verified; reused train metrics, no train rerun",
+  "completed_utc": "2026-10-07T09:29:15.815598+00:00",
+  "wall_time_s": 42.58876129999953,
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.4.3",
+    "praat": "7.0.02"
+  }
+}
