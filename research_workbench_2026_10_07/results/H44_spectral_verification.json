@@ -1,0 +1,19 @@
+{
+  "family": "H44",
+  "fixed_groups_verified": 36,
+  "curve_groups_recomputed": 8,
+  "curve_rows_recomputed": 1176,
+  "spectral_groups_recomputed": 4,
+  "spectral_rows_recomputed": 588,
+  "FFT_verification": "full complex FFT; explicit Hann formula",
+  "new_native_calls": 0,
+  "historical_native_source_groups_verified": 4,
+  "fit_logs_checked": 152,
+  "H41_controls_parity": true,
+  "H43_hard_pitch_condition_parity": true,
+  "voicing_count_preservation": true,
+  "GT_poison_runner_check": true,
+  "historical_binary_and_script_hashes_verified": true,
+  "verifier_sha256": "43ac33c0f799a2f7c9ed03e9add94b839f52897af36d03c7397b9a0769492be6",
+  "experiment_sha256": "025e03c7fd0311111f0d88abe46a8e6bac5d8fb7f96a1e0c12868d4b91ce43cb"
+}

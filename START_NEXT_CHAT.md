@@ -19,13 +19,13 @@ Ngày 07/10/2026, người dùng đã yêu cầu tiếp tục: **cải thiện B
 - H41 nested bốn file đều ≤2%, nhưng gate std phone_F1 FAIL. H43 fixed170 bốn file đều ≤2%, nhưng nested studio_M1 chọn140 rồi đạt 2.523880%; target FAIL dù tám gate PASS. Chưa có cùng pipeline đạt toàn bộ mục tiêu và gate. Không thay frozen baseline hoặc notebook gốc.
 - Các kết quả nested vẫn exploratory: chỉ bốn train đã được xem nhiều vòng. Test đã xem lịch sử; QA dữ liệu đọc test chỉ mô tả, không dùng để chọn cấu hình.
 
-## H44 đang nối tiếp — chưa có kết quả BT2 ở mốc đăng ký
+## H44 đã đo và kiểm tra — mục tiêu còn thiếu
 
 Rule chuyển mềm AMDF25/40ms, runner và verifier đã rà; whitelist verifier được bổ sung H44 đúng objective minimax. Synthetic precheck PASS; `uses_BT2_WAV=false`, không native call mới. Đã tạo `H44_REGISTRY.json` gồm 9 options; chốt source/registry/precheck bằng commit/push và kiểm tra remote trước benchmark.
 
-**Ở mốc đăng ký này chưa chạy benchmark H44, chưa có MAPE H44 hoặc notebook H44.** Không suy diễn synthetic PASS thành cải thiện dữ liệu thật.
+H44 đã chạy sau prereg commit `8ed9d7d` được verify remote. Nested Average MAPE bốn file: **0.340080 / 0.776151 / 1.473576 / 2.413248%**, mean1.250764%; tám gate PASS nhưng mỗi file≤2% vẫn FAIL ở studio_M1. Final vẫn H43hard170; outer studio_M1 chọn softc140/w40. Không đổi grid/gate để gọi đạt. Chưa có notebook H44.
 
-Tiếp theo: chạy H44 một lần theo registry đã commit/push, verify độc lập, giữ failure, cập nhật báo cáo/figures/STATE và commit/push. Nếu kết quả đạt mục tiêu và gate, hoàn thiện notebook chạy thực trước chuyển sang bài mới. Không chạy lại `prepare_h44.py` tùy tiện vì generator đã tạo file.
+Verifier đã đối chiếu 144 inner traces/152 fit logs/36 fixed groups, 1176 NAMDF curve rows/588 spectral rows bằng fullFFT và PCM; nativecall mới0, controlH41/H43 khớp, WAV/LAB/frozen giữ. Không chạy lại H44. Hướng tiếp theo: đăng ký riêng việc kết hợp các cấu hình để kiểm tra độ ổn định lựa chọn; chưa đăng ký/đo ở mốc này. Khi hoàn thành cải thiện và notebook chạy thực mới chuyển sang bài mới. Không chạy lại `prepare_h44.py` tùy tiện vì generator đã tạo file.
 
 ## Câu hỏi gần nhất: kiểm tra chất lượng dataset
 
