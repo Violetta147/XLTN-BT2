@@ -1,0 +1,29 @@
+{
+  "figures": [
+    {
+      "name": "H22_zcr_diagnostics",
+      "png": "figures/H22_zcr_diagnostics.png",
+      "svg": "figures/H22_zcr_diagnostics.svg",
+      "sources": [
+        {
+          "path": "results\\H22_diagnostic_frames.csv",
+          "sha256": "9522b6051dee4bce240ddfd75b1be5f21658abc46708773569064c36d3e9399a"
+        }
+      ],
+      "caption_vi": "Fixed LOFO đặc trưng raw và quyết định2D/3D; logit0 là probability0.5 trước energy gate.",
+      "limits_vi": "Thêm đặc trưng cũng refit các hệ số khác; ZCR term đơn lẻ không là tác động nhân quả. Histogram train4file, không quy luật giới tính.",
+      "generator": "zcr_diagnostics.py",
+      "generator_sha256": "2d42fff7c63a86e65aa7ff9e608a352e2a72867303fb2073774ea0e08749b185",
+      "command": "python research_workbench_2026_10_07/zcr_diagnostics.py"
+    }
+  ],
+  "fixed_scores_reproduced": true,
+  "sources": {
+    "H22_fixed_lofo_metrics.csv": "9da28b7538177a885cbc8b423e839b4d32e9d01802a4f9b052bda055ba823678",
+    "H22_diagnostic_frames.csv": "9522b6051dee4bce240ddfd75b1be5f21658abc46708773569064c36d3e9399a",
+    "H22_coefficients.csv": "44d2cee6de945005bd98359653592976f52805cf81d18b3d6e7bf74848847db2",
+    "H22_decision_transitions.csv": "483b92237846ebc53dd5e27975d256298ed8c4df4ff8878f49720f5a822d0adf",
+    "H22_zcr_by_file_label.csv": "501efd4a6b506cb18b50036c91938cbaf4348e9c1bbbbabc7c1a9c66c49ed60c"
+  },
+  "runner_sha256": "a285521c8694c20438961a7bc104d67e8b8731c8699cccbe8d5e11b1471c574d"
+}

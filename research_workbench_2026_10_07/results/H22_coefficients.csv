@@ -1,0 +1,9 @@
+held_file,option_id,fit_files,intercept,coef_ACF_score,coef_relative_rms,coef_zcr_crossings_per_s
+phone_F1.wav,raw_lr1_2d,phone_M1.wav|studio_F1.wav|studio_M1.wav,-0.09055349346337732,2.7522877825448435,1.074876051598554,
+phone_F1.wav,raw_lr1_3d_zcr,phone_M1.wav|studio_F1.wav|studio_M1.wav,-0.17493617961543179,2.3554522825716906,1.1922885633812084,-0.7640019401847167
+phone_M1.wav,raw_lr1_2d,phone_F1.wav|studio_F1.wav|studio_M1.wav,-0.19479383189929877,2.8265476050757274,1.1447019987119,
+phone_M1.wav,raw_lr1_3d_zcr,phone_F1.wav|studio_F1.wav|studio_M1.wav,-0.5333035294617263,2.358837184228755,1.3336509018828153,-1.539738237106276
+studio_F1.wav,raw_lr1_2d,phone_F1.wav|phone_M1.wav|studio_M1.wav,-0.004475703190768236,2.647862110952418,1.101586276371324,
+studio_F1.wav,raw_lr1_3d_zcr,phone_F1.wav|phone_M1.wav|studio_M1.wav,-0.022093958499797436,2.0600995267742896,1.447195386011759,-1.0990699282969412
+studio_M1.wav,raw_lr1_2d,phone_F1.wav|phone_M1.wav|studio_F1.wav,-0.022096082303958643,2.934481055850133,1.1587055924948464,
+studio_M1.wav,raw_lr1_3d_zcr,phone_F1.wav|phone_M1.wav|studio_F1.wav,-0.04417612868738414,2.4128244223742024,1.5975000366710195,-1.069398030154088

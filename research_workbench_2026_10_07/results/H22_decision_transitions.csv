@@ -1,0 +1,13 @@
+file,label,frames,voiced_2d,voiced_3d,lost_voiced,gained_voiced
+phone_F1.wav,v,153,135,136,0,1
+phone_F1.wav,uv,69,3,3,0,0
+phone_F1.wav,sil,100,0,0,0,0
+phone_M1.wav,v,244,202,193,12,3
+phone_M1.wav,uv,62,1,0,1,0
+phone_M1.wav,sil,108,0,0,0,0
+studio_F1.wav,v,123,116,119,0,3
+studio_F1.wav,uv,24,2,4,0,2
+studio_F1.wav,sil,137,1,1,0,0
+studio_M1.wav,v,94,83,85,0,2
+studio_M1.wav,uv,25,3,3,0,0
+studio_M1.wav,sil,152,0,0,0,0

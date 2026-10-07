@@ -50,3 +50,34 @@ StandardScaler/coefficients/class weights chỉ fit subset train. Tỉ lệ clas
 Lệnh: `python research_workbench_2026_10_07/zcr_logistic.py H22`
 
 Nguồn API: [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). H22_REGISTRATION.md xác định câu hỏi, controls và giới hạn trước đo.
+
+## Đối chiếu cố định: thêm ZCR vào cùng logisticC1
+
+| option_id | average_mape | macro_f1 | recall_v | false_voiced_sil |
+| --- | --- | --- | --- | --- |
+| raw_0_0_f25_h10 | 7.27924 | 0.841398 | 0.865862 | 3 |
+| raw_lr1_2d | 5.47073 | 0.863433 | 0.884072 | 1 |
+| raw_lr1_3d_zcr | 5.7574 | 0.864048 | 0.887902 | 1 |
+
+| option_id | file | average_mape | F0std_mape | macro_f1 | recall_v | false_voiced_sil |
+| --- | --- | --- | --- | --- | --- | --- |
+| raw_0_0_f25_h10 | phone_F1.wav | 14.6363 | 42.0456 | 0.882228 | 0.901961 | 2 |
+| raw_0_0_f25_h10 | phone_M1.wav | 8.5901 | 12.3773 | 0.785078 | 0.807377 | 0 |
+| raw_0_0_f25_h10 | studio_F1.wav | 3.406 | 1.85245 | 0.899353 | 0.934959 | 1 |
+| raw_0_0_f25_h10 | studio_M1.wav | 2.48454 | 2.38905 | 0.798933 | 0.819149 | 0 |
+| raw_lr1_2d | phone_F1.wav | 7.35022 | 15.1989 | 0.89529 | 0.882353 | 0 |
+| raw_lr1_2d | phone_M1.wav | 8.47509 | 12.3737 | 0.821599 | 0.827869 | 0 |
+| raw_lr1_2d | studio_F1.wav | 2.70615 | 1.45466 | 0.896422 | 0.943089 | 1 |
+| raw_lr1_2d | studio_M1.wav | 3.35148 | 4.33285 | 0.840421 | 0.882979 | 0 |
+| raw_lr1_3d_zcr | phone_F1.wav | 7.07124 | 15.1079 | 0.899964 | 0.888889 | 0 |
+| raw_lr1_3d_zcr | phone_M1.wav | 10.4042 | 13.7186 | 0.795933 | 0.790984 | 0 |
+| raw_lr1_3d_zcr | studio_F1.wav | 1.10863 | 0.701082 | 0.900407 | 0.96748 | 1 |
+| raw_lr1_3d_zcr | studio_M1.wav | 4.44554 | 4.83895 | 0.85989 | 0.904255 | 0 |
+
+Fixed3D tăng nhẹ F1/recall trung bình nhưng AvgMAPE xấu hơn fixed2D. Phone_M1 recallV giảm0.827869→0.790984, trong khi studio_F1 tăng0.943089→0.967480. Không suy thành quy luật nam/nữ: mỗi ô device×F/M chỉ1file, không có metadata người nói độc lập.
+
+Primary nested chọn3D khi giữ phone_M1 ngoài chọn, raw ở3file còn lại. AvgMAPE7.732759% so accepted7.279236%, không đạt gate cải thiện5%. Final chọn2D, selectedLOFO5.470735% có ảnh hưởng lựa chọn, không thay thế nested. Giữ champion.
+
+![Fixed feature comparison](figures/H22_fixed_feature_control.png)
+
+Đọc [phân tích khung đổi quyết định và hệ số](H22_ERROR_ANALYSIS.md).
