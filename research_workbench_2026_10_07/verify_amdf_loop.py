@@ -24,7 +24,7 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            if family in ('H25','H26','H27','H28','H29'):
+            if family in ('H25','H26','H27','H28','H29','H30'):
                 ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
             else:
                 ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
@@ -95,6 +95,47 @@ def verify(family, baseline):
         nested = metrics[(metrics.split == 'nested') & (metrics.model == 'candidate')]
         assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape <= 2).all())
         extra['raw_harvest_reproduced_and_gate_fit_pool_verified'] = True
+    if family == 'H30':
+        proof = json.loads((HERE / 'results/praat_native_7002_provenance.json').read_text())
+        assert verify_results.digest(proof['exe']) == proof['exe_sha256'] == result['environment']['native_exe_sha256']
+        for fit in fits:
+            if fit['option_id'].startswith('praat7_'):
+                assert fit['fitted']['requires_fit'] is False
+                assert fit['fitted']['actual_fit_files'] == [] and fit['classifier'] is None
+        fixed = pd.read_csv(HERE / 'results/H30_fixed_lofo.csv').set_index(['option_id','file'])
+        native = pd.read_csv(HERE / 'results/H30_raw_native_frames.csv')
+        contours = pd.read_csv(HERE / 'results/H30_nested_contours.csv')
+        identities = {option['id'] for option in json.loads((HERE / 'H30_REGISTRY.json').read_text())['options'] if option['method'] != 'control'}
+        assert set(native.option_id) == identities
+        assert len(result['native_calls']) == 16
+        for (identity, file), group in native.groupby(['option_id', 'file']):
+            canonical = contours[(contours.model == 'accepted') & (contours.file == file)]
+            times, target = group.time_s.to_numpy(), canonical.time_s.to_numpy()
+            raw = group.raw_f0_hz.to_numpy()
+            assert np.isfinite(raw).all() and (raw >= 0).all()
+            right = np.minimum(np.searchsorted(times, target), len(times)-1)
+            left = np.maximum(right-1, 0)
+            indices = np.where(abs(times[left]-target) <= abs(times[right]-target), left, right)
+            fs = int(pd.read_csv(verify_results.REPO / 'research_workbench_2026_10_06/results/training_data_profile.csv').set_index('file').loc[file,'fs'])
+            support = abs(times[indices]-target) <= .005+1/fs
+            pred = support & (raw[indices] >= 70) & (raw[indices] <= 400)
+            valid = raw[indices][pred]
+            saved = fixed.loc[(identity,file)]
+            statistics = {'F0mean': valid.mean(), 'F0std': valid.std(), 'F0num': len(valid)}
+            assert all(np.isclose(saved[key], value, atol=1e-8) for key,value in statistics.items())
+            labels = canonical.label.to_numpy()
+            counts = {'TP': int(((labels=='v') & pred).sum()), 'FN': int(((labels=='v') & ~pred).sum()),
+                      'FP': int(((labels=='uv') & pred).sum()), 'TN': int(((labels=='uv') & ~pred).sum()),
+                      'false_voiced_sil': int(((labels=='sil') & pred).sum())}
+            assert all(saved[key] == value for key,value in counts.items())
+            assert np.isclose(saved.projection_coverage, support.mean())
+            assert saved.native_frames == len(group)
+            assert result['range_rejected_frames'][identity+'|'+file] == int(((raw>0)&((raw<70)|(raw>400))).sum())
+            call = result['native_calls'][identity+'|'+file]
+            assert call['returncode'] == 0 and call['exe_sha256'] == proof['exe_sha256']
+            assert call['script_sha256'] == verify_results.digest(HERE / 'praat_extract_native.praat')
+            assert Path(call['command'][3]).resolve() == (verify_results.REPO / 'TinHieuHuanLuyen' / file).resolve()
+        extra['native_all_fixed_f0_stats_voicing_range_projection_and_calls_replayed'] = True
     if family == 'H24':
         contours = pd.read_csv(HERE / 'results/H24_nested_contours.csv')
         for file, group in contours.groupby('file'):
