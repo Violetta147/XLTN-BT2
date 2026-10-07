@@ -1,0 +1,18 @@
+{
+  "family": "H22",
+  "selection_replayed_from_all_inner_traces": true,
+  "fits_checked": 56,
+  "classifier_dimensions_and_fit_ids_valid": true,
+  "all_decision_gates_recomputed_from_csv": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": false,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "verifier_sha256": "d72cf2b2a59a3b2dacdaded0a9414eff6af4a81dad39307d39b863cc51aa4ca1",
+  "command": "python research_workbench_2026_10_07/verify_selection.py H22"
+}
