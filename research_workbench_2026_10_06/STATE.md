@@ -2,6 +2,8 @@
 
 Cập nhật ngày 07/10/2026. Người dùng xác nhận phần đang thấy mất là câu trả lời/tiến trình trong chat. Các artifacts tối 06/10 còn trên máy và đã được đối chiếu, lưu Git và push bổ sung.
 
+Phiên mới H18/H19/H20 nối tại [STATE ngày07/10](../research_workbench_2026_10_07/STATE.md). Đọc trạng thái mới trước khi chạy tiếp; danh mục dưới đây là kết quả tới H17.
+
 ## Chế độ làm việc hiện tại
 
 - Làm trực tiếp trong chat. Người dùng đã xóa schedule bt2-nghi-n-c-u-n-04-00; không tạo lại lịch.
