@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H19_nested",
+      "png": "figures/H19_nested.png",
+      "svg": "figures/H19_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H19_metrics.csv",
+          "sha256": "88e7f63dc459f3450135512978d56e29ba7154a28535bc97847cc31cc89d8a0b"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "tuning.py",
+      "generator_sha256": "18471a0f015d8e798d6d326c2b692ab83bcd5d65f7fa7867f353b79dfe597360",
+      "command": "python research_workbench_2026_10_07/tuning.py H19"
+    }
+  ]
+}
