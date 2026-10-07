@@ -1,0 +1,18 @@
+{
+  "synthetic_only": true,
+  "uses_BT2_WAV": false,
+  "tests": [
+    {
+      "fs": 16000,
+      "gain_dc_invariance": true,
+      "tone_200hz_within_1hz": true,
+      "silence_finite": true
+    },
+    {
+      "fs": 44100,
+      "gain_dc_invariance": true,
+      "tone_200hz_within_1hz": true,
+      "silence_finite": true
+    }
+  ]
+}
