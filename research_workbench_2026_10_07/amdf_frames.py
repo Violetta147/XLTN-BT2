@@ -55,6 +55,7 @@ def infer(native, training, option, config):
 
 
 def run(family):
+    assert not (HERE / f'results/{family}_experiment.json').exists(), 'Preserve completed experiment'
     started = time.perf_counter()
     options = json.loads((HERE / f'{family}_REGISTRY.json').read_text(encoding='utf-8'))['options']
     assert options == registry(family)
@@ -82,7 +83,7 @@ def run(family):
             pp, ff, support = project(native, by_name[held], pred, f0, option['hop_ms'])
             metrics = core.score_file(by_name[held], pp, ff)
             metrics.update(native_frames=len(pred), native_f0_count=int(np.isfinite(f0).sum()),
-                           projection_coverage=float(support.mean()), effective_median_span_ms=2 * option['hop_ms'])
+                           projection_coverage=float(support.mean()), effective_median_span_ms=(config.get('median', 1) - 1) * option['hop_ms'])
             prediction_cache[key] = (metrics, pp, ff, support)
             fit_log.append({'option_id': option['id'], 'fit_files': sorted(fit_names), 'held_file': held,
                             'fitted': fitted, 'classifier': classifier})
