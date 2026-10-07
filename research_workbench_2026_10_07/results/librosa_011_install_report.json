@@ -1,0 +1,651 @@
+{
+  "version": "1",
+  "pip_version": "25.3",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b5/ba/c63c5786dfee4c3417094c4b00966e61e4a63efecee22cb7b4c0387dda83/librosa-0.11.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1",
+          "hashes": {
+            "sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.2",
+        "name": "librosa",
+        "version": "0.11.0",
+        "summary": "Python module for audio and music processing",
+        "description": "[![librosa logo](docs/img/librosa_logo_text.svg)](https://librosa.org/)\n\n# librosa\n\n\nA python package for music and audio analysis.  \n\n[![PyPI](https://img.shields.io/pypi/v/librosa.svg)](https://pypi.python.org/pypi/librosa)\n[![Anaconda-Server Badge](https://anaconda.org/conda-forge/librosa/badges/version.svg)](https://anaconda.org/conda-forge/librosa)\n[![License](https://img.shields.io/pypi/l/librosa.svg)](https://github.com/librosa/librosa/blob/main/LICENSE.md)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)\n\n[![CI](https://github.com/librosa/librosa/actions/workflows/ci.yml/badge.svg)](https://github.com/librosa/librosa/actions/workflows/ci.yml)\n[![codecov](https://codecov.io/gh/librosa/librosa/branch/main/graph/badge.svg?token=ULWnUHaIJC)](https://codecov.io/gh/librosa/librosa)\n[![Docs](https://github.com/librosa/librosa/actions/workflows/docs.yml/badge.svg)](https://librosa.org/doc/latest/index.html)\n\n#  Table of Contents\n\n- [Documentation](#Documentation)\n- [Installation](#Installation)\n  - [Using PyPI](#using-pypi)\n  - [Using Anaconda](#using-anaconda)\n  - [Building From Source](#building-from-source)\n  - [Hints for Installation](#hints-for-the-installation)\n    - [`soundfile`](#soundfile)\n    - [`audioread`](#audioread-and-mp3-support)\n      - [Linux (`apt get`)](#linux-apt-get)\n      - [Linux (`yum`)](#linux-yum)\n      - [Mac](#mac)\n      - [Windows](#windows)\n- [Discussion](#discussion)\n- [Citing](#citing)\n\n---\n\n## Documentation\n\n\nSee https://librosa.org/doc/ for a complete reference manual and introductory tutorials.\n\nThe [advanced example gallery](https://librosa.org/doc/latest/advanced.html) should give you a quick sense of the kinds\nof things that librosa can do.\n\n---\n\n[Back To Top ↥](#librosa)\n\n\n## Installation\n\n\n### Using PyPI\n\nThe latest stable release is available on PyPI, and you can install it by saying\n```\npython -m pip install librosa\n```\n\n### Using Anaconda\n\nAnaconda users can install using ```conda-forge```:\n```\nconda install -c conda-forge librosa\n```\n\n### Building from source\n\nTo build librosa from source, say \n```\npython setup.py build\n```\nThen, to install librosa, say \n```\npython setup.py install\n```\nIf all went well, you should be able to execute the following commands from a python console:\n```\nimport librosa\nlibrosa.show_versions()\n```\nThis should print out a description of your software environment, along with the installed versions of other packages used by librosa.\n\n📝 OS X users should follow the installation guide given below.\n\nAlternatively, you can download or clone the repository and use `pip` to handle dependencies:\n\n```\nunzip librosa.zip\npython -m pip install -e librosa\n```\nor\n\n```\ngit clone https://github.com/librosa/librosa.git\npython -m pip install -e librosa\n```\n\nBy calling `pip list` you should see `librosa` now as an installed package:\n```\nlibrosa (0.x.x, /path/to/librosa)\n```\n\n---\n\n[Back To Top ↥](#librosa)\n\n### Hints for the Installation\n\n`librosa` uses `soundfile` and `audioread` to load audio files.\n\n📝 Note that older releases of `soundfile` (prior to 0.11) do not support MP3, which will cause librosa to fall back on the `audioread` library.\n\n### `soundfile`\n\nIf you're using `conda` to install librosa, then audio encoding dependencies will be handled automatically.\n\nIf you're using `pip` on a Linux environment, you may need to install `libsndfile`\nmanually.  Please refer to the [SoundFile installation documentation](https://python-soundfile.readthedocs.io/#installation) for details.\n\n### `audioread` and MP3 support\n\nTo fuel `audioread` with more audio-decoding power (e.g., for reading MP3 files),\nyou may need to install either *ffmpeg* or *GStreamer*.\n\n📝*Note that on some platforms, `audioread` needs at least one of the programs to work properly.*\n\nIf you are using Anaconda, install *ffmpeg* by calling\n\n```\nconda install -c conda-forge ffmpeg\n```\n\nIf you are not using Anaconda, here are some common commands for different operating systems:\n\n- ####  Linux (`apt-get`): \n\n```\napt-get install ffmpeg\n```\nor\n \n```\napt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly\n```\n- #### Linux (`yum`):\n```\nyum install ffmpeg\n```\nor\n\n\n```\nyum install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly\n```\n\n- #### Mac: \n```\nbrew install ffmpeg\n```\nor\n\n```\nbrew install gstreamer\n```\n\n- #### Windows: \n\ndownload ffmpeg binaries from this [website](https://www.gyan.dev/ffmpeg/builds/) or gstreamer binaries from this [website](https://gstreamer.freedesktop.org/)\n\nFor GStreamer, you also need to install the Python bindings with \n\n```\npython -m pip install pygobject\n```\n\n---\n\n[Back To Top ↥](#librosa)\n\n## Discussion\n\n\nPlease direct non-development questions and discussion topics to our web forum at\nhttps://groups.google.com/forum/#!forum/librosa\n\n---\n\n[Back To Top ↥](#librosa)\n\n## Citing\n\n\nIf you want to cite librosa in a scholarly work, there are two ways to do it.\n\n- If you are using the library for your work, for the sake of reproducibility, please cite\n  the version you used as indexed at Zenodo:\n\n    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)\n\n  From librosa version 0.10.2 or later, you can also use `librosa.cite()`\n  to get the DOI link for any version of librosa.\n\n- If you wish to cite librosa for its design, motivation, etc., please cite the paper\n  published at SciPy 2015:\n\n    McFee, Brian, Colin Raffel, Dawen Liang, Daniel PW Ellis, Matt McVicar, Eric Battenberg, and Oriol Nieto. \"librosa: Audio and music signal analysis in python.\" In Proceedings of the 14th python in science conference, pp. 18-25. 2015.\n\n---\n\n[Back To Top ↥](#librosa)\n",
+        "description_content_type": "text/markdown; charset=UTF-8",
+        "home_page": "https://librosa.org",
+        "author": "Brian McFee, librosa development team",
+        "author_email": "brian.mcfee@nyu.edu",
+        "license": "ISC",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: ISC License (ISCL)",
+          "Programming Language :: Python",
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "Topic :: Multimedia :: Sound/Audio :: Analysis",
+          "Framework :: Matplotlib",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "audioread>=2.1.9",
+          "numba>=0.51.0",
+          "numpy>=1.22.3",
+          "scipy>=1.6.0",
+          "scikit-learn>=1.1.0",
+          "joblib>=1.0",
+          "decorator>=4.3.0",
+          "soundfile>=0.12.1",
+          "pooch>=1.1",
+          "soxr>=0.3.2",
+          "typing_extensions>=4.1.1",
+          "lazy_loader>=0.1",
+          "msgpack>=1.0",
+          "standard-aifc; python_version >= \"3.13\"",
+          "standard-sunau; python_version >= \"3.13\"",
+          "numpydoc; extra == \"docs\"",
+          "sphinx!=1.3.1; extra == \"docs\"",
+          "sphinx_rtd_theme>=1.2.0; extra == \"docs\"",
+          "numba>=0.51; extra == \"docs\"",
+          "matplotlib>=3.5.0; extra == \"docs\"",
+          "sphinx-multiversion>=0.2.3; extra == \"docs\"",
+          "sphinx-gallery>=0.7; extra == \"docs\"",
+          "mir_eval>=0.5; extra == \"docs\"",
+          "ipython>=7.0; extra == \"docs\"",
+          "sphinxcontrib-svg2pdfconverter; extra == \"docs\"",
+          "sphinxcontrib-googleanalytics>=0.4; extra == \"docs\"",
+          "presets; extra == \"docs\"",
+          "sphinx-copybutton>=0.5.2; extra == \"docs\"",
+          "matplotlib>=3.5.0; extra == \"tests\"",
+          "packaging>=20.0; extra == \"tests\"",
+          "pytest-mpl; extra == \"tests\"",
+          "pytest-cov; extra == \"tests\"",
+          "pytest; extra == \"tests\"",
+          "samplerate; extra == \"tests\"",
+          "resampy>=0.2.2; extra == \"tests\"",
+          "types-decorator; extra == \"tests\"",
+          "matplotlib>=3.5.0; extra == \"display\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://librosa.org/doc",
+          "Download, https://github.com/librosa/librosa/releases",
+          "Source, https://github.com/librosa/librosa",
+          "Tracker, https://github.com/librosa/librosa/issues",
+          "Discussion forum, https://groups.google.com/g/librosa"
+        ],
+        "provides_extra": [
+          "docs",
+          "tests",
+          "display"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7e/16/fbe8e1e185a45042f7cd3a282def5bb8d95bb69ab9e9ef6a5368aa17e426/audioread-3.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=b30d1df6c5d3de5dcef0fb0e256f6ea17bdcf5f979408df0297d8a408e2971b4",
+          "hashes": {
+            "sha256": "b30d1df6c5d3de5dcef0fb0e256f6ea17bdcf5f979408df0297d8a408e2971b4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "audioread",
+        "version": "3.1.0",
+        "summary": "Multi-library, cross-platform audio decoding.",
+        "description": "audioread\n=========\n\nDecode audio files using whichever backend is available. The library\ncurrently supports:\n\n- `Gstreamer`_ via `PyGObject`_.\n- `Core Audio`_ on Mac OS X via `ctypes`_. (PyObjC not required.)\n- `MAD`_ via the `pymad`_ bindings.\n- `FFmpeg`_ or `Libav`_ via its command-line interface.\n- The standard library `wave`_, `aifc`_, and `sunau`_ modules (for\n  uncompressed audio formats).\n\n.. _Gstreamer: http://gstreamer.freedesktop.org/\n.. _gst-python: http://gstreamer.freedesktop.org/modules/gst-python.html\n.. _Core Audio: http://developer.apple.com/technologies/mac/audio-and-video.html\n.. _ctypes: http://docs.python.org/library/ctypes.html\n.. _MAD: http://www.underbit.com/products/mad/\n.. _pymad: http://spacepants.org/src/pymad/\n.. _FFmpeg: http://ffmpeg.org/\n.. _Libav: https://www.libav.org/\n.. _wave: http://docs.python.org/library/wave.html\n.. _aifc: http://docs.python.org/library/aifc.html\n.. _sunau: http://docs.python.org/library/sunau.html\n.. _PyGObject: https://pygobject.readthedocs.io/\n\nUse the library like so::\n\n    with audioread.audio_open(filename) as f:\n        print(f.channels, f.samplerate, f.duration)\n        for buf in f:\n            do_something(buf)\n\nBuffers in the file can be accessed by iterating over the object returned from\n``audio_open``. Each buffer is a bytes-like object (``buffer``, ``bytes``, or\n``bytearray``) containing raw **16-bit little-endian signed integer PCM\ndata**. (Currently, these PCM format parameters are not configurable, but this\ncould be added to most of the backends.)\n\nAdditional values are available as fields on the audio file object:\n\n- ``channels`` is the number of audio channels (an integer).\n- ``samplerate`` is given in Hz (an integer).\n- ``duration`` is the length of the audio in seconds (a float).\n\nThe ``audio_open`` function transparently selects a backend that can read the\nfile. (Each backend is implemented in a module inside the ``audioread``\npackage.) If no backends succeed in opening the file, a ``DecodeError``\nexception is raised. This exception is only used when the file type is\nunsupported by the backends; if the file doesn't exist, a standard ``IOError``\nwill be raised.\n\nA second optional parameter to ``audio_open`` specifies which backends to try\n(instead of trying them all, which is the default). You can use the\n``available_backends`` function to get a list backends that are usable on the\ncurrent system.\n\nAudioread supports Python 3 (3.9+).\n\nExample\n-------\n\nThe included ``decode.py`` script demonstrates using this package to\nconvert compressed audio files to WAV files.\n\nTroubleshooting\n---------------\n\nA ``NoBackendError`` exception means that the library could not find one of\nthe libraries or tools it needs to decode audio. This could mean, for example,\nthat you have a broken installation of `FFmpeg`_. To check, try typing\n``ffmpeg -version`` in your shell. If that gives you an error, try installing\nFFmpeg with your OS's package manager (e.g., apt or yum) or `using Conda\n<https://anaconda.org/conda-forge/ffmpeg>`_.\n\nVersion History\n---------------\n\n3.0.2\n  Support path-like objects (not just strings) in the Core Audio backend.\n\n3.0.1\n  Fix a possible deadlock when FFmpeg's version output produces too much data.\n\n3.0.0\n  Drop support for Python 2 and older versions of Python 3. The library now\n  requires Python 3.6+.\n  Increase default block size in FFmpegAudioFile to get slightly faster file reading.\n  Cache backends for faster lookup (thanks to @bmcfee).\n  Audio file classes now inherit from a common base ``AudioFile`` class.\n\n2.1.9\n  Work correctly with GStreamer 1.18 and later (thanks to @ssssam).\n\n2.1.8\n  Fix an unhandled ``OSError`` when FFmpeg is not installed.\n\n2.1.7\n  Properly close some filehandles in the FFmpeg backend (thanks to\n  @RyanMarcus and @ssssam).\n  The maddec backend now always produces bytes objects, like the other\n  backends (thanks to @ssssam).\n  Resolve an audio data memory leak in the GStreamer backend (thanks again to\n  @ssssam).\n  You can now optionally specify which specific backends ``audio_open`` should\n  try (thanks once again to @ssssam).\n  On Windows, avoid opening a console window to run FFmpeg (thanks to @flokX).\n\n2.1.6\n  Fix a \"no such process\" crash in the FFmpeg backend on Windows Subsystem for\n  Linux (thanks to @llamasoft).\n  Avoid suppressing SIGINT in the GStreamer backend on older versions of\n  PyGObject (thanks to @lazka).\n\n2.1.5\n  Properly clean up the file handle when a backend fails to decode a file.\n  Fix parsing of \"N.M\" channel counts in the FFmpeg backend (thanks to @piem).\n  Avoid a crash in the raw backend when a file uses an unsupported number of\n  bits per sample (namely, 24-bit samples in Python < 3.4).\n  Add a ``__version__`` value to the package.\n\n2.1.4\n  Fix a bug in the FFmpeg backend where, after closing a file, the program's\n  standard input stream would be \"broken\" and wouldn't receive any input.\n\n2.1.3\n  Avoid some warnings in the GStreamer backend when using modern versions of\n  GLib. We now require at least GLib 2.32.\n\n2.1.2\n  Fix a file descriptor leak when opening and closing many files using\n  GStreamer.\n\n2.1.1\n  Just fix ReST formatting in the README.\n\n2.1.0\n  The FFmpeg backend can now also use Libav's ``avconv`` command.\n  Fix a warning by requiring GStreamer >= 1.0.\n  Fix some Python 3 crashes with the new GStreamer backend (thanks to\n  @xix-xeaon).\n\n2.0.0\n  The GStreamer backend now uses GStreamer 1.x via the new\n  gobject-introspection API (and is compatible with Python 3).\n\n1.2.2\n  When running FFmpeg on Windows, disable its crash dialog. Thanks to\n  jcsaaddupuy.\n\n1.2.1\n  Fix an unhandled exception when opening non-raw audio files (thanks to\n  aostanin).\n  Fix Python 3 compatibility for the raw-file backend.\n\n1.2.0\n  Add support for FFmpeg on Windows (thanks to Jean-Christophe Saad-Dupuy).\n\n1.1.0\n  Add support for Sun/NeXT `Au files`_ via the standard-library ``sunau``\n  module (thanks to Dan Ellis).\n\n1.0.3\n  Use the rawread (standard-library) backend for .wav files.\n\n1.0.2\n  Send SIGKILL, not SIGTERM, to ffmpeg processes to avoid occasional hangs.\n\n1.0.1\n  When GStreamer fails to report a duration, raise an exception instead of\n  silently setting the duration field to None.\n\n1.0.0\n  Catch GStreamer's exception when necessary components, such as\n  ``uridecodebin``, are missing.\n  The GStreamer backend now accepts relative paths.\n  Fix a hang in GStreamer when the stream finishes before it begins (when\n  reading broken files).\n  Initial support for Python 3.\n\n0.8\n  All decoding errors are now subclasses of ``DecodeError``.\n\n0.7\n  Fix opening WAV and AIFF files via Unicode filenames.\n\n0.6\n  Make FFmpeg timeout more robust.\n  Dump FFmpeg output on timeout.\n  Fix a nondeterministic hang in the Gstreamer backend.\n  Fix a file descriptor leak in the MAD backend.\n\n0.5\n  Fix crash when FFmpeg fails to report a duration.\n  Fix a hang when FFmpeg fills up its stderr output buffer.\n  Add a timeout to ``ffmpeg`` tool execution (currently 10 seconds for each\n  4096-byte read); a ``ReadTimeoutError`` exception is raised if the tool times\n  out.\n\n0.4\n  Fix channel count detection for FFmpeg backend.\n\n0.3\n  Fix a problem with the Gstreamer backend where audio files could be left open\n  even after the ``GstAudioFile`` was \"closed\".\n\n0.2\n  Fix a hang in the GStreamer backend that occurs occasionally on some\n  platforms.\n\n0.1\n  Initial release.\n\n.. _Au files: http://en.wikipedia.org/wiki/Au_file_format\n\nEt Cetera\n---------\n\n``audioread`` is by Adrian Sampson. It is made available under `the MIT\nlicense`_. An alternative to this module is `decoder.py`_.\n\n.. _the MIT license: http://www.opensource.org/licenses/mit-license.php\n.. _decoder.py: http://www.brailleweb.com/cgi-bin/python.py\n\n",
+        "description_content_type": "text/x-rst",
+        "author": "Adrian Sampson",
+        "author_email": "adrian@radbox.org",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Topic :: Multimedia :: Sound/Audio :: Conversion",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "License :: OSI Approved :: MIT License"
+        ],
+        "requires_dist": [
+          "pygobject (>=3.54.2,<4.0.0) ; extra == \"gi\"",
+          "pymad[mad] (>=0.11.3,<0.12.0) ; extra == \"mad\"",
+          "pytest (>=8.4.2) ; extra == \"test\"",
+          "pytest-cov (>=7.0.0) ; extra == \"test\"",
+          "standard-aifc ; python_version >= \"3.13\"",
+          "standard-sunau ; python_version >= \"3.13\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/beetbox/audioread/issues",
+          "Homepage, https://github.com/beetbox/audioread",
+          "Repository, https://github.com/beetbox/audioread"
+        ],
+        "provides_extra": [
+          "gi",
+          "mad",
+          "test"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/8d/a5/06d1dd4553dcc71a3a18defe9e6e26e3c011b566bc9060d4f6e4bca0e0ed/numba-0.68.0-cp313-cp313-win_amd64.whl",
+        "archive_info": {
+          "hash": "sha256=bf7435c81912e271a28a19c348ada5b3986e2409f95a067533c5f4aab8709295",
+          "hashes": {
+            "sha256": "bf7435c81912e271a28a19c348ada5b3986e2409f95a067533c5f4aab8709295"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "numba",
+        "version": "0.68.0",
+        "dynamic": [
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "compiling Python code using LLVM",
+        "description": "*****\nNumba\n*****\n\n.. image:: https://img.shields.io/badge/discuss-on%20discourse-blue\n   :target: https://numba.discourse.group/\n   :alt: Discourse\n\n.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.4343230.svg\n   :target: https://doi.org/10.5281/zenodo.4343230\n   :alt: Zenodo\n\n.. image:: https://img.shields.io/pypi/v/numba.svg\n   :target: https://pypi.python.org/pypi/numba/\n   :alt: PyPI\n\n.. image:: https://dev.azure.com/numba/numba/_apis/build/status/numba.numba?branchName=main\n    :target: https://dev.azure.com/numba/numba/_build/latest?definitionId=1?branchName=main\n    :alt: Azure Pipelines\n\nA Just-In-Time Compiler for Numerical Functions in Python\n#########################################################\n\nNumba is an open source, NumPy-aware optimizing compiler for Python sponsored\nby Anaconda, Inc.  It uses the LLVM compiler project to generate machine code\nfrom Python syntax.\n\nNumba can compile a large subset of numerically-focused Python, including many\nNumPy functions.  Additionally, Numba has support for automatic\nparallelization of loops, generation of GPU-accelerated code, and creation of\nufuncs and C callbacks.\n\nFor more information about Numba, see the Numba homepage:\nhttps://numba.pydata.org and the online documentation:\nhttps://numba.readthedocs.io/en/stable/index.html\n\nInstallation\n============\n\nPlease follow the instructions:\n\nhttps://numba.readthedocs.io/en/stable/user/installing.html\n\nDemo\n====\n\nPlease have a look and the demo notebooks via the mybinder service:\n\nhttps://mybinder.org/v2/gh/numba/numba-examples/master?filepath=notebooks\n\nContact\n=======\n\nNumba has a discourse forum for discussions:\n\n* https://numba.discourse.group\n\n",
+        "home_page": "https://numba.pydata.org",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE",
+          "LICENSES.third-party"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development :: Compilers"
+        ],
+        "requires_dist": [
+          "llvmlite<0.51,>=0.50.0dev0",
+          "numpy<2.6,>=1.22"
+        ],
+        "requires_python": ">=3.10"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d5/17/894321d44cf94fa5cf921eff4e7ff24c7732c3d702236d40d6055b68a693/llvmlite-0.50.0-cp313-cp313-win_amd64.whl",
+        "archive_info": {
+          "hash": "sha256=266a6a29be71c3e3a22960ddcedf66b4e0388e5abb6cc4991cc093d6df402ad7",
+          "hashes": {
+            "sha256": "266a6a29be71c3e3a22960ddcedf66b4e0388e5abb6cc4991cc093d6df402ad7"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "llvmlite",
+        "version": "0.50.0",
+        "dynamic": [
+          "classifier",
+          "description",
+          "home-page",
+          "license-file",
+          "license-expression",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "lightweight wrapper around basic LLVM functionality",
+        "description": "========\nllvmlite\n========\n\n.. image:: https://dev.azure.com/numba/numba/_apis/build/status/numba.llvmlite?branchName=main\n   :target: https://dev.azure.com/numba/numba/_build/latest?definitionId=2&branchName=main\n   :alt: Azure Pipelines\n.. image:: https://coveralls.io/repos/github/numba/llvmlite/badge.svg\n   :target: https://coveralls.io/github/numba/llvmlite\n   :alt: Coveralls.io\n.. image:: https://readthedocs.org/projects/llvmlite/badge/\n   :target: https://llvmlite.readthedocs.io\n   :alt: Readthedocs.io\n\nA Lightweight LLVM Python Binding for Writing JIT Compilers\n-----------------------------------------------------------\n\n.. _llvmpy: https://github.com/llvmpy/llvmpy\n\nllvmlite is a project originally tailored for Numba_'s needs, using the\nfollowing approach:\n\n* A small C wrapper around the parts of the LLVM C++ API we need that are\n  not already exposed by the LLVM C API.\n* A ctypes Python wrapper around the C API.\n* A pure Python implementation of the subset of the LLVM IR builder that we\n  need for Numba.\n\nWhy llvmlite\n============\n\nThe old llvmpy_  binding exposes a lot of LLVM APIs but the mapping of\nC++-style memory management to Python is error prone. Numba_ and many JIT\ncompilers do not need a full LLVM API.  Only the IR builder, optimizer,\nand JIT compiler APIs are necessary.\n\nKey Benefits\n============\n\n* The IR builder is pure Python code and decoupled from LLVM's\n  frequently-changing C++ APIs.\n* Materializing a LLVM module calls LLVM's IR parser which provides\n  better error messages than step-by-step IR building through the C++\n  API (no more segfaults or process aborts).\n* Most of llvmlite uses the LLVM C API which is small but very stable\n  (low maintenance when changing LLVM version).\n* The binding is not a Python C-extension, but a plain DLL accessed using\n  ctypes (no need to wrestle with Python's compiler requirements and C++ 11\n  compatibility).\n* The Python binding layer has sane memory management.\n* llvmlite is faster than llvmpy thanks to a much simpler architecture\n  (the Numba_ test suite is twice faster than it was).\n\nCompatibility\n=============\n\nllvmlite has been tested with Python 3.10 -- 3.15 and is likely to work with\ngreater versions.\n\nAs of version 0.48.0, llvmlite requires LLVM 22.x.x on all architectures\n\nHistorical compatibility table:\n\n=================  ========================\nllvmlite versions  compatible LLVM versions\n=================  ========================\n0.48.0 - ......    22.x.x\n0.45.0 - 0.47.x    20.x.x\n0.44.0             15.x.x and 16.x.x\n0.41.0 - 0.43.0    14.x.x\n0.40.0 - 0.40.1    11.x.x and 14.x.x (12.x.x and 13.x.x untested but may work)\n0.37.0 - 0.39.1    11.x.x\n0.34.0 - 0.36.0    10.0.x (9.0.x for  ``aarch64`` only)\n0.33.0             9.0.x\n0.29.0 - 0.32.0    7.0.x, 7.1.x, 8.0.x\n0.27.0 - 0.28.0    7.0.x\n0.23.0 - 0.26.0    6.0.x\n0.21.0 - 0.22.0    5.0.x\n0.17.0 - 0.20.0    4.0.x\n0.16.0 - 0.17.0    3.9.x\n0.13.0 - 0.15.0    3.8.x\n0.9.0 - 0.12.1     3.7.x\n0.6.0 - 0.8.0      3.6.x\n0.1.0 - 0.5.1      3.5.x\n=================  ========================\n\nDocumentation\n=============\n\nYou'll find the documentation at http://llvmlite.pydata.org\n\n\nPre-built binaries\n==================\n\nWe recommend you use the binaries provided by the Numba_ team for\nthe Conda_ package manager.  You can find them in Numba's `anaconda.org\nchannel <https://anaconda.org/numba>`_.  For example::\n\n   $ conda install --channel=numba llvmlite\n\n(or, simply, the official llvmlite package provided in the Anaconda_\ndistribution)\n\n.. _Numba: http://numba.pydata.org/\n.. _Conda: http://conda.pydata.org/\n.. _Anaconda: http://docs.continuum.io/anaconda/index.html\n\n\nOther build methods\n===================\n\nIf you don't want to use our pre-built packages, you can compile\nand install llvmlite yourself.  The documentation will teach you how:\nhttp://llvmlite.pydata.org/en/latest/install/index.html\n",
+        "home_page": "http://llvmlite.readthedocs.io",
+        "license_expression": "BSD-2-Clause AND Apache-2.0 WITH LLVM-exception",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.thirdparty"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Compilers"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Source, https://github.com/numba/llvmlite"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2a/2d/d4bf65e47cea8ff2c794a600c4fd1273a7902f268757c531e0ee9f18aa58/pooch-1.9.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b",
+          "hashes": {
+            "sha256": "f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pooch",
+        "version": "1.9.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A friend to fetch your data files",
+        "description": "<img src=\"https://github.com/fatiando/pooch/raw/main/doc/_static/readme-banner.png\" alt=\"Pooch: A friend to fetch your data files\">\n\n<p align=\"center\">\n<a href=\"https://www.fatiando.org/pooch\"><strong>Documentation</strong> (latest)</a> •\n<a href=\"https://www.fatiando.org/pooch/dev\"><strong>Documentation</strong> (main branch)</a> •\n<a href=\"https://github.com/fatiando/pooch/blob/main/CONTRIBUTING.md\"><strong>Contributing</strong></a> •\n<a href=\"https://www.fatiando.org/contact/\"><strong>Contact</strong></a> •\n<a href=\"https://github.com/orgs/fatiando/discussions\"><strong>Ask a question</strong></a>\n</p>\n\n<p align=\"center\">\nPart of the <a href=\"https://www.fatiando.org\"><strong>Fatiando a Terra</strong></a> project\n</p>\n\n<p align=\"center\">\n<a href=\"https://pypi.python.org/pypi/pooch\"><img src=\"http://img.shields.io/pypi/v/pooch.svg?style=flat-square\" alt=\"Latest version on PyPI\"></a>\n<a href=\"https://github.com/conda-forge/pooch-feedstock\"><img src=\"https://img.shields.io/conda/vn/conda-forge/pooch.svg?style=flat-square\" alt=\"Latest version on conda-forge\"></a>\n<a href=\"https://codecov.io/gh/fatiando/pooch\"><img src=\"https://img.shields.io/codecov/c/github/fatiando/pooch/main.svg?style=flat-square\" alt=\"Test coverage status\"></a>\n<a href=\"https://pypi.python.org/pypi/pooch\"><img src=\"https://img.shields.io/pypi/pyversions/pooch.svg?style=flat-square\" alt=\"Compatible Python versions.\"></a>\n<a href=\"https://doi.org/10.21105/joss.01943\"><img src=\"https://img.shields.io/badge/doi-10.21105%2Fjoss.01943-blue?style=flat-square\" alt=\"DOI used to cite Pooch\"></a>\n</p>\n\n## About\n\n> Just want to download a file without messing with `requests` and `urllib`?\n> Trying to add sample datasets to your Python package?\n> **Pooch is here to help!**\n\n*Pooch* is a **Python library** that can manage data by **downloading files**\nfrom a server (only when needed) and storing them locally in a data **cache**\n(a folder on your computer).\n\n* Pure Python and minimal dependencies.\n* Download files over HTTP, FTP, and from data repositories like Zenodo and figshare.\n* Built-in post-processors to unzip/decompress the data after download.\n* Designed to be extended: create custom downloaders and post-processors.\n\nAre you a **scientist** or researcher? Pooch can help you too!\n\n* Host your data on a repository and download using the DOI.\n* Automatically download data using code instead of telling colleagues to do it themselves.\n* Make sure everyone running the code has the same version of the data files.\n\n## Projects using Pooch\n\n[SciPy](https://github.com/scipy/scipy),\n[scikit-image](https://github.com/scikit-image/scikit-image),\n[xarray](https://github.com/pydata/xarray),\n[Ensaio](https://github.com/fatiando/ensaio),\n[GemPy](https://github.com/cgre-aachen/gempy),\n[MetPy](https://github.com/Unidata/MetPy),\n[napari](https://github.com/napari/napari),\n[Satpy](https://github.com/pytroll/satpy),\n[yt](https://github.com/yt-project/yt),\n[PyVista](https://github.com/pyvista/pyvista),\n[icepack](https://github.com/icepack/icepack),\n[histolab](https://github.com/histolab/histolab),\n[seaborn-image](https://github.com/SarthakJariwala/seaborn-image),\n[Open AR-Sandbox](https://github.com/cgre-aachen/open_AR_Sandbox),\n[climlab](https://github.com/climlab/climlab),\n[mne-python](https://github.com/mne-tools/mne-python),\n[GemGIS](https://github.com/cgre-aachen/gemgis),\n[SHTOOLS](https://github.com/SHTOOLS/SHTOOLS),\n[MOABB](https://github.com/NeuroTechX/moabb),\n[GeoViews](https://github.com/holoviz/geoviews),\n[ScopeSim](https://github.com/AstarVienna/ScopeSim),\n[Brainrender](https://github.com/brainglobe/brainrender),\n[pyxem](https://github.com/pyxem/pyxem),\n[cellfinder](https://github.com/brainglobe/cellfinder),\n[PVGeo](https://github.com/OpenGeoVis/PVGeo),\n[geosnap](https://github.com/oturns/geosnap),\n[BioCypher](https://github.com/biocypher/biocypher),\n[cf-xarray](https://github.com/xarray-contrib/cf-xarray),\n[Scirpy](https://github.com/scverse/scirpy),\n[rembg](https://github.com/danielgatis/rembg),\n[DASCore](https://github.com/DASDAE/dascore),\n[scikit-mobility](https://github.com/scikit-mobility/scikit-mobility),\n[Py-ART](https://github.com/ARM-DOE/pyart),\n[HyperSpy](https://github.com/hyperspy/hyperspy),\n[RosettaSciIO](https://github.com/hyperspy/rosettasciio),\n[eXSpy](https://github.com/hyperspy/exspy),\n[SPLASH](https://github.com/Adam-Boesky/astro_SPLASH),\n[xclim](https://github.com/Ouranosinc/xclim),\n[CLISOPS](https://github.com/roocs/clisops),\n[scXpand](https://github.com/yizhak-lab-ccg/scXpand)\n\n\n> If you're using Pooch, **send us a pull request** adding your project to the list.\n\n## Example\n\nFor a **scientist downloading a data file** for analysis:\n\n```python\nimport pooch\nimport pandas as pd\n\n# Download a file and save it locally, returning the path to it.\n# Running this again will not cause a download. Pooch will check the hash\n# (checksum) of the downloaded file against the given value to make sure\n# it's the right file (not corrupted or outdated).\nfname_bathymetry = pooch.retrieve(\n    url=\"https://github.com/fatiando-data/caribbean-bathymetry/releases/download/v1/caribbean-bathymetry.csv.xz\",\n    known_hash=\"md5:a7332aa6e69c77d49d7fb54b764caa82\",\n)\n\n# Pooch can also download based on a DOI from certain providers.\nfname_gravity = pooch.retrieve(\n    url=\"doi:10.5281/zenodo.5882430/southern-africa-gravity.csv.xz\",\n    known_hash=\"md5:1dee324a14e647855366d6eb01a1ef35\",\n)\n\n# Load the data with Pandas\ndata_bathymetry = pd.read_csv(fname_bathymetry)\ndata_gravity = pd.read_csv(fname_gravity)\n```\n\nFor **package developers** including sample data in their projects:\n\n```python\n\"\"\"\nModule mypackage/datasets.py\n\"\"\"\nfrom importlib import resources\nimport pandas\nimport pooch\n\n# Get the version string from your project. You have one of these, right?\nfrom . import version\n\n# Create a new friend to manage your sample data storage\nGOODBOY = pooch.create(\n    # Folder where the data will be stored. For a sensible default, use the\n    # default cache folder for your OS.\n    path=pooch.os_cache(\"mypackage\"),\n    # Base URL of the remote data store. Will call .format on this string\n    # to insert the version (see below).\n    base_url=\"https://github.com/myproject/mypackage/raw/{version}/data/\",\n    # Pooches are versioned so that you can use multiple versions of a\n    # package simultaneously. Use PEP440 compliant version number. The\n    # version will be appended to the path.\n    version=version,\n    # If a version as a \"+XX.XXXXX\" suffix, we'll assume that this is a dev\n    # version and replace the version with this string.\n    version_dev=\"main\",\n    # An environment variable that overwrites the path.\n    env=\"MYPACKAGE_DATA_DIR\",\n    # The cache file registry. A dictionary with all files managed by this\n    # pooch. Keys are the file names (relative to *base_url*) and values\n    # are their respective SHA256 hashes. Files will be downloaded\n    # automatically when needed (see fetch_gravity_data).\n    registry={\"gravity-data.csv\": \"89y10phsdwhs09whljwc09whcowsdhcwodcydw\"}\n)\n# You can also load the registry from a file. Each line contains a file\n# name and it's sha256 hash separated by a space. This makes it easier to\n# manage large numbers of data files. The registry file should be packaged\n# and distributed with your software.\nGOODBOY.load_registry(\n    resources.open_text(\"mypackage\", \"registry.txt\")\n)\n\n# Define functions that your users can call to get back the data in memory\ndef fetch_gravity_data():\n    \"\"\"\n    Load some sample gravity data to use in your docs.\n    \"\"\"\n    # Fetch the path to a file in the local storage. If it's not there,\n    # we'll download it.\n    fname = GOODBOY.fetch(\"gravity-data.csv\")\n    # Load it with numpy/pandas/etc\n    data = pandas.read_csv(fname)\n    return data\n```\n\n## Getting involved\n\n🗨️ **Contact us:**\nFind out more about how to reach us at\n[fatiando.org/contact](https://www.fatiando.org/contact/).\n\n👩🏾‍💻 **Contributing to project development:**\nPlease read our\n[Contributing Guide](https://github.com/fatiando/pooch/blob/main/CONTRIBUTING.md)\nto see how you can help and give feedback.\n\n🧑🏾‍🤝‍🧑🏼 **Code of conduct:**\nThis project is released with a\n[Code of Conduct](https://github.com/fatiando/community/blob/main/CODE_OF_CONDUCT.md).\nBy participating in this project you agree to abide by its terms.\n\n> **Imposter syndrome disclaimer:**\n> We want your help. **No, really.** There may be a little voice inside your\n> head that is telling you that you're not ready, that you aren't skilled\n> enough to contribute. We assure you that the little voice in your head is\n> wrong. Most importantly, **there are many valuable ways to contribute besides\n> writing code**.\n>\n> *This disclaimer was adapted from the*\n> [MetPy project](https://github.com/Unidata/MetPy).\n\n## License\n\nThis is free software: you can redistribute it and/or modify it under the terms\nof the **BSD 3-clause License**. A copy of this license is provided in\n[`LICENSE.txt`](https://github.com/fatiando/pooch/blob/main/LICENSE.txt).\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "data",
+          "download",
+          "caching",
+          "http"
+        ],
+        "author_email": "The Pooch Developers <fatiandoaterra@protonmail.com>",
+        "maintainer_email": "Leonardo Uieda <leo@uieda.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt",
+          "AUTHORS.md"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Operating System :: OS Independent",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Software Development :: Libraries",
+          "Typing :: Typed",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "platformdirs>=2.5.0",
+          "packaging>=20.0",
+          "requests>=2.19.0",
+          "tqdm<5.0.0,>=4.41.0; extra == \"progress\"",
+          "paramiko>=2.7.0; extra == \"sftp\"",
+          "xxhash>=1.4.3; extra == \"xxhash\"",
+          "pytest-httpserver; extra == \"test\"",
+          "pytest-localftpserver; extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://www.fatiando.org/pooch",
+          "Changelog, https://www.fatiando.org/pooch/latest/changes.html",
+          "Bug Tracker, https://github.com/fatiando/pooch/issues",
+          "Source Code, https://github.com/fatiando/pooch"
+        ],
+        "provides_extra": [
+          "progress",
+          "sftp",
+          "xxhash",
+          "test"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ed/97/b39c18ac1df45e755ca22b8b00e872929da5d107998a207a5e4ac831bfda/soundfile-0.14.0-py2.py3-none-win_amd64.whl",
+        "archive_info": {
+          "hash": "sha256=299491d3499460fb1b74bb4bd78b57ffc2d243a5fafa7b6ec1b264875c78453e",
+          "hashes": {
+            "sha256": "299491d3499460fb1b74bb4bd78b57ffc2d243a5fafa7b6ec1b264875c78453e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "soundfile",
+        "version": "0.14.0",
+        "platform": [
+          "any"
+        ],
+        "summary": "An audio library based on libsndfile, CFFI and NumPy",
+        "description": "python-soundfile\n================\n\n|version| |python| |status| |license|\n\n|contributors| |downloads|\n\nThe `soundfile <https://github.com/bastibe/python-soundfile>`__ module is an audio\nlibrary based on libsndfile, CFFI and NumPy. Full documentation is\navailable on https://python-soundfile.readthedocs.io/.\n\nThe ``soundfile`` module can read and write sound files. File reading/writing is\nsupported through `libsndfile <http://www.mega-nerd.com/libsndfile/>`__,\nwhich is a free, cross-platform, open-source (LGPL) library for reading\nand writing many different sampled sound file formats that runs on many\nplatforms including Windows, OS X, and Unix. It is accessed through\n`CFFI <https://cffi.readthedocs.io/>`__, which is a foreign function\ninterface for Python calling C code. CFFI is supported for CPython 2.6+,\n3.x and PyPy 2.0+. The ``soundfile`` module represents audio data as NumPy arrays.\n\n| python-soundfile is BSD licensed (BSD 3-Clause License).\n| (c) 2013, Bastian Bechtold\n\n\n|open-issues| |closed-issues| |open-prs| |closed-prs|\n\n.. |contributors| image:: https://img.shields.io/github/contributors/bastibe/python-soundfile.svg\n.. |version| image:: https://img.shields.io/pypi/v/soundfile.svg\n.. |python| image:: https://img.shields.io/pypi/pyversions/soundfile.svg\n.. |license| image:: https://img.shields.io/github/license/bastibe/python-soundfile.svg\n.. |downloads| image:: https://img.shields.io/pypi/dm/soundfile.svg\n.. |open-issues| image:: https://img.shields.io/github/issues/bastibe/python-soundfile.svg\n.. |closed-issues| image:: https://img.shields.io/github/issues-closed/bastibe/python-soundfile.svg\n.. |open-prs| image:: https://img.shields.io/github/issues-pr/bastibe/python-soundfile.svg\n.. |closed-prs| image:: https://img.shields.io/github/issues-pr-closed/bastibe/python-soundfile.svg\n.. |status| image:: https://img.shields.io/pypi/status/soundfile.svg\n\nBreaking Changes\n----------------\n\nThe ``soundfile`` module has evolved rapidly in the past. Most\nnotably, we changed the import name from ``import pysoundfile`` to\n``import soundfile`` in 0.7. In 0.6, we cleaned up many small\ninconsistencies, particularly in the the ordering and naming of\nfunction arguments and the removal of the indexing interface.\n\nIn 0.8.0, we changed the default value of ``always_2d`` from ``True``\nto ``False``. Also, the order of arguments of the ``write`` function\nchanged from ``write(data, file, ...)`` to ``write(file, data, ...)``.\n\nIn 0.9.0, we changed the ``ctype`` arguments of the ``buffer_*``\nmethods to ``dtype``, using the Numpy ``dtype`` notation. The old\n``ctype`` arguments still work, but are now officially deprecated.\n\nIn 0.12.0, we changed the load order of the libsndfile library. Now,\nthe packaged libsndfile in the platform-specific wheels is tried\nbefore falling back to any system-provided libsndfile. If you would\nprefer using the system-provided libsndfile, install the source\npackage or source wheel instead of the platform-specific wheels.\n\nInstallation\n------------\n\nThe ``soundfile`` module depends on the Python packages CFFI and NumPy, and the\nlibrary libsndfile.\n\nIn a modern Python, you can use ``pip install soundfile`` to download\nand install the latest release of the ``soundfile`` module and its\ndependencies. On Windows (64/32) and OS X (Intel/ARM) and Linux 64,\nthis will also install a current version of the library libsndfile. If\nyou install the source module, you need to install libsndfile using\nyour distribution's package manager, for example ``sudo apt install\nlibsndfile1``.\n\nIf you are running on an unusual platform or if you are using an older\nversion of Python, you might need to install NumPy and CFFI separately,\nfor example using the Anaconda_ package manager.\n\n.. _Anaconda: https://www.continuum.io/downloads\n\nBuilding\n--------\n\n``Soundfile`` itself does not contain any compiled code and can be\nbundled into a wheel with the usual ``python setup.py bdist_wheel``.\nHowever, ``soundfile`` relies on libsndfile, and optionally ships its\nown copy of libsndfile in the wheel.\n\nTo build a binary wheel that contains libsndfile, make sure to\ncheckout and update the ``_soundfile_data`` submodule, then run\n``python setup.py bdist_wheel`` as usual. If the resulting file size\nof the wheel is around one megabyte, a matching libsndfile has been\nbundled (without libsndfile, it's around 25 KB).\n\nTo build binary wheels for all supported platforms, run ``python\nbuild_wheels.py``, which will ``python setup.py bdist_wheel`` for each\nof the platforms we have precompiled libsndfiles for.\n\nError Reporting\n---------------\n\nIn case of API usage errors the ``soundfile`` module raises the usual `ValueError` or `TypeError`.\n\nFor other errors `SoundFileError` is raised (used to be `RuntimeError`).\nParticularly, a `LibsndfileError` subclass of this exception is raised on\nerrors reported by the libsndfile library. In that case the exception object\nprovides the libsndfile internal error code in the `LibsndfileError.code` attribute and the raw\nlibsndfile error message in the `LibsndfileError.error_string` attribute.\n\nRead/Write Functions\n--------------------\n\nData can be written to the file using `soundfile.write()`, or read from\nthe file using `soundfile.read()`. The ``soundfile`` module can open all file formats\nthat `libsndfile supports\n<http://www.mega-nerd.com/libsndfile/#Features>`__, for example WAV,\nFLAC, OGG and MAT files (see `Known Issues <https://github.com/bastibe/python-soundfile#known-issues>`__ below about writing OGG files).\n\nHere is an example for a program that reads a wave file and copies it\ninto an FLAC file:\n\n.. code:: python\n\n    import soundfile as sf\n\n    data, samplerate = sf.read('existing_file.wav')\n    sf.write('new_file.flac', data, samplerate)\n\nBlock Processing\n----------------\n\nSound files can also be read in short, optionally overlapping blocks\nwith `soundfile.blocks()`.\nFor example, this calculates the signal level for each block of a long\nfile:\n\n.. code:: python\n\n   import numpy as np\n   import soundfile as sf\n\n   rms = [np.sqrt(np.mean(block**2)) for block in\n          sf.blocks('myfile.wav', blocksize=1024, overlap=512)]\n\n``SoundFile`` Objects\n---------------------\n\nSound files can also be opened as `SoundFile` objects. Every\n`SoundFile` has a specific sample rate, data format and a set number of\nchannels.\n\nIf a file is opened, it is kept open for as long as the `SoundFile`\nobject exists. The file closes when the object is garbage collected,\nbut you should use the `SoundFile.close()` method or the\ncontext manager to close the file explicitly:\n\n.. code:: python\n\n   import soundfile as sf\n\n   with sf.SoundFile('myfile.wav', 'r+') as f:\n       while f.tell() < f.frames:\n           pos = f.tell()\n           data = f.read(1024)\n           f.seek(pos)\n           f.write(data*2)\n\nAll data access uses frames as index. A frame is one discrete time-step\nin the sound file. Every frame contains as many samples as there are\nchannels in the file.\n\nRAW Files\n---------\n\n`soundfile.read()` can usually auto-detect the file type of sound files. This\nis not possible for RAW files, though:\n\n.. code:: python\n\n   import soundfile as sf\n\n   data, samplerate = sf.read('myfile.raw', channels=1, samplerate=44100,\n                              subtype='FLOAT')\n\nNote that on x86, this defaults to ``endian='LITTLE'``. If you are\nreading big endian data (mostly old PowerPC/6800-based files), you\nhave to set ``endian='BIG'`` accordingly.\n\nYou can write RAW files in a similar way, but be advised that in most\ncases, a more expressive format is better and should be used instead.\n\nVirtual IO\n----------\n\nIf you have an open file-like object, `soundfile.read()` can open it just like\nregular files:\n\n.. code:: python\n\n    import soundfile as sf\n    with open('filename.flac', 'rb') as f:\n        data, samplerate = sf.read(f)\n\nHere is an example using an HTTP request:\n\n.. code:: python\n\n    import io\n    import soundfile as sf\n    from urllib.request import urlopen\n\n    url = \"http://tinyurl.com/shepard-risset\"\n    data, samplerate = sf.read(io.BytesIO(urlopen(url).read()))\n\nNote that the above example only works with Python 3.x.\nFor Python 2.x support, replace the third line with:\n\n.. code:: python\n\n    from urllib2 import urlopen\n\nIn-memory files\n^^^^^^^^^^^^^^^\n\nChunks of audio, i.e. `bytes`, can also be read and written without touching the filesystem.\nIn the following example OGG is converted to WAV entirely in memory (without writing files to the disk):\n\n.. code:: python\n\n    import io\n    import soundfile as sf\n\n    def ogg2wav(ogg: bytes):\n        ogg_buf = io.BytesIO(ogg)\n        ogg_buf.name = 'file.ogg'\n        data, samplerate = sf.read(ogg_buf)\n        wav_buf = io.BytesIO()\n        wav_buf.name = 'file.wav'\n        sf.write(wav_buf, data, samplerate)\n        wav_buf.seek(0)  # Necessary for `.read()` to return all bytes\n        return wav_buf.read()\n\nControlling bitrate mode and compression level\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFor some audio formats, you can control the bitrate and compression level.\n\n`compression_level` is a float between 0 and 1, with 1 being the highest compression,\nand `bitrate_mode` is 'VARIABLE', 'CONSTANT', or 'AVERAGE'.\n\n.. code:: python\n\n    import soundfile as sf\n\n    # for example, this uncompressed 5 minute wav file with 32 kHz sample rate is 18 Mb\n    data, samplerate = sf.read('5min_32kHz.wav')\n\n    # maximum mp3 compression results in 1.1 Mb file, with either CONSTANT or VARIABLE bit rate\n    sf.write('max_compression_vbr.mp3', data, samplerate, bitrate_mode='VARIABLE', compression_level=.99)\n    sf.write('max_compression_cbr.mp3', data, samplerate, bitrate_mode='CONSTANT', compression_level=.99)\n\n    # minimum mp3 compression results in 3.5 Mb file\n    sf.write('min_compression_vbr.mp3', data, samplerate, bitrate_mode='VARIABLE', compression_level=0)\n\nThread Safety\n-------------\n\nThe ``soundfile`` module is a thin wrapper around the low-level ``libsndfile`` C\nlibrary. As such, ``soundfile`` provides the same thread safety guarantees as\nthe underlying C library. See `this libsndfile issue\n<https://github.com/libsndfile/libsndfile/issues/279>`_ for more details.\n\nIn short, multithreaded use is safe as long as handles for readers or writers\nare not shared between threads. It is safe to concurrently open and read the\nsame file through unique per-thread handles. It is not safe to concurrently\nwrite to the same file or share reader or writer handles. You may see garbage\nresults or crashes if you do this.\n\nSee the advice in the Free-threaded Python guide on `thread-safe Python\nprogramming\n<https://py-free-threading.github.io/porting/#multithreaded-python-programming>`_\nfor suggestions on how to synchronize access to a thread-unsafe object.\n\nKnown Issues\n------------\n\nWriting to OGG files can result in empty files with certain versions of libsndfile. See `#130 <https://github.com/bastibe/python-soundfile/issues/130>`__ for news on this issue.\n\nIf using a Buildroot style system, Python has trouble locating ``libsndfile.so`` file, which causes python-soundfile to not be loaded. This is apparently a bug in `python <https://bugs.python.org/issue13508>`__. For the time being, in ``soundfile.py``, you can remove the call to ``_find_library`` and hardcode the location of the ``libsndfile.so`` in ``_ffi.dlopen``. See `#258 <https://github.com/bastibe/python-soundfile/issues/258>`__ for discussion on this issue.\n\nNews\n----\n\n2013-08-27 V0.1.0 Bastian Bechtold:\n    Initial prototype. A simple wrapper for libsndfile in Python\n\n2013-08-30 V0.2.0 Bastian Bechtold:\n    Bugfixes and more consistency with PySoundCard\n\n2013-08-30 V0.2.1 Bastian Bechtold:\n    Bugfixes\n\n2013-09-27 V0.3.0 Bastian Bechtold:\n    Added binary installer for Windows, and context manager\n\n2013-11-06 V0.3.1 Bastian Bechtold:\n    Switched from distutils to setuptools for easier installation\n\n2013-11-29 V0.4.0 Bastian Bechtold:\n    Thanks to David Blewett, now with Virtual IO!\n\n2013-12-08 V0.4.1 Bastian Bechtold:\n    Thanks to Xidorn Quan, FLAC files are not float32 any more.\n\n2014-02-26 V0.5.0 Bastian Bechtold:\n    Thanks to Matthias Geier, improved seeking and a flush() method.\n\n2015-01-19 V0.6.0 Bastian Bechtold:\n    A big, big thank you to Matthias Geier, who did most of the work!\n\n    - Switched to ``float64`` as default data type.\n    - Function arguments changed for consistency.\n    - Added unit tests.\n    - Added global `read()`, `write()`, `blocks()` convenience\n      functions.\n    - Documentation overhaul and hosting on readthedocs.\n    - Added ``'x'`` open mode.\n    - Added `tell()` method.\n    - Added ``__repr__()`` method.\n\n2015-04-12 V0.7.0 Bastian Bechtold:\n    Again, thanks to Matthias Geier for all of his hard work, but also\n    Nils Werner and Whistler7 for their many suggestions and help.\n\n    - Renamed ``import pysoundfile`` to ``import soundfile``.\n    - Installation through pip wheels that contain the necessary\n      libraries for OS X and Windows.\n    - Removed ``exclusive_creation`` argument to `write()`.\n    - Added `truncate()` method.\n\n2015-10-20 V0.8.0 Bastian Bechtold:\n    Again, Matthias Geier contributed a whole lot of hard work to this\n    release.\n\n    - Changed the default value of ``always_2d`` from ``True`` to\n      ``False``.\n    - Numpy is now optional, and only loaded for ``read`` and\n      ``write``.\n    - Added `SoundFile.buffer_read()` and\n      `SoundFile.buffer_read_into()` and `SoundFile.buffer_write()`,\n      which read/write raw data without involving Numpy.\n    - Added `info()` function that returns metadata of a sound file.\n    - Changed the argument order of the `write()` function from\n      ``write(data, file, ...)`` to ``write(file, data, ...)``\n\n    And many more minor bug fixes.\n\n2017-02-02 V0.9.0 Bastian Bechtold:\n    Thank you, Matthias Geier, Tomas Garcia, and Todd, for contributions\n    for this release.\n\n    - Adds support for ALAC files.\n    - Adds new member ``__libsndfile_version__``\n    - Adds number of frames to ``info`` class\n    - Adds ``dtype`` argument to ``buffer_*`` methods\n    - Deprecates ``ctype`` argument to ``buffer_*`` methods\n    - Adds official support for Python 3.6\n\n    And some minor bug fixes.\n\n2017-11-12 V0.10.0 Bastian Bechtold:\n    Thank you, Matthias Geier, Toni Barth, Jon Peirce, Till Hoffmann,\n    and Tomas Garcia, for contributions to this release.\n\n    - Should now work with cx_freeze.\n    - Several documentation fixes in the README.\n    - Removes deprecated ``ctype`` argument in favor of ``dtype`` in ``buffer_*()``.\n    - Adds `SoundFile.frames` in favor of now-deprecated ``__len__()``.\n    - Improves performance of `blocks()` and `SoundFile.blocks()`.\n    - Improves import time by using CFFI's out of line mode.\n    - Adds a build script for building distributions.\n\n2022-06-02 V0.11.0 Bastian Bechtold:\n    Thank you, tennies, Hannes Helmholz, Christoph Boeddeker, Matt\n    Vollrath, Matthias Geier, Jacek Konieczny, Boris Verkhovskiy,\n    Jonas Haag, Eduardo Moguillansky, Panos Laganakos, Jarvy Jarvison,\n    Domingo Ramirez, Tim Chagnon, Kyle Benesch, Fabian-Robert Stöter,\n    Joe Todd\n\n    - MP3 support\n    - Adds binary wheels for macOS M1\n    - Improves compatibility with macOS, specifically for M1 machines\n    - Fixes file descriptor open for binary wheels on Windows and Python 3.5+\n    - Updates libsndfile to v1.1.0\n    - Adds get_strings method for retrieving all metadata at once\n    - Improves documentation, error messages and tests\n    - Displays length of very short files in samples\n    - Supports the file system path protocol (pathlib et al)\n\n2023-02-02 V0.12.0 Bastian Bechtold\n    Thank you, Barabazs, Andrew Murray, Jon Peirce, for contributions\n    to this release.\n\n    - Updated libsndfile to v1.2.0\n    - Improves precompiled library location, especially with py2app or cx-freeze.\n    - Now provide binary wheels for Linux x86_64\n    - Now prefers packaged libsndfile over system-installed libsndfile\n\n2023-02-15 V0.12.1 Bastian Bechtold\n    Thank you, funnypig, for the bug report\n\n    - Fixed typo on library location detection if no packaged lib and\n      no system lib was found\n\n2025-01-02 V0.13.0 Bastian Bechtold\n    Thank you, Zhong Jianxin, mcclure, jneuendorf-i4h, aoirint, endolith, Guy Illes, ytya, Sam Lapp, Benjamin Moody\n\n    - Updated libsndfile to v1.2.2\n    - Linux arm64 builds added\n    - Numpy is now a dependency\n    - Fixed error in blocks, if file is very short\n    - Compression level and bitrate controls added for compressed files\n    - Various README improvements\n    - Various build system improvements\n    - Various improvements to error messages\n\n2025-01-25 V0.13.1 Bastian Bechtold\n    Thank you, Brian McFee and Guy Illes\n\n    - Fixed regression in blocks\n\n2026-06-06 V0.14.0 Bastian Bechtold\n    Thank you GesonAnko, Trevor Gamblin, Andreas Karatzas, Harish RS, Hunter Hogan\n\n    - Added type annotations\n    - Added Licensing note to wheel\n    - Fixed race condition when opening files concurrently\n    - Fixed regressions in test suite\n    - Removed support for Python <= 3.9\n    - Added ARM64 support for Windows\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "audio",
+          "libsndfile"
+        ],
+        "home_page": "https://github.com/bastibe/python-soundfile",
+        "author": "Bastian Bechtold",
+        "author_email": "bastibe.dev@mailbox.org",
+        "license": "BSD 3-Clause License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Multimedia :: Sound/Audio"
+        ],
+        "requires_dist": [
+          "cffi >=1.0",
+          "numpy",
+          "typing-extensions"
+        ],
+        "requires_python": ">=3.10",
+        "provides_extra": [
+          "numpy"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b0/4d/621e4150e4815246ad552d215a8a294a90143fedd19ee442cf82d3b3abc8/soxr-1.1.0-cp312-abi3-win_amd64.whl",
+        "archive_info": {
+          "hash": "sha256=6ae2a174bffea94e8ead857dad85999d3f49f091774dbad5b046c0417d7092f4",
+          "hashes": {
+            "sha256": "6ae2a174bffea94e8ead857dad85999d3f49f091774dbad5b046c0417d7092f4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "soxr",
+        "version": "1.1.0",
+        "summary": "High quality, one-dimensional sample-rate conversion library",
+        "description": "# Python-SoXR\n\n[![GitHub](https://img.shields.io/badge/GitHub-python--soxr-181717?logo=github)](https://github.com/dofuuz/python-soxr) [![PyPI](https://img.shields.io/pypi/v/soxr.svg?logo=pypi)](https://pypi.org/project/soxr/) [![conda-forge](https://img.shields.io/conda/vn/conda-forge/soxr-python?logo=conda-forge)](https://anaconda.org/conda-forge/soxr-python) [![Packaging status](https://repology.org/badge/tiny-repos/python:soxr.svg)](https://repology.org/project/python:soxr/versions) [![Read the Docs](https://img.shields.io/readthedocs/python-soxr?logo=read-the-docs)](https://python-soxr.readthedocs.io)\n\nHigh quality, one-dimensional sample-rate conversion library for Python.\n\n- Homepage: https://github.com/dofuuz/python-soxr\n- Documentation: https://python-soxr.readthedocs.io\n- Release Notes: https://github.com/dofuuz/python-soxr/releases\n- PyPI: https://pypi.org/project/soxr/\n\nKeywords: Resampler, Audio resampling, Samplerate conversion, DSP(Digital Signal Processing)\n\nPython-SoXR is a Python wrapper of [libsoxr](https://sourceforge.net/projects/soxr/).\n\n\n## Installation\n\n```sh\npip install soxr\n```\n\nIf installation fails, upgrade pip with `python -m pip install --upgrade pip` and try again.\n\n\n### in Conda environment\n\n```sh\nconda install -c conda-forge soxr-python\n```\n\nNote: Conda packge name is `soxr-python`, not python-soxr.\n\n\n## Basic usage\n\n```python\nimport soxr\n\ny = soxr.resample(\n    x,          # input array – mono(1D) or multi-channel(2D of [frame, channel])\n    48000,      # input samplerate\n    16000       # target samplerate\n)\n```\nIf input is not `numpy.ndarray`, it will be converted to `numpy.ndarray(dtype='float32')`.  \ndtype should be one of float32, float64, int16, int32.\n\nOutput is `numpy.ndarray` with same dimension and data type of input.\n\n\n## Streaming usage\n\nUse `ResampleStream` for real-time processing or very long signal.\n\n```python\nimport soxr\n\nrs = soxr.ResampleStream(\n    44100,              # input samplerate\n    16000,              # target samplerate\n    1,                  # channel(s)\n    dtype='float32'     # data type (default = 'float32')\n)\n\neof = False\nwhile not eof:\n    # Get chunk\n    ...\n\n    y_chunk = rs.resample_chunk(\n        x,              # input aray – mono(1D) or multi-channel(2D of [frame, channel])\n        last=eof        # Set True at end of input\n    )\n```\n\nOutput frame count may not be consistent. This is normal operation.  \n(ex. [0, 0, 0, 186, 186, 166, 186, 186, 168, ...])\n\n📝 [More code examples](https://dofuuz.github.io/dsp/2024/05/26/sample-rate-conversion-in-python.html)\n\n\n## Benchmark\n\nSweep, impulse, speed compairsion with other resamplers for Python.\n\nhttps://colab.research.google.com/drive/1_xYUs00VWYOAXShB85W1MFWaUjGHfO4K?usp=sharing\n\n\n### Speed comparison summary\n\nDownsampling 10 sec of 48000 Hz to 44100 Hz.  \nRan on Google Colab.\n\nLibrary                  | Time on CPU (ms)\n------------------------ | ----------------\nsoxr (HQ)                | 10.8\ntorchaudio               | 13.8\nsoxr (VHQ)               | 14.5\nscipy.signal.resample    | 21.3\nlilfilter                | 24.7\njulius                   | 31\nresampy (kaiser_fast)    | 108\nsamplerate (sinc_medium) | 223\nresampy (kaiser_best)    | 310\nsamplerate (sinc_best)   | 794\n\n\n## Technical detail\n\nFor technical details behind resampler, see libsoxr docs.\n- https://sourceforge.net/p/soxr/wiki/Home/\n- http://sox.sourceforge.net/SoX/Resampling ([archive](https://web.archive.org/web/20230626144127/https://sox.sourceforge.net/SoX/Resampling))\n- https://sourceforge.net/p/soxr/code/ci/master/tree/src/soxr.h\n\nPython-SoXR package comes with [modified version](https://github.com/dofuuz/soxr) of libsoxr. [See changes here](https://github.com/dofuuz/soxr/compare/0.1.3...master).  \nThese changes do not apply to dynamic-linked builds (e.g. conda-forge build).  \nTo check the version of libsoxr, use `soxr.__libsoxr_version__`.\n\n\n## Credit and License\n\nPython-SoXR is LGPL v2.1+ licensed, following libsoxr's license.\n\n### OSS libraries used\n\n#### libsoxr (LGPLv2.1+)\nThe SoX Resampler library  \nhttps://sourceforge.net/projects/soxr/\n\nPython-SoXR is a Python wrapper of libsoxr.\n\n#### PFFFT (BSD-like)\nPFFFT: a pretty fast FFT.  \nhttps://bitbucket.org/jpommier/pffft/  \n\nlibsoxr dependency.\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "audio resampling",
+          "samplerate conversion",
+          "SRC",
+          "signal processing",
+          "resampler"
+        ],
+        "author": "KEUM Myungchul",
+        "license_expression": "LGPL-2.1-or-later",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: Telecommunications Industry",
+          "Topic :: Multimedia :: Sound/Audio :: Analysis",
+          "Topic :: Multimedia :: Sound/Audio :: Conversion",
+          "Topic :: Scientific/Engineering",
+          "Programming Language :: C",
+          "Programming Language :: C++",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta"
+        ],
+        "requires_dist": [
+          "numpy",
+          "sphinx; extra == \"docs\"",
+          "sphinx-book-theme; extra == \"docs\"",
+          "myst-parser; extra == \"docs\"",
+          "linkify-it-py; extra == \"docs\"",
+          "pytest; extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/dofuuz/python-soxr",
+          "Documentation, https://python-soxr.readthedocs.io",
+          "Release Notes, https://github.com/dofuuz/python-soxr/releases",
+          "Source, https://github.com/dofuuz/python-soxr",
+          "Bug Tracker, https://github.com/dofuuz/python-soxr/issues"
+        ],
+        "provides_extra": [
+          "docs",
+          "test"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c3/52/5fbb203394cc852334d1575cc020f6bcec768d2265355984dfd361968f36/standard_aifc-3.13.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f7ae09cc57de1224a0dd8e3eb8f73830be7c3d0bc485de4c1f82b4a7f645ac66",
+          "hashes": {
+            "sha256": "f7ae09cc57de1224a0dd8e3eb8f73830be7c3d0bc485de4c1f82b4a7f645ac66"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "standard-aifc",
+        "version": "3.13.0",
+        "summary": "Standard library aifc redistribution. \"dead battery\".",
+        "description": "Dead battery redistribution\n===========================\n\nPython is moving forward! Python finally started to remove dead batteries.\nFor more information, see `PEP 594 <https://peps.python.org/pep-0594/>`_.\n\nIf your project depends on a module that has been removed from the standard,\nhere is the redistribution of the dead batteries.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "stdlib"
+        ],
+        "author_email": "Python Developers <python-deadlib@youknowone.org>",
+        "license": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: Python Software Foundation License",
+          "Topic :: Software Development :: Libraries",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "standard-chunk ; python_version >= \"3.13\"",
+          "audioop-lts ; python_version >= \"3.13\""
+        ],
+        "project_url": [
+          "Homepage, https://github.com/youknowone/python-deadlib"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/34/a5/9d78fdb5b844a83da8a71226c7bdae7cc638861085fff7a1d707cb4823fa/audioop_lts-0.2.2-cp313-abi3-win_amd64.whl",
+        "archive_info": {
+          "hash": "sha256=a2c2a947fae7d1062ef08c4e369e0ba2086049a5e598fda41122535557012e9e",
+          "hashes": {
+            "sha256": "a2c2a947fae7d1062ef08c4e369e0ba2086049a5e598fda41122535557012e9e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "audioop-lts",
+        "version": "0.2.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "LTS Port of Python audioop",
+        "description": "# audioop\n\nAn LTS port of the Python builtin module `audioop` which was deprecated since version 3.11 and removed in 3.13.\n\nThis project exists to maintain this module for future versions.\n\n## Using this project\n\n> [!WARNING]\n**This module only functions at Python versions of 3.13 or greater** due to being removed in this version.\n\nAs such, you can conditionally add this project to your dependencies:\n\n#### pip-requirements\n```\naudioop-lts; python_version>='3.13'\n```\n\n#### Poetry-pyproject\n```toml\n[tool.poetry.dependencies]\naudioop-lts = { version = \"...\", python = \"^3.13\" }\n```\nRelevant documentation is [here](https://python-poetry.org/docs/dependency-specification/#python-restricted-dependencies), or alternatively use [`markers`](https://python-poetry.org/docs/dependency-specification/#using-environment-markers)\n\n#### pdm-pyproject / uv-pyproject / hatch-pyproject\n```toml\n[project]\ndependencies = [\n    \"audioop-lts; python_version >= '3.13'\",\n]\n```\n\n#### Pipenv-pipfile\n```toml\n[packages]\naudioop-lts = { version = \"...\", markers = \"python_version >= 3.13\" }\n```\n",
+        "description_content_type": "text/markdown",
+        "maintainer_email": "AbstractUmbra <umbra@abstractumbra.dev>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython"
+        ],
+        "requires_python": ">=3.13",
+        "project_url": [
+          "github, https://github.com/AbstractUmbra/audioop",
+          "homepage, https://github.com/AbstractUmbra/audioop",
+          "issues, https://github.com/AbstractUmbra/audioop/issues",
+          "funding, https://github.com/sponsors/AbstractUmbra"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7a/90/a5c1084d87767d787a6caba615aa50dc587229646308d9420c960cb5e4c0/standard_chunk-3.13.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=17880a26c285189c644bd5bd8f8ed2bdb795d216e3293e6dbe55bbd848e2982c",
+          "hashes": {
+            "sha256": "17880a26c285189c644bd5bd8f8ed2bdb795d216e3293e6dbe55bbd848e2982c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "standard-chunk",
+        "version": "3.13.0",
+        "summary": "Standard library chunk redistribution. \"dead battery\".",
+        "description": "Dead battery redistribution\n===========================\n\nPython is moving forward! Python finally started to remove dead batteries.\nFor more information, see `PEP 594 <https://peps.python.org/pep-0594/>`_.\n\nIf your project depends on a module that has been removed from the standard,\nhere is the redistribution of the dead batteries.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "stdlib"
+        ],
+        "author_email": "Python Developers <python-deadlib@youknowone.org>",
+        "license": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: Python Software Foundation License",
+          "Topic :: Software Development :: Libraries",
+          "Programming Language :: Python :: 3"
+        ],
+        "project_url": [
+          "Homepage, https://github.com/youknowone/python-deadlib"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/34/ae/e3707f6c1bc6f7aa0df600ba8075bfb8a19252140cd595335be60e25f9ee/standard_sunau-3.13.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=53af624a9529c41062f4c2fd33837f297f3baa196b0cfceffea6555654602622",
+          "hashes": {
+            "sha256": "53af624a9529c41062f4c2fd33837f297f3baa196b0cfceffea6555654602622"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "standard-sunau",
+        "version": "3.13.0",
+        "summary": "Standard library sunau redistribution. \"dead battery\".",
+        "description": "Dead battery redistribution\n===========================\n\nPython is moving forward! Python finally started to remove dead batteries.\nFor more information, see `PEP 594 <https://peps.python.org/pep-0594/>`_.\n\nIf your project depends on a module that has been removed from the standard,\nhere is the redistribution of the dead batteries.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "stdlib"
+        ],
+        "author_email": "Python Developers <python-deadlib@youknowone.org>",
+        "license": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: Python Software Foundation License",
+          "Topic :: Software Development :: Libraries",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "audioop-lts ; python_version >= \"3.13\""
+        ],
+        "project_url": [
+          "Homepage, https://github.com/youknowone/python-deadlib"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.13.11",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "10",
+    "platform_system": "Windows",
+    "platform_version": "10.0.19045",
+    "python_full_version": "3.13.11",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.13",
+    "sys_platform": "win32"
+  }
+}

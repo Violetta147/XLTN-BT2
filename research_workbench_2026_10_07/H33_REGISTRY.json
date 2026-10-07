@@ -1,0 +1,39 @@
+{
+  "registered_utc": "2026-10-07T04:23:59.240279+00:00",
+  "baseline_commit": "bc7e207",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "bc7e207",
+  "family": "H33",
+  "algorithm": "librosa0.11 probabilistic YIN pipeline",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.45
+    },
+    {
+      "id": "pyin_f40",
+      "frame_ms": 40,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "pyin"
+    },
+    {
+      "id": "pyin_f60",
+      "frame_ms": 60,
+      "hop_ms": 10,
+      "pitch_frame_ms": 60,
+      "method": "pyin"
+    },
+    {
+      "id": "pyin_f80",
+      "frame_ms": 80,
+      "hop_ms": 10,
+      "pitch_frame_ms": 80,
+      "method": "pyin"
+    }
+  ]
+}
