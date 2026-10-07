@@ -1,0 +1,42 @@
+{
+  "registered_utc": "2026-10-07T06:03:10.026521+00:00",
+  "baseline_commit": "c74467a",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "c74467a",
+  "family": "H40",
+  "algorithm": "YAAPT AMFM_decompy 1.0.12.2 pinned Python port",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.45
+    },
+    {
+      "id": "yaapt_f25",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 35,
+      "method": "yaapt",
+      "spectral_frame_ms": 25
+    },
+    {
+      "id": "yaapt_f35",
+      "frame_ms": 35,
+      "hop_ms": 10,
+      "pitch_frame_ms": 35,
+      "method": "yaapt",
+      "spectral_frame_ms": 35
+    },
+    {
+      "id": "yaapt_f45",
+      "frame_ms": 45,
+      "hop_ms": 10,
+      "pitch_frame_ms": 35,
+      "method": "yaapt",
+      "spectral_frame_ms": 45
+    }
+  ]
+}

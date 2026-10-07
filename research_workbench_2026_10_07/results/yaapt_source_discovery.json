@@ -1,0 +1,48 @@
+{
+  "recorded_utc": "2026-10-07T05:52:41.323604+00:00",
+  "package_version": "1.0.12.2",
+  "package_license": null,
+  "release_files": [
+    {
+      "filename": "amfm_decompy-1.0.12.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/72/d5/046e4b6ba2aa3f663711139fe1c373b834e01906ea1c96fa8945f854210f/amfm_decompy-1.0.12.2-py3-none-any.whl",
+      "sha256": "61387a0c96ca98f3d25d2996e7ba96c044a7f537984d84c462f5f17a9d00b597"
+    },
+    {
+      "filename": "amfm_decompy-1.0.12.2.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/27/fa/38a2cb818d465cefa5c32ea11659c0fcb17f7011bc0ecd092c03694bc893/amfm_decompy-1.0.12.2.tar.gz",
+      "sha256": "7cb7bc1cde9d19f76e7729387d7c0ee08db1c90247a632b6c263d78ddc64f5b7"
+    }
+  ],
+  "github_commit": "5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b",
+  "read_level": "README/manual/PubMed abstract and Python implementation; no paper PDF extraction",
+  "discovery_query": "YAAPT official algorithm Zahorian Hu python amfm decompy source",
+  "web_author_html_error": "web.open failed Unicode decoding; no MCP involved",
+  "sources": {
+    "README.txt": {
+      "url": "https://raw.githubusercontent.com/bjbschmitt/AMFM_decompy/5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b/README.txt",
+      "sha256": "a3ced69a528a29cbe9779f82c99034c3e3bfd30dd780e393dc27f1135406299c"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/bjbschmitt/AMFM_decompy/5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b/LICENSE",
+      "sha256": "a0ea4e08ff25b3f23ef6bad3433d0d9b2d711defaf242df3dce901fa2befd5ec"
+    },
+    "amfm_decompy/pYAAPT.py": {
+      "url": "https://raw.githubusercontent.com/bjbschmitt/AMFM_decompy/5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b/amfm_decompy/pYAAPT.py",
+      "sha256": "c4554e8c3ed980765b0085cc5e8167472978daf78763bd5ac5efe6aea60f4144"
+    },
+    "amfm_decompy/basic_tools.py": {
+      "url": "https://raw.githubusercontent.com/bjbschmitt/AMFM_decompy/5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b/amfm_decompy/basic_tools.py",
+      "sha256": "93d380d2e9f82518081da8c31df5c503bfb06e7c8abf8fbba67f784022fa7fe0"
+    },
+    "pyproject.toml": {
+      "url": "https://raw.githubusercontent.com/bjbschmitt/AMFM_decompy/5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b/pyproject.toml",
+      "sha256": "12c9a8db41164c13286986b51ce593948839a090dccd8b9523e4fe2c7037e52f"
+    }
+  },
+  "author_html": {
+    "url": "https://ws.binghamton.edu/zahorian/yaapt.htm",
+    "sha256": "f6594b1eb718c51911e9f21d8b42df9e7d4e401c6b100844fc417bbac2df973e",
+    "bytes": 153099
+  }
+}

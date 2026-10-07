@@ -1,0 +1,13 @@
+# H40 — Whole-pipeline YAAPT và cửa sổ phổ
+
+Đăng ký trước bất kỳ phép đo YAAPT trên BT2. Rollback repository **c74467a**, mathematical control **H30 fixed Praat filtered .45**, frozen/original **009fd2c** giữ. H39 RAPT không cải thiện, tất cả dữ liệu thất bại giữ. Giả thuyết: phối hợp ứng viên phổ và thời gian của YAAPT có thể cải thiện đồng thời mean/std/count và V/UV. Đây là whole-pipeline comparison, không tuyên bố cô lập một filter.
+
+Grid chung4options: control và YAAPT frame_length **25/35/45ms**. Chỉ thay spectral frame_length trong YAAPT; tda_frame_length35ms giữ. Source version1.0.12.2 pin5c6c9bc, range70–400Hz/hop10ms và34defaults khác giữ. Spectral thực tế dùng2×frame_size. Python source unmodified, normalized PCMfloat64/noise-free adapter; source causal FIR/padding/median/native DP giữ. Raw samp_values UV0; frame center frames_pos/fs. Nearest canonical25/10 trong5ms+mộtmẫu, tiesearlier, missing unsupported không V. Không offset bằngLAB/trimcount/resample/held-stat routing.
+
+Synthetic qualification **không phải all-accuracy PASS**: v1 precheck metadata lỗi của agent trước backend giữ; v2 rich173 và transport sine173 có subharmonic/octave failures. Two173 đạt centerV70/maxerror<1Hz ở16k/44.1k; toàn zeroV0 ở6configs. Tiếp tục benchmark để đo giới hạn thực tế; không sửa port hoặc tăng F0 theo ground truth. YAAPT_SOURCE_NOTE.md ghi source/read-level/license và các giới hạn. Không sử dụng interpolated contour.
+
+12YAAPT backend calls +4Praat native calls. Không trainingfit actual_fit_files=[]; chọn cấu hình trên innerLOFO **minimax worst-file AverageMAPE rồi mean/ID**, loại NaN và giữ F1/recallVdrop≤.01, SIL+1. Outerheld không xuất hiện trong selection/fit. Tám gates giữ train≥10% gain, selectedLOFO/nested≥5%, F1/recallVdrop≤.01, SIL+1, nofileworse>2pp, phoneF1stdnotworse. Mục tiêu **mỗi nested file AvgMAPE≤2%** báo riêng. Nested vẫn exploratory sau nhiều lần đã xem4trainfiles; không độc lập xác nhận generalization.
+
+Trước benchmark: hash source/failed snapshots/probe receipts, syntax, AMDF parity và nearest/tie/unsupported; commit/push prereg+runner+verifier. Sau benchmark:64traces/68–72fits/24metrics/16fixedgroups, độc lập allraw alignment/mean/std(ddof0)/count/MAPE/VUV/support, normalized PCM SHA/native raw/timing/params34/source version/binary control, baselineH30parity, unchangedLAB/data, GTpoison/minimax/gates/PNGSVG/layout. Undefined stats giữNaN, không cho0% hoặc chọn optionNaN.
+
+Lệnh yaapt_reference.py register/check/H40 và verify_yaapt_reference.py. Giữ cả failure; không promote frozen/notebook gốc, khôngtest/Drive/deep learning/PDF hoặc Jev retry. Sau đo xuất figures/report và notebook local riêng nếu không có lỗi backend; mọi thay đổi check/commit/push/verify remote riêng.

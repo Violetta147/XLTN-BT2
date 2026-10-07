@@ -1,0 +1,11 @@
+{
+  "family": "H40",
+  "runner_sha256": "fb97da1ab4e88ead59864c18519f72f675dfdf2964d671b2ee43a1546d68f8bc",
+  "adapter_and_source_provenance_checked": true,
+  "16_actual_backend_probes_checked": true,
+  "octave_failures_retained": true,
+  "metadata_failure_before_backend_retained": true,
+  "historical_amdf_parity_checked": true,
+  "nearest_time_tie_and_unsupported_checked": true,
+  "H40_BT2_measured": false
+}

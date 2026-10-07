@@ -1,0 +1,129 @@
+{
+  "rows": [
+    {
+      "fs": 16000,
+      "signal": "rich173",
+      "frame_ms": 25,
+      "reference_hz": 173,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 16000,
+      "signal": "rich173",
+      "frame_ms": 35,
+      "reference_hz": 173,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 16000,
+      "signal": "rich173",
+      "frame_ms": 45,
+      "reference_hz": 173,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 16000,
+      "signal": "zero",
+      "frame_ms": 25,
+      "reference_hz": null,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 16000,
+      "signal": "zero",
+      "frame_ms": 35,
+      "reference_hz": null,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 16000,
+      "signal": "zero",
+      "frame_ms": 45,
+      "reference_hz": null,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 44100,
+      "signal": "rich173",
+      "frame_ms": 25,
+      "reference_hz": 173,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 44100,
+      "signal": "rich173",
+      "frame_ms": 35,
+      "reference_hz": 173,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 44100,
+      "signal": "rich173",
+      "frame_ms": 45,
+      "reference_hz": 173,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 44100,
+      "signal": "zero",
+      "frame_ms": 25,
+      "reference_hz": null,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 44100,
+      "signal": "zero",
+      "frame_ms": 35,
+      "reference_hz": null,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "fs": 44100,
+      "signal": "zero",
+      "frame_ms": 45,
+      "reference_hz": null,
+      "status": "failure",
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_setup_probe.py\", line 22, in main\n    times,frequency,call=api.pitch(audio,fs,frame_ms)\n                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 48, in pitch\n    proof=metadata()\n  File \"C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\yaapt_adapter.py\", line 39, in metadata\n    assert len(defaults)==35 and defaults['frame_length']==35. and defaults['tda_frame_length']==35.\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "real_wav_read": false,
+  "source_discovery_sha256": "6a3bc5acf78dfe0ea8d26ecb515e465b1274c0365e0252ee5abb403dc65caba4",
+  "adapter_sha256": "b464fdd2edcad2df1bd248a0355659849d749438c4a0c77e495963db2489cd5b",
+  "generator_sha256": "a6e85e3316f24ebf19e58a4452fb906728a04d893a2714b29d40956ea59fafaf",
+  "failures_retained": true
+}
