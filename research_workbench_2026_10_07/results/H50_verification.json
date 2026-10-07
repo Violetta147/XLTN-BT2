@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "pcm_full_fft_dct_acf_frames": 1291,
+  "independent_metric_groups": 100,
+  "model_refits": 40,
+  "fit_selection_exclusion": true,
+  "unsupervised_label_poison_passed": true,
+  "old_pitch_and_mask_preserved": true,
+  "new_native_calls": 0,
+  "experiment_sha256": "93d7d182a4af28e36c425442548eec724d02949d26594beefe251f8cdbf4f3d4"
+}
