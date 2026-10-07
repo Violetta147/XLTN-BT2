@@ -1,0 +1,95 @@
+{
+  "registered_utc": "2026-10-07T08:41:43.281344+00:00",
+  "baseline_commit": "29f712a",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "a68f0e529bda5a5ae8dbb8251fb8ed932f7b5254",
+  "family": "H44",
+  "algorithm": "Soft NAMDF frequency interpolation with spectral and pitch evidence",
+  "options": [
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "praat7_filtered_v0.3",
+      "method": "control",
+      "voicing_threshold": 0.3
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_anchor_w25_b200",
+      "method": "fixed_window",
+      "amdf_window_ms": 25
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_pitch_spectral_p170",
+      "method": "spectral_window",
+      "minimum_gate_hz": 170,
+      "hf_threshold": 0.05
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_soft_c140_w20",
+      "method": "soft_spectral",
+      "center_hz": 140,
+      "width_hz": 20,
+      "hf_threshold": 0.05
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_soft_c140_w40",
+      "method": "soft_spectral",
+      "center_hz": 140,
+      "width_hz": 40,
+      "hf_threshold": 0.05
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_soft_c170_w20",
+      "method": "soft_spectral",
+      "center_hz": 170,
+      "width_hz": 20,
+      "hf_threshold": 0.05
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_soft_c170_w40",
+      "method": "soft_spectral",
+      "center_hz": 170,
+      "width_hz": 40,
+      "hf_threshold": 0.05
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_soft_c200_w20",
+      "method": "soft_spectral",
+      "center_hz": 200,
+      "width_hz": 20,
+      "hf_threshold": 0.05
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_soft_c200_w40",
+      "method": "soft_spectral",
+      "center_hz": 200,
+      "width_hz": 40,
+      "hf_threshold": 0.05
+    }
+  ]
+}

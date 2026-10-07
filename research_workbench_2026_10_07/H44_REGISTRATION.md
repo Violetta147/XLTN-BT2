@@ -1,6 +1,8 @@
 # H44 — Chuyển mềm giữa cao độ AMDF25/40ms
 
-Preregister trướcđo mới; rollback repository **29f712a**, mathematicalcontrol **H31 fixedPraatfiltered.30**, frozen/original009fd2c giữ. H43 +notebookH42/H43 đãverified/push, khôngliveprocess cầnchờ. Vòngtrước làprogress cóbằngchứng. H43fixed170 cả4Average≤2%, nhưngouterstudio_M1 chọn140 từ3filekhác rồi2.523880%; targetnestedFAIL dù8gatePASS. Không sửaH43selection hoặc bỏfailedcandidate sauđo.
+Preregister trướcđo mới; rollback repository **a68f0e529bda5a5ae8dbb8251fb8ed932f7b5254**, mathematicalcontrol **H31 fixedPraatfiltered.30**, frozen/original009fd2c giữ. H43 +notebookH42/H43 đãverified/push, khôngliveprocess cầnchờ. Vòngtrước làprogress cóbằngchứng. H43fixed170 cả4Average≤2%, nhưngouterstudio_M1 chọn140 từ3filekhác rồi2.523880%; targetnestedFAIL dù8gatePASS. Không sửaH43selection hoặc bỏfailedcandidate sauđo.
+
+Ngày 07/10, người dùng yêu cầu nối tiếp cải thiện BT2 trước, bài phân đoạn mới làm sau. Yêu cầu này cho phép tiếp tục nhánh thí nghiệm đã dừng; giữ mục tiêu và protocol cũ. Audit nguồn/điều kiện thu đã hoàn tất, không thêm kết quả test hay quy tắc theo tên phone/studio vào H44. Whitelist verifier bổ sung H44 cho objective minimax trước đo; registry/precheck được commit/push và kiểm tra remote trước benchmark. Không chạy lại generator prepare_h44.py hoặc các benchmark H18–H43 đã hoàn tất.
 
 Giả thuyết: chuyển cứng cửa sổ làm F0 đổi tại ngưỡnggate; trộn log-frequency25/40ms theo gateF0 cóthể giảmđánhđổi vàselectioninstability. Đây làengineeringhypothesis từtrain đãxemnhiềuvòng, khôngpaperreplication. Ngưỡng làhyperparameters theo tínhiệutừngkhung, khônggiớitính/thiếtbị/tênfile/GTmean. Khôngdùng QA test đểđịnhhướng, khôngtestinference/tuning. Giữnestedexploratory n4, khôngindependentcorpusclaim.
 

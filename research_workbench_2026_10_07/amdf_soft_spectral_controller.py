@@ -227,7 +227,7 @@ if __name__ == '__main__':
         path = HERE / 'H44_REGISTRY.json'
         assert not path.exists(), 'Do not overwrite registered registry'
         audit.json_write(path, {'registered_utc': datetime.now(timezone.utc).isoformat(),
-                               'baseline_commit':'29f712a','original_baseline_commit':'009fd2c','rollback_repository_commit':'29f712a',
+                               'baseline_commit':'29f712a','original_baseline_commit':'009fd2c','rollback_repository_commit':'a68f0e529bda5a5ae8dbb8251fb8ed932f7b5254',
                                'family':'H44','algorithm':'Soft NAMDF frequency interpolation with spectral and pitch evidence','options':registry('H44')})
     elif action == 'check':
         check()

@@ -1,6 +1,6 @@
 # Điểm nối tiếp cho chat mới — 07/10/2026
 
-Người dùng yêu cầu dừng để tiết kiệm token và chuyển sang chat mới. Goal đang paused. Không tự chạy tiếp, không schedule; chỉ nối tiếp khi người dùng yêu cầu trong chat mới.
+Ngày 07/10/2026, người dùng đã yêu cầu tiếp tục: **cải thiện BT2 tìm F0 trước, rồi làm bài phân đoạn mới thầy giao trong XLTN-BT1-BO-SUNG**. Yêu cầu mới thay trạng thái dừng trước đó; không schedule. Giữ mục tiêu mỗi file Average MAPE≤2%, kiểm tra các gate và notebook chạy thực; audit nguồn chỉ phục vụ mục tiêu này.
 
 ## Đọc tối thiểu
 
@@ -19,13 +19,13 @@ Người dùng yêu cầu dừng để tiết kiệm token và chuyển sang cha
 - H41 nested bốn file đều ≤2%, nhưng gate std phone_F1 FAIL. H43 fixed170 bốn file đều ≤2%, nhưng nested studio_M1 chọn140 rồi đạt 2.523880%; target FAIL dù tám gate PASS. Chưa có cùng pipeline đạt toàn bộ mục tiêu và gate. Không thay frozen baseline hoặc notebook gốc.
 - Các kết quả nested vẫn exploratory: chỉ bốn train đã được xem nhiều vòng. Test đã xem lịch sử; QA dữ liệu đọc test chỉ mô tả, không dùng để chọn cấu hình.
 
-## H44 đang dở — chưa có kết quả BT2
+## H44 đang nối tiếp — chưa có kết quả BT2 ở mốc đăng ký
 
-Đã viết bản nháp rule chuyển mềm AMDF25/40ms, runner, verifier, generator và `H44_REGISTRATION.md`. Synthetic precheck PASS; `uses_BT2_WAV=false`, không native call mới. Bàn giao giữ nguyên các bản nháp này, không coi là preregistration hoàn tất.
+Rule chuyển mềm AMDF25/40ms, runner và verifier đã rà; whitelist verifier được bổ sung H44 đúng objective minimax. Synthetic precheck PASS; `uses_BT2_WAV=false`, không native call mới. Đã tạo `H44_REGISTRY.json` gồm 9 options; chốt source/registry/precheck bằng commit/push và kiểm tra remote trước benchmark.
 
-**Chưa tạo `H44_REGISTRY.json`, chưa đăng ký xong, chưa chạy benchmark H44, chưa có MAPE H44, chưa có notebook H44.** Không suy diễn synthetic PASS thành cải thiện dữ liệu thật.
+**Ở mốc đăng ký này chưa chạy benchmark H44, chưa có MAPE H44 hoặc notebook H44.** Không suy diễn synthetic PASS thành cải thiện dữ liệu thật.
 
-Nếu người dùng muốn tiếp tục: rà source/verifier; bổ sung H44 vào whitelist minimax của `verify_amdf_loop.py`; tạo registry; kiểm tra và commit/push preregistration trước đo. Sau đó mới chạy benchmark một lần, verify độc lập, giữ failure, cập nhật báo cáo/figures/STATE và commit/push. Không chạy lại `prepare_h44.py` tùy tiện vì generator đã tạo file.
+Tiếp theo: chạy H44 một lần theo registry đã commit/push, verify độc lập, giữ failure, cập nhật báo cáo/figures/STATE và commit/push. Nếu kết quả đạt mục tiêu và gate, hoàn thiện notebook chạy thực trước chuyển sang bài mới. Không chạy lại `prepare_h44.py` tùy tiện vì generator đã tạo file.
 
 ## Câu hỏi gần nhất: kiểm tra chất lượng dataset
 
