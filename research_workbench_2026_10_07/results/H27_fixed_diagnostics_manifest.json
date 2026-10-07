@@ -1,0 +1,22 @@
+{
+  "figures": [
+    {
+      "name": "H27_fixed_diagnostics",
+      "png": "figures/H27_fixed_diagnostics.png",
+      "svg": "figures/H27_fixed_diagnostics.svg",
+      "sources": [
+        {
+          "path": "results\\H27_fixed_lofo.csv",
+          "sha256": "2570600075a94983ab9950490d9f55797c5eb5838e673de915fceb223033bd3f"
+        }
+      ],
+      "caption_vi": "Mọi cấu hình đã đăng ký trên bốn file train; không chọn best bằng held file.",
+      "limits_vi": "File-stat GT và nhãn đoạn; kết quả exploratory, không có F0 chuẩn từng khung.",
+      "generator": "reference_pipeline_diagnostics.py",
+      "generator_sha256": "41ed23ffbe66e0470ff269f453a3df71c7f59bc00687a861c76ad95408ac4f1a",
+      "command": "../.venv-bt2-world/Scripts/python.exe research_workbench_2026_10_07/reference_pipeline_diagnostics.py H27"
+    }
+  ],
+  "all_registry_options_present": true,
+  "rows": 16
+}
