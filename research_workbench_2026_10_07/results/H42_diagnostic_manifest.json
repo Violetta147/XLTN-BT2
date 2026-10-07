@@ -1,0 +1,24 @@
+{
+  "figures": [
+    {
+      "name": "H42_fixed_components",
+      "png": "figures/H42_fixed_components.png",
+      "svg": "figures/H42_fixed_components.svg",
+      "sources": [
+        {
+          "path": "results\\H42_fixed_lofo.csv",
+          "sha256": "3ecd9738454bfd2a28043519d149fd08a8e48b8e1d99d9790fd4a3d81a350c72"
+        },
+        {
+          "path": "results\\H42_window_usage.csv",
+          "sha256": "db56294724cddd395f2a668787b04ec4d7444eecca038585578ade5caa2b7bc9"
+        }
+      ],
+      "caption_vi": "Đủ7cấu hình×4file, mỗi thành phần MAPE chia3; không chọnbest riêngfile.",
+      "limits_vi": "Descriptive fixed rows; nested chọn bằng file khác. Không F0 chuẩn từng khung.",
+      "generator": "amdf_spectral_diagnostics.py",
+      "generator_sha256": "e5970445f9cec5ebf9819291d146aad221a51ae4e4c4426af9e0f1f39a1dfa45",
+      "command": "python research_workbench_2026_10_07/amdf_spectral_diagnostics.py"
+    }
+  ]
+}

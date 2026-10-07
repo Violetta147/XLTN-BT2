@@ -49,6 +49,8 @@ def main():
     verify_amdf_loop.verify('H42','praat7_filtered_v0.3')
     result=json.loads((HERE/'results/H42_experiment.json').read_text())
     prior=json.loads((HERE/'results/H41_experiment.json').read_text())
+    native_proof=json.loads((HERE/'results/praat_native_7002_provenance.json').read_text())
+    assert digest(native_proof['exe'])==native_proof['exe_sha256']==result['environment']['native_exe_sha256']
     options=json.loads((HERE/'H42_REGISTRY.json').read_text())['options']
     raw=pd.read_csv(HERE/'results/H42_raw_native_frames.csv',float_precision='round_trip')
     fixed=pd.read_csv(HERE/'results/H42_fixed_lofo.csv').set_index(['option_id','file'])
@@ -124,6 +126,8 @@ def main():
             assert len(group)==call['native_frames']==len(nt)
             assert call['historical_native_call'] is True and call['new_native_call'] is False
             original=prior['source_calls']['praat7_filtered_v0.3|'+file]
+            assert original['exe_sha256']==native_proof['exe_sha256']
+            assert original['script_sha256']==digest(HERE/'praat_extract_native.praat')
             assert result['source_calls']['praat7_filtered_v0.3|'+file]==original
             for key in ('command','returncode','stdout_sha256','exe_sha256','script_sha256'):
                 assert call[key]==original[key]
@@ -189,6 +193,7 @@ def main():
              'spectral_groups_recomputed':4,'spectral_rows_recomputed':spectral_rows,'FFT_verification':'full complex FFT; explicit Hann formula',
              'new_native_calls':0,'historical_native_source_groups_verified':4,'fit_logs_checked':len(fits),
              'H41_controls_parity':True,'voicing_count_preservation':True,'GT_poison_runner_check':result['poisoned_gt_inference_invariant'],
+             'historical_binary_and_script_hashes_verified':True,
              'verifier_sha256':digest(__file__),'experiment_sha256':digest(HERE/'results/H42_experiment.json')}
     (HERE/'results/H42_spectral_verification.json').write_text(json.dumps(receipt,indent=2)+'\n')
     print(json.dumps(receipt,indent=2))

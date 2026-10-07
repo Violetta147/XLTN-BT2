@@ -1,0 +1,5 @@
+         file            option_id  average_mape  F0std_mape
+ phone_F1.wav amdf_anchor_w25_b200      1.080551    2.332506
+ phone_M1.wav amdf_anchor_w25_b200      0.776151    0.908681
+studio_F1.wav amdf_anchor_w25_b200      1.533273    0.554161
+studio_M1.wav   amdf_spectral_hf05      2.380001    3.289457

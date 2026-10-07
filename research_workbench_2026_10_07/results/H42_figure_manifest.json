@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H42_nested",
+      "png": "figures/H42_nested.png",
+      "svg": "figures/H42_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H42_metrics.csv",
+          "sha256": "973684c0a04d8631602120d7ddcb0a344250899f6a585de5837db2e2dbbd9887"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "amdf_spectral_controller.py",
+      "generator_sha256": "2242c84225c78ce4e9a71e3a20ff3b706a5906cff6651895f58622e6b7d87f69",
+      "command": "python research_workbench_2026_10_07/amdf_spectral_controller.py H42"
+    }
+  ]
+}
