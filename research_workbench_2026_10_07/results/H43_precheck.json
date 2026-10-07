@@ -1,0 +1,26 @@
+{
+  "synthetic_tests": [
+    {
+      "fs": 16000,
+      "low_ratio": 4.0010423723277274e-12,
+      "high_ratio": 0.9999999999948619
+    },
+    {
+      "fs": 44100,
+      "low_ratio": 5.174032473315354e-13,
+      "high_ratio": 0.999999999999445
+    }
+  ],
+  "rule_sha256": "27aa32aa37163f8177bb4487004c73881d4f348aa5645742961857818896a63a",
+  "uses_BT2_WAV": false,
+  "new_native_calls": 0,
+  "cutoff_hz": 1000,
+  "window_ms": 40,
+  "hf_threshold": 0.05,
+  "minimum_gate_hz_grid": [
+    0,
+    140,
+    170,
+    200
+  ]
+}

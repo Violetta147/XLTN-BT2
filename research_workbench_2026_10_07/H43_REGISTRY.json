@@ -1,0 +1,70 @@
+{
+  "registered_utc": "2026-10-07T07:10:11.272571+00:00",
+  "baseline_commit": "40916e3",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "40916e3",
+  "family": "H43",
+  "algorithm": "NAMDF pitch-conditioned spectral window controller under fixed Praat filtered .30 gate",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.3",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "control",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "amdf_anchor_w25_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 25,
+      "method": "fixed_window",
+      "amdf_window_ms": 25
+    },
+    {
+      "id": "amdf_anchor_w40_b200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "fixed_window",
+      "amdf_window_ms": 40
+    },
+    {
+      "id": "amdf_pitch_spectral_p000",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.05,
+      "minimum_gate_hz": 0
+    },
+    {
+      "id": "amdf_pitch_spectral_p140",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.05,
+      "minimum_gate_hz": 140
+    },
+    {
+      "id": "amdf_pitch_spectral_p170",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.05,
+      "minimum_gate_hz": 170
+    },
+    {
+      "id": "amdf_pitch_spectral_p200",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "spectral_window",
+      "hf_threshold": 0.05,
+      "minimum_gate_hz": 200
+    }
+  ]
+}
