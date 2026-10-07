@@ -1,0 +1,8 @@
+{
+  "synthetic_only": true,
+  "uses_BT2_WAV": false,
+  "recipe_seed_checks": 468,
+  "unsupervised_label_poison_checks": 93,
+  "all_feature_subsets_present": true,
+  "old_pitch_mask_preserved": true
+}

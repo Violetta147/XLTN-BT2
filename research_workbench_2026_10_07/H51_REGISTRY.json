@@ -1,0 +1,2601 @@
+{
+  "recipes": [
+    {
+      "id": "hard170",
+      "method": "control",
+      "blocks": "",
+      "columns": []
+    },
+    {
+      "id": "logistic_P",
+      "method": "logistic",
+      "blocks": "P",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "id": "svm_P",
+      "method": "svm",
+      "blocks": "P",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "id": "knn_P",
+      "method": "knn",
+      "blocks": "P",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "id": "rf_P",
+      "method": "rf",
+      "blocks": "P",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "id": "gmm_P",
+      "method": "gmm",
+      "blocks": "P",
+      "columns": [
+        0
+      ]
+    },
+    {
+      "id": "logistic_E",
+      "method": "logistic",
+      "blocks": "E",
+      "columns": [
+        1
+      ]
+    },
+    {
+      "id": "svm_E",
+      "method": "svm",
+      "blocks": "E",
+      "columns": [
+        1
+      ]
+    },
+    {
+      "id": "knn_E",
+      "method": "knn",
+      "blocks": "E",
+      "columns": [
+        1
+      ]
+    },
+    {
+      "id": "rf_E",
+      "method": "rf",
+      "blocks": "E",
+      "columns": [
+        1
+      ]
+    },
+    {
+      "id": "gmm_E",
+      "method": "gmm",
+      "blocks": "E",
+      "columns": [
+        1
+      ]
+    },
+    {
+      "id": "logistic_PE",
+      "method": "logistic",
+      "blocks": "PE",
+      "columns": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "svm_PE",
+      "method": "svm",
+      "blocks": "PE",
+      "columns": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "knn_PE",
+      "method": "knn",
+      "blocks": "PE",
+      "columns": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "rf_PE",
+      "method": "rf",
+      "blocks": "PE",
+      "columns": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "gmm_PE",
+      "method": "gmm",
+      "blocks": "PE",
+      "columns": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "logistic_Z",
+      "method": "logistic",
+      "blocks": "Z",
+      "columns": [
+        2
+      ]
+    },
+    {
+      "id": "svm_Z",
+      "method": "svm",
+      "blocks": "Z",
+      "columns": [
+        2
+      ]
+    },
+    {
+      "id": "knn_Z",
+      "method": "knn",
+      "blocks": "Z",
+      "columns": [
+        2
+      ]
+    },
+    {
+      "id": "rf_Z",
+      "method": "rf",
+      "blocks": "Z",
+      "columns": [
+        2
+      ]
+    },
+    {
+      "id": "gmm_Z",
+      "method": "gmm",
+      "blocks": "Z",
+      "columns": [
+        2
+      ]
+    },
+    {
+      "id": "logistic_PZ",
+      "method": "logistic",
+      "blocks": "PZ",
+      "columns": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "svm_PZ",
+      "method": "svm",
+      "blocks": "PZ",
+      "columns": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "knn_PZ",
+      "method": "knn",
+      "blocks": "PZ",
+      "columns": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "rf_PZ",
+      "method": "rf",
+      "blocks": "PZ",
+      "columns": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "gmm_PZ",
+      "method": "gmm",
+      "blocks": "PZ",
+      "columns": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "logistic_EZ",
+      "method": "logistic",
+      "blocks": "EZ",
+      "columns": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "svm_EZ",
+      "method": "svm",
+      "blocks": "EZ",
+      "columns": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "knn_EZ",
+      "method": "knn",
+      "blocks": "EZ",
+      "columns": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "rf_EZ",
+      "method": "rf",
+      "blocks": "EZ",
+      "columns": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "gmm_EZ",
+      "method": "gmm",
+      "blocks": "EZ",
+      "columns": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "logistic_PEZ",
+      "method": "logistic",
+      "blocks": "PEZ",
+      "columns": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "svm_PEZ",
+      "method": "svm",
+      "blocks": "PEZ",
+      "columns": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "knn_PEZ",
+      "method": "knn",
+      "blocks": "PEZ",
+      "columns": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "rf_PEZ",
+      "method": "rf",
+      "blocks": "PEZ",
+      "columns": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "gmm_PEZ",
+      "method": "gmm",
+      "blocks": "PEZ",
+      "columns": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "logistic_S",
+      "method": "logistic",
+      "blocks": "S",
+      "columns": [
+        3
+      ]
+    },
+    {
+      "id": "svm_S",
+      "method": "svm",
+      "blocks": "S",
+      "columns": [
+        3
+      ]
+    },
+    {
+      "id": "knn_S",
+      "method": "knn",
+      "blocks": "S",
+      "columns": [
+        3
+      ]
+    },
+    {
+      "id": "rf_S",
+      "method": "rf",
+      "blocks": "S",
+      "columns": [
+        3
+      ]
+    },
+    {
+      "id": "gmm_S",
+      "method": "gmm",
+      "blocks": "S",
+      "columns": [
+        3
+      ]
+    },
+    {
+      "id": "logistic_PS",
+      "method": "logistic",
+      "blocks": "PS",
+      "columns": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "svm_PS",
+      "method": "svm",
+      "blocks": "PS",
+      "columns": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "knn_PS",
+      "method": "knn",
+      "blocks": "PS",
+      "columns": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "rf_PS",
+      "method": "rf",
+      "blocks": "PS",
+      "columns": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "gmm_PS",
+      "method": "gmm",
+      "blocks": "PS",
+      "columns": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "logistic_ES",
+      "method": "logistic",
+      "blocks": "ES",
+      "columns": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "svm_ES",
+      "method": "svm",
+      "blocks": "ES",
+      "columns": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "knn_ES",
+      "method": "knn",
+      "blocks": "ES",
+      "columns": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "rf_ES",
+      "method": "rf",
+      "blocks": "ES",
+      "columns": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "gmm_ES",
+      "method": "gmm",
+      "blocks": "ES",
+      "columns": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "logistic_PES",
+      "method": "logistic",
+      "blocks": "PES",
+      "columns": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "svm_PES",
+      "method": "svm",
+      "blocks": "PES",
+      "columns": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "knn_PES",
+      "method": "knn",
+      "blocks": "PES",
+      "columns": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "rf_PES",
+      "method": "rf",
+      "blocks": "PES",
+      "columns": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "gmm_PES",
+      "method": "gmm",
+      "blocks": "PES",
+      "columns": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "logistic_ZS",
+      "method": "logistic",
+      "blocks": "ZS",
+      "columns": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "svm_ZS",
+      "method": "svm",
+      "blocks": "ZS",
+      "columns": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "knn_ZS",
+      "method": "knn",
+      "blocks": "ZS",
+      "columns": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "rf_ZS",
+      "method": "rf",
+      "blocks": "ZS",
+      "columns": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "gmm_ZS",
+      "method": "gmm",
+      "blocks": "ZS",
+      "columns": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "logistic_PZS",
+      "method": "logistic",
+      "blocks": "PZS",
+      "columns": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "svm_PZS",
+      "method": "svm",
+      "blocks": "PZS",
+      "columns": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "knn_PZS",
+      "method": "knn",
+      "blocks": "PZS",
+      "columns": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "rf_PZS",
+      "method": "rf",
+      "blocks": "PZS",
+      "columns": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "gmm_PZS",
+      "method": "gmm",
+      "blocks": "PZS",
+      "columns": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "logistic_EZS",
+      "method": "logistic",
+      "blocks": "EZS",
+      "columns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "svm_EZS",
+      "method": "svm",
+      "blocks": "EZS",
+      "columns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "knn_EZS",
+      "method": "knn",
+      "blocks": "EZS",
+      "columns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "rf_EZS",
+      "method": "rf",
+      "blocks": "EZS",
+      "columns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "gmm_EZS",
+      "method": "gmm",
+      "blocks": "EZS",
+      "columns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "logistic_PEZS",
+      "method": "logistic",
+      "blocks": "PEZS",
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "svm_PEZS",
+      "method": "svm",
+      "blocks": "PEZS",
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "knn_PEZS",
+      "method": "knn",
+      "blocks": "PEZS",
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "rf_PEZS",
+      "method": "rf",
+      "blocks": "PEZS",
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "gmm_PEZS",
+      "method": "gmm",
+      "blocks": "PEZS",
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "logistic_M",
+      "method": "logistic",
+      "blocks": "M",
+      "columns": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_M",
+      "method": "svm",
+      "blocks": "M",
+      "columns": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_M",
+      "method": "knn",
+      "blocks": "M",
+      "columns": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_M",
+      "method": "rf",
+      "blocks": "M",
+      "columns": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_M",
+      "method": "gmm",
+      "blocks": "M",
+      "columns": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PM",
+      "method": "logistic",
+      "blocks": "PM",
+      "columns": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PM",
+      "method": "svm",
+      "blocks": "PM",
+      "columns": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PM",
+      "method": "knn",
+      "blocks": "PM",
+      "columns": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PM",
+      "method": "rf",
+      "blocks": "PM",
+      "columns": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PM",
+      "method": "gmm",
+      "blocks": "PM",
+      "columns": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_EM",
+      "method": "logistic",
+      "blocks": "EM",
+      "columns": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_EM",
+      "method": "svm",
+      "blocks": "EM",
+      "columns": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_EM",
+      "method": "knn",
+      "blocks": "EM",
+      "columns": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_EM",
+      "method": "rf",
+      "blocks": "EM",
+      "columns": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_EM",
+      "method": "gmm",
+      "blocks": "EM",
+      "columns": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PEM",
+      "method": "logistic",
+      "blocks": "PEM",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PEM",
+      "method": "svm",
+      "blocks": "PEM",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PEM",
+      "method": "knn",
+      "blocks": "PEM",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PEM",
+      "method": "rf",
+      "blocks": "PEM",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PEM",
+      "method": "gmm",
+      "blocks": "PEM",
+      "columns": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_ZM",
+      "method": "logistic",
+      "blocks": "ZM",
+      "columns": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_ZM",
+      "method": "svm",
+      "blocks": "ZM",
+      "columns": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_ZM",
+      "method": "knn",
+      "blocks": "ZM",
+      "columns": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_ZM",
+      "method": "rf",
+      "blocks": "ZM",
+      "columns": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_ZM",
+      "method": "gmm",
+      "blocks": "ZM",
+      "columns": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PZM",
+      "method": "logistic",
+      "blocks": "PZM",
+      "columns": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PZM",
+      "method": "svm",
+      "blocks": "PZM",
+      "columns": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PZM",
+      "method": "knn",
+      "blocks": "PZM",
+      "columns": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PZM",
+      "method": "rf",
+      "blocks": "PZM",
+      "columns": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PZM",
+      "method": "gmm",
+      "blocks": "PZM",
+      "columns": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_EZM",
+      "method": "logistic",
+      "blocks": "EZM",
+      "columns": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_EZM",
+      "method": "svm",
+      "blocks": "EZM",
+      "columns": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_EZM",
+      "method": "knn",
+      "blocks": "EZM",
+      "columns": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_EZM",
+      "method": "rf",
+      "blocks": "EZM",
+      "columns": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_EZM",
+      "method": "gmm",
+      "blocks": "EZM",
+      "columns": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PEZM",
+      "method": "logistic",
+      "blocks": "PEZM",
+      "columns": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PEZM",
+      "method": "svm",
+      "blocks": "PEZM",
+      "columns": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PEZM",
+      "method": "knn",
+      "blocks": "PEZM",
+      "columns": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PEZM",
+      "method": "rf",
+      "blocks": "PEZM",
+      "columns": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PEZM",
+      "method": "gmm",
+      "blocks": "PEZM",
+      "columns": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_SM",
+      "method": "logistic",
+      "blocks": "SM",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_SM",
+      "method": "svm",
+      "blocks": "SM",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_SM",
+      "method": "knn",
+      "blocks": "SM",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_SM",
+      "method": "rf",
+      "blocks": "SM",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_SM",
+      "method": "gmm",
+      "blocks": "SM",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PSM",
+      "method": "logistic",
+      "blocks": "PSM",
+      "columns": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PSM",
+      "method": "svm",
+      "blocks": "PSM",
+      "columns": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PSM",
+      "method": "knn",
+      "blocks": "PSM",
+      "columns": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PSM",
+      "method": "rf",
+      "blocks": "PSM",
+      "columns": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PSM",
+      "method": "gmm",
+      "blocks": "PSM",
+      "columns": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_ESM",
+      "method": "logistic",
+      "blocks": "ESM",
+      "columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_ESM",
+      "method": "svm",
+      "blocks": "ESM",
+      "columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_ESM",
+      "method": "knn",
+      "blocks": "ESM",
+      "columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_ESM",
+      "method": "rf",
+      "blocks": "ESM",
+      "columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_ESM",
+      "method": "gmm",
+      "blocks": "ESM",
+      "columns": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PESM",
+      "method": "logistic",
+      "blocks": "PESM",
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PESM",
+      "method": "svm",
+      "blocks": "PESM",
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PESM",
+      "method": "knn",
+      "blocks": "PESM",
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PESM",
+      "method": "rf",
+      "blocks": "PESM",
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PESM",
+      "method": "gmm",
+      "blocks": "PESM",
+      "columns": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_ZSM",
+      "method": "logistic",
+      "blocks": "ZSM",
+      "columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_ZSM",
+      "method": "svm",
+      "blocks": "ZSM",
+      "columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_ZSM",
+      "method": "knn",
+      "blocks": "ZSM",
+      "columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_ZSM",
+      "method": "rf",
+      "blocks": "ZSM",
+      "columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_ZSM",
+      "method": "gmm",
+      "blocks": "ZSM",
+      "columns": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PZSM",
+      "method": "logistic",
+      "blocks": "PZSM",
+      "columns": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PZSM",
+      "method": "svm",
+      "blocks": "PZSM",
+      "columns": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PZSM",
+      "method": "knn",
+      "blocks": "PZSM",
+      "columns": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PZSM",
+      "method": "rf",
+      "blocks": "PZSM",
+      "columns": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PZSM",
+      "method": "gmm",
+      "blocks": "PZSM",
+      "columns": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_EZSM",
+      "method": "logistic",
+      "blocks": "EZSM",
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_EZSM",
+      "method": "svm",
+      "blocks": "EZSM",
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_EZSM",
+      "method": "knn",
+      "blocks": "EZSM",
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_EZSM",
+      "method": "rf",
+      "blocks": "EZSM",
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_EZSM",
+      "method": "gmm",
+      "blocks": "EZSM",
+      "columns": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "logistic_PEZSM",
+      "method": "logistic",
+      "blocks": "PEZSM",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "svm_PEZSM",
+      "method": "svm",
+      "blocks": "PEZSM",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "knn_PEZSM",
+      "method": "knn",
+      "blocks": "PEZSM",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "rf_PEZSM",
+      "method": "rf",
+      "blocks": "PEZSM",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "gmm_PEZSM",
+      "method": "gmm",
+      "blocks": "PEZSM",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    }
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "rollback": "521a849ffbc559e55fc897b2a028e8ff694352c1",
+  "hashes": {
+    "research_workbench_2026_10_07\\voicing_matrix.py": "a2b7f0713194bf9438970c4528d40b0ed3cf4e6bc06536ddfb85d2909ffa830e",
+    "research_workbench_2026_10_07\\verify_voicing_matrix.py": "3f66afd546216bb2808a8bc1cc35f3312c9e84354662e488cc281fcc8815ebdf",
+    "research_workbench_2026_10_07\\report_voicing_matrix.py": "e0dd547ff5e9c40dadea3d935ca6abf0bd9f1e696afabf2d68f00943411167b6",
+    "research_workbench_2026_10_07\\check_voicing_matrix.py": "db0d23516dd5d4e427c1001c35c537d738e2d9ae99630206ba2359e0d4fc1a4b",
+    "research_workbench_2026_10_07\\results\\H51_precheck.json": "7c7a1973602367774b795b035791604438d2ec19e4e83bbae920ddb457f20cbb",
+    "research_workbench_2026_10_07\\H51_REGISTRATION.md": "ee584c1912cd65a108dc16bc74b34f131f19c24072ce020eaf06796fd91f57f6",
+    "research_workbench_2026_10_07\\voicing_recovery.py": "0982b3f826f180611c88bf5075f736264c7cb9b4a91f605c530463a288e6de8b",
+    "research_workbench_2026_10_07\\verify_voicing_recovery.py": "c1821a4188a429e1de4ab5265ff208a289b31fc68e1ca1f14aa0a4634ec3c9b5",
+    "research_workbench_2026_10_07\\benchmark_keele.py": "8c5cec846edfc8c1ceeb38530a081df18056d1706a1c33d55eef9cf8cf60dd7d",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_07\\results\\H50_verification.json": "930cf034d6410dae20dfa795de471043e483844036f50214ea16f5b31d2bf435",
+    "research_workbench_2026_10_07\\results\\H50_experiment.json": "93d7d182a4af28e36c425442548eec724d02949d26594beefe251f8cdbf4f3d4",
+    "research_workbench_2026_10_07\\results\\H46_augmentation_manifest.json": "375d0727a5b76faa95efb35a9f361552144b3e83dfbea483e228c7ba05d48cd7",
+    "research_workbench_2026_10_07\\results\\H48_test_contours.csv": "19f625abb7b39af4be00feca10531509973a6465cb5e3fcaf01182fbabdab224",
+    "research_workbench_2026_10_07\\results\\H48_test_verification.json": "fd45fe03ef58e79d31a3941c4cabce881026ef81027833147e4aab5e2193d107",
+    "research_workbench_2026_10_07\\results\\H49_dataset_manifest.json": "6fd5b490f4ff3b14906228988f46d0790bfeff0844c272d0c10b9e1d189a89c0",
+    "research_workbench_2026_10_07\\results\\H49_verification.json": "666ce3420e3f49e1d68fcad6d2fd75809e057fe7e13232f593cbb36b91c961ca",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_F1.npz": "20b7ca4aaee52dda542ab6fae0d9a743b56516adf95b720d66cd3ea6e279ce09",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_M1.npz": "e0ece1aa275519928b60ec2d8a2d29eabf550f40782390c03eebbceae4864528",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_F1.npz": "4f7ed0d11b41c6b6ff71cc05362368bf95862bd96ad6b4e4af612daa5adc1898",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_M1.npz": "29d0b1dd36f2a4ea627790a40e12e117b574a9f9e34a658ebdd738ddb4d42647",
+    "research_workbench_2026_10_07\\results\\H49_native_f1nw0000.npz": "1099aa6d6d6a8e9c60caed53c24a56a0feb53a1b6ebb672505e500d780f410e0",
+    "research_workbench_2026_10_07\\results\\H49_native_f2nw0000.npz": "8334c0d2a073efb4d49400c48efc7979239d41f157a8bdb22ffbf4362200a684",
+    "research_workbench_2026_10_07\\results\\H49_native_f3nw0000.npz": "151b5becba20785c8e06ba76cac42dd75b9a60fcd958b3980d9d6ffbf4da0ab7",
+    "research_workbench_2026_10_07\\results\\H49_native_f4nw0000.npz": "a9061fc0a8732421102a19f1e7afa01025fba98d3d6ed848a3927252c555bd77",
+    "research_workbench_2026_10_07\\results\\H49_native_f5nw0000.npz": "33d28d2e4cd83f53d69f875e6236d176aec44f672983b845d6b6065d9f3b7ff3",
+    "research_workbench_2026_10_07\\results\\H49_native_m1nw0000.npz": "ce3a7d9dd9792a3f1c1f73a3ecf4f8961d024c89538c11ac657d8bc342ba009d",
+    "research_workbench_2026_10_07\\results\\H49_native_m2nw0000.npz": "183225aef5a65e8dc36cfdfceee3714d029907571addc9d932172ca245f7528d",
+    "research_workbench_2026_10_07\\results\\H49_native_m3nw0000.npz": "4d13f02ec0006b2a4cb10b53abb47b4c23123eb614b6e1b7a349ff1de819ff2f",
+    "research_workbench_2026_10_07\\results\\H49_native_m4nw0000.npz": "e020c122ae2a1e000f2ec8db3e05a5da65f38ad4e3c16a4c76019daf27fa59de",
+    "research_workbench_2026_10_07\\results\\H49_native_m5nw0000.npz": "6e99cbbe46b42b02ef01f37ba6d4d8965f8be4b4d63cea4e6459510fd5048357",
+    "TinHieuHuanLuyen\\phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "TinHieuHuanLuyen\\phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "TinHieuHuanLuyen\\studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "TinHieuHuanLuyen\\studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+    "TinHieuHuanLuyen\\phone_F1.lab": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+    "TinHieuHuanLuyen\\phone_M1.lab": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+    "TinHieuHuanLuyen\\studio_F1.lab": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+    "TinHieuHuanLuyen\\studio_M1.lab": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+    "TinHieuKiemThu\\phone_F2.wav": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+    "TinHieuKiemThu\\phone_M2.wav": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+    "TinHieuKiemThu\\studio_F2.wav": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+    "TinHieuKiemThu\\studio_M2.wav": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+    "TinHieuKiemThu\\phone_F2.lab": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565",
+    "TinHieuKiemThu\\phone_M2.lab": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
+    "TinHieuKiemThu\\studio_F2.lab": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
+    "TinHieuKiemThu\\studio_M2.lab": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
+    "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+    "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+    "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+    "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+    "research_3gt_2026_10_05\\test_3gt\\phone_F2.lab": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f",
+    "research_3gt_2026_10_05\\test_3gt\\phone_M2.lab": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238",
+    "research_3gt_2026_10_05\\test_3gt\\studio_F2.lab": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852",
+    "research_3gt_2026_10_05\\test_3gt\\studio_M2.lab": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\phone_F1__white_snr30.wav": "434cc6d89bf55dd749e9ffab8a85466037228bad4bb07cf9524a0ce018e2624f",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_phone_F1__white_snr30.npz": "1f9516bcdbf83521b36c5c1dad44bc18b94b076a9359f56ded1bebb9c5ead2eb",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\phone_F1__white_snr20.wav": "ed14c21595392e35d52ef90858548003303c946f73c9b1787c6a8f2d68821c9f",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_phone_F1__white_snr20.npz": "cc4ed025a8d39d76d50b4fb9e1b0f932036f142af479260c220b21ae9eeaeee5",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\phone_F1__pink_snr20.wav": "5dbab538818318f85f2bcd3b1f71adc9c5ec060900394959e254f8dd490906fc",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_phone_F1__pink_snr20.npz": "93f69a1fe0e0d2b057a8eda7442ed6105c18a77586c29268a7562222b60715cc",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\phone_M1__white_snr30.wav": "e22d28b987cd4807dedeaa6c7fe71577dd2a619f4a00ba1b0c76c7ffd5ca3801",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_phone_M1__white_snr30.npz": "18811c3a7c4d8b4d714bfdb3086e79478a330470d0cdc4ab0977b0ca64192f5a",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\phone_M1__white_snr20.wav": "5357822352aada58347b2931f954124a03c8b9dd9f6981b41346f73c7e5ab42d",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_phone_M1__white_snr20.npz": "e4541d0fb94dba5bbd13062c52a0feab7fe02e22c425bd72f6be94b4e8b918c9",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\phone_M1__pink_snr20.wav": "50291b16f178c6252e29bd9fe854952ec282dbd25fa1ee7cd82bd1f9c32f4160",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_phone_M1__pink_snr20.npz": "23dea3d17494257f118595560696a79c3fb1a728eb1b71d554bcc52310f67cc1",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\studio_F1__white_snr30.wav": "0349e11060ecc2258bfd9fb76bd92528ba0ce72b577a895be460995f0bd92495",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_studio_F1__white_snr30.npz": "f8b32eea4b0646c9a3b22715fe0d45f6734a401194ba875130535038aa7bf5f3",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\studio_F1__white_snr20.wav": "73ee30dae570383b626d0e306287a12bcec57babc220d09bb609d6eac1681357",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_studio_F1__white_snr20.npz": "9fbe70ec4ca7498322c2e3d01be359c6c04842c46544e8a6095e3ceecc30a925",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\studio_F1__pink_snr20.wav": "183fa648360769deb53e9e11272e44fb737424de088ffed36ef7614edec60027",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_studio_F1__pink_snr20.npz": "71f11e2f605badc134ed40ac09c2364f0ed6a0f8c1567509a7325d625bf1be2d",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\studio_M1__white_snr30.wav": "e3e6071911a9e52bd11fc84de3656929ccb010f61a31ab5614021e4f57631bc3",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_studio_M1__white_snr30.npz": "e79ff4a8083c4c6bcff07ebac457c3ead4ac4d0edd8397e06736799c477474ff",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\studio_M1__white_snr20.wav": "fdb24a2a452aeec41b3243e467ce7bfde600ccd561a80a50843d3cd10d69e914",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_studio_M1__white_snr20.npz": "1b18e8a2fa7cd6e8bde168d8eef877fbcdf0e5bff7958b8a7d02cefbd00ce048",
+    "research_workbench_2026_10_07\\augmentation\\H46_train\\studio_M1__pink_snr20.wav": "2bf5dc32cdb62e8d23fd7ded0611e6ede5462ed2c3c2f6163e52b7f9c65334bc",
+    "research_workbench_2026_10_07\\results\\H46_aug_features_studio_M1__pink_snr20.npz": "de404213baadb58085f63eef8717bb9979a61001c42a86a0384cb986d0add936",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f1nw0000\\signal.wav": "b5c8e5481eb04e89df202585e6261675d6470df889a1a51a238721a7df8d84a7",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f1nw0000\\pitch.npy": "bac87473c49ae6cdce223bceb3970103090f48053cb7695b61e116d9ed5291ba",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f1nw0000\\pitch.json": "f89d1eb34e1dbc4ac63acbf0c4251dc91612e708606d861d64569b4ebfdcfaa2",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f1nw0000\\_metadata.json": "da6e7b3d9275790a4029678ae367ce33a93cfcea51c4827649e674558997c09a",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f1nw0000\\signal.json": "f3f7f912b1cc896ceefaa26087cd3192d85c9a900c6e39fd4808c4d247b0d183",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f2nw0000\\signal.wav": "68cd3563da70813080436b12f10c49c93d6357b0453ae600a38b0aaf37d523d3",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f2nw0000\\pitch.npy": "3769c6dc3dfa442bf181f394150736c47b2c98da628b004d432e6e33fb9a45d0",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f2nw0000\\pitch.json": "5177f78d0c5928d5e1bea633285163eca10aa7f85e4131cb6eeaff2e231bb6e9",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f2nw0000\\_metadata.json": "126e68bc24d9cf3f1a24211298a690931475d7f09c79c51df4970e4d1945a47d",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f2nw0000\\signal.json": "283017c67aef475ad7e5db28385b3a2cba1f01e9ca43a8046131ee97ba72a89f",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f3nw0000\\signal.wav": "1c1aa8c573c524764ae21ed127a41b31ab3b677217f7990c442ee53674fae520",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f3nw0000\\pitch.npy": "5e2f38470ba40d360b1758dde7c8df9bf661bb84c1d282a0f0ae0a56d2f967fa",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f3nw0000\\pitch.json": "0431ae0b2472b84a1433740e4e17020012cfc487893ec30431b57f13bf7a5145",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f3nw0000\\_metadata.json": "bfc3aa88213d79e8f975f5caf06b7f766ffe3f0e55a718a32ea387b11ddd0d4b",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f3nw0000\\signal.json": "197b9407fc25d20b9d52e33d01a859b0a090c2a99410696269ce1477369bc437",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f4nw0000\\signal.wav": "cadd986d818c2bc751aec9eb4d0c7a8248c90823e53a15196fecb2a2bbe75d8c",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f4nw0000\\pitch.npy": "66798e1c91a0201684d709a23d722449c43114f26533d718511c25c2b18b9b2f",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f4nw0000\\pitch.json": "8524e52c59c284510cf36e6b2090e3506f5047c27252076f1654fedd28addd21",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f4nw0000\\_metadata.json": "b89f65eb57e38fc7f9318bdd505cfac723afbe2af82e59894fd2162a37ccaac4",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f4nw0000\\signal.json": "05a6e66da7446a01efc7e78866407c4f6a6396b79b1d313b970a4914cc403b22",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f5nw0000\\signal.wav": "ae001a4459909ed91d7a0b78bb27dd8261d4b6e5db4b2e4893c038a8b4dd80b2",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f5nw0000\\pitch.npy": "468007fbfc6dc95c2cfb0bc7cef0a35d5d25f262dc70eeb7417ec026d4871c63",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f5nw0000\\pitch.json": "3af3d767ac9dba809a46a52e92ae4cdceec0bbd5fc6c45362396bdcce2292c88",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f5nw0000\\_metadata.json": "c8b6a4d309f45b281121d7e66eb87662f6e7818299d093399a0e73dcf9b1c9bf",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\f5nw0000\\signal.json": "397dd91c0a3bf23802e7bd42564ae4857e52e4e185afb68f31bc7cd4c3741498",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m1nw0000\\signal.wav": "97824fd9290d3abaee1f5c3fd58a1fd4356a525a3b8b73e7767955efd1d18cef",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m1nw0000\\pitch.npy": "9ff00988dd257ae886f5fd34a219eea2eee986bfdbd6bbcf4c29b23be2fd2f92",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m1nw0000\\pitch.json": "b12bc7a50df818d6d8cfb510a4ad6c4accc15c349680be1d9d7e59759823294d",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m1nw0000\\_metadata.json": "8cc25c202239f5e449364715fe646c346b1342a6723835dbd101a0a05904b79f",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m1nw0000\\signal.json": "b630ac7043dd116f0d0ccd487d85bda672763ff8107c2583e5e6e0afd3ed8edc",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m2nw0000\\signal.wav": "25c54453c89e73854b74a48ac73fea09fc35052f7dc4eb4932ee6a871d1f997c",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m2nw0000\\pitch.npy": "54ba1acbf68e94b8f61a702664ded6e0a3e9c189f6e6640af8f7b5b0743c2387",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m2nw0000\\pitch.json": "6fe7141bbbac9038570276d4ffbea9398378cda7f4e390e754584bb0d3027a2e",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m2nw0000\\_metadata.json": "485931cca29e59ba87989ac9da316c1884ac0541da0be5543f79840c3b9b3027",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m2nw0000\\signal.json": "8c651920d5678db28f664a9c323042b0a2b8654d7d7eab22e34ed8509a3c450b",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m3nw0000\\signal.wav": "bd618840fad7ecd3bf215a7ac085cec06c7b5a4912a3fea9bad6ab170f34d1ad",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m3nw0000\\pitch.npy": "be946cc5faae1a831e93dd4b7278d590c43f68bde0498d45687dfc31fa2de3bc",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m3nw0000\\pitch.json": "5213a1a40a82cc54c8c91a1658cb8519e5d0bca92cb5a30e020fd94c6bd09c69",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m3nw0000\\_metadata.json": "89ad37c39911f0433e80e83e2ca79a461c5fba0dd1937b942129abf4a2069f9d",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m3nw0000\\signal.json": "a4f60d82630d87469a0e1421520d5e55236404cc2e50a2c12e0245f17a2783af",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m4nw0000\\signal.wav": "74bcc688f63edf63bb18fe6f73ad17c76ef13bb867af7d90a52b6859e42aaf9e",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m4nw0000\\pitch.npy": "769d0861ac16781e83e1c567aa58a4bc899c9ac38af02caf1191609253698ea9",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m4nw0000\\pitch.json": "e1bfe72c30d65654bc811cf0f878aabb147092f3e6f1c043fd4f147de4ed5cae",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m4nw0000\\_metadata.json": "61405b1531f6bbabe914228b65f70a40c7dc035202a5443699d5d01830debb99",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m4nw0000\\signal.json": "e01be9aec423b1b718731fc8ab1b0b62c29c55799d03c51b7ec384b43d8e101c",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m5nw0000\\signal.wav": "7eca14f48f6e4788da219fb2f8c26bf7d7d9562fde56630fa6648d8f283fc9aa",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m5nw0000\\pitch.npy": "bf4c02ad9a3648d9daf71fba737072e15effa5faf57073c21da71313638defb5",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m5nw0000\\pitch.json": "1963c7b8fd44f8dd59b0f9366275e0eb9048f16457970f256754b9d0de94bbbd",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m5nw0000\\_metadata.json": "ac7c35548331d5f26a1d79aaa72389d093201135aeb4d0ed10fdd1ec6f0fc19f",
+    "research_workbench_2026_10_07\\benchmark_data\\KEELE\\m5nw0000\\signal.json": "ae767751a94c183600e40a1d67c57ea85e1ff368a488af8762aa316fab09ce14"
+  },
+  "full_reference_recipes": [
+    "logistic_PEZSM",
+    "svm_PEZSM",
+    "knn_PEZSM",
+    "rf_PEZSM",
+    "gmm_PEZSM"
+  ],
+  "selection": "worst file across all seeds, mean, ID; validation guards pass each seed; never choose a seed"
+}
