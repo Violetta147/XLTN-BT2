@@ -26,6 +26,14 @@ def verify(family):
     for p, value in result['data_sha256'].items():
         assert digest(REPO / 'TinHieuHuanLuyen' / p) == value, p
     names = set(result['data_sha256'])
+    original_profile = pd.read_csv(REPO / 'research_workbench_2026_10_06/results/training_data_profile.csv').set_index('file')
+    label_hashes = {}
+    for file in names:
+        segment_path = REPO / 'TinHieuHuanLuyen' / file.replace('.wav', '.lab')
+        stats_path = REPO / 'research_3gt_2026_10_05/train_3gt' / file.replace('.wav', '.lab')
+        assert digest(segment_path) == original_profile.loc[file, 'segment_lab_sha256']
+        assert digest(stats_path) == original_profile.loc[file, 'stats_lab_sha256']
+        label_hashes[file] = {'segment_sha256': digest(segment_path), 'stats_sha256': digest(stats_path)}
     traces = pd.read_csv(HERE / f'results/{family}_inner_traces.csv')
     assert len(traces) == len(identities) * 16
     assert not traces.duplicated(['outer_held', 'option_id', 'inner_held']).any()
@@ -42,6 +50,13 @@ def verify(family):
     contours = pd.read_csv(HERE / f'results/{family}_nested_contours.csv')
     assert len(metrics) == 24 and not metrics.duplicated(['split', 'model', 'file']).any()
     for (file, model), group in contours.groupby(['file', 'model']):
+        segments = []
+        for line in (REPO / 'TinHieuHuanLuyen' / file.replace('.wav', '.lab')).read_text(encoding='utf-8').splitlines():
+            parts = line.split()
+            if len(parts) == 3 and parts[0] not in ('F0mean', 'F0std', 'F0num'):
+                segments.append((float(parts[0]), float(parts[1]), parts[2].lower()))
+        fresh_labels = [next((lab for a, b, lab in segments if a <= t < b), 'unknown') for t in group.time_s]
+        assert np.array_equal(group.label.to_numpy(), fresh_labels)
         saved = metrics[(metrics.split == 'nested') & (metrics.file == file) & (metrics.model == model)].iloc[0]
         valid = group.f0_hz.dropna().to_numpy()
         statistics = {'F0mean': valid.mean(), 'F0std': valid.std(), 'F0num': len(valid)}
@@ -75,6 +90,7 @@ def verify(family):
     checks = {'family': family, 'registry_options': len(identities), 'inner_trace_rows': len(traces),
               'outer_contour_stats_and_labels_recomputed': True, 'fit_selection_exclusions_verified': True,
               'hashes_and_figures_verified': True, 'raw_baseline_reproduced_by_runner': result['baseline_reproduced'],
+              'label_hashes_unchanged_since_H00': label_hashes,
               'eligible': result['decision']['eligible'], 'champion_promoted': result['decision']['champion_promoted']}
     (HERE / f'results/{family}_verification.json').write_text(json.dumps(checks, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(checks, indent=2))
