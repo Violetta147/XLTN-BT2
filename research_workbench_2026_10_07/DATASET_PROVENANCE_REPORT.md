@@ -103,3 +103,23 @@ Chạy từ repository:
 ```
 
 Mã audit chỉ đọc local và GitHub, chốt pin source công khai. Nó đối chiếu byte/SHA-256, chuẩn hóa xuống dòng riêng cho văn bản, đọc RIFF/XMP và kiểm tra cache 3GT/baseline Git. [Receipt JSON](results/dataset_provenance.json) lưu URL, hash, metadata, lịch sử ba file công khai và các cặp thống kê. Kết quả: 8 WAV trùng byte, 8 LAB trùng nội dung, 8 LAB 3GT trùng byte cache, 17 file gốc khớp baseline; file gốc không đổi trong audit. Lịch sử chat được đối chiếu riêng với các dòng nêu ở mục 4; script không đọc hoặc chạy lại lệnh trong session cũ.
+
+## 8. Tác giả repo công khai đã làm gì với dữ liệu?
+
+Rà mã tại cùng pin `e38529d`, gồm 6 file Python/MATLAB và 4 code cell của `vu.ipynb`; không thực thi mã của repo công khai. Đọc đủ 14 commit trong lịch sử reachable từ pin. URL, hash source đã đối chiếu Git blob và danh sách thay đổi WAV/LAB được lưu tại [public_repo_usage_review.json](results/public_repo_usage_review.json).
+
+Trong [vu.py](https://github.com/dthle/TinHieuHuanLuyen/blob/e38529d6485b59e49dddeccb44c129a6f93e48f3/vu.py#L54-L66), tác giả đọc WAV/LAB, tách hai dòng thống kê cuối rồi dùng nhãn đoạn v/uv để giữ phần tín hiệu ngoài khoảng lặng trong bộ nhớ. Chương trình chia khung, tính năng lượng ngắn hạn (STE) và số lần tín hiệu đổi dấu qua mức 0 (ZCR), tìm ngưỡng bằng tìm kiếm nhị phân rồi phân loại hữu thanh/vô thanh. Nó so kết quả với nhãn đoạn có sẵn và xuất đồ thị HTML. Mặc định cuối file gọi bốn tên có hậu tố1; [VU.m](https://github.com/dthle/TinHieuHuanLuyen/blob/e38529d6485b59e49dddeccb44c129a6f93e48f3/VU.m#L1-L46) có triển khai MATLAB dùng bốn tên hậu tố2. Những biến thể khác cũng xoay quanh STE/ZCR, biểu đồ và phân loại đoạn.
+
+Đây là xử lý phân loại hữu thanh/vô thanh, chưa thấy pipeline tính cao độ bằng ACF/AMDF hoặc tạo lại F0mean/F0std/F0num trong các source đã đọc. Không thấy lệnh ghi WAV/LAB; việc cắt khoảng lặng trong mảng tín hiệu không đồng nghĩa tác giả sửa file âm thanh gốc. Trong 14 commit đã kiểm tra, cả 8 WAV và 8 LAB chỉ có thay đổi `added`, không có lần sửa sau đó: bốn cặp hậu tố2 được thêm ở `2aac39f9`, bốn cặp hậu tố1 ở `15376567`. Không có bằng chứng từ lịch sử repo này rằng tác giả đổi mean/std của LAB để tạo bộ 3GT. Không suy ra được những thao tác ngoài Git hoặc trước khi file lần đầu được thêm.
+
+## 9. Có thể thầy thêm F0num rồi ghi nhầm mean/std không?
+
+Người dùng xác nhận 3GT được thầy gửi để thi trên lớp và nghi có lỗi nhập số khi thêm count. Giả thuyết này có thể xảy ra nhưng chưa được chứng minh. Cả **8/8 mean và 8/8 std** đều khác giữa hai phiên bản, nên mẫu thay đổi ít giống một lỗi gõ nhầm đơn lẻ. Vẫn có thể có lỗi chuyển bảng, dùng nhầm phiên bản thống kê hoặc một lỗi có hệ thống; không loại trừ chỉ vì nhiều ô cùng đổi.
+
+Cùng WAV không buộc mọi cách đo F0 phải cho cùng mean/std/count: ba thống kê được tính từ các giá trị F0 mà quy trình đo nhận là hợp lệ. Nếu đổi cách nhận khung, phương pháp đo hoặc cấu hình, chúng có thể đổi dù âm thanh không đổi. Chưa có bằng chứng quy trình đo thực sự đã đổi ở đây. Việc số mới có phần thập phân cũng không chứng minh nó chính xác hơn.
+
+Theo đề thi hiện được người dùng xác nhận, giữ 3GT thầy cung cấp làm bộ thống kê để chấm; không thay bằng LAB cũ hoặc tự sửa các số nghi ngờ. LAB gốc vẫn là nguồn nhãn đoạn cho các kiểm tra v/uv/sil riêng. Câu cần đối chiếu với người phát hành: “Bản 3GT chỉ bổ sung F0num hay thầy đã tính lại cả mean/std? Ví dụ phone_F1 đổi 217/23 thành 215.6/20.6; bài thi chấm theo bản nào và bản mới được tính bằng cách nào?” Agent chưa gửi câu này cho giảng viên.
+
+Chưa cần Jev để phân xử. Các phép đối chiếu số, byte và lịch sử Git đã được kiểm tra trực tiếp; Jev không có bằng chứng về ý định cập nhật của giảng viên hay cách tạo reference chưa được cung cấp. Jev có thể rà một lời giải thích cụ thể sau khi có nguồn, nhưng không xác nhận thay giảng viên rằng một con số là lỗi ghi nhầm. Không gọi Jev trong lượt này và không thử lại nhánh MCP đã lỗi.
+
+Người dùng cũng hỏi khả năng thầy dùng công cụ: có thể đo một chuỗi F0 rồi xuất ba thống kê bằng phần mềm. Tài liệu BT2 local gợi ý WaveSurfer để xem pitch contour, nhưng không nói ground truth được tạo bằng WaveSurfer. Đây là một giả thuyết về cách đo, không phải nguồn đã xác minh. Hướng truy nguồn bằng transcript cũng được người dùng đề xuất: cần lời nói thực được nghe/chép từ WAV, rồi tìm và đối chiếu bản thu ứng viên. Công cụ audio hiện tại không hỗ trợ nghe WAV trực tiếp; chưa có transcript đã xác minh và chưa có kết quả tìm nguồn theo lời nói. Không chạy ASR bằng deep learning để vượt giới hạn BT2.

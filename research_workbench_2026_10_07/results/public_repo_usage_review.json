@@ -1,0 +1,730 @@
+{
+  "checked_at": "2026-10-07T15:12:46.801537+07:00",
+  "repo": "dthle/TinHieuHuanLuyen",
+  "pin": "e38529d6485b59e49dddeccb44c129a6f93e48f3",
+  "executed_public_code": false,
+  "called_jev": false,
+  "source_files": [
+    {
+      "path": "VU.m",
+      "raw_sha256": "f2cf7e4a0c5f7645eff3d56ac193b35b96ac0b410bfed47a921b384b5e2b793b",
+      "git_blob_sha": "fdd0d02a178be51fee91fec08358c0658bbcc6ad",
+      "git_blob_verified": true,
+      "code_cells": null,
+      "f0_name_refs": [],
+      "write_refs": [],
+      "functions": [
+        {
+          "unit": "file",
+          "line": 48,
+          "signature": "Voiced_Unvoiced(file, T_STE, T_ZCR, trainingData, name, firstUV)"
+        },
+        {
+          "unit": "file",
+          "line": 101,
+          "signature": "result = normaliseMAX(frame)"
+        },
+        {
+          "unit": "file",
+          "line": 106,
+          "signature": "result = normaliseByT(frame, T)"
+        },
+        {
+          "unit": "file",
+          "line": 117,
+          "signature": "[frame, frameSize, frameCount] = chiaFrame(signal, Fs)"
+        },
+        {
+          "unit": "file",
+          "line": 129,
+          "signature": "result = STE(frame, frameCount)"
+        },
+        {
+          "unit": "file",
+          "line": 140,
+          "signature": "result = ZCR(frame, frameCount)"
+        },
+        {
+          "unit": "file",
+          "line": 150,
+          "signature": "result = sgn(frame)"
+        },
+        {
+          "unit": "file",
+          "line": 158,
+          "signature": "drawFrame(frame, frameSize, Fs, color)"
+        },
+        {
+          "unit": "file",
+          "line": 174,
+          "signature": "drawBorder(border, color, firstUV)"
+        },
+        {
+          "unit": "file",
+          "line": 192,
+          "signature": "[voiced, unvoiced] = chiaUV(frame, trainingData, firstIsUorV)"
+        },
+        {
+          "unit": "file",
+          "line": 223,
+          "signature": "T = binsearch(g, f)"
+        }
+      ]
+    },
+    {
+      "path": "test.py",
+      "raw_sha256": "efc27ecaba340c3b5fd910e53919164bb5a154b82c5a05185a1020720b1f0ff9",
+      "git_blob_sha": "4c9dccbbbe025208e8d3dd9f275574d8b7f6a935",
+      "git_blob_verified": true,
+      "code_cells": null,
+      "f0_name_refs": [],
+      "write_refs": [],
+      "functions": []
+    },
+    {
+      "path": "test_hist.py",
+      "raw_sha256": "011f20f50f38d9d8776664063697400101fec77bb711fd32259bdcac5f0b1cb1",
+      "git_blob_sha": "a6243894234b4cfed508023e52c5e029a48240c4",
+      "git_blob_verified": true,
+      "code_cells": null,
+      "f0_name_refs": [],
+      "write_refs": [],
+      "functions": []
+    },
+    {
+      "path": "vu.ipynb",
+      "raw_sha256": "d8210618ad61cd1c4478cf329c7c0366450396cf1f6a2c0f091df406b14eaed5",
+      "git_blob_sha": "60bfbdc334cf70a22ad627be8e8e082595846622",
+      "git_blob_verified": true,
+      "code_cells": 4,
+      "f0_name_refs": [],
+      "write_refs": [],
+      "functions": [
+        {
+          "unit": "cell_0",
+          "line": 7,
+          "signature": "read_lab(lab_file_name: str):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 15,
+          "signature": "get_closest(array_time, values):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 24,
+          "signature": "get_closest_idx(array_time, values):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 32,
+          "signature": "array_norm(arr: np.ndarray):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 38,
+          "signature": "array_norm_by_T(arr: np.ndarray, T):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 43,
+          "signature": "remove_sl(array: np.ndarray, timestamp_label, t):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 56,
+          "signature": "load_data(audio_name: str):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 70,
+          "signature": "separate_frames(signal, sr, t, frame_length=0.025):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 82,
+          "signature": "calc_STE(signal_frames):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 96,
+          "signature": "calc_ZCR(signal_frames):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 109,
+          "signature": "separate_vu(STE, timestamp_label, t):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 130,
+          "signature": "calc_T_binsearch(g, f):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 152,
+          "signature": "jitter_remove(VU_jit, frame_size):"
+        },
+        {
+          "unit": "cell_0",
+          "line": 162,
+          "signature": "plot_voiced_unvoiced(audio_name, signal, t, timestamp_label, STE, ZCR, VU, renderer='notebook'):"
+        },
+        {
+          "unit": "cell_1",
+          "line": 2,
+          "signature": "voiced_unvoiced(audio_name_list, plot_name_list):"
+        }
+      ]
+    },
+    {
+      "path": "vu.py",
+      "raw_sha256": "2530b0e70db31968d4cfe9b2290ffd8f826c203a0daca6e8b479dab5ded9316c",
+      "git_blob_sha": "c2c6ef0691e709ee9aa5b23a65d1f537e3b82702",
+      "git_blob_verified": true,
+      "code_cells": null,
+      "f0_name_refs": [],
+      "write_refs": [
+        {
+          "unit": "file",
+          "line": 235,
+          "code": "fig.write_html(f\"./output/{audio_name}.html\")"
+        }
+      ],
+      "functions": [
+        {
+          "unit": "file",
+          "line": 10,
+          "signature": "read_lab(lab_file_name: str):"
+        },
+        {
+          "unit": "file",
+          "line": 18,
+          "signature": "get_closest(array_time, values):"
+        },
+        {
+          "unit": "file",
+          "line": 27,
+          "signature": "get_closest_idx(array_time, values):"
+        },
+        {
+          "unit": "file",
+          "line": 35,
+          "signature": "array_norm_by_T(arr: np.ndarray, T):"
+        },
+        {
+          "unit": "file",
+          "line": 41,
+          "signature": "remove_sl(array: np.ndarray, timestamp_label, t):"
+        },
+        {
+          "unit": "file",
+          "line": 54,
+          "signature": "load_data(audio_name: str):"
+        },
+        {
+          "unit": "file",
+          "line": 69,
+          "signature": "separate_frames(signal, sr, t, frame_length=0.025):"
+        },
+        {
+          "unit": "file",
+          "line": 81,
+          "signature": "calc_STE(signal_frames):"
+        },
+        {
+          "unit": "file",
+          "line": 94,
+          "signature": "calc_ZCR(signal_frames):"
+        },
+        {
+          "unit": "file",
+          "line": 108,
+          "signature": "separate_vu(STE, timestamp_label, t):"
+        },
+        {
+          "unit": "file",
+          "line": 129,
+          "signature": "calc_T_binsearch(g, f):"
+        },
+        {
+          "unit": "file",
+          "line": 153,
+          "signature": "jitter_remove(VU_jit, frame_size):"
+        },
+        {
+          "unit": "file",
+          "line": 164,
+          "signature": "plot_voiced_unvoiced(audio_name, signal, t, timestamp_label, STE, ZCR, VU, renderer='notebook'):"
+        },
+        {
+          "unit": "file",
+          "line": 239,
+          "signature": "voiced_unvoiced(audio_name_list, plot_name_list):"
+        }
+      ]
+    },
+    {
+      "path": "vu_studio_M1_ZCR.py",
+      "raw_sha256": "2f2c770bac14b3ce462ae4c8ac4648f2df8006a43706b417fdeca15243d4068e",
+      "git_blob_sha": "a46e407e4ca67ffc08a72d9674e4429177e65508",
+      "git_blob_verified": true,
+      "code_cells": null,
+      "f0_name_refs": [],
+      "write_refs": [],
+      "functions": [
+        {
+          "unit": "file",
+          "line": 8,
+          "signature": "read_lab(lab_file_name: str):"
+        },
+        {
+          "unit": "file",
+          "line": 16,
+          "signature": "get_closest(array_time, values):"
+        },
+        {
+          "unit": "file",
+          "line": 25,
+          "signature": "get_closest_idx(array_time, values):"
+        },
+        {
+          "unit": "file",
+          "line": 34,
+          "signature": "array_norm(arr: np.ndarray):"
+        },
+        {
+          "unit": "file",
+          "line": 40,
+          "signature": "array_norm_by_T(arr: np.ndarray, T):"
+        },
+        {
+          "unit": "file",
+          "line": 45,
+          "signature": "remove_sl(array: np.ndarray, timestamp_label, t):"
+        },
+        {
+          "unit": "file",
+          "line": 58,
+          "signature": "load_data(audio_name: str):"
+        },
+        {
+          "unit": "file",
+          "line": 72,
+          "signature": "separate_frames(signal, sr, t, frame_length=0.02):"
+        },
+        {
+          "unit": "file",
+          "line": 86,
+          "signature": "calc_STE(signal_frames):"
+        },
+        {
+          "unit": "file",
+          "line": 98,
+          "signature": "calc_ZCR(signal_frames):"
+        },
+        {
+          "unit": "file",
+          "line": 109,
+          "signature": "separate_vu(STE, timestamp_label, t):"
+        },
+        {
+          "unit": "file",
+          "line": 130,
+          "signature": "calc_T_binsearch(g, f):"
+        }
+      ]
+    },
+    {
+      "path": "vu_tho.py",
+      "raw_sha256": "438e3984e361a2dba069eaa61b7e252f4dd5cf6fb713d4f0e00e8cd531b2cb54",
+      "git_blob_sha": "1585f7021b2169c806492422679d92de04249645",
+      "git_blob_verified": true,
+      "code_cells": null,
+      "f0_name_refs": [],
+      "write_refs": [],
+      "functions": [
+        {
+          "unit": "file",
+          "line": 8,
+          "signature": "doc_file_lab(lab_file_name: str):"
+        },
+        {
+          "unit": "file",
+          "line": 16,
+          "signature": "tim_gia_tri(array_time, values):"
+        },
+        {
+          "unit": "file",
+          "line": 25,
+          "signature": "tim_index(array_time, values):"
+        },
+        {
+          "unit": "file",
+          "line": 33,
+          "signature": "norm_mang(arr: np.ndarray):"
+        },
+        {
+          "unit": "file",
+          "line": 39,
+          "signature": "norm_mang_by(arr: np.ndarray, T):"
+        },
+        {
+          "unit": "file",
+          "line": 44,
+          "signature": "xoa_silence(array: np.ndarray, timestamp_label, t):"
+        },
+        {
+          "unit": "file",
+          "line": 57,
+          "signature": "xu_ly_du_lieu(audio_name: str):"
+        },
+        {
+          "unit": "file",
+          "line": 71,
+          "signature": "chia_frames(signal, sr, t, frame_length=0.025):"
+        },
+        {
+          "unit": "file",
+          "line": 83,
+          "signature": "tinh_STE(signal_frames):"
+        },
+        {
+          "unit": "file",
+          "line": 97,
+          "signature": "tinh_ZCR(signal_frames):"
+        },
+        {
+          "unit": "file",
+          "line": 110,
+          "signature": "chia_voice_unvoice(STE, timestamp_label, t):"
+        },
+        {
+          "unit": "file",
+          "line": 131,
+          "signature": "tim_kiem_nhi_phan(g, f):"
+        },
+        {
+          "unit": "file",
+          "line": 154,
+          "signature": "jitter_remove(VU_jit, frame_size):"
+        },
+        {
+          "unit": "file",
+          "line": 164,
+          "signature": "plot_voiced_unvoiced(audio_name, signal, t, timestamp_label, STE, ZCR, VU, renderer='notebook'):"
+        },
+        {
+          "unit": "file",
+          "line": 220,
+          "signature": "voiced_unvoiced(audio_name_list, plot_name_list):"
+        }
+      ]
+    }
+  ],
+  "commit_history": [
+    {
+      "sha": "e38529d6485b59e49dddeccb44c129a6f93e48f3",
+      "date": "2022-10-12T15:55:55Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "d5ef74c38e6f5c084f9de0cf847435f36fbefba6",
+      "date": "2022-10-12T15:44:14Z",
+      "message": "sua di",
+      "data_files": []
+    },
+    {
+      "sha": "dcef51b5e66036a59fffbd5bd3e87586c2992e16",
+      "date": "2022-10-12T14:02:27Z",
+      "message": "gan xong",
+      "data_files": []
+    },
+    {
+      "sha": "73e97da7b961c407758eeb13b4c3fbf98e482348",
+      "date": "2022-10-12T04:59:03Z",
+      "message": "gan xong",
+      "data_files": []
+    },
+    {
+      "sha": "1f9e08a100201d96236217b713269c2b372cf74a",
+      "date": "2022-10-12T04:01:55Z",
+      "message": "fill all list",
+      "data_files": []
+    },
+    {
+      "sha": "e4a383052d999664aad44da8c2cf555e8fd9afd2",
+      "date": "2022-10-12T03:57:47Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "59b4af9bae26e7327069f5e909aea0bfc1b66795",
+      "date": "2022-10-09T11:24:42Z",
+      "message": "clean code",
+      "data_files": []
+    },
+    {
+      "sha": "7be3da98f38b81191ae320072c30e3026d881a16",
+      "date": "2022-10-09T10:28:53Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "153765674a795d4be37db8d0aabc4b78a790a28e",
+      "date": "2022-10-09T10:24:15Z",
+      "message": "abc",
+      "data_files": [
+        {
+          "path": "phone_F1.lab",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "blob_sha": "6c2682c228fbd3f505f6d972ce2725551ad5aa90"
+        },
+        {
+          "path": "phone_F1.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "505357ef8e25fd05173691afc5eba641aea0c635"
+        },
+        {
+          "path": "phone_M1.lab",
+          "status": "added",
+          "additions": 15,
+          "deletions": 0,
+          "blob_sha": "adf944154f17796c8ac56ea0523c5d4723720047"
+        },
+        {
+          "path": "phone_M1.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "fc1d331fe46e855abb05e217b2b7827c6c373752"
+        },
+        {
+          "path": "studio_F1.lab",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0,
+          "blob_sha": "de9f6beb4ae5a509beb9e3e46366f9de9b7ec0c8"
+        },
+        {
+          "path": "studio_F1.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "a563d2d7a18d14633f2201d5e6590921590cb55f"
+        },
+        {
+          "path": "studio_M1.lab",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0,
+          "blob_sha": "8c55fbdb356c1a59ef16846822ec1aaa6c63cda2"
+        },
+        {
+          "path": "studio_M1.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "ce6e176d5f689203625701acaddfbee403c04bb7"
+        }
+      ]
+    },
+    {
+      "sha": "2f5a4743ac4d9c5af4a5aad32fc47cd02688d200",
+      "date": "2022-10-09T10:06:51Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "605201b5be3078b458e56147627792266d1c64c7",
+      "date": "2022-10-09T09:40:40Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "c35ab03c0d50320d788386bdae7e3fd79cf6476a",
+      "date": "2022-10-08T15:16:24Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "5d9263144bef4524c8a7118aec8b0253bad522b2",
+      "date": "2022-10-07T08:19:40Z",
+      "message": "abc",
+      "data_files": []
+    },
+    {
+      "sha": "2aac39f9bdc86b99b1799a628d0bea74d9a61b2f",
+      "date": "2022-10-06T12:51:43Z",
+      "message": "abc",
+      "data_files": [
+        {
+          "path": "README",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "blob_sha": "1b42cc6402f1182999df604a76d5b89f667b6a07"
+        },
+        {
+          "path": "phone_F2.lab",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "blob_sha": "86a7f31efc7eaf8b04298997e1dd318de8109b25"
+        },
+        {
+          "path": "phone_F2.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "7d49c2f0e23796927e5d030f0fb9a939aff11282"
+        },
+        {
+          "path": "phone_M2.lab",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0,
+          "blob_sha": "866d5e2dc1fe63fd819fecb1567acf4375e2a071"
+        },
+        {
+          "path": "phone_M2.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "e2aca0928a987244ca4c50147df4ee4aa99f5e77"
+        },
+        {
+          "path": "studio_F2.lab",
+          "status": "added",
+          "additions": 13,
+          "deletions": 0,
+          "blob_sha": "a42deb7fb4d32258496ae9aca1eb41b8da83006b"
+        },
+        {
+          "path": "studio_F2.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "42c9b6835cb5d12455ea355ba526139a80b69f63"
+        },
+        {
+          "path": "studio_M2.lab",
+          "status": "added",
+          "additions": 14,
+          "deletions": 0,
+          "blob_sha": "cd5e1109ff1ca3f44c48fd50c25629f89481050b"
+        },
+        {
+          "path": "studio_M2.wav",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0,
+          "blob_sha": "b312df06beecfe1e2088b364acdc889ea8c4795d"
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits?sha=e38529d6485b59e49dddeccb44c129a6f93e48f3&per_page=100",
+      "sha256": "3c70024eb883b9642ce0ca7e7358b045ad0c3af9ea139097ceecd54c9a126a7f"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/e38529d6485b59e49dddeccb44c129a6f93e48f3",
+      "sha256": "c8ad5626183e54d02ee1e0c3f790e11d9d7715b95f497ae3bf4f1f32f4c2ae50"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/dcef51b5e66036a59fffbd5bd3e87586c2992e16",
+      "sha256": "b809a8b1b300fb87eca76647e3f9c9b7e47e0b080c2111b27b7cc03e2172e521"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/73e97da7b961c407758eeb13b4c3fbf98e482348",
+      "sha256": "f62ce578aa56b6b7f527bd1d7af9fc21f78606029cf8eb21479fd838c6b63c59"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/1f9e08a100201d96236217b713269c2b372cf74a",
+      "sha256": "e66d2c08df9fec3eee500865174ebe14d9feb25577077f0fe231e9e7f3e198c4"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/59b4af9bae26e7327069f5e909aea0bfc1b66795",
+      "sha256": "3177a554132dd4e1d977a47c91d077ba2a95edbc002be223564d76ceb18197f6"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/e4a383052d999664aad44da8c2cf555e8fd9afd2",
+      "sha256": "e0f6d3fc7f6e42f819667adfd8a8f807c07fa0396f7a3430dede1de977b30429"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/7be3da98f38b81191ae320072c30e3026d881a16",
+      "sha256": "66a232daa7ab8b0e336fc44e903e41e05636ec57c0d6f8688f089d19dce9b36d"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/2f5a4743ac4d9c5af4a5aad32fc47cd02688d200",
+      "sha256": "624c4235b2459c9b5841ceb56e0136f19d94d92294038ab076f0e6c73729855f"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/d5ef74c38e6f5c084f9de0cf847435f36fbefba6",
+      "sha256": "4b9dcf6af7f7a6e8756ae50ad0ec23dc9b7e95829961dfff77aadf8d627b7726"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/153765674a795d4be37db8d0aabc4b78a790a28e",
+      "sha256": "1d908ea8ad211d9c36b01d704113e779bb882d25dad57e530a03f2fe2029ebd5"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/605201b5be3078b458e56147627792266d1c64c7",
+      "sha256": "f5c7538db324fa52fee0f666328dd7839864cbfdc2239b82de45888f63cd0689"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/c35ab03c0d50320d788386bdae7e3fd79cf6476a",
+      "sha256": "7ed07174ad9bc753434615937e88c537cc10fdb3e20c489f99e87aef48196ad1"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/2aac39f9bdc86b99b1799a628d0bea74d9a61b2f",
+      "sha256": "31968080433ee79804c7eb3a56952f6b71379858f8997c7863be8df9a08df024"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/commits/5d9263144bef4524c8a7118aec8b0253bad522b2",
+      "sha256": "dee6796022b18d4ed400a7bba1379982a4ff555e8e5190b02b780b80234f8c8c"
+    },
+    {
+      "url": "https://api.github.com/repos/dthle/TinHieuHuanLuyen/git/trees/e38529d6485b59e49dddeccb44c129a6f93e48f3?recursive=1",
+      "sha256": "c333be3631b8dd336c96baa67e882d85b93371c604e2ecb2dd5cf90bea83bc89"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/VU.m",
+      "sha256": "f2cf7e4a0c5f7645eff3d56ac193b35b96ac0b410bfed47a921b384b5e2b793b"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/test.py",
+      "sha256": "efc27ecaba340c3b5fd910e53919164bb5a154b82c5a05185a1020720b1f0ff9"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/test_hist.py",
+      "sha256": "011f20f50f38d9d8776664063697400101fec77bb711fd32259bdcac5f0b1cb1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/vu.ipynb",
+      "sha256": "d8210618ad61cd1c4478cf329c7c0366450396cf1f6a2c0f091df406b14eaed5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/vu.py",
+      "sha256": "2530b0e70db31968d4cfe9b2290ffd8f826c203a0daca6e8b479dab5ded9316c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/vu_studio_M1_ZCR.py",
+      "sha256": "2f2c770bac14b3ce462ae4c8ac4648f2df8006a43706b417fdeca15243d4068e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/dthle/TinHieuHuanLuyen/e38529d6485b59e49dddeccb44c129a6f93e48f3/vu_tho.py",
+      "sha256": "438e3984e361a2dba069eaa61b7e252f4dd5cf6fb713d4f0e00e8cd531b2cb54"
+    }
+  ],
+  "limits": [
+    "Static source review; keyword absence alone is not proof of no F0 computation",
+    "History only within the selected public repository, not all prior copies or author actions"
+  ]
+}
