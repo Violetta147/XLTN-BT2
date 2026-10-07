@@ -1,0 +1,66 @@
+{
+  "scope": "Descriptive training audio only; no F0 inference, tuning, test audio, Jev or H44",
+  "python": "3.13.11",
+  "numpy": "2.4.3",
+  "scipy": "1.17.1",
+  "pandas": "3.0.1",
+  "input_sha256": {
+    "research_workbench_2026_10_07\\recording_conditions_analysis.py": "b96376ecbbfe37ac4dd1e826bcba4de5c5948f05d6280d49abfb8aa28d040068",
+    "research_workbench_2026_10_07\\RECORDING_CONDITIONS_PLAN.md": "92a070bca8f7cfcc4bfac306e57f78d76492cad79af9e205fdedb7fce68882b3",
+    "TinHieuHuanLuyen\\phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "TinHieuHuanLuyen\\phone_F1.lab": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+    "TinHieuHuanLuyen\\phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "TinHieuHuanLuyen\\phone_M1.lab": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+    "TinHieuHuanLuyen\\studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "TinHieuHuanLuyen\\studio_F1.lab": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+    "TinHieuHuanLuyen\\studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+    "TinHieuHuanLuyen\\studio_M1.lab": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+    "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT1-BO-SUNG\\baseline\\submitted_results.json": "e62082b9dd0e8a60579f7515bfd98d0e50de8d16aa338eee4aa47de439b1fd20",
+    "research_workbench_2026_10_07\\results\\H20_clean_per_file.csv": "adcb72747ec7adee1d6815ad9a8402ec2409420ffa6f3642c1bb21adb8d64587",
+    "research_workbench_2026_10_07\\results\\H31_fixed_lofo.csv": "c2534e3ac019072d765ed856ecb03da88dfb34ab334e12d01907fbec05bcaebd",
+    "research_workbench_2026_10_07\\results\\H41_metrics.csv": "5e126bf97831a71aff0b245aaae46d1105cb38098c378487fe72044514b361ba",
+    "research_workbench_2026_10_07\\results\\H43_metrics.csv": "33698283ca0e0a8d8d560ce14daece222e2d683a056d6817ff4fc68c29747071"
+  },
+  "output_sha256": {
+    "recording_conditions_frames.csv": "8248e68b34b2a402f4569c9e62b5968df116de240b3b1abd9a519e524f5a85c1",
+    "recording_conditions_features.csv": "f033884d216e7d64af2fcf2ad938f4492062ade562ec542575d620b513dd1a79",
+    "recording_conditions_energy.csv": "f0b63e46565c656058bcf103305ebc09a187d7545801d1240c8825ed58505da2",
+    "recording_conditions_saved_metrics.csv": "cda5583b4acb5e4265a74b9019d3d137a5c366a2abe7e350194e12648ea1593a",
+    "recording_conditions_groups.csv": "8c831739781f2e35fe396326952db074c3a1f209bde27f9586141bb591e0be45"
+  },
+  "original_data_preserved": true,
+  "resampling": [
+    {
+      "file": "phone_F1.wav",
+      "input_fs": 16000,
+      "input_samples": 51840,
+      "common_samples": 51840,
+      "common_pcm_float64_sha256": "850e7e9fa0efcd76a15f83f15c7fe2d79dcaf21035819bdc2dd1ce1cb302b7c0"
+    },
+    {
+      "file": "phone_M1.wav",
+      "input_fs": 16000,
+      "input_samples": 66560,
+      "common_samples": 66560,
+      "common_pcm_float64_sha256": "6daf544525164e664583cd720d0ce6834cb034e3518224a4e79e0eb26f7a9033"
+    },
+    {
+      "file": "studio_F1.wav",
+      "input_fs": 44100,
+      "input_samples": 126267,
+      "common_samples": 45812,
+      "common_pcm_float64_sha256": "e02e580f378f712594354254348da4f002ed28354e8ad844aff58120d631a2a5"
+    },
+    {
+      "file": "studio_M1.wav",
+      "input_fs": 44100,
+      "input_samples": 120400,
+      "common_samples": 43683,
+      "common_pcm_float64_sha256": "3416e0de12c6866455acf42828ce8a633f458bb745e8e0ed609bce13808c5311"
+    }
+  ],
+  "frames": 1996,
+  "feature_rows": 22,
+  "metric_rows": 28,
+  "grouping": "Names only, not verified device/speaker/environment identities"
+}

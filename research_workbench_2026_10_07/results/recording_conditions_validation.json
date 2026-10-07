@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "input_hashes_checked": 15,
+  "output_hashes_checked": 5,
+  "native_frame_energy_checks": 998,
+  "no_test_audio": true,
+  "group_rows": 14,
+  "receipt_sha256": "5a6f11405ceb87885920398a537424c958951f4e1fd9559ec19289d1945377ed",
+  "verifier_sha256": "6821da744b6c55e37ccd8adc1e0c0eb0ad881e6987d3a5e3b6a8e63a9298326e",
+  "limit": "Checks hashes, native RMS, aggregates, fractions and scope; does not certify speaker identity, causal recording effects or pitch correctness"
+}

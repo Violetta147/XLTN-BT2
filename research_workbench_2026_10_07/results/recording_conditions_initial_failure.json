@@ -1,0 +1,9 @@
+{
+  "source_commit": "100951c5106458185d3a7f772b1abe706f6de440",
+  "failure_stage": "Console display after CSV and receipt files were written",
+  "exception": "KeyError: False",
+  "cause": "summary.mode resolved to the pandas DataFrame.mode method, rather than the column named mode",
+  "correction": "Use summary['mode'] in the display filter",
+  "measurement_or_protocol_changed": false,
+  "rerun_scope": "Same descriptive training audit, no F0 inference or algorithm experiment"
+}

@@ -142,7 +142,7 @@ def main():
                    metric_rows=len(metrics), grouping='Names only, not verified device/speaker/environment identities')
     (OUT / 'recording_conditions_receipt.json').write_text(json.dumps(receipt, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     print(pd.DataFrame(ratios).to_string(index=False))
-    print(summary[summary.mode == 'common_16k'][['file', 'label', 'frames', 'rms', 'fraction_1000_4000', 'fraction_4000_8000']].to_string(index=False))
+    print(summary[summary['mode'] == 'common_16k'][['file', 'label', 'frames', 'rms', 'fraction_1000_4000', 'fraction_4000_8000']].to_string(index=False))
     print(groups[['protocol', 'device_name', 'average_mape']].to_string(index=False))
 
 
