@@ -1,0 +1,36 @@
+{
+  "purpose": "Prospective narrow hypothesis prioritization after H31",
+  "input": {
+    "task": "Prospective narrow prioritization for BT2, not a permission request or numerical calculation. Evidence already measured: H30 Praat7 filtered fixed voicing0.45 improves file-stat MAPE but misses counts. H31 fixed0.30 gets three train files below2%, while studio_M1 is worse; no single registered global voicing threshold reaches all four. Only four train files, repeatedly inspected to design hypotheses; no test is read. LAB supplies file mean/std/count and V/UV/SIL segments, not per-frame F0 truth. Next hypothesis must be preregistered before execution, fitted/selected excluding outer file labels/stats, retain failures and report design-adaptive exploratory limits. Choose a next investigation from the shortlist, or none if evidence is too weak. Do not infer feasibility of2% or treat fit probability as calibrated confidence.",
+    "options": [
+      {
+        "id": "support_calibrator",
+        "description": "Proposed learned per-file voicing threshold. Feature = voiced support seconds from accepted0.45 first pass on the signal. On training files only, derive target threshold from that file's registered0.25/.30/.35/.40/.45 outputs, file-stat GT and V/UV safeguards. Fit piecewise-linear target-threshold vs support time; snap to grid, fall back to accepted0.45 outside observed training feature range. Held input uses signal support only, never its labels/stat GT. This new feature and OOD rule were proposed after viewing allfour H31 case outcomes; could exploit tiny-cohort identities despite clean runtime splits. No physical monotonic relation has been shown."
+      },
+      {
+        "id": "silence_ablation",
+        "description": "Before a meta-controller, one-parameter native filtered silence-threshold grid, with voicing fixed0.30. H31 already showed more voiced frames at lower voicing threshold and remaining per-file std/count tradeoffs. Register silence0.09(control)/0.11/0.13/0.15; other settings fixed. Higher silence threshold may remove weak segments but could also lose real V; don't assume that studio_M1 extras are false voiced or that all files improve. Same inner minimax/outer protocol. Direct signal mechanism, newly measured ablation, still design-adaptive on the same four."
+      },
+      {
+        "id": "diagnose_first",
+        "description": "Collect frame-level native selected-candidate strength/intensity and compare V/UV/SIL labels for missed/extra voiced frames before choosing another mechanism. Does not provide per-frame F0 truth. May distinguish amplitude/periodicity gate failures; requires new native diagnostic adapter but no model/metric change. Keep source/version provenance; unavailable evidence should remain unknown."
+      }
+    ]
+  },
+  "raw_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Input validation error: Invalid arguments for tool sysone_select: options.0.description: Invalid input, options.1.description: Invalid input"
+      }
+    ],
+    "isError": true
+  },
+  "status": "Input validation error; MCP branch stopped; no automatic retry",
+  "requestId": null,
+  "model_calls": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "latency_ms": null,
+  "agent_interpretation": "No judgment was obtained. Support-duration calibration remains an unexecuted proposal with tiny-cohort proxy risk. Agent chooses a one-parameter silence ablation independently; not attributed to Jev."
+}
