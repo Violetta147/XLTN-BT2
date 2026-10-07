@@ -1,0 +1,60 @@
+{
+  "registered_utc": "2026-10-07T09:23:18.762866+00:00",
+  "baseline_commit": "29f712a",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "ea21067f6589e19a5252eec6596e20acdbf400ce",
+  "family": "H47",
+  "algorithm": "Origin-balanced logistic rejection of Praat voiced frames; fixed hard170 pitch; clean versus H46 augmented fit; strict target <2%",
+  "options": [
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "praat7_filtered_v0.3",
+      "method": "control"
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "amdf_pitch_spectral_p170",
+      "method": "hard_control"
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "voicing_clean_p25",
+      "method": "logistic",
+      "augmented": false,
+      "threshold": 0.25
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "voicing_clean_p50",
+      "method": "logistic",
+      "augmented": false,
+      "threshold": 0.5
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "voicing_aug_p25",
+      "method": "logistic",
+      "augmented": true,
+      "threshold": 0.25
+    },
+    {
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "id": "voicing_aug_p50",
+      "method": "logistic",
+      "augmented": true,
+      "threshold": 0.5
+    }
+  ]
+}

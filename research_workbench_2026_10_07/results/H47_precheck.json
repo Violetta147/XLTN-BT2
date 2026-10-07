@@ -1,0 +1,7 @@
+{
+  "synthetic_only": true,
+  "uses_BT2_WAV": false,
+  "rule_sha256": "9de238accc10defd87dcc3055fa4fd0ebb62f0948e7bdbff69ff13d595518f0d",
+  "scale_invariance": true,
+  "silent_finite": true
+}
