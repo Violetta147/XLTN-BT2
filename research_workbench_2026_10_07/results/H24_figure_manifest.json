@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H24_nested",
+      "png": "figures/H24_nested.png",
+      "svg": "figures/H24_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H24_metrics.csv",
+          "sha256": "77311c04dde3ce12a4b5d527d8f83b96f1f0a26a7b2848d86b778a627b01bcfb"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "amdf_dual_window.py",
+      "generator_sha256": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+      "command": "python research_workbench_2026_10_07/amdf_dual_window.py H24"
+    }
+  ]
+}
