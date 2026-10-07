@@ -29,6 +29,8 @@ Verifier đã đối chiếu 144 inner traces/152 fit logs/36 fixed groups, 1176
 
 ## Câu hỏi gần nhất: kiểm tra chất lượng dataset
 
+Ưu tiên mới: H45 ensemble clean đã đo/verify, studio_M1 nested2.225623% vẫnFAIL, támgatePASS. Người dùng yêu cầu thử augmentation; giữ H45 cleancontrol và chốt riêng H46 augmented-fit trước đo. Không làm bài phân đoạn mới trước khi hoàn thiện cải thiện BT2. Bản augment phải cùng origin group, không xem như speaker mới; không pitch/time warp với GT hiện có.
+
 Đã có audit thực: 8 WAV/16 LAB, tổng 26.124694s; WAV giải mã được/mẫu hữu hạn; không mẫu chạm rail hoặc ≥99% full scale; nhãn không lỗi parse/bounds/gap/overlap; một số đuôi ngắn chưa phủ nhãn. Không thấy duplicate byte/native PCM giữa các cặp. Những kiểm tra này không chứng nhận nhãn ngữ âm hoặc F0 đúng.
 
 Hai nguồn thống kê F0 có giá trị khác nhau và chưa đủ quy trình tạo reference. LAB hiện có mean/std/count cả file và V/UV/SIL theo đoạn, **không có F0 chuẩn từng timestamp**. Metadata speaker/session chưa xác minh; dataset rất nhỏ. Bước tiếp theo hợp lý nếu người dùng yêu cầu: giải thích báo cáo QA, đối chiếu nguồn reference và rà nghe/biên nhãn; không tự sửa GT hoặc loại file khó để hạ MAPE. Câu trả lời giải thích QA chưa gửi vì người dùng yêu cầu dừng.

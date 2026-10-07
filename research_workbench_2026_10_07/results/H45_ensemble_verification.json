@@ -1,0 +1,11 @@
+{
+  "family": "H45",
+  "fits_replayed": 104,
+  "metric_rows_recomputed": 144,
+  "aggregation_verification": "product and kth-root; independent from log2 mean",
+  "membership_fit_pool_only": true,
+  "new_native_calls": 0,
+  "target_met": false,
+  "experiment_sha256": "7eb5b043fc56faee66bd46bbe9efe438ec31cc7487fd2452f8c67d5d8760bfa4",
+  "verifier_sha256": "ce6be8b3854e1f14bd2e8eff7522c7e34477f30f4104d9857a451e4ed09c33a0"
+}

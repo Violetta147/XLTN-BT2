@@ -1,0 +1,5972 @@
+{
+  "fits": [
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "7365cd3e8ae42383455ab289eae9153bdf94b55418ba6de9f2d92e708dc69f4f"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "841b4984d142543961c7e3c3e24b5987f486c8c3e978c707d52b70176e25910c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "aae3b3f435a4b12a2c827f4c86c2b576ebf19c2de709aa7c28cf3809830cd9b8"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "f325709148350241c2908c367c21b3b5dba8f8de02b6114a9046b3fe97b253cc"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "65a9aaf9c52f4ce6e5f5443f45f0937f1bc3735cc9d4e3e1af4679ded7eba397"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.386549850967583,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3883958649615034,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4166394138849852,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4483008574922074,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.454663291444385,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4296859600492935,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.532111955840266,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.545266533185828,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.9649406403549736,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.2411928476376952,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.2492099224735076,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3939409333890387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.422471147681862,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5181060909951112,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.296866524893847,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3962968534832154,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.4083458323114402,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.824857620501783,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.0087176870867365,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.015698186517349,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1099054834645363,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1320732638051818,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2657320846778308,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.0601518391146525,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.1669508153353239,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.180105392680886,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.5953281601486404,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.8410558881285674,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.8421614866459047,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.8632688124773091,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.8704764487244008,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.8790718002030147,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1299913386836442,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.0058261810775717,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.034356395370395,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1047020599521093,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "9f64c17de0a602d421adaeb76bb3deda0a3639ad9d4fbfcae10328dc1e475752"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.386549850967583,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3883958649615034,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4166394138849852,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4483008574922074,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.454663291444385,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4296859600492935,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.532111955840266,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.545266533185828,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.9649406403549736,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "be3e0155414f7738918128f20089d13a02d2124e2923707a4c6b20f8fd8dfd60"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.2411928476376952,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.2492099224735076,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3939409333890387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.422471147681862,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5181060909951112,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.296866524893847,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3962968534832154,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.4083458323114402,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.824857620501783,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "cfbe0159c38c5a72a6b149ce7777efb173635641b580aa2dca7d93c2498cc65c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.0087176870867365,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.015698186517349,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1099054834645363,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1320732638051818,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2657320846778308,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.0601518391146525,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.1669508153353239,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.180105392680886,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.5953281601486404,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "14e94dcf44d4dc8b8b6739d61efd875b429bd1d0dae0f9987cf9a58a0d9d5ddb"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.8410558881285674,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.8421614866459047,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.8632688124773091,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.8704764487244008,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.8790718002030147,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1299913386836442,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.0058261810775717,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.034356395370395,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1047020599521093,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d076f7f7b9235cd419ce131c603947ba0cc47952cf6a60c22703d2e4845827f4"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.386549850967583,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3883958649615034,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4166394138849852,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4483008574922074,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.454663291444385,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4296859600492935,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.532111955840266,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.545266533185828,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.9649406403549736,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "bfa832b4be7bfb93032842e057557d9957d2b8b3df598d1fe2d1930d5bf26a38"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.2411928476376952,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.2492099224735076,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3939409333890387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.422471147681862,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5181060909951112,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.296866524893847,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3962968534832154,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.4083458323114402,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.824857620501783,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "54d52e742d0a956f760de68eedffacb9b588772778aa369145edc66bdefc67b0"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.0087176870867365,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.015698186517349,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1099054834645363,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1320732638051818,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2657320846778308,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.0601518391146525,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.1669508153353239,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.180105392680886,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.5953281601486404,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "0b170f39ba27d98c6daa766b82446b5cefea3ce2235ca4db626e2c8d7530a6b3"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.8410558881285674,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.8421614866459047,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.8632688124773091,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.8704764487244008,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.8790718002030147,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1299913386836442,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.0058261810775717,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.034356395370395,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1047020599521093,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d816b32d270f0246d6c173349a4c7bad81c61fe89b416ae4af3e433c6aaf363d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.386549850967583,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3883958649615034,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4166394138849852,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.4483008574922074,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.454663291444385,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4296859600492935,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.532111955840266,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.545266533185828,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.9649406403549736,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "f2015bdda59e9bef616c2e4e8b239a691434e1c3535796c01cf585d2b290d16a"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.2411928476376952,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.2492099224735076,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3939409333890387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.422471147681862,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5181060909951112,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.296866524893847,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3962968534832154,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.4083458323114402,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.824857620501783,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "57f2ca31fae6579b45ec1c21a792ed05703f551e9cae61add891d4ef6ce1b714"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.0087176870867365,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.015698186517349,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1099054834645363,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.1320732638051818,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2657320846778308,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.0601518391146525,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.1669508153353239,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.180105392680886,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.5953281601486404,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "157f6dd00007fb07a64ca3d08b798d62c9ce46fee8d1f7a58978e86fd6c34c42"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.8410558881285674,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.8421614866459047,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.8632688124773091,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.8704764487244008,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.8790718002030147,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1299913386836442,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.0058261810775717,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.034356395370395,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1047020599521093,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "91c2dba965393bc53cfa6c889b16dc73a5a01c96e2367c5d1756340175a0ef77"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "841b4984d142543961c7e3c3e24b5987f486c8c3e978c707d52b70176e25910c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "aae3b3f435a4b12a2c827f4c86c2b576ebf19c2de709aa7c28cf3809830cd9b8"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "f325709148350241c2908c367c21b3b5dba8f8de02b6114a9046b3fe97b253cc"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "65a9aaf9c52f4ce6e5f5443f45f0937f1bc3735cc9d4e3e1af4679ded7eba397"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "9f64c17de0a602d421adaeb76bb3deda0a3639ad9d4fbfcae10328dc1e475752"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "cfbe0159c38c5a72a6b149ce7777efb173635641b580aa2dca7d93c2498cc65c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "e9f5f7fb3f5a04fbd0401752814b29dbd0b884b8ba0ac6a2e6d92b16b755d2f0"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d076f7f7b9235cd419ce131c603947ba0cc47952cf6a60c22703d2e4845827f4"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "54d52e742d0a956f760de68eedffacb9b588772778aa369145edc66bdefc67b0"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c200_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "8203904aa2c2c14e84c03242297acec3e0800b05742724f0b44c0f92f7cbe0b8"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d816b32d270f0246d6c173349a4c7bad81c61fe89b416ae4af3e433c6aaf363d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "57f2ca31fae6579b45ec1c21a792ed05703f551e9cae61add891d4ef6ce1b714"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d9c775e42fc0fc1e391a6967a6e92d99aac841f3dad97641ec917f627e6adb02"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "91c2dba965393bc53cfa6c889b16dc73a5a01c96e2367c5d1756340175a0ef77"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "7365cd3e8ae42383455ab289eae9153bdf94b55418ba6de9f2d92e708dc69f4f"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "aae3b3f435a4b12a2c827f4c86c2b576ebf19c2de709aa7c28cf3809830cd9b8"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "f325709148350241c2908c367c21b3b5dba8f8de02b6114a9046b3fe97b253cc"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "65a9aaf9c52f4ce6e5f5443f45f0937f1bc3735cc9d4e3e1af4679ded7eba397"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "ec3412c1640d2f89b9ef0a40ec2f7f5929618e8183ade455884dcb94954c14ef"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "be3e0155414f7738918128f20089d13a02d2124e2923707a4c6b20f8fd8dfd60"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "14e94dcf44d4dc8b8b6739d61efd875b429bd1d0dae0f9987cf9a58a0d9d5ddb"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20",
+          "amdf_soft_c140_w40",
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d076f7f7b9235cd419ce131c603947ba0cc47952cf6a60c22703d2e4845827f4"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "bfa832b4be7bfb93032842e057557d9957d2b8b3df598d1fe2d1930d5bf26a38"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "0b170f39ba27d98c6daa766b82446b5cefea3ce2235ca4db626e2c8d7530a6b3"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20",
+          "amdf_soft_c140_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "d816b32d270f0246d6c173349a4c7bad81c61fe89b416ae4af3e433c6aaf363d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.6917494488232554,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.694518469814136,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7368837931993588,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.784375958610192,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.7939196095384586,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.756940665284307,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.924405457591536,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.942478925833873,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.439783150806382,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "f2015bdda59e9bef616c2e4e8b239a691434e1c3535796c01cf585d2b290d16a"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "157f6dd00007fb07a64ca3d08b798d62c9ce46fee8d1f7a58978e86fd6c34c42"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20",
+          "amdf_soft_c140_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "91c2dba965393bc53cfa6c889b16dc73a5a01c96e2367c5d1756340175a0ef77"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "7365cd3e8ae42383455ab289eae9153bdf94b55418ba6de9f2d92e708dc69f4f"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "841b4984d142543961c7e3c3e24b5987f486c8c3e978c707d52b70176e25910c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "f325709148350241c2908c367c21b3b5dba8f8de02b6114a9046b3fe97b253cc"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "65a9aaf9c52f4ce6e5f5443f45f0937f1bc3735cc9d4e3e1af4679ded7eba397"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "9f64c17de0a602d421adaeb76bb3deda0a3639ad9d4fbfcae10328dc1e475752"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "be3e0155414f7738918128f20089d13a02d2124e2923707a4c6b20f8fd8dfd60"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "cfbe0159c38c5a72a6b149ce7777efb173635641b580aa2dca7d93c2498cc65c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "b3797417e211586dd8801c0e8450a404afff11caa0bb5ea14cf63b2296ae65f5"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c200_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "00cee4e7e15f61d8f3f8070d094a153e72ba282f50180d80ab7125453ecc0676"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "54d52e742d0a956f760de68eedffacb9b588772778aa369145edc66bdefc67b0"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_soft_c170_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "5c597e9e1a44f11e17b61201b4da417967f9ee7f65199d3cbe1a65c25fcbc082"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.343036707996817,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.3442508658798982,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3583227837234384,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.4018686366155153,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.5803864003696984,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.6001182663880413,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            2.095488960276668,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "92cbb15acdc4bf183fda12a1cc7e0c4a093c8fd86d8383988d45b95d07c9b376"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c170_w40",
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.909922760737396,
+            1.1250012030019854,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.9123510765035583,
+            1.1354719521479046,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.2767828975686855,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.3100345680796537,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.9404949121906387,
+            1.5105227993886272,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            2.0285607236517635,
+            1.202639483882345,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            2.413247848401671,
+            1.3766637468341227,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            2.4493947848863447,
+            1.3947372150764596,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            3.1757223011011786,
+            1.885364430496882,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "57f2ca31fae6579b45ec1c21a792ed05703f551e9cae61add891d4ef6ce1b714"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_soft_c170_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "fa80dbc7aa4139d6930ee7d42f2a9991f36fb9b63d8e6f73aa3804cff0e25134"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "7365cd3e8ae42383455ab289eae9153bdf94b55418ba6de9f2d92e708dc69f4f"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "841b4984d142543961c7e3c3e24b5987f486c8c3e978c707d52b70176e25910c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "aae3b3f435a4b12a2c827f4c86c2b576ebf19c2de709aa7c28cf3809830cd9b8"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "0c87b31663b85fee9320a2c55b87e8e178ce45eca7f7aefbe8f74fc93a294a5f"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k01",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "d745c338b4dd3df177a49a9dbd636d4c6319cb4cc0aa5b373a7f571c421b5f45"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "8ddb6d9d6a4a4440b51feeae8c62fb7f424ae7c4df5ccaaa77939f9cc47594db"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20",
+          "amdf_soft_c140_w40",
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "e93fac7afdb224d9619c5e3b610a9c4edab8ec0b16b731eec88cb51cddbec9ea"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k03",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "b65f65b0d82da09ba71078ae587a12e18877b0dc9917dd456d19e39c6b7a38ce"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "b399baa7bd05c196a8c5a19bc065b3a58c5df122d668da84b710bc188970eb05"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20",
+          "amdf_soft_c140_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "0b5c3c50efa280463e919a320aebb8e67b4f4072b31c9c1dbfdb4bb35f6e592c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k05",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_soft_c170_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "e000ef12cb76e83f024a7f9b1793be19ac55440062c1b273ed1a9043b8d0cc31"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            1.0915440095595637,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            1.0932024073355697,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            1.1248633960826764,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            1.126418259190476,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            1.1302485782480585,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.1547116647321585,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.2022038301429916,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.2117474810712583,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.3595498099818712,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "1aea78d478d00fe95198068d1c2fb679b073fa09018cd804f21b90d332f18f75"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w20",
+          "amdf_soft_c140_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c170_w40",
+          "amdf_anchor_w25_b200",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            1.4355630667814012,
+            0.887821356023988,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            1.4735761369091147,
+            0.9068278910878448,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            1.4766858631247135,
+            0.9176393454584822,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            1.48532060691685,
+            0.9310194255148885,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            1.533272674208079,
+            1.3069116803973473,
+            "amdf_anchor_w25_b200"
+          ],
+          [
+            false,
+            1.6282570050297451,
+            1.1206639439882387,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            1.6473443068862783,
+            1.1634592654274736,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.7038440005115856,
+            1.1494252802020855,
+            "praat7_filtered_v0.3"
+          ]
+        ],
+        "output_f0_sha256": "46efe8121b9590525a80bac49b81e629e7627c7671012b0603f299ce8b739943"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_ensemble_k09",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "method": "ensemble",
+        "selected_members": [
+          "amdf_soft_c140_w40",
+          "amdf_soft_c140_w20",
+          "amdf_soft_c170_w40",
+          "amdf_pitch_spectral_p170",
+          "amdf_soft_c170_w20",
+          "amdf_soft_c200_w40",
+          "amdf_soft_c200_w20",
+          "praat7_filtered_v0.3",
+          "amdf_anchor_w25_b200"
+        ],
+        "member_ranking": [
+          [
+            false,
+            0.7475249523377259,
+            0.5438022988021504,
+            "amdf_soft_c140_w40"
+          ],
+          [
+            false,
+            0.7508417478897381,
+            0.5454606965781564,
+            "amdf_soft_c140_w20"
+          ],
+          [
+            false,
+            0.775176549579267,
+            0.5759473968460969,
+            "amdf_soft_c170_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5581151502614065,
+            "amdf_pitch_spectral_p170"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.5673717415242445,
+            "amdf_soft_c170_w20"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.6946107691014851,
+            "amdf_soft_c200_w40"
+          ],
+          [
+            false,
+            0.776150655256238,
+            0.7278624396124533,
+            "amdf_soft_c200_w20"
+          ],
+          [
+            false,
+            1.0152556194521571,
+            0.8051310896723712,
+            "praat7_filtered_v0.3"
+          ],
+          [
+            false,
+            1.0805506865866157,
+            0.9283506709214269,
+            "amdf_anchor_w25_b200"
+          ]
+        ],
+        "output_f0_sha256": "381d9af2ed6df11671682fd2a7f89064b340939bf62310f0d15cbccea916a27d"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "7365cd3e8ae42383455ab289eae9153bdf94b55418ba6de9f2d92e708dc69f4f"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "8389d17d1d7bf4358bf6cb2bb391b53f92c64535a8db9b337b2f52ed5e70c316"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "841b4984d142543961c7e3c3e24b5987f486c8c3e978c707d52b70176e25910c"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "9f9014d48396e5e6419dbb8f1bbfd050143eefbfc04019ef15aec0ed94853ada"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "aae3b3f435a4b12a2c827f4c86c2b576ebf19c2de709aa7c28cf3809830cd9b8"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "161a9bedb95ebdda4186f368e63d3a3fc7ff13f20f9fac497212a89d0e511506"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control",
+        "selected_members": [
+          "praat7_filtered_v0.3"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "f325709148350241c2908c367c21b3b5dba8f8de02b6114a9046b3fe97b253cc"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_pitch_spectral_p170",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hard_control",
+        "selected_members": [
+          "amdf_pitch_spectral_p170"
+        ],
+        "member_ranking": [],
+        "output_f0_sha256": "65a9aaf9c52f4ce6e5f5443f45f0937f1bc3735cc9d4e3e1af4679ded7eba397"
+      },
+      "classifier": null
+    }
+  ]
+}

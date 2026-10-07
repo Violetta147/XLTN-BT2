@@ -1,0 +1,16 @@
+{
+  "family": "H45",
+  "selection_replayed": true,
+  "fits_checked": 104,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": true,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "verifier_sha256": "6df8b7cf8de9824c39c847c4e840a6860d8447283f46a670242ff6c3eaaf3882"
+}

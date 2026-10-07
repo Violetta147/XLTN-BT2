@@ -1,0 +1,741 @@
+{
+  "family": "H45",
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": true,
+      "lofo_mape_relative_5_percent": true,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true,
+      "selected_lofo_mape_relative_5_percent": true
+    },
+    "eligible": true,
+    "nested_status": "Outer file excluded from every inner fit and selection; selected LOFO is separate.",
+    "champion_promoted": false
+  },
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.2038574027364048,
+        "F0mean_mape": 0.6055278385114471,
+        "F0std_mape": 1.0273311089445798,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0932377714876012,
+        "F0std_abs_error": 0.252949871537659,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    }
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_pitch_spectral_p170",
+        "method": "hard_control"
+      }
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_pitch_spectral_p170",
+        "method": "hard_control"
+      }
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_pitch_spectral_p170",
+        "method": "hard_control"
+      }
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_pitch_spectral_p170",
+        "method": "hard_control"
+      }
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_ensemble_k09",
+        "method": "ensemble",
+        "top_k": 9
+      }
+    }
+  ],
+  "native_calls": {
+    "praat7_filtered_v0.3|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "praat7_filtered_v0.3|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "praat7_filtered_v0.3|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "praat7_filtered_v0.3|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H45 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    }
+  },
+  "source_calls": {
+    "praat7_filtered_v0.3|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "5609f30556364c93b44891f7b103995afefff2f520c3ce60069a122e1c01ba78",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "praat7_filtered_v0.3|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "b57749deb0977260948e431f141a3089054e20e5ee058a310f92fadae4d56951",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "praat7_filtered_v0.3|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "1a14b17b33c537ca5e1a7389632a0d1b7a47ee5c0405e184da58df7e6ea53bbd",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "praat7_filtered_v0.3|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "8d84c21461e4d7e945159423fa27222cff4c217e57caada000c8382c8a16ca7c",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    }
+  },
+  "range_rejected_frames": {
+    "praat7_filtered_v0.3|phone_F1.wav": 0,
+    "amdf_pitch_spectral_p170|phone_F1.wav": 0,
+    "amdf_ensemble_k01|phone_F1.wav": 0,
+    "amdf_ensemble_k03|phone_F1.wav": 0,
+    "amdf_ensemble_k05|phone_F1.wav": 0,
+    "amdf_ensemble_k09|phone_F1.wav": 0,
+    "praat7_filtered_v0.3|phone_M1.wav": 2,
+    "amdf_pitch_spectral_p170|phone_M1.wav": 2,
+    "amdf_ensemble_k01|phone_M1.wav": 2,
+    "amdf_ensemble_k03|phone_M1.wav": 2,
+    "amdf_ensemble_k05|phone_M1.wav": 2,
+    "amdf_ensemble_k09|phone_M1.wav": 2,
+    "praat7_filtered_v0.3|studio_F1.wav": 0,
+    "amdf_pitch_spectral_p170|studio_F1.wav": 0,
+    "amdf_ensemble_k01|studio_F1.wav": 0,
+    "amdf_ensemble_k03|studio_F1.wav": 0,
+    "amdf_ensemble_k05|studio_F1.wav": 0,
+    "amdf_ensemble_k09|studio_F1.wav": 0,
+    "praat7_filtered_v0.3|studio_M1.wav": 0,
+    "amdf_pitch_spectral_p170|studio_M1.wav": 0,
+    "amdf_ensemble_k01|studio_M1.wav": 0,
+    "amdf_ensemble_k03|studio_M1.wav": 0,
+    "amdf_ensemble_k05|studio_M1.wav": 0,
+    "amdf_ensemble_k09|studio_M1.wav": 0
+  },
+  "long_window_fallback_counts": {},
+  "registry_sha256": "6e675104c985452e1345cb9e6d10ccaf06dcc993efc758870a4c2c421a420b75",
+  "code_sha256": {
+    "research_workbench_2026_10_07\\amdf_selection_ensemble_controller.py": "b3d80a98cb3a61b6026d8b6d22eb18666a0b0c5ec566b1fcf3cc452cc2170a3b",
+    "research_workbench_2026_10_07\\amdf_dual_window.py": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+    "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+    "research_workbench_2026_10_07\\amdf_selection_ensemble.py": "eea751f54a5461dd4f53e622e4851498636f0826391681f2fa3d7aa7754a0eaf",
+    "research_workbench_2026_10_07\\amdf_anchor.py": "8dfa3fed10629e06d8df989cb680832a26c76f255b9deffa16a696a6554af51f",
+    "research_workbench_2026_10_07\\results\\H44_experiment.json": "025e03c7fd0311111f0d88abe46a8e6bac5d8fb7f96a1e0c12868d4b91ce43cb",
+    "research_workbench_2026_10_07\\results\\H44_spectral_verification.json": "dda6ba1fb63eacfd1b5c9b02a2165069be59930dbce8486216562b3dd3c3b845",
+    "research_workbench_2026_10_07\\results\\H44_raw_native_frames.csv": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+    "research_workbench_2026_10_07\\results\\H44_fixed_lofo.csv": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650",
+    "research_workbench_2026_10_07\\H44_REGISTRY.json": "f06f82fefd8cac43de6184fa2bc9bd3370aa3907249a3e407925f15e57727313",
+    "research_workbench_2026_10_07\\results\\H45_precheck.json": "a54385e8e2618a6163981769f1bb79cd7f31b1b556bc6283d9a086fbcfac3363",
+    "research_workbench_2026_10_07\\praat_extract_native.praat": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+    "research_workbench_2026_10_07\\results\\sptk_native_provenance.json": "9f76f84cf896893f559c10273f0d87bb54d636046cf45aa3db9726dc2e0cd637",
+    "research_workbench_2026_10_07\\results\\praat_native_7002_provenance.json": "c2f2e4e71c80a659d953a61d11e42c02d8eb1fb68ec80f76ff688c2d9ea1225a",
+    "research_workbench_2026_10_07\\results\\praat_native_command_source.json": "af5aaf124de81b57e09576f3de436e17923bece446186252ccb0a55c83975afb",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_06\\audit.py": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_06\\estimator_experiment.py": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6"
+  },
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "new_native_calls": 0,
+  "historical_source_groups": 4,
+  "wall_time_s": 3.679204000000027,
+  "completed_utc": "2026-10-07T08:53:09.451167+00:00",
+  "selection_objective": "minimize worst-file Average MAPE, then mean, then id",
+  "goal_all_nested_files_le_2": false,
+  "train_only": true,
+  "baseline_reproduced": true,
+  "poisoned_gt_inference_invariant": true,
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "praat": "7.0.02",
+    "native_exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4"
+  }
+}

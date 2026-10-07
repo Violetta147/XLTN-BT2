@@ -1,0 +1,56 @@
+{
+  "family": "H45",
+  "registry_options": 6,
+  "inner_trace_rows": 96,
+  "outer_contour_stats_and_labels_recomputed": true,
+  "fit_selection_exclusions_verified": true,
+  "hashes_and_figures_verified": true,
+  "raw_baseline_reproduced_by_runner": true,
+  "label_hashes_unchanged_since_H00": {
+    "studio_F1.wav": {
+      "segment_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+      "stats_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5"
+    },
+    "phone_F1.wav": {
+      "segment_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+      "stats_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192"
+    },
+    "phone_M1.wav": {
+      "segment_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+      "stats_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e"
+    },
+    "studio_M1.wav": {
+      "segment_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+      "stats_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b"
+    }
+  },
+  "eligible": true,
+  "champion_promoted": false
+}
+{
+  "family": "H45",
+  "selection_replayed": true,
+  "fits_checked": 104,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": true,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "verifier_sha256": "6df8b7cf8de9824c39c847c4e840a6860d8447283f46a670242ff6c3eaaf3882"
+}
+{
+  "family": "H45",
+  "fits_replayed": 104,
+  "metric_rows_recomputed": 144,
+  "aggregation_verification": "product and kth-root; independent from log2 mean",
+  "membership_fit_pool_only": true,
+  "new_native_calls": 0,
+  "target_met": false,
+  "experiment_sha256": "7eb5b043fc56faee66bd46bbe9efe438ec31cc7487fd2452f8c67d5d8760bfa4",
+  "verifier_sha256": "ce6be8b3854e1f14bd2e8eff7522c7e34477f30f4104d9857a451e4ed09c33a0"
+}

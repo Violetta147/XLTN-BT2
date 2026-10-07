@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H45_nested",
+      "png": "figures/H45_nested.png",
+      "svg": "figures/H45_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H45_metrics.csv",
+          "sha256": "48d3e1e35c627a6d31cbfa7ce1635d2a9c4350c97d3d9f24bbedd6c95f6cd359"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "amdf_selection_ensemble_controller.py",
+      "generator_sha256": "b3d80a98cb3a61b6026d8b6d22eb18666a0b0c5ec566b1fcf3cc452cc2170a3b",
+      "command": "python research_workbench_2026_10_07/amdf_selection_ensemble_controller.py H45"
+    }
+  ]
+}
