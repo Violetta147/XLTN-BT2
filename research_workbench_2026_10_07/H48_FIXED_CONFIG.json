@@ -1,0 +1,35 @@
+{
+  "registered_utc": "2026-10-07T09:27:06.654720+00:00",
+  "config": {
+    "option_id": "amdf_pitch_spectral_p170",
+    "gate_method": "filtered",
+    "voicing_threshold": 0.3,
+    "range_hz": [
+      70,
+      400
+    ],
+    "short_window_ms": 25,
+    "long_window_ms": 40,
+    "hop_ms": 10,
+    "minimum_gate_hz": 170,
+    "hf_threshold": 0.05,
+    "hf_cutoff_hz": 1000,
+    "agreement_cents": 200,
+    "canonical_frame_ms": 25,
+    "target": "every file average_mape < 2 percent"
+  },
+  "rollback_repository_commit": "77cae08e14fa6e29ff33c1d1f6ef40472b8816cb",
+  "chosen_using": "H47 train inner minimax; hard170 final and all outer selections",
+  "source_sha256": {
+    "research_workbench_2026_10_07\\fixed_hard170_test.py": "abbc751e5f9faa0135e3c93a4e5774e4b4bf00e00b655b88f27d64928cc0cb85",
+    "research_workbench_2026_10_07\\amdf_anchor.py": "8dfa3fed10629e06d8df989cb680832a26c76f255b9deffa16a696a6554af51f",
+    "research_workbench_2026_10_07\\amdf_soft_spectral.py": "011cf01129a161901d1560cf9cf9b6ea7798f5d6251faadef9dabefe74be19b7",
+    "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+    "research_workbench_2026_10_07\\praat_extract_native.praat": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_workbench_2026_10_07\\augmented_voicing_controller.py": "ed2896fc6846d4d50858070a8339fc9ad255d844ce73def4018451dab445ae3f"
+  },
+  "goal_strict_lt_2": true,
+  "test_parameter_grid": null
+}
