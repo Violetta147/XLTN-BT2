@@ -24,7 +24,7 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            if family in ('H25','H26','H27','H28','H29','H30'):
+            if family in ('H25','H26','H27','H28','H29','H30','H31'):
                 ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
             else:
                 ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
@@ -95,19 +95,19 @@ def verify(family, baseline):
         nested = metrics[(metrics.split == 'nested') & (metrics.model == 'candidate')]
         assert result['goal_all_nested_files_le_2'] == bool((nested.average_mape <= 2).all())
         extra['raw_harvest_reproduced_and_gate_fit_pool_verified'] = True
-    if family == 'H30':
+    if family in ('H30','H31'):
         proof = json.loads((HERE / 'results/praat_native_7002_provenance.json').read_text())
         assert verify_results.digest(proof['exe']) == proof['exe_sha256'] == result['environment']['native_exe_sha256']
         for fit in fits:
             if fit['option_id'].startswith('praat7_'):
                 assert fit['fitted']['requires_fit'] is False
                 assert fit['fitted']['actual_fit_files'] == [] and fit['classifier'] is None
-        fixed = pd.read_csv(HERE / 'results/H30_fixed_lofo.csv').set_index(['option_id','file'])
-        native = pd.read_csv(HERE / 'results/H30_raw_native_frames.csv')
-        contours = pd.read_csv(HERE / 'results/H30_nested_contours.csv')
-        identities = {option['id'] for option in json.loads((HERE / 'H30_REGISTRY.json').read_text())['options'] if option['method'] != 'control'}
+        fixed = pd.read_csv(HERE / f'results/{family}_fixed_lofo.csv').set_index(['option_id','file'])
+        native = pd.read_csv(HERE / f'results/{family}_raw_native_frames.csv')
+        contours = pd.read_csv(HERE / f'results/{family}_nested_contours.csv')
+        identities = {option['id'] for option in json.loads((HERE / f'{family}_REGISTRY.json').read_text())['options'] if option['method'] != 'control'}
         assert set(native.option_id) == identities
-        assert len(result['native_calls']) == 16
+        assert len(result['native_calls']) == len(identities)*4
         for (identity, file), group in native.groupby(['option_id', 'file']):
             canonical = contours[(contours.model == 'accepted') & (contours.file == file)]
             times, target = group.time_s.to_numpy(), canonical.time_s.to_numpy()

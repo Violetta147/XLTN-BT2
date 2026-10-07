@@ -1,0 +1,50 @@
+{
+  "registered_utc": "2026-10-07T02:34:51.677116+00:00",
+  "baseline_commit": "7432dd6",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "7432dd6",
+  "family": "H31",
+  "algorithm": "Praat7 filtered voicing threshold",
+  "options": [
+    {
+      "id": "praat7_filtered_v0.25",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.25
+    },
+    {
+      "id": "praat7_filtered_v0.3",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.3
+    },
+    {
+      "id": "praat7_filtered_v0.35",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.35
+    },
+    {
+      "id": "praat7_filtered_v0.4",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.4
+    },
+    {
+      "id": "praat7_filtered_v0.45",
+      "frame_ms": 42.857142857142854,
+      "hop_ms": 10,
+      "pitch_frame_ms": 42.857142857142854,
+      "method": "filtered",
+      "voicing_threshold": 0.45
+    }
+  ]
+}
