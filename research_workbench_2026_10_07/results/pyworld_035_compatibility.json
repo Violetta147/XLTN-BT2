@@ -1,0 +1,62 @@
+{
+  "version": "0.3.5",
+  "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+  "interpreter": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-world\\Scripts\\python.exe",
+  "numpy": "2.4.3",
+  "wheel": {
+    "comment_text": "",
+    "core-metadata": {
+      "sha256": "e0a4ed25ec55d44f284596bc6ee931cc1d8a19a29b9fbb67d65c6dee094d4936"
+    },
+    "digests": {
+      "blake2b_256": "6f5c7e8fb5417ef96cbeca125b5ee507ec5568ce4bde7b576d20db2d2d4a80fc",
+      "md5": "00eda16d325731f8e9e0032c8fb36d23",
+      "sha256": "860c5c3528f1dbc5c68fa71a16e3bb6990244619e5b9baf62952f3a6bfc6131c"
+    },
+    "downloads": -1,
+    "filename": "pyworld-0.3.5-cp313-cp313-win_amd64.whl",
+    "has_sig": false,
+    "md5_digest": "00eda16d325731f8e9e0032c8fb36d23",
+    "packagetype": "bdist_wheel",
+    "python_version": "cp313",
+    "requires_python": null,
+    "size": 222371,
+    "upload_time": "2025-01-21T15:59:08",
+    "upload_time_iso_8601": "2025-01-21T15:59:08.319594Z",
+    "url": "https://files.pythonhosted.org/packages/6f/5c/7e8fb5417ef96cbeca125b5ee507ec5568ce4bde7b576d20db2d2d4a80fc/pyworld-0.3.5-cp313-cp313-win_amd64.whl",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "sdist": {
+    "comment_text": "",
+    "core-metadata": false,
+    "digests": {
+      "blake2b_256": "a50fc78d631ffbb4c1aaebf80ff2bf9e791213b381dbe404f9ce1a3eb3672931",
+      "md5": "e93b6483ef4e26a65f26bc406d718170",
+      "sha256": "1b93e53cddb67a0e4faa34d6cf919ac6c662feb1c8c0ed901d71b595ab396aa3"
+    },
+    "downloads": -1,
+    "filename": "pyworld-0.3.5.tar.gz",
+    "has_sig": false,
+    "md5_digest": "e93b6483ef4e26a65f26bc406d718170",
+    "packagetype": "sdist",
+    "python_version": "source",
+    "requires_python": null,
+    "size": 261021,
+    "upload_time": "2025-01-20T16:07:51",
+    "upload_time_iso_8601": "2025-01-20T16:07:51.261446Z",
+    "url": "https://files.pythonhosted.org/packages/a5/0f/c78d631ffbb4c1aaebf80ff2bf9e791213b381dbe404f9ce1a3eb3672931/pyworld-0.3.5.tar.gz",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "sdist_harvest_sha256": "e9e80047a9d9ed3ff8521b966985c0b912ac09415565da1cc821319dc454975e",
+  "sdist_harvest_path": "pyworld-0.3.5/lib/World/src/harvest.cpp",
+  "native_module": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-world\\Lib\\site-packages\\pyworld\\pyworld.cp313-win_amd64.pyd",
+  "native_module_sha256": "bcec71bfe22faad8dac113e3c3d86ec7af433f6a545195a0b1c09cc4bb6f5800",
+  "synthetic_native_frames": 101,
+  "synthetic_voiced_frames": 1,
+  "synthetic_max_error_hz": 3.9308935457174243,
+  "synthetic_silence_voiced": 0,
+  "real_wav_read": false,
+  "pdf_extracted": false
+}

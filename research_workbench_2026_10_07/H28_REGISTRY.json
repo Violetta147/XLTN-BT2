@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-10-07T02:07:48.567338+00:00",
+  "baseline_commit": "877eef9",
+  "original_baseline_commit": "009fd2c",
+  "rollback_repository_commit": "877eef9",
+  "family": "H28",
+  "algorithm": "WORLD Harvest versus AMDF control",
+  "options": [
+    {
+      "id": "amdf_control",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "pitch_frame_ms": 40,
+      "method": "control"
+    },
+    {
+      "id": "harvest_h5",
+      "frame_ms": null,
+      "hop_ms": 5,
+      "pitch_frame_ms": null,
+      "method": "harvest"
+    },
+    {
+      "id": "harvest_h10",
+      "frame_ms": null,
+      "hop_ms": 10,
+      "pitch_frame_ms": null,
+      "method": "harvest"
+    },
+    {
+      "id": "harvest_h20",
+      "frame_ms": null,
+      "hop_ms": 20,
+      "pitch_frame_ms": null,
+      "method": "harvest"
+    }
+  ]
+}

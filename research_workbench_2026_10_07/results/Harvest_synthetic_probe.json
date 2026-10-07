@@ -1,0 +1,98 @@
+{
+  "purpose": "Synthetic transfer diagnostic before BT2 WAV; fixed grid; no tuning on real files",
+  "signal": "1s; sum_{k=1..K} sin(2*pi*173*k*t)/k plus Gaussian noise; t=arange(fs)/fs",
+  "rows": [
+    {
+      "fs": 16000,
+      "harmonics": 2,
+      "white_noise_std": 0.0,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 0,
+      "center_native_frames": 81,
+      "median_error_hz": null,
+      "max_error_hz": null
+    },
+    {
+      "fs": 16000,
+      "harmonics": 2,
+      "white_noise_std": 0.003,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 81,
+      "center_native_frames": 81,
+      "median_error_hz": 0.008445490299777703,
+      "max_error_hz": 0.02734291807126965
+    },
+    {
+      "fs": 16000,
+      "harmonics": 12,
+      "white_noise_std": 0.0,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 81,
+      "center_native_frames": 81,
+      "median_error_hz": 0.0016013776939871605,
+      "max_error_hz": 0.0026509487385624197
+    },
+    {
+      "fs": 16000,
+      "harmonics": 12,
+      "white_noise_std": 0.003,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 81,
+      "center_native_frames": 81,
+      "median_error_hz": 0.0015206274538570597,
+      "max_error_hz": 0.004996583987974645
+    },
+    {
+      "fs": 44100,
+      "harmonics": 2,
+      "white_noise_std": 0.0,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 0,
+      "center_native_frames": 81,
+      "median_error_hz": null,
+      "max_error_hz": null
+    },
+    {
+      "fs": 44100,
+      "harmonics": 2,
+      "white_noise_std": 0.003,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 81,
+      "center_native_frames": 81,
+      "median_error_hz": 0.006536185200673117,
+      "max_error_hz": 0.018260185287545028
+    },
+    {
+      "fs": 44100,
+      "harmonics": 12,
+      "white_noise_std": 0.0,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 81,
+      "center_native_frames": 81,
+      "median_error_hz": 0.0012947272665542187,
+      "max_error_hz": 0.0026350487983393123
+    },
+    {
+      "fs": 44100,
+      "harmonics": 12,
+      "white_noise_std": 0.003,
+      "seed": 20261007,
+      "true_f0_hz": 173,
+      "center_voiced_frames": 81,
+      "center_native_frames": 81,
+      "median_error_hz": 0.001163768499480966,
+      "max_error_hz": 0.0042800777807201484
+    }
+  ],
+  "pure_harmonic_failure_retained": true,
+  "real_wav_read": false,
+  "pyworld": "0.3.5",
+  "generator_sha256": "23c151b79a4c2f47a4e371ebb5088e6b3343f6f2a198f061a4da21913ddb71ac"
+}
