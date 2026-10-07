@@ -1,0 +1,52 @@
+{
+  "figures": [
+    {
+      "name": "swipe_notebook_H34_components",
+      "png": "figures/swipe_notebook_H34_components.png",
+      "svg": "figures/swipe_notebook_H34_components.svg",
+      "sources": [
+        {
+          "path": "results\\swipe_notebook_per_file.csv",
+          "sha256": "30f34ec73f0ca1f4828e5bd04934ac4e5bdffca8a03ce37872b14edfb479d5b6"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_swipe_notebook.py",
+      "generator_sha256": "5190a37ac651ee99b98a1adca7e12895197370bad325a91b93c4030bed7a4bf9",
+      "command": "python research_workbench_2026_10_07/execute_swipe_notebook.py"
+    },
+    {
+      "name": "swipe_notebook_H35_components",
+      "png": "figures/swipe_notebook_H35_components.png",
+      "svg": "figures/swipe_notebook_H35_components.svg",
+      "sources": [
+        {
+          "path": "results\\swipe_notebook_per_file.csv",
+          "sha256": "30f34ec73f0ca1f4828e5bd04934ac4e5bdffca8a03ce37872b14edfb479d5b6"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_swipe_notebook.py",
+      "generator_sha256": "5190a37ac651ee99b98a1adca7e12895197370bad325a91b93c4030bed7a4bf9",
+      "command": "python research_workbench_2026_10_07/execute_swipe_notebook.py"
+    },
+    {
+      "name": "swipe_notebook_H34_voicing",
+      "png": "figures/swipe_notebook_H34_voicing.png",
+      "svg": "figures/swipe_notebook_H34_voicing.svg",
+      "sources": [
+        {
+          "path": "results\\swipe_notebook_per_file.csv",
+          "sha256": "30f34ec73f0ca1f4828e5bd04934ac4e5bdffca8a03ce37872b14edfb479d5b6"
+        }
+      ],
+      "caption_vi": "V/UV F1, recall V và SIL của mọi fixed option H34.",
+      "limits_vi": "Bốn file không đủ kết luận về giới hoặc speaker.",
+      "generator": "build_swipe_notebook.py",
+      "generator_sha256": "5190a37ac651ee99b98a1adca7e12895197370bad325a91b93c4030bed7a4bf9",
+      "command": "python research_workbench_2026_10_07/execute_swipe_notebook.py"
+    }
+  ]
+}
