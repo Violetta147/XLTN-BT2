@@ -1,0 +1,23 @@
+{
+  "cases": 120,
+  "rows": 360,
+  "previous_H15_control_cases_matched": 120,
+  "no_stress_tuning": true,
+  "train_only": true,
+  "wall_time_s": 146.42906120000407,
+  "code_sha256": {
+    "research_workbench_2026_10_07\\stress.py": "1f8e16cb50519644e842292c577daf89cc5b79469a04418d12274e9a711c4d05",
+    "research_workbench_2026_10_07\\tuning.py": "18471a0f015d8e798d6d326c2b692ab83bcd5d65f7fa7867f353b79dfe597360",
+    "research_workbench_2026_10_06\\robustness_analysis.py": "54352ae3722614767d17479d75504b2199e5e25c19f47a81b4f7e76f2b272d6c"
+  },
+  "clean_selection_sha256": {
+    "H18": "94430597e27616c6d81b91036fe2e6af130cc855019380c4380efd7440687d73",
+    "H19": "845310660228023e97328332c5a8cdf8e39f94dccd9c136e7836fca8cf50c848"
+  },
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  }
+}

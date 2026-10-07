@@ -1,0 +1,80 @@
+{
+  "figures": [
+    {
+      "name": "H20_FM_device",
+      "png": "figures/H20_FM_device.png",
+      "svg": "figures/H20_FM_device.svg",
+      "sources": [
+        {
+          "path": "results\\H20_clean_per_file.csv",
+          "sha256": "adcb72747ec7adee1d6815ad9a8402ec2409420ffa6f3642c1bb21adb8d64587"
+        },
+        {
+          "path": "results\\H20_FM_device_summary.csv",
+          "sha256": "a427ac8ac166dfbeccd471d80f1cfb7fb33d3b23b9670e532d8cb3442426fc5f"
+        }
+      ],
+      "caption_vi": "Bốn file cho thấy tương tác tên nhóm và thiết bị; mỗi ô chỉ một file.",
+      "limits_vi": "F/M theo tên, không xác minh danh tính hoặc tổng quát cho giới; sample rate/domain đi cùng thiết bị.",
+      "generator": "stress.py",
+      "generator_sha256": "1f8e16cb50519644e842292c577daf89cc5b79469a04418d12274e9a711c4d05",
+      "command": "python research_workbench_2026_10_07/stress.py"
+    },
+    {
+      "name": "H20_noise",
+      "png": "figures/H20_noise.png",
+      "svg": "figures/H20_noise.svg",
+      "sources": [
+        {
+          "path": "results\\H20_stress_summary.csv",
+          "sha256": "9fc0d0eff164641f108e8da500aaacb24694d9310546c1821003969c1b6eccad"
+        },
+        {
+          "path": "results\\H20_stress_per_file.csv",
+          "sha256": "8546a6616d95f0f1dfe01cb4d43697889d6c6ff4eea4f80658220293b2f0dc66"
+        }
+      ],
+      "caption_vi": "Noise được đưa vào sau clean selection, không fit lại.",
+      "limits_vi": "Ba seed mô phỏng/cell, chỉ bốn WAV; không chứng minh độ bền trên corpus nhiễu thật.",
+      "generator": "stress.py",
+      "generator_sha256": "1f8e16cb50519644e842292c577daf89cc5b79469a04418d12274e9a711c4d05",
+      "command": "python research_workbench_2026_10_07/stress.py"
+    },
+    {
+      "name": "H20_clipping",
+      "png": "figures/H20_clipping.png",
+      "svg": "figures/H20_clipping.svg",
+      "sources": [
+        {
+          "path": "results\\H20_stress_per_file.csv",
+          "sha256": "8546a6616d95f0f1dfe01cb4d43697889d6c6ff4eea4f80658220293b2f0dc66"
+        },
+        {
+          "path": "results\\H20_clipping_fraction.csv",
+          "sha256": "8f29324348185a32fd04369a321bc161e14a43537f76f28728aa3131428d81f6"
+        }
+      ],
+      "caption_vi": "Clipping cắt đỉnh tại tỷ lệ peak raw; giảm ratio làm clip mạnh hơn.",
+      "limits_vi": "Synthetic clipping không chứng minh file phone đã bị clip vật lý; số phần trăm sample/frames bị cắt báo riêng.",
+      "generator": "stress.py",
+      "generator_sha256": "1f8e16cb50519644e842292c577daf89cc5b79469a04418d12274e9a711c4d05",
+      "command": "python research_workbench_2026_10_07/stress.py"
+    },
+    {
+      "name": "H20_clipping_waveform",
+      "png": "figures/H20_clipping_waveform.png",
+      "svg": "figures/H20_clipping_waveform.svg",
+      "sources": [
+        {
+          "path": "results\\H20_clipping_example.csv",
+          "sha256": "2d4c4c3fcf3c8ef859854aa5b69b6b94ae6f88e1206f8230d2f12737f076b0db"
+        }
+      ],
+      "caption_vi": "Ví dụ waveform bị cắt đỉnh, lấy quanh peak lớn nhất trước clip.",
+      "limits_vi": "Đây là minh họa hard clipping, khác center clipping là xóa biên độ nhỏ quanh zero.",
+      "generator": "stress.py",
+      "generator_sha256": "1f8e16cb50519644e842292c577daf89cc5b79469a04418d12274e9a711c4d05",
+      "command": "python research_workbench_2026_10_07/stress.py"
+    }
+  ]
+}
