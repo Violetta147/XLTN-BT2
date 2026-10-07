@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H41_nested",
+      "png": "figures/H41_nested.png",
+      "svg": "figures/H41_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H41_metrics.csv",
+          "sha256": "5e126bf97831a71aff0b245aaae46d1105cb38098c378487fe72044514b361ba"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "amdf_praat_anchor.py",
+      "generator_sha256": "5c9b9ec9ef574b7f4b9886a22552456017be361c13eb116571c6a6ca1264ac4e",
+      "command": "python research_workbench_2026_10_07/amdf_praat_anchor.py H41"
+    }
+  ]
+}

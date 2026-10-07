@@ -1,0 +1,78 @@
+{
+  "family": "H41",
+  "registry_options": 10,
+  "inner_trace_rows": 160,
+  "outer_contour_stats_and_labels_recomputed": true,
+  "fit_selection_exclusions_verified": true,
+  "hashes_and_figures_verified": true,
+  "raw_baseline_reproduced_by_runner": true,
+  "label_hashes_unchanged_since_H00": {
+    "studio_M1.wav": {
+      "segment_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+      "stats_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b"
+    },
+    "phone_F1.wav": {
+      "segment_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+      "stats_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192"
+    },
+    "phone_M1.wav": {
+      "segment_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+      "stats_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e"
+    },
+    "studio_F1.wav": {
+      "segment_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+      "stats_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5"
+    }
+  },
+  "eligible": false,
+  "champion_promoted": false
+}
+{
+  "family": "H41",
+  "selection_replayed": true,
+  "fits_checked": 168,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": true,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": false,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "verifier_sha256": "51c5d32e5e1c2d8fc5efbf1b1ff45f5e850e763c9283c16fde07328668fef881"
+}
+Verified independent NAMDF curves (25, 'phone_F1.wav')
+Verified independent NAMDF curves (40, 'phone_F1.wav')
+Verified independent NAMDF curves (55, 'phone_F1.wav')
+Verified independent NAMDF curves (25, 'phone_M1.wav')
+Verified independent NAMDF curves (40, 'phone_M1.wav')
+Verified independent NAMDF curves (55, 'phone_M1.wav')
+C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\XLTN-BT2\research_workbench_2026_10_07\verify_amdf_anchor.py:32: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  fs,pcm=wavfile.read(REPO/'TinHieuHuanLuyen'/file)
+Verified independent NAMDF curves (25, 'studio_F1.wav')
+Verified independent NAMDF curves (40, 'studio_F1.wav')
+Verified independent NAMDF curves (55, 'studio_F1.wav')
+Verified independent NAMDF curves (25, 'studio_M1.wav')
+Verified independent NAMDF curves (40, 'studio_M1.wav')
+Verified independent NAMDF curves (55, 'studio_M1.wav')
+{
+  "family": "H41",
+  "native_calls_and_fixed_groups_replayed": 40,
+  "fit_logs": 168,
+  "raw_statistics_mape_voicing_support_recomputed": true,
+  "normalized_PCM_source_gate_time_and_count_preservation_checked": true,
+  "raw_NAMDF_formula_all_frame_input_hashes_and_band_dips_replayed": true,
+  "actual_Praat_calls": 4,
+  "curve_feature_groups": 12,
+  "curve_rows_recomputed": 1764,
+  "H31_fixed_control_reproduced": true,
+  "no_actual_training_fit": true,
+  "verifier_sha256": "ab526c03b4048fdcbb2f137109ff74b6fc42d022b3e1b9951d79b1326978bcb7",
+  "input_sha256": {
+    "H41_experiment.json": "bd1c061127ee5682e1b208ecb0c7bc5e50f864f4addb6427dc9444fb8545a688",
+    "H41_fixed_lofo.csv": "f1d361f66bea3dc197b912b23c0f3c2b93ebc490d25cee25ca8706316949bfca",
+    "H41_raw_native_frames.csv": "1b93f3686610f1e7aae1f76ae6b67905b1a9f7fe8bd43c16651b62e1fb1200ae"
+  }
+}

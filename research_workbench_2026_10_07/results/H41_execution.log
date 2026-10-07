@@ -1,0 +1,31 @@
+H41: features ready phone_F1.wav
+H41: features ready phone_M1.wav
+H41: features ready studio_F1.wav
+H41: features ready studio_M1.wav
+H41: selected final: amdf_anchor_w25_b200
+H41: selected phone_F1.wav: amdf_anchor_w25_b200
+H41: selected phone_M1.wav: amdf_anchor_w25_b200
+H41: selected studio_F1.wav: amdf_anchor_w25_b200
+H41: selected studio_M1.wav: amdf_anchor_w25_b200
+{
+  "checks": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": true,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": false,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "eligible": false,
+  "nested_status": "Outer file excluded from every inner fit and selection; selected LOFO is separate.",
+  "champion_promoted": false
+}
+    model  split  average_mape  macro_f1  recall_v  false_voiced_sil
+ accepted  train      1.622457  0.893977   0.92927                 0
+ accepted   lofo      1.622457  0.893977   0.92927                 0
+ accepted nested      1.622457  0.893977   0.92927                 0
+candidate  train      1.332617  0.893977   0.92927                 0
+candidate   lofo      1.332617  0.893977   0.92927                 0
+candidate nested      1.332617  0.893977   0.92927                 0

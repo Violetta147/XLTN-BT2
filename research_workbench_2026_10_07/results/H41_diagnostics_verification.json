@@ -1,0 +1,11 @@
+{
+  "component_rows": 40,
+  "source_usage_rows": 40,
+  "all_VUV_count_support_invariant_checked": true,
+  "file_average_target_true_but_gate_false_checked": true,
+  "new_audio_or_backend_call": false,
+  "source_sha256": "f1d361f66bea3dc197b912b23c0f3c2b93ebc490d25cee25ca8706316949bfca",
+  "report_sha256": "eb4284f214e908544d52356c980c94c1682445a29daded3ca9d9f58076a29bac",
+  "generator_sha256": "474fd9681657f201489f85562861689f5cc33beb9d9ffa046159178ea400bd63",
+  "PNG_SVG_checked": true
+}

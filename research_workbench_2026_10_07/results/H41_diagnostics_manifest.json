@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H41_fixed_components",
+      "png": "figures/H41_fixed_components.png",
+      "svg": "figures/H41_fixed_components.svg",
+      "sources": [
+        {
+          "path": "results\\H41_fixed_lofo.csv",
+          "sha256": "f1d361f66bea3dc197b912b23c0f3c2b93ebc490d25cee25ca8706316949bfca"
+        }
+      ],
+      "caption_vi": "Ba thành phần lỗi chia3 cộng thành AverageMAPE; đủ40rows.",
+      "limits_vi": "Fixed không nested; H41 đạtfileAverageMAPE nhưngphoneF1stdgateFAIL, khôngpromote.",
+      "generator": "amdf_anchor_diagnostics.py",
+      "generator_sha256": "474fd9681657f201489f85562861689f5cc33beb9d9ffa046159178ea400bd63",
+      "command": "python research_workbench_2026_10_07/amdf_anchor_diagnostics.py"
+    }
+  ]
+}

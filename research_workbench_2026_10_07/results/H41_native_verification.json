@@ -1,0 +1,19 @@
+{
+  "family": "H41",
+  "native_calls_and_fixed_groups_replayed": 40,
+  "fit_logs": 168,
+  "raw_statistics_mape_voicing_support_recomputed": true,
+  "normalized_PCM_source_gate_time_and_count_preservation_checked": true,
+  "raw_NAMDF_formula_all_frame_input_hashes_and_band_dips_replayed": true,
+  "actual_Praat_calls": 4,
+  "curve_feature_groups": 12,
+  "curve_rows_recomputed": 1764,
+  "H31_fixed_control_reproduced": true,
+  "no_actual_training_fit": true,
+  "verifier_sha256": "ab526c03b4048fdcbb2f137109ff74b6fc42d022b3e1b9951d79b1326978bcb7",
+  "input_sha256": {
+    "H41_experiment.json": "bd1c061127ee5682e1b208ecb0c7bc5e50f864f4addb6427dc9444fb8545a688",
+    "H41_fixed_lofo.csv": "f1d361f66bea3dc197b912b23c0f3c2b93ebc490d25cee25ca8706316949bfca",
+    "H41_raw_native_frames.csv": "1b93f3686610f1e7aae1f76ae6b67905b1a9f7fe8bd43c16651b62e1fb1200ae"
+  }
+}
