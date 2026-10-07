@@ -1,0 +1,1713 @@
+{
+  "source_sha256": {
+    "research_workbench_2026_10_07\\amdf_dual_window.py": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+    "research_workbench_2026_10_07\\reaper_reference.py": "586cdb925ac6633fa38465a6998914c2c79528a09bf5138717aeb61746ee3815",
+    "research_workbench_2026_10_07\\reaper_praat_hybrid.py": "604a06277d60dfa4090ec1d74fdded29d9164f675d8998a7553e5a91ca54fb12",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_06\\audit.py": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
+    "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+    "research_workbench_2026_10_07\\sptk_adapter.py": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+    "research_workbench_2026_10_07\\reaper_adapter.py": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+    "research_workbench_2026_10_07\\results\\reaper_synthetic_probe.json": "1791560eb901a3d0ffb63bb6b9014af0ebc162b4f97f59df3034aca3d7d9f3f5",
+    "research_workbench_2026_10_07\\results\\reaper_adapter_probe.json": "3df4ecd4263f10ccd83015b2d133b20e3b57b5adcf6eb7e65fdee72f7974c766",
+    "research_workbench_2026_10_07\\results\\reaper_author_source_discovery.json": "504e9925056e9502ddb1fed5ddd0f3935e0a38d23efbb8a21ec3b363bbb16651",
+    "research_workbench_2026_10_07\\praat_extract_native.praat": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+    "research_workbench_2026_10_07\\results\\sptk_native_provenance.json": "9f76f84cf896893f559c10273f0d87bb54d636046cf45aa3db9726dc2e0cd637",
+    "research_workbench_2026_10_07\\results\\swipe_synthetic_probe.json": "152de7622a44e1f2e560c26992b4fb01bec1163508eca361f12d34144404a8a7",
+    "research_workbench_2026_10_07\\results\\praat_native_7002_provenance.json": "c2f2e4e71c80a659d953a61d11e42c02d8eb1fb68ec80f76ff688c2d9ea1225a",
+    "research_workbench_2026_10_07\\results\\praat_native_command_source.json": "af5aaf124de81b57e09576f3de436e17923bece446186252ccb0a55c83975afb",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_06\\estimator_experiment.py": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6"
+  },
+  "wav_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "native_calls": {
+    "reaper_reference|praat7_filtered_v0.45|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "ab01dcfadc5191384173df889945b56dc9cdd2f3fd1d9f645c31be9fe64eef10",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "reaper_reference|praat7_filtered_v0.45|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "7f38fe712048ed3afce6ff810db39f6ea30b203fcda8484bdadab2893027d895",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "reaper_reference|praat7_filtered_v0.45|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "bd6b59d2253c09e71e08a164db874f5613fe372ffdcd85c1018423b03e48009a",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "reaper_reference|praat7_filtered_v0.45|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "d5400fb8b446e0c16d1c23d5d73401517448a1298ca859592f9c726e147dd176",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "reaper_reference|reaper_c0.6|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 51840,
+      "input_sha256": "8b25f19d37fbb36697263e5213bb000e71990f5af3e743147ec93fcb1ea25bfa",
+      "stdout_sha256": "e7e3f066c36e1293eb71cff7120ab68ffb1aa2e66b35807ec890e56b75c6e20b",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 324,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.6|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 66560,
+      "input_sha256": "acef7501d6a284e90da46c12eddd529c020d79cd6ba04befe55e70d9a159ff89",
+      "stdout_sha256": "000b072a9f2237e545d88954232c04a44d7f2ace524dea72daadc15ded7ebf32",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 416,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.6|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 126267,
+      "input_sha256": "39b0f6ccc240c78984db5e425ba9020af32ae69dbc958e26fbb83a874b09e9d2",
+      "stdout_sha256": "1562efacdbf0295c4a856289ae98577c90f36f0da89ea826996b952de141848d",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 287,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.6|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 120400,
+      "input_sha256": "ada47b0ad9987cb70bd56ed0fa588d6a04976f73a67c167e5288131e8234c0e2",
+      "stdout_sha256": "83e46caf5fd895edb314f7171b5e4ec1f2b4b50295075d85f78b5c955c7c9ff8",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 274,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.9|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 51840,
+      "input_sha256": "8b25f19d37fbb36697263e5213bb000e71990f5af3e743147ec93fcb1ea25bfa",
+      "stdout_sha256": "58a29f188017deb3f2d7687a2bfa3054cc7aefb22cc7b90065cc8f5a0d6cf73b",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 324,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.9|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 66560,
+      "input_sha256": "acef7501d6a284e90da46c12eddd529c020d79cd6ba04befe55e70d9a159ff89",
+      "stdout_sha256": "1f0dbcd71f01977d9deecaa0efed409930e71044ba6a8fb086274cfdd3b3d6d8",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 416,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.9|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 126267,
+      "input_sha256": "39b0f6ccc240c78984db5e425ba9020af32ae69dbc958e26fbb83a874b09e9d2",
+      "stdout_sha256": "b92be049931b4dd8b02a83f73830924302df2f36a6a1ad177ca5337733b6326e",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 287,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c0.9|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 120400,
+      "input_sha256": "ada47b0ad9987cb70bd56ed0fa588d6a04976f73a67c167e5288131e8234c0e2",
+      "stdout_sha256": "0809bddaf6d01bb3fbd04779b596c389fbade0e31ef2973bc0ff520df6124780",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 274,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.2|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.2",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 51840,
+      "input_sha256": "8b25f19d37fbb36697263e5213bb000e71990f5af3e743147ec93fcb1ea25bfa",
+      "stdout_sha256": "e936356945847e8bfaee3c405774cdf61814a45ad942a6a6934bc9fe3182758a",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 324,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.2|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.2",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 66560,
+      "input_sha256": "acef7501d6a284e90da46c12eddd529c020d79cd6ba04befe55e70d9a159ff89",
+      "stdout_sha256": "6f17017d8c58ea0fe0aa487c729b958e3f0978f0477e4f27c86f40e357b60778",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 416,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.2|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.2",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 126267,
+      "input_sha256": "39b0f6ccc240c78984db5e425ba9020af32ae69dbc958e26fbb83a874b09e9d2",
+      "stdout_sha256": "45a9a44ac6dbcbee1c7b087cfd29a4e27c36213d0529afff51faa190fbb6913a",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 287,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.2|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.2",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 120400,
+      "input_sha256": "ada47b0ad9987cb70bd56ed0fa588d6a04976f73a67c167e5288131e8234c0e2",
+      "stdout_sha256": "72acbdf9c5447e548deb6156a305a211349c0e2a722d6ee8339a58a8bf95590a",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 274,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.5|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.5",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 51840,
+      "input_sha256": "8b25f19d37fbb36697263e5213bb000e71990f5af3e743147ec93fcb1ea25bfa",
+      "stdout_sha256": "f77e220092c1b6385d581c823e15def353180c822fb1357dfb1172733af7a1f9",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 324,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.5|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.5",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 66560,
+      "input_sha256": "acef7501d6a284e90da46c12eddd529c020d79cd6ba04befe55e70d9a159ff89",
+      "stdout_sha256": "b6a5bef239ed7ec405485fe66759d84e8a91862285f0865f7e4809062d28748e",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 416,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.5|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.5",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 126267,
+      "input_sha256": "39b0f6ccc240c78984db5e425ba9020af32ae69dbc958e26fbb83a874b09e9d2",
+      "stdout_sha256": "c349ac24c433b9a63efdb320a9176072bcade77bb15952527108740ad7daae03",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 287,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "reaper_reference|reaper_c1.5|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "1.5",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 120400,
+      "input_sha256": "ada47b0ad9987cb70bd56ed0fa588d6a04976f73a67c167e5288131e8234c0e2",
+      "stdout_sha256": "a41cdc0bb0ffa9f44b6603fc71de36ee0c9799a36df9f736dba51c7aa40d1e7e",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 274,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9",
+      "engine": "SPTK4.4 REAPER"
+    },
+    "hybrid|praat7_filtered_v0.3|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "5609f30556364c93b44891f7b103995afefff2f520c3ce60069a122e1c01ba78",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "hybrid|praat7_filtered_v0.3|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "b57749deb0977260948e431f141a3089054e20e5ee058a310f92fadae4d56951",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "hybrid|praat7_filtered_v0.3|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "1a14b17b33c537ca5e1a7389632a0d1b7a47ee5c0405e184da58df7e6ea53bbd",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "hybrid|praat7_filtered_v0.3|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "8d84c21461e4d7e945159423fa27222cff4c217e57caada000c8382c8a16ca7c",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "hybrid|reaper_c0.6|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 51840,
+      "input_sha256": "8b25f19d37fbb36697263e5213bb000e71990f5af3e743147ec93fcb1ea25bfa",
+      "stdout_sha256": "e7e3f066c36e1293eb71cff7120ab68ffb1aa2e66b35807ec890e56b75c6e20b",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 324,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.6|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 66560,
+      "input_sha256": "acef7501d6a284e90da46c12eddd529c020d79cd6ba04befe55e70d9a159ff89",
+      "stdout_sha256": "000b072a9f2237e545d88954232c04a44d7f2ace524dea72daadc15ded7ebf32",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 416,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.6|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 126267,
+      "input_sha256": "39b0f6ccc240c78984db5e425ba9020af32ae69dbc958e26fbb83a874b09e9d2",
+      "stdout_sha256": "1562efacdbf0295c4a856289ae98577c90f36f0da89ea826996b952de141848d",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 287,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.6|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.6",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 120400,
+      "input_sha256": "ada47b0ad9987cb70bd56ed0fa588d6a04976f73a67c167e5288131e8234c0e2",
+      "stdout_sha256": "83e46caf5fd895edb314f7171b5e4ec1f2b4b50295075d85f78b5c955c7c9ff8",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 274,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.9|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 51840,
+      "input_sha256": "8b25f19d37fbb36697263e5213bb000e71990f5af3e743147ec93fcb1ea25bfa",
+      "stdout_sha256": "58a29f188017deb3f2d7687a2bfa3054cc7aefb22cc7b90065cc8f5a0d6cf73b",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 324,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.9|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "160",
+        "-s",
+        "16.0",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 66560,
+      "input_sha256": "acef7501d6a284e90da46c12eddd529c020d79cd6ba04befe55e70d9a159ff89",
+      "stdout_sha256": "1f0dbcd71f01977d9deecaa0efed409930e71044ba6a8fb086274cfdd3b3d6d8",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 160,
+      "time_origin_s": 0,
+      "native_frames": 416,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.9|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 126267,
+      "input_sha256": "39b0f6ccc240c78984db5e425ba9020af32ae69dbc958e26fbb83a874b09e9d2",
+      "stdout_sha256": "b92be049931b4dd8b02a83f73830924302df2f36a6a1ad177ca5337733b6326e",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 287,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    },
+    "hybrid|reaper_c0.9|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\sptk-reference\\build-mingw\\pitch.exe",
+        "-a",
+        "2",
+        "-p",
+        "441",
+        "-s",
+        "44.1",
+        "-L",
+        "70",
+        "-H",
+        "400",
+        "-t2",
+        "0.9",
+        "-o",
+        "1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "input_samples": 120400,
+      "input_sha256": "ada47b0ad9987cb70bd56ed0fa588d6a04976f73a67c167e5288131e8234c0e2",
+      "stdout_sha256": "0809bddaf6d01bb3fbd04779b596c389fbade0e31ef2973bc0ff520df6124780",
+      "transport": "binary little-endian float64 PCM-scale stdin/output; frequency Hz, UV=0",
+      "normalised_audio_scale": 32768,
+      "hop_samples": 441,
+      "time_origin_s": 0,
+      "native_frames": 274,
+      "exe_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+      "source_commit": "0ebff5a9b1fb5851709130efa1d3efb186ef702a",
+      "adapter_sha256": "1a073581914c7fe3e3454400e9991583cf743dc9619243175f0ef48a95e5366d",
+      "native_called": true,
+      "status": "native_success",
+      "reaper_adapter_sha256": "981fb69705dfe79c6e51b12bf6f7af39bdfaca1ab7137ef181d4819c5f3d1bd9"
+    }
+  },
+  "fit_logs": [
+    {
+      "evaluation": "fixed",
+      "method": "amdf_gate25_pitch40",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "pitch_threshold": 0.4096917277020603,
+        "energy_threshold": 0.05466060583995211,
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ]
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "amdf_gate25_pitch40",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "pitch_threshold": 0.40830540776511665,
+        "energy_threshold": 0.05773046922547663,
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ]
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "amdf_gate25_pitch40",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "pitch_threshold": 0.41622733555156766,
+        "energy_threshold": 0.06683658871639932,
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ]
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "amdf_gate25_pitch40",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "pitch_threshold": 0.41373072127314126,
+        "energy_threshold": 0.061544615883604575,
+        "requires_fit": true,
+        "actual_fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ]
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.45",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.45",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.45",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.45",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.6",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.6",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.6",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.6",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.9",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.9",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.9",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c0.9",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.2",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.2",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.2",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.2",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.5",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.5",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.5",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "reaper_c1.5",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "reaper"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.3",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.3",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.3",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat7_filtered_v0.3",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.6",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.6",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.6",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.6",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.9",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.9",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.9",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "fixed",
+      "method": "praat_gate_reaper_c0.9",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H36_nested",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H36_nested",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H36_nested",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H36_nested",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H37_nested",
+      "held_file": "phone_F1.wav",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H37_nested",
+      "held_file": "phone_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H37_nested",
+      "held_file": "studio_F1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    },
+    {
+      "evaluation": "nested",
+      "method": "H37_nested",
+      "held_file": "studio_M1.wav",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      }
+    }
+  ],
+  "praat_native_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+  "sptk_native_sha256": "14dfd2087e5554ed768b1da3ef1a2bc9d936306703eec4b6704dc746353b57cb",
+  "test_read": false,
+  "new_grid_or_selection": false
+}

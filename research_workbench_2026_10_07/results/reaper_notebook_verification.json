@@ -1,0 +1,12 @@
+{
+  "notebook_sha256": "a569cf75c2e8e896b2bbd7bd107b99069d01faf07aa5efa11edd78f8e36207b4",
+  "exact_source_cells_executed": 5,
+  "source_cells_sha256": "599de1037c887345665d3213975dff1b9e7e38b732643f5af9ef232f8e06c6f4",
+  "measured_rows_recomputed_from_wav_and_contours_checked": 44,
+  "actual_fit_exclusions_checked": true,
+  "native_binary_call_provenance_checked": true,
+  "status_and_figures_verified": true,
+  "all_files_target_met": false,
+  "execution_method": "Python exec of each exact code cell; headless display adapter; not Jupyter kernel",
+  "verifier_sha256": "bac94baeda4dcab8da5b7371c4f45b2329e66622c1dafed989be361c7e38f676"
+}

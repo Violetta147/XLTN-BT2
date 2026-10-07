@@ -1,0 +1,52 @@
+{
+  "figures": [
+    {
+      "name": "reaper_notebook_H36_components",
+      "png": "figures/reaper_notebook_H36_components.png",
+      "svg": "figures/reaper_notebook_H36_components.svg",
+      "sources": [
+        {
+          "path": "results\\reaper_notebook_per_file.csv",
+          "sha256": "a5c32323f32bf259f19a045c2d029265a55c734fb0683747febbc801ca3a5a8b"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_reaper_notebook.py",
+      "generator_sha256": "d4a92fdf5383be0e6c861e621f3c292761afa84e6494c0d7f32725f1888cd1e3",
+      "command": "python research_workbench_2026_10_07/execute_reaper_notebook.py"
+    },
+    {
+      "name": "reaper_notebook_H37_components",
+      "png": "figures/reaper_notebook_H37_components.png",
+      "svg": "figures/reaper_notebook_H37_components.svg",
+      "sources": [
+        {
+          "path": "results\\reaper_notebook_per_file.csv",
+          "sha256": "a5c32323f32bf259f19a045c2d029265a55c734fb0683747febbc801ca3a5a8b"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_reaper_notebook.py",
+      "generator_sha256": "d4a92fdf5383be0e6c861e621f3c292761afa84e6494c0d7f32725f1888cd1e3",
+      "command": "python research_workbench_2026_10_07/execute_reaper_notebook.py"
+    },
+    {
+      "name": "reaper_notebook_H36_voicing",
+      "png": "figures/reaper_notebook_H36_voicing.png",
+      "svg": "figures/reaper_notebook_H36_voicing.svg",
+      "sources": [
+        {
+          "path": "results\\reaper_notebook_per_file.csv",
+          "sha256": "a5c32323f32bf259f19a045c2d029265a55c734fb0683747febbc801ca3a5a8b"
+        }
+      ],
+      "caption_vi": "V/UV F1, recall V và SIL của mọi fixed option H36.",
+      "limits_vi": "Bốn file không đủ kết luận về giới hoặc speaker.",
+      "generator": "build_reaper_notebook.py",
+      "generator_sha256": "d4a92fdf5383be0e6c861e621f3c292761afa84e6494c0d7f32725f1888cd1e3",
+      "command": "python research_workbench_2026_10_07/execute_reaper_notebook.py"
+    }
+  ]
+}
