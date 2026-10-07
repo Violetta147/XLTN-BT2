@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H40_nested",
+      "png": "figures/H40_nested.png",
+      "svg": "figures/H40_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H40_metrics.csv",
+          "sha256": "28a41dd48e6fa8e89f07a4256d1ca7e95438383722c75693c57a00e417a3bbe9"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "yaapt_reference.py",
+      "generator_sha256": "fb97da1ab4e88ead59864c18519f72f675dfdf2964d671b2ee43a1546d68f8bc",
+      "command": "python research_workbench_2026_10_07/yaapt_reference.py H40"
+    }
+  ]
+}

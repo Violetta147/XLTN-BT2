@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "H40_fixed_components",
+      "png": "figures/H40_fixed_components.png",
+      "svg": "figures/H40_fixed_components.svg",
+      "sources": [
+        {
+          "path": "results\\H40_fixed_lofo.csv",
+          "sha256": "29798bbab67d2f59e94ae957ef5a7b94ee0e36394c39a4b79b8ad51a127e1c2c"
+        }
+      ],
+      "caption_vi": "Tất cả cấu hình fixed, không chọn riêng từng file.",
+      "limits_vi": "GT file-stat/nhãn đoạn; không có F0 chuẩn từng khung, nested là exploratory.",
+      "generator": "yaapt_diagnostics.py",
+      "generator_sha256": "a3baf4b89d944ec6b10fe1ef4fcdc7dc0368065bcc8ad1c1ecccbd01a0454199",
+      "command": "python research_workbench_2026_10_07/yaapt_diagnostics.py"
+    },
+    {
+      "name": "H40_fixed_voicing",
+      "png": "figures/H40_fixed_voicing.png",
+      "svg": "figures/H40_fixed_voicing.svg",
+      "sources": [
+        {
+          "path": "results\\H40_fixed_lofo.csv",
+          "sha256": "29798bbab67d2f59e94ae957ef5a7b94ee0e36394c39a4b79b8ad51a127e1c2c"
+        }
+      ],
+      "caption_vi": "Tất cả cấu hình fixed, không chọn riêng từng file.",
+      "limits_vi": "GT file-stat/nhãn đoạn; không có F0 chuẩn từng khung, nested là exploratory.",
+      "generator": "yaapt_diagnostics.py",
+      "generator_sha256": "a3baf4b89d944ec6b10fe1ef4fcdc7dc0368065bcc8ad1c1ecccbd01a0454199",
+      "command": "python research_workbench_2026_10_07/yaapt_diagnostics.py"
+    }
+  ]
+}

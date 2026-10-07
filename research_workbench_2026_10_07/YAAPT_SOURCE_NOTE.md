@@ -15,3 +15,5 @@ Probe v1 chưa gọi backend vì adapter tự kiểm tra sai35 thay vì34 defaul
 Các cảnh báo chia0/NaN nội bộ trên zero được ghi raw; output vẫn finite/UV0. Backend exception trên tiếng nói sẽ dừng vòng và giữ log, không bắt lỗi rồi biến thành0. Source/manual knowledge assessment ở mức implementation, không bảo đảm F0 frame truth.
 
 Workflow dùng subset local scientific literature-review K-Dense1.11: source/log/content-level/metadata trước benchmark. Provenance tại ../.agents/skills/literature-review/PROVENANCE.md; không chạy optional CLI/scripts chưa cài, không paid generation/PDF.
+
+Tham chiếu workflow: Kassis, T.; Agarwal, V.; He, Y.; Patel, D.; Brueckner, A. M. (2026), *Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents*, [arXiv current](https://arxiv.org/abs/2609.00065), [DOI](https://doi.org/10.48550/arXiv.2609.00065). Metadata live07/10: v2 revised02/09/2026, không journal/publisher DOI; không đọc PDF. Citation không chứng minh chất lượng hoặc tiết kiệm token của BT2.

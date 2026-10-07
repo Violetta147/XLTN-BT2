@@ -1,0 +1,16 @@
+{
+  "family": "H40",
+  "native_calls_and_fixed_groups_replayed": 16,
+  "fit_logs": 68,
+  "raw_statistics_mape_voicing_support_recomputed": true,
+  "normalized_PCM_raw_UV0_source_params_frame_centers_checked": true,
+  "synthetic_octave_failures_retained": true,
+  "H30_fixed_control_reproduced": true,
+  "no_actual_training_fit": true,
+  "verifier_sha256": "9f544aa48629633a9b6c7ac9873b8dc68630ee6f690542671064da633f472ccd",
+  "input_sha256": {
+    "H40_experiment.json": "ef43a1fc0a58b5d0665dd6777382974f60af0bea6262ac14377f8e7a3c6a4adf",
+    "H40_fixed_lofo.csv": "29798bbab67d2f59e94ae957ef5a7b94ee0e36394c39a4b79b8ad51a127e1c2c",
+    "H40_raw_native_frames.csv": "e72643bb8fd5467559cc14d294766c1176457e1a75fc3c63d3604e4a9de5e207"
+  }
+}
