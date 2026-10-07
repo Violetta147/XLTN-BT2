@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-10-07T00:48:54.583141+00:00",
+  "baseline_commit": "009fd2c",
+  "rollback_repository_commit": "35ba151",
+  "family": "H21",
+  "options": [
+    {
+      "id": "raw_0_0_f25_h10",
+      "kind": "raw",
+      "low_hz": 0,
+      "high_hz": 0,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": null,
+      "center_ratio": 0.0
+    },
+    {
+      "id": "center_0.3_f25_h10",
+      "kind": "raw",
+      "low_hz": 0,
+      "high_hz": 0,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": null,
+      "center_ratio": 0.3
+    },
+    {
+      "id": "center_0.5_f25_h10",
+      "kind": "raw",
+      "low_hz": 0,
+      "high_hz": 0,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": null,
+      "center_ratio": 0.5
+    }
+  ]
+}
