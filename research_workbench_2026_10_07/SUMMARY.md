@@ -108,7 +108,7 @@ Audit không thấy sample chạm nativeint16rails trong bốn file; điều đ�
 
 ## 8. Gemini và Jev
 
-Gemini đã được hỏi theo yêu cầu và trả lời đầy đủ phần ý tưởng. Đề xuất zero-phase filtering, center clipping, thêm zero-crossing rate vào logistic và micro-tuningC. Agent giữ như giả thuyết, chưa chạy các thay đổi đó ở lượt này.
+Gemini đã được hỏi theo yêu cầu và trả lời đầy đủ phần ý tưởng. Đề xuất zero-phase filtering, center clipping, thêm zero-crossing rate vào logistic và micro-tuningC. Ở đợt H18–H20, các ý tưởng này được giữ như giả thuyết; lượt nối tiếp đã thử riêng center clipping (H21) và thêm ZCR (H22), xem mục10.
 
 Các lỗi đã ghi: khuyên so nativecount trực tiếp dù hop thay đổi; nói logistic gục dưới brown noise khi H15 không có logistic; khẳng định center clipping sẽ triệt false voiced chưa đo; suy phone bị nén. Zero-phase không bảo toàn mọi waveform và có magnitude khác causal. Đọc [log/đối chiếu](AI_REVIEW.md), [prompt thực gửi](GEMINI_SENT_PROMPT.txt), [AX phản hồi](GEMINI_RESPONSE_AX.txt). Raw AX được bỏ trailing whitespace để kiểm tra Git, giữ nguyên nội dung quan sát.
 
@@ -122,6 +122,36 @@ Raw25/10 features và metrics tái lập baseline; filter linearity/chunk contin
 
 Các kết quả được commit/push riêng trên codex/train-mape-investigation, không merge main: H18 1ccb47c, H19 6b8ba23, gridH19 6b90124, H20 a6514b9. Tổng hợp này cùng STATE sẽ được commit riêng sau kiểm tra liên kết.
 
-Vòng đăng ký hiện tại đã hoàn thành. Queue tiếp: center clipping một yếu tố, thêm ZCR một yếu tố hoặc đối chiếu causal/zero-phase cùng magnitude controls; đăng ký gate và grid trước đo. Cần kiểm tra lại cơ chế gây lỗi ở phone_F1/phone_M1 trước mở thêm nhiều chiều hyperparameter. Không mở test để quyết định grid mới.
+Vòng đăng ký hiện tại đã hoàn thành, gồm H21/H22 nối tiếp ở mục10. Queue tiếp có thể đối chiếu causal/zero-phase cùng magnitude controls hoặc chuẩn hóa ACF khác; đăng ký gate và grid trước đo. Cần kiểm tra cơ chế gây lỗi theofile trước mở thêm nhiều chiều hyperparameter. Không mở test để quyết định grid mới.
 
 Sources về API/cơ chế: [SciPy butter](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.butter.html), [SciPy filtfilt](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.filtfilt.html). Figures/Git/code là nguồn số đo, phản hồi AI là nguồn ý tưởng cần kiểm chứng.
+
+## 10. Nối tiếp: hai ý tưởng Gemini đã được đo riêng
+
+H21 thử center clipping: đặt mẫu có biên độ nhỏ về0, trừ mức clipping khỏi phần còn lại trước tính ACF. Khác hard clipping H20 là cắt các đỉnh lớn. Mức0/.3/.5 được đăng ký trướcđo; không ghép đổi filter, geometry hoặc classifier. Giữ25/10 ở hai vòng này nhằm cô lập cơ chế, không phải bỏ việc thay frame/hop đã thực hiện H18/H19.
+
+| Cấu hình cố định, LOFO4file | AvgMAPE file-stat (%) | MacroF1 | RecallV | SIL false voiced |
+|---|---:|---:|---:|---:|
+| Accepted ACF raw | 7.279236 | 0.841398 | 0.865862 | 3 |
+| Center clipping30% | 8.534217 | 0.825778 | 0.856473 | 2 |
+| Center clipping50% | 11.540008 | 0.795568 | 0.809880 | 1 |
+| Logistic2D C1 | 5.470735 | 0.863433 | 0.884072 | 1 |
+| Logistic3D C1 thêmZCR | 5.757400 | 0.864048 | 0.887902 | 1 |
+
+H21 chọn raw ởfinal vàmọiouterfold; nested7.279236%, không cải thiện. Bớt khung SIL sai ở mức clipping lớn không đủ bù lỗi thống kê F0 và bỏ sót V. Đọc [H21 report](H21_REPORT.md), [đăngký](H21_REGISTRATION.md), [toàngrid kể cả mức khôngđược chọn](results/H21_grid_summary.csv).
+
+![Hai phép clipping](figures/H21_transform_waveform.png)
+
+H22 chỉ thêm ZCR vào logisticC1. ZCR là tần suất tín hiệu đổi dấu sau trừ mean khung, đơn vị crossings/s; không là F0. Scaler và coefficients fit đúngtrainfold. Fixed3D tăng nhẹ F1/recall bình quân so2D nhưng AvgMAPE tăng, file phone_M1recallV giảm0.827869→0.790984.
+
+Quy trình chọn3options H22: final chọn2D; mỗiouter chọn trênother3, chỉ outerphone_M1 chọn3D, baouterkhác chọnraw. NestedAvgMAPE **7.732759%** so accepted **7.279236%**, gateFAIL. Không dùng điểm fixed/selected5.47% thay cho kết quả7.73% của quy trình chọn. Đọc [H22 report](H22_REPORT.md), [đăngký](H22_REGISTRATION.md).
+
+Phân tích fixed2D→fixed3D ởphone_M1:12khung V trước nhận đúng chuyển thành bỏ sót,3khung V trước bỏ sót được nhận, rònggiảm9. Các12khung mất có ZCR bình quân3161.24crossings/s, các232khung V còn lại1575.49. Đây là tương quan với thay đổi quyết định; thêmZCR cũng refit hệ sốACF/RMS/intercept nên không coi một ZCR term là tác động nhân quả tách riêng. Không suy thành “ZCR hại giọng nam”. [Bảng khung/hệ số và giải thích](H22_ERROR_ANALYSIS.md).
+
+![ZCR diagnostics](figures/H22_zcr_diagnostics.png)
+
+Cả hai registry/runner được kiểm tra vàpush trướcđo. Mỗi vòng48innertraces/24metricrows; counts/mean/std/MAPE/classification trên nested contours được tính lại, LAB/WAV/sourcehash giữ nguyên. verify_selection.py phát lại lựa chọn từtoàntraces vàtính lại tấtcảgates; diagnostics1291frame rows đối chiếu fixedcounts/transitions. Thêm6cặpPNG/SVG, tổng18cặp khoa học. Không có thí nghiệmnoise mới hoặc test rerun trong lượt này; không thaychampion.
+
+Các commit đãpush riêng vàverifyremote: đăngkýH21 `45f405b`, kết quảH21 `dc87b79`, đăngkýH22 `ad11efe`, kết quảH22 `0e20eb9`, kiểm trađộclập `fbded31`, phân tíchkhung `4cf4653`. Tổnghợp/STATE đượccommit riêng khihoàn tất. Không merge main, không tạo schedule.
+
+Hai ý tưởng lấy từ phảnbiệnGemini đã lưu; lượt nối tiếp không gửi thêmGemini hoặc gọiJev mới, vì các sốđếm/gate/tính toán cần code chứkhông cầnphánđoánngữnghĩa. Không discovery hoặc retry SystemOne. Nguồn cơ chếcenterclipping: [Columbia autocorrelation demonstration](https://www.ee.columbia.edu/~dpwe/classes/e6820-2001-01/matlab/MAD/auto/auto.htm); API [LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). Không dùng nguồnweb hoặc phảnhồiAI như sốđo thực nghiệm.

@@ -12,9 +12,14 @@ Không schedule, không deadline04:00 của phiên cũ. Tiếp tục từ eceb09
 - [x] H19grid/controls đãxuất vàpush6b90124; raw25/10/C1 tái hiện H16LOFO5.470735%.
 - [x] H20 hoànthành120case/360rows, control khớpH15, coverage100%, đúngSNR; F/M/device/boundary/clippingfraction/noise figures vàCSVs. Commita6514b9 đãpush; runtime146.43s. Brownnoise0dB SIL72.33accepted→31.67H18/35H19 (4file,3seedmean); clipping.25 AvgMAPE8.02accepted→9.37H18/10.13H19.
 - [x] Tổng hợp tại [SUMMARY.md](SUMMARY.md),12cặpPNG/SVG +1ảnhGeminiUI; STATE cũ đãlink vào thưmục này. Liên kết đãkiểmtra; doc tổnghợpđược commit/push tronglượt hoàn tất.
-- [ ] Vòng tiếp: đăngký centerclipping hoặcZCR hoặcphase-mode sau đọcerroranalysis, khôngmởtest/tune theo noise đãđo.
-- Không còn runner đang chạy từ phiên này; H18/H19/H20 đãhoàn tất. Không tạo lại schedule.
+- [x] H21 center clipping0/.3/.5: đăngký45f405b, kết quảdc87b79. FixedLOFO .3=8.534217%, .5=11.540008% so raw7.279236%; cả final và4outer chọn raw, nested7.279236%. GateFAIL, không promote. Verify48innertraces/24metrics/contours/LABhashes,3cặpPNG/SVG. Đọc H21_REPORT.md.
+- [x] H22 logistic thêmZCR crossings/s, giữC1: đăngkýad11efe, kết quả0e20eb9. Fixed2D5.470735% tái lậpH16; fixed3D5.757400%, F1/recall bình quân tăng nhẹ nhưng phone_M1recall giảm. Finalchọn2D; nested7.732759% so accepted7.279236%, gateFAIL. Outer phone_M1chọn3D,3file khácraw. Verify48innertraces/24metrics/contours/hash.
+- [x] Replay lựa chọn độc lập và toàn bộgate H21/H22 bằng verify_selection.py, receiptsởfbded31. H22diagnostics4cf4653:1291frame rows, fixedscores tái lập, transitions/hashes/PNG/SVG verified. Phone_M1V mất12/nhận3, ròng−9; không suy thành quy luật giọng nam. Đọc H22_ERROR_ANALYSIS.md.
+- [ ] Vòng tiếp có thể đăngký phase-mode cùng magnitude controls, hoặc chuẩn hóa ACF khác; trước chạy đọc lỗi theofile/khung. Không mởtest hoặc mởgrid theo noise đãđo. Centerclip/ZCR đã thử, không tự chạy lại như chưa cókết quả.
+- Không còn runner đang chạy từ phiên này; H18–H22 đãhoàn tất. Không tạo lại schedule. Hiện có18cặpPNG/SVG khoa học và1ảnhGeminiUI.
 
 GT chỉ file-stat + loại đoạn, không F0 từng khung. Projection về grid chấm25/10 là adapter; thuật toán thực dùng native frame20/25/40 và hop5/10/20. Median3 span2hop. Weights budget logistic theo nativeV/UV làm regularization effect đổi khi hop đổi; H19 là joint search.
 
 Giữ failures, không mở grid theo test hoặc claim filter luôn tốt/xấu. F/M theo tên, mỗi nhóm2file/mỗi ô device×F/M1file; chưa đủ metadata để coi file là speaker độc lập. Gemini/Jev là review, không số đo hoặc permission.
+
+Lượt nối tiếp H21/H22 dùng hai ý tưởng Gemini đã lưu, không gửi lại Gemini và không gọi Jev mới: các quyết định gate/count/fit ở lượt này đều được kiểm tra bằng code, không có câu hỏi ngữ nghĩa hẹp còn cần gửi. Không discovery hoặc retry System One. Hai lỗi import ở đoạn hậu xử lý bảng Markdown đã sửa bằng đường dẫn module đúng; không đổi runner, grid/gate hay rerun thí nghiệm để sửa chúng. Notebook và test không rerun.
