@@ -1,0 +1,27 @@
+{
+  "registered_utc": "2026-10-07T01:04:21.424413+00:00",
+  "baseline_commit": "009fd2c",
+  "rollback_repository_commit": "d13c2f4",
+  "family": "H23",
+  "algorithm": "AMDF",
+  "options": [
+    {
+      "id": "amdf_f20_h10",
+      "frame_ms": 20,
+      "hop_ms": 10,
+      "C": null
+    },
+    {
+      "id": "amdf_f25_h10",
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "C": null
+    },
+    {
+      "id": "amdf_f40_h10",
+      "frame_ms": 40,
+      "hop_ms": 10,
+      "C": null
+    }
+  ]
+}
