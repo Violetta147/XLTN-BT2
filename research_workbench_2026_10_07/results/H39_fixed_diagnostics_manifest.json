@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "H39_fixed_components",
+      "png": "figures/H39_fixed_components.png",
+      "svg": "figures/H39_fixed_components.svg",
+      "sources": [
+        {
+          "path": "results\\H39_fixed_lofo.csv",
+          "sha256": "4160726ad74dd74106deedc7810f6947b211d9cae172cd77198c5ad485ad7ad1"
+        }
+      ],
+      "caption_vi": "Ba thành phần lỗi/3 cộng thành Average MAPE; đủ mọi cấu hình fixed.",
+      "limits_vi": "Fixed khác nested; không chọn best theo held file hoặc xem LAB là F0 chuẩn từng khung.",
+      "generator": "rapt_fixed_diagnostics.py",
+      "generator_sha256": "e65000431234b2679c007c9c415b2ea1f4c8335289a7a8dddb9784af3f291a6d",
+      "command": "python research_workbench_2026_10_07/rapt_fixed_diagnostics.py"
+    },
+    {
+      "name": "H39_fixed_voicing",
+      "png": "figures/H39_fixed_voicing.png",
+      "svg": "figures/H39_fixed_voicing.svg",
+      "sources": [
+        {
+          "path": "results\\H39_fixed_lofo.csv",
+          "sha256": "4160726ad74dd74106deedc7810f6947b211d9cae172cd77198c5ad485ad7ad1"
+        }
+      ],
+      "caption_vi": "Voicing F1/recallV và SIL cho đủ mọi fixed bias.",
+      "limits_vi": "SIL falsevoiced là số khung lặng dự đoánV; không phải số cao độ sai đã được chứng minh.",
+      "generator": "rapt_fixed_diagnostics.py",
+      "generator_sha256": "e65000431234b2679c007c9c415b2ea1f4c8335289a7a8dddb9784af3f291a6d",
+      "command": "python research_workbench_2026_10_07/rapt_fixed_diagnostics.py"
+    }
+  ]
+}

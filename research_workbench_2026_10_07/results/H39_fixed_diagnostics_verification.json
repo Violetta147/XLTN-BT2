@@ -1,0 +1,10 @@
+{
+  "source_sha256": "4160726ad74dd74106deedc7810f6947b211d9cae172cd77198c5ad485ad7ad1",
+  "generator_sha256": "e65000431234b2679c007c9c415b2ea1f4c8335289a7a8dddb9784af3f291a6d",
+  "report_sha256": "a09b5e104a7546db08729db7485a9d6bcac128accddb5e8e8dd2357e01f21b43",
+  "all_fixed_rows": 20,
+  "stacked_components_match_average_mape": true,
+  "png_headers_svg_xml_checked": true,
+  "new_native_wav_or_test_read": false,
+  "new_selection": false
+}
