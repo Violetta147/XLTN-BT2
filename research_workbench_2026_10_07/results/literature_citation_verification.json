@@ -1,0 +1,2190 @@
+{
+  "retrieved_utc": "2026-10-07T01:49:59.640428+00:00",
+  "requests_per_record": 1,
+  "pdf_requested": false,
+  "scope": "Metadata identity only; claim support assessed against primary content separately.",
+  "records": [
+    {
+      "id": "yin2002",
+      "expected_title": "YIN, a fundamental frequency estimator for speech and music",
+      "status": "metadata_identity_confirmed",
+      "request_url": "https://api.crossref.org/works/10.1121%2F1.1458024",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ],
+          "date-time": "2026-10-06T13:30:07Z",
+          "timestamp": 1791293407430,
+          "version": "4.1.0"
+        },
+        "reference-count": 52,
+        "publisher": "Acoustical Society of America (ASA)",
+        "issue": "4",
+        "content-domain": {
+          "domain": [
+            "pubs.aip.org"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [],
+        "published-print": {
+          "date-parts": [
+            [
+              2002,
+              4,
+              1
+            ]
+          ]
+        },
+        "abstract": "<jats:p>An algorithm is presented for the estimation of the fundamental frequency (F0) of speech or musical sounds. It is based on the well-known autocorrelation method with a number of modifications that combine to prevent errors. The algorithm has several desirable features. Error rates are about three times lower than the best competing methods, as evaluated over a database of speech recorded together with a laryngograph signal. There is no upper limit on the frequency search range, so the algorithm is suited for high-pitched voices and music. The algorithm is relatively simple and may be implemented efficiently and with low latency, and it involves few parameters that must be tuned. It is based on a signal model (periodic signal) that may be extended in several ways to handle various forms of aperiodicity that occur in particular applications. Finally, interesting parallels may be drawn with models of auditory processing.</jats:p>",
+        "DOI": "10.1121/1.1458024",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2002,
+              7,
+              26
+            ]
+          ],
+          "date-time": "2002-07-26T14:21:24Z",
+          "timestamp": 1027693284000
+        },
+        "page": "1917-1930",
+        "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+        "source": "Crossref",
+        "is-referenced-by-count": 1307,
+        "title": [
+          "YIN, a fundamental frequency estimator for speech and music"
+        ],
+        "prefix": "10.1121",
+        "volume": "111",
+        "author": [
+          {
+            "given": "Alain",
+            "family": "de Cheveigné",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Ircam-CNRS, 1 place Igor Stravinsky, 75004 Paris, France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hideki",
+            "family": "Kawahara",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Wakayama University"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "231",
+        "published-online": {
+          "date-parts": [
+            [
+              2002,
+              4,
+              3
+            ]
+          ]
+        },
+        "reference": [
+          {
+            "key": "2023071409511827600_abe95"
+          },
+          {
+            "issue": "2",
+            "key": "2023071409511827600_ake00",
+            "first-page": "106",
+            "article-title": "A fully-temporal account of the perception of dichotic pitches",
+            "volume": "33",
+            "year": "2000",
+            "journal-title": "Br. J. Audiol."
+          },
+          {
+            "key": "2023071409511827600_ata00"
+          },
+          {
+            "key": "2023071409511827600_bag93"
+          },
+          {
+            "key": "2023071409511827600_bar91",
+            "doi-asserted-by": "crossref",
+            "first-page": "298",
+            "DOI": "10.1109/78.80812",
+            "article-title": "Pitch detection with a neural-net classifier",
+            "volume": "39",
+            "year": "1991",
+            "journal-title": "IEEE Trans. Signal Process."
+          },
+          {
+            "key": "2023071409511827600_boe93",
+            "first-page": "97",
+            "article-title": "Accurate short-term analysis of the fundamental frequency and the harmonics-to-noise ratio of a sampled sound",
+            "volume": "17",
+            "year": "1993",
+            "journal-title": "Proc. Institute of Phonetic Sciences"
+          },
+          {
+            "key": "2023071409511827600_bre01",
+            "doi-asserted-by": "crossref",
+            "first-page": "1074",
+            "DOI": "10.1121/1.1383297",
+            "article-title": "Binaural processing model based on contralateral inhibition. I. Model structure",
+            "volume": "110",
+            "year": "2001",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_bro89",
+            "doi-asserted-by": "crossref",
+            "first-page": "1595",
+            "DOI": "10.1121/1.397363",
+            "article-title": "Calculation of a ‘narrowed’ autocorrelation function",
+            "volume": "85",
+            "year": "1989",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_bro91",
+            "doi-asserted-by": "crossref",
+            "first-page": "2346",
+            "DOI": "10.1121/1.400923",
+            "article-title": "Musical frequency tracking using the methods of conventional and ‘narrowed’ autocorrelation",
+            "volume": "89",
+            "year": "1991",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_cam97"
+          },
+          {
+            "key": "2023071409511827600_car96",
+            "doi-asserted-by": "crossref",
+            "first-page": "1698",
+            "DOI": "10.1152/jn.1996.76.3.1698",
+            "article-title": "Neural correlates of the pitch of complex tones. I. Pitch and pitch salience",
+            "volume": "76",
+            "year": "1996",
+            "journal-title": "J. Neurophysiol."
+          },
+          {
+            "key": "2023071409511827600_cul95",
+            "doi-asserted-by": "crossref",
+            "first-page": "785",
+            "DOI": "10.1121/1.413571",
+            "article-title": "Perceptual segregation of concurrent speech sounds: absence of across-frequency grouping by common interaural delay",
+            "volume": "98",
+            "year": "1995",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_dec89"
+          },
+          {
+            "key": "2023071409511827600_dec90"
+          },
+          {
+            "key": "2023071409511827600_dec91"
+          },
+          {
+            "key": "2023071409511827600_dec93",
+            "doi-asserted-by": "crossref",
+            "first-page": "3271",
+            "DOI": "10.1121/1.405712",
+            "article-title": "Separation of concurrent harmonic sounds: Fundamental frequency estimation and a time-domain cancellation model of auditory processing",
+            "volume": "93",
+            "year": "1993",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_dec96"
+          },
+          {
+            "key": "2023071409511827600_dec97",
+            "doi-asserted-by": "crossref",
+            "first-page": "2857",
+            "DOI": "10.1121/1.419480",
+            "article-title": "Concurrent vowel identification. III. A neural model of harmonic interference cancellation",
+            "volume": "101",
+            "year": "1997",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_dec98",
+            "doi-asserted-by": "crossref",
+            "first-page": "1261",
+            "DOI": "10.1121/1.423232",
+            "article-title": "Cancellation model of pitch perception",
+            "volume": "103",
+            "year": "1998",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_dec99",
+            "doi-asserted-by": "crossref",
+            "first-page": "175",
+            "DOI": "10.1016/S0167-6393(98)00074-0",
+            "article-title": "Multiple period estimation and pitch perception model",
+            "volume": "27",
+            "year": "1999",
+            "journal-title": "Speech Commun."
+          },
+          {
+            "key": "2023071409511827600_dov94"
+          },
+          {
+            "key": "2023071409511827600_dui82",
+            "doi-asserted-by": "crossref",
+            "first-page": "1568",
+            "DOI": "10.1121/1.387811",
+            "article-title": "Measurement of pitch in speech: an implementation of Goldstein’s theory of pitch perception",
+            "volume": "71",
+            "year": "1982",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_gol73",
+            "doi-asserted-by": "crossref",
+            "first-page": "1496",
+            "DOI": "10.1121/1.1914448",
+            "article-title": "An optimum processor theory for the central formation of the pitch of complex tones",
+            "volume": "54",
+            "year": "1973",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_hed90"
+          },
+          {
+            "key": "2023071409511827600_her88",
+            "doi-asserted-by": "crossref",
+            "first-page": "257",
+            "DOI": "10.1121/1.396427",
+            "article-title": "Measurement of pitch by subharmonic summation",
+            "volume": "83",
+            "year": "1988",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_her93"
+          },
+          {
+            "key": "2023071409511827600_hes83"
+          },
+          {
+            "key": "2023071409511827600_hes92"
+          },
+          {
+            "key": "2023071409511827600_hua01"
+          },
+          {
+            "key": "2023071409511827600_iso01"
+          },
+          {
+            "key": "2023071409511827600_jor98",
+            "doi-asserted-by": "crossref",
+            "first-page": "253",
+            "DOI": "10.1152/jn.1998.79.1.253",
+            "article-title": "Envelope coding in the lateral superior olive. III. Comparison with afferent pathways",
+            "volume": "79",
+            "year": "1998",
+            "journal-title": "J. Neurophysiol."
+          },
+          {
+            "key": "2023071409511827600_kaw99a"
+          },
+          {
+            "key": "2023071409511827600_kaw99b",
+            "doi-asserted-by": "crossref",
+            "first-page": "187",
+            "DOI": "10.1016/S0167-6393(98)00085-5",
+            "article-title": "Restructuring speech representations using a pitch-adaptive time-frequency smoothing and an instantaneous-frequency-based F0 extraction: Possible role of a repetitive structure in sounds",
+            "volume": "27",
+            "year": "1999",
+            "journal-title": "Speech Commun."
+          },
+          {
+            "key": "2023071409511827600_kaw02"
+          },
+          {
+            "key": "2023071409511827600_lic51",
+            "doi-asserted-by": "crossref",
+            "first-page": "128",
+            "DOI": "10.1007/BF02156143",
+            "article-title": "A duplex theory of pitch perception",
+            "volume": "7",
+            "year": "1951",
+            "journal-title": "Experientia"
+          },
+          {
+            "key": "2023071409511827600_med91",
+            "doi-asserted-by": "crossref",
+            "first-page": "40",
+            "DOI": "10.1109/78.80763",
+            "article-title": "Super resolution pitch determination of speech signals",
+            "volume": "39",
+            "year": "1991",
+            "journal-title": "IEEE Trans. Acoust., Speech, Signal Process."
+          },
+          {
+            "key": "2023071409511827600_medd91",
+            "doi-asserted-by": "crossref",
+            "first-page": "2866",
+            "DOI": "10.1121/1.400725",
+            "article-title": "Virtual pitch and phase sensitivity of a computer model of the auditory periphery. I: Pitch identification",
+            "volume": "89",
+            "year": "1991",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_mil48",
+            "doi-asserted-by": "crossref",
+            "first-page": "171",
+            "DOI": "10.1121/1.1906360",
+            "article-title": "The perception of repeated bursts of noise",
+            "volume": "20",
+            "year": "1948",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_moo97"
+          },
+          {
+            "key": "2023071409511827600_ney82",
+            "doi-asserted-by": "crossref",
+            "first-page": "383",
+            "DOI": "10.1109/TSMC.1982.4308828",
+            "article-title": "A time warping approach to fundamental period estimation",
+            "volume": "12",
+            "year": "1982",
+            "journal-title": "IEEE Trans. Syst. Man Cybern."
+          },
+          {
+            "key": "2023071409511827600_nol67",
+            "doi-asserted-by": "crossref",
+            "first-page": "293",
+            "DOI": "10.1121/1.1910339",
+            "article-title": "Cepstrum pitch determination",
+            "volume": "41",
+            "year": "1967",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_pre01",
+            "doi-asserted-by": "crossref",
+            "first-page": "2074",
+            "DOI": "10.1121/1.1359797",
+            "article-title": "The lower limit of melodic pitch",
+            "volume": "109",
+            "year": "2001",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_rab78"
+          },
+          {
+            "key": "2023071409511827600_rit62",
+            "doi-asserted-by": "crossref",
+            "first-page": "1224",
+            "DOI": "10.1121/1.1918307",
+            "article-title": "Existence region of the tonal residue. I",
+            "volume": "34",
+            "year": "1962",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_rod92",
+            "doi-asserted-by": "crossref",
+            "first-page": "2428",
+            "DOI": "10.1121/1.404627",
+            "article-title": "Maximum-likelihood harmonic matching for fundamental frequency estimation",
+            "volume": "92",
+            "year": "1992",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_ros74",
+            "doi-asserted-by": "crossref",
+            "first-page": "353",
+            "DOI": "10.1109/TASSP.1974.1162598",
+            "article-title": "Average magnitude difference function pitch extractor",
+            "volume": "22",
+            "year": "1974",
+            "journal-title": "IEEE Trans. Acoust., Speech, Signal Process."
+          },
+          {
+            "key": "2023071409511827600_sla90"
+          },
+          {
+            "key": "2023071409511827600_ter74",
+            "doi-asserted-by": "crossref",
+            "first-page": "1061",
+            "DOI": "10.1121/1.1914648",
+            "article-title": "Pitch, consonance and harmony",
+            "volume": "55",
+            "year": "1974",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_vu00"
+          },
+          {
+            "key": "2023071409511827600_wig73",
+            "doi-asserted-by": "crossref",
+            "first-page": "407",
+            "DOI": "10.1121/1.1913592",
+            "article-title": "The pattern-transformation model of pitch",
+            "volume": "54",
+            "year": "1973",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071409511827600_xu00"
+          },
+          {
+            "key": "2023071409511827600_yos96",
+            "doi-asserted-by": "crossref",
+            "first-page": "3329",
+            "DOI": "10.1121/1.416973",
+            "article-title": "Pitch strength of iterated rippled noise",
+            "volume": "100",
+            "year": "1996",
+            "journal-title": "J. Acoust. Soc. Am."
+          }
+        ],
+        "container-title": [
+          "The Journal of the Acoustical Society of America"
+        ],
+        "original-title": [],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/111/4/1917/8090126/1917_1_online.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/111/4/1917/8090126/1917_1_online.pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              14
+            ]
+          ],
+          "date-time": "2023-07-14T09:57:21Z",
+          "timestamp": 1689328641000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://pubs.aip.org/jasa/article/111/4/1917/547221/YIN-a-fundamental-frequency-estimator-for-speech"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2002,
+              4,
+              1
+            ]
+          ]
+        },
+        "references-count": 52,
+        "journal-issue": {
+          "issue": "4",
+          "published-print": {
+            "date-parts": [
+              [
+                2002,
+                4,
+                1
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1121/1.1458024",
+        "relation": {},
+        "ISSN": [
+          "0001-4966",
+          "1520-8524"
+        ],
+        "issn-type": [
+          {
+            "value": "0001-4966",
+            "type": "print"
+          },
+          {
+            "value": "1520-8524",
+            "type": "electronic"
+          }
+        ],
+        "subject": [],
+        "published-other": {
+          "date-parts": [
+            [
+              2002,
+              4
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2002,
+              4,
+              1
+            ]
+          ]
+        }
+      },
+      "doi": "10.1121/1.1458024",
+      "returned_title": "YIN, a fundamental frequency estimator for speech and music",
+      "identity_title_match": true
+    },
+    {
+      "id": "aamdf2006",
+      "expected_title": "Pitch determination using aligned AMDF",
+      "status": "metadata_identity_confirmed",
+      "request_url": "https://api.crossref.org/works/10.21437%2FInterspeech.2006-476",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              7
+            ]
+          ],
+          "date-time": "2024-09-07T09:47:56Z",
+          "timestamp": 1725702476449
+        },
+        "publisher-location": "ISCA",
+        "reference-count": 0,
+        "publisher": "ISCA",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [],
+        "DOI": "10.21437/interspeech.2006-476",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2021,
+              8,
+              26
+            ]
+          ],
+          "date-time": "2021-08-26T05:41:25Z",
+          "timestamp": 1629956485000
+        },
+        "page": "paper 1960-Wed2A1O.6-0",
+        "source": "Crossref",
+        "is-referenced-by-count": 0,
+        "title": [
+          "Pitch determination using aligned AMDF"
+        ],
+        "prefix": "10.21437",
+        "author": [
+          {
+            "given": "M. Shahidur",
+            "family": "Rahman",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Hirobumi",
+            "family": "Tanaka",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Tetsuya",
+            "family": "Shimamura",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "8866",
+        "published-online": {
+          "date-parts": [
+            [
+              2006,
+              9,
+              17
+            ]
+          ]
+        },
+        "event": {
+          "name": "Interspeech 2006",
+          "acronym": "interspeech_2006"
+        },
+        "container-title": [
+          "Interspeech 2006"
+        ],
+        "original-title": [],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              16
+            ]
+          ],
+          "date-time": "2024-01-16T04:55:38Z",
+          "timestamp": 1705380938000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://www.isca-archive.org/interspeech_2006/rahman06_interspeech.html"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2006,
+              9,
+              17
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.21437/interspeech.2006-476",
+        "relation": {},
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2006,
+              9,
+              17
+            ]
+          ]
+        }
+      },
+      "doi": "10.21437/interspeech.2006-476",
+      "returned_title": "Pitch determination using aligned AMDF",
+      "identity_title_match": true
+    },
+    {
+      "id": "swipe2008",
+      "expected_title": "A sawtooth waveform inspired pitch estimator for speech and music",
+      "status": "unresolved",
+      "request_url": "https://api.crossref.org/works/10.1121%2F1.2951592",
+      "error": "429 Client Error: Too Many Requests for url: https://api.crossref.org/works/10.1121%2F1.2951592"
+    },
+    {
+      "id": "yaapt2008",
+      "expected_title": "A spectral/temporal method for robust fundamental frequency tracking",
+      "status": "metadata_identity_confirmed",
+      "request_url": "https://api.crossref.org/works/10.1121%2F1.2916590",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ],
+          "date-time": "2026-10-06T11:37:20Z",
+          "timestamp": 1791286640906,
+          "version": "4.1.0"
+        },
+        "reference-count": 26,
+        "publisher": "Acoustical Society of America (ASA)",
+        "issue": "6",
+        "content-domain": {
+          "domain": [
+            "pubs.aip.org"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [],
+        "published-print": {
+          "date-parts": [
+            [
+              2008,
+              6,
+              1
+            ]
+          ]
+        },
+        "abstract": "<jats:p>In this paper, a fundamental frequency (F0) tracking algorithm is presented that is extremely robust for both high quality and telephone speech, at signal to noise ratios ranging from clean speech to very noisy speech. The algorithm is named “YAAPT,” for “yet another algorithm for pitch tracking.” The algorithm is based on a combination of time domain processing, using the normalized cross correlation, and frequency domain processing. Major steps include processing of the original acoustic signal and a nonlinearly processed version of the signal, the use of a new method for computing a modified autocorrelation function that incorporates information from multiple spectral harmonic peaks, peak picking to select multiple F0 candidates and associated figures of merit, and extensive use of dynamic programming to find the “best” track among the multiple F0 candidates. The algorithm was evaluated by using three databases and compared to three other published F0 tracking algorithms by using both high quality and telephone speech for various noise conditions. For clean speech, the error rates obtained are comparable to those obtained with the best results reported for any other algorithm; for noisy telephone speech, the error rates obtained are lower than those obtained with other methods.</jats:p>",
+        "DOI": "10.1121/1.2916590",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2008,
+              6,
+              7
+            ]
+          ],
+          "date-time": "2008-06-07T23:19:51Z",
+          "timestamp": 1212880791000
+        },
+        "page": "4559-4571",
+        "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+        "source": "Crossref",
+        "is-referenced-by-count": 110,
+        "title": [
+          "A spectral/temporal method for robust fundamental frequency tracking"
+        ],
+        "prefix": "10.1121",
+        "volume": "123",
+        "author": [
+          {
+            "given": "Stephen A.",
+            "family": "Zahorian",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "State University of New York at Binghamton Department of Electrical and Computer Engineering, , Binghamton, New York 13902, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hongbing",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "State University of New York at Binghamton Department of Electrical and Computer Engineering, , Binghamton, New York 13902, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "231",
+        "reference": [
+          {
+            "key": "2023071307514463300_c1",
+            "first-page": "1003",
+            "article-title": "Enhanced pitch tracking and the processing of the F0 contours for computer aided intonation teaching",
+            "volume-title": "Proceedings of EUROSPEECH",
+            "year": "1993"
+          },
+          {
+            "key": "2023071307514463300_c2",
+            "first-page": "97",
+            "article-title": "Accurate short-term analysis of the fundamental frequency and the harmonics-to-noise ratio of a sampled sound",
+            "volume-title": "Proceedings of the Institute of Phonetic Sciences",
+            "year": "1993"
+          },
+          {
+            "key": "2023071307514463300_c3",
+            "article-title": "PRAAT: Doing phonetics by computer",
+            "year": "2005"
+          },
+          {
+            "key": "2023071307514463300_c4",
+            "first-page": "983",
+            "article-title": "Large vocabulary mandarin speech recognition with different approaches in modeling tones",
+            "volume-title": "Proceedings of the Sixth International Conference of Spoken Language Processing",
+            "year": "2000"
+          },
+          {
+            "key": "2023071307514463300_c5",
+            "doi-asserted-by": "publisher",
+            "first-page": "1917",
+            "DOI": "10.1121/1.1458024",
+            "article-title": "YIN, a fundamental frequency estimator for speech and music",
+            "volume": "111",
+            "year": "2002",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071307514463300_c6",
+            "first-page": "128",
+            "volume-title": "Pattern Classification",
+            "year": "2000"
+          },
+          {
+            "key": "2023071307514463300_c7",
+            "doi-asserted-by": "publisher",
+            "first-page": "257",
+            "DOI": "10.1121/1.396427",
+            "article-title": "Measurement of pitch by subharmonic summation",
+            "volume": "83",
+            "year": "1988",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071307514463300_c8",
+            "first-page": "310",
+            "volume-title": "Pitch Determination of Speech Signals",
+            "year": "1983"
+          },
+          {
+            "key": "2023071307514463300_c9",
+            "first-page": "361",
+            "article-title": "Yet another algorithm for pitch tracking",
+            "volume-title": "Proceedings of the International Conference on Acoustics, Speech, and Signal Processing",
+            "year": "2002"
+          },
+          {
+            "key": "2023071307514463300_c10",
+            "doi-asserted-by": "crossref",
+            "first-page": "609",
+            "DOI": "10.1109/89.943339",
+            "article-title": "Fundamental frequency estimation based on the joint time-frequency analysis of harmonic spectral structure",
+            "volume": "9",
+            "year": "2001",
+            "journal-title": "IEEE Trans. Speech Audio Process."
+          },
+          {
+            "key": "2023071307514463300_c11",
+            "first-page": "1273",
+            "article-title": "A comparison of several recent methods of fundamental frequency and voicing decision estimation",
+            "volume-title": "Proceedings of the Fourth International Conference on Spoken Language Processing",
+            "year": "1996"
+          },
+          {
+            "key": "2023071307514463300_c12",
+            "doi-asserted-by": "publisher",
+            "first-page": "3690",
+            "DOI": "10.1121/1.1787522",
+            "article-title": "Robust and accurate fundamental frequency estimation based on dominant harmonic components",
+            "volume": "116",
+            "year": "2004",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023071307514463300_c13",
+            "doi-asserted-by": "crossref",
+            "first-page": "291",
+            "DOI": "10.1007/978-1-4612-2258-3",
+            "article-title": "A multi-level model for recognition of intonation labels",
+            "volume-title": "Computing Prosody",
+            "author": "Sagisaka",
+            "year": "1997"
+          },
+          {
+            "key": "2023071307514463300_c14",
+            "doi-asserted-by": "crossref",
+            "first-page": "112",
+            "DOI": "10.1044/jslhr.4201.112",
+            "article-title": "A comparison of high precision F0 extraction algorithms for sustained vowels",
+            "volume": "42",
+            "year": "1999",
+            "journal-title": "J. Speech Lang. Hear. Res."
+          },
+          {
+            "key": "2023071307514463300_c15a",
+            "first-page": "837",
+            "article-title": "A pitch extraction reference database",
+            "volume-title": "Proceedings of the Fourth European Conference on Speech Communication and Technology",
+            "year": "1995"
+          },
+          {
+            "key": "2023071307514463300_c15b"
+          },
+          {
+            "key": "2023071307514463300_c16",
+            "doi-asserted-by": "publisher",
+            "first-page": "399",
+            "DOI": "10.1109/TASSP.1976.1162846",
+            "article-title": "A comparative performance study of several pitch detection algorithms",
+            "volume": "ASSP-24",
+            "year": "1976",
+            "journal-title": "IEEE Trans. Acoust., Speech, Signal Process."
+          },
+          {
+            "key": "2023071307514463300_c17",
+            "first-page": "204",
+            "volume-title": "Fundamentals of Speech Recognition",
+            "year": "1993"
+          },
+          {
+            "key": "2023071307514463300_c18",
+            "first-page": "150",
+            "volume-title": "Digital Processing of Speech Signals",
+            "year": "1978"
+          },
+          {
+            "key": "2023071307514463300_c19",
+            "first-page": "813",
+            "article-title": "Word boundary detection using pitch variations",
+            "volume-title": "Proceedings of the Fourth International Conference on Spoken Language Processing",
+            "year": "1996"
+          },
+          {
+            "key": "2023071307514463300_c20",
+            "first-page": "2383",
+            "article-title": "A prosody-only decision-tree model for disfluency detection",
+            "volume-title": "Proceedings of the Fifth European Conference on Speech Communication and Technology",
+            "year": "1997"
+          },
+          {
+            "key": "2023071307514463300_c21",
+            "first-page": "495",
+            "article-title": "A robust algorithm for pitch tracking (RAPT)",
+            "volume-title": "Speech Coding and Synthesis",
+            "author": "Kleijn",
+            "year": "1995"
+          },
+          {
+            "key": "2023071307514463300_c22",
+            "first-page": "635",
+            "article-title": "A study of tones and tempo in continuous mandarin digit strings and their application in telephone quality speech recognition",
+            "volume-title": "Proceedings of the Fifth International Conference on Spoken Language Processing",
+            "year": "1998"
+          },
+          {
+            "key": "2023071307514463300_c23",
+            "first-page": "1143",
+            "article-title": "Robust pitch tracking for prosodic modeling in telephone speech",
+            "volume-title": "Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing",
+            "year": "2000"
+          },
+          {
+            "key": "2023071307514463300_c24",
+            "first-page": "1710",
+            "article-title": "A spectral-temporal method for pitch tracking",
+            "volume-title": "Proceedings of the Ninth International Conference on Spoken Language Processing",
+            "year": "2006"
+          },
+          {
+            "key": "2023071307514463300_c25",
+            "first-page": "3625",
+            "article-title": "Personal computer software vowel training aid for the hearing impaired",
+            "volume-title": "Proceedings of the International Conference on Acoustics, Speech, and Signal Processing",
+            "year": "1998"
+          }
+        ],
+        "container-title": [
+          "The Journal of the Acoustical Society of America"
+        ],
+        "original-title": [],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/123/6/4559/14858368/4559_1_online.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/123/6/4559/14858368/4559_1_online.pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              13
+            ]
+          ],
+          "date-time": "2023-07-13T08:51:02Z",
+          "timestamp": 1689238262000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://pubs.aip.org/jasa/article/123/6/4559/537207/A-spectral-temporal-method-for-robust-fundamental"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2008,
+              6,
+              1
+            ]
+          ]
+        },
+        "references-count": 26,
+        "journal-issue": {
+          "issue": "6",
+          "published-print": {
+            "date-parts": [
+              [
+                2008,
+                6,
+                1
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1121/1.2916590",
+        "relation": {},
+        "ISSN": [
+          "0001-4966",
+          "1520-8524"
+        ],
+        "issn-type": [
+          {
+            "value": "0001-4966",
+            "type": "print"
+          },
+          {
+            "value": "1520-8524",
+            "type": "electronic"
+          }
+        ],
+        "subject": [],
+        "published-other": {
+          "date-parts": [
+            [
+              2008,
+              6
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2008,
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      "doi": "10.1121/1.2916590",
+      "returned_title": "A spectral/temporal method for robust fundamental frequency tracking",
+      "identity_title_match": true
+    },
+    {
+      "id": "pyin2014",
+      "expected_title": "PYIN: A fundamental frequency estimator using probabilistic threshold distributions",
+      "status": "metadata_identity_confirmed",
+      "request_url": "https://api.crossref.org/works/10.1109%2FICASSP.2014.6853678",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              6
+            ]
+          ],
+          "date-time": "2026-10-06T13:35:23Z",
+          "timestamp": 1791293723064,
+          "version": "4.1.0"
+        },
+        "reference-count": 14,
+        "publisher": "IEEE",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [],
+        "published-print": {
+          "date-parts": [
+            [
+              2014,
+              5
+            ]
+          ]
+        },
+        "DOI": "10.1109/icassp.2014.6853678",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2014,
+              7,
+              29
+            ]
+          ],
+          "date-time": "2014-07-29T15:23:23Z",
+          "timestamp": 1406647403000
+        },
+        "page": "659-663",
+        "source": "Crossref",
+        "is-referenced-by-count": 275,
+        "title": [
+          "PYIN: A fundamental frequency estimator using probabilistic threshold distributions"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Matthias",
+            "family": "Mauch",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Simon",
+            "family": "Dixon",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "13",
+            "first-page": "83",
+            "article-title": "The audio degradation toolbox and its application to robustness evaluation",
+            "author": "mauch",
+            "year": "2013",
+            "journal-title": "Proceedings of the 14th International Society for Music Information Retrieval Conference (ISMIR 2013)"
+          },
+          {
+            "key": "14",
+            "author": "mauch",
+            "year": "2014",
+            "journal-title": "Intonation in Unaccompanied Singing Accuracy Drift and A Model of Intonation Memory"
+          },
+          {
+            "key": "11",
+            "first-page": "169",
+            "article-title": "Tarsos-a platform to explore pitch scales in non-western music",
+            "author": "six",
+            "year": "2011",
+            "journal-title": "Proceedings of the 12th International Conference on Music Information Retrieval (ISMIR 2011)"
+          },
+          {
+            "key": "12",
+            "first-page": "287",
+            "article-title": "RWC music database: Popular, classical, and jazz music databases",
+            "author": "goto",
+            "year": "2002",
+            "journal-title": "Proceedings of the 3rd International Conference on Music Information Retrieval (ISMIR 2002)"
+          },
+          {
+            "key": "3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09298210802259520"
+          },
+          {
+            "key": "2",
+            "first-page": "141",
+            "article-title": "An empirical approach to studying intonation tendencies in polyphonic vocal performances",
+            "volume": "2",
+            "author": "devaney",
+            "year": "2008",
+            "journal-title": "Journal of Interdisciplinary Music Studies"
+          },
+          {
+            "key": "1",
+            "first-page": "1189",
+            "article-title": "Question intonation as affected by word stress and focus in english",
+            "author": "liu",
+            "year": "2007",
+            "journal-title": "Proceedings of the 16th International Congress of Phonetic Sciences"
+          },
+          {
+            "key": "10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ICASSP.2013.6639185"
+          },
+          {
+            "key": "7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1121/1.1458024"
+          },
+          {
+            "key": "6",
+            "first-page": "59",
+            "article-title": "Aperiodicity extraction and control using mixed mode excitation and group delay manipulation for a high quality speech analysis, modification and synthesis system STRAIGHT",
+            "author": "kawahara",
+            "year": "2001",
+            "journal-title": "Proceedings of MAVEBA"
+          },
+          {
+            "key": "5",
+            "first-page": "341",
+            "article-title": "Praat, a system for doing phonetics by computer",
+            "volume": "5",
+            "author": "boersma",
+            "year": "2001",
+            "journal-title": "Glot International"
+          },
+          {
+            "key": "4",
+            "first-page": "495",
+            "article-title": "A robust algorithm for pitch tracking",
+            "author": "talkin",
+            "year": "1995",
+            "journal-title": "Speech Coding and Synthesis"
+          },
+          {
+            "key": "9",
+            "author": "ryyna?nen",
+            "year": "2004",
+            "journal-title": "Probabilistic Modelling of Note Events in the Transcription of Monophonic Melodies"
+          },
+          {
+            "key": "8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/ASPAA.2009.5346500"
+          }
+        ],
+        "event": {
+          "name": "ICASSP 2014 - 2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+          "location": "Florence, Italy",
+          "start": {
+            "date-parts": [
+              [
+                2014,
+                5,
+                4
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2014,
+                5,
+                9
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/6844297/6853544/06853678.pdf?arnumber=6853678",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              23
+            ]
+          ],
+          "date-time": "2017-03-23T13:09:28Z",
+          "timestamp": 1490274568000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "http://ieeexplore.ieee.org/document/6853678/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2014,
+              5
+            ]
+          ]
+        },
+        "references-count": 14,
+        "URL": "https://doi.org/10.1109/icassp.2014.6853678",
+        "relation": {},
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              5
+            ]
+          ]
+        }
+      },
+      "doi": "10.1109/icassp.2014.6853678",
+      "returned_title": "PYIN: A fundamental frequency estimator using probabilistic threshold distributions",
+      "identity_title_match": true
+    },
+    {
+      "id": "harvest2017",
+      "expected_title": "Harvest: A High-Performance Fundamental Frequency Estimator from Speech Signals",
+      "status": "metadata_identity_confirmed",
+      "request_url": "https://api.crossref.org/works?query.title=Harvest%3A+A+High-Performance+Fundamental+Frequency+Estimator+from+Speech+Signals&rows=1",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              24
+            ]
+          ],
+          "date-time": "2026-09-24T05:40:29Z",
+          "timestamp": 1790228429283,
+          "version": "4.1.0"
+        },
+        "publisher-location": "ISCA",
+        "reference-count": 0,
+        "publisher": "ISCA",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "DOI": "10.21437/interspeech.2017-68",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              16
+            ]
+          ],
+          "date-time": "2017-08-16T02:14:46Z",
+          "timestamp": 1502849686000
+        },
+        "page": "2321-2325",
+        "source": "Crossref",
+        "is-referenced-by-count": 65,
+        "title": [
+          "Harvest: A High-Performance Fundamental Frequency Estimator from Speech Signals"
+        ],
+        "prefix": "10.21437",
+        "author": [
+          {
+            "given": "Masanori",
+            "family": "Morise",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "8866",
+        "published-online": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              20
+            ]
+          ]
+        },
+        "event": {
+          "name": "Interspeech 2017",
+          "acronym": "interspeech_2017"
+        },
+        "container-title": [
+          "Interspeech 2017"
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              16
+            ]
+          ],
+          "date-time": "2024-01-16T05:09:01Z",
+          "timestamp": 1705381741000
+        },
+        "score": 58.826088,
+        "resource": {
+          "primary": {
+            "URL": "https://www.isca-archive.org/interspeech_2017/morise17b_interspeech.html"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              20
+            ]
+          ]
+        },
+        "references-count": 0,
+        "URL": "https://doi.org/10.21437/interspeech.2017-68",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              20
+            ]
+          ]
+        }
+      },
+      "doi": "10.21437/interspeech.2017-68",
+      "returned_title": "Harvest: A High-Performance Fundamental Frequency Estimator from Speech Signals",
+      "identity_title_match": true
+    },
+    {
+      "id": "reaper",
+      "expected_title": "REAPER: Robust Epoch And Pitch EstimatoR",
+      "status": "manual_primary_source",
+      "source": "https://github.com/google/REAPER"
+    },
+    {
+      "id": "praat_ac",
+      "expected_title": "Praat raw and filtered autocorrelation pitch analysis",
+      "status": "manual_primary_source",
+      "source": "https://www.fon.hum.uva.nl/praat/manual/pitch_analysis_by_raw_autocorrelation.html"
+    },
+    {
+      "id": "yangsaf2016",
+      "expected_title": "Using instantaneous frequency and aperiodicity detection to estimate F0 for high-quality speech synthesis",
+      "status": "manual_primary_source",
+      "source": "https://arxiv.org/abs/1605.07809"
+    },
+    {
+      "id": "kalman2014",
+      "expected_title": "Robust fundamental frequency estimation in sustained vowels: detailed algorithmic comparisons and information fusion with adaptive Kalman filtering",
+      "status": "metadata_identity_confirmed",
+      "request_url": "https://api.crossref.org/works?query.title=Robust+fundamental+frequency+estimation+in+sustained+vowels%3A+detailed+algorithmic+comparisons+and+information+fusion+with+adaptive+Kalman+filtering&rows=1",
+      "raw_metadata": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2026-10-01T22:13:00Z",
+          "timestamp": 1790892780494,
+          "version": "4.1.0"
+        },
+        "reference-count": 45,
+        "publisher": "Acoustical Society of America (ASA)",
+        "issue": "5",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2014,
+                  5,
+                  1
+                ]
+              ],
+              "date-time": "2014-05-01T00:00:00Z",
+              "timestamp": 1398902400000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/3.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2014,
+                  5,
+                  1
+                ]
+              ],
+              "date-time": "2014-05-01T00:00:00Z",
+              "timestamp": 1398902400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/3.0/"
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "pubs.aip.org"
+          ],
+          "crossmark-restriction": true
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2014,
+              5,
+              1
+            ]
+          ]
+        },
+        "abstract": "<jats:p>There has been consistent interest among speech signal processing researchers in the accurate estimation of the fundamental frequency (F0) of speech signals. This study examines ten F0 estimation algorithms (some well-established and some proposed more recently) to determine which of these algorithms is, on average, better able to estimate F0 in the sustained vowel /a/. Moreover, a robust method for adaptively weighting the estimates of individual F0 estimation algorithms based on quality and performance measures is proposed, using an adaptive Kalman filter (KF) framework. The accuracy of the algorithms is validated using (a) a database of 117 synthetic realistic phonations obtained using a sophisticated physiological model of speech production and (b) a database of 65 recordings of human phonations where the glottal cycles are calculated from electroglottograph signals. On average, the sawtooth waveform inspired pitch estimator and the nearly defect-free algorithms provided the best individual F0 estimates, and the proposed KF approach resulted in a ∼16% improvement in accuracy over the best single F0 estimation algorithm. These findings may be useful in speech signal processing applications where sustained vowels are used to assess vocal quality, when very accurate F0 estimation is required.</jats:p>",
+        "DOI": "10.1121/1.4870484",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2014,
+              5,
+              10
+            ]
+          ],
+          "date-time": "2014-05-10T00:31:53Z",
+          "timestamp": 1399681913000
+        },
+        "page": "2885-2901",
+        "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+        "source": "Crossref",
+        "is-referenced-by-count": 51,
+        "title": [
+          "Robust fundamental frequency estimation in sustained vowels: Detailed algorithmic comparisons and information fusion with adaptive Kalman filtering"
+        ],
+        "prefix": "10.1121",
+        "volume": "135",
+        "author": [
+          {
+            "given": "Athanasios",
+            "family": "Tsanas",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Biomedical Engineering, Department of Engineering Science, Old Road Campus Research Building, University of Oxford , Headington, Oxford OX3 7DQ, United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Matías",
+            "family": "Zañartu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Electronic Engineering at Universidad Técnica Federico Santa María , Av. España 1680, Casilla 110-V, Valparaiso 2390123, Chile"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Max A.",
+            "family": "Little",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "MIT Media Lab, 77 Massachusetts Avenue, E14/E15, Cambridge, Massachusetts 02139-4307"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cynthia",
+            "family": "Fox",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "National Center for Voice and Speech, 136 South Main Street, Suite 320, Salt Lake City, Utah 84101-1623"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lorraine O.",
+            "family": "Ramig",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Speech, Language, and Hearing Sciences, 2501 Kittredge Loop Road, 409 UCB, University of Colorado, Boulder, Colorado 80309-0409"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gari D.",
+            "family": "Clifford",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Biomedical Engineering, Department of Engineering Science, Old Road Campus Research Building, University of Oxford, Headington, Oxford OX3 7DQ, United Kingdom"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "231",
+        "reference": [
+          {
+            "key": "2023080406062215800_c1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1007/978-3-031-02558-7_1",
+            "volume-title": "Multi-pitch Estimation",
+            "year": "2009"
+          },
+          {
+            "key": "2023080406062215800_c2",
+            "volume-title": "Principles of Voice Production",
+            "year": "2000",
+            "edition": "2nd ed."
+          },
+          {
+            "key": "2023080406062215800_c3",
+            "first-page": "495",
+            "article-title": "A robust algorithm for pitch tracking",
+            "volume-title": "Speech Coding and Synthesis",
+            "author": "Kleijn",
+            "year": "1995"
+          },
+          {
+            "key": "2023080406062215800_c4",
+            "doi-asserted-by": "publisher",
+            "first-page": "325",
+            "DOI": "10.1016/j.jvoice.2005.12.009",
+            "article-title": "Frequency and voice: Perspectives in the time domain",
+            "volume": "20",
+            "year": "2006",
+            "journal-title": "J. Voice"
+          },
+          {
+            "key": "2023080406062215800_c5",
+            "doi-asserted-by": "publisher",
+            "first-page": "112",
+            "DOI": "10.1044/jslhr.4201.112",
+            "article-title": "A comparison of high precision F0 extraction algorithms for sustained vowels",
+            "volume": "42",
+            "year": "1999",
+            "journal-title": "J. Speech Lang. Hear. Res."
+          },
+          {
+            "key": "2023080406062215800_c6",
+            "doi-asserted-by": "crossref",
+            "first-page": "1120",
+            "DOI": "10.1044/jshr.3606.1120",
+            "article-title": "Comparison of F0 extraction methods for high-precision voice perturbation measurements",
+            "volume": "36",
+            "year": "1993",
+            "journal-title": "J. Speech Hear. Res."
+          },
+          {
+            "key": "2023080406062215800_c7",
+            "first-page": "620",
+            "article-title": "Evaluation of performance of several established pitch detection algorithms in pathological voices",
+            "volume-title": "Proceedings of the 29th International Conference, IEEE EMBS, Lyon",
+            "year": "2007"
+          },
+          {
+            "key": "2023080406062215800_c8",
+            "doi-asserted-by": "publisher",
+            "first-page": "409",
+            "DOI": "10.1016/j.bspc.2011.06.004",
+            "article-title": "Perturbation measurements in highly irregular voice signals: Performance/validity of analysis software tools",
+            "volume": "7",
+            "year": "2012",
+            "journal-title": "Biomed. Signal Process. Control"
+          },
+          {
+            "key": "2023080406062215800_c9",
+            "doi-asserted-by": "publisher",
+            "first-page": "517",
+            "DOI": "10.1016/j.patrec.2009.07.021",
+            "article-title": "Using dynamic time warping of T0 contours in the evaluation of cycle-to-cycle pitch detection algorithms",
+            "volume": "31",
+            "year": "2010",
+            "journal-title": "Pattern Recogn. Lett."
+          },
+          {
+            "key": "2023080406062215800_c10",
+            "doi-asserted-by": "publisher",
+            "first-page": "842",
+            "DOI": "10.1098/rsif.2010.0456",
+            "article-title": "Nonlinear speech analysis algorithms mapped to a standard metric achieve clinically useful quantification of average Parkinson's disease symptom severity",
+            "volume": "8",
+            "year": "2011",
+            "journal-title": "J. R. Soc. Interface"
+          },
+          {
+            "key": "2023080406062215800_c11",
+            "doi-asserted-by": "publisher",
+            "first-page": "1264",
+            "DOI": "10.1109/TBME.2012.2183367",
+            "article-title": "Novel speech signal processing algorithms for high-accuracy classification of Parkinson's disease",
+            "volume": "59",
+            "year": "2012",
+            "journal-title": "IEEE Trans. Biomed. Eng."
+          },
+          {
+            "key": "2023080406062215800_c12",
+            "doi-asserted-by": "publisher",
+            "first-page": "181",
+            "DOI": "10.1109/TNSRE.2013.2293575",
+            "article-title": "Objective automatic assessment of rehabilitative speech treatment in Parkinson's disease",
+            "volume": "22",
+            "year": "2014",
+            "journal-title": "IEEE Trans. Neural Syst. Rehab. Eng."
+          },
+          {
+            "key": "2023080406062215800_c13",
+            "first-page": "457",
+            "article-title": "New nonlinear markers and insights into speech signal degradation for effective tracking of Parkinson's disease symptom severity",
+            "year": "2010"
+          },
+          {
+            "key": "2023080406062215800_c14",
+            "doi-asserted-by": "publisher",
+            "first-page": "1943",
+            "DOI": "10.1109/TBME.2006.871883",
+            "article-title": "Dimensionality reduction of a pathological voice quality assessment system based on Gaussian mixture models and short-term cepstral parameters",
+            "volume": "53",
+            "year": "2006",
+            "journal-title": "IEEE Trans. Biomed. Eng."
+          },
+          {
+            "key": "2023080406062215800_c15",
+            "doi-asserted-by": "publisher",
+            "first-page": "10",
+            "DOI": "10.1016/S0892-1997(05)80077-3",
+            "article-title": "Problems and pitfalls of electroglottography",
+            "volume": "4",
+            "year": "1990",
+            "journal-title": "J. Voice"
+          },
+          {
+            "key": "2023080406062215800_c16",
+            "doi-asserted-by": "publisher",
+            "first-page": "1321",
+            "DOI": "10.1121/1.1646401",
+            "article-title": "On the use of the derivative of electroglottographic signals for characterization of nonpathological phonation",
+            "volume": "115",
+            "year": "2004",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c17",
+            "doi-asserted-by": "publisher",
+            "first-page": "3999",
+            "DOI": "10.1121/1.3658441",
+            "article-title": "Investigating acoustic correlates of human vocal fold phase asymmetry through mathematical modeling and laryngeal high-speed videoendoscopy",
+            "volume": "130",
+            "year": "2011",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c18",
+            "unstructured": "M. Zañartu, “Acoustic coupling in phonation and its effect on inverse filtering of oral airflow and neck surface acceleration,” Ph.D. dissertation, School of Electrical and Computer Engineering, Purdue University (2010)."
+          },
+          {
+            "key": "2023080406062215800_c19",
+            "volume-title": "The Elements of Statistical Learning: Data Mining, Inference, and Prediction",
+            "year": "2009",
+            "edition": "2nd ed."
+          },
+          {
+            "key": "2023080406062215800_c20",
+            "doi-asserted-by": "publisher",
+            "first-page": "15",
+            "DOI": "10.1088/0967-3334/29/1/002",
+            "article-title": "Robust heart rate estimation from multiple asynchronous noisy sources using signal quality indices and a Kalman filter",
+            "volume": "29",
+            "year": "2008",
+            "journal-title": "Physiol. Meas."
+          },
+          {
+            "key": "2023080406062215800_c21",
+            "doi-asserted-by": "publisher",
+            "first-page": "1249",
+            "DOI": "10.1121/1.412234",
+            "article-title": "Voice simulation with a body-cover model of the vocal folds",
+            "volume": "97",
+            "year": "1995",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c22",
+            "doi-asserted-by": "publisher",
+            "first-page": "1874",
+            "DOI": "10.1121/1.412061",
+            "article-title": "Bifurcations in an asymmetric vocal-fold model",
+            "volume": "97",
+            "year": "1995",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c23",
+            "doi-asserted-by": "publisher",
+            "first-page": "1064",
+            "DOI": "10.1121/1.1496080",
+            "article-title": "Rules for controlling low-dimensional vocal fold models with muscle activation",
+            "volume": "112",
+            "year": "2002",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c24",
+            "doi-asserted-by": "publisher",
+            "first-page": "389",
+            "DOI": "10.1121/1.3586785",
+            "article-title": "A theoretical model of the pressure distributions arising from asymmetric intraglottal flows applied to a two-mass model of the vocal folds",
+            "volume": "130",
+            "year": "2011",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c25",
+            "doi-asserted-by": "crossref",
+            "first-page": "373",
+            "DOI": "10.1044/jshr.3202.373",
+            "article-title": "Objective assessment of vocal hyperfunction: An experimental framework and initial results",
+            "volume": "32",
+            "year": "1989",
+            "journal-title": "J. Speech Hear. Res."
+          },
+          {
+            "key": "2023080406062215800_c26",
+            "unstructured": "J. Kuo, “Voice source modeling and analysis of speakers with vocal-fold nodules,” Ph.D. dissertation, Harvard–MIT Division of Health Sciences and Technology (1998)."
+          },
+          {
+            "key": "2023080406062215800_c27",
+            "unstructured": "B. H. Story, “Physiologically-based speech simulation using an enhanced wave-reflection model of the vocal tract,” Ph.D. dissertation, University of Iowa (1995)."
+          },
+          {
+            "key": "2023080406062215800_c28",
+            "doi-asserted-by": "publisher",
+            "first-page": "2733",
+            "DOI": "10.1121/1.2832337",
+            "article-title": "Nonlinear source-filter coupling in phonation: Theory",
+            "volume": "123",
+            "year": "2008",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c29",
+            "first-page": "169",
+            "article-title": "On the estimation of low fundamental frequencies",
+            "year": "2011"
+          },
+          {
+            "key": "2023080406062215800_c30",
+            "doi-asserted-by": "publisher",
+            "first-page": "1557",
+            "DOI": "10.1109/TASL.2009.2022430",
+            "article-title": "The SIGMA algorithm: A glottal activity detector for electroglottographic signals",
+            "volume": "17",
+            "year": "2009",
+            "journal-title": "IEEE Trans. Audio Speech Lang. Process."
+          },
+          {
+            "key": "2023080406062215800_c31"
+          },
+          {
+            "key": "2023080406062215800_c32",
+            "doi-asserted-by": "publisher",
+            "first-page": "305",
+            "DOI": "10.1159/000245159",
+            "article-title": "Should jitter be measured by peak picking or by waveform matching?",
+            "volume": "61",
+            "year": "2009",
+            "journal-title": "Folia Phoniat. Logoped."
+          },
+          {
+            "key": "2023080406062215800_c33",
+            "doi-asserted-by": "publisher",
+            "first-page": "34",
+            "DOI": "10.1109/TASL.2006.876878",
+            "article-title": "Estimation of glottal closure instants in voices speech using the DYPSA algorithm",
+            "volume": "15",
+            "year": "2007",
+            "journal-title": "IEEE Trans. Audio Speech Lang. Process."
+          },
+          {
+            "key": "2023080406062215800_c34",
+            "first-page": "97",
+            "article-title": "Accurate short-term analysis of the fundamental frequency and the harmonics-to-noise ratio of sampled signal",
+            "volume": "17",
+            "year": "1993",
+            "journal-title": "IFA Proc."
+          },
+          {
+            "key": "2023080406062215800_c35",
+            "article-title": "Pitch determination and voice quality analysis using subharmonic-to-harmonic ratio",
+            "volume-title": "ICASSP2002",
+            "year": "2002"
+          },
+          {
+            "key": "2023080406062215800_c36",
+            "doi-asserted-by": "publisher",
+            "first-page": "1638",
+            "DOI": "10.1121/1.2951592",
+            "article-title": "A sawtooth waveform inspired pitch estimator for speech and music",
+            "volume": "124",
+            "year": "2008",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c37",
+            "doi-asserted-by": "publisher",
+            "first-page": "1917",
+            "DOI": "10.1121/1.1458024",
+            "article-title": "YIN, a fundamental frequency estimator for speech and music",
+            "volume": "111",
+            "year": "2002",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c38",
+            "first-page": "2781",
+            "article-title": "Fixed point analysis of frequency to instantaneous frequency mapping for accurate estimation of F0 and periodicity",
+            "volume-title": "Eurospeech",
+            "year": "1999"
+          },
+          {
+            "key": "2023080406062215800_c39",
+            "first-page": "537",
+            "article-title": "Nearly defect-free F0 trajectory extraction for expressive speech modifications based on STRAIGHT",
+            "volume-title": "Interspeech",
+            "year": "2005"
+          },
+          {
+            "key": "2023080406062215800_c40",
+            "first-page": "3933",
+            "article-title": "Tandem-STRAIGHT: A temporally stable power spectral representation for periodic signals and applications to interference-free spectrum, F0, and aperiodicity estimation",
+            "volume-title": "ICASSP 2008",
+            "year": "2008"
+          },
+          {
+            "key": "2023080406062215800_c41",
+            "volume-title": "Multi-sensor Data Fusion with Matlab",
+            "year": "2010"
+          },
+          {
+            "key": "2023080406062215800_c42",
+            "doi-asserted-by": "publisher",
+            "first-page": "175",
+            "DOI": "10.1109/TAC.1970.1099422",
+            "article-title": "On the identification of variance and adaptive Kalman filtering",
+            "volume": "AC-15",
+            "year": "1970",
+            "journal-title": "IEEE Trans. Automatic Control"
+          },
+          {
+            "key": "2023080406062215800_c43",
+            "doi-asserted-by": "publisher",
+            "first-page": "926315",
+            "DOI": "10.1155/2010/926305",
+            "article-title": "Data fusion for improved respiration rate estimation",
+            "volume": "2010",
+            "year": "2010",
+            "journal-title": "EURASIP J. Adv. Signal Process."
+          },
+          {
+            "key": "2023080406062215800_c44",
+            "doi-asserted-by": "publisher",
+            "first-page": "549",
+            "DOI": "10.1121/1.2141266",
+            "article-title": "Testing the assumptions of linear prediction analysis in normal vowels",
+            "volume": "119",
+            "year": "2007",
+            "journal-title": "J. Acoust. Soc. Am."
+          },
+          {
+            "key": "2023080406062215800_c45",
+            "unstructured": "A. Tsanas, “Accurate telemonitoring of Parkinson's disease symptom severity using nonlinear speech signal processing and statistical machine learning,” Ph.D. thesis, University of Oxford, UK (2012)."
+          }
+        ],
+        "container-title": [
+          "The Journal of the Acoustical Society of America"
+        ],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/135/5/2885/14044621/2885_1_online.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/135/5/2885/14044621/2885_1_online.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "https://pubs.aip.org/asa/jasa/article-pdf/135/5/2885/14044621/2885_1_online.pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              27
+            ]
+          ],
+          "date-time": "2025-05-27T19:14:20Z",
+          "timestamp": 1748373260000
+        },
+        "score": 85.45172,
+        "resource": {
+          "primary": {
+            "URL": "https://pubs.aip.org/jasa/article/135/5/2885/968118/Robust-fundamental-frequency-estimation-in"
+          }
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2014,
+              5,
+              1
+            ]
+          ]
+        },
+        "references-count": 45,
+        "journal-issue": {
+          "issue": "5",
+          "published-print": {
+            "date-parts": [
+              [
+                2014,
+                5,
+                1
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1121/1.4870484",
+        "ISSN": [
+          "0001-4966",
+          "1520-8524"
+        ],
+        "issn-type": [
+          {
+            "value": "0001-4966",
+            "type": "print"
+          },
+          {
+            "value": "1520-8524",
+            "type": "electronic"
+          }
+        ],
+        "published-other": {
+          "date-parts": [
+            [
+              2014,
+              5
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              5,
+              1
+            ]
+          ]
+        }
+      },
+      "doi": "10.1121/1.4870484",
+      "returned_title": "Robust fundamental frequency estimation in sustained vowels: Detailed algorithmic comparisons and information fusion with adaptive Kalman filtering",
+      "identity_title_match": true
+    },
+    {
+      "id": "swipe_neural2025",
+      "expected_title": "Improving Neural Pitch Estimation with SWIPE Kernels",
+      "status": "manual_primary_source",
+      "source": "https://arxiv.org/abs/2507.11233"
+    }
+  ]
+}

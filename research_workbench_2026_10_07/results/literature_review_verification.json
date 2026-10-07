@@ -1,0 +1,17 @@
+{
+  "unique_records": 11,
+  "selected_records": 10,
+  "pdf_extraction_after_user_instruction": false,
+  "metadata_identity_confirmed": 6,
+  "unresolved_apis_kept": [
+    "swipe2008"
+  ],
+  "workflow_license_verified": true,
+  "sources": {
+    "research_workbench_2026_10_07\\LITERATURE_REVIEW.md": "a1cf775bf1226f4c0d35957b25ea74629c8f91debd5c2d559aeca22d5fb7ed31",
+    "research_workbench_2026_10_07\\LITERATURE_SEARCH_LOG.md": "52d289e0b21bf4fc64255f3d087505a8de16cdb36188968e506d59fcb8905328",
+    "research_workbench_2026_10_07\\literature_records.json": "0711bc02b5d9e6fd532c91d6a0f56f7bfbf1d951fc8b848d774e40dfea714efc",
+    "research_workbench_2026_10_07\\verify_literature.py": "5b85244aa89556dfdf1bdc901dd63701b006e3b100ba6438949bb7363a281293",
+    ".agents\\skills\\literature-review\\SKILL.md": "16a9e85bcdcb9bb859e1646bf836e51b22900445ba2e367d8d75be05b5a5cba8"
+  }
+}

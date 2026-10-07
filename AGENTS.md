@@ -13,6 +13,13 @@
 - Giữ notebook gốc và output đã lưu để đối chiếu. Các kết quả chạy local phải có đường dẫn, lệnh chạy, phiên bản môi trường, cấu hình và dữ liệu đầu vào đủ để tái lập.
 - Báo cáo cả metric chính và đánh đổi: macro F1 V/UV, recall V, recall UV, balanced accuracy, F0mean/F0std MAE và số khung F0 hợp lệ.
 
+## Literature review và mục tiêu mới
+
+- Người dùng yêu cầu mở rộng paper-based classical algorithms, dùng scientific skills và tránh token từ PDF extraction. Đọc `.agents/skills/literature-review/SKILL.md` và PROVENANCE.md cho workflow local trước vòng review mới. Subset này có instruction/references, không có optional scripts/CLI/dependencies; không giả chúng đã cài.
+- Không extract PDF paper trong quy trình hiện tại. Ưu tiên HTML primary, abstract, author repository và reference implementation; ghi rõ content level thật, không coi abstract/code là full paper. Không tạo PDF report. Dùng query logs, records/DOI/provenance và đánh giá giới hạn trước khi đăng ký thuật toán mới. Các paper/software có số liệu riêng không thay metric BT2.
+- Mục tiêu người dùng đã làm rõ: **mỗi file Average MAPE≤2%**, không chỉ mean của bốn file. Chọn tham số theo minimax file-MAPE trong inner folds khi đăng ký vòng mới, rồi mean và ID để tie-break. Không đổi selection/gate của vòng cũ sau đo; giữ original baseline và failures. Giá trị nested hiện vẫn exploratory vì registry được định hướng sau lịch sử đã xem bốn file.
+- Review vòng đầu: `research_workbench_2026_10_07/LITERATURE_REVIEW.md`, records và search log cùng thư mục. Ưu tiên khảo sát reference pipelines mới (Harvest/pYIN/SWIPE/Praat/REAPER), không chỉ tiếp tục micro-tune custom ACF/AMDF. Mỗi pipeline phải có source/version/config/adapter và preregistration riêng; thay whole pipeline không được gọi là cô lập một filter.
+
 ## Dùng Jev / System One trong XLTN
 
 - Người dùng muốn dùng Jev cho việc học, audit notebook và rà diễn giải. Chọn các câu hỏi ngữ nghĩa hẹp mà Jev có ích; không gọi cho mọi bước hoặc chỉ để xác nhận điều đã rõ.
