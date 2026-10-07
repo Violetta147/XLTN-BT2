@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H33_nested",
+      "png": "figures/H33_nested.png",
+      "svg": "figures/H33_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H33_metrics.csv",
+          "sha256": "28a41dd48e6fa8e89f07a4256d1ca7e95438383722c75693c57a00e417a3bbe9"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "pyin_reference.py",
+      "generator_sha256": "cc7c3d31cd27ffbb0518c237cd7f4067457dd267b5a9842e47de9188dc6f142f",
+      "command": "python research_workbench_2026_10_07/pyin_reference.py H33"
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "family": "H33",
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": false,
+      "lofo_mape_relative_5_percent": false,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true,
+      "selected_lofo_mape_relative_5_percent": false
+    },
+    "eligible": false,
+    "nested_status": "Outer file excluded from every inner fit and selection; selected LOFO is separate.",
+    "champion_promoted": false
+  },
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 2.1569921326590884,
+        "F0mean_mape": 0.45468536661809994,
+        "F0std_mape": 2.255460970886052,
+        "F0num_mape": 3.760830060473114,
+        "F0mean_abs_error": 0.8095245546273517,
+        "F0std_abs_error": 0.5755422265945924,
+        "macro_f1": 0.8793765376093121,
+        "balanced_accuracy": 0.9096521128237449,
+        "recall_v": 0.9086263387844695,
+        "recall_uv": 0.9106778868630201,
+        "TP": 561,
+        "TN": 170,
+        "FP": 10,
+        "FN": 53,
+        "false_voiced_sil": 0,
+        "F0num": 571
+      },
+      "lofo": {
+        "average_mape": 2.1569921326590884,
+        "F0mean_mape": 0.45468536661809994,
+        "F0std_mape": 2.255460970886052,
+        "F0num_mape": 3.760830060473114,
+        "F0mean_abs_error": 0.8095245546273517,
+        "F0std_abs_error": 0.5755422265945924,
+        "macro_f1": 0.8793765376093121,
+        "balanced_accuracy": 0.9096521128237449,
+        "recall_v": 0.9086263387844695,
+        "recall_uv": 0.9106778868630201,
+        "TP": 561,
+        "TN": 170,
+        "FP": 10,
+        "FN": 53,
+        "false_voiced_sil": 0,
+        "F0num": 571
+      },
+      "nested": {
+        "average_mape": 2.1569921326590884,
+        "F0mean_mape": 0.45468536661809994,
+        "F0std_mape": 2.255460970886052,
+        "F0num_mape": 3.760830060473114,
+        "F0mean_abs_error": 0.8095245546273517,
+        "F0std_abs_error": 0.5755422265945924,
+        "macro_f1": 0.8793765376093121,
+        "balanced_accuracy": 0.9096521128237449,
+        "recall_v": 0.9086263387844695,
+        "recall_uv": 0.9106778868630201,
+        "TP": 561,
+        "TN": 170,
+        "FP": 10,
+        "FN": 53,
+        "false_voiced_sil": 0,
+        "F0num": 571
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 2.1569921326590884,
+        "F0mean_mape": 0.45468536661809994,
+        "F0std_mape": 2.255460970886052,
+        "F0num_mape": 3.760830060473114,
+        "F0mean_abs_error": 0.8095245546273517,
+        "F0std_abs_error": 0.5755422265945924,
+        "macro_f1": 0.8793765376093121,
+        "balanced_accuracy": 0.9096521128237449,
+        "recall_v": 0.9086263387844695,
+        "recall_uv": 0.9106778868630201,
+        "TP": 561,
+        "TN": 170,
+        "FP": 10,
+        "FN": 53,
+        "false_voiced_sil": 0,
+        "F0num": 571
+      },
+      "lofo": {
+        "average_mape": 2.1569921326590884,
+        "F0mean_mape": 0.45468536661809994,
+        "F0std_mape": 2.255460970886052,
+        "F0num_mape": 3.760830060473114,
+        "F0mean_abs_error": 0.8095245546273517,
+        "F0std_abs_error": 0.5755422265945924,
+        "macro_f1": 0.8793765376093121,
+        "balanced_accuracy": 0.9096521128237449,
+        "recall_v": 0.9086263387844695,
+        "recall_uv": 0.9106778868630201,
+        "TP": 561,
+        "TN": 170,
+        "FP": 10,
+        "FN": 53,
+        "false_voiced_sil": 0,
+        "F0num": 571
+      },
+      "nested": {
+        "average_mape": 2.1569921326590884,
+        "F0mean_mape": 0.45468536661809994,
+        "F0std_mape": 2.255460970886052,
+        "F0num_mape": 3.760830060473114,
+        "F0mean_abs_error": 0.8095245546273517,
+        "F0std_abs_error": 0.5755422265945924,
+        "macro_f1": 0.8793765376093121,
+        "balanced_accuracy": 0.9096521128237449,
+        "recall_v": 0.9086263387844695,
+        "recall_uv": 0.9106778868630201,
+        "TP": 561,
+        "TN": 170,
+        "FP": 10,
+        "FN": 53,
+        "false_voiced_sil": 0,
+        "F0num": 571
+      }
+    }
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_v0.45",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "control",
+        "voicing_threshold": 0.45
+      }
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_v0.45",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "control",
+        "voicing_threshold": 0.45
+      }
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_v0.45",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "control",
+        "voicing_threshold": 0.45
+      }
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_v0.45",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "control",
+        "voicing_threshold": 0.45
+      }
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_v0.45",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "control",
+        "voicing_threshold": 0.45
+      }
+    }
+  ],
+  "native_calls": {
+    "praat7_filtered_v0.45|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "ab01dcfadc5191384173df889945b56dc9cdd2f3fd1d9f645c31be9fe64eef10",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "pyin_f40|phone_F1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 16000,
+        "frame_length": 640,
+        "hop_length": 160
+      },
+      "warnings": [],
+      "input_samples": 51840,
+      "native_frames": 321,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f60|phone_F1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 16000,
+        "frame_length": 960,
+        "hop_length": 160
+      },
+      "warnings": [],
+      "input_samples": 51840,
+      "native_frames": 319,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f80|phone_F1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 16000,
+        "frame_length": 1280,
+        "hop_length": 160
+      },
+      "warnings": [],
+      "input_samples": 51840,
+      "native_frames": 317,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "praat7_filtered_v0.45|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "7f38fe712048ed3afce6ff810db39f6ea30b203fcda8484bdadab2893027d895",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "pyin_f40|phone_M1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 16000,
+        "frame_length": 640,
+        "hop_length": 160
+      },
+      "warnings": [],
+      "input_samples": 66560,
+      "native_frames": 413,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f60|phone_M1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 16000,
+        "frame_length": 960,
+        "hop_length": 160
+      },
+      "warnings": [],
+      "input_samples": 66560,
+      "native_frames": 411,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f80|phone_M1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 16000,
+        "frame_length": 1280,
+        "hop_length": 160
+      },
+      "warnings": [],
+      "input_samples": 66560,
+      "native_frames": 409,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "praat7_filtered_v0.45|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "bd6b59d2253c09e71e08a164db874f5613fe372ffdcd85c1018423b03e48009a",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "pyin_f40|studio_F1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 44100,
+        "frame_length": 1764,
+        "hop_length": 441
+      },
+      "warnings": [],
+      "input_samples": 126267,
+      "native_frames": 283,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f60|studio_F1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 44100,
+        "frame_length": 2646,
+        "hop_length": 441
+      },
+      "warnings": [],
+      "input_samples": 126267,
+      "native_frames": 281,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f80|studio_F1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 44100,
+        "frame_length": 3528,
+        "hop_length": 441
+      },
+      "warnings": [],
+      "input_samples": 126267,
+      "native_frames": 279,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "praat7_filtered_v0.45|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "filtered",
+        "0.45"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "d5400fb8b446e0c16d1c23d5d73401517448a1298ca859592f9c726e147dd176",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+      "engine": "Praat7 filtered control"
+    },
+    "pyin_f40|studio_M1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 44100,
+        "frame_length": 1764,
+        "hop_length": 441
+      },
+      "warnings": [],
+      "input_samples": 120400,
+      "native_frames": 270,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f60|studio_M1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 44100,
+        "frame_length": 2646,
+        "hop_length": 441
+      },
+      "warnings": [],
+      "input_samples": 120400,
+      "native_frames": 268,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    },
+    "pyin_f80|studio_M1.wav": {
+      "librosa": "0.11.0",
+      "parameters": {
+        "fmin": 70,
+        "fmax": 400,
+        "n_thresholds": 100,
+        "beta_parameters": [
+          2,
+          18
+        ],
+        "boltzmann_parameter": 2,
+        "resolution": 0.1,
+        "max_transition_rate": 35.92,
+        "switch_prob": 0.01,
+        "no_trough_prob": 0.01,
+        "fill_na": "NaN",
+        "center": false,
+        "pad_mode": "constant",
+        "sr": 44100,
+        "frame_length": 3528,
+        "hop_length": 441
+      },
+      "warnings": [],
+      "input_samples": 120400,
+      "native_frames": 266,
+      "center_alignment": "(frame_index*hop_length+frame_length/2)/fs; center=False; no padding",
+      "adapter_sha256": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+      "engine": "librosa pYIN"
+    }
+  },
+  "range_rejected_frames": {
+    "praat7_filtered_v0.45|phone_F1.wav": 0,
+    "pyin_f40|phone_F1.wav": 0,
+    "pyin_f60|phone_F1.wav": 0,
+    "pyin_f80|phone_F1.wav": 0,
+    "praat7_filtered_v0.45|phone_M1.wav": 0,
+    "pyin_f40|phone_M1.wav": 0,
+    "pyin_f60|phone_M1.wav": 0,
+    "pyin_f80|phone_M1.wav": 0,
+    "praat7_filtered_v0.45|studio_F1.wav": 0,
+    "pyin_f40|studio_F1.wav": 0,
+    "pyin_f60|studio_F1.wav": 0,
+    "pyin_f80|studio_F1.wav": 0,
+    "praat7_filtered_v0.45|studio_M1.wav": 0,
+    "pyin_f40|studio_M1.wav": 0,
+    "pyin_f60|studio_M1.wav": 0,
+    "pyin_f80|studio_M1.wav": 0
+  },
+  "long_window_fallback_counts": {},
+  "registry_sha256": "3d70c9868146f239673fab3542bc6a0b519a7eab59b6c34346c092c4fffb528b",
+  "code_sha256": {
+    "research_workbench_2026_10_07\\pyin_reference.py": "cc7c3d31cd27ffbb0518c237cd7f4067457dd267b5a9842e47de9188dc6f142f",
+    "research_workbench_2026_10_07\\amdf_dual_window.py": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+    "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+    "research_workbench_2026_10_07\\pyin_adapter.py": "a703804d379f129746fdc2fab5dfa10cc2bad2fc8ed04899115debd167032c6a",
+    "research_workbench_2026_10_07\\praat_extract_native.praat": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+    "research_workbench_2026_10_07\\results\\librosa_011_provenance.json": "6bde6dba6f5a0866b7cfa5594eabb340cd0493888dcf5e7b05a8a5a1a4933575",
+    "research_workbench_2026_10_07\\results\\pyin_synthetic_probe.json": "3f1446d014fe471eda951621a18c522d6b3258bf0063e444e08f9e0c15b4061b",
+    "research_workbench_2026_10_07\\results\\praat_native_7002_provenance.json": "c2f2e4e71c80a659d953a61d11e42c02d8eb1fb68ec80f76ff688c2d9ea1225a",
+    "research_workbench_2026_10_07\\results\\praat_native_command_source.json": "af5aaf124de81b57e09576f3de436e17923bece446186252ccb0a55c83975afb",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_06\\audit.py": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_06\\estimator_experiment.py": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6"
+  },
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "wall_time_s": 24.00362599999994,
+  "completed_utc": "2026-10-07T04:24:54.762721+00:00",
+  "selection_objective": "minimize worst-file Average MAPE, then mean, then id",
+  "goal_all_nested_files_le_2": false,
+  "train_only": true,
+  "baseline_reproduced": true,
+  "poisoned_gt_inference_invariant": true,
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "praat": "7.0.02",
+    "native_exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+    "librosa": "0.11.0",
+    "pyin_runtime_source_sha256": {
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\core\\pitch.py": "f45cc429f9daa2276d750fa4f100641eae45991daf6e70050073088b86516b87",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\sequence.py": "1253a1427630506928873c82d00ae0fdf1a6a35ba7653252d3bad8f2d37052e6",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\utils.py": "8b0f2d79e2e26519f52c206e5124e7cb4f3f18663501e9d753116d68eb9a8140",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\decorators.py": "dde0c49dd690bcd6e61ba5460005798fd4d069c27797c152406b7b90e4fb935b",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\mviewbuf.cp313-win_amd64.pyd": "dd46de99099749ea1af30b4b3327f1711ba85a03dd442c43512ef9321c6964b1",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_devicearray.cp313-win_amd64.pyd": "fa4a4d52c5a416e1ac170fe85e24d67dc3294f5b612a2b80a61ec965c70168c8",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dispatcher.cp313-win_amd64.pyd": "6d200b3d6d29d07ce1baa2f11de2955f3aa0542ff774d7a61f77439df8b0611e",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dynfunc.cp313-win_amd64.pyd": "0a02a47c47e65fbe515cf5c3c426c22e4b1a460bc9ba10d853d1e009cfa929c0",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_helperlib.cp313-win_amd64.pyd": "cdc597493890be4ff572f5717544c95693db57ed9eb63bf633cccd33acc8bafc",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll": "3dbb62c44af49e645fb6979d8c9b8e16509a1f0a4da105d7bdd6e153e5f7005a"
+    }
+  }
+}
