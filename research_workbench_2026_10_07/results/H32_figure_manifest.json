@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H32_nested",
+      "png": "figures/H32_nested.png",
+      "svg": "figures/H32_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H32_metrics.csv",
+          "sha256": "16b4eea4e3521fa5768ecbb71b4b7aa95565845ffb69e352dbf7d0b544369c70"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "praat_silence_threshold.py",
+      "generator_sha256": "d176fe79da923adb9304507930c1b7e9c320fa72a8007fead51b0e0e1fadd423",
+      "command": "python research_workbench_2026_10_07/praat_silence_threshold.py H32"
+    }
+  ]
+}

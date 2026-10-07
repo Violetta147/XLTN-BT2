@@ -1,0 +1,534 @@
+{
+  "family": "H32",
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": false,
+      "lofo_mape_relative_5_percent": false,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true,
+      "selected_lofo_mape_relative_5_percent": false
+    },
+    "eligible": false,
+    "nested_status": "Outer file excluded from every inner fit and selection; selected LOFO is separate.",
+    "champion_promoted": false
+  },
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.9921541065634312,
+        "F0mean_mape": 0.536071733271657,
+        "F0std_mape": 2.279244893233017,
+        "F0num_mape": 3.1611456931856194,
+        "F0mean_abs_error": 0.8456874865718973,
+        "F0std_abs_error": 0.5857131318398459,
+        "macro_f1": 0.890576926035688,
+        "balanced_accuracy": 0.9138727951439864,
+        "recall_v": 0.921099961489469,
+        "recall_uv": 0.906645628798504,
+        "TP": 570,
+        "TN": 169,
+        "FP": 11,
+        "FN": 44,
+        "false_voiced_sil": 0,
+        "F0num": 581
+      }
+    }
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_s0.09",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "filtered",
+        "voicing_threshold": 0.3,
+        "silence_threshold": 0.09
+      }
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_s0.11",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "filtered",
+        "voicing_threshold": 0.3,
+        "silence_threshold": 0.11
+      }
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_s0.09",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "filtered",
+        "voicing_threshold": 0.3,
+        "silence_threshold": 0.09
+      }
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_s0.09",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "filtered",
+        "voicing_threshold": 0.3,
+        "silence_threshold": 0.09
+      }
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option": {
+        "id": "praat7_filtered_s0.09",
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 42.857142857142854,
+        "method": "filtered",
+        "voicing_threshold": 0.3,
+        "silence_threshold": 0.09
+      }
+    }
+  ],
+  "native_calls": {
+    "praat7_filtered_s0.09|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "0.09"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "5609f30556364c93b44891f7b103995afefff2f520c3ce60069a122e1c01ba78",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.11|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "0.11"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "f3f7030f31e1c0e4b2e7063c623c4d47b75539a1af1f336778c178e5fd556dcb",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.13|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "0.13"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "8ce81a12533315d8e852400e1cd9b18dcfb96bd65d29e9397c1f84f04430e712",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.15|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "0.15"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "ba9cee332af25b17870ad58828330c46173f8299622532c4c4059a9a0f801ea7",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.09|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "0.09"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "b57749deb0977260948e431f141a3089054e20e5ee058a310f92fadae4d56951",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.11|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "0.11"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "0b4d0d65fa4a0ac89e996f450a13dcfd2dd1e1fcabb602a8c62cbd5e8be80a0c",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.13|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "0.13"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "1a8fae681686375f7cd78da860ebb57052de1a4d01df7f7185b9c6655af90a55",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.15|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "0.15"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "07f3f2321ccb880caa938645e671258d48b3882495f9ef127852c834b323a350",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.09|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "0.09"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "1a14b17b33c537ca5e1a7389632a0d1b7a47ee5c0405e184da58df7e6ea53bbd",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.11|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "0.11"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "788dc0dac458f1a5e7739e1eba470d69b952a08a4dc43069730beb16d573a155",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.13|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "0.13"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "a493d57c0b6cfbcc0254bad97e4033f6d5d989b3703cc4ab9aabe5cd5b412ea1",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.15|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "0.15"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "430a1992dd479c2a400dfb36d555acbf290cc709e06ad45b0034b14c614f33f9",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.09|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "0.09"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "8d84c21461e4d7e945159423fa27222cff4c217e57caada000c8382c8a16ca7c",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.11|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "0.11"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "da8080b710a4a305173713037659c1445568d1356c057664b415a908c0a1a9e0",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.13|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "0.13"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "f5cbaf2f624c0a31b4333fcc10ddc0fcd0646dbd246cf9a7619d1080267b7c36",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    },
+    "praat7_filtered_s0.15|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_silence.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "0.15"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "8d7ccef9626625e1991ba1402089bacf9cfcf354cade66b1a4c80817d47ef5c8",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4"
+    }
+  },
+  "range_rejected_frames": {
+    "praat7_filtered_s0.09|phone_F1.wav": 0,
+    "praat7_filtered_s0.11|phone_F1.wav": 0,
+    "praat7_filtered_s0.13|phone_F1.wav": 0,
+    "praat7_filtered_s0.15|phone_F1.wav": 0,
+    "praat7_filtered_s0.09|phone_M1.wav": 2,
+    "praat7_filtered_s0.11|phone_M1.wav": 2,
+    "praat7_filtered_s0.13|phone_M1.wav": 2,
+    "praat7_filtered_s0.15|phone_M1.wav": 0,
+    "praat7_filtered_s0.09|studio_F1.wav": 0,
+    "praat7_filtered_s0.11|studio_F1.wav": 0,
+    "praat7_filtered_s0.13|studio_F1.wav": 0,
+    "praat7_filtered_s0.15|studio_F1.wav": 0,
+    "praat7_filtered_s0.09|studio_M1.wav": 0,
+    "praat7_filtered_s0.11|studio_M1.wav": 0,
+    "praat7_filtered_s0.13|studio_M1.wav": 0,
+    "praat7_filtered_s0.15|studio_M1.wav": 0
+  },
+  "long_window_fallback_counts": {},
+  "registry_sha256": "88b3b560f70d08d799620653baef4527cb4de9e215c77153d0d895ec5fecde36",
+  "code_sha256": {
+    "research_workbench_2026_10_07\\praat_silence_threshold.py": "d176fe79da923adb9304507930c1b7e9c320fa72a8007fead51b0e0e1fadd423",
+    "research_workbench_2026_10_07\\amdf_dual_window.py": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+    "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+    "research_workbench_2026_10_07\\praat_silence_adapter.py": "04221739538009ca8eb948420ed191ae42bb9b7350ce8397f08aebf9b7a97cd9",
+    "research_workbench_2026_10_07\\praat_extract_silence.praat": "423e98efdaceac6e44f72fd8fd4e98f811cd5c3a0205d881f2880112621c5ba4",
+    "research_workbench_2026_10_07\\results\\praat_native_7002_provenance.json": "c2f2e4e71c80a659d953a61d11e42c02d8eb1fb68ec80f76ff688c2d9ea1225a",
+    "research_workbench_2026_10_07\\results\\praat_native_command_source.json": "af5aaf124de81b57e09576f3de436e17923bece446186252ccb0a55c83975afb",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_06\\audit.py": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_06\\estimator_experiment.py": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6"
+  },
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "wall_time_s": 3.73520730000007,
+  "completed_utc": "2026-10-07T04:13:07.888896+00:00",
+  "selection_objective": "minimize worst-file Average MAPE, then mean, then id",
+  "goal_all_nested_files_le_2": false,
+  "train_only": true,
+  "baseline_reproduced": true,
+  "poisoned_gt_inference_invariant": true,
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "praat": "7.0.02",
+    "native_exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4"
+  }
+}
