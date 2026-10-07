@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H37_praat_reaper_agreement",
+      "png": "figures/H37_praat_reaper_agreement.png",
+      "svg": "figures/H37_praat_reaper_agreement.svg",
+      "sources": [
+        {
+          "path": "results\\H37_praat_reaper_agreement_frames.csv",
+          "sha256": "4dbd7d1bdbe9cb9b1639fde39714be4b77c7d283e58b9e37523ac961afa57cdc"
+        }
+      ],
+      "caption_vi": "Tỷ số cao độ hai nguồn trong khung PraatV/nativeREAPERavailable; đủ mọi điểm, không cắt tail.",
+      "limits_vi": "Praat là anchor ứng viên, không F0 ground truth; nearhalf không chứng minh octave error.",
+      "generator": "reaper_agreement_diagnostics.py",
+      "generator_sha256": "2862a13b6875ffea8433fdd2a9a62695da277df7669171dd295a32296bb4d567",
+      "command": "python research_workbench_2026_10_07/reaper_agreement_diagnostics.py"
+    }
+  ]
+}

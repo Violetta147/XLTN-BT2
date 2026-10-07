@@ -1,0 +1,18 @@
+{
+  "source_groups_replayed": 8,
+  "native_gate_voiced_rows": 1176,
+  "usage_raw_frequencies_and_source_tags_matched": true,
+  "category_counts_and_full_histogram_checked": true,
+  "pitch_correction_applied": false,
+  "new_mape_or_config_selected": false,
+  "new_wav_native_or_test_read": false,
+  "generator_sha256": "2862a13b6875ffea8433fdd2a9a62695da277df7669171dd295a32296bb4d567",
+  "input_output_sha256": {
+    "results\\H37_source_native_frames.csv": "a193bbc498e817bad95a6c4f85970b3941c43b15ebcda19531d98fd1c19a5cb2",
+    "results\\H37_raw_native_frames.csv": "82569eaa5a361e86780f149cc90b10cb0688c5f4e636837753a9d23354d157c0",
+    "results\\H37_reaper_usage.csv": "459a5db2b27bb30f9995dba920db672d87cae1d0f477804bc6bb94fe55467e45",
+    "results\\H37_praat_reaper_agreement_frames.csv": "4dbd7d1bdbe9cb9b1639fde39714be4b77c7d283e58b9e37523ac961afa57cdc",
+    "results\\H37_praat_reaper_agreement_summary.csv": "2f0aee6df6254e8d5fc5c7ccc7634a54b1091fbce9a617bb093dada8bbd452b6",
+    "H37_ERROR_ANALYSIS.md": "8c2477cd3c3584add4f500bd682f46a7fab61e61292e7cbf3726ddc4f2b1cd5c"
+  }
+}
