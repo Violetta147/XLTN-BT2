@@ -1,0 +1,19 @@
+{
+  "family": "H34",
+  "selection_replayed": true,
+  "fits_checked": 84,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": false,
+    "lofo_mape_relative_5_percent": false,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": false
+  },
+  "native_all_fixed_f0_stats_voicing_range_projection_and_calls_replayed": true,
+  "all_fixed_mape_components_independently_recomputed": true,
+  "swipe_native_parameters_time_alignment_pcm_input_and_control_checked": true,
+  "verifier_sha256": "2efeea385834dab097e9202bf44f3afbe75b678ebd40d74950058ec6abc540ed"
+}

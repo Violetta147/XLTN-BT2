@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H34_nested",
+      "png": "figures/H34_nested.png",
+      "svg": "figures/H34_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H34_metrics.csv",
+          "sha256": "28a41dd48e6fa8e89f07a4256d1ca7e95438383722c75693c57a00e417a3bbe9"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "swipe_reference.py",
+      "generator_sha256": "029645872970315dfd79851aaabd1664416dfae6ee35e4b9ab0c8ee53db8a86b",
+      "command": "python research_workbench_2026_10_07/swipe_reference.py H34"
+    }
+  ]
+}
