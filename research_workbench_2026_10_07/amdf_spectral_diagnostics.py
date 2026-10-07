@@ -16,7 +16,10 @@ def main():
     for identity,call in result['native_calls'].items():
         option,file=identity.split('|')
         windows=np.array(call['selected_windows'])
+        native_voiced=int((np.array(call['source'])!='unvoiced').sum())
+        rejected=result['range_rejected_frames'][identity]
         usage.append({'option_id':option,'file':file,'native_voiced_frames':int((np.array(call['source'])!='unvoiced').sum()),
+                      'in_range_native_voiced_frames':native_voiced-rejected,'range_excluded_native_frames':rejected,
                       'routed_25ms':int((windows==25).sum()),'routed_40ms':int((windows==40).sum()),
                       'AMDF_candidates_used':call['source'].count('amdf_dip'),
                       'Praat_fallback':sum(tag.startswith('praat_') for tag in call['source'])})
@@ -55,11 +58,14 @@ def main():
             f"Final vàouterphone_F1/phone_M1/studio_F1 chọnH41fixed25/b200. Outer studio_M1 chọnHF05 từ3file còn lại; heldfileAvg{nested.set_index('file').loc['studio_M1.wav','average_mape']:.6f}% làm targetFAIL. Nestedmean{nested.average_mape.mean():.6f}% soH41 {reference.average_mape.mean():.6f}%; worst{nested.average_mape.max():.6f}% so{reference.average_mape.max():.6f}%. Phone_F1nestedstd vẫn{nested.set_index('file').loc['phone_F1.wav','F0std_mape']:.6f}%,gateFAIL. Támgate giữ nguyên, bảyPASS mộtFAIL.",'',
             audit.markdown_table(nested[['file','option_id','F0mean','F0std','F0num','F0mean_mape','F0std_mape','F0num_mape','average_mape','macro_f1','recall_v','recall_uv','balanced_accuracy','false_voiced_sil']]),'',
             '## Route tại native frames','',audit.markdown_table(usage),'',
-            'Route-count là native frame, không phải F0num của canonical grid; không coi mọi AMDFcandidate dùng là sửa pitch đúng. Curve/ratio đúng phép tính cũng không chứng nhận nội dung nhãn. Fourfile nested vẫnexploratory sau lịch sử đã xem nhiều vòng.','',
+            'Route-count là native frame trong dải70–400Hz, không phải F0num của canonical grid. Phone_M1 có235raw-nativevoiced nhưng2frame tại1.985/1.995s khoảng473Hz bị range-reject, chỉ233frame được route. Script đối chiếu phụ ban đầu giả địnhroute bằngmọiraw-positiveframe nênassertFAIL; đây là giả định sai của kiểm tra phụ, không lỗi model. Bảng hiện tách in-range/range-excluded, không đổi suy luận/MAPE. Không coi mọi AMDFcandidate dùng là sửa pitch đúng. Curve/ratio đúng phép tính cũng không chứng nhận nội dung nhãn. Fourfile nested vẫnexploratory sau lịch sử đã xem nhiều vòng.','',
             'Độc lập fullFFT/Hann/PCM/NAMDF/parabola/band/tie/fallback/route kiểm tra588spectralframes và1176curveframes trên8curvegroups;28fixedgroups/112traces/120fits, labels/hash/gates/H41controls/PNGSVG đãcheck. H42 tái sử dụng4historicalPraatcalls,0newnativecalls; no test inference.','',
             'H42 không được promote. H41 vẫn là mốc per-fileAverage≤2%, nhưngphone_F1stdregression chưa giải quyết. Nếu thử feature/controller/band/selection mới, phải đăng ký vòng khác trước đo; không thaymetric/gate củaH42 hoặc lấybest mỗifile.']
     # All numeric statements below are also present in the fixed/nested tables.
     (HERE/'H42_ERROR_ANALYSIS.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
+    assert (usage.AMDF_candidates_used+usage.Praat_fallback==usage.native_voiced_frames).all()
+    routed=usage[usage.option_id!='praat7_filtered_v0.3']
+    assert (routed.routed_25ms+routed.routed_40ms==routed.in_range_native_voiced_frames).all()
     print(nested[['file','option_id','average_mape','F0std_mape']].to_string(index=False))
 
 

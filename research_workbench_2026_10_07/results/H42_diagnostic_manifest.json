@@ -11,13 +11,13 @@
         },
         {
           "path": "results\\H42_window_usage.csv",
-          "sha256": "db56294724cddd395f2a668787b04ec4d7444eecca038585578ade5caa2b7bc9"
+          "sha256": "ba6beb51ee218144d66710cf72d7c534d9db72fa9726379466ae98a30382a2c6"
         }
       ],
       "caption_vi": "Đủ7cấu hình×4file, mỗi thành phần MAPE chia3; không chọnbest riêngfile.",
       "limits_vi": "Descriptive fixed rows; nested chọn bằng file khác. Không F0 chuẩn từng khung.",
       "generator": "amdf_spectral_diagnostics.py",
-      "generator_sha256": "e5970445f9cec5ebf9819291d146aad221a51ae4e4c4426af9e0f1f39a1dfa45",
+      "generator_sha256": "29cfa137bfa4bad0df676c80924ae86b585460dd12e7aa7dd151150345ac6954",
       "command": "python research_workbench_2026_10_07/amdf_spectral_diagnostics.py"
     }
   ]

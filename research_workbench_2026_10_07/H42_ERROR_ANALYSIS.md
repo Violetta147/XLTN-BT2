@@ -15,38 +15,38 @@ Final vàouterphone_F1/phone_M1/studio_F1 chọnH41fixed25/b200. Outer studio_M1
 
 ## Route tại native frames
 
-| option_id | file | native_voiced_frames | routed_25ms | routed_40ms | AMDF_candidates_used | Praat_fallback |
-| --- | --- | --- | --- | --- | --- | --- |
-| praat7_filtered_v0.3 | phone_F1.wav | 147 | 0 | 0 | 0 | 147 |
-| amdf_anchor_w25_b200 | phone_F1.wav | 147 | 147 | 0 | 145 | 2 |
-| amdf_anchor_w40_b200 | phone_F1.wav | 147 | 0 | 147 | 147 | 0 |
-| amdf_spectral_hf05 | phone_F1.wav | 147 | 44 | 103 | 146 | 1 |
-| amdf_spectral_hf10 | phone_F1.wav | 147 | 21 | 126 | 147 | 0 |
-| amdf_spectral_hf20 | phone_F1.wav | 147 | 6 | 141 | 147 | 0 |
-| amdf_spectral_hf35 | phone_F1.wav | 147 | 0 | 147 | 147 | 0 |
-| praat7_filtered_v0.3 | phone_M1.wav | 235 | 0 | 0 | 0 | 235 |
-| amdf_anchor_w25_b200 | phone_M1.wav | 235 | 233 | 0 | 233 | 2 |
-| amdf_anchor_w40_b200 | phone_M1.wav | 235 | 0 | 233 | 233 | 2 |
-| amdf_spectral_hf05 | phone_M1.wav | 235 | 112 | 121 | 233 | 2 |
-| amdf_spectral_hf10 | phone_M1.wav | 235 | 93 | 140 | 233 | 2 |
-| amdf_spectral_hf20 | phone_M1.wav | 235 | 59 | 174 | 233 | 2 |
-| amdf_spectral_hf35 | phone_M1.wav | 235 | 23 | 210 | 233 | 2 |
-| praat7_filtered_v0.3 | studio_F1.wav | 123 | 0 | 0 | 0 | 123 |
-| amdf_anchor_w25_b200 | studio_F1.wav | 123 | 123 | 0 | 123 | 0 |
-| amdf_anchor_w40_b200 | studio_F1.wav | 123 | 0 | 123 | 123 | 0 |
-| amdf_spectral_hf05 | studio_F1.wav | 123 | 66 | 57 | 123 | 0 |
-| amdf_spectral_hf10 | studio_F1.wav | 123 | 50 | 73 | 123 | 0 |
-| amdf_spectral_hf20 | studio_F1.wav | 123 | 32 | 91 | 123 | 0 |
-| amdf_spectral_hf35 | studio_F1.wav | 123 | 16 | 107 | 123 | 0 |
-| praat7_filtered_v0.3 | studio_M1.wav | 85 | 0 | 0 | 0 | 85 |
-| amdf_anchor_w25_b200 | studio_M1.wav | 85 | 85 | 0 | 85 | 0 |
-| amdf_anchor_w40_b200 | studio_M1.wav | 85 | 0 | 85 | 85 | 0 |
-| amdf_spectral_hf05 | studio_M1.wav | 85 | 41 | 44 | 85 | 0 |
-| amdf_spectral_hf10 | studio_M1.wav | 85 | 28 | 57 | 85 | 0 |
-| amdf_spectral_hf20 | studio_M1.wav | 85 | 16 | 69 | 85 | 0 |
-| amdf_spectral_hf35 | studio_M1.wav | 85 | 2 | 83 | 85 | 0 |
+| option_id | file | native_voiced_frames | in_range_native_voiced_frames | range_excluded_native_frames | routed_25ms | routed_40ms | AMDF_candidates_used | Praat_fallback |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| praat7_filtered_v0.3 | phone_F1.wav | 147 | 147 | 0 | 0 | 0 | 0 | 147 |
+| amdf_anchor_w25_b200 | phone_F1.wav | 147 | 147 | 0 | 147 | 0 | 145 | 2 |
+| amdf_anchor_w40_b200 | phone_F1.wav | 147 | 147 | 0 | 0 | 147 | 147 | 0 |
+| amdf_spectral_hf05 | phone_F1.wav | 147 | 147 | 0 | 44 | 103 | 146 | 1 |
+| amdf_spectral_hf10 | phone_F1.wav | 147 | 147 | 0 | 21 | 126 | 147 | 0 |
+| amdf_spectral_hf20 | phone_F1.wav | 147 | 147 | 0 | 6 | 141 | 147 | 0 |
+| amdf_spectral_hf35 | phone_F1.wav | 147 | 147 | 0 | 0 | 147 | 147 | 0 |
+| praat7_filtered_v0.3 | phone_M1.wav | 235 | 233 | 2 | 0 | 0 | 0 | 235 |
+| amdf_anchor_w25_b200 | phone_M1.wav | 235 | 233 | 2 | 233 | 0 | 233 | 2 |
+| amdf_anchor_w40_b200 | phone_M1.wav | 235 | 233 | 2 | 0 | 233 | 233 | 2 |
+| amdf_spectral_hf05 | phone_M1.wav | 235 | 233 | 2 | 112 | 121 | 233 | 2 |
+| amdf_spectral_hf10 | phone_M1.wav | 235 | 233 | 2 | 93 | 140 | 233 | 2 |
+| amdf_spectral_hf20 | phone_M1.wav | 235 | 233 | 2 | 59 | 174 | 233 | 2 |
+| amdf_spectral_hf35 | phone_M1.wav | 235 | 233 | 2 | 23 | 210 | 233 | 2 |
+| praat7_filtered_v0.3 | studio_F1.wav | 123 | 123 | 0 | 0 | 0 | 0 | 123 |
+| amdf_anchor_w25_b200 | studio_F1.wav | 123 | 123 | 0 | 123 | 0 | 123 | 0 |
+| amdf_anchor_w40_b200 | studio_F1.wav | 123 | 123 | 0 | 0 | 123 | 123 | 0 |
+| amdf_spectral_hf05 | studio_F1.wav | 123 | 123 | 0 | 66 | 57 | 123 | 0 |
+| amdf_spectral_hf10 | studio_F1.wav | 123 | 123 | 0 | 50 | 73 | 123 | 0 |
+| amdf_spectral_hf20 | studio_F1.wav | 123 | 123 | 0 | 32 | 91 | 123 | 0 |
+| amdf_spectral_hf35 | studio_F1.wav | 123 | 123 | 0 | 16 | 107 | 123 | 0 |
+| praat7_filtered_v0.3 | studio_M1.wav | 85 | 85 | 0 | 0 | 0 | 0 | 85 |
+| amdf_anchor_w25_b200 | studio_M1.wav | 85 | 85 | 0 | 85 | 0 | 85 | 0 |
+| amdf_anchor_w40_b200 | studio_M1.wav | 85 | 85 | 0 | 0 | 85 | 85 | 0 |
+| amdf_spectral_hf05 | studio_M1.wav | 85 | 85 | 0 | 41 | 44 | 85 | 0 |
+| amdf_spectral_hf10 | studio_M1.wav | 85 | 85 | 0 | 28 | 57 | 85 | 0 |
+| amdf_spectral_hf20 | studio_M1.wav | 85 | 85 | 0 | 16 | 69 | 85 | 0 |
+| amdf_spectral_hf35 | studio_M1.wav | 85 | 85 | 0 | 2 | 83 | 85 | 0 |
 
-Route-count là native frame, không phải F0num của canonical grid; không coi mọi AMDFcandidate dùng là sửa pitch đúng. Curve/ratio đúng phép tính cũng không chứng nhận nội dung nhãn. Fourfile nested vẫnexploratory sau lịch sử đã xem nhiều vòng.
+Route-count là native frame trong dải70–400Hz, không phải F0num của canonical grid. Phone_M1 có235raw-nativevoiced nhưng2frame tại1.985/1.995s khoảng473Hz bị range-reject, chỉ233frame được route. Script đối chiếu phụ ban đầu giả địnhroute bằngmọiraw-positiveframe nênassertFAIL; đây là giả định sai của kiểm tra phụ, không lỗi model. Bảng hiện tách in-range/range-excluded, không đổi suy luận/MAPE. Không coi mọi AMDFcandidate dùng là sửa pitch đúng. Curve/ratio đúng phép tính cũng không chứng nhận nội dung nhãn. Fourfile nested vẫnexploratory sau lịch sử đã xem nhiều vòng.
 
 Độc lập fullFFT/Hann/PCM/NAMDF/parabola/band/tie/fallback/route kiểm tra588spectralframes và1176curveframes trên8curvegroups;28fixedgroups/112traces/120fits, labels/hash/gates/H41controls/PNGSVG đãcheck. H42 tái sử dụng4historicalPraatcalls,0newnativecalls; no test inference.
 
