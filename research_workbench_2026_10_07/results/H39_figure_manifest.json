@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H39_nested",
+      "png": "figures/H39_nested.png",
+      "svg": "figures/H39_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H39_metrics.csv",
+          "sha256": "28a41dd48e6fa8e89f07a4256d1ca7e95438383722c75693c57a00e417a3bbe9"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "rapt_reference.py",
+      "generator_sha256": "eb2cff9e77c00088d79a458b4d63a34b2634619d77b2efbe0ed289a17f7f7929",
+      "command": "python research_workbench_2026_10_07/rapt_reference.py H39"
+    }
+  ]
+}

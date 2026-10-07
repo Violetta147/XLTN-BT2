@@ -1,0 +1,15 @@
+{
+  "family": "H39",
+  "native_calls_and_fixed_groups_replayed": 20,
+  "fit_logs": 84,
+  "raw_statistics_mape_voicing_support_recomputed": true,
+  "PCM_source_binary_params_native_noise_checked": true,
+  "H30_fixed_control_reproduced": true,
+  "no_actual_training_fit": true,
+  "verifier_sha256": "01ecee9739703635ceb23cd885cadc7a15a6f72a6dc1e3b39655063a1470164b",
+  "input_sha256": {
+    "H39_experiment.json": "56f8356eb05d9c6a73ff0dbcbfbc1125fb44c5c79283f2350c3d1b1dd9bfc2e9",
+    "H39_fixed_lofo.csv": "4160726ad74dd74106deedc7810f6947b211d9cae172cd77198c5ad485ad7ad1",
+    "H39_raw_native_frames.csv": "4709ab617607dc72ece3d844df799282d55fef20f8c0d26864863710ec52260d"
+  }
+}
