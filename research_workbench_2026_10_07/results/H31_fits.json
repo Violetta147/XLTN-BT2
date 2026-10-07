@@ -1,0 +1,1360 @@
+{
+  "fits": [
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.25",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.25
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.3
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.35",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.35
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.45
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.4",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "Praat 7.0.02 filtered",
+        "voicing_threshold": 0.4
+      },
+      "classifier": null
+    }
+  ]
+}

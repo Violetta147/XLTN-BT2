@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H31_nested",
+      "png": "figures/H31_nested.png",
+      "svg": "figures/H31_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H31_metrics.csv",
+          "sha256": "7f9ff64ac185aebcaa0bca3d580259f7cee23ecb566f2070a57b671353e65f8b"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "praat_voicing_threshold.py",
+      "generator_sha256": "94a72e05ed3a83cb5790be392af9036869c447f70e6975bfe332f9179d0b6b3b",
+      "command": "python research_workbench_2026_10_07/praat_voicing_threshold.py H31"
+    }
+  ]
+}
