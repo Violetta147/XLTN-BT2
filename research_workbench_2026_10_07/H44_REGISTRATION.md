@@ -1,0 +1,17 @@
+# H44 — Chuyển mềm giữa cao độ AMDF25/40ms
+
+Preregister trướcđo mới; rollback repository **29f712a**, mathematicalcontrol **H31 fixedPraatfiltered.30**, frozen/original009fd2c giữ. H43 +notebookH42/H43 đãverified/push, khôngliveprocess cầnchờ. Vòngtrước làprogress cóbằngchứng. H43fixed170 cả4Average≤2%, nhưngouterstudio_M1 chọn140 từ3filekhác rồi2.523880%; targetnestedFAIL dù8gatePASS. Không sửaH43selection hoặc bỏfailedcandidate sauđo.
+
+Giả thuyết: chuyển cứng cửa sổ làm F0 đổi tại ngưỡnggate; trộn log-frequency25/40ms theo gateF0 cóthể giảmđánhđổi vàselectioninstability. Đây làengineeringhypothesis từtrain đãxemnhiềuvòng, khôngpaperreplication. Ngưỡng làhyperparameters theo tínhiệutừngkhung, khônggiớitính/thiếtbị/tênfile/GTmean. Khôngdùng QA test đểđịnhhướng, khôngtestinference/tuning. Giữnestedexploratory n4, khôngindependentcorpusclaim.
+
+Một yếu tố thay: hardroute thành softblend, giữ H42spectralfeatureHF.05/cutoff1000Hz/raw40ms/DC/Hann/fullpositivepowerweights vàH41kernel/candidate/band200/Praat.30/70–400. **9options**: Praat.30; H41fixed25/b200; H43hard170; soft **center140/170/200Hz×width20/40Hz**. Ratio finite≤.05: alpha40=clip((gateF0−center)/width+.5,0,1); ratioNaN/>.05: alpha0. F0=f25×2^(alpha×log2(f40/f25)); endpoints exactlyf25/f40 đểtái lậpcontrols. Candidatesf25/f40 làH41localdip-bandrule, giữPraat khiunsupported/flat/disagree. Ngoàirange/UV không xử lý, giữrawfrequency vàpredmask. No smoothingtime/filter/noise/resample/clip/GTcalibration hoặcclassifierfit mới.
+
+Sourcegate/times4historicalPraatgroups/H41curves8groups cóhash; H44rawPCM đo4spectralgroups mới. **0newnativecalls**. Lưuweights40/candidatef0/indices/tags25/40/curves+featureinputSHA/rawframes/source params. Bothcandidates trongband200, logblend giữrange70–400 vàmaskcontrol; canonicalnearest≤5ms+sample/tieearlier, referencegrid25/10 unchanged.
+
+Selection/gates giữminimaxworst-fileAverageMAPE, mean,ID vàfinite/F1/recallVdrop≤.01/SIL+1 trước xếphạng. Outer excludedinnerpool/fit,actual_fit_files=[] classifierNone. TámgateH31: traingain≥10%,selectedLOFO/nestedgain≥5%,F1/recallVdrop≤.01,SIL+1,nofileworse>2pp,phone_F1stdnotworse; mỗi nestedfileAverage≤2% targetriêng bắtbuộc. Reportmean/stdMAE,count,componentsMAPE,VUV/BA/SIL, giữundefined/failures. Khôngpromote automatic hoặccoifixedtarget lànested.
+
+Prechecks syntheticalpha0/.5/1/bounds/NaN/monotone/logblend/range/endpoint identity vàFFTlow/high/gain/DC tại16/44.1k, khôngBT2. Source/registry/precheck/verifiercommit/pushremoteverified trướcđo. Aftermeasure independent144innertraces/148–152fitlogs/24metrics/36fixedgroups: allPCM/kernel/framehash/refine/dip/tie/band/NaNfallback, FFTformula vàpiecewisealpha/loginterpolationalternative, allsourceparams/hash/historicalbinary/LAB/grid/support/count/std(ddof0)/MAPE/VUV/gates/pools/H41control&H43hard170parity/PNGSVG/layout. Newhypothesis/gate/grid chỉvòng khác đăng ký, không sửa sauđo.
+
+Phép tính Hann/RFFT đượcsourcecheck ởAMDF_SPECTRAL_SOURCE_NOTE.md; T=1/F0 làđịnhnghĩachu kỳ. Softblend làcôngthứcengineering củaagent, khôngclaimpaperđãchứngminhcải thiện. Reviewnguồncũ giữabstract-onlyAAMDFgap, khôngpapersearch/PDF mới. Source/docs H41/H42/H43 immutable; khôngJev/Gemini call, H32MCPfailurebranch dừngkhôngretry.
+
+Lệnh amdf_soft_spectral_controller.py register/check/H44, verify_amdf_soft_spectral.py. Notebookriêng replayregisteredrules saubenchmark, giữnotebookgốc/frozen và thấtbại; noDrive/PDF/deeplearning/testtuning.

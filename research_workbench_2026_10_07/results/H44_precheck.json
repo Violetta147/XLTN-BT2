@@ -1,0 +1,34 @@
+{
+  "synthetic_cases": [
+    {
+      "center_hz": 140,
+      "width_hz": 20
+    },
+    {
+      "center_hz": 140,
+      "width_hz": 40
+    },
+    {
+      "center_hz": 170,
+      "width_hz": 20
+    },
+    {
+      "center_hz": 170,
+      "width_hz": 40
+    },
+    {
+      "center_hz": 200,
+      "width_hz": 20
+    },
+    {
+      "center_hz": 200,
+      "width_hz": 40
+    }
+  ],
+  "rule_sha256": "011cf01129a161901d1560cf9cf9b6ea7798f5d6251faadef9dabefe74be19b7",
+  "uses_BT2_WAV": false,
+  "new_native_calls": 0,
+  "blend": "log2 frequency interpolation; exact endpoints",
+  "ratio_threshold": 0.05,
+  "band_cents": 200
+}
