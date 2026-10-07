@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "filter_response_and_delay",
+      "png": "figures/filter_response_and_delay.png",
+      "svg": "figures/filter_response_and_delay.svg",
+      "sources": [
+        {
+          "path": "results\\filter_frequency_response.csv",
+          "sha256": "b500319ddbc68aa7944304069acda823954bc63e0876f804dff47e27a60c7393"
+        }
+      ],
+      "caption_vi": "Đáp ứng bộ lọc causal N2; dải xanh là range tìm F0 70–400Hz.",
+      "limits_vi": "BP có order thực4; group delay phụ thuộc tần số, không phải pitch error. Response44.1kHz cũng lưu CSV.",
+      "generator": "filter_profile.py",
+      "generator_sha256": "e004b0fc6f047ffe3995057fbae80b7ceeee7a7cac7216fca427ecbff6b4eaac",
+      "command": "python research_workbench_2026_10_07/filter_profile.py"
+    },
+    {
+      "name": "frame_cycles_FM",
+      "png": "figures/frame_cycles_FM.png",
+      "svg": "figures/frame_cycles_FM.svg",
+      "sources": [
+        {
+          "path": "results\\frame_cycles_at_file_mean.csv",
+          "sha256": "ad010f2b30d7dc8c193386bc69e546811d3a5735e9d05d492d51a15f23ac1389"
+        }
+      ],
+      "caption_vi": "Số chu kỳ tại mean GT từng file = meanHz × frameSeconds.",
+      "limits_vi": "Dùng mean cả file chỉ minh họa support, không phải mọi khung có F0 đúng bằng mean hoặc độ chính xác measured.",
+      "generator": "filter_profile.py",
+      "generator_sha256": "e004b0fc6f047ffe3995057fbae80b7ceeee7a7cac7216fca427ecbff6b4eaac",
+      "command": "python research_workbench_2026_10_07/filter_profile.py"
+    }
+  ]
+}

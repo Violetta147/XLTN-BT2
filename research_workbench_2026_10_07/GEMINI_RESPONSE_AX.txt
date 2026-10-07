@@ -1,0 +1,79 @@
+117 container model-response-message-contentr_87664ade083055c7
+								118 text 1. Phản biện Nháp H18 (Grid, Counts, Boundary, Phase Delay)
+								119 content list
+									120 container
+										121 text Vấn đề Grid Mapping & Counts:  Ý tưởng map frame 20/40ms hoặc hop 5/20ms về grid 25/10ms của baseline bằng nearest-neighbor là sai lầm cốt lõi.
+										122 content list
+											123 text Nếu dùng hop 5ms ép về 10ms: bạn vứt bỏ 50% dữ liệu đã tính toán.
+											124 text Nếu dùng hop 20ms ép về 10ms: sinh ra "lỗ hổng" (abstain) xen kẽ. Điều này phá vỡ logic penalty pathjump và median filter, đồng thời làm hỏng tổng V/UV count (vì count phụ thuộc trực tiếp vào số frame hợp lệ).
+											125 container
+												126 text Khuyến nghị:  Vì nhãn gốc (LAB) chỉ có F0mean/std/count  cả file  (không có timestamp GT), bạn tuyệt đối không cần map về grid 25/10. Hãy đối chiếu trực tiếp file-level mean/std/count của output ở native hop với GT file-level.
+									127 container
+										128 text Vấn đề Phase Delay (Causal Butterworth):  Bộ lọc IIR nhân quả gây trễ pha phi tuyến. Ở tần số thấp (HP 30/60Hz), group delay sẽ làm méo dạng sóng cơ bản, xê dịch đỉnh ACF, và làm lệch ranh giới (boundary) V/UV thực tế.
+										129 content list
+											130 container
+												131 text Khuyến nghị:  Vì chạy offline/local, bắt buộc dùng zero-phase filtering (lọc tiến-lùi, ví dụ  filtfilt ).
+								132 text 2. Đề xuất 4 ý tưởng Classical (Thay thế/Bổ sung)
+								133 text Ý tưởng 1: Zero-phase IIR Filtering (Thay cho Causal SOS)
+								134 content list
+									135 container
+										136 text Cơ chế:  Dùng  filtfilt  triệt tiêu hoàn toàn trễ pha, giữ nguyên hình thái sóng âm (waveform topology) để đỉnh ACF không bị bóp méo, đặc biệt quan trọng ở ranh giới SIL/Voiced.
+									137 container
+										138 text Prior grid:  Butterworth N=2, HP 40/60Hz, LP 900/1200Hz.
+									139 container
+										140 text Failure gate:  Bỏ ngay nếu LOFO MAPE trên 3 file nội bộ (inner fold) cao hơn 6.17% (chứng tỏ lọc làm mất harmonic quan trọng).
+								141 text Ý tưởng 2: Center Clipping (Trước ACF)
+								142 content list
+									143 container
+										144 text Cơ chế:  Xóa bỏ phần tín hiệu nằm gần trục hoành (nhiễu biên độ nhỏ), chỉ giữ lại các đỉnh sóng chính. Cực kỳ hiệu quả để triệt tiêu 66.55/69.15 false voiced trong mô phỏng brown noise 0dB, làm ACF peak của Voiced nhọn và dễ bắt hơn.
+									145 container
+										146 text Prior grid:  Threshold = 30% và 50% max amplitude của từng native frame.
+									147 container
+										148 text Failure gate:  Hủy bỏ nếu tổng V-count ở file studio (studio_F1, studio_M1) giảm quá 10% (cắt phạm vào âm hữu thanh nhẹ).
+								149 text Ý tưởng 3: Bổ sung Zero-Crossing Rate (ZCR) vào Logistic
+								150 content list
+									151 container
+										152 text Cơ chế:  Logistic 2D (ACF score + relRMS, C=1/0.5) đạt 5.47% nhưng gục ngã trước brown noise. Thêm ZCR tạo thành Logistic 3D. Nhiễu brown có ZCR đặc trưng khác hoàn toàn tiếng người (SIL). ZCR đóng vai trò "chốt chặn" (gate) tuyến tính xuất sắc.
+									153 container
+										154 text Prior grid:  Logistic 3D (ACF, relRMS, ZCR). C = 0.25, 0.5, 1.0.
+									155 container
+										156 text Failure gate:  LOFO > 5.47% (không qua được baseline của bản 2D).
+								157 text Ý tưởng 4: Micro-tuning dải C cho Logistic 2D
+								158 content list
+									159 container
+										160 text Cơ chế:  Bước nhảy C=0.1/1/10 trong nháp H18 là quá thưa (magnitude scale), dễ lướt qua điểm hội tụ tối ưu của regularization.
+									161 container
+										162 text Prior grid:  Log-space hẹp quanh C=0.5 (vd: 0.2, 0.5, 0.8, 1.2).
+									163 container
+										164 text Failure gate:  Outer fold LOFO không cải thiện > 0.1% so với mốc 5.47% (chứng tỏ hàm mục tiêu đã bão hòa).
+								165 text 3. Phân tích F/M và Clipping (Giới hạn đúng n=4)
+								166 content list
+									167 container
+										168 text F/M (Giới tính):
+										169 content list
+											170 text Phân bố GT: M1 (116.9 - 123.7Hz) vs F1 (215.6 - 229.6Hz).
+											171 container
+												172 text Nguy cơ:  HP 60Hz an toàn với M1. Nhưng nếu thử LP 800Hz, các hài âm bậc cao của F1 có thể bị gọt quá tay, làm suy yếu đỉnh ACF thứ 2.
+											173 container
+												174 text Chiến lược:  Giữ nguyên range 70-400Hz chung. Tính LOFO riêng cho subset M (M1_phone, M1_studio) và subset F (F1_phone, F1_studio). Nếu MAPE của subset F tăng vọt khi áp LP 800Hz, ta biết filter đang phá F0 nữ.
+									175 container
+										176 text Clipping (Môi trường/Mic):
+										177 content list
+											178 container
+												179 text 4 file chia làm 2 domain:  phone  (16kHz) và  studio  (44.1kHz).
+											180 container
+												181 text Nguy cơ:  File  phone  dễ bị hard-clipping vật lý, làm phẳng đỉnh sóng (tạo nhiễu hài bậc cao). Tính năng Relative RMS hoặc Center Clipping sẽ phản ứng rất khác nhau giữa phone (đã bị nén) và studio (dynamic range rộng).
+											182 container
+												183 text Chiến lược:  Theo dõi V-count riêng cho cụm  phone  và  studio . Ghi nhận exploration history: nếu 1 prior grid làm giảm MAPE phone nhưng tăng MAPE studio, thuật toán đang overfit vào clipping artifact.
+								184 text 4. Thứ tự ưu tiên (Thực thi)
+								185 content list
+									186 container
+										187 text 1 . Sửa lỗi cơ sở (Ý tưởng 1):  Bắt buộc chuyển sang
+										188 text filtfilt
+										189 text  trước, đo lại raw25/10 để lập baseline chuẩn hóa pha.
+									190 container
+										191 text 2 . Chống false-voiced (Ý tưởng 3):  Thêm ZCR vào Logistic model để chặn đứng sự cố brown noise.
+									192 container
+										193 text 3 . Lọc phổ thô (Ý tưởng 2):  Thử Center clipping xem đỉnh ACF có nét hơn không.
+									194 container
+										195 text 4 . Tuning parameter (Ý tưởng 4 & H18):  Chạy grid frame/hop và micro-tuning C cuối cùng. (Lưu ý: đổi hop size bắt buộc phải sửa smoothing duration của median filter tương ứng theo tỷ lệ nghịch để giữ nguyên dải thời gian vật lý).

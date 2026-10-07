@@ -1,0 +1,13 @@
+file,file_group,frame_ms,file_gt_mean_hz,cycles_at_file_gt_mean,cycles_at_range_min_70hz
+phone_F1.wav,F,20,215.6,4.312,1.4
+phone_F1.wav,F,25,215.6,5.39,1.75
+phone_F1.wav,F,40,215.6,8.624,2.8
+phone_M1.wav,M,20,123.7,2.474,1.4
+phone_M1.wav,M,25,123.7,3.0925,1.75
+phone_M1.wav,M,40,123.7,4.948,2.8
+studio_F1.wav,F,20,229.6,4.592,1.4
+studio_F1.wav,F,25,229.6,5.74,1.75
+studio_F1.wav,F,40,229.6,9.184,2.8
+studio_M1.wav,M,20,116.9,2.338,1.4
+studio_M1.wav,M,25,116.9,2.9225,1.75
+studio_M1.wav,M,40,116.9,4.676,2.8
