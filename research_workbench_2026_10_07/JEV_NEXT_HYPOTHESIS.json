@@ -1,0 +1,71 @@
+{
+  "purpose": "Prospective semantic priority after H18 failure, not computation or permission",
+  "input": {
+    "task": "Choose a prospective classical DSP diagnostic to prioritize after ongoing H19/H20, based on supplied evidence only; choose none/unknown when insufficient. XLTN BT2 four train WAVs phone_F1/M1 (16kHz), studio_F1/M1 (44.1kHz), segment V/UV/SIL labels and file-level mean/std/count GT, no timestamp pitch reference. Accepted ACF25/10, range70-400 already parabolic/path/median/RMS; LOFO file-statAvgMAPE7.279%. H18 pre-registered 81 raw/HP/LP/BP and frame20/25/40 hop5/10/20 configurations, train-only inner selection, canonical common scoring grid: selectedLOFO3.410%, nested8.296%, gate FAIL including phone_F1std worsening. That demonstrates selection instability in this registry, not universal filter failure. H15 observed brown-noise SIL FP on accepted/hysteresis, not logistic. Gemini proposed center clipping, ZCR, zero-phase; its confident guarantees not measured. H19 logistic2D/C tuning and H20 frozen stress are still running/not scored, no test tuning, no deep learning. Identify a narrow mechanism worth prospectively testing, not infer performance or change current gates; current runs finish first. Evidence locations: research_workbench_2026_10_07/H18_REPORT.md and AI_REVIEW.md; research_workbench_2026_10_06/ROBUSTNESS_REPORT.md. No external data access.",
+    "options": [
+      {
+        "id": "center_clip",
+        "description": "Isolate nonlinear center clipping before ACF: remove low-amplitude values relative to each frame max; pre-register ratios0/.3/.5 and evaluate frame20/25/40 hop5/10/20 with baseline fallback and nested selection. May suppress weak harmonics or turn noise into periodic-looking candidates; cannot guarantee lower brown-noise false voicing."
+      },
+      {
+        "id": "zcr_logistic",
+        "description": "Add one feature ZCR to logistic2D with train-only scaling, compare fixed2D, nested tune same C grid. Could aid voiced/unvoiced discrimination, but brown noise and voiced speech can both have low ZCR; current logistic noise performance unknown."
+      },
+      {
+        "id": "zero_phase",
+        "description": "Replace causal SOS by forward-backward SOS on same pre-registered filter/frame/hop grid; isolate phase-mode difference while reporting squared magnitude response and offline future context. Boundary shifts might decrease; cannot promise unchanged waveform or better file F0std."
+      },
+      {
+        "id": "none",
+        "description": "No next mechanism sufficiently prioritized from present evidence; finish H19/H20 and inspect per-file errors before registering another hypothesis."
+      }
+    ]
+  },
+  "raw_output": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"requestId\":\"72fbafc5-e38e-4fdf-abc0-a2ff4294c033\",\"check\":\"select\",\"result\":{\"choice\":{\"id\":\"none\",\"probability\":0.59},\"none\":0.02,\"fits\":[{\"id\":\"center_clip\",\"probability\":0.67},{\"id\":\"zcr_logistic\",\"probability\":0.44},{\"id\":\"zero_phase\",\"probability\":0.68},{\"id\":\"none\",\"probability\":0.81}]},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":1939,\"outputTokens\":130,\"cached\":false,\"latencyMs\":375}}"
+      }
+    ],
+    "structuredContent": {
+      "requestId": "72fbafc5-e38e-4fdf-abc0-a2ff4294c033",
+      "check": "select",
+      "result": {
+        "choice": {
+          "id": "none",
+          "probability": 0.59
+        },
+        "none": 0.02,
+        "fits": [
+          {
+            "id": "center_clip",
+            "probability": 0.67
+          },
+          {
+            "id": "zcr_logistic",
+            "probability": 0.44
+          },
+          {
+            "id": "zero_phase",
+            "probability": 0.68
+          },
+          {
+            "id": "none",
+            "probability": 0.81
+          }
+        ]
+      },
+      "meta": {
+        "model": "vercel:typesafe-ai/jev",
+        "calls": 1,
+        "inputTokens": 1939,
+        "outputTokens": 130,
+        "cached": false,
+        "latencyMs": 375
+      }
+    }
+  },
+  "id_validation": true,
+  "agent_interpretation": "Explicit option none selected; finish H19/H20 before choosing another mechanism. Tool-level none is distinct from an option named none. Independent fits differ from relative choice and are uncalibrated. No threshold or probability treated as proof."
+}

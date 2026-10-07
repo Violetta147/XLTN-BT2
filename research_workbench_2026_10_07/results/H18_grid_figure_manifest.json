@@ -1,0 +1,40 @@
+{
+  "figures": [
+    {
+      "name": "H18_filter_controls",
+      "png": "figures/H18_filter_controls.png",
+      "svg": "figures/H18_filter_controls.svg",
+      "sources": [
+        {
+          "path": "results\\H18_fixed_geometry_filter_control.csv",
+          "sha256": "0c7f39333eb655aff13933b546249468714632838b70a9b282980ab30ff23506"
+        }
+      ],
+      "caption_vi": "Tách slice25/10 để đọc riêng ảnh hưởng filter; H19 giữC1 trong slice.",
+      "limits_vi": "Điểm LOFO đã dùng để lựa chọn registry, không phải đánh giá độc lập. Gate nested của toàn quy trình vẫn quyết định giữ/bỏ.",
+      "generator": "grid_analysis.py",
+      "generator_sha256": "fa596ee8e9f5fa0b33d87446dfb8345985012c5223f25f3c715750dababe8081",
+      "command": "python research_workbench_2026_10_07/grid_analysis.py H18"
+    },
+    {
+      "name": "H18_geometry_grid",
+      "png": "figures/H18_geometry_grid.png",
+      "svg": "figures/H18_geometry_grid.svg",
+      "sources": [
+        {
+          "path": "results\\H18_geometry_optimistic.csv",
+          "sha256": "375c2e1367105366a2f6d17fdd4aa5809590c2686154c5ddb504870267812e03"
+        },
+        {
+          "path": "results\\H18_full_grid_summary.csv",
+          "sha256": "6af36d34fe8a1370e6761760989607d99d193905754ae8c27a7db6ba8f7ed262"
+        }
+      ],
+      "caption_vi": "Heatmap minimum theo filters/C trong từng geometry của training selection.",
+      "limits_vi": "Minimum chịu selection bias, không thay nested. Native hop thay đổi thật; các output chấm cùng canonical grid.",
+      "generator": "grid_analysis.py",
+      "generator_sha256": "fa596ee8e9f5fa0b33d87446dfb8345985012c5223f25f3c715750dababe8081",
+      "command": "python research_workbench_2026_10_07/grid_analysis.py H18"
+    }
+  ]
+}
