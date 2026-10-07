@@ -1,0 +1,36 @@
+{
+  "figures": [
+    {
+      "name": "reference_notebook_components",
+      "png": "figures/reference_notebook_components.png",
+      "svg": "figures/reference_notebook_components.svg",
+      "sources": [
+        {
+          "path": "results\\reference_notebook_per_file.csv",
+          "sha256": "a1860efd72abc6ff73d8a3bb49df3e85962a12c2624f4ccb86b54f15debf4f26"
+        }
+      ],
+      "caption_vi": "Tính lại từ WAV; mỗi đóng góp MAPE chia3.",
+      "limits_vi": "File-stat và bốn file đã nghiên cứu, không GT F0 từng khung.",
+      "generator": "build_reference_notebook.py",
+      "generator_sha256": "d872c6b26ac6c210253e170b9d297c4d02eca9fc78ac0de2b5faf1b58b4a51a9",
+      "command": "python research_workbench_2026_10_07/execute_reference_notebook.py"
+    },
+    {
+      "name": "reference_notebook_nested",
+      "png": "figures/reference_notebook_nested.png",
+      "svg": "figures/reference_notebook_nested.svg",
+      "sources": [
+        {
+          "path": "results\\reference_notebook_per_file.csv",
+          "sha256": "a1860efd72abc6ff73d8a3bb49df3e85962a12c2624f4ccb86b54f15debf4f26"
+        }
+      ],
+      "caption_vi": "Nested tái tính với outer choices đã lưu.",
+      "limits_vi": "Exploratory sau lịch sử nhiều vòng trên bốn file; không đánh giá độc lập mới.",
+      "generator": "build_reference_notebook.py",
+      "generator_sha256": "d872c6b26ac6c210253e170b9d297c4d02eca9fc78ac0de2b5faf1b58b4a51a9",
+      "command": "python research_workbench_2026_10_07/execute_reference_notebook.py"
+    }
+  ]
+}

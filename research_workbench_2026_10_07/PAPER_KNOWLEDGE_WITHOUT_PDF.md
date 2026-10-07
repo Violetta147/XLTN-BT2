@@ -28,3 +28,9 @@
 H27 (Praat raw) và H28 (Harvest) đều so pipeline với control AMDF H24, đăng ký và push trước đo. Mọi cấu hình cố định được báo riêng với kết quả của bước chọn cấu hình; không chỉ trình bày đường baseline sau khi registry bị loại. Figures và kết quả thất bại đã lưu/push. Không dùng số liệu công bố trong paper thay số liệu BT2. Chấm cùng ground truth và lưới thời gian, báo coverage, mean/std/count và V/UV/SIL. Mục tiêu người dùng vẫn là **mỗi file Average MAPE ≤2%**; lựa chọn cấu hình không xem file outer đang chấm.
 
 Không extract hoặc tải PDF cho quy trình này. Không tạo PDF báo cáo. Một nguồn chỉ có abstract vẫn được giữ trong review với giới hạn rõ ràng, thay vì bị loại hoặc được trình bày như full text.
+
+## Nối tiếp bằng manual HTML và phép đo thật
+
+[Praat filtered manual](https://www.fon.hum.uva.nl/praat/manual/pitch_analysis_by_filtered_autocorrelation.html) mô tả Gaussian low-pass trước ACF, sự khác nhau giữa pitch top và raw ceiling, voicing threshold và silence threshold. Đã đối chiếu lệnh native với source Praat7.0.02, lưu binary/script/hash và kiểm synthetic trước BT2. H30 thử whole pipeline filtered, không gọi đây là tác động cô lập của một filter. H31 chỉ thay voicing; H32 chỉ thay silence, giữ các tham số khác.
+
+Kết quả triển khai không được suy ra từ manual: H30 nested2.422852%, H32 nested mean1.992154% nhưng worstfile3.175722%, chưa đạt từng file≤2%. [Notebook reference chạy từ WAV](REFERENCE_PIPELINES_LOCAL.ipynb) tính lại60fixed+16nested rows và hai figures, khớp kết quả đã lưu. [Hướng dẫn đọc](REFERENCE_NOTEBOOK_README.md) giải thích mean/std/count, V/UV/SIL và giới hạn hai loại ground truth. Đây là kết nối nguồn HTML/code → giả thuyết đăng ký → kiểm synthetic → đo BT2 → giữ cả thất bại; không cần extract PDF hoặc coi abstract/manual là full paper.

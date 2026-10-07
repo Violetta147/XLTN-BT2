@@ -1,0 +1,5 @@
+file,GT_count,canonical_frames,segment_V_frames,segment_UV_frames,segment_SIL_frames
+phone_F1.wav,148.0,322,153,69,100
+phone_M1.wav,232.0,414,244,62,108
+studio_F1.wav,127.0,284,123,24,137
+studio_M1.wav,82.0,271,94,25,152
