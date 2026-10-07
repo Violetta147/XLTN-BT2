@@ -1,0 +1,11 @@
+{
+  "phase": "train verification",
+  "measurement_failed": false,
+  "verification_passed": false,
+  "source": "verify_voicing_matrix.py",
+  "line": 95,
+  "exception": "TypeError: int() argument must be a string, a bytes-like object or a real number, not 'method'",
+  "cause": "pandas.Series.repeat method shadows the repeat column during attribute access",
+  "remedy": "verify_voicing_matrix_v2.py uses bracket column access and reruns all checks",
+  "measurement_registry_and_outputs_changed": false
+}
