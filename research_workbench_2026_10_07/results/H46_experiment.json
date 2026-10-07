@@ -1,0 +1,1409 @@
+{
+  "family": "H46",
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": true,
+      "lofo_mape_relative_5_percent": true,
+      "lofo_f1_drop_at_most_01": true,
+      "lofo_recall_v_drop_at_most_01": true,
+      "lofo_sil_increase_at_most_1": true,
+      "lofo_no_file_mape_worse_by_over_2pp": true,
+      "lofo_phone_f1_std_not_worse": true,
+      "selected_lofo_mape_relative_5_percent": true
+    },
+    "eligible": true,
+    "nested_status": "Outer file excluded from every inner fit and selection; selected LOFO is separate.",
+    "champion_promoted": false
+  },
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.6224571202393765,
+        "F0mean_mape": 0.5871951533488252,
+        "F0std_mape": 2.301462946616118,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 0.9559095802582718,
+        "F0std_abs_error": 0.5902900508367646,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.2038574027364048,
+        "F0mean_mape": 0.6055278385114471,
+        "F0std_mape": 1.0273311089445798,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0932377714876012,
+        "F0std_abs_error": 0.252949871537659,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    }
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_ensemble_k01",
+        "method": "ensemble",
+        "top_k": 1
+      }
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_ensemble_k01",
+        "method": "ensemble",
+        "top_k": 1
+      }
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_ensemble_k01",
+        "method": "ensemble",
+        "top_k": 1
+      }
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_pitch_spectral_p170",
+        "method": "hard_control"
+      }
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option": {
+        "frame_ms": 42.857142857142854,
+        "hop_ms": 10,
+        "pitch_frame_ms": 40,
+        "id": "amdf_ensemble_k09",
+        "method": "ensemble",
+        "top_k": 9
+      }
+    }
+  ],
+  "native_calls": {
+    "praat7_filtered_v0.3|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|phone_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "praat7_filtered_v0.3|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|phone_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "praat7_filtered_v0.3|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|studio_F1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "praat7_filtered_v0.3|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_pitch_spectral_p170|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k01|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k03|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k05|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    },
+    "amdf_ensemble_k09|studio_M1.wav": {
+      "engine": "H44 member evidence for fold-dependent H46 ensemble",
+      "member_ids": [
+        "praat7_filtered_v0.3",
+        "amdf_anchor_w25_b200",
+        "amdf_pitch_spectral_p170",
+        "amdf_soft_c140_w20",
+        "amdf_soft_c140_w40",
+        "amdf_soft_c170_w20",
+        "amdf_soft_c170_w40",
+        "amdf_soft_c200_w20",
+        "amdf_soft_c200_w40"
+      ],
+      "member_source_sha256": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+      "member_metrics_sha256": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650"
+    }
+  },
+  "source_calls": {
+    "praat7_filtered_v0.3|phone_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_F1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "5609f30556364c93b44891f7b103995afefff2f520c3ce60069a122e1c01ba78",
+      "native_frames": 320,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "praat7_filtered_v0.3|phone_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\phone_M1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "b57749deb0977260948e431f141a3089054e20e5ee058a310f92fadae4d56951",
+      "native_frames": 412,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "praat7_filtered_v0.3|studio_F1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_F1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "1a14b17b33c537ca5e1a7389632a0d1b7a47ee5c0405e184da58df7e6ea53bbd",
+      "native_frames": 283,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    },
+    "praat7_filtered_v0.3|studio_M1.wav": {
+      "command": [
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+        "--run",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+        "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\TinHieuHuanLuyen\\studio_M1.wav",
+        "filtered",
+        "0.3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout_sha256": "8d84c21461e4d7e945159423fa27222cff4c217e57caada000c8382c8a16ca7c",
+      "native_frames": 269,
+      "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+      "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+      "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+    }
+  },
+  "range_rejected_frames": {
+    "praat7_filtered_v0.3|phone_F1.wav": 0,
+    "amdf_pitch_spectral_p170|phone_F1.wav": 0,
+    "amdf_ensemble_k01|phone_F1.wav": 0,
+    "amdf_ensemble_k03|phone_F1.wav": 0,
+    "amdf_ensemble_k05|phone_F1.wav": 0,
+    "amdf_ensemble_k09|phone_F1.wav": 0,
+    "praat7_filtered_v0.3|phone_M1.wav": 2,
+    "amdf_pitch_spectral_p170|phone_M1.wav": 2,
+    "amdf_ensemble_k01|phone_M1.wav": 2,
+    "amdf_ensemble_k03|phone_M1.wav": 2,
+    "amdf_ensemble_k05|phone_M1.wav": 2,
+    "amdf_ensemble_k09|phone_M1.wav": 2,
+    "praat7_filtered_v0.3|studio_F1.wav": 0,
+    "amdf_pitch_spectral_p170|studio_F1.wav": 0,
+    "amdf_ensemble_k01|studio_F1.wav": 0,
+    "amdf_ensemble_k03|studio_F1.wav": 0,
+    "amdf_ensemble_k05|studio_F1.wav": 0,
+    "amdf_ensemble_k09|studio_F1.wav": 0,
+    "praat7_filtered_v0.3|studio_M1.wav": 0,
+    "amdf_pitch_spectral_p170|studio_M1.wav": 0,
+    "amdf_ensemble_k01|studio_M1.wav": 0,
+    "amdf_ensemble_k03|studio_M1.wav": 0,
+    "amdf_ensemble_k05|studio_M1.wav": 0,
+    "amdf_ensemble_k09|studio_M1.wav": 0
+  },
+  "long_window_fallback_counts": {},
+  "registry_sha256": "98a7b163a7b3ed80b5ecfde2f6519860aca2813e20cec733b41357e0ed7bea38",
+  "code_sha256": {
+    "research_workbench_2026_10_07\\amdf_augmented_ensemble_controller.py": "b8699878a0e1b92fa1ca7c7a8c3d3f7a13e4635b08ccb1dd845d208677c65583",
+    "research_workbench_2026_10_07\\build_h46_augmentation.py": "e742d435c785384cdb33eeb39a6b05d7510401da15e58d48396ead5404092271",
+    "research_workbench_2026_10_07\\results\\H46_augmentation_manifest.json": "375d0727a5b76faa95efb35a9f361552144b3e83dfbea483e228c7ba05d48cd7",
+    "research_workbench_2026_10_07\\results\\H46_augmented_member_metrics.csv": "c9a7e3b32b520cf1281d41dd53e9361d11b29439312243f2436a0bca88a3e7d8",
+    "research_workbench_2026_10_07\\amdf_dual_window.py": "6c41ee0b6ec0078fdcae4a53ddcb2eada55e74dfce702ada2b2ac3883f0cce2d",
+    "research_workbench_2026_10_07\\praat_native_adapter.py": "70606c3b0fb4e51b12811a04274e652ebded68a4ff8e670a14678b7554514b14",
+    "research_workbench_2026_10_07\\amdf_augmented_ensemble.py": "22190b0d446285c9f1a60a1358a905a2b74432ef1764ac6d1bb645c923cccc18",
+    "research_workbench_2026_10_07\\amdf_anchor.py": "8dfa3fed10629e06d8df989cb680832a26c76f255b9deffa16a696a6554af51f",
+    "research_workbench_2026_10_07\\results\\H44_experiment.json": "025e03c7fd0311111f0d88abe46a8e6bac5d8fb7f96a1e0c12868d4b91ce43cb",
+    "research_workbench_2026_10_07\\results\\H44_spectral_verification.json": "dda6ba1fb63eacfd1b5c9b02a2165069be59930dbce8486216562b3dd3c3b845",
+    "research_workbench_2026_10_07\\results\\H44_raw_native_frames.csv": "030f5dcf6275f2ee324c9db909dcaa5f8c62f2bc191f980ef2835981ffea16b0",
+    "research_workbench_2026_10_07\\results\\H44_fixed_lofo.csv": "32aa18d9d2dc16ef5dd5a41ff3fef4be349959f7e16a3e3e1010025a36b62650",
+    "research_workbench_2026_10_07\\H44_REGISTRY.json": "f06f82fefd8cac43de6184fa2bc9bd3370aa3907249a3e407925f15e57727313",
+    "research_workbench_2026_10_07\\results\\H46_precheck.json": "f4a85777fb0e1bd2d2196376e5dc867c048ff574b94ef015e9d68398ded532ef",
+    "research_workbench_2026_10_07\\praat_extract_native.praat": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989",
+    "research_workbench_2026_10_07\\results\\sptk_native_provenance.json": "9f76f84cf896893f559c10273f0d87bb54d636046cf45aa3db9726dc2e0cd637",
+    "research_workbench_2026_10_07\\results\\praat_native_7002_provenance.json": "c2f2e4e71c80a659d953a61d11e42c02d8eb1fb68ec80f76ff688c2d9ea1225a",
+    "research_workbench_2026_10_07\\results\\praat_native_command_source.json": "af5aaf124de81b57e09576f3de436e17923bece446186252ccb0a55c83975afb",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_06\\audit.py": "3a66974f063ccc62f5c248cf0c3ddf85328ade64ff017ec3d885d1990aa28b8d",
+    "research_3gt_2026_10_05\\baselines\\AMDF.ipynb": "14b2d4c971571f37c01a1c504afc2f97ff4730920a0009034559a27fa3bee2fb",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_06\\estimator_experiment.py": "2465fac2a631c7f10bf293987a646e3579d2d3cefde2aa82f7df6351c45291b6"
+  },
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "new_native_calls": 12,
+  "augmentation_proof": {
+    "cases": [
+      {
+        "case_id": "phone_F1__white_snr30",
+        "origin_file": "phone_F1.wav",
+        "origin_group": "phone_F1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\phone_F1__white_snr30.wav",
+        "wav_sha256": "434cc6d89bf55dd749e9ffab8a85466037228bad4bb07cf9524a0ce018e2624f",
+        "source_wav_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+        "samples": 51840,
+        "fs": 16000,
+        "labels_source": "TinHieuHuanLuyen\\phone_F1.lab",
+        "labels_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab",
+        "stats_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 3350148179505186628,
+          "snr_db": 30,
+          "achieved_snr_db": 30.00000001488558,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\phone_F1__white_snr30.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "163020b0b8765baeffbec8495b7e2ecd5038181d0abfe079aef318dc46359675",
+          "native_frames": 320,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_phone_F1__white_snr30.npz",
+          "sha256": "1f9516bcdbf83521b36c5c1dad44bc18b94b076a9359f56ded1bebb9c5ead2eb"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_phone_F1__white_snr30.npz",
+            "sha256": "3936fde7911c754f5d0a76d33a3957ef6e9f56cc2a49c25ddc2f88e64acd40f9"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_phone_F1__white_snr30.npz",
+            "sha256": "5a64167a6496a51c6cd00bb6cbe714fe63a8d24c2b587e0e1ddd94a643d9b953"
+          }
+        }
+      },
+      {
+        "case_id": "phone_F1__white_snr20",
+        "origin_file": "phone_F1.wav",
+        "origin_group": "phone_F1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\phone_F1__white_snr20.wav",
+        "wav_sha256": "ed14c21595392e35d52ef90858548003303c946f73c9b1787c6a8f2d68821c9f",
+        "source_wav_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+        "samples": 51840,
+        "fs": 16000,
+        "labels_source": "TinHieuHuanLuyen\\phone_F1.lab",
+        "labels_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab",
+        "stats_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 16816571068630599529,
+          "snr_db": 20,
+          "achieved_snr_db": 19.99999999423482,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\phone_F1__white_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "b673f49b3bf475864df12462a23fa8df816aeccbc6d3f114a08c9fd910a6fecf",
+          "native_frames": 320,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_phone_F1__white_snr20.npz",
+          "sha256": "cc4ed025a8d39d76d50b4fb9e1b0f932036f142af479260c220b21ae9eeaeee5"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_phone_F1__white_snr20.npz",
+            "sha256": "f5d0913eda6d7e57f7cc64af259dd1a13d722b15a10efee72ef917bc30921400"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_phone_F1__white_snr20.npz",
+            "sha256": "3fe4a8a5172d51e459defae7f3ebbc8e90780cf5b2d93409e628c3fc3617c29c"
+          }
+        }
+      },
+      {
+        "case_id": "phone_F1__pink_snr20",
+        "origin_file": "phone_F1.wav",
+        "origin_group": "phone_F1.wav",
+        "kind": "pink",
+        "path": "augmentation\\H46_train\\phone_F1__pink_snr20.wav",
+        "wav_sha256": "5dbab538818318f85f2bcd3b1f71adc9c5ec060900394959e254f8dd490906fc",
+        "source_wav_sha256": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+        "samples": 51840,
+        "fs": 16000,
+        "labels_source": "TinHieuHuanLuyen\\phone_F1.lab",
+        "labels_sha256": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab",
+        "stats_sha256": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 16505627381215889398,
+          "snr_db": 20,
+          "achieved_snr_db": 20.000000005826397,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\phone_F1__pink_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "c95a4db80b88ac963421c51fb8add11c8b0946884e3fbfd1f4f4ad4c84112749",
+          "native_frames": 320,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_phone_F1__pink_snr20.npz",
+          "sha256": "93f69a1fe0e0d2b057a8eda7442ed6105c18a77586c29268a7562222b60715cc"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_phone_F1__pink_snr20.npz",
+            "sha256": "2ef9a148fcd48d7806407d23ab757367a50030580a610fc0141016661addc80b"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_phone_F1__pink_snr20.npz",
+            "sha256": "531765fdd911ac935b8c94a93a998301116a310dd033a49db4883336e033aaf6"
+          }
+        }
+      },
+      {
+        "case_id": "phone_M1__white_snr30",
+        "origin_file": "phone_M1.wav",
+        "origin_group": "phone_M1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\phone_M1__white_snr30.wav",
+        "wav_sha256": "e22d28b987cd4807dedeaa6c7fe71577dd2a619f4a00ba1b0c76c7ffd5ca3801",
+        "source_wav_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+        "samples": 66560,
+        "fs": 16000,
+        "labels_source": "TinHieuHuanLuyen\\phone_M1.lab",
+        "labels_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab",
+        "stats_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 15898121675883940788,
+          "snr_db": 30,
+          "achieved_snr_db": 29.99999998762012,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\phone_M1__white_snr30.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "f4c7f3f3454a7fa9ac61afd3814762826a0b82c6d8f89f19d74907eada1da35f",
+          "native_frames": 412,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_phone_M1__white_snr30.npz",
+          "sha256": "18811c3a7c4d8b4d714bfdb3086e79478a330470d0cdc4ab0977b0ca64192f5a"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_phone_M1__white_snr30.npz",
+            "sha256": "a244269c885d8fabaabe42a201e653b0512477c93206718d2c15f7730432c91e"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_phone_M1__white_snr30.npz",
+            "sha256": "f759a3c7f365de1011404d8af5aa699e066f1f05b63dc3d6c0235866ec260c6a"
+          }
+        }
+      },
+      {
+        "case_id": "phone_M1__white_snr20",
+        "origin_file": "phone_M1.wav",
+        "origin_group": "phone_M1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\phone_M1__white_snr20.wav",
+        "wav_sha256": "5357822352aada58347b2931f954124a03c8b9dd9f6981b41346f73c7e5ab42d",
+        "source_wav_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+        "samples": 66560,
+        "fs": 16000,
+        "labels_source": "TinHieuHuanLuyen\\phone_M1.lab",
+        "labels_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab",
+        "stats_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 3362651409151009324,
+          "snr_db": 20,
+          "achieved_snr_db": 20.00000001437952,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\phone_M1__white_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "9ac10aaed87a7626490c7949584114d24b54e1c298e240df947b83ee3f216563",
+          "native_frames": 412,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_phone_M1__white_snr20.npz",
+          "sha256": "e4541d0fb94dba5bbd13062c52a0feab7fe02e22c425bd72f6be94b4e8b918c9"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_phone_M1__white_snr20.npz",
+            "sha256": "ac408dbd3c701bbccd5acb201cbcb3891412038f447d109a0518dd66f3fbbf33"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_phone_M1__white_snr20.npz",
+            "sha256": "01764edbdf0467e3b1db1c7653c2ab3cd28b474e02182c879f43af97e4cdc991"
+          }
+        }
+      },
+      {
+        "case_id": "phone_M1__pink_snr20",
+        "origin_file": "phone_M1.wav",
+        "origin_group": "phone_M1.wav",
+        "kind": "pink",
+        "path": "augmentation\\H46_train\\phone_M1__pink_snr20.wav",
+        "wav_sha256": "50291b16f178c6252e29bd9fe854952ec282dbd25fa1ee7cd82bd1f9c32f4160",
+        "source_wav_sha256": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+        "samples": 66560,
+        "fs": 16000,
+        "labels_source": "TinHieuHuanLuyen\\phone_M1.lab",
+        "labels_sha256": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab",
+        "stats_sha256": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 17126106122204198443,
+          "snr_db": 20,
+          "achieved_snr_db": 19.999999996021632,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\phone_M1__pink_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "fcdf85f85040692b69ac48e3417ee0b11824284a6076d4d83516cd30d334be0c",
+          "native_frames": 412,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_phone_M1__pink_snr20.npz",
+          "sha256": "23dea3d17494257f118595560696a79c3fb1a728eb1b71d554bcc52310f67cc1"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_phone_M1__pink_snr20.npz",
+            "sha256": "72cde86ec437bd31936b57d71297f419d12109217dc602377136441a9040cd25"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_phone_M1__pink_snr20.npz",
+            "sha256": "d9748a2413b3841a342ef016efc22a30d19cfe1b14702a64aff804a036fe3bca"
+          }
+        }
+      },
+      {
+        "case_id": "studio_F1__white_snr30",
+        "origin_file": "studio_F1.wav",
+        "origin_group": "studio_F1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\studio_F1__white_snr30.wav",
+        "wav_sha256": "0349e11060ecc2258bfd9fb76bd92528ba0ce72b577a895be460995f0bd92495",
+        "source_wav_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+        "samples": 126267,
+        "fs": 44100,
+        "labels_source": "TinHieuHuanLuyen\\studio_F1.lab",
+        "labels_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab",
+        "stats_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 11508508311241822263,
+          "snr_db": 30,
+          "achieved_snr_db": 29.999999993334757,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\studio_F1__white_snr30.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "1bffa0935ab55c2f8461085bff427d72549d875514b4563985df0751b1afe542",
+          "native_frames": 283,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_studio_F1__white_snr30.npz",
+          "sha256": "f8b32eea4b0646c9a3b22715fe0d45f6734a401194ba875130535038aa7bf5f3"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_studio_F1__white_snr30.npz",
+            "sha256": "bc7548176b335bed232a86af58072f233da7048f88fc0e9ca49f9e332e6f427a"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_studio_F1__white_snr30.npz",
+            "sha256": "07fffc2ea72eeb954a2f5d48b3bafaf4d6b435563051c2f552008726d0789112"
+          }
+        }
+      },
+      {
+        "case_id": "studio_F1__white_snr20",
+        "origin_file": "studio_F1.wav",
+        "origin_group": "studio_F1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\studio_F1__white_snr20.wav",
+        "wav_sha256": "73ee30dae570383b626d0e306287a12bcec57babc220d09bb609d6eac1681357",
+        "source_wav_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+        "samples": 126267,
+        "fs": 44100,
+        "labels_source": "TinHieuHuanLuyen\\studio_F1.lab",
+        "labels_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab",
+        "stats_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 8374675305395263783,
+          "snr_db": 20,
+          "achieved_snr_db": 20.000000005802654,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\studio_F1__white_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "1bdf7250e557c811896afb245558ae7ec02e499d9b3d19b6af9b4aa756ecd923",
+          "native_frames": 283,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_studio_F1__white_snr20.npz",
+          "sha256": "9fbe70ec4ca7498322c2e3d01be359c6c04842c46544e8a6095e3ceecc30a925"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_studio_F1__white_snr20.npz",
+            "sha256": "a9f116d9dc1e6bbe97ff38c68ce66d3a745858bd3f4e06b8fd09fba37b263335"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_studio_F1__white_snr20.npz",
+            "sha256": "66ce1bed5c04a11986ded1e5aa92a076e8d1c705295667c5d1422d2c991f595b"
+          }
+        }
+      },
+      {
+        "case_id": "studio_F1__pink_snr20",
+        "origin_file": "studio_F1.wav",
+        "origin_group": "studio_F1.wav",
+        "kind": "pink",
+        "path": "augmentation\\H46_train\\studio_F1__pink_snr20.wav",
+        "wav_sha256": "183fa648360769deb53e9e11272e44fb737424de088ffed36ef7614edec60027",
+        "source_wav_sha256": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+        "samples": 126267,
+        "fs": 44100,
+        "labels_source": "TinHieuHuanLuyen\\studio_F1.lab",
+        "labels_sha256": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab",
+        "stats_sha256": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 2042138109598377333,
+          "snr_db": 20,
+          "achieved_snr_db": 19.99999999142653,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\studio_F1__pink_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "0a5b8016a9501234de28ee0992cf34e7c363503bc271c22d5797260c211a0ce5",
+          "native_frames": 283,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_studio_F1__pink_snr20.npz",
+          "sha256": "71f11e2f605badc134ed40ac09c2364f0ed6a0f8c1567509a7325d625bf1be2d"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_studio_F1__pink_snr20.npz",
+            "sha256": "0cce5dfa085c5bee5121c7e95d5ea75d9a354f2f2a69b6e55604d3355dada03c"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_studio_F1__pink_snr20.npz",
+            "sha256": "ecf6d543edb0f88d97ff5708e868b8e04dfc16e6097e988dff4a3523b758bb8c"
+          }
+        }
+      },
+      {
+        "case_id": "studio_M1__white_snr30",
+        "origin_file": "studio_M1.wav",
+        "origin_group": "studio_M1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\studio_M1__white_snr30.wav",
+        "wav_sha256": "e3e6071911a9e52bd11fc84de3656929ccb010f61a31ab5614021e4f57631bc3",
+        "source_wav_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+        "samples": 120400,
+        "fs": 44100,
+        "labels_source": "TinHieuHuanLuyen\\studio_M1.lab",
+        "labels_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab",
+        "stats_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 4567832096455763029,
+          "snr_db": 30,
+          "achieved_snr_db": 30.000000008939235,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\studio_M1__white_snr30.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "7717f6d107ae61f05e9f65df333a844bd27c5eee48b1f1369714ed01cfc5c2bf",
+          "native_frames": 269,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_studio_M1__white_snr30.npz",
+          "sha256": "e79ff4a8083c4c6bcff07ebac457c3ead4ac4d0edd8397e06736799c477474ff"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_studio_M1__white_snr30.npz",
+            "sha256": "6e1e0a881f5a79bd5269c8964d639671ddc3be383520eb6db42df8242ee23694"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_studio_M1__white_snr30.npz",
+            "sha256": "34e7be1241706296098f162500a3d5dcc4c5b6c0cfcd040e6b958738ca17bda6"
+          }
+        }
+      },
+      {
+        "case_id": "studio_M1__white_snr20",
+        "origin_file": "studio_M1.wav",
+        "origin_group": "studio_M1.wav",
+        "kind": "white",
+        "path": "augmentation\\H46_train\\studio_M1__white_snr20.wav",
+        "wav_sha256": "fdb24a2a452aeec41b3243e467ce7bfde600ccd561a80a50843d3cd10d69e914",
+        "source_wav_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+        "samples": 120400,
+        "fs": 44100,
+        "labels_source": "TinHieuHuanLuyen\\studio_M1.lab",
+        "labels_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab",
+        "stats_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 6511082341685464224,
+          "snr_db": 20,
+          "achieved_snr_db": 19.999999999273392,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\studio_M1__white_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "2a31f8663da3417fb97165d97ac1d1c4bd800acc9c0255f5c38cf521e432f0d1",
+          "native_frames": 269,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_studio_M1__white_snr20.npz",
+          "sha256": "1b18e8a2fa7cd6e8bde168d8eef877fbcdf0e5bff7958b8a7d02cefbd00ce048"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_studio_M1__white_snr20.npz",
+            "sha256": "22e11c3480aff5d04b7b291e6714d8d68d47f5760a339e2fda76074da319ea9c"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_studio_M1__white_snr20.npz",
+            "sha256": "1ea94434b5a656477822d3cf5b41788879d4e50c33f4f5995ed2a561d5823011"
+          }
+        }
+      },
+      {
+        "case_id": "studio_M1__pink_snr20",
+        "origin_file": "studio_M1.wav",
+        "origin_group": "studio_M1.wav",
+        "kind": "pink",
+        "path": "augmentation\\H46_train\\studio_M1__pink_snr20.wav",
+        "wav_sha256": "2bf5dc32cdb62e8d23fd7ded0611e6ede5462ed2c3c2f6163e52b7f9c65334bc",
+        "source_wav_sha256": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+        "samples": 120400,
+        "fs": 44100,
+        "labels_source": "TinHieuHuanLuyen\\studio_M1.lab",
+        "labels_sha256": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+        "stats_source": "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab",
+        "stats_sha256": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+        "inherited_reference": true,
+        "transformation": {
+          "seed": 5342067036555281214,
+          "snr_db": 20,
+          "achieved_snr_db": 20.00000000755305,
+          "common_gain": 1.0,
+          "snr_definition": "whole original waveform RMS versus injected noise; not speech-only clean SNR"
+        },
+        "native_call": {
+          "command": [
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.bt2-tools\\praat-7.0.02\\Praat.exe",
+            "--run",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\praat_extract_native.praat",
+            "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\augmentation\\H46_train\\studio_M1__pink_snr20.wav",
+            "filtered",
+            "0.3"
+          ],
+          "returncode": 0,
+          "stderr": "",
+          "stdout_sha256": "ceafe140a4a83d2cb6ce142b5e404726a71e0ebe27992f4b6f54c0f867397048",
+          "native_frames": 269,
+          "transport": "stdout; UTF-16LE detected when needed; no FULL-TRUST",
+          "exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4",
+          "script_sha256": "950333ca885d91d8cd75ddc5dc5a49711a13c02bbb00a771e09f49d764ee4989"
+        },
+        "features": {
+          "path": "results\\H46_aug_features_studio_M1__pink_snr20.npz",
+          "sha256": "de404213baadb58085f63eef8717bb9979a61001c42a86a0384cb986d0add936"
+        },
+        "curves": {
+          "25": {
+            "path": "results\\H46_curves_w25_studio_M1__pink_snr20.npz",
+            "sha256": "c271292fbce9c438869441760a677100a2d500d5743ddae80149bab4da515f90"
+          },
+          "40": {
+            "path": "results\\H46_curves_w40_studio_M1__pink_snr20.npz",
+            "sha256": "4cfd4691d957b3255dc6bbf14a9d930b5713345a7e544c57d27b8b9ae3b3a01f"
+          }
+        }
+      }
+    ],
+    "origins": 4,
+    "augmented_files": 12,
+    "native_calls": 12,
+    "variant_count_per_origin": 3,
+    "clean_reference_policy": "Inherited V/UV/SIL and file mean/std/count are assumed latent targets under added noise; not newly measured ground truth",
+    "samples_are_independent": false,
+    "fit_group_key": "origin_file",
+    "test_used": false,
+    "metrics_sha256": "c9a7e3b32b520cf1281d41dd53e9361d11b29439312243f2436a0bca88a3e7d8",
+    "generator_sha256": "e742d435c785384cdb33eeb39a6b05d7510401da15e58d48396ead5404092271"
+  },
+  "historical_source_groups": 4,
+  "wall_time_s": 95.97091040000032,
+  "completed_utc": "2026-10-07T09:02:57.622334+00:00",
+  "selection_objective": "minimize worst-file Average MAPE, then mean, then id",
+  "goal_all_nested_files_le_2": false,
+  "train_only": true,
+  "baseline_reproduced": true,
+  "poisoned_gt_inference_invariant": true,
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "praat": "7.0.02",
+    "native_exe_sha256": "22c8994fd9767a2a5c1f03f21b35e41bb5ac716c628965e5d437033eeda8fff4"
+  }
+}

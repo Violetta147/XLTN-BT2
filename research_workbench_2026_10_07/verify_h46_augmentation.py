@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 
@@ -37,6 +38,17 @@ def main():
         assert raw.dtype == np.float32 and np.isfinite(raw).all() and abs(raw).max() < 1
         original = original.astype(np.float64) / 32768
         audio = raw.astype(np.float64)
+        expected_seed = int(hashlib.sha256(f"H46|{origin}|{case['kind']}|{case['transformation']['snr_db']}".encode()).hexdigest()[:16], 16)
+        assert case['transformation']['seed'] == expected_seed
+        noise = np.random.default_rng(expected_seed).normal(size=len(original))
+        if case['kind'] == 'pink':
+            spectrum = np.fft.rfft(noise) / np.sqrt(np.maximum(np.arange(len(np.fft.rfft(noise))), 1))
+            spectrum[0] = 0
+            noise = np.fft.irfft(spectrum, n=len(original))
+        noise -= noise.mean()
+        noise *= np.linalg.norm(original) / np.linalg.norm(noise) * 10 ** (-case['transformation']['snr_db'] / 20)
+        expected_waveform = ((original + noise) * case['transformation']['common_gain']).astype(np.float32)
+        assert np.array_equal(raw, expected_waveform)
         perturbation = audio / case['transformation']['common_gain'] - original
         achieved = 20 * np.log10(np.linalg.norm(original) / np.linalg.norm(perturbation))
         assert abs(achieved - case['transformation']['snr_db']) < 1e-4

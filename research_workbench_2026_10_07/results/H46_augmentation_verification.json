@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "augmented_wav_checks": 12,
+  "origin_groups": 4,
+  "member_metric_checks": 108,
+  "curve_rows_recomputed": 3518,
+  "latent_reference_assumption": true,
+  "no_test_audio": true,
+  "manifest_sha256": "375d0727a5b76faa95efb35a9f361552144b3e83dfbea483e228c7ba05d48cd7",
+  "verifier_sha256": "82631e43828e7213d46187806f02bc0fef993600edc09211b35d46adf157ff50"
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "Summary Markdown rendering after completed H46 experiment",
+  "exception": "ImportError: tabulate is not installed",
+  "correction": "Render the four-row Markdown table directly without optional dependency",
+  "changed_model_or_metrics": false,
+  "benchmark_rerun": false
+}

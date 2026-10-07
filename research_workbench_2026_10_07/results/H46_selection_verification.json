@@ -1,0 +1,16 @@
+{
+  "family": "H46",
+  "selection_replayed": true,
+  "fits_checked": 104,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": true,
+    "lofo_mape_relative_5_percent": true,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": true
+  },
+  "verifier_sha256": "f5e949111dca85608eaf08ea9c750040a7c94405d967c4ce8d1c2a355631c3c0"
+}

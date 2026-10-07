@@ -1,0 +1,11 @@
+{
+  "family": "H46",
+  "fits_replayed": 104,
+  "metric_rows_recomputed": 144,
+  "aggregation_verification": "product and kth-root; independent from log2 mean",
+  "membership_fit_pool_only": true,
+  "new_native_calls": 12,
+  "target_met": false,
+  "experiment_sha256": "2465e0f52c565a2e2ff266f76b4e995b7d8a9a2f3cc3a58c542a68b69d89bea4",
+  "verifier_sha256": "453181c497d26b444922a659210cc174f335f1b884345722ea3b9a8230acdeec"
+}

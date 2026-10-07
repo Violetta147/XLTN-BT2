@@ -29,7 +29,7 @@ Verifier đã đối chiếu 144 inner traces/152 fit logs/36 fixed groups, 1176
 
 ## Câu hỏi gần nhất: kiểm tra chất lượng dataset
 
-Ưu tiên mới: H45 ensemble clean đã đo/verify, studio_M1 nested2.225623% vẫnFAIL, támgatePASS. Người dùng yêu cầu thử augmentation; giữ H45 cleancontrol và chốt riêng H46 augmented-fit trước đo. Không làm bài phân đoạn mới trước khi hoàn thiện cải thiện BT2. Bản augment phải cùng origin group, không xem như speaker mới; không pitch/time warp với GT hiện có.
+Ưu tiên mới: H45 ensemble clean và H46 augmented-fit đã đo/verify. H46 tạo12noisevariants từ4train, chia theoorigin; nhãn/statistics kế thừa làlatent targets, khôngGTmới. Nested scores không đổi soH45, studio_M1 2.225623% vẫnFAIL, támgatePASS. Đọc AUGMENTATION_RESULT.md và STATE phầncuối; không chạy lại H44/H45/H46. Không làm bài phân đoạn mới trước khi hoàn thiện cải thiện BT2. Hướng augmented-fitvoicing hoặc hypothesis khác cầnregistry riêng trướcđo, chưa triển khai/đo.
 
 Đã có audit thực: 8 WAV/16 LAB, tổng 26.124694s; WAV giải mã được/mẫu hữu hạn; không mẫu chạm rail hoặc ≥99% full scale; nhãn không lỗi parse/bounds/gap/overlap; một số đuôi ngắn chưa phủ nhãn. Không thấy duplicate byte/native PCM giữa các cặp. Những kiểm tra này không chứng nhận nhãn ngữ âm hoặc F0 đúng.
 
@@ -45,4 +45,4 @@ Hai nguồn thống kê F0 có giá trị khác nhau và chưa đủ quy trình 
 
 ## Prompt ngắn để dán vào chat mới
 
-> Làm việc trong XLTN/XLTN-BT2, nhánh codex/train-mape-investigation. Đọc AGENTS.md, START_NEXT_CHAT.md và phần mới nhất của research_workbench_2026_10_07/STATE.md trước. Không chạy lại thí nghiệm đã hoàn tất. Trước tiên giải thích kết quả kiểm tra chất lượng dataset từ DATASET_QUALITY_REPORT.md. H44 mới có bản nháp/synthetic precheck, chưa đăng ký hoặc chạy BT2. Chỉ tiếp tục thí nghiệm khi tôi yêu cầu; giữ giới hạn local/no Drive/no deep learning/no PDF/no tự retry Jev.
+> Làm việc trong XLTN/XLTN-BT2, nhánh codex/train-mape-investigation. Ưu tiên cải thiện BT2 trước, bài phân đoạn mới làm sau. Đọc AGENTS.md, START_NEXT_CHAT.md, STATE phầncuối và AUGMENTATION_RESULT.md. H44/H45/H46 đã đo/verify, khôngrerun; H46noiseaugmentation chưa đổi cleanheldscores, studio_M1nested2.225623% vẫn trên2%, támgatePASS. Giữoriginal/frozen/GT, khôngtune test hoặccoibảnaug lànguồnđộclập. Giảthuyết mới phảipreregister/push/remoteverify trướcđo; khôngDrive/DL/PDF/Jevretry.
