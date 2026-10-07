@@ -24,8 +24,11 @@ def verify(family, baseline):
                      and new['macro_f1'] >= base['macro_f1'] - .01
                      and new['recall_v'] >= base['recall_v'] - .01
                      and new['false_voiced_sil'] <= base['false_voiced_sil'] + 1)
-            ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
-        assert min(ranking)[2] == selection['option']['id']
+            if family == 'H25':
+                ranking.append((not valid, float(table.average_mape.max()) if valid else float('inf'), new['average_mape'] if valid else float('inf'), identity))
+            else:
+                ranking.append((not valid, new['average_mape'] if valid else float('inf'), identity))
+        assert min(ranking)[-1] == selection['option']['id']
     metrics = pd.read_csv(HERE / f'results/{family}_metrics.csv')
     s = {(model, split): summary(table) for (model, split), table in metrics.groupby(['model', 'split'])}
     before = metrics[(metrics.split == 'nested') & (metrics.model == 'accepted')].set_index('file')

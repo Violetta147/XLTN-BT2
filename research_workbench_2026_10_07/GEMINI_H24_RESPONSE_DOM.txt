@@ -1,0 +1,109 @@
+  - heading "Gemini đã nói" [level=6]
+  - paragraph: 1. Phản biện tính khả thi và Metric Mismatch
+  - list:
+    - paragraph: "Metric Mismatch: Sự chênh lệch giữa LAB V canonical (153/244/123/94) và F0 num GT (148/232/127/82) cho thấy có những frame thuộc đoạn hữu thanh (Voiced) nhưng không chứa F0 hợp lệ (ví dụ: phụ âm xát vòm, âm chuyển tiếp, hoặc nhiễu nội tại)."
+    - paragraph: "Tính khả thi (Mục tiêu ≤2%): Việc ép countMAPE từ 9.91% (phoneM1) xuống ≤2% thuần túy dựa trên tham số file-level là cực kỳ rủi ro. Thiếu GT F0 theo từng timestamp (frame-level), thuật toán buộc phải học cách đánh rơi/nhặt bừa các frame ngoại lai (outliers) để triệt tiêu sai số toán học cho file-level mean/std/count. Quá trình này sẽ làm hỏng hình thái vật lý (contour) của chuỗi F0. Tôi không đảm bảo mục tiêu ≤2% cho mỗi file là khả thi hoặc mang lại ý nghĩa thực tế. Không nên coi pseudo-metrics (file-level stats) là \"chân lý\" (truth) tuyệt đối."
+  - paragraph: 2. Đề xuất 3 giả thuyết hẹp (Classical AMDF)
+  - paragraph: "Lưu ý: Center clipping và ZCR không được sử dụng lại."
+  - paragraph: "Giả thuyết 26 (H26): Pre-emphasis Filter trước AMDF (Cải thiện Pitch)"
+  - list:
+    - paragraph: "Cơ chế: Phổ của giọng nói bị chi phối bởi năng lượng dải thấp (formant F1), làm các thung lũng (dip) thực sự của F0 trong AMDF bị mờ nhạt, dễ dẫn đến lỗi octave (nhảy quãng 8). Áp dụng bộ lọc FIR đơn giản để làm phẳng phổ trước khi tính hiệu số sẽ làm đáy AMDF sắc nét hơn."
+    - paragraph:
+      - text: "Công thức: Tín hiệu đầu vào mới:"
+      - generic: y[n] =
+      - generic: x[n] −
+      - generic: α ⋅
+      - generic: x[n −
+      - generic: 1]
+      - text: . Tính AMDF trên
+      - generic: y[n]
+      - text: .
+    - paragraph:
+      - text: "Prior grid: Hệ số"
+      - generic: α ∈
+      - generic: "{0.93, 0.95, 0.97}"
+      - text: .
+    - paragraph: "Failure gate: Hủy bỏ nội bộ (inner fold) nếu minimax fileMAPE tăng cao hơn đỉnh 8.89% của H24, hoặc recall giảm quá 0.01 so với baseline."
+  - paragraph: "Giả thuyết 27 (H27): Bổ sung AMDF Dip Ratio (Cải thiện Voicing/Count)"
+  - list:
+    - paragraph:
+      - text: "Cơ chế: Thay vì chỉ dựa vào AMDF score tuyệt đối hay năng lượng thô dễ bị chao đảo giữa các file phone/studio, hãy dùng tỷ lệ chuẩn hóa. Tỷ lệ giữa đáy sâu nhất của AMDF tại chu kỳ"
+      - generic: τ
+      - text: tìm được so với giá trị cực đại của AMDF (thường ở độ trễ 0) phản ánh chính xác độ tuần hoàn của tín hiệu, độc lập với biên độ.
+    - paragraph:
+      - text: "Công thức: Tính Feature mới"
+      - text: R
+      - generic: dip
+      - text: =
+      - generic: max
+      - text: (AMDF)
+      - text: AMDF(
+      - text: τ
+      - generic: opt
+      - text: )
+      - text: . Kết hợp ngưỡng này làm feature thứ 3 cho bộ phân loại hoặc dùng làm hard-gate.
+    - paragraph:
+      - text: "Prior grid: Ngưỡng cứng"
+      - text: θ
+      - generic: dip
+      - text: ∈
+      - generic: "{0.3, 0.4, 0.5}"
+      - text: (Voiced nếu
+      - text: R
+      - generic: dip
+      - text: <
+      - text: θ
+      - generic: dip
+      - text: ).
+    - paragraph: "Failure gate: Hủy nếu countMAPE của các file (đặc biệt studioF1 đang 9.44%) không cải thiện, hoặc số lượng false positive trên đoạn SIL tăng > 1."
+  - paragraph: "Giả thuyết 28 (H28): Feature-level Median Smoothing cho Logistic 2D (Ổn định ranh giới)"
+  - list:
+    - paragraph: "Cơ chế: Ở H25, hàm Logistic chạy độc lập trên từng frame. Do tín hiệu thực tế có tính không cố định, chuỗi xác suất sẽ bị chớp tắt (fluctuations) tại ranh giới, làm \"vỡ vụn\" các đoạn Voiced liền mạch và làm countMAPE vọt lên. Lọc trung vị các đặc trưng (AMDF score, relRMS) trước khi đưa vào hàm Logistic sẽ ép quỹ đạo ra quyết định mượt mà hơn."
+    - paragraph:
+      - text: "Công thức:"
+      - text: Featur
+      - text: e
+      - generic: i
+      - generic: ′
+      - text: "[n] ="
+      - generic: Median
+      - text: (Featur
+      - text: e
+      - generic: i
+      - text: "[n −"
+      - generic: k, ..., n +
+      - generic: k])
+      - text: . Đưa
+      - text: Featur
+      - text: e
+      - generic: ′
+      - text: vào Logistic 2D thay vì feature thô.
+    - paragraph:
+      - text: "Prior grid: Cửa sổ trung vị"
+      - generic: k ∈
+      - generic: "{3, 5}"
+      - text: frame.
+    - paragraph: "Failure gate: Bỏ qua nếu F1-score của nhãn Voiced bị sụt giảm > 0.01 (do làm nhòe ranh giới quá đà) hoặc countMAPE không cải thiện so với base H25."
+  - button "Câu trả lời tốt":
+    - img: thumb_up
+  - button "Câu trả lời không tốt":
+    - img: thumb_down
+  - button "Khôi phục":
+    - img: refresh
+  - button "Sao chép":
+    - img: copy
+  - button "Hiện thêm tuỳ chọn":
+    - img: more_horiz
+  - textbox "Nhập câu lệnh cho Gemini" [active]:
+    - text: Hỏi Gemini
+    - paragraph
+  - button "Nội dung tải lên và công cụ":
+    - img: plus
+  - button "Mở công cụ chọn chế độ, hiện tại là Pro Mở rộng":
+    - generic: Pro
+    - generic: Mở rộng
+    - img: keyboard_arrow_down
+  - button "Nhập bằng giọng nói (^⇧D)":
+    - img: mic
+  - paragraph: Gemini là một AI và có thể mắc sai sót.
+- generic: Refining Feature Processing

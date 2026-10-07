@@ -1,0 +1,13 @@
+{
+  "source_sha256": "91a7c1d3ee84976179b68da3addde5f827a556009b079468d170cd22328c8de8",
+  "train_only": true,
+  "voicing_partition_and_saved_TP_verified": true,
+  "baseline_config_sha256": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+  "data_sha256": {
+    "phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78"
+  },
+  "interpretation": "Algorithm gate attribution only; not a cause of teacher F0num versus segment label mismatch."
+}

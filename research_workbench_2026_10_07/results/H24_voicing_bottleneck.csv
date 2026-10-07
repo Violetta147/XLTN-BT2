@@ -1,0 +1,5 @@
+file,pitch_threshold,energy_threshold,V,V_rejected_pitch_only,V_rejected_energy_only,V_rejected_both,V_pass,canonical_V_minus_GTcount
+phone_F1.wav,0.4096917277020603,0.05466060583995211,153,13,0,1,139,5
+phone_M1.wav,0.40830540776511665,0.05773046922547663,244,40,0,1,203,12
+studio_F1.wav,0.41622733555156766,0.06683658871639932,123,5,2,1,115,-4
+studio_M1.wav,0.41373072127314126,0.061544615883604575,94,11,4,1,78,12

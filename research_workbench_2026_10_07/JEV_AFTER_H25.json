@@ -1,0 +1,70 @@
+{
+  "purpose": "Prospective shortlist review after H25; not arithmetic or permission",
+  "calls": 1,
+  "input": {
+    "task": "Chọn một thí nghiệm tiếp theo có ích nhất cho mục tiêu mỗi file Average MAPE(mean,std,count)≤2%, cân bằng bằng chứng và khả năng cô lập cơ chế, không bảo đảm đạt. Evidence E1: H24 AMDF gate25ms/pitch40ms aligned centers, rawenergygate/pathjump.35/range70–400. FixedLOFO fileMAPE phoneF1/M1/studioF1/M1=8.8999/4.3584/4.5456/5.0827; stdMAPE22.3137/2.9038/3.5769/9.0430; countMAPE3.3784/9.9138/9.4488/4.8780. Gatepass vs originalAMDF25, V/UV/countunchanged. E2: H25 AMDF LR2D(score,relativeRMS), C.1/1/10, probability.5, fixedpitchH24: minimaxfinalselectionchoosescontrol; nested5.6291 vsfixedcontrol5.7216 but phoneF1std worse, failureskept. LRfixedC1 phoneF1/M1/studioF1/M1 AvgMAPE9.8560/4.4957/4.1706/3.7565, count140/208/117/82 vsGT148/232/127/82. E3: LABstatisticsnotframeF0truth; Vsegmentcanonicalcounts153/244/123/94 differGTcount. Causeunknown, don'ttrim/keepframebyheldGT. Only4trainfiles, testseenhistorynotallowedtune, registry/gatesbeforemeasurement, noDL/noDrive. E4: Gemini proposedpreemphasis,dipratio,featuremedian; causalclaimsnotmeasured. CurrentNAMDFalreadyamplitudenormalized andAMDF(0)=0, so dipratio 'maxat0'wrong. Optionnone ifnoneisuseful. Allmethodsbelow exploratory, outerheldexcludedeveryfitselection; callerhasnotchosennextdirection.",
+    "options": [
+      {
+        "id": "pitch_preemphasis",
+        "description": "Isolate pitch candidate preprocessing: raw vs firstorderFIR y[n]=x[n]-alpha*x[n-1] at40ms samecenters, alpha=exp(-2pi*fc/fs),fc70/150Hz to keep comparable physicalresponse across16k/44.1k. KeeprawAMDF25decisionandRMS,path unchanged. CouldreducephoneF1std; cannot alonefixcount bottleneck. Small3option minmaxnested."
+      },
+      {
+        "id": "joint_periodicity_voicing",
+        "description": "Train classical LR adding existingACF25periodicityscore to AMDF25score/relativeRMS. KeepH24pitchcandidates andenergygate. FrozenC1 withrawcontrol, nestedminmax. CouldcapturemissedV/usecomplementaryperiodicity, but priorACFstudieshadmixedresults, labelcountprotocolstillunclear. Isolate onefeatureaxis."
+      },
+      {
+        "id": "feature_median",
+        "description": "Isolate temporal smoothingof AMDFscore+relativeRMS beforeH25LR fixedC1. Raw/window3/window5, reflectedges, same smoothingforfitandheld, rawenergygate unchanged. Couldreduceflicker; currentlogsnotyetmeasureflicker, mightblurtransitions andphonesmallamplitudes. Couldrunframediagnostics first."
+      },
+      {
+        "id": "none",
+        "description": "No shortlist method has enough expected usefulness; retainmeasurementsandinspectmoreevidence. This is a valid option."
+      }
+    ]
+  },
+  "raw_output": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"requestId\":\"d782c6ab-5a86-41b5-9e0b-ed06a074bd4e\",\"check\":\"select\",\"result\":{\"choice\":{\"id\":\"none\",\"probability\":0.35},\"none\":0.05,\"fits\":[{\"id\":\"pitch_preemphasis\",\"probability\":0.67},{\"id\":\"joint_periodicity_voicing\",\"probability\":0.63},{\"id\":\"feature_median\",\"probability\":0.59},{\"id\":\"none\",\"probability\":0.65}]},\"meta\":{\"model\":\"vercel:typesafe-ai/jev\",\"calls\":1,\"inputTokens\":2564,\"outputTokens\":130,\"cached\":false,\"latencyMs\":358}}"
+      }
+    ],
+    "structuredContent": {
+      "requestId": "d782c6ab-5a86-41b5-9e0b-ed06a074bd4e",
+      "check": "select",
+      "result": {
+        "choice": {
+          "id": "none",
+          "probability": 0.35
+        },
+        "none": 0.05,
+        "fits": [
+          {
+            "id": "pitch_preemphasis",
+            "probability": 0.67
+          },
+          {
+            "id": "joint_periodicity_voicing",
+            "probability": 0.63
+          },
+          {
+            "id": "feature_median",
+            "probability": 0.59
+          },
+          {
+            "id": "none",
+            "probability": 0.65
+          }
+        ]
+      },
+      "meta": {
+        "model": "vercel:typesafe-ai/jev",
+        "calls": 1,
+        "inputTokens": 2564,
+        "outputTokens": 130,
+        "cached": false,
+        "latencyMs": 358
+      }
+    }
+  }
+}

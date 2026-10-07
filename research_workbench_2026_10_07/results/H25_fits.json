@@ -1,0 +1,2028 @@
+{
+  "fits": [
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4096917277020603,
+        "energy_threshold": 0.05466060583995211
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40830540776511665,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41622733555156766,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41373072127314126,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4096917277020603,
+        "energy_threshold": 0.05466060583995211
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.4011154821523098,
+          0.42284559288679313
+        ],
+        "scale": [
+          0.20278465455025096,
+          0.35393618272124466
+        ],
+        "coefficient": [
+          -2.1798193257213034,
+          0.8082558167392475
+        ],
+        "intercept": 0.21573590056340994
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40830540776511665,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.39362258166673764,
+          0.4059991085311104
+        ],
+        "scale": [
+          0.2135948027094203,
+          0.3614151226658188
+        ],
+        "coefficient": [
+          -2.0821986863615924,
+          0.8971821162103614
+        ],
+        "intercept": 0.249933765545268
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41622733555156766,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.3999262821639228,
+          0.3674189546005534
+        ],
+        "scale": [
+          0.19969548634370812,
+          0.34597873599765094
+        ],
+        "coefficient": [
+          -2.1686826438338884,
+          0.8655349670395697
+        ],
+        "intercept": 0.2847994659162712
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41373072127314126,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.3910825777660982,
+          0.3761208398996388
+        ],
+        "scale": [
+          0.20826354839487896,
+          0.33609176316637485
+        ],
+        "coefficient": [
+          -2.3205838038930953,
+          0.8333886866652971
+        ],
+        "intercept": 0.33609185100548017
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4096917277020603,
+        "energy_threshold": 0.05466060583995211
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.4011154821523098,
+          0.42284559288679313
+        ],
+        "scale": [
+          0.20278465455025096,
+          0.35393618272124466
+        ],
+        "coefficient": [
+          -3.1623539706202943,
+          1.037044771265678
+        ],
+        "intercept": 0.43530602534077845
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40830540776511665,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.39362258166673764,
+          0.4059991085311104
+        ],
+        "scale": [
+          0.2135948027094203,
+          0.3614151226658188
+        ],
+        "coefficient": [
+          -3.258814512695013,
+          1.1491525883597906
+        ],
+        "intercept": 0.5392765991599264
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41622733555156766,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.3999262821639228,
+          0.3674189546005534
+        ],
+        "scale": [
+          0.19969548634370812,
+          0.34597873599765094
+        ],
+        "coefficient": [
+          -3.036006557108773,
+          1.0890414449714114
+        ],
+        "intercept": 0.5189224408892394
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41373072127314126,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.3910825777660982,
+          0.3761208398996388
+        ],
+        "scale": [
+          0.20826354839487896,
+          0.33609176316637485
+        ],
+        "coefficient": [
+          -3.398584965387277,
+          1.0481892435433773
+        ],
+        "intercept": 0.6639257936166713
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4096917277020603,
+        "energy_threshold": 0.05466060583995211
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.4011154821523098,
+          0.42284559288679313
+        ],
+        "scale": [
+          0.20278465455025096,
+          0.35393618272124466
+        ],
+        "coefficient": [
+          -3.4264598730026137,
+          1.1027066228544464
+        ],
+        "intercept": 0.5016644939182049
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40830540776511665,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.39362258166673764,
+          0.4059991085311104
+        ],
+        "scale": [
+          0.2135948027094203,
+          0.3614151226658188
+        ],
+        "coefficient": [
+          -3.6548088857502896,
+          1.2380621537533079
+        ],
+        "intercept": 0.6467743567263332
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41622733555156766,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.3999262821639228,
+          0.3674189546005534
+        ],
+        "scale": [
+          0.19969548634370812,
+          0.34597873599765094
+        ],
+        "coefficient": [
+          -3.2451285693439096,
+          1.1453642319269672
+        ],
+        "intercept": 0.5788535538269004
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41373072127314126,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.3910825777660982,
+          0.3761208398996388
+        ],
+        "scale": [
+          0.20826354839487896,
+          0.33609176316637485
+        ],
+        "coefficient": [
+          -3.698814228140357,
+          1.1140652838554546
+        ],
+        "intercept": 0.7633487657369096
+      }
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.3992336338540415,
+          0.4570748041678123
+        ],
+        "scale": [
+          0.2124145121187686,
+          0.36884514441557
+        ],
+        "coefficient": [
+          -1.7441944310053634,
+          0.797375542606016
+        ],
+        "intercept": 0.12069760544891453
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.4086891845998181,
+          0.39920457327197517
+        ],
+        "scale": [
+          0.19070220917351244,
+          0.35279248327701174
+        ],
+        "coefficient": [
+          -1.9191932609488611,
+          0.7512455688071742
+        ],
+        "intercept": 0.1634391413968087
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.39542362800307895,
+          0.41225740122060134
+        ],
+        "scale": [
+          0.20441206249985552,
+          0.3368390431438275
+        ],
+        "coefficient": [
+          -2.115294682477943,
+          0.7144726662894072
+        ],
+        "intercept": 0.21970746871841532
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.3992336338540415,
+          0.4570748041678123
+        ],
+        "scale": [
+          0.2124145121187686,
+          0.36884514441557
+        ],
+        "coefficient": [
+          -3.0450214100137463,
+          1.0794249709224562
+        ],
+        "intercept": 0.34216979840891215
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.4086891845998181,
+          0.39920457327197517
+        ],
+        "scale": [
+          0.19070220917351244,
+          0.35279248327701174
+        ],
+        "coefficient": [
+          -2.7900999069012937,
+          0.9961166749957098
+        ],
+        "intercept": 0.3437636586246346
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.39542362800307895,
+          0.41225740122060134
+        ],
+        "scale": [
+          0.20441206249985552,
+          0.3368390431438275
+        ],
+        "coefficient": [
+          -3.270104327457195,
+          0.9260916918225974
+        ],
+        "intercept": 0.5084566026247387
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.3992336338540415,
+          0.4570748041678123
+        ],
+        "scale": [
+          0.2124145121187686,
+          0.36884514441557
+        ],
+        "coefficient": [
+          -3.6323615593482037,
+          1.2181575502727287
+        ],
+        "intercept": 0.4630508613507013
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.4086891845998181,
+          0.39920457327197517
+        ],
+        "scale": [
+          0.19070220917351244,
+          0.35279248327701174
+        ],
+        "coefficient": [
+          -3.014004224959341,
+          1.0625991841805893
+        ],
+        "intercept": 0.39530148057835723
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.39542362800307895,
+          0.41225740122060134
+        ],
+        "scale": [
+          0.20441206249985552,
+          0.3368390431438275
+        ],
+        "coefficient": [
+          -3.6409411074911415,
+          1.0065827226103552
+        ],
+        "intercept": 0.6190872340551079
+      }
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.3992336338540415,
+          0.4570748041678123
+        ],
+        "scale": [
+          0.2124145121187686,
+          0.36884514441557
+        ],
+        "coefficient": [
+          -1.7441944310053634,
+          0.797375542606016
+        ],
+        "intercept": 0.12069760544891453
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.39744983387145866,
+          0.3739348467384496
+        ],
+        "scale": [
+          0.20795950891159046,
+          0.36204969715152935
+        ],
+        "coefficient": [
+          -1.7941222952745886,
+          0.8875436484116618
+        ],
+        "intercept": 0.2276777025718495
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.38418427727471943,
+          0.38698767468707584
+        ],
+        "scale": [
+          0.2199225399365453,
+          0.34747326619799784
+        ],
+        "coefficient": [
+          -1.9462098660899245,
+          0.8856020938291108
+        ],
+        "intercept": 0.2644057419453497
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.3992336338540415,
+          0.4570748041678123
+        ],
+        "scale": [
+          0.2124145121187686,
+          0.36884514441557
+        ],
+        "coefficient": [
+          -3.0450214100137463,
+          1.0794249709224562
+        ],
+        "intercept": 0.34216979840891215
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.39744983387145866,
+          0.3739348467384496
+        ],
+        "scale": [
+          0.20795950891159046,
+          0.36204969715152935
+        ],
+        "coefficient": [
+          -2.8963704199494655,
+          1.1920217765801815
+        ],
+        "intercept": 0.5154035715028955
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.38418427727471943,
+          0.38698767468707584
+        ],
+        "scale": [
+          0.2199225399365453,
+          0.34747326619799784
+        ],
+        "coefficient": [
+          -3.374848453035563,
+          1.1354198041926995
+        ],
+        "intercept": 0.6839889725964585
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4012709055542895,
+        "energy_threshold": 0.030650685190314747
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "studio_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.3992336338540415,
+          0.4570748041678123
+        ],
+        "scale": [
+          0.2124145121187686,
+          0.36884514441557
+        ],
+        "coefficient": [
+          -3.6323615593482037,
+          1.2181575502727287
+        ],
+        "intercept": 0.4630508613507013
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.39744983387145866,
+          0.3739348467384496
+        ],
+        "scale": [
+          0.20795950891159046,
+          0.36204969715152935
+        ],
+        "coefficient": [
+          -3.2899966828148015,
+          1.2943698367950456
+        ],
+        "intercept": 0.6239836587530486
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.38418427727471943,
+          0.38698767468707584
+        ],
+        "scale": [
+          0.2199225399365453,
+          0.34747326619799784
+        ],
+        "coefficient": [
+          -4.036532387310278,
+          1.2575299404940465
+        ],
+        "intercept": 0.8987616515900148
+      }
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.4086891845998181,
+          0.39920457327197517
+        ],
+        "scale": [
+          0.19070220917351244,
+          0.35279248327701174
+        ],
+        "coefficient": [
+          -1.9191932609488611,
+          0.7512455688071742
+        ],
+        "intercept": 0.1634391413968087
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.39744983387145866,
+          0.3739348467384496
+        ],
+        "scale": [
+          0.20795950891159046,
+          0.36204969715152935
+        ],
+        "coefficient": [
+          -1.7941222952745886,
+          0.8875436484116618
+        ],
+        "intercept": 0.2276777025718495
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.3936398280204905,
+          0.32911744379123437
+        ],
+        "scale": [
+          0.19974466477680575,
+          0.3178703347095606
+        ],
+        "coefficient": [
+          -2.0918590434454853,
+          0.8208208545773995
+        ],
+        "intercept": 0.3275611054504728
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.4086891845998181,
+          0.39920457327197517
+        ],
+        "scale": [
+          0.19070220917351244,
+          0.35279248327701174
+        ],
+        "coefficient": [
+          -2.7900999069012937,
+          0.9961166749957098
+        ],
+        "intercept": 0.3437636586246346
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.39744983387145866,
+          0.3739348467384496
+        ],
+        "scale": [
+          0.20795950891159046,
+          0.36204969715152935
+        ],
+        "coefficient": [
+          -2.8963704199494655,
+          1.1920217765801815
+        ],
+        "intercept": 0.5154035715028955
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.3936398280204905,
+          0.32911744379123437
+        ],
+        "scale": [
+          0.19974466477680575,
+          0.3178703347095606
+        ],
+        "coefficient": [
+          -3.1046672578040955,
+          1.0681719621297874
+        ],
+        "intercept": 0.6618156718800235
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.42304990036658985,
+        "energy_threshold": 0.06794030544729879
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.4086891845998181,
+          0.39920457327197517
+        ],
+        "scale": [
+          0.19070220917351244,
+          0.35279248327701174
+        ],
+        "coefficient": [
+          -3.014004224959341,
+          1.0625991841805893
+        ],
+        "intercept": 0.39530148057835723
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.4142956601259775,
+        "energy_threshold": 0.05773046922547663
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.39744983387145866,
+          0.3739348467384496
+        ],
+        "scale": [
+          0.20795950891159046,
+          0.36204969715152935
+        ],
+        "coefficient": [
+          -3.2899966828148015,
+          1.2943698367950456
+        ],
+        "intercept": 0.6239836587530486
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.3936398280204905,
+          0.32911744379123437
+        ],
+        "scale": [
+          0.19974466477680575,
+          0.3178703347095606
+        ],
+        "coefficient": [
+          -3.3925055152281054,
+          1.1446109954163504
+        ],
+        "intercept": 0.766853117819811
+      }
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.39542362800307895,
+          0.41225740122060134
+        ],
+        "scale": [
+          0.20441206249985552,
+          0.3368390431438275
+        ],
+        "coefficient": [
+          -2.115294682477943,
+          0.7144726662894072
+        ],
+        "intercept": 0.21970746871841532
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.38418427727471943,
+          0.38698767468707584
+        ],
+        "scale": [
+          0.2199225399365453,
+          0.34747326619799784
+        ],
+        "coefficient": [
+          -1.9462098660899245,
+          0.8856020938291108
+        ],
+        "intercept": 0.2644057419453497
+      }
+    },
+    {
+      "option_id": "amdf_lr0.1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "C": 0.1,
+        "mean": [
+          0.3936398280204905,
+          0.32911744379123437
+        ],
+        "scale": [
+          0.19974466477680575,
+          0.3178703347095606
+        ],
+        "coefficient": [
+          -2.0918590434454853,
+          0.8208208545773995
+        ],
+        "intercept": 0.3275611054504728
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.39542362800307895,
+          0.41225740122060134
+        ],
+        "scale": [
+          0.20441206249985552,
+          0.3368390431438275
+        ],
+        "coefficient": [
+          -3.270104327457195,
+          0.9260916918225974
+        ],
+        "intercept": 0.5084566026247387
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.38418427727471943,
+          0.38698767468707584
+        ],
+        "scale": [
+          0.2199225399365453,
+          0.34747326619799784
+        ],
+        "coefficient": [
+          -3.374848453035563,
+          1.1354198041926995
+        ],
+        "intercept": 0.6839889725964585
+      }
+    },
+    {
+      "option_id": "amdf_lr1",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "C": 1.0,
+        "mean": [
+          0.3936398280204905,
+          0.32911744379123437
+        ],
+        "scale": [
+          0.19974466477680575,
+          0.3178703347095606
+        ],
+        "coefficient": [
+          -3.1046672578040955,
+          1.0681719621297874
+        ],
+        "intercept": 0.6618156718800235
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40979623781801816,
+        "energy_threshold": 0.0897545263486792
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_M1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.39542362800307895,
+          0.41225740122060134
+        ],
+        "scale": [
+          0.20441206249985552,
+          0.3368390431438275
+        ],
+        "coefficient": [
+          -3.6409411074911415,
+          1.0065827226103552
+        ],
+        "intercept": 0.6190872340551079
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.40861423258452595,
+        "energy_threshold": 0.060560697905363794
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "studio_F1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.38418427727471943,
+          0.38698767468707584
+        ],
+        "scale": [
+          0.2199225399365453,
+          0.34747326619799784
+        ],
+        "coefficient": [
+          -4.036532387310278,
+          1.2575299404940465
+        ],
+        "intercept": 0.8987616515900148
+      }
+    },
+    {
+      "option_id": "amdf_lr10",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41866552502921817,
+        "energy_threshold": 0.06683658871639932
+      },
+      "classifier": {
+        "feature_names": [
+          "AMDF_score",
+          "relative_rms"
+        ],
+        "fit_files": [
+          "phone_F1.wav",
+          "phone_M1.wav"
+        ],
+        "C": 10.0,
+        "mean": [
+          0.3936398280204905,
+          0.32911744379123437
+        ],
+        "scale": [
+          0.19974466477680575,
+          0.3178703347095606
+        ],
+        "coefficient": [
+          -3.3925055152281054,
+          1.1446109954163504
+        ],
+        "intercept": 0.766853117819811
+      }
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41249330632749887,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41249330632749887,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41249330632749887,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "amdf_control",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "pitch_threshold": 0.41249330632749887,
+        "energy_threshold": 0.061544615883604575
+      },
+      "classifier": null
+    }
+  ]
+}
