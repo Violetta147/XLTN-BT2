@@ -1,0 +1,14 @@
+C:\Users\LAPTOP T&T\VIOLETTA\Documents\ChatGPT\XLTN\XLTN-BT2\research_workbench_2026_10_07\verify_yaapt_notebook.py:61: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  fs,pcm=wavfile.read(REPO/'TinHieuHuanLuyen'/file)
+{
+  "notebook_sha256": "4fefaf54c43a0dc6c644aad9fca8595ac6bf6206518f44ca42a19db3c5d2ee66",
+  "exact_source_cells_executed": 5,
+  "source_cells_sha256": "67bd329d0d53e91e90f982de5ac25f30a05c1f35afe374d0c158d8b8f6fea4e5",
+  "measured_rows_recomputed_from_wav_and_contours_checked": 24,
+  "actual_fit_exclusions_checked": true,
+  "native_binary_call_provenance_checked": true,
+  "status_and_figures_verified": true,
+  "all_files_target_met": false,
+  "execution_method": "Python exec of each exact code cell; headless display adapter; not Jupyter kernel",
+  "verifier_sha256": "f4711a32bc617f7efe9de0a834ab6e1c84dbfbf444ac1e3d692a3026f3db2652"
+}

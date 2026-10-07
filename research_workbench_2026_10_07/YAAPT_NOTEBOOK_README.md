@@ -4,4 +4,4 @@ YAAPT_AMDF_LOCAL.ipynb tính lại từ WAV các cấu hình đã đăng ký: H2
 
 Lệnh local: C:/Users/violet/miniconda3/python.exe research_workbench_2026_10_07/execute_yaapt_notebook.py, rồi verify_yaapt_notebook.py. Script lưu lỗi trong notebook nếu cell thất bại; không tự rerun bỏ lỗi. Verifier độc lập statsddof0/MAPE/LAB/VUV/hash/calls/params/fitexclusions/choices/status/PNGSVG. Các nguồn tại YAAPT_SOURCE_NOTE.md, kết quả tại H40_REPORT.md và H40_ERROR_ANALYSIS.md. Groundtruth là file-stat/nhãn đoạn, không F0 chuẩn từng khung. Fixed không thay nested, mỗi file≤2% chưa đạt khi benchmarkH40.
 
-Hiện đây là source chờ execution. Sau replay chỉ ghi đã chạy/verified nếu đủ receipt và kiểm tra layout.
+Source đã commit/push ởc457837 trước replay. Năm code cells chạy nguyênsource hoàn tất;24rows từWAV khớp benchmark1e-8,16actualbackend/nativecalls. verify_yaapt_notebook.py PASS: statsddof0/MAPE/LAB/VUV/hash/params/calls/fitexclusions/choices/status/PNGSVG; layout đã xem. Metadata ghi rõPythonexec/headlessdisplay, khôngJupyterkernel. results/yaapt_notebook_verification.json và execution.log giữ bằng chứng. Mục tiêu từngfile vẫnfalse, khôngtestread hoặc mởgrid/selectionmới.

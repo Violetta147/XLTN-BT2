@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "yaapt_notebook_H40_components",
+      "png": "figures/yaapt_notebook_H40_components.png",
+      "svg": "figures/yaapt_notebook_H40_components.svg",
+      "sources": [
+        {
+          "path": "results\\yaapt_notebook_per_file.csv",
+          "sha256": "8115e25850bc364e6afab439db4cd92347ea9b20cc568704219dc3d23eee5ec5"
+        }
+      ],
+      "caption_vi": "Các thành phần mean/std/count cộng thành Average MAPE; mọi cấu hình fixed.",
+      "limits_vi": "Không chọn best theo held file; LAB chưa có F0 chuẩn từng khung.",
+      "generator": "build_yaapt_notebook.py",
+      "generator_sha256": "b74fd666b157a7250627a20b751f7c6f331361680956b6343447e69b0132f37e",
+      "command": "python research_workbench_2026_10_07/execute_yaapt_notebook.py"
+    }
+  ]
+}
