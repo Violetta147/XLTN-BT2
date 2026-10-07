@@ -1,0 +1,52 @@
+{
+  "figures": [
+    {
+      "name": "H21_center_effect",
+      "png": "figures/H21_center_effect.png",
+      "svg": "figures/H21_center_effect.svg",
+      "sources": [
+        {
+          "path": "results\\H21_center_features.csv",
+          "sha256": "51019c88d3f55d0228adcb5ffe1011c3cbf70d46669bb463bcd8a7a5a5c0f2b7"
+        }
+      ],
+      "caption_vi": "Biên độ nhỏ bị đưa về0; năng lượng giữ lại theo nhãn, trung bình trong file rồi qua file.",
+      "limits_vi": "Chẩn đoán train gộp; không chứng minh khả năng phân lớp hoặc hiệu quả với noise.",
+      "generator": "center_clipping.py",
+      "generator_sha256": "2cce98235929e8e8671f2bd6b0b3c6e2ac447322047bece726c5721ac27674a6",
+      "command": "python research_workbench_2026_10_07/center_clipping.py H21"
+    },
+    {
+      "name": "H21_transform_waveform",
+      "png": "figures/H21_transform_waveform.png",
+      "svg": "figures/H21_transform_waveform.svg",
+      "sources": [
+        {
+          "path": "results\\H21_transform_waveform.csv",
+          "sha256": "0ca1362e10301daebca957e16e5addf9e73cf3f7444f56ad8190227f48e04c80"
+        }
+      ],
+      "caption_vi": "phone_F1: raw V-frame nội bộ có RMS lớn nhất, center=1.0225s; không chọn theo điểm thuật toán.",
+      "limits_vi": "Hình so cơ chế, không là pitch ground truth; hard025 chỉ minh họa, không ứng viên H21.",
+      "generator": "center_clipping.py",
+      "generator_sha256": "2cce98235929e8e8671f2bd6b0b3c6e2ac447322047bece726c5721ac27674a6",
+      "command": "python research_workbench_2026_10_07/center_clipping.py H21"
+    },
+    {
+      "name": "H21_nested",
+      "png": "figures/H21_nested.png",
+      "svg": "figures/H21_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H21_metrics.csv",
+          "sha256": "bbf253d72d0461ab0a89e7b0e665645797d87813e5ef7d901ee8ab01ff985ec7"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "center_clipping.py",
+      "generator_sha256": "2cce98235929e8e8671f2bd6b0b3c6e2ac447322047bece726c5721ac27674a6",
+      "command": "python research_workbench_2026_10_07/center_clipping.py H21"
+    }
+  ]
+}
