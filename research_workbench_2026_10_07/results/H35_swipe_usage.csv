@@ -1,0 +1,9 @@
+option_id,file,native_voiced,swipe_used,praat_fallback,swipe_unsupported
+praat_gate_swipe_t0.2,phone_F1.wav,147,140,7,0
+praat_gate_swipe_t0.3,phone_F1.wav,147,132,15,0
+praat_gate_swipe_t0.2,phone_M1.wav,233,221,12,0
+praat_gate_swipe_t0.3,phone_M1.wav,233,191,42,0
+praat_gate_swipe_t0.2,studio_F1.wav,123,119,4,0
+praat_gate_swipe_t0.3,studio_F1.wav,123,114,9,0
+praat_gate_swipe_t0.2,studio_M1.wav,85,81,4,0
+praat_gate_swipe_t0.3,studio_M1.wav,85,76,9,0

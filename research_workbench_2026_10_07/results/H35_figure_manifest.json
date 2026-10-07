@@ -1,0 +1,20 @@
+{
+  "figures": [
+    {
+      "name": "H35_nested",
+      "png": "figures/H35_nested.png",
+      "svg": "figures/H35_nested.svg",
+      "sources": [
+        {
+          "path": "results\\H35_metrics.csv",
+          "sha256": "061e8efb56b80120206c5d84ba59b19ada438dd03b78f7b4c6ddf8fa051ec295"
+        }
+      ],
+      "caption_vi": "Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.",
+      "limits_vi": "Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.",
+      "generator": "swipe_praat_hybrid.py",
+      "generator_sha256": "4abad3afc99ab8e957b348e6cc42c648389cea5f2d8ffa92e5de0805c0b592c1",
+      "command": "python research_workbench_2026_10_07/swipe_praat_hybrid.py H35"
+    }
+  ]
+}

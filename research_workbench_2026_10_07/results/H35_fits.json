@@ -1,0 +1,752 @@
+{
+  "fits": [
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.2",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "studio_F1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat_gate_swipe_t0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "hybrid"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "phone_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_F1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    },
+    {
+      "option_id": "praat7_filtered_v0.3",
+      "fit_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "held_file": "studio_M1.wav",
+      "fitted": {
+        "requires_fit": false,
+        "actual_fit_files": [],
+        "method": "control"
+      },
+      "classifier": null
+    }
+  ]
+}

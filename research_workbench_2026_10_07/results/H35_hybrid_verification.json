@@ -1,0 +1,19 @@
+{
+  "family": "H35",
+  "source_calls": 12,
+  "fixed_groups_replayed": 12,
+  "fit_logs": 52,
+  "independent_fusion_two_stage_alignment_and_fallback_replayed": true,
+  "voicing_and_count_match_control_every_fixed_file": true,
+  "control_H31_fixed_03_parity": true,
+  "fixed_mape_components_recomputed": true,
+  "native_input_and_source_binary_parameters_checked": true,
+  "generator_sha256": "2c195ba5ae5e9d3afcf44adc55cef29264161f470bed4f80e2f98f6747153a26",
+  "input_sha256": {
+    "H35_experiment.json": "3d0aad802475e38e8e76eebb2c2643c0a4049e94d4ff7bc4c5ba365743bbe779",
+    "H35_source_native_frames.csv": "ad122a35b970d59fbf909772b33774f81220208832fe76ee5a81eb1d64464aca",
+    "H35_raw_native_frames.csv": "765c5ddbf9c92d141f5a33788473a53fea268782547ace9d6ef3d8e3e002aeaf",
+    "H35_fixed_lofo.csv": "ec00250baa3cdb311d28ee31d1840d167889e7b5178de8d2e8c77021b08eb4f7",
+    "H35_swipe_usage.csv": "9e51d634de53c9f5ac0f8ed4c7d088dce90aa09e8d6f9e025d31baacceb6dddc"
+  }
+}

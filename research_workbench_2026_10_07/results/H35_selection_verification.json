@@ -1,0 +1,16 @@
+{
+  "family": "H35",
+  "selection_replayed": true,
+  "fits_checked": 52,
+  "gates_recomputed": {
+    "train_mape_relative_10_percent": false,
+    "lofo_mape_relative_5_percent": false,
+    "lofo_f1_drop_at_most_01": true,
+    "lofo_recall_v_drop_at_most_01": true,
+    "lofo_sil_increase_at_most_1": true,
+    "lofo_no_file_mape_worse_by_over_2pp": true,
+    "lofo_phone_f1_std_not_worse": true,
+    "selected_lofo_mape_relative_5_percent": false
+  },
+  "verifier_sha256": "cd104d8d42ea576bf996fcd3511e6e6daffb911034aef9248ca64ee7ab4589f2"
+}
