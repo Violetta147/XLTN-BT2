@@ -1,0 +1,8 @@
+{
+  "synthetic_only": true,
+  "no_benchmark_inference": true,
+  "alignment_earlier_ties": true,
+  "unknown_negatives_excluded": true,
+  "metric_denominators_verified": true,
+  "source_sha256": "8c5cec846edfc8c1ceeb38530a081df18056d1706a1c33d55eef9cf8cf60dd7d"
+}
