@@ -1,0 +1,13 @@
+{
+  "phase": "external verification",
+  "measurement_failed": false,
+  "verification_passed": false,
+  "source": "verify_voicing_matrix_v2.py",
+  "helper": "verify_voicing_recovery.py",
+  "helper_line": 37,
+  "exception": "StopIteration",
+  "cause": "independent checker attempted earliest peak >=0.93max when all local peaks were nonpositive",
+  "pipeline_behavior": "nonpositive max already yields periodicity zero and invalid pitch",
+  "remedy": "v3 verifier uses a new independent helper with explicit positive-peak guard",
+  "measurement_registry_and_outputs_changed": false
+}
