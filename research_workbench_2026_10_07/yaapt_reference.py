@@ -1,261 +1,270 @@
 import argparse
+import itertools
 import json
+import math
 import platform
-import subprocess
 import sys
 import time
-import warnings
+from datetime import datetime, timezone
 from pathlib import Path
 
+HERE = Path(__file__).resolve().parent
+REPO = HERE.parent
+sys.path.insert(0, str(REPO / 'research_workbench_2026_10_06'))
+import audit
+import core
 import numpy as np
 import pandas as pd
 import scipy
-from threadpoolctl import threadpool_limits
-import voicing_recovery as common
+import sklearn
+import praat_native_adapter as native_api
+import yaapt_adapter as yaapt_api
+from estimator_experiment import eligibility
 
-HERE, REPO, OUT = common.HERE, common.REPO, common.OUT
-core, audit = common.core, common.audit
-VENDOR = HERE / 'vendor/yaapt_5c6c9bc'
-sys.path.insert(0, str(VENDOR))
-from amfm_decompy import basic_tools, pYAAPT
-
-PARAMETERS = dict(frame_length=35., tda_frame_length=35., frame_space=10.,
-    f0_min=70., f0_max=400., fft_length=8192, bp_forder=150, bp_low=50., bp_high=1500.,
-    nlfer_thresh1=.75, nlfer_thresh2=.1, shc_numharms=3, shc_window=40., shc_maxpeaks=4,
-    shc_pwidth=50., shc_thresh1=5., shc_thresh2=1.25, f0_double=150., f0_half=150.,
-    dp5_k1=11., dec_factor=1, nccf_thresh1=.3, nccf_thresh2=.9, nccf_maxcands=3,
-    nccf_pwidth=5, merit_boost=.2, merit_pivot=.99, merit_extra=.4, median_value=7,
-    dp_w1=.15, dp_w2=.5, dp_w3=.1, dp_w4=.9, spec_pitch_min_std=.05)
-OPTIONS = [dict(id='hard170', mode='control', nlfer=.75, final_dp=True),
-           dict(id='yaapt_default', mode='whole', nlfer=.75, final_dp=True),
-           dict(id='yaapt_nlfer050', mode='whole', nlfer=.5, final_dp=True),
-           dict(id='yaapt_nlfer100', mode='whole', nlfer=1., final_dp=True),
-           dict(id='yaapt_pitch_only', mode='pitch_only', nlfer=.75, final_dp=True),
-           dict(id='yaapt_no_final_dp', mode='whole', nlfer=.75, final_dp=False)]
-BY_ID = {option['id']: option for option in OPTIONS}
+audit.HERE = HERE
+audit.RESULTS = HERE / 'results'
+audit.FIGURES = HERE / 'figures'
+audit.RESULTS.mkdir(exist_ok=True)
+audit.FIGURES.mkdir(exist_ok=True)
 
 
-def git(*args):
-    return subprocess.check_output(['git', '-c', 'safe.directory='+str(REPO).replace('\\', '/'),
-                                   '-C', str(REPO), *args], text=True).strip()
+
+def registry(family):
+    assert family=='H40'
+    return [{'id':'praat7_filtered_v0.45','frame_ms':3000/70,'hop_ms':10,'pitch_frame_ms':3000/70,
+             'method':'control','voicing_threshold':.45}]+[
+        {'id':f'yaapt_f{window}','frame_ms':window,'hop_ms':10,'pitch_frame_ms':35,
+         'method':'yaapt','spectral_frame_ms':window} for window in (25,35,45)]
 
 
-def native(audio, fs, option):
-    params = dict(PARAMETERS, nlfer_thresh1=option['nlfer'])
-    if not option['final_dp']:
-        params.update(dp_w1=0., dp_w2=0., dp_w3=0.)
-    assert int(fs*.035) < 2048 and fs > 3000
-    captured, notices = {}, []
-    original = pYAAPT.dynamic
-    def recording(candidates, merits, pitch, parameters):
-        captured.update(candidates=candidates.copy(), merits=merits.copy(), energy=pitch.energy.copy())
-        result = original(candidates, merits, pitch, parameters)
-        captured['dynamic_f0'] = result.copy()
-        return result
-    assert np.isfinite(audio).all() and np.any(audio != 0)
-    pYAAPT.dynamic = recording
-    try:
-        with warnings.catch_warnings(record=True) as caught:
-            warnings.simplefilter('always')
-            signal = basic_tools.SignalObj(audio.astype(np.float64).copy(), fs)
-            pitch = pYAAPT.yaapt(signal, **params)
-            notices = [str(w.message) for w in caught]
-    finally:
-        pYAAPT.dynamic = original
-    assert np.array_equal(pitch.samp_values, captured['dynamic_f0'])
-    assert pYAAPT.PitchObj.PITCH_HALF == 0 and pYAAPT.PitchObj.PITCH_DOUBLE == 0
-    assert np.isfinite(pitch.samp_values).all()
-    captured.update(raw_f0=pitch.samp_values.copy(), times=pitch.frames_pos/fs,
-                    frame_size=pitch.frame_size, frame_jump=pitch.frame_jump, fs=fs)
-    return captured, dict(parameters=params, warnings=notices)
+def feature_key(option):
+    return option['id']
 
 
-def project(proof, times, fs, option, baseline):
-    source_times, values = proof['times'], proof['raw_f0']
-    right = np.minimum(np.searchsorted(source_times, times), len(source_times)-1)
-    left = np.maximum(right-1, 0)
-    index = np.where(abs(source_times[left]-times) <= abs(source_times[right]-times), left, right)
-    support = abs(source_times[index]-times) <= .005+1/fs
-    valid = support & (values[index] >= 70) & (values[index] <= 400)
-    pred = valid.copy()
-    f0 = np.where(valid, values[index], np.nan)
-    if option['mode'] == 'pitch_only':
-        pred, f0 = baseline['pred'].copy(), baseline['f0'].copy()
-        use = pred & valid
-        f0[use] = values[index[use]]
-    assert np.array_equal(pred, np.isfinite(f0))
-    return pred, f0, support, index
+def extract(item,audio,option):
+    if option['method']=='control':
+        times,frequency,log=native_api.pitch(core.TRAIN/item['file'],'filtered',.45)
+        log=dict(log,engine='Praat7 filtered control')
+    else:
+        times,frequency,log=yaapt_api.pitch(audio,item['fs'],option['spectral_frame_ms'])
+        log=dict(log,engine='AMFM_decompy pinned YAAPT port')
+    raw_voiced=frequency>0
+    pred=raw_voiced&(frequency>=70)&(frequency<=400)
+    return dict(item,times=times,preprocess=option['id'],native_pred=pred,native_f0=np.where(pred,frequency,np.nan),
+                raw_native_frequency=frequency,raw_native_voiced=raw_voiced,native_call=log,
+                range_rejected_frames=int(((frequency>0)&~pred).sum()))
 
 
-def choose(records):
-    table = pd.DataFrame(records)
-    baseline = table[table.option_id == 'hard170']
-    ranked = []
-    for option in OPTIONS:
-        group = table[table.option_id == option['id']]
-        eligible = bool(np.isfinite(group.average_mape).all()
-            and group.macro_f1.mean() >= baseline.macro_f1.mean()-.01
-            and group.recall_v.mean() >= baseline.recall_v.mean()-.01
-            and group.false_voiced_sil.sum() <= baseline.false_voiced_sil.sum()+1)
-        ranked.append((not eligible, group.average_mape.max() if eligible else np.inf,
-                       group.average_mape.mean() if eligible else np.inf, option['id']))
-    return min(ranked)[-1]
+def project(native, canonical, pred, f0, hop_ms):
+    times = native['times']
+    right = np.minimum(np.searchsorted(times, canonical['times']), len(times) - 1)
+    left = np.maximum(right - 1, 0)
+    choose_left = abs(times[left] - canonical['times']) <= abs(times[right] - canonical['times'])
+    indices = np.where(choose_left, left, right)
+    support = abs(times[indices] - canonical['times']) <= hop_ms / 2000 + 1 / native['fs']
+    return pred[indices] & support, np.where(support, f0[indices], np.nan), support
 
 
-def protected():
-    paths = [Path(__file__), HERE/'verify_yaapt_reference.py', HERE/'H52_REGISTRATION.md',
-             HERE/'YAAPT_SOURCE_NOTE.md', Path(core.__file__), Path(common.__file__),
-             OUT/'H47_nested_contours.csv', OUT/'H47_metrics.csv', OUT/'H48_test_contours.csv',
-             OUT/'H48_all_files.csv', core.RESULTS/'frozen_config.json', OUT/'H49_dataset_manifest.json']
-    paths += [p for p in VENDOR.rglob('*') if p.is_file() and p.suffix != '.pyc']
-    for directory in (core.TRAIN, REPO/'TinHieuKiemThu', core.TRAIN_GT, core.HERE/'test_3gt'):
-        paths += list(directory.glob('*.wav'))+list(directory.glob('*.lab'))
-    return paths
+def infer(native, training, option, config):
+    return native['native_pred'].copy(),native['native_f0'].copy(),{
+        'requires_fit':False,'actual_fit_files':[],'method':option['method']},None
 
 
-def register():
-    assert not (HERE/'H52_REGISTRY.json').exists()
-    audit.json_write(HERE/'H52_REGISTRY.json', dict(family='H52', rollback_commit=git('rev-parse','HEAD'),
-        options=OPTIONS, parameters=PARAMETERS, actual_fit_files=[], seed=None, whole_pipeline=True,
-        strict_target='Every one of 8 BT2 files average_mape < 2 percent',
-        hashes={str(p.relative_to(REPO)):audit.digest(p) for p in protected()}))
-
-
-def check_registry():
-    registry = json.loads((HERE/'H52_REGISTRY.json').read_text())
-    assert registry['options'] == OPTIONS and registry['parameters'] == PARAMETERS
-    for relative, digest in registry['hashes'].items():
-        assert audit.digest(REPO/relative) == digest, relative
-
-
-def precheck():
-    assert not (OUT/'H52_precheck.json').exists()
-    cases = []
-    for fs in (16000, 44100):
-        t = np.arange(int(fs*.8))/fs
-        for f0 in (100., 200., 300.):
-            audio = .3*(np.sin(2*np.pi*f0*t)+.5*np.sin(4*np.pi*f0*t)+.3*np.sin(6*np.pi*f0*t))
-            for identity in ('yaapt_default','yaapt_no_final_dp'):
-                proof, metadata = native(audio, fs, BY_ID[identity])
-                center = (proof['times'] > .15) & (proof['times'] < .65)
-                values = proof['raw_f0'][center]
-                error = float(np.median(abs(values[values > 0]-f0)))
-                passed = bool(np.mean(values > 0) >= .8 and error < 5)
-                cases.append(dict(fs=fs, f0=f0, option_id=identity, voiced_fraction=float(np.mean(values > 0)),
-                                  median_absolute_error_hz=error, passed=passed, warnings=metadata['warnings']))
-    audit.json_write(OUT/'H52_precheck.json', dict(cases=cases, passed=all(r['passed'] for r in cases),
-        scope='12 synthetic harmonic calls; not BT2 measurement; silence not supported by vendor and no fake zero score'))
-    assert all(r['passed'] for r in cases), cases
-    print('PASS 12 synthetic rich harmonic cases', flush=True)
-
-
-def baseline_train(name):
-    rows = pd.read_csv(OUT/'H47_nested_contours.csv', float_precision='round_trip')
-    rows = rows[(rows.file == name) & (rows.model == 'candidate')]
-    return dict(times=rows.time_s.to_numpy(), pred=rows.pred_voiced.to_numpy(bool), f0=rows.f0_hz.to_numpy())
-
-
-def compute(path, times, baseline, options, stage):
-    fs, audio = core.load_audio(path)
-    bank = {'hard170': (baseline['pred'], baseline['f0'])}
-    outputs, receipts, cache = [], [], {}
-    for option in options:
-        if option['mode'] == 'control':
-            continue
-        key = (option['nlfer'], option['final_dp'])
-        if key not in cache:
-            proof, metadata = native(audio, fs, option)
-            proof_path = OUT/f'H52_{stage}_native_{path.stem}_{option["id"]}.npz'
-            assert not proof_path.exists()
-            np.savez_compressed(proof_path, **proof)
-            cache[key] = (proof, proof_path, metadata)
-            outputs.append(proof_path)
-        proof, proof_path, metadata = cache[key]
-        pred, f0, support, index = project(proof, times, fs, option, baseline)
-        bank[option['id']] = (pred, f0)
-        receipts.append(dict(file=path.name, option_id=option['id'], input_sha256=audit.digest(path),
-            proof=str(proof_path.relative_to(REPO)), proof_sha256=audit.digest(proof_path),
-            actual_fit_files=[], source_commit='5c6c9bc48006d9eb5d5e874dd44f9a146a5ee38b', **metadata))
-    arrays = OUT/f'H52_{stage}_predictions_{path.stem}.npz'
-    assert not arrays.exists()
-    np.savez_compressed(arrays, times=times, option_id=np.array(list(bank)),
-        pred=np.array([x[0] for x in bank.values()]), f0=np.array([x[1] for x in bank.values()]))
-    outputs.append(arrays)
-    return bank, receipts, outputs, len(cache)
-
-
-def train():
-    check_registry()
-    assert json.loads((OUT/'H52_precheck.json').read_text())['passed']
-    assert not (OUT/'H52_train_experiment.json').exists()
+def run(family):
+    assert not (HERE / f'results/{family}_experiment.json').exists(), 'Preserve completed experiment'
     started = time.perf_counter()
-    items = {item['file']:item for item in core.load_training()}
-    fixed, receipts, outputs, calls = [], [], [], 0
-    for name, item in items.items():
-        baseline = baseline_train(name)
-        assert np.allclose(baseline['times'], item['times'], atol=1e-12)
-        bank, note, artifacts, count = compute(core.TRAIN/name, item['times'], baseline, OPTIONS, 'train')
-        calls += count; receipts += note; outputs += artifacts
-        for identity, (pred,f0) in bank.items():
-            fixed.append(dict(option_id=identity, **core.score_file(item,pred,f0)))
-        print('H52 measured train',name,flush=True)
+    native_proof=native_api.metadata()
+    options = json.loads((HERE / f'{family}_REGISTRY.json').read_text(encoding='utf-8'))['options']
+    assert options == registry(family)
+    items = core.load_training()
+    by_name = {x['file']: x for x in items}
+    names = sorted(by_name)
+    config = json.loads((core.RESULTS / 'frozen_config.json').read_text(encoding='utf-8'))['models']['AMDF_energy']['config']
+    features = {}
+    for item in items:
+        _, audio = core.load_audio(core.TRAIN / item['file'])
+        for option in options:
+            key = (feature_key(option), item['file'])
+            if key not in features:
+                features[key] = extract(item, audio, option)
+        print(f'{family}: features ready {item["file"]}', flush=True)
+    native_rows=[]
+    for (identity,file),value in features.items():
+        if 'raw_native_frequency' in value:
+            native_rows += [{'option_id':identity,'file':file,'time_s':float(t),'raw_f0_hz':float(f),'raw_voiced':bool(v)}
+                            for t,f,v in zip(value['times'],value['raw_native_frequency'],value['raw_native_voiced'])]
+    audit.csv_write('H40_raw_native_frames.csv',native_rows)
+    prediction_cache = {}
+    fit_log = []
+
+    def score(option, fit_names, held):
+        key = (option['id'], tuple(sorted(fit_names)), held)
+        if key not in prediction_cache:
+            native = features[(feature_key(option), held)]
+            training = [features[(feature_key(option), n)] for n in sorted(fit_names)]
+            pred, f0, fitted, classifier = infer(native, training, option, config)
+            pp, ff, support = project(native, by_name[held], pred, f0, option['hop_ms'])
+            metrics = core.score_file(by_name[held], pp, ff)
+            metrics.update(native_frames=len(pred), native_f0_count=int(np.isfinite(f0).sum()),
+                           projection_coverage=float(support.mean()), effective_median_span_ms=0)
+            prediction_cache[key] = (metrics, pp, ff, support)
+            fit_log.append({'option_id': option['id'], 'fit_files': sorted(fit_names), 'held_file': held,
+                            'fitted': fitted, 'classifier': classifier})
+        return prediction_cache[key]
+
+    baseline = next(x for x in options if x['id'] == 'praat7_filtered_v0.45')
     traces, selections = [], []
-    for outer in ['final']+sorted(items):
-        pool = [name for name in sorted(items) if name != outer]
-        records = [dict(outer_held=outer, inner_held=row['file'], actual_fit_files='', **row)
-                   for row in fixed if row['file'] in pool]
-        traces += records
-        selections.append(dict(outer_held=outer, selection_files=pool, option_id=choose(records)))
-    selected = {r['outer_held']:r['option_id'] for r in selections}
-    rows = []
-    for split in ('train','lofo','nested'):
-        for name in sorted(items):
-            for model,identity in [('accepted','hard170'),('candidate',selected[name] if split=='nested' else selected['final'])]:
-                metric = next(r for r in fixed if r['file']==name and r['option_id']==identity)
-                rows.append(dict(split=split,model=model,**metric))
-    summary, gates = common.gates(pd.DataFrame(rows))
-    for filename, value in [('H52_fixed.csv',fixed),('H52_inner_traces.csv',traces),('H52_metrics.csv',rows)]:
-        path = OUT/filename;pd.DataFrame(value).to_csv(path,index=False);outputs.append(path)
-    freeze_path = OUT/'H52_FROZEN_SELECTION.json'
-    audit.json_write(freeze_path,dict(option=BY_ID[selected['final']],parameters=PARAMETERS,
-        selections=selections, external_options=list(dict.fromkeys(['hard170',selected['final'],'yaapt_default'])),
-        no_test_selection=True, seed=None, actual_fit_files=[]))
-    outputs.append(freeze_path)
-    audit.json_write(OUT/'H52_train_experiment.json',dict(prereg_commit=git('rev-parse','HEAD'),
-        selections=selections,decision=gates,summaries=summary,actual_fit_files=[],actual_yaapt_calls=calls,
-        receipts=receipts,wall_time_s=time.perf_counter()-started,
-        runtime=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__,pandas=pd.__version__),
-        artifacts={str(p.relative_to(REPO)):audit.digest(p) for p in outputs}))
-    print(json.dumps(dict(selections=selections,decision=gates),indent=2))
+
+    def choose(pool, outer):
+        candidates = []
+        for option in options:
+            rows, reference = [], []
+            for held in pool:
+                fit_names = [n for n in pool if n != held]
+                measured = score(option, fit_names, held)[0]
+                rows.append(measured)
+                reference.append(score(baseline, fit_names, held)[0])
+                traces.append({'outer_held': outer, 'option_id': option['id'], 'inner_held': held,
+                               'fit_files': '|'.join(fit_names), **measured})
+            table, control = pd.DataFrame(rows), pd.DataFrame(reference)
+            summary, ref = core.summarize(table), core.summarize(control)
+            valid = bool(np.isfinite(table.average_mape).all()
+                         and summary['macro_f1'] >= ref['macro_f1'] - .01
+                         and summary['recall_v'] >= ref['recall_v'] - .01
+                         and summary['false_voiced_sil'] <= ref['false_voiced_sil'] + 1)
+            candidates.append((not valid, float(table.average_mape.max()) if valid else math.inf, summary['average_mape'] if valid else math.inf, option['id'], option))
+        selected = min(candidates, key=lambda v: v[:4])[4]
+        selections.append({'outer_held': outer, 'selection_files': pool, 'option': selected})
+        print(f'{family}: selected {outer}: {selected["id"]}', flush=True)
+        return selected
+
+    final = choose(names, 'final')
+    outer_options = {held: choose([n for n in names if n != held], held) for held in names}
+    rows, contours = [], []
+    for split in ('train', 'lofo', 'nested'):
+        for held in names:
+            fit_names = names if split == 'train' else [n for n in names if n != held]
+            for model, option in [('accepted', baseline), ('candidate', outer_options[held] if split == 'nested' else final)]:
+                metrics, pred, f0, support = score(option, fit_names, held)
+                rows.append({'split': split, 'model': model, 'option_id': option['id'], **metrics})
+                if split == 'nested':
+                    for i, t in enumerate(by_name[held]['times']):
+                        contours.append({'model': model, 'file': held, 'time_s': t,
+                                         'label': by_name[held]['labels'][i], 'boundary': bool(by_name[held]['boundary'][i]),
+                                         'pred_voiced': bool(pred[i]), 'f0_hz': f0[i], 'support': bool(support[i])})
+    table = pd.DataFrame(rows)
+    summaries = {model: {split: core.summarize(table[(table.model == model) & (table.split == split)])
+                        for split in ('train', 'lofo', 'nested')} for model in ('accepted', 'candidate')}
+    nested_table = table[table.split.isin(['train', 'nested'])].copy()
+    nested_table['split'] = nested_table.split.replace({'nested': 'lofo'})
+    nested_summaries = {m: {'train': summaries[m]['train'], 'lofo': summaries[m]['nested']} for m in summaries}
+    decision = eligibility(nested_table, nested_summaries)
+    decision['checks']['selected_lofo_mape_relative_5_percent'] = summaries['candidate']['lofo']['average_mape'] <= .95 * summaries['accepted']['lofo']['average_mape']
+    decision['eligible'] = all(decision['checks'].values())
+    decision['nested_status'] = 'Outer file excluded from every inner fit and selection; selected LOFO is separate.'
+    for entry in fit_log:
+        if entry['held_file'] not in entry['fit_files']:
+            assert entry['classifier'] is None or entry['held_file'] not in entry['classifier']['fit_files']
+    for entry in selections:
+        assert entry['outer_held'] == 'final' or entry['outer_held'] not in entry['selection_files']
+    base_metrics = table[(table.model == 'accepted') & (table.split == 'lofo')]
+    saved = core.summarize(pd.read_csv(HERE/'results/H30_fixed_lofo.csv').query("option_id == 'praat7_filtered_v0.45'"))
+    actual_base = core.summarize(base_metrics)
+    for metric in ('average_mape', 'macro_f1', 'recall_v', 'false_voiced_sil'):
+        assert np.isclose(actual_base[metric], saved[metric], atol=1e-8), metric
+    audit.csv_write('H40_fixed_lofo.csv', [{'option_id': option['id'], **score(option, [n for n in names if n != held], held)[0]}
+                                                for option in options for held in names])
+    native = features[(feature_key(final), names[0])]
+    training = [features[(feature_key(final), n)] for n in names]
+    poison = dict(native, labels=np.full(len(native['labels']), 'unknown'), stats={'F0mean': -1, 'F0std': -1, 'F0num': -1})
+    expected, actual = infer(native, training, final, config), infer(poison, training, final, config)
+    assert np.array_equal(expected[0], actual[0]) and np.allclose(expected[1], actual[1], equal_nan=True)
+    p_metrics = audit.csv_write(f'{family}_metrics.csv', table)
+    audit.csv_write(f'{family}_inner_traces.csv', traces)
+    p_contours = audit.csv_write(f'{family}_nested_contours.csv', contours)
+    audit.json_write(HERE / f'results/{family}_fits.json', {'fits': fit_log})
+    value = {'family': family, 'decision': decision, 'summaries': summaries, 'selections': selections,
+             'native_calls': {key[0]+'|'+key[1]:value['native_call'] for key,value in features.items() if 'native_call' in value},
+             'range_rejected_frames': {key[0]+'|'+key[1]:value['range_rejected_frames'] for key,value in features.items() if 'range_rejected_frames' in value},
+             'long_window_fallback_counts': {key[1]: int(value.get('long_window_fallback', np.zeros(1)).sum()) for key, value in features.items() if key[0] == 'amdf_control'},
+             'registry_sha256': audit.digest(HERE / f'{family}_REGISTRY.json'),
+             'code_sha256': {str(p.relative_to(REPO)): audit.digest(p) for p in (Path(__file__), HERE / 'amdf_dual_window.py', HERE / 'praat_native_adapter.py', HERE / 'yaapt_adapter.py', HERE / 'yaapt_setup_probe.py', HERE / 'yaapt_transport_probe.py', HERE / 'results/yaapt_raw_synthetic_probe.json', HERE / 'results/yaapt_synthetic_probe_v2.json', HERE / 'results/yaapt_transport_probe.json', HERE / 'results/yaapt_source_discovery.json', HERE / 'sources/yaapt/amfm_decompy/pYAAPT.py', HERE / 'sources/yaapt/amfm_decompy/basic_tools.py', HERE / 'praat_extract_native.praat', HERE / 'results/sptk_native_provenance.json', HERE / 'results/praat_native_7002_provenance.json', HERE / 'results/praat_native_command_source.json', Path(core.__file__), Path(audit.__file__), core.BASELINES / 'AMDF.ipynb', core.RESULTS / 'frozen_config.json', REPO / 'research_workbench_2026_10_06/estimator_experiment.py')},
+             'data_sha256': {n: audit.digest(core.TRAIN / n) for n in names},
+             'wall_time_s': time.perf_counter() - started, 'completed_utc': datetime.now(timezone.utc).isoformat(),
+             'selection_objective': 'minimize worst-file Average MAPE, then mean, then id', 'goal_all_nested_files_le_2': bool((table[(table.split=='nested')&(table.model=='candidate')].average_mape<=2).all()), 'train_only': True, 'baseline_reproduced': True, 'poisoned_gt_inference_invariant': True,
+             'environment': {'python': sys.version, 'platform': platform.platform(), 'numpy': np.__version__, 'scipy': scipy.__version__, 'sklearn': sklearn.__version__, 'praat':native_proof['version_stdout'], 'native_exe_sha256':native_proof['exe_sha256'],'yaapt':yaapt_api.metadata()}}
+    audit.json_write(HERE / f'results/{family}_experiment.json', value)
+    summary = pd.DataFrame([{'model': m, 'split': s, **v} for m, parts in summaries.items() for s, v in parts.items()])
+    fig, axes = audit.plt.subplots(1, 3, figsize=(13, 4))
+    for ax, metric in zip(axes, ('average_mape', 'macro_f1', 'false_voiced_sil')):
+        for model in ('accepted', 'candidate'):
+            part = table[(table.split == 'nested') & (table.model == model)]
+            ax.plot(part.file.str.replace('.wav', '', regex=False), part[metric], 'o-', label=model)
+        ax.set(title=metric)
+        ax.tick_params(axis='x', rotation=30)
+    axes[0].legend(fontsize=8)
+    audit.save_figure(f'{family}_nested', fig, [p_metrics], 'Kết quả từng outer file; lựa chọn chỉ dùng các file train còn lại.', 'Chỉ bốn file; MAPE là thống kê cả file trên lưới chấm chung, không xác minh F0 từng thời điểm.')
+    for figure in audit.ARTIFACTS:
+        figure.update(generator='yaapt_reference.py', generator_sha256=audit.digest(__file__), command=f'python research_workbench_2026_10_07/yaapt_reference.py {family}')
+    audit.json_write(HERE / f'results/{family}_figure_manifest.json', {'figures': audit.ARTIFACTS})
+    fixed=pd.read_csv(HERE/'results/H40_fixed_lofo.csv')
+    report=['# H40 — YAAPT reference port', '',audit.markdown_table(summary),'',
+        'Thuật toán kết hợp ứng viên từ phổ và tương quan chuẩn hóa, rồi chọn chuỗi bằng dynamic programming. Đây là whole-pipeline comparison; chỉ grid frame_length 25/35/45 ms thay đổi trong YAAPT, tda_frame_length giữ 35 ms. Đọc YAAPT_SOURCE_NOTE.md và H40_REGISTRATION.md.', '',
+        'Raw samp_values giữ UV0; không dùng contour nội suy. Native frames_pos/fs, nearest canonical25/10 trong5ms+mộtmẫu, tie sớm; causal FIR giữ nguyên, không sửa offset bằng LAB. Không fit hoặc matching mean/std/count của held file.', '',
+        '## Gate', '', '~~~json',json.dumps(decision,indent=2),'~~~','',
+        '## Selections','',audit.markdown_table(pd.DataFrame([{"outer_held":x['outer_held'],"selected":x['option']['id']} for x in selections])),'',
+        '## Tất cả cấu hình fixed','',audit.markdown_table(fixed[['option_id','file','average_mape','F0mean_mape','F0std_mape','F0num_mape','macro_f1','recall_v','false_voiced_sil']]),'',
+        f"Mỗi nested file Average MAPE≤2%: {value['goal_all_nested_files_le_2']}. Mean≤2% không thay thế điều kiện từng file. Bốn file và lịch sử đã xem khiến nested exploratory; không test tuning hoặc xác minh F0 từng khung.",'',
+        'Giữ probe sine/rich octave failures. Transport two-harmonic và zero kiểm tra dữ liệu/UV, không bảo đảm đúng trên tiếng nói. Không promote hoặc thay original baseline. Jev không tham gia vòng này; nhánh MCP vẫn dừng sau lỗi trước đó.','',
+        'Lệnh: C:/Users/violet/miniconda3/python.exe research_workbench_2026_10_07/yaapt_reference.py H40']
+    (HERE / f'{family}_REPORT.md').write_text('\n'.join(report) + '\n', encoding='utf-8')
+    print(json.dumps(decision, indent=2), flush=True)
+    print(summary[['model', 'split', 'average_mape', 'macro_f1', 'recall_v', 'false_voiced_sil']].to_string(index=False), flush=True)
 
 
-def external():
-    check_registry()
-    assert json.loads((OUT/'H52_train_verification.json').read_text())['passed']
-    assert not (OUT/'H52_external_experiment.json').exists()
-    freeze = json.loads((OUT/'H52_FROZEN_SELECTION.json').read_text())
-    options = [BY_ID[identity] for identity in freeze['external_options']]
-    old = pd.read_csv(OUT/'H48_test_contours.csv',float_precision='round_trip')
-    rows, receipts, outputs, calls = [], [], [], 0
-    for path in sorted((REPO/'TinHieuKiemThu').glob('*.wav')):
-        item = core.frame_features(path,split='test')
-        group = old[(old.file==path.name)&(old.model=='candidate')]
-        baseline = dict(pred=group.pred_voiced.to_numpy(bool),f0=group.f0_hz.to_numpy())
-        assert np.allclose(group.time_s,item['times'],atol=1e-12)
-        bank,note,artifacts,count = compute(path,item['times'],baseline,options,'test')
-        receipts += note;outputs += artifacts;calls += count
-        for identity,(pred,f0) in bank.items():
-            rows.append(dict(option_id=identity,**core.score_file(item,pred,f0)))
-        print('H52 measured test',path.name,flush=True)
-    path = OUT/'H52_test_metrics.csv';pd.DataFrame(rows).to_csv(path,index=False);outputs.append(path)
-    audit.json_write(OUT/'H52_external_experiment.json',dict(frozen_commit=git('rev-parse','HEAD'),
-        freeze_sha256=audit.digest(OUT/'H52_FROZEN_SELECTION.json'),actual_yaapt_calls=calls,
-        receipts=receipts,historical_test_exposure=True,test_tuning=False,actual_fit_files=[],
-        artifacts={str(p.relative_to(REPO)):audit.digest(p) for p in outputs}))
+def check():
+    import amdf_dual_window
+    amdf_dual_window.check()
+    proof=yaapt_api.metadata()
+    failed=json.loads((HERE/'results/yaapt_raw_synthetic_probe.json').read_text())
+    assert failed['adapter_sha256']==audit.digest(HERE/'sources/yaapt_adapter_v1/yaapt_adapter.py')
+    assert failed['generator_sha256']==audit.digest(HERE/'sources/yaapt_adapter_v1/yaapt_setup_probe.py')
+    assert all(x['status']=='failure' and x['error_type']=='AssertionError' for x in failed['rows'])
+    probe=json.loads((HERE/'results/yaapt_synthetic_probe_v2.json').read_text())
+    transport=json.loads((HERE/'results/yaapt_transport_probe.json').read_text())
+    assert probe['adapter_sha256']==transport['adapter_sha256']==audit.digest(HERE/'yaapt_adapter.py')
+    assert probe['generator_sha256']==audit.digest(HERE/'yaapt_setup_probe.py')
+    assert transport['generator_sha256']==audit.digest(HERE/'yaapt_transport_probe.py')
+    assert len(probe['rows'])==12 and len(transport['rows'])==4
+    assert not probe['real_wav_read'] and not transport['real_wav_read']
+    assert all(x['status']=='success' for x in probe['rows'])
+    assert all(x['voiced']==0 for x in probe['rows'] if x['signal']=='zero')
+    assert all(x['center_voiced']>=56 and x['center_max_error_hz']<3 for x in transport['rows'] if x['signal']=='two173')
+    assert all(x['center_max_error_hz']>50 for x in transport['rows'] if x['signal']=='sine173')
+    assert all(x['center_max_error_hz']>80 for x in probe['rows'] if x['signal']=='rich173')
+    assert len(proof['defaults'])==34
+    native_api.metadata()
+    dummy={'times':np.array([.01,.02]),'fs':16000}
+    canonical={'times':np.array([.015,.04])}
+    pp,ff,support=project(dummy,canonical,np.array([True,True]),np.array([170.,190.]),10)
+    assert pp[0] and ff[0]==170. and not pp[1] and not support[1] and np.isnan(ff[1])
+    audit.json_write(HERE/'results/H40_precheck.json',{'family':'H40','runner_sha256':audit.digest(__file__),
+        'adapter_and_source_provenance_checked':True,'16_actual_backend_probes_checked':True,'octave_failures_retained':True,'metadata_failure_before_backend_retained':True,
+        'historical_amdf_parity_checked':True,'nearest_time_tie_and_unsupported_checked':True,'H40_BT2_measured':False})
+    print('PASS YAAPT source/transport/timing/zero and retained octave failures; no H40 BT2 measured.',flush=True)
 
 
 if __name__ == '__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['precheck','register','train','external'])
-    args=parser.parse_args()
-    with threadpool_limits(limits=1):
-        {'precheck':precheck,'register':register,'train':train,'external':external}[args.action]()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('action', choices=['register', 'check', 'H40'])
+    action = parser.parse_args().action
+    if action == 'register':
+        path = HERE / 'H40_REGISTRY.json'
+        assert not path.exists(), 'Do not overwrite registered registry'
+        audit.json_write(path, {'registered_utc': datetime.now(timezone.utc).isoformat(),
+                               'baseline_commit':'c74467a','original_baseline_commit':'009fd2c','rollback_repository_commit':'c74467a',
+                               'family':'H40','algorithm':'YAAPT AMFM_decompy 1.0.12.2 pinned Python port','options':registry('H40')})
+    elif action == 'check':
+        check()
+    else:
+        run('H40')

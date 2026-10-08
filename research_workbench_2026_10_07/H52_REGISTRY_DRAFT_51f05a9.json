@@ -1,6 +1,6 @@
 {
   "family": "H52",
-  "rollback_commit": "51f05a946fa9afd8056d0391d8aa25ca7358c93c",
+  "rollback_commit": "56ee7d8db55fa4a06038587e9b12d182e4b610df",
   "options": [
     {
       "id": "hard170",
@@ -80,10 +80,10 @@
   "whole_pipeline": true,
   "strict_target": "Every one of 8 BT2 files average_mape < 2 percent",
   "hashes": {
-    "research_workbench_2026_10_07\\yaapt_extension.py": "16cce1f6bf5c90d5784e799257a40357474a28b40fe57573fd6085af91893f77",
-    "research_workbench_2026_10_07\\verify_yaapt_extension.py": "4939c456f4022b1f267a2af852d74875f17544fddbd76b9597f6649b3b97bf90",
-    "research_workbench_2026_10_07\\H52_REGISTRATION.md": "91fcd8cc1d0447cba891e3b2f706b4b813b15d4938a3cbee2cef167be0ede9ea",
-    "research_workbench_2026_10_07\\H52_YAAPT_SOURCE_NOTE.md": "66223edc1c807954891088f3b8d3a7d5cc5a55b9acf80d46c50e3546716e8278",
+    "research_workbench_2026_10_07\\yaapt_reference.py": "d89392530da64d22154d438aa97ff2db78973751c09a6f34699188a3337047fa",
+    "research_workbench_2026_10_07\\verify_yaapt_reference.py": "42bc9fd93aff88f3ae97c55b6581269c8cfab9ed0c97a48854f8bae4c6eb650f",
+    "research_workbench_2026_10_07\\H52_REGISTRATION.md": "8bef4cf0a3455ce5bd23002027cdc7fe44892b5d2ef0cc0c4235b3a3458c0fc3",
+    "research_workbench_2026_10_07\\YAAPT_SOURCE_NOTE.md": "16c94cea8ac23d1f19cba976c51635cccf1351872a205064e696f3daafa51c12",
     "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
     "research_workbench_2026_10_07\\voicing_recovery.py": "0982b3f826f180611c88bf5075f736264c7cb9b4a91f605c530463a288e6de8b",
     "research_workbench_2026_10_07\\results\\H47_nested_contours.csv": "9c0e9fd16d26d1fed4992cd1c18d6ebcc181e04a9dc567a509c8d58e0c7c3416",
@@ -92,11 +92,6 @@
     "research_workbench_2026_10_07\\results\\H48_all_files.csv": "33c78057eb3b19cada0ab352ab17a4dfd623f9fd958c3e079360519fcb9c81b5",
     "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
     "research_workbench_2026_10_07\\results\\H49_dataset_manifest.json": "6fd5b490f4ff3b14906228988f46d0790bfeff0844c272d0c10b9e1d189a89c0",
-    "research_workbench_2026_10_07\\results\\H40_raw_native_frames.csv": "e72643bb8fd5467559cc14d294766c1176457e1a75fc3c63d3604e4a9de5e207",
-    "research_workbench_2026_10_07\\results\\H40_fixed_lofo.csv": "29798bbab67d2f59e94ae957ef5a7b94ee0e36394c39a4b79b8ad51a127e1c2c",
-    "research_workbench_2026_10_07\\yaapt_reference.py": "8d95ae4e90b934d0842845c4fd81d2ca5da4f98ab5b249902f128234dccdd72a",
-    "research_workbench_2026_10_07\\verify_yaapt_reference.py": "9e3a169e4fa37f708ee033aa29d245b7e22f1b72a8b2069dc45c105ec580d3c0",
-    "research_workbench_2026_10_07\\YAAPT_SOURCE_NOTE.md": "3b86b5bb23082eb726aaa1b494e525f0deef75d81b4dd050f2c24a28947cad04",
     "research_workbench_2026_10_07\\vendor\\yaapt_5c6c9bc\\LICENSE": "a0ea4e08ff25b3f23ef6bad3433d0d9b2d711defaf242df3dce901fa2befd5ec",
     "research_workbench_2026_10_07\\vendor\\yaapt_5c6c9bc\\README.txt": "a3ced69a528a29cbe9779f82c99034c3e3bfd30dd780e393dc27f1135406299c",
     "research_workbench_2026_10_07\\vendor\\yaapt_5c6c9bc\\amfm_decompy\\basic_tools.py": "93d380d2e9f82518081da8c31df5c503bfb06e7c8abf8fbba67f784022fa7fe0",

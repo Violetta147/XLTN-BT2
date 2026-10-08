@@ -10,4 +10,8 @@ Prereg+source+12syntheticprobe+verifier phải commit/push/remoteverify trước
 
 Sau train verification, freeze duy nhất selected option và commit/push/remoteverify trước external. BT2test chấm control+selected+default (deduplicate); default diagnostic reference được chốt **ở đây** kể cả nếu selected là control. Không grid/tune test; lịch sử test exposure giữ giới hạn. KEELE không nằm trong H52; chỉ cân nhắc một benchmark riêng sau kết quả BT2, không tạo thêm số lượt để thay kết luận. Báo before/after perfile kể cả thất bại, không autopromote hoặc overwrite output. Không Drive/DL/PDF/Jev retry/prose skill.
 
-Lệnh: `yaapt_reference.py precheck/register/train/external`; `verify_yaapt_reference.py train/test`, bằng local Python3.13 hiện tại. Source/version/adaptation tại YAAPT_SOURCE_NOTE.md. Mọi dữ liệu gốc và frozen config được hash trước đo.
+Lệnh: `yaapt_extension.py precheck/register/train/external`; `verify_yaapt_extension.py train/test`, bằng local Python3.13 hiện tại. Source/version/adaptation tại H52_YAAPT_SOURCE_NOTE.md. Mọi dữ liệu gốc và frozen config được hash trước đo.
+
+## Amendment trước measurement
+
+Commit51f05a9 là bản đăng ký đầu, chưa đo BT2. Kiểm tra lịch sử phát hiện H40 đã chạy YAAPT và các tên source cũ được dùng bởi H40. Trả nguyên source H40 từ56ee7d8, chuyển toàn source vòng mới sang yaapt_extension.py/verify_yaapt_extension.py/H52_YAAPT_SOURCE_NOTE.md. H52 không phải thuật toán chưa từng thử: novelty là NLFER grid, pitch-only hybrid dưới hard170 và final-DP ablation. Default35ms được replay để lưu candidate/merit/NLFER proof chưa được H40 lưu; phải kiểm exact parity raw/native/canonical với H40_f35. Lượt replay này không tính thành bằng chứng độc lập mới. H40 rich173/sine173 octave failures vẫn tồn tại, không bị12rich-harmonic100/200/300 probe mới thay thế. Registry amended được commit/push/remoteverify trước mọi measurement.
