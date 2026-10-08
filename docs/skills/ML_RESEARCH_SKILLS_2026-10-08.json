@@ -1,0 +1,262 @@
+{
+  "date": "2026-10-08",
+  "installer": "Codex official install-skill-from-github.py, pinned download",
+  "skills": [
+    {
+      "name": "scikit-learn",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\scikit-learn",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "pin": "92ace75ac21efe19a620434e0ca4e356081fe807",
+      "upstream_sha256": "a1765797d072ab40094522abe68fb04505d0881f66b7dfceeb8582422dbe488d",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/common_workflows.md",
+        "references/core_capabilities.md",
+        "references/model_evaluation.md",
+        "references/pipelines_and_composition.md",
+        "references/preprocessing.md",
+        "references/quick_reference.md",
+        "references/supervised_learning.md",
+        "references/unsupervised_learning.md"
+      ],
+      "installed_files": {
+        "references\\common_workflows.md": "dfe19c80358acb5f418a21cea4de3b7e83733481441f3c76d0a2ead4420261de",
+        "references\\core_capabilities.md": "c869d9c207fcfc345207d397021a289f3820492ddf0fcd0b3a56a336bd0e1453",
+        "references\\model_evaluation.md": "e6f581c0ce2abffaac2f0bafc1a7bfbe86ec18f8969c6e9b91cc732a12a5fea5",
+        "references\\pipelines_and_composition.md": "a1810cd67dc9141d962fa1972e11b06be6bd437213e10a563e5ec4256fb274a9",
+        "references\\preprocessing.md": "098506f0ca83e57d0c7cccd166164d025552ad7310b79d1010f5ff34e1cc4818",
+        "references\\quick_reference.md": "5401b75fdaa10bf393b024f3c559631011c7be233d2313da37a3f27d7389659a",
+        "references\\supervised_learning.md": "d4e5911d175c3a349dd42e33c984b05cdafce230f264b6774996d0eeef36608a",
+        "references\\unsupervised_learning.md": "cb476ef499fe35ee2c0416fdc31abad42384ac0110f6d3932901e99b039ae1b1",
+        "references\\upstream-entrypoint.md": "a1765797d072ab40094522abe68fb04505d0881f66b7dfceeb8582422dbe488d",
+        "scripts\\classification_pipeline.py": "46abbb2b11095147cc31314405910b211c313d142f2480599f8508d47e5809f3",
+        "scripts\\clustering_analysis.py": "5d1f962a70e049907a39a75cd7a130000a5d3e3de5a4fa4889d07f007c052a17",
+        "SKILL.md": "14949e868c2365d69b3c9c853250397ce3b864823781965cebbe7dbf4fd7b898"
+      }
+    },
+    {
+      "name": "pytorch-lightning",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\pytorch-lightning",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "pin": "92ace75ac21efe19a620434e0ca4e356081fe807",
+      "upstream_sha256": "d8829e74e8a1d908f923cf0c0a850ecfdd9edcb004d2fa90ec32fb1ed0006ce8",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/best_practices.md",
+        "references/callbacks.md",
+        "references/data_module.md",
+        "references/distributed_training.md",
+        "references/lightning_module.md",
+        "references/logging.md",
+        "references/trainer.md"
+      ],
+      "installed_files": {
+        "references\\best_practices.md": "e99b13ebdd43b702b6e1fc9732a85ea2ee153c16377c7f216a3433a0cd81d325",
+        "references\\callbacks.md": "84801cfe2ba309afc8b5a3a13a2a752ae9b0cd98617771fe29551dd7201e21a3",
+        "references\\data_module.md": "be42f4a16a8898257834cd893f61977a6f8270828e7cae1b67dbc23a01a15549",
+        "references\\distributed_training.md": "0a8b2b4a9975b170750db85c334288bd48b46fd06eb5c00589b17a187d9e4591",
+        "references\\lightning_module.md": "0e33e3f04f8c9e25a8c03b51ec8e3d9ad3b968b5789eb36341e2f3198535d35b",
+        "references\\logging.md": "624f90f1d0aaf7143de4ba90b855cb541065dbec1d8ac2ca3fb766a91e2d07d4",
+        "references\\trainer.md": "67eb14cbdd6ffd162264d5fa6c6ffecc63f55cfad75334f1bec90ed4c5b483f4",
+        "references\\upstream-entrypoint.md": "d8829e74e8a1d908f923cf0c0a850ecfdd9edcb004d2fa90ec32fb1ed0006ce8",
+        "scripts\\quick_trainer_setup.py": "1b700c1dde892042252cee202fa8bcfd26b035e73eb4617362bfaa6f891126e1",
+        "scripts\\template_datamodule.py": "3febf10bab4bf537ea584c351181d092fcdbd1fb6914fd90bb5bd4cd80134ffe",
+        "scripts\\template_lightning_module.py": "2053136d3bc5523661dbbfce64c4b4506415e679cc34edc60ba9242c8d3dfb71",
+        "SKILL.md": "d43368a72d9c009df8fe44640037b8b3e9dbe394e3e282a5003c0f491db22470"
+      }
+    },
+    {
+      "name": "experimental-design",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\experimental-design",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "pin": "92ace75ac21efe19a620434e0ca4e356081fe807",
+      "upstream_sha256": "db2de0f3d29b7729776a91e923c9c83801298f5ad8e88fe44570045fbefcc248",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/design_types.md",
+        "references/factorial_and_doe.md",
+        "references/randomization_and_blocking.md",
+        "references/sequential_and_adaptive.md"
+      ],
+      "installed_files": {
+        "references\\design_types.md": "1f36f14160bc9895773a2922402869202866410c9130f2b32c5a54e5f5a6e71b",
+        "references\\factorial_and_doe.md": "a59fa2279c439c096a66955b4923ad68c00d6046570665e6f6d36e807fa1de63",
+        "references\\randomization_and_blocking.md": "fabcfae913397fb8c3018b959b67ddf8fe47322b40cbf4155d898fa11738e9ae",
+        "references\\sequential_and_adaptive.md": "83085e2cde0942de23670d3aabb30768fb576a6aa99c2e4ac6f7790b00977051",
+        "references\\upstream-entrypoint.md": "db2de0f3d29b7729776a91e923c9c83801298f5ad8e88fe44570045fbefcc248",
+        "scripts\\doe_designs.py": "916996b5e6a5dbb9a408aa1e755a95800af70231e46d12c8c5efddb9e3e30683",
+        "scripts\\randomization.py": "c7c2eab469618a4b27548058b924ec3f4aafaf635d3797af920b9058e700bce4",
+        "SKILL.md": "af526d1c578270081b9050a69a08159eb48b935973c83935a06965827cc4b86b"
+      }
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\scientific-critical-thinking",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "pin": "92ace75ac21efe19a620434e0ca4e356081fe807",
+      "upstream_sha256": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/common_biases.md",
+        "references/core_capabilities.md",
+        "references/evidence_hierarchy.md",
+        "references/experimental_design.md",
+        "references/logical_fallacies.md",
+        "references/review_sources.md",
+        "references/scientific_method.md",
+        "references/statistical_pitfalls.md"
+      ],
+      "installed_files": {
+        "references\\common_biases.md": "641e8e8e6dfadac1643ea8691b7d3e4e58cf013f134cd42c71301878096a5a39",
+        "references\\core_capabilities.md": "0f337b96aa2d7453433a17824368fbd0638b9469d4f90a5fd23f4167c9dee180",
+        "references\\evidence_hierarchy.md": "534fbe991ecfb2d162f755004dc528118ce74a78862917c2911595a522d76e6c",
+        "references\\experimental_design.md": "eca7e42025393984c07676f3d4bc354d217e5604dc2209c76215d31953a7c74c",
+        "references\\logical_fallacies.md": "becfc5bfac7b831dca67cc442cd0fcb42d8eea527a6fc2921c1b704e592ff593",
+        "references\\review_sources.md": "71e75106f36f3e69b28959ad1fec503ccdb21b7f5361ab230173e4812accbf62",
+        "references\\scientific_method.md": "5aa925b97c7a916f819dafc8b42a9c24e4bd3eb2836594e724f1e7f9ae75ea0f",
+        "references\\statistical_pitfalls.md": "0c43204a0a81110cfeb7c982fa4caa89f274bdcebf096e09e5adfccf31241cb9",
+        "references\\upstream-entrypoint.md": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4",
+        "SKILL.md": "1d0fdfa86d155dcb574c0c8f31b1abe3ab15830a64ccee25715144a843bf06c9"
+      }
+    },
+    {
+      "name": "brainstorming-research-ideas",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\brainstorming-research-ideas",
+      "repository": "Orchestra-Research/AI-Research-SKILLs",
+      "pin": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "upstream_sha256": "8422a1a6dc0a88d05f02b9fbe0f8c2ae06a77024856d18125efa13d19d855d46",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [],
+      "installed_files": {
+        "references\\upstream-entrypoint.md": "8422a1a6dc0a88d05f02b9fbe0f8c2ae06a77024856d18125efa13d19d855d46",
+        "SKILL.md": "008a5f82a96959307c741199857f3bcf7d9410376cced720a4d0b287007e99aa"
+      }
+    },
+    {
+      "name": "nanogpt",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\nanogpt",
+      "repository": "Orchestra-Research/AI-Research-SKILLs",
+      "pin": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "upstream_sha256": "8893d8dd5b7ba4ae3219497e26d33fc9565e6bbf0d6aa4d6c1c3ee05003468c3",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/architecture.md",
+        "references/data.md",
+        "references/training.md"
+      ],
+      "installed_files": {
+        "references\\architecture.md": "0a5bef9e725f8fdb0fe649688168562c69cd82deea279d289939df4a5aec23d2",
+        "references\\data.md": "316bcdacc6e8538b7315d8e079bd71a00815bec435fad39b42e85be1a5f3a0de",
+        "references\\training.md": "82cba9bf57cb82a2120f637f839badc1c54920be5ca41a00fd22042c45665119",
+        "references\\upstream-entrypoint.md": "8893d8dd5b7ba4ae3219497e26d33fc9565e6bbf0d6aa4d6c1c3ee05003468c3",
+        "SKILL.md": "e3bf01e5daf9ef10fee6d34092369a94f8bed527e178b97a2a38fdae3076b567"
+      }
+    },
+    {
+      "name": "mamba-architecture",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\mamba-architecture",
+      "repository": "Orchestra-Research/AI-Research-SKILLs",
+      "pin": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "upstream_sha256": "51ddf99c12a472a78c258bddf7e66e72cf45d9e04969f3300cc8d68aaaef9b0e",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata.",
+        "Renamed mamba folder to mamba-architecture; corrected three absent reference names to bundled documents."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/architecture-details.md",
+        "references/benchmarks.md",
+        "references/training-guide.md"
+      ],
+      "installed_files": {
+        "references\\architecture-details.md": "09cf810fbcc2949e889f502c910bca97be094f0efde759294d40300591dd77ea",
+        "references\\benchmarks.md": "7f64a92015656c1ee318b23d11f8d3951a03c00be8dcf1614e01c6133f8a269f",
+        "references\\training-guide.md": "e382cfc6e0b6af4a04862001c983ea746b4ad327a1eec43b8b2955035b3b0fb0",
+        "references\\upstream-entrypoint.md": "51ddf99c12a472a78c258bddf7e66e72cf45d9e04969f3300cc8d68aaaef9b0e",
+        "SKILL.md": "c1e3791b052dfce1765010f6c5658573e44270f6b8c19009e493e2b5dbaabdaa"
+      }
+    },
+    {
+      "name": "paper-to-code",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\paper-to-code",
+      "repository": "lingzhi227/agent-research-skills",
+      "pin": "9e6c085d65e313e475e921fdfe795ac11eb7589e",
+      "upstream_sha256": "1fd69a862b17eac82ec56803bf85729ac7e6c399c51d9b123582929a17351830",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata.",
+        "Relative references, natural-language input, host-compatible runner, bounded debugging, installed related skills."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/paper-to-code-prompts.md"
+      ],
+      "installed_files": {
+        "references\\paper-to-code-prompts.md": "77bf255fc6d66a27dfdcdc046ff47abdbbc8e52258d398b59d1d15b3e0c8c4f2",
+        "references\\upstream-entrypoint.md": "1fd69a862b17eac82ec56803bf85729ac7e6c399c51d9b123582929a17351830",
+        "SKILL.md": "0307d6188a22738d6fe67b5cd5eac31d819125858f73ad5d41ed7727dfb395c3"
+      }
+    },
+    {
+      "name": "experiment-code",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\experiment-code",
+      "repository": "lingzhi227/agent-research-skills",
+      "pin": "9e6c085d65e313e475e921fdfe795ac11eb7589e",
+      "upstream_sha256": "cd1b02b523460476c551aae66a2358a48a4457ebbd50ba0f992982eda340c70b",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata.",
+        "Relative references; preserve failed/zero metrics; no forced figures, completed-run repetition, or unbounded retries."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/code-patterns.md",
+        "references/experiment-prompts.md"
+      ],
+      "installed_files": {
+        "references\\code-patterns.md": "30cbe09a9bf871d83538964f60266c45926116f77e8cc88d0143682f6dbfcdca",
+        "references\\experiment-prompts.md": "c0469bd618e731a08b45b7c3abefe51edae74a78758cfd448b3e39580e3df6be",
+        "references\\upstream-entrypoint.md": "cd1b02b523460476c551aae66a2358a48a4457ebbd50ba0f992982eda340c70b",
+        "SKILL.md": "99207144683cd6d11eaeb9d92fdad430be5910662d07e6d701bb04e68ea1e7ff"
+      }
+    },
+    {
+      "name": "ml-pipeline-workflow",
+      "path": "C:\\Users\\LAPTOP T&T\\.codex\\skills\\ml-pipeline-workflow",
+      "repository": "wshobson/agents",
+      "pin": "46891e7e60da0e52baf1050b7b6391b64e84c6d9",
+      "upstream_sha256": "3049880901f70761137ef8818c6e0e5c357e5d108b82be48003e98c882a31c8b",
+      "adaptations": [
+        "Preserved upstream entrypoint; moved provider-specific metadata/tool names into metadata.",
+        "Replaced seven nonexistent upstream references/assets with a supplied research pipeline guide; no deployment or scheduler implied."
+      ],
+      "validation": "Skill is valid!",
+      "entrypoint_references": [
+        "references/research-pipeline.md"
+      ],
+      "installed_files": {
+        "references\\research-pipeline.md": "a15a21353da2f2a94a980276be1c945557e58f2117db45d3a762e10e32a2b972",
+        "references\\upstream-entrypoint.md": "3049880901f70761137ef8818c6e0e5c357e5d108b82be48003e98c882a31c8b",
+        "SKILL.md": "fff3656c1347303a205bc6917168b7b6afe35dcf67bbc4f87abdf067e72d3793"
+      }
+    }
+  ],
+  "structural_validation_only": true,
+  "runtime_dependencies_installed": false
+}
