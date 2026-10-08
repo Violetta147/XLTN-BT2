@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "original_notebook_unchanged": true,
+  "registries_sources_predictions_reports_checked": true,
+  "all_eight_target_met": false,
+  "measurements_rerun": false,
+  "figures_visually_reviewed": [
+    "H56_recovery_matrix",
+    "H56_estimator_ablation",
+    "H57_two_sided_matrix"
+  ],
+  "H57_prereg_remote_readback_completed_after_train": true
+}

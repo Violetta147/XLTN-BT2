@@ -37,3 +37,7 @@ SRH từ residual và SRH giới hạn quanh baseline đã đo/verified, nhưng 
 ## Cập nhật H56
 
 Đã kiểm tra same-mask estimator recovery ở33fits/3seeds/300train+36testgroups. Final vẫn chọnhard170 nên bảng8file đầu không đổi. Bound200 cóstudio_F1 fixedLOFO0.899591% vàstudio_F2 diagnostic3.437002%, nhưngstudio_M1>2 vàphone_M2xấuhơn, khôngpromote. H56_REPORT.md phânrãcount vàkhung đổiF0; đây là bằngchứng mộtphần vấnđề estimator, khôngchứngminhtestlỗi/datasmall/GTwrong. Targetall8FAIL;originalnotebookgiữ.
+
+## Cập nhật H57
+
+Two-sidedGMMposteriorrejection.1/.25/.5 khôngthắngtrain,loạinhiềuLABV;finalhard170 bảng8fileđầuunchanged. Testq.25phoneM2MAPE5.61377 cógiảmnhưngrecallV.78358/counterror13.82114%,khôngpromotehoặcdùngsốriêngđểbáosuccess. Count/estimator/clustersemanticsaudit ởH56_REPORT.md/H57_REPORT.md. H57explicitpreregremoteverification chậm sau train dùpushsuccesstrước; timingnote preserved. Targetall8FAIL.

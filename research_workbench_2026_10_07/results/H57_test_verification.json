@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "metric_groups": 36,
+  "new_model_fits": 0,
+  "scalar_removal_retained_pitch_metrics_folds_selection_checked": true,
+  "source": "H56 verified GMM posterior and anchored pitch",
+  "verifier_sha256": "542e066985e55126888e2befdc81dcfe46f697c0f857afdcb726ac1ab93a3d15"
+}

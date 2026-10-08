@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "selected": "hard170",
+  "all_eight_target_met": false,
+  "new_measurements": 0,
+  "protocol_deviation": "Explicit prereg remote readback completed after train; push succeeded before train. Freeze readback completed before test.",
+  "input_hashes": {
+    "research_workbench_2026_10_07\\results\\H57_train_verification.json": "69236c7a448c6163312321cfaea95e0a58de090a3d45302709bea70990ad5142",
+    "research_workbench_2026_10_07\\results\\H57_train_fixed.csv": "23f7748e602781c3a6438c5354ba3ae4573f1505b8c51c801dc7b971b4f2bf3c",
+    "research_workbench_2026_10_07\\results\\H57_train_proofs.json": "6bf1edb2b87442bf597ae119482a265befc3159572718e63595691bb0ddd673a",
+    "research_workbench_2026_10_07\\results\\H57_test_verification.json": "fc346a891866046f2d5aa63ac8cf4b521d1243f718069c74bbd8adb24abdc3a9",
+    "research_workbench_2026_10_07\\results\\H57_test_fixed.csv": "53a9447c622a1d251f25ed17082f502d5f94a0630adcc4dab4fd7d405c6c12eb",
+    "research_workbench_2026_10_07\\results\\H57_test_proofs.json": "c1d370d62a93024f99ebc2a5993ef0c1c83f6dde966da696fd20be0309e92a35",
+    "research_workbench_2026_10_07\\results\\H56_models.json": "36bcb4bf5762219f3d1a54a8627525a158d8e570cb4edec7dbbdac66f03ddbd1",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_F1.npz": "20b7ca4aaee52dda542ab6fae0d9a743b56516adf95b720d66cd3ea6e279ce09",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_M1.npz": "e0ece1aa275519928b60ec2d8a2d29eabf550f40782390c03eebbceae4864528",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_F1.npz": "4f7ed0d11b41c6b6ff71cc05362368bf95862bd96ad6b4e4af612daa5adc1898",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_M1.npz": "29d0b1dd36f2a4ea627790a40e12e117b574a9f9e34a658ebdd738ddb4d42647"
+  },
+  "outputs": {
+    "research_workbench_2026_10_07\\H57_REPORT.md": "7d6e76d6acfcfcbe837c18965540bc645615461290d3aae944bcfdf7990ed7ec",
+    "research_workbench_2026_10_07\\results\\H57_removed_label_audit.csv": "a329f87f56994f1f9ae07797a442657d118ce593e26e97c6d38904c9b92a7ec8",
+    "research_workbench_2026_10_07\\results\\H57_component_semantics_audit.csv": "5ad67619066d4a7f4e07c3fd71ff3f2b535f3c4b1036d6e108285c42d93dab8a",
+    "research_workbench_2026_10_07\\results\\H57_seed_summary.csv": "14fbf2dddc12693e017fe9614db4634ab57e7b4185c20fabcd8a1862665ab009",
+    "research_workbench_2026_10_07\\results\\H57_selected_all_files.csv": "56b8f1b789a096abb50cd9983cb1d958802828c304ac71ecc5a9f047291793d6",
+    "research_workbench_2026_10_07\\figures\\H57_two_sided_matrix.png": "adcbb11a1b51ff0d2172a6461945cb87109d77ef8a766e59bb83e9c13c886e5b",
+    "research_workbench_2026_10_07\\figures\\H57_two_sided_matrix.svg": "be7be44adc56e094a2742db0884e51471739442d1a00dfb3ed6ee87fdc47442b"
+  },
+  "source_sha256": "b5736475739ecc86e5abf6114b09c4e93ad4b031f3783eb543a8cf78cfd5b4c1"
+}

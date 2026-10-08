@@ -1,0 +1,19 @@
+{
+  "measured_commit": "3891d32c570b0a891e392cb988ce02a2222cb366",
+  "new_model_fits": 0,
+  "new_native_calls": 0,
+  "reused_models": "H56 gmm_PEZS 33 fit pools/3seeds",
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "freeze_sha256": "ce8b450bccee1cc5e705136048c221a3078a439725ed92906a95159d09c034b5",
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H57_test_proofs.json": "c1d370d62a93024f99ebc2a5993ef0c1c83f6dde966da696fd20be0309e92a35",
+    "research_workbench_2026_10_07\\results\\H57_test_fixed.csv": "53a9447c622a1d251f25ed17082f502d5f94a0630adcc4dab4fd7d405c6c12eb"
+  }
+}
