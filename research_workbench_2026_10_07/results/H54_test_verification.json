@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "metric_groups": 12,
+  "lp_frames": 2607,
+  "spectrum_frames": 1276,
+  "native_proofs": 4,
+  "ill_conditioned_lp_frames": 0,
+  "largest_lpc_condition": 2812524.890709484,
+  "independent_lpc_equation_convolution_full_fft_scalar_harmonic_sum": true,
+  "new_measurements": 0,
+  "limits": "Dense LPC coefficient comparison only where condition<=1e8; backward equation residual everywhere. Polyphase resampling uses the same SciPy implementation; no native MATLAB/Octave bit parity.",
+  "verifier_sha256": "0ebd5e8c746a447f9ecc74df0c8f2f6777c6a0323054efba2cdf2061cc572dda"
+}

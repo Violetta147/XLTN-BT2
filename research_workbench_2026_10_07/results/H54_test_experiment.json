@@ -1,0 +1,26 @@
+{
+  "measured_commit": "452718021c22c9395df2275a39e94f7ac41b9ad9",
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1"
+  },
+  "actual_fit_files": [],
+  "seed": null,
+  "wall_time_s": 2.4382608000014443,
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "algorithm": "COVAREP-derived Python research port SRH; no native MATLAB/Octave execution or bit-identical claim",
+  "freeze_sha256": "0793b783b17c74069f9fd61a718e3095546ce1172bf45898b408b4fc9c69d779",
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H54_test_native_phone_F2_w100.npz": "abeb230ecc280d0836311c40c486394f86c463ae4acb2e0e83cbe1caf5ab6fc7",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_phone_F2.npz": "5602bbba20e9d7f1de850e3555abd3825f5440202afd7f13b1ae9fadd46d0e14",
+    "research_workbench_2026_10_07\\results\\H54_test_native_phone_M2_w100.npz": "d3f934526d8db889b7d967bb33280891abfcf59ac3216edac9bf437c5b214c8b",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_phone_M2.npz": "822b6fd8e3aa6b9fc71ccd3dac427087f13a453b707cd1bee6f260bdbbfd5310",
+    "research_workbench_2026_10_07\\results\\H54_test_native_studio_F2_w100.npz": "fb3d1ab97f3bf3c9887c70ce931330238c663726d8791e4ff63494275ceae239",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_studio_F2.npz": "4fe568734600dd03312cdd102c2cd97999a1f72f0438befbe53f5b005dcc0213",
+    "research_workbench_2026_10_07\\results\\H54_test_native_studio_M2_w100.npz": "565c0f44595cfd83c9d3df5c3b9611611c15df9319d261f2bcabbf2f821a3816",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_studio_M2.npz": "6e94561d4bc424ed044ae8324e71190ddfe0346b4a80e4f720ada4212960f267",
+    "research_workbench_2026_10_07\\results\\H54_test_fixed.csv": "f46cc22d5a7bea842304f455b43d2783770adf7325173859992dac57d3a6754d"
+  }
+}

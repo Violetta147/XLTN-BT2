@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "new_measurements": 0,
+  "selected": "hard170",
+  "all_eight_strict_below_2": false,
+  "qualified_counts": {
+    "test": 0,
+    "train": 4
+  },
+  "input_hashes": {
+    "research_workbench_2026_10_07\\results\\H54_train_fixed.csv": "c9fe8ff650806cc6a331ab93139ff76dc0ca9addfb7052fc170474bcc687cf05",
+    "research_workbench_2026_10_07\\results\\H54_test_fixed.csv": "f46cc22d5a7bea842304f455b43d2783770adf7325173859992dac57d3a6754d",
+    "research_workbench_2026_10_07\\results\\H54_train_verification.json": "fdec0807e86a8c40bc543ccf20da5af4cc4e5dde48c0a00b52dabcf410e26d9f",
+    "research_workbench_2026_10_07\\results\\H54_test_verification.json": "f08de6a6e31af2596423a7cbe65efdd4342588c82c3db465198eac979e25c268",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_phone_F2.npz": "5602bbba20e9d7f1de850e3555abd3825f5440202afd7f13b1ae9fadd46d0e14",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_phone_M2.npz": "822b6fd8e3aa6b9fc71ccd3dac427087f13a453b707cd1bee6f260bdbbfd5310",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_studio_F2.npz": "4fe568734600dd03312cdd102c2cd97999a1f72f0438befbe53f5b005dcc0213",
+    "research_workbench_2026_10_07\\results\\H54_test_predictions_studio_M2.npz": "6e94561d4bc424ed044ae8324e71190ddfe0346b4a80e4f720ada4212960f267",
+    "research_workbench_2026_10_07\\results\\H54_train_predictions_phone_F1.npz": "8f2e78311023909f9196f6029c47af0a8083b7c863d96015d809b030783a5e2f",
+    "research_workbench_2026_10_07\\results\\H54_train_predictions_phone_M1.npz": "1b6575994e27edd6ba647d4a21bcb661f7008806a4b056ca597b2a5448883db8",
+    "research_workbench_2026_10_07\\results\\H54_train_predictions_studio_F1.npz": "95532f9efcec5d2b6d924b1d75f6ffdb7cfffac61192862ff37a047d03183266",
+    "research_workbench_2026_10_07\\results\\H54_train_predictions_studio_M1.npz": "f35d90e6b829d023bd70bbb624786756dd02381949dc5ebfc76ce8ff3a0da406"
+  },
+  "outputs": {
+    "research_workbench_2026_10_07\\H54_REPORT.md": "009a090687311a2525a75db9e7bc22314685944ef779badb319d151942a1e460",
+    "research_workbench_2026_10_07\\results\\H54_all_metrics.csv": "d25bf7cb0af5b3020813c72860d583d5c2b012ad24e55cb831a8905ab909c920",
+    "research_workbench_2026_10_07\\results\\H54_selected_all_files.csv": "b70a4e4264c7d7fae7edd290f48beb4630d3d9b4f7fb8beea61a9b38cb60e090",
+    "research_workbench_2026_10_07\\results\\H54_pitch_disagreement.csv": "0d2be0f79c38c7421247821a0a7b296079f8ae6f09de6c4064555dc0fe9ec167",
+    "research_workbench_2026_10_07\\results\\H54_largest_pitch_changes.csv": "68a7c3f28dc9707a313eb099f7a7af861953112bac914885c927654f2dc29936",
+    "research_workbench_2026_10_07\\figures\\H54_srh_matrix.png": "3c51c778907b4d978018e21216476fa390fc985882905c8c04a55cc7402b8296",
+    "research_workbench_2026_10_07\\figures\\H54_srh_matrix.svg": "3c13e6a52e6cfa0cb3b91676baa39be540d6f04a9722f9b64545177bdcb95af8",
+    "research_workbench_2026_10_07\\figures\\H54_srh_qualitative.png": "56af9b8cd8e400c12ea2e44c9f02f2671f7c8aeaa4eebd767181a9d689658c7b",
+    "research_workbench_2026_10_07\\figures\\H54_srh_qualitative.svg": "33178b07f7208f9d472532a51b028bc6ac009e3a743c4f6df7e4bfa0e32bf8eb"
+  },
+  "source_sha256": "cd801623064bb14dc7f735e084de33f71beaedab815115e1b6f04c97f322d835"
+}

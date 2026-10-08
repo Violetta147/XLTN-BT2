@@ -165,3 +165,7 @@ H53 cepstrum/NCCF candidates trong±200centsbaseline với transitionpath trênr
 
 Selectedhard170 vẫn4/4train<2,0/4test<2:4.197313/6.833750/5.063462/2.114791%; all8FAIL. ĐọcH52_REPORT.md/H53_REPORT.md/H52_VERIFICATION_NOTE.md; H53_pitch_matrix vàH53_largest_pitch_changes.csv là phân tích mô tả, không xác nhận F0 từng khung. Không rerun phép đo đã lưu. Coverage đã sửa YAAPT nằmH40; không suy diễn datasmall/GTwrong. SHA notebook đã nộp được kiểm lại vẫnb643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c. Giữ mục tiêuBT2 trước bàiBT1bổsung.
 
+
+# H54 — SRH exploratory hoàn tất
+
+Prereg45f489e và freeze4527180 push/remoteverify trước train/test; source GPL3+ COVAREP pin5a2be5d port Python, không native MATLAB parity.3window60/80/100 ×whole/pitch_only+hard170, khôngfit/seed,final/cả4outer chọnhard170,112innertraces. VerifierPASS7740/2607LPCframes,3813/1276fullFFT/scalarSRHframes,28/12groups; BT2conditionmax1.31e7train, mọiLPCdensecomparisonPASS. Synthetic15/18accuracyPASS,3FAIL100→300Hz vẫngiữ; math qualificationPASS, lỗi checker hệcondition3.09e10 sửatrướcđo, khôngsửaSRH thuậttoán. Whole100SILFPtrain154so0. Diagnosticpitchonly100phone_F2=1.666665/studio_F2=3.012553, nhưngphone_M2=7.960597/studio_M2=3.042067 xấuhơn; khôngpromote/routefromtest. Selectedbaselinevẫn4/4train,0/4test<2; all8FAIL. H54_REPORT.md,matrix/qualitativePNG/SVG,largets40changes/8disagreementgroups/reportreceipt. Khôngrerunmeasurements. BoundedSRH chưađo ởmốcH54, có thể chặncảsửaoctavebaseline; cầnpreregriêng. NoDrive/DL/PDF/Jev/proseskill; ưu tiênBT2trướcBT1bổsung.
