@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "preregistered_analysis_commit": "93d5fac170e6d682b5d3005a0fd5672b2ddd8470",
+  "new_F0_inference": false,
+  "test_inference": false,
+  "descriptive_only": true,
+  "groups": 60,
+  "duplicate_Praat7_groups": [
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "file": "phone_F1.wav",
+      "duplicate_origin": "H33_cached_native"
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "file": "phone_M1.wav",
+      "duplicate_origin": "H33_cached_native"
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "file": "studio_F1.wav",
+      "duplicate_origin": "H33_cached_native"
+    },
+    {
+      "option_id": "praat7_filtered_v0.45",
+      "file": "studio_M1.wav",
+      "duplicate_origin": "H33_cached_native"
+    }
+  ],
+  "AC_auto_10ms_exact_duplicate_files": 4,
+  "independent_scalar_and_quantile_checks": true,
+  "prior_native_stats_groups_verified": 44,
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\R02_distribution_summary.csv": "996fdb8dce1a8d44f4366515ebd5dbafcf8f0c0af6dfdc20a0f8ee9e20e9cd37",
+    "research_workbench_2026_10_07\\results\\R02_paired_ratio_disagreements.csv": "6c56fe85302ad57c02a057304aaa2e5f7a9537edf96636767ecbd94546acd98f",
+    "research_workbench_2026_10_07\\results\\R02_time_density_pattern.csv": "66b802f15f511c705477f382795a6af681123fb4b20dfcc580ca6f9f172d6368",
+    "research_workbench_2026_10_07\\results\\R02_old_new_reference.csv": "a4a37d44dea41794a86baf258fa34cde56b6471a430756ad5134621174e83ba9",
+    "research_workbench_2026_10_07\\figures\\R02_histogram.png": "55817fababb16f5fa12dd029fa545d45fd3af3b41cc6cf57b76e73183b9b0eb3",
+    "research_workbench_2026_10_07\\figures\\R02_ecdf.png": "8359568b92a1cb4bae7685fb8bb01cfdf29a875e66add0edf37bcda893492912",
+    "research_workbench_2026_10_07\\figures\\R02_ratios.png": "2806e1f32c3125daa8a20923c6945187491dca50e39801e7d704749c295227d6"
+  },
+  "limitations": [
+    "Teacher distribution unavailable; only mean/std/count.",
+    "Different native windows/masks/steps; no uniform software ranking as frame accuracy.",
+    "4 training files; overlapping frames and reused settings are not independent replications.",
+    "Ratios to baseline are disagreement, not frame truth.",
+    "No change to GT/baseline and no tuning/filtering from shapes."
+  ]
+}
