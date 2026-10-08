@@ -1,0 +1,21 @@
+{
+  "status": "FAIL",
+  "preregistered_verifier": "verify_pyin25.py",
+  "preregistered_verifier_sha256": "e0f28c9f8bd4aff40712800e8dcc9fe0735c46fdf7fba2409e260acfb8710100",
+  "error": "AssertionError studio_M1.wav F0mean",
+  "candidate": "pyin25_beta2_38",
+  "voiced_count": 0,
+  "discrepant_keys": [
+    "F0mean",
+    "F0std",
+    "F0mean_mape",
+    "F0std_mape",
+    "average_mape",
+    "F0mean_abs_error",
+    "F0std_abs_error"
+  ],
+  "independent_and_saved_values": "Both NaN for every discrepant key, independently confirmed from stored native predictions.",
+  "measurement_changed": false,
+  "correction": "v2 accepts paired NaN solely for verification and trace parity; finite eligibility remains unchanged; original verifier/source/registry and results remain unchanged.",
+  "secondary_audit_error": "Initial JSON audit serialization rejected NaN; no file was written; this audit represents missing values as text."
+}

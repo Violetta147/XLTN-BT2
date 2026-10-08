@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "verifier_version": "v2_nan_parity",
+  "post_measurement_correction": "Compare paired missing statistics as equal only in verification; zero-voiced option remains invalid; original checker/output preserved.",
+  "groups": 16,
+  "checks": [
+    {
+      "file": "phone_F1.wav",
+      "option_id": "hard170",
+      "voiced_count": 147,
+      "integration_certificate": {
+        "assignment_compliant": false
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin25_beta2_8",
+      "voiced_count": 157,
+      "integration_certificate": {
+        "frames": 322,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin25_beta2_18",
+      "voiced_count": 126,
+      "integration_certificate": {
+        "frames": 322,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin25_beta2_38",
+      "voiced_count": 118,
+      "integration_certificate": {
+        "frames": 322,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "hard170",
+      "voiced_count": 233,
+      "integration_certificate": {
+        "assignment_compliant": false
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin25_beta2_8",
+      "voiced_count": 235,
+      "integration_certificate": {
+        "frames": 414,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin25_beta2_18",
+      "voiced_count": 196,
+      "integration_certificate": {
+        "frames": 414,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin25_beta2_38",
+      "voiced_count": 91,
+      "integration_certificate": {
+        "frames": 414,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "hard170",
+      "voiced_count": 123,
+      "integration_certificate": {
+        "assignment_compliant": false
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin25_beta2_8",
+      "voiced_count": 144,
+      "integration_certificate": {
+        "frames": 284,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin25_beta2_18",
+      "voiced_count": 131,
+      "integration_certificate": {
+        "frames": 284,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin25_beta2_38",
+      "voiced_count": 126,
+      "integration_certificate": {
+        "frames": 284,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "hard170",
+      "voiced_count": 85,
+      "integration_certificate": {
+        "assignment_compliant": false
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin25_beta2_8",
+      "voiced_count": 134,
+      "integration_certificate": {
+        "frames": 271,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin25_beta2_18",
+      "voiced_count": 83,
+      "integration_certificate": {
+        "frames": 271,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin25_beta2_38",
+      "voiced_count": 0,
+      "integration_certificate": {
+        "frames": 271,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true,
+        "assignment_compliant": true
+      }
+    }
+  ],
+  "independent_timestamp_mask_range_scalar_metrics_selection": true,
+  "source_runtime_protected_output_hashes": true,
+  "inner_summary_changedcase_membership": true,
+  "assignment_compliant_new_options": true,
+  "historical_control_compliant": false,
+  "limitation": "Official pYIN candidate probabilities/Viterbi are source-backed, not independently reimplemented; immutable historical gate reused; hard170 is research control only."
+}

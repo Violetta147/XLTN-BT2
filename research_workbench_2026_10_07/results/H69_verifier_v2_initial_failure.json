@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "stage": "inner trace parity",
+  "error": "final F0mean",
+  "reason": "keep_default_na=False retains missing CSV numeric values as empty strings; independently computed value is NaN",
+  "correction": "Allow CSV empty field only when independently computed metric is NaN; finite values still exact in traces; measurements and gates unchanged",
+  "additional_attempt": "After allowing paired empty/NaN, finite inner metrics were still strings because one empty value made the entire column textual. No measurements changed.",
+  "resolved_read_policy": "Explicit missing-value parsing for numeric columns only; keep actual_fit_files empty string; round-trip float parsing retained"
+}
