@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "metric_groups": 16,
+  "scalar_bounded_frames": 1764,
+  "independent_scalar_selector_projection_metrics": true,
+  "new_native_calls": 0,
+  "source_proof": "H54 cached verified LPC/FFT/SRH, hashes protected",
+  "verifier_sha256": "b72096a9e2df57a52f828bb86642619a4c3979e5bffbb9e02ddc479eebad1e0b"
+}

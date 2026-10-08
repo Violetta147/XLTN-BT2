@@ -1,0 +1,13 @@
+{
+  "option": {
+    "id": "hard170",
+    "width_cents": 0
+  },
+  "actual_fit_files": [],
+  "seed": null,
+  "external_options": [
+    "hard170",
+    "srh_bound_200"
+  ],
+  "no_test_selection": true
+}
