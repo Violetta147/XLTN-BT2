@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "groups": 12,
+  "checks": [
+    {
+      "file": "phone_F1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 147
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "nls_3",
+      "voiced_frames": 147
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "nls_5",
+      "voiced_frames": 147
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 233
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "nls_3",
+      "voiced_frames": 233
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "nls_5",
+      "voiced_frames": 233
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 123
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "nls_3",
+      "voiced_frames": 123
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "nls_5",
+      "voiced_frames": 123
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 85
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "nls_3",
+      "voiced_frames": 85
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "nls_5",
+      "voiced_frames": 85
+    }
+  ],
+  "independent_qr_basis_weighted_residual_grid_bracket": true,
+  "independent_grid_metrics_selection": true,
+  "mask_count_invariant": true,
+  "limitation": "Independent QR verifies objective/grid/local bracket; optimizer is not independently rerun."
+}
