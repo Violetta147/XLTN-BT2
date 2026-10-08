@@ -1,0 +1,91 @@
+{
+  "family": "H54",
+  "rollback_commit": "229dfe0b529688b0891b072d2993256755c3d0e9",
+  "options": [
+    {
+      "id": "hard170",
+      "mode": "control",
+      "window_ms": 100
+    },
+    {
+      "id": "srh_w60_whole",
+      "mode": "whole",
+      "window_ms": 60
+    },
+    {
+      "id": "srh_w60_pitch_only",
+      "mode": "pitch_only",
+      "window_ms": 60
+    },
+    {
+      "id": "srh_w80_whole",
+      "mode": "whole",
+      "window_ms": 80
+    },
+    {
+      "id": "srh_w80_pitch_only",
+      "mode": "pitch_only",
+      "window_ms": 80
+    },
+    {
+      "id": "srh_w100_whole",
+      "mode": "whole",
+      "window_ms": 100
+    },
+    {
+      "id": "srh_w100_pitch_only",
+      "mode": "pitch_only",
+      "window_ms": 100
+    }
+  ],
+  "upstream_commit": "5a2be5d6b776f14a0b275c69fde90eb13849e60d",
+  "actual_fit_files": [],
+  "seed": null,
+  "hashes": {
+    "research_workbench_2026_10_07\\srh_experiment.py": "aff8cc1844d51d937d1b2ee0d2219bc1e895a61f9750acc60c191dba37951191",
+    "research_workbench_2026_10_07\\srh_port.py": "0e8586035bf44771f54bc1dec7bf7cb33a303c741e89fe16cb1f8aa81897a043",
+    "research_workbench_2026_10_07\\verify_srh.py": "0ebd5e8c746a447f9ecc74df0c8f2f6777c6a0323054efba2cdf2061cc572dda",
+    "research_workbench_2026_10_07\\H54_REGISTRATION.md": "5efe44d381ad36f7dad7f886839fba5ba4c2e4527e2faa9773f8036a40b536c8",
+    "research_workbench_2026_10_07\\SRH_SOURCE_NOTE.md": "ac52eb1664a71668285c9c1428aec65d68777621c2d4ac6db304399dfb4eb2ab",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_07\\voicing_recovery.py": "0982b3f826f180611c88bf5075f736264c7cb9b4a91f605c530463a288e6de8b",
+    "research_workbench_2026_10_07\\verify_yaapt_extension_v2.py": "a49d00b82f391e23616011caf31341351534ceac945828532ce13b17aa6a37a3",
+    "research_workbench_2026_10_07\\yaapt_extension.py": "16cce1f6bf5c90d5784e799257a40357474a28b40fe57573fd6085af91893f77",
+    "research_workbench_2026_10_07\\results\\H47_nested_contours.csv": "9c0e9fd16d26d1fed4992cd1c18d6ebcc181e04a9dc567a509c8d58e0c7c3416",
+    "research_workbench_2026_10_07\\results\\H48_test_contours.csv": "19f625abb7b39af4be00feca10531509973a6465cb5e3fcaf01182fbabdab224",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_07\\results\\H54_initial_synthetic_failure.json": "224e5789908427a9aa90aafb3bd3ef3255f3f793b67878a036e6ce88556d3591",
+    "research_workbench_2026_10_07\\results\\H54_initial_port_source.txt": "c3e15be9717d24ab7d8ebc6dda4b92224b5055cc063d172e438e831223e39596",
+    "research_workbench_2026_10_07\\results\\H54_initial_runner_source.txt": "2485b6a83c53712bc13323b6986a1689fea6ca160b480fbfdda96f8ed22fa9a9",
+    "research_workbench_2026_10_07\\results\\H54_precheck.json": "32101a31e96cd7adceef2c04fab362975d4b03a03b0314009e6fb711ac07b16e",
+    "research_workbench_2026_10_07\\results\\H54_component_check_initial_failure.md": "c490b316ddf133c85a874635b6c6827702f157191f2c795f15b437134211251b",
+    "research_workbench_2026_10_07\\sources\\srh_5a2be5d\\GPL-3.0.txt": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "research_workbench_2026_10_07\\sources\\srh_5a2be5d\\LICENSE.txt": "1737751040205e04769ee91432d34497446a2431188cdedd2116b32cd33f6133",
+    "research_workbench_2026_10_07\\sources\\srh_5a2be5d\\lpcresidual.m": "3210ed7ae9111c85d96fa634ed6965f937bbf3b00a2b235ed575a495a2e131dd",
+    "research_workbench_2026_10_07\\sources\\srh_5a2be5d\\pitch_srh.m": "d1f0f7e73c78612042ba859e0b133fd91f7ce00763581d481b5208b9e2bfc747",
+    "TinHieuHuanLuyen\\phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "TinHieuHuanLuyen\\phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "TinHieuHuanLuyen\\studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "TinHieuHuanLuyen\\studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+    "TinHieuHuanLuyen\\phone_F1.lab": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+    "TinHieuHuanLuyen\\phone_M1.lab": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+    "TinHieuHuanLuyen\\studio_F1.lab": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+    "TinHieuHuanLuyen\\studio_M1.lab": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+    "TinHieuKiemThu\\phone_F2.wav": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+    "TinHieuKiemThu\\phone_M2.wav": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+    "TinHieuKiemThu\\studio_F2.wav": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+    "TinHieuKiemThu\\studio_M2.wav": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+    "TinHieuKiemThu\\phone_F2.lab": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565",
+    "TinHieuKiemThu\\phone_M2.lab": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
+    "TinHieuKiemThu\\studio_F2.lab": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
+    "TinHieuKiemThu\\studio_M2.lab": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
+    "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+    "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+    "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+    "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+    "research_3gt_2026_10_05\\test_3gt\\phone_F2.lab": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f",
+    "research_3gt_2026_10_05\\test_3gt\\phone_M2.lab": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238",
+    "research_3gt_2026_10_05\\test_3gt\\studio_F2.lab": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852",
+    "research_3gt_2026_10_05\\test_3gt\\studio_M2.lab": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "cases": [
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "window_ms": 60,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "window_ms": 80,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "window_ms": 100,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "window_ms": 60,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "window_ms": 80,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "window_ms": 100,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "window_ms": 60,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "window_ms": 80,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "window_ms": 100,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "window_ms": 60,
+      "median_error_hz": 200.0,
+      "voiced_fraction": 1.0,
+      "passed": false
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "window_ms": 80,
+      "median_error_hz": 200.0,
+      "voiced_fraction": 1.0,
+      "passed": false
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "window_ms": 100,
+      "median_error_hz": 200.0,
+      "voiced_fraction": 1.0,
+      "passed": false
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "window_ms": 60,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "window_ms": 80,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "window_ms": 100,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "window_ms": 60,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "window_ms": 80,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "window_ms": 100,
+      "median_error_hz": 0.0,
+      "voiced_fraction": 1.0,
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "all_zero_safe_nonvoiced": true,
+  "scope": "Synthetic source/filter signals; no BT2; no MATLAB bit-parity claim"
+}

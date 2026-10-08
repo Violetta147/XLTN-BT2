@@ -1,0 +1,5 @@
+# H54 — lỗi kiểm tra hệ số LPC trước đo BT2
+
+Lệnh `python srh_experiment.py precheck` dừng tại `np.allclose(a,proof['lp_coefficients'][k],rtol=1e-6,atol=1e-7)` trong verifier bản đầu. Chưa chạy train/test BT2. Tín hiệu tổng hợp 300 Hz, fs44100, sau resample16k: frame đầu có condition number 30937475478.11095, chênh hệ số tối đa 4.7878287403411296e-05 giữa dense solver và Toeplitz solver; scaled backward error của hệ số port là 5.88345048603829e-17. Cùng phương trình nhưng hệ số nhạy với sai số làm tròn khi hệ điều kiện xấu; không kết luận port đã bằng MATLAB.
+
+Sửa phương pháp kiểm tra trước preregistration, không sửa thuật toán để chọn theo BT2: kiểm tra scaled backward error <1e-12 ở mọi frame có năng lượng, so hệ số dense rtol1e-6/atol1e-7 khi condition<=1e8; ghi số frame condition>1e8. Convolution/energy/overlap-add được tính lại từ hệ số lưu, kiểm tra residual rtol1e-6/atol1e-6. Full FFT và SRH scalar được tính lại. Không tuyên bố so hệ số dense chính xác ở mọi frame hoặc bit parity reference MATLAB. Ba lỗi chọn 100→300 Hz vẫn giữ nguyên, tiêu chí accuracy tổng hợp không nới.
