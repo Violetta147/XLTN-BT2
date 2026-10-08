@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "fs": 16000,
+      "f0": 100.0,
+      "option_id": "yaapt_default",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 0.6211180124223574,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 16000,
+      "f0": 100.0,
+      "option_id": "yaapt_no_final_dp",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 0.6211180124223574,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 16000,
+      "f0": 200.0,
+      "option_id": "yaapt_default",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 2.4691358024691397,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 16000,
+      "f0": 200.0,
+      "option_id": "yaapt_no_final_dp",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 2.4691358024691397,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 16000,
+      "f0": 300.0,
+      "option_id": "yaapt_default",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 3.7037037037036953,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 16000,
+      "f0": 300.0,
+      "option_id": "yaapt_no_final_dp",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 3.7037037037036953,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 44100,
+      "f0": 100.0,
+      "option_id": "yaapt_default",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 0.22624434389140902,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 44100,
+      "f0": 100.0,
+      "option_id": "yaapt_no_final_dp",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 0.22624434389140902,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 44100,
+      "f0": 200.0,
+      "option_id": "yaapt_default",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 0.45248868778281803,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 44100,
+      "f0": 200.0,
+      "option_id": "yaapt_no_final_dp",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 0.45248868778281803,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 44100,
+      "f0": 300.0,
+      "option_id": "yaapt_default",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 2.0270270270270316,
+      "passed": true,
+      "warnings": []
+    },
+    {
+      "fs": 44100,
+      "f0": 300.0,
+      "option_id": "yaapt_no_final_dp",
+      "voiced_fraction": 1.0,
+      "median_absolute_error_hz": 2.0270270270270316,
+      "passed": true,
+      "warnings": []
+    }
+  ],
+  "passed": true,
+  "scope": "12 synthetic harmonic calls; not BT2 measurement; silence not supported by vendor and no fake zero score"
+}
