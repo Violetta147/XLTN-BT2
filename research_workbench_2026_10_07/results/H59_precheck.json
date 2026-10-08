@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "length": 1,
+      "enumeration_parity": true
+    },
+    {
+      "length": 2,
+      "enumeration_parity": true
+    },
+    {
+      "length": 5,
+      "enumeration_parity": true
+    },
+    {
+      "length": 6,
+      "enumeration_parity": true
+    }
+  ],
+  "long_sequence_finite": true,
+  "uniform_transition_unary_parity": true,
+  "no_cross_file_transitions": true,
+  "held_labels_ignored": true,
+  "fit_labels_affect_transition": true,
+  "scalar_decision_threshold_pitch": true
+}
