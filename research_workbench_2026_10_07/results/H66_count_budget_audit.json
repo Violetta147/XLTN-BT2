@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "algebra on cached H48 accepted pipeline",
+  "source": "results\\H48_all_files.csv",
+  "source_sha256": "33c78057eb3b19cada0ab352ab17a4dfd623f9fd958c3e079360519fcb9c81b5",
+  "output_sha256": "e5db19331446eaa196319e5131af27db020128703e5b99f12b47f66c8eeaaf57",
+  "rows": 8,
+  "new_audio_or_test_inference": false,
+  "parameters_selected": false,
+  "statement": "Average MAPE=(mean_error+std_error+count_error)/3; fixed count leaves strict budget 6-count_error.",
+  "limitation": "Algebraic feasibility does not prove a signal estimator can attain the required mean/std simultaneously; test has historical exposure."
+}
