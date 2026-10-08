@@ -600,7 +600,6 @@
     "research_workbench_2026_10_07\\results\\H68_synthetic_44100_90.npz": "6962a9e6f14d9f6fda133d79b907b269a9c962e3348b5568a8276686e4492c57",
     "research_workbench_2026_10_07\\results\\H68_synthetic_44100_173.npz": "3a81dc1ae5480ba5cffd591c6ccac0e082a88457363254a18a0920c053fb50cc",
     "research_workbench_2026_10_07\\results\\H68_synthetic_44100_300.npz": "9f8ab1c2644529d4eb01d8b700b9d08dffc54469e2e6ebd0efed55b5e3332fed",
-    "research_workbench_2026_10_07\\compare_distributions.py": "7cde50b7b9489dde07a091a4907f2b4c9b0d30d097bff624d282914b2d050ff6",
     "research_workbench_2026_10_07\\R02_DISTRIBUTION_PLAN.md": "2493686d34e0cb59fbdb213f0bce453dc873260aea2699322d19220cb5467ecb",
     "research_workbench_2026_10_07\\results\\R01_reference_matches.csv": "131c334aff06e39d7a31acd0c839d65a211faa1d1424bd8867fc094f7c9a0739",
     "research_workbench_2026_10_07\\results\\R01_new_native_frames.csv": "cbae2a873f17c800351d1732974e4410bd43e6254f35e535c932eee2a28f4618",
@@ -625,7 +624,7 @@
     "TinHieuKiemThu\\phone_M2.lab": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
     "TinHieuKiemThu\\studio_F2.lab": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
     "TinHieuKiemThu\\studio_M2.lab": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
-    "research_workbench_2026_10_07/compare_distributions.py": "d2542e13cd831a4315989fc2a055709cf73a30372348a858f2663ee118584193"
+    "research_workbench_2026_10_07\\compare_distributions.py": "d2542e13cd831a4315989fc2a055709cf73a30372348a858f2663ee118584193"
   },
   "external_protected": {
     "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\turn-in-assignment - Copy\\BT2_ACF_best_no_energy_set.ipynb": "b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c",
@@ -634,5 +633,6 @@
     "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96"
   },
   "new_inference": false,
-  "selection_or_promotion": false
+  "selection_or_promotion": false,
+  "prereg_setup_correction": "Initial run stopped at source hash check before stats: post-register tolerance edit updated slash key while original Windows backslash key retained old hash; normalize to one entry. No inference/statistics outputs existed; estimator/config/protected files unchanged."
 }

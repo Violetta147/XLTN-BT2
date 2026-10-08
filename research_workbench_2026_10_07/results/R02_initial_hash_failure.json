@@ -1,0 +1,9 @@
+{
+  "status": "SETUP_FAIL",
+  "initial_prereg_commit": "eaf56efdb3ed9137cdfb2cb65c05ebf55ac689d0",
+  "failed_path": "research_workbench_2026_10_07\\compare_distributions.py",
+  "reason": "duplicate separator spelling retained pre-final source hash",
+  "new_F0_inference": false,
+  "statistics_outputs_written": false,
+  "fix": "single current source hash; no tolerance change after measurements; paired half-hop tolerance was already in committed source"
+}
