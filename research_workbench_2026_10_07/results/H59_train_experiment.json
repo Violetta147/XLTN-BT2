@@ -1,0 +1,122 @@
+{
+  "measured_commit": "2aec9e9be49eecd829340b53962b4eb6887cda81",
+  "new_gmm_fits": 0,
+  "new_label_mappings": 0,
+  "new_transition_fits": 33,
+  "new_native_calls": 0,
+  "mapping_supervised": true,
+  "reused_models": "H56 gmm_PEZS 33 fit pools/3seeds",
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "mapping_sha256": "265716db1783d540d13776873228dcc16b8237c3cbf6090c8bb39a24118b994d",
+  "transition_sha256": "b859218f18fe018d70696d2bf8688cdb4ac5c3202fa8b490dd9517d4401b9795",
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "recovery_only"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "hard170"
+    }
+  ],
+  "decisions": {
+    "11": {
+      "checks": {
+        "train_mape_relative_10_percent": false,
+        "nested_mape_relative_5_percent": false,
+        "nested_f1_drop_at_most_01": true,
+        "nested_recall_v_drop_at_most_01": true,
+        "nested_sil_increase_at_most_1": true,
+        "nested_no_file_mape_worse_by_over_2pp": true,
+        "nested_phone_f1_std_not_worse": true,
+        "selected_lofo_mape_relative_5_percent": false
+      },
+      "eligible": false,
+      "each_nested_file_below_2": true,
+      "champion_promoted": false
+    },
+    "29": {
+      "checks": {
+        "train_mape_relative_10_percent": false,
+        "nested_mape_relative_5_percent": false,
+        "nested_f1_drop_at_most_01": true,
+        "nested_recall_v_drop_at_most_01": true,
+        "nested_sil_increase_at_most_1": true,
+        "nested_no_file_mape_worse_by_over_2pp": true,
+        "nested_phone_f1_std_not_worse": true,
+        "selected_lofo_mape_relative_5_percent": false
+      },
+      "eligible": false,
+      "each_nested_file_below_2": true,
+      "champion_promoted": false
+    },
+    "47": {
+      "checks": {
+        "train_mape_relative_10_percent": false,
+        "nested_mape_relative_5_percent": false,
+        "nested_f1_drop_at_most_01": true,
+        "nested_recall_v_drop_at_most_01": true,
+        "nested_sil_increase_at_most_1": true,
+        "nested_no_file_mape_worse_by_over_2pp": true,
+        "nested_phone_f1_std_not_worse": true,
+        "selected_lofo_mape_relative_5_percent": false
+      },
+      "eligible": false,
+      "each_nested_file_below_2": true,
+      "champion_promoted": false
+    }
+  },
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H59_transitions.json": "b859218f18fe018d70696d2bf8688cdb4ac5c3202fa8b490dd9517d4401b9795",
+    "research_workbench_2026_10_07\\results\\H59_train_proofs.json": "e666e77593dab291fbbd381759b74211a64a0e6817031f7120b3d5f0910384cc",
+    "research_workbench_2026_10_07\\results\\H59_train_fixed.csv": "03f9ee67f8125f951f873e1df8b6ff15d0078b30ee1cc9dbea39bbf0a1db7ee0",
+    "research_workbench_2026_10_07\\results\\H59_inner_traces.json": "84e95116b14c026b4a9b6e3e91650b9389ab5245ca4732bace0b5d93665aeec0",
+    "research_workbench_2026_10_07\\results\\H59_FROZEN_SELECTION.json": "098a77d635070db005eff1e442d4b4686ce81178895bcd18f40a4c4f399ebebd",
+    "research_workbench_2026_10_07\\results\\H59_metrics.csv": "c5eac7776bc0c5bf856f072f5c10a7d5a463f938734579fd3bdc649a0d809353"
+  }
+}

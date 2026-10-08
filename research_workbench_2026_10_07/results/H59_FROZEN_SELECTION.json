@@ -1,0 +1,21 @@
+{
+  "option": {
+    "id": "hard170",
+    "reject": 0.0,
+    "temporal": false
+  },
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "external_options": [
+    "hard170",
+    "recovery_only",
+    "mapped_rejection_025",
+    "markov_rejection_025"
+  ],
+  "no_test_selection": true,
+  "mapping_sha256": "265716db1783d540d13776873228dcc16b8237c3cbf6090c8bb39a24118b994d",
+  "transition_sha256": "b859218f18fe018d70696d2bf8688cdb4ac5c3202fa8b490dd9517d4401b9795"
+}
