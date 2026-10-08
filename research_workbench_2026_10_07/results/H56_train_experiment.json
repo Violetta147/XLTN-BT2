@@ -1,0 +1,121 @@
+{
+  "measured_commit": "0b640710a36be3523ee3fbbef9c75976127209c1",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "actual_model_fits": 33,
+  "wall_time_s": 11.757942699998239,
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "recovery_acf"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "hard170"
+    }
+  ],
+  "decisions": {
+    "11": {
+      "checks": {
+        "train_mape_relative_10_percent": false,
+        "nested_mape_relative_5_percent": false,
+        "nested_f1_drop_at_most_01": true,
+        "nested_recall_v_drop_at_most_01": true,
+        "nested_sil_increase_at_most_1": true,
+        "nested_no_file_mape_worse_by_over_2pp": false,
+        "nested_phone_f1_std_not_worse": true,
+        "selected_lofo_mape_relative_5_percent": false
+      },
+      "eligible": false,
+      "each_nested_file_below_2": false,
+      "champion_promoted": false
+    },
+    "29": {
+      "checks": {
+        "train_mape_relative_10_percent": false,
+        "nested_mape_relative_5_percent": false,
+        "nested_f1_drop_at_most_01": true,
+        "nested_recall_v_drop_at_most_01": true,
+        "nested_sil_increase_at_most_1": true,
+        "nested_no_file_mape_worse_by_over_2pp": false,
+        "nested_phone_f1_std_not_worse": true,
+        "selected_lofo_mape_relative_5_percent": false
+      },
+      "eligible": false,
+      "each_nested_file_below_2": false,
+      "champion_promoted": false
+    },
+    "47": {
+      "checks": {
+        "train_mape_relative_10_percent": false,
+        "nested_mape_relative_5_percent": false,
+        "nested_f1_drop_at_most_01": true,
+        "nested_recall_v_drop_at_most_01": true,
+        "nested_sil_increase_at_most_1": true,
+        "nested_no_file_mape_worse_by_over_2pp": false,
+        "nested_phone_f1_std_not_worse": true,
+        "selected_lofo_mape_relative_5_percent": false
+      },
+      "eligible": false,
+      "each_nested_file_below_2": false,
+      "champion_promoted": false
+    }
+  },
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H56_train_fixed.csv": "ea9b9a438ee2ae4c212a7e44bf580ce5920e2e0c89140b4762499edeaabaaf27",
+    "research_workbench_2026_10_07\\results\\H56_train_proofs.json": "231f0ce5521ab8d538ff0d94d8bf4682ecc05a795c9be4637557b888a0f5def0",
+    "research_workbench_2026_10_07\\results\\H56_models.json": "36bcb4bf5762219f3d1a54a8627525a158d8e570cb4edec7dbbdac66f03ddbd1",
+    "research_workbench_2026_10_07\\results\\H56_FROZEN_SELECTION.json": "a892bce9f9a19d15a51aaa5a26565737bca3a71d217c32ab0dba7bfff229c8ac",
+    "research_workbench_2026_10_07\\results\\H56_inner_traces.json": "2df15c4874ed37cf0063f320cd14d46235ea3ba18b0661fcbb9305234a7d5021",
+    "research_workbench_2026_10_07\\results\\H56_metrics.csv": "be75d00bdf61a8b1f91ef81e8254b755988a0e46dc5e6df12dcded180fa38be4"
+  }
+}

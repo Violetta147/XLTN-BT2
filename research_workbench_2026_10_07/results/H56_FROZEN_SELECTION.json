@@ -1,0 +1,17 @@
+{
+  "option": {
+    "id": "hard170",
+    "width": 0
+  },
+  "external_options": [
+    "hard170",
+    "recovery_acf",
+    "recovery_bound_200"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "no_test_selection": true
+}
