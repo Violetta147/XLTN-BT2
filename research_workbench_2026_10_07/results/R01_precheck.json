@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "tests": [
+    {
+      "id": "praat6_ac_auto",
+      "method": "ac",
+      "time_step": null,
+      "voiced_count": 97,
+      "median_cents": 0.010974404039063013,
+      "silence_voiced": 0,
+      "passed": true
+    },
+    {
+      "id": "praat6_ac_10ms",
+      "method": "ac",
+      "time_step": 0.01,
+      "voiced_count": 97,
+      "median_cents": 0.010974404039063013,
+      "silence_voiced": 0,
+      "passed": true
+    },
+    {
+      "id": "praat6_cc_auto",
+      "method": "cc",
+      "time_step": null,
+      "voiced_count": 293,
+      "median_cents": 0.0027964503518257415,
+      "silence_voiced": 0,
+      "passed": true
+    },
+    {
+      "id": "praat6_cc_10ms",
+      "method": "cc",
+      "time_step": 0.01,
+      "voiced_count": 98,
+      "median_cents": 0.003020345253720118,
+      "silence_voiced": 0,
+      "passed": true
+    }
+  ]
+}
