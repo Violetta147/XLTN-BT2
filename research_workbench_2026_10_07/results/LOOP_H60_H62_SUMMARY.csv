@@ -1,0 +1,16 @@
+family,option_id,measured_split,below_2_count,file_count,worst_file_mape,mean_file_mape,verifier_status,test_newly_measured,selected_final
+H60,hard170,BT2 training files,4,4,1.909922760737396,1.1249322995423308,PASS,False,True
+H60,maps_pitch,BT2 training files,1,4,37.506278959015646,10.92125399000654,PASS,False,False
+H60,maps_whole_20,BT2 training files,0,4,20.256716258493835,13.719336989205463,PASS,False,False
+H60,maps_whole_50,BT2 training files,0,4,21.818704275461062,14.34981536498616,PASS,False,False
+H60,maps_whole_80,BT2 training files,0,4,22.592506854148088,19.320805793364215,PASS,False,False
+H61,hard170,BT2 training files,4,4,1.909922760737396,1.1249322995423308,PASS,False,True
+H61,nls_3,BT2 training files,3,4,2.1937842405880508,1.2315667178718623,PASS,False,False
+H61,nls_5,BT2 training files,3,4,2.173974691172308,1.1660921050942918,PASS,False,False
+H62,hard170,BT2 training files,4,4,1.909922760737396,1.1249322995423308,PASS,False,True
+H62,logistic_4_reject_00,BT2 training files,1,4,13.870675018760153,7.03399715896166,PASS,False,False
+H62,logistic_4_reject_10,BT2 training files,1,4,13.870675018760153,6.973087917298737,PASS,False,False
+H62,logistic_4_reject_25,BT2 training files,1,4,13.870675018760153,6.718064766986872,PASS,False,False
+H62,logistic_6_reject_00,BT2 training files,1,4,12.33003854331158,6.600378536905334,PASS,False,False
+H62,logistic_6_reject_10,BT2 training files,1,4,12.33003854331158,6.578779965550668,PASS,False,False
+H62,logistic_6_reject_25,BT2 training files,1,4,12.240089889690118,6.39534176967616,PASS,False,False
