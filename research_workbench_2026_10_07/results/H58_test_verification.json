@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "metric_groups": 36,
+  "new_gmm_fits": 0,
+  "independent_scalar_mapping_and_responsibilities": true,
+  "scalar_removal_retained_pitch_metrics_folds_selection_checked": true,
+  "source": "H56 verified GMM parameters and anchored pitch; fold-local supervised mapping recomputed scalar",
+  "verifier_sha256": "6fd8e8d6d7fe722f804cfe498cba6a74b8f96142285b1c2cf56c0c3496ff5a46"
+}

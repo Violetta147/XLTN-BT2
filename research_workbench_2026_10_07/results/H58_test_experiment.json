@@ -1,0 +1,22 @@
+{
+  "measured_commit": "c699f701110d628b3290f1d1b48568676e1dffb1",
+  "new_gmm_fits": 0,
+  "new_label_mappings": 0,
+  "new_native_calls": 0,
+  "mapping_supervised": true,
+  "reused_models": "H56 gmm_PEZS 33 fit pools/3seeds",
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "mapping_sha256": "265716db1783d540d13776873228dcc16b8237c3cbf6090c8bb39a24118b994d",
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "freeze_sha256": "3c743a56114bd9a692795b482472e09b5fe1e3069e3c58535925db50bc393692",
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H58_test_proofs.json": "47857df8e570c6ec087aad7fd3871ee9dc589c71bf40ca178d16c5a4f4ef9071",
+    "research_workbench_2026_10_07\\results\\H58_test_fixed.csv": "17fcf4d2f432570624bdd8ad404254afff154869690716eed69e196547e5a10b"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "prereg": "0bbd6a7ef9e49cddd19ddcdca55c8b8075a71f0d",
+  "freeze": "c699f701110d628b3290f1d1b48568676e1dffb1",
+  "remote_sha_verified_before_train_and_test": true,
+  "registry_hashes_checked": 55,
+  "unique_train_groups": 300,
+  "unique_test_groups": 36,
+  "report_hashes_checked": true,
+  "figure_visually_reviewed": true,
+  "original_notebook_sha256": "b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c",
+  "all_eight_target_met": false,
+  "baseline_train_files_below_2": 4,
+  "baseline_test_files_below_2": 0,
+  "champion_promoted": false
+}

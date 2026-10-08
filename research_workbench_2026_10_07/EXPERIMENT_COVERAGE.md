@@ -26,3 +26,7 @@
 H51 chỉ ablate đầu vào của learner. Điều kiện maxACF/năng lượng và cách lấy pitch khôi phục giữ chung. Các giới hạn này phải được giữ khi diễn giải kết quả về ML/MFCC. Test và KEELE đã có lịch sử exposure; đánh giá hiện tại là mô tả/thăm dò, không chứng nhận một tập kiểm tra hoàn toàn mới. Không có F0 chuẩn từng khung trên BT2.
 
 Lệnh kiểm tra hiện hành dùng `verify_voicing_matrix_v2.py train` và `verify_voicing_matrix_v3.py external`, xem [hồ sơ sửa bộ kiểm tra](H51_VERIFICATION_REPAIR.md). Notebook đã nộp, WAV/LAB và frozen baseline gốc không đổi. Bài mới nằm ở `../../XLTN-BT1-BO-SUNG/` và vẫn sau ưu tiên cải thiện BT2.
+
+## H58 — mapping cụm có giám sát, đã đo
+
+H58 học trọng số LAB V của cả ba cụm GMM chỉ từ fit pool trong mỗi fold, giữ F0/recovery H56 để cô lập rejection mapping. 5 options ×3 seed, grouped nested, permutation và held-label poisoning fixtures; 300 train/36 test metric groups được verifier kiểm độc lập. Mapping giảm loại nhầm V và Brier nhưng chưa cải thiện cấu hình chung; giữ hard170, all8 target FAIL. [Báo cáo H58](H58_REPORT.md). Không gọi mapping có LAB là unsupervised, không gọi test đã xem là independent mới.
