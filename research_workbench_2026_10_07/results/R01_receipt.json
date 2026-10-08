@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "prereg_commit": "8a7af15cfc2df4c89d769327e21b41c7d773dfa4",
+  "new_BT2_inferences": 16,
+  "new_inference_split": "train_only",
+  "new_test_inference": false,
+  "teacher_procedure_identified": false,
+  "all_four_exact_matches": [],
+  "match_counts": [
+    {
+      "option_id": "H30:praat7_filtered_v0.45",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_filtered_v0.45",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_filtered_v0.5",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_filtered_v0.5",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_filtered_v0.55",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_filtered_v0.55",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_raw_v0.45",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H30:praat7_raw_v0.45",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:praat7_filtered_v0.45",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:praat7_filtered_v0.45",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:pyin_f40",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:pyin_f40",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:pyin_f60",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:pyin_f60",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:pyin_f80",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "H33:pyin_f80",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_ac_10ms",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_ac_10ms",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_ac_auto",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_ac_auto",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_cc_10ms",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_cc_10ms",
+      "std_ddof": 1,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_cc_auto",
+      "std_ddof": 0,
+      "matched_files": 0
+    },
+    {
+      "option_id": "praat6_cc_auto",
+      "std_ddof": 1,
+      "matched_files": 0
+    }
+  ],
+  "runtime": {
+    "parselmouth": "0.4.7",
+    "praat": "6.1.38"
+  },
+  "independent_scalar_numpy_stats": true,
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\R01_reference_matches.csv": "131c334aff06e39d7a31acd0c839d65a211faa1d1424bd8867fc094f7c9a0739",
+    "research_workbench_2026_10_07\\results\\R01_new_native_frames.csv": "cbae2a873f17c800351d1732974e4410bd43e6254f35e535c932eee2a28f4618",
+    "research_workbench_2026_10_07\\results\\R01_cached_pipeline_stats.csv": "3555d7a647cd9d61c7750c2a380d40ba20b13d8b19e401de60f6894dc82db24e",
+    "research_workbench_2026_10_07\\results\\R01_label_count_audit.csv": "47d51492533c83ce5b78435d7258f2b333948cb95d668a581f3b43715743216d"
+  },
+  "limitations": [
+    "Matching outputs would not prove teacher software identity.",
+    "No native Harvest cache; projected statistics kept separate.",
+    "Sample versus population std cannot change mean or count.",
+    "Teacher algorithm and F0num definition remain unknown."
+  ]
+}

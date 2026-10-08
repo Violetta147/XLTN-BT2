@@ -1,0 +1,9 @@
+file,split,LAB_V_centers,teacher_F0num,cached_baseline_count,LAB_V_equals_teacher
+phone_F1.wav,train,153,148.0,147,False
+phone_M1.wav,train,244,232.0,233,False
+studio_F1.wav,train,123,127.0,123,False
+studio_M1.wav,train,94,82.0,85,False
+phone_F2.wav,test_cached_labels_only,235,219.0,220,False
+phone_M2.wav,test_cached_labels_only,134,123.0,130,False
+studio_F2.wav,test_cached_labels_only,137,139.0,133,False
+studio_M2.wav,test_cached_labels_only,128,116.0,120,False
