@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "BT2_used": false,
+  "tests": [
+    {
+      "fs": 16000,
+      "seed": 11,
+      "order": 3,
+      "true_hz": 90,
+      "absolute_cents_error": 0.4081660873644928
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "order": 3,
+      "true_hz": 200,
+      "absolute_cents_error": 0.3119824952003435
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "order": 3,
+      "true_hz": 320,
+      "absolute_cents_error": 0.539846676096943
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "order": 5,
+      "true_hz": 90,
+      "absolute_cents_error": 1.0908896645571415
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "order": 5,
+      "true_hz": 200,
+      "absolute_cents_error": 0.4672723984179784
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "order": 5,
+      "true_hz": 320,
+      "absolute_cents_error": 0.3361558559111831
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "order": 3,
+      "true_hz": 90,
+      "absolute_cents_error": 1.139107223828368
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "order": 3,
+      "true_hz": 200,
+      "absolute_cents_error": 0.5750823943511704
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "order": 3,
+      "true_hz": 320,
+      "absolute_cents_error": 0.07396963340309032
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "order": 5,
+      "true_hz": 90,
+      "absolute_cents_error": 1.2127702900522308
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "order": 5,
+      "true_hz": 200,
+      "absolute_cents_error": 0.16082662445035462
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "order": 5,
+      "true_hz": 320,
+      "absolute_cents_error": 0.23708309548966383
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "order": 3,
+      "true_hz": 90,
+      "absolute_cents_error": 2.5631017548886725
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "order": 3,
+      "true_hz": 200,
+      "absolute_cents_error": 1.1123596789455794
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "order": 3,
+      "true_hz": 320,
+      "absolute_cents_error": 1.2452132437146688
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "order": 5,
+      "true_hz": 90,
+      "absolute_cents_error": 1.0734307937178043
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "order": 5,
+      "true_hz": 200,
+      "absolute_cents_error": 0.17846285899566225
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "order": 5,
+      "true_hz": 320,
+      "absolute_cents_error": 0.297294846834492
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "order": 3,
+      "true_hz": 90,
+      "absolute_cents_error": 0.5403705615139887
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "order": 3,
+      "true_hz": 200,
+      "absolute_cents_error": 0.09702285271359302
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "order": 3,
+      "true_hz": 320,
+      "absolute_cents_error": 0.6987271985006358
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "order": 5,
+      "true_hz": 90,
+      "absolute_cents_error": 0.3086053341647058
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "order": 5,
+      "true_hz": 200,
+      "absolute_cents_error": 0.2061973640564319
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "order": 5,
+      "true_hz": 320,
+      "absolute_cents_error": 0.5583068578510145
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "order": 3,
+      "true_hz": 90,
+      "absolute_cents_error": 2.0501180584986463
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "order": 3,
+      "true_hz": 200,
+      "absolute_cents_error": 0.09986439281833366
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "order": 3,
+      "true_hz": 320,
+      "absolute_cents_error": 0.11393948774638514
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "order": 5,
+      "true_hz": 90,
+      "absolute_cents_error": 0.7191660521229838
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "order": 5,
+      "true_hz": 200,
+      "absolute_cents_error": 0.11498737691955317
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "order": 5,
+      "true_hz": 320,
+      "absolute_cents_error": 0.10214193850323337
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "order": 3,
+      "true_hz": 90,
+      "absolute_cents_error": 1.0031173743145545
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "order": 3,
+      "true_hz": 200,
+      "absolute_cents_error": 0.1205003887120532
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "order": 3,
+      "true_hz": 320,
+      "absolute_cents_error": 0.2612810957502444
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "order": 5,
+      "true_hz": 90,
+      "absolute_cents_error": 0.06300926859188254
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "order": 5,
+      "true_hz": 200,
+      "absolute_cents_error": 0.4627000830983848
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "order": 5,
+      "true_hz": 320,
+      "absolute_cents_error": 0.30661173165710903
+    }
+  ],
+  "independent_qr_parity": true,
+  "gain_dc_invariance": true,
+  "seeds_are_fixture_noise_not_model_training": true
+}

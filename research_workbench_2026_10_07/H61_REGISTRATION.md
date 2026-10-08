@@ -1,0 +1,11 @@
+# H61 — harmonic least-squares giữ mask/count
+
+Rollback6d03f2bdbcefadc2d0376708f07ad4c655a54de8, accepted hard170 giữ nguyên. H60 không cải thiện cả whole/pitch-only. Giả thuyết riêng: harmonic waveform regression quanh pitch đang có sẽ giảm bias và dispersion do estimator mà không đổi voicing.
+
+Custom weighted real-harmonic regression, không port fastF0Nls hoặc claim speed/statisticaloptimality. Nguồn abstract/README tại NLS_SOURCE_REVIEW.md; không extractPDF. Mô hình DC +sum a_h cos(2πhf0t)+b_h sin(2πhf0t). Cho mỗi original baselineV, nativeframe đúng25ms của canonical, tọa độ time centered, sqrtHann weights, solveSVD least-squares; tìm residual nhỏ nhất theo F0. Không resample/nativewindowchange/filter/gainnormalization hoặc voicingchange. Grid41offsets -100…+100cents quanhbaseline, clip70–400, step5cents. Bounded scalar minimize trênlogF0 trong hai neighbor grid của minimum, xatol1e-8/maxiter100; giữ tốt hơn gridminimum/optimizer, tiescost/F0. Không ép mean/std theo3GT, không smooth/tunetest, không model mappingtheofile.
+
+3options baseline/harmonicorder3/order5; khácorder là ablation của sốhọaâm. Chỉ thay estimator choV, tất cảmask/count/VUV/SIL giữ nguyên. Fitcoefficients từ từng đoạn WAV đang suy luận, không MLtrain/học nhãn. Deterministic; không giả trainingseeds. Syntheticnoise fixtures dùngseeds11/29/47, f090/200/320Hz,16k/44.1k, gain/DC invariance, independentQR costparity. Tolerance100cents, không nới nếuFAIL.
+
+12unique train metricgroups,48innertraces,24train/LOFO/nestedsummary. Grouped nested4outer/3inner vàfinal4LOFO chỉ chọnorder; minimaxworstfileMAPE→mean→ID với finite/F1/recallV .01/SIL+1guards. Támgates giữ nguyên; tất cả8file<2% riêng. Nestedscores vẫn exploratory sau historical exposure, không frameCV/speakerindependenceclaim. Source/registry/precheck commit/pushremoteverify trước đo; nếuFAIL giữresults, khôngtest mới; nếueligible freezecommit/pushremoteverify rồimới testlockedoption. Khôngrerunoldmatrices.
+
+Verifier source độc lập dùngcos/sin/time/Hann+QR residual, toàn41grid vàlocalbracket, PCMgrid/mask/count/scalarstats/selection/hash. Khôngrerun optimizer, khôngclaimindependentsolversearch. Báo đủmetrics/cases, boundhit fraction, fitresidual vsGTmetric khôngđồngnghĩa framepitchcorrectness. NoDrive/DL/PDF/Jev/proseskill, khôngsửaoriginalnotebook/WAV/LAB/3GT/frozen; BT2 trướcsegmentation.
