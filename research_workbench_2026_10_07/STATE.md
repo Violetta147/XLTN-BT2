@@ -1,4 +1,10 @@
-# Hiện hành sau H63 — 08/10/2026
+# Hiện hành sau H65 và cài skill — 08/10/2026
+
+Người dùng yêu cầu làm ngay các phần thực hiện được. Đãcài10skillML/DL/research vàoCodex, kiểmfrontmatter/name/references ởentrypointPASS10/10, chưacàiPyTorch/CUDA/dependencytraining; docs/skills/ML_RESEARCH_SKILLS_2026-10-08.md vàJSONmanifest cópin/hash/localadaptation. H64globalHPS3/5syntheticFAIL6/36(order5,F090Hz), khôngđoBT2. H65chỉglobalHPS3, reuse18order3fixturePASSkhôngrerun; preregb9f4725push/remoteverifytrướctrain,results9bb8a8fpush/remoteverified. 8groups,32innertraces,24summaryrows,588frameoptionsverifierPASS; MAPEs63.276892/57.729610/6.303452/25.385793%, final/mọiouterhard170,gateFAIL,khôngpromote/testmới. ĐọcH64_REPORT.md/H65_REPORT.md/START_NEXT_CHAT.md. KhôngrerunH00–H65; khôngthínghiệmđangchạy,H66chưađăngký. Người dùngsẵnsàngchạyColabnotebooknếuGPUlocalthiếu;BT2vẫnclassicalCPU/noDrive/DL/PDF/Jev/schedule,notebook/frozen/GTgiữ. Cácmục bên dưới làlịch sử.
+
+---
+
+# Sau H63 — lịch sử
 
 User đã yêu cầu tiếp tục trong chat mới. H63 preregc62ba22 vàresultsc600082 đãpush/remoteverified; customboundedHPS3/5,12train groups,1176frameoptions verifierPASS. Finalhard170,outerstudio_M1hps5 chấm2.678125%,nested1.316983% sobaseline1.124932%;gateFAIL,khôngpromote/khôngtestmới. Đọc H63_REPORT.md/START_NEXT_CHAT.md; khôngrerunH00–H63. RànguồnPEFAC loại ứngviênPythonACF nhưreferencePEFAC, snapshot/hash/license giữ; xemPEFAC_SOURCE_REVIEW.md. H64unanchoredHPSmới làhướngnêu,trongkhiuserbổsungcâuhỏiskills;chưađăngký/đo,khôngexperimentrunning. Các trạngthái dừng/pending bên dưới làlịch sử. BT2trướcsegmentation;noDrive/DL/PDF/Jev/schedule;original/frozen/GTgiữ.
 
