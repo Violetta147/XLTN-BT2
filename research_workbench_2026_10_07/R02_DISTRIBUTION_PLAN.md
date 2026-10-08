@@ -1,0 +1,13 @@
+# R02 — pattern phân phối từ output đã lưu
+
+Người dùng yêu cầu so phân phối công cụ với thống kê thầy, kỳ vọng có pattern. Phân tích exploratory, không bảo đảm sẽ có quy luật chung. Teacher3GT chỉ mean/std/count, không samples/histogram; không fit Gaussian rồi gọi là phân phối thực của thầy. Chỉ đặt mean và vùng mean±std lên histogram/CDF công cụ.
+
+Không inference mới hoặc rerun R01/H00–H68. Train gồm Praat6 defaults R01; Praat7 H30; pYIN H33; official PEFAC H68 native pv>.5; hard170 H47 và customAR1/AR4H66/H67 canonical. Loại bản Praat7 v.45 trùng H33 bằng exact timestamps/pitch; AC auto/10ms trùng R01 vẫn ghi và xác minh duplicate, không tính là replication. Time grids/native V/UV khác nhau; count comparison là giả thuyết định nghĩa count, không cùng một protocol accuracy.
+
+Prespec outputs: nativehop, count, mean/std(population), median, quantiles1/5/25/75/95/99%, min/max, skewness, excess kurtosis, IQR/1.3489795, robust spread(p95−p05)/3.2897073, teacher mean/std/count signed error và ratio; share tổng bình phương độ lệch từ top5% deviations, số khung>400Hz và phần variance chúng đóng góp. Định nghĩa top5% bằng ceil(.05N), exactvariance decomposition. Không lọc/trim/winsorize rồi chọn theo GT, không thay metric/baseline.
+
+Ghép raw/native công cụ với cached baseline chỉ để báo ratio2x/3x/4x hoặc.5x (±10%) tại timestamp gần trong nửa hop, trên cùng khung hữu thanh của cả hai. Đây là disagreement với baseline, không phát hiện đúng/sai octave khi không frameGT. So autoCC hop/count với10ms để phân biệt frame density với thay estimator. So teacher3GT mới/cũ và count LABV từ receipts đã lưu cho8file, chỉ descriptive; không tuning thêm từ test.
+
+Biểu đồ: histogram/ECDF train; heatmap std/count/mean ratios; dùng mốc mean±std thầy, không Gaussian density giả. Report mọi file/counterexample, không p-values/correlation significance với4file hoặc khung overlap. Không suy causal noise/sourceidentity từ filename hay vài gầnkhớp. Một pattern phải được kiểm cụ thể bằng cachedvalues và nêu phạmvi/counterexamples. None/unknown cho quy trình thầy. Hashinput/output và scalarstats so NumPy/cache; provenance đầy đủ. Commit/push/remote trước analysis; sau kết quả commit riêng. Khôngtestinference/Drive/DL/PDF/Jev/schedule.
+
+Primary docs kiểm08/10: [Praat AC](https://www.fon.hum.uva.nl/praat/manual/pitch_analysis_by_raw_autocorrelation.html) default step.75/floor (75Hz→10ms); [Praat CC](https://www.fon.hum.uva.nl/praat/manual/pitch_analysis_by_raw_cross-correlation.html) step.25/floor (75Hz→3.333ms). R01runtime6.1.38 outputs kiểm lại thời gian, không chỉ dựa docs mới. Workflow experimental-design/literature-review local; [Scientific Agent Skills](https://arxiv.org/abs/2609.00065) citation, không bằng chứng pattern đúng.
