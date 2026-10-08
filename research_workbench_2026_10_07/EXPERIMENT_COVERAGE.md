@@ -48,4 +48,12 @@ Chuỗi hai trạng thái với transition học từ LAB fit pool, unary H58 gi
 
 ## H63 — bounded HPS, đã đo sau yêu cầu tiếp tục
 
-Custom log-HPS order3/5,PCM25ms,anchor±100cents,mask/countgiữ;12train groups/48innertraces/24summaryrows,1176frameoptions được DFT/interpolation/argmax/scalarmetrics/selection verifier kiểm. Preregc62ba22 push/remoteverified trướctrain. Finalhard170; outerstudio_M1hps5 giữfile chấm2.678125%,nested1.316983% so1.124932%; baMAPEgatesFAIL. Gainriêngstudio_F1 1.473576→1.319059; khôngpromote/khôngtestmới. [H63_REPORT](H63_REPORT.md). Chưa đo whole/unanchoredHPS hoặc PEFAC; nguồnHTML/code và giớihạn tạiHPS_SOURCE_REVIEW.md.
+Custom log-HPS order3/5,PCM25ms,anchor±100cents,mask/countgiữ;12train groups/48innertraces/24summaryrows,1176frameoptions được DFT/interpolation/argmax/scalarmetrics/selection verifier kiểm. Preregc62ba22 push/remoteverified trướctrain. Finalhard170; outerstudio_M1hps5 giữfile chấm2.678125%,nested1.316983% so1.124932%; baMAPEgatesFAIL. Gainriêngstudio_F1 1.473576→1.319059; khôngpromote/khôngtestmới. [H63_REPORT](H63_REPORT.md). GlobalHPS được bổ sung tạiH64/H65 bên dưới; PEFACthật chưađo, nguồnHTML/code và giớihạn tạiHPS_SOURCE_REVIEW.md/PEFAC_SOURCE_REVIEW.md.
+
+## H64/H65 — HPS toàn dải, đã hoàn tất
+
+H64globalHPS3/5 dừngsynthetic:30/36PASS,6order5/F090HzFAIL, khôngBT2measurement. [H64_REPORT](H64_REPORT.md). H65riêngorder3 táidùng18PASSfixturekhôngrerun;8train metricgroups/32innertraces/24summaryrows,588frameoptions directDFTverifierPASS,MAPEs63.276892/57.729610/6.303452/25.385793%. Final/mọiouterhard170,gateFAIL,khôngpromote/test. [H65_REPORT](H65_REPORT.md). Không suy tất cảharmonicmethod đềuFAIL hoặc đổiH64 thànhPASS bằng loạiorder5 khỏireport.
+
+## H66 — nhiễu AR1 trong harmonic regression, đã hoàn tất
+
+Customone-step residualAR1weightedNLS3:18syntheticfixturePASS,8train metricgroups,588frame nuisanceARfits/0supervisedfits,QR/objective/grid/bracket/scalarmetrics/selection verifierPASS588frameoptions. Preregc804f6d push/remoteverify trướctrain. Minimax chọnar1_nls_3 final/mọiouter,giảmworst1.909923→1.849260% nhưngmean1.124932→1.313829%,phone_F1stdxấu;4/8gatesFAIL,khôngpromote/testmới. [H66_REPORT](H66_REPORT.md), [source review](H66_SOURCE_REVIEW.md). Không referencejointML/fastsolver/ARorders hoặc proofresidual=externalnoise. [Countbudget](FIXED_COUNT_TARGET_BUDGET.md) chỉ đại sốcachedH48, khôngđo/testtuning. ChưađăngkýH67,khôngrerunH00–H66.

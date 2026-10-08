@@ -1,4 +1,10 @@
-# Hiện hành sau H65 và cài skill — 08/10/2026
+# Hiện hành sau H66 — 08/10/2026
+
+H66 custom residualAR1 harmonicNLS3 đã hoàn tất sau yêu cầu tiếp tục. Preregc804f6d push/remoteverify trước train;results63e740b vàcachedcountbudgetauditcf6157b push/remoteverified. 18newsyntheticfixturePASS,8metricgroups/32innertraces/24summaryrows,588frameoptionsQRverifierPASS. Final/mọiouterar1_nls_3:worst1.909923→1.849260%,mean1.124932→1.313829%,phone_F1std .089632→2.566557%;4/8gatesFAIL,khôngpromote/testmới. Mask/count/VUVmetrics giữ;297/588rho chạm.95. 0supervisedfits,588perframewaveformARfits,khôngnói“nofit”. ĐọcH66_REPORT.md/H66_SOURCE_REVIEW.md/FIXED_COUNT_TARGET_BUDGET.md;cachedH48countbudget khôngtestinference/paramtuning. Baselineall8vẫnFAIL;khôngrerunH00–H66. Khôngthínghiệmđangchạy,H67chưađăngký. Original/frozen/GT/notebookgiữ;localCPU/noDrive/DL/PDF/Jev/schedule. Cácmục bên dưới làlịch sử.
+
+---
+
+# Sau H65 và cài skill — lịch sử
 
 Người dùng yêu cầu làm ngay các phần thực hiện được. Đãcài10skillML/DL/research vàoCodex, kiểmfrontmatter/name/references ởentrypointPASS10/10, chưacàiPyTorch/CUDA/dependencytraining; docs/skills/ML_RESEARCH_SKILLS_2026-10-08.md vàJSONmanifest cópin/hash/localadaptation. H64globalHPS3/5syntheticFAIL6/36(order5,F090Hz), khôngđoBT2. H65chỉglobalHPS3, reuse18order3fixturePASSkhôngrerun; preregb9f4725push/remoteverifytrướctrain,results9bb8a8fpush/remoteverified. 8groups,32innertraces,24summaryrows,588frameoptionsverifierPASS; MAPEs63.276892/57.729610/6.303452/25.385793%, final/mọiouterhard170,gateFAIL,khôngpromote/testmới. ĐọcH64_REPORT.md/H65_REPORT.md/START_NEXT_CHAT.md. KhôngrerunH00–H65; khôngthínghiệmđangchạy,H66chưađăngký. Người dùngsẵnsàngchạyColabnotebooknếuGPUlocalthiếu;BT2vẫnclassicalCPU/noDrive/DL/PDF/Jev/schedule,notebook/frozen/GTgiữ. Cácmục bên dưới làlịch sử.
 
