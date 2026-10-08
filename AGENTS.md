@@ -13,6 +13,13 @@
 - Giữ notebook gốc và output đã lưu để đối chiếu. Các kết quả chạy local phải có đường dẫn, lệnh chạy, phiên bản môi trường, cấu hình và dữ liệu đầu vào đủ để tái lập.
 - Báo cáo cả metric chính và đánh đổi: macro F1 V/UV, recall V, recall UV, balanced accuracy, F0mean/F0std MAE và số khung F0 hợp lệ.
 
+## Cửa sổ theo yêu cầu của thầy, xác nhận 08/10/2026
+
+- Người dùng cho phép khảo sát tham số tùy ý. Mỗi phép thử mới vẫn phải có giả thuyết, cấu hình, tiêu chí và preregistration trước đo; không chạy lại các vòng đã hoàn tất.
+- Pipeline cuối theo yêu cầu của thầy phải dùng **cửa sổ tín hiệu thực sự 25 ms và bước 10 ms**. Chiếu kết quả từ cửa sổ dài hơn lên lưới 25/10 ms không đủ để đáp ứng yêu cầu này. Ghi fs, số mẫu, quy ước làm tròn và xử lý biên; nếu thử cửa sổ khác, ghi rõ đó là nghiên cứu.
+- hard170 là đối chứng nghiên cứu lịch sử, không phải bản nộp tuân thủ cửa sổ 25 ms: nó dùng Praat và nhánh pitch có cửa sổ dài hơn. Không thay số đo hoặc gate lịch sử để che khác biệt này. Xem `research_workbench_2026_10_07/FRAME_25MS_AUDIT.md`.
+- Mục tiêu hiện tại là **mỗi file trong cả tám file có Average MAPE <2%**. Kết quả train tốt hoặc mean bốn file thấp không thay điều kiện từng file. Không tự sửa notebook gốc thành bản nộp khi chưa có pipeline được kiểm chứng phù hợp.
+
 ## Literature review và mục tiêu mới
 
 - Người dùng yêu cầu mở rộng paper-based classical algorithms, dùng scientific skills và tránh token từ PDF extraction. Đọc `.agents/skills/literature-review/SKILL.md` và PROVENANCE.md cho workflow local trước vòng review mới. Subset này có instruction/references, không có optional scripts/CLI/dependencies; không giả chúng đã cài.
