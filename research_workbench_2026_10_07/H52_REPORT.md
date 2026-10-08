@@ -1,8 +1,10 @@
-# H52 — kết quả YAAPT mở rộng
+# H52 — kết quả mở rộng YAAPT
 
-**Không cải thiện được baseline trên train; không promote.** Final và4outer folds chọnhard170. H52 không phải lần đầu thửYAAPT: H40 đã đo frame25/35/45. Default35 được replay để giữ bằng chứng ứng viên/DP, exact parity H40 đãkiểm. Phần mới là NLFER.5/1.0, pitch-only giữ mặt nạhard170, bỏ transition cuối.
+**Không có cải thiện đủ để thay baseline.** Final và cả bốn outer folds chọn hard170. YAAPT đã được thử ở H40; H52 mở rộng ngưỡng hữu thanh, dùng riêng cao độ dưới mask hiện tại và bỏ transition cost ở bước DP cuối.
 
-## Tất cả cấu hình train
+Default35ms được replay để lưu candidate/merit/NLFER evidence; raw/native/canonical parity với H40_f35 đã kiểm. Đây không phải bằng chứng độc lập mới. Hồ sơ H40 và các probe sine/rich173 lỗi octave giữ nguyên; bộ probe mới không phủ định lỗi cũ.
+
+## Train
 
 | option_id | file | average_mape | F0mean_mape | F0std_mape | F0num_mape | macro_f1 | recall_v | false_voiced_sil |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -31,7 +33,7 @@
 | yaapt_pitch_only | studio_M1.wav | 5.67825 | 2.59815 | 10.7781 | 3.65854 | 0.808446 | 0.861702 | 0 |
 | yaapt_no_final_dp | studio_M1.wav | 7.80887 | 3.10284 | 10.5677 | 9.7561 | 0.832327 | 0.904255 | 0 |
 
-## Test chốt trước
+## Test đã chốt trước
 
 | option_id | file | average_mape | F0mean_mape | F0std_mape | F0num_mape | macro_f1 | recall_v | false_voiced_sil |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -44,10 +46,10 @@
 | hard170 | studio_M2.wav | 2.11479 | 0.32909 | 2.56701 | 3.44828 | 0.850806 | 0.921875 | 0 |
 | yaapt_default | studio_M2.wav | 4.05093 | 0.356653 | 0.589231 | 11.2069 | 0.808042 | 0.953125 | 0 |
 
-Selected vẫnhard170:0/4test<2%,4/4train<2%, mục tiêu8fileFAIL. YAAPTdefault diagnostic đạtstudio_F2 1.85319%, nhưng không được chọn train và ba test còn lại>2%. Không route theo file/test để ghép điểm đẹp. Không đủ bằng chứng kết luận dữ liệu ít hoặc GT sai.
+Selected hard170 giữ0/4test <2%,4/4train <2%; mục tiêu8file FAIL. YAAPTdefault chẩn đoán có studio_F2=1.85319%, nhưng ba test khác >2% và không được chọn trên train. Không dùng kết quả test để ghép pipeline theo file.
 
-Kiểm tra độc lập v2 PASS train5148DP/NLFERframes/24groups, test1301frames/8groups; không native calls khiverify. Candidategeneration chưa được independentlyreimplement toàn bộ. V1 floating-operation-order failure và source giữ nguyên, xemH52_VERIFICATION_NOTE.md.
+v2 verifier PASS5148train và1301test frames,32metric groups tổng cộng, final DP scalar và PCM NLFER fullFFT độc lập; không reimplement toàn bộ spectral candidate generation. V1 sai thứ tự phép tính float khi các chi phí gần hòa; chỉ checker v2 sửa, source đo/outputs giữ nguyên. Xem H52_VERIFICATION_NOTE.md.
 
-Nguồn và mức đọc: H52_YAAPT_SOURCE_NOTE.md; chỉabstract/HTML/code, khôngPDF. Bản đầu51f05a9 dùng tênsourceH40, đã phục hồi trọn sourceH40 từ56ee7d8 và chuyển H52 sang tênriêng ởc09574e trướcmeasurement. Pre-registration c09574e remoteverified; testfreeze390a533 remoteverified. Không đổinotebookđãnộp/LAB/WAV/frozenbaseline; seedNone vì khôngstochasticfit.
+Prereg đầu51f05a9 dùng trùng tên source H40. Đã phục hồi ba file H40 từ56ee7d8, đổi tên source H52 và đăng ký amendedc09574e **trước bất kỳ đo BT2 H52**; testfreeze390a533. H40 source diff so56ee7d8 hiện bằng0. Không sửa notebook đã nộp, WAV/LAB hoặc frozen baseline.
 
-Lệnh: yaapt_extension.py train/external; verify_yaapt_extension_v2.py train/test. Source/GT/input/outputhashes, params34 và runtime lưuregistry/experiment receipts. Toànpipelinecódifferentfilter/mask/candidates; pitch-onlyablationkhôngđổiF0num/VUV.
+Nguồn/phiên bản, mức đọc HTML/abstract/code và lỗi discovery ở H52_YAAPT_SOURCE_NOTE.md. Không đọc PDF. Lệnh: yaapt_extension.py train/external; verify_yaapt_extension_v2.py train/test. Không có stochastic fit/seed; không rerun kết quả đã lưu. Không đủ bằng chứng quy nguyên nhân cho dữ liệu ít hoặc GT sai.

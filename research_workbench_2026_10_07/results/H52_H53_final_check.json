@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "submitted_notebook_sha256": "b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c",
+  "historical_H40_sources_unchanged_vs_56ee7d8": true,
+  "H52_and_H53_registry_hashes_passed": true,
+  "report_input_output_hashes_passed": true,
+  "H53_mask_count_vuv_sil_invariants_passed": true,
+  "train_files_strict_below_2": 4,
+  "test_files_strict_below_2": 0,
+  "all8_target_passed": false,
+  "H53_matrix_png_visually_reviewed": true,
+  "H53_matrix_svg_parsed": true,
+  "no_model_promoted": true
+}

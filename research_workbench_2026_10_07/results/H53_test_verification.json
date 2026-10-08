@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "independent_full_fft_cepstrum_direct_correlation_candidate_frames": 603,
+  "metric_groups": 8,
+  "independent_scalar_path": true,
+  "mask_count_vuv_sil_unchanged": true,
+  "new_native_calls": 0,
+  "verifier_sha256": "ccd44a3ec8021abbd801f2993e914144c538da232a627426e2d48e8a6a53c034"
+}

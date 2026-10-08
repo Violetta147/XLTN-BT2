@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "sources": {
+    "research_workbench_2026_10_07\\results\\H53_train_fixed.csv": "8f170031dfebd978b7171726997a87363ec53f628f02222b89a53937e6e0dfd7",
+    "research_workbench_2026_10_07\\results\\H53_test_fixed.csv": "9aceda4263e4dc50bf5e71693ebde48968812afdc904197c604ac9f9d2479a86",
+    "research_workbench_2026_10_07\\results\\H52_fixed.csv": "42563a0b6f63555eb2bac34d2c14d3f988e9f86b483f982508e61c20ed5170ac",
+    "research_workbench_2026_10_07\\results\\H52_test_metrics.csv": "7e9e0897092a30c8f56e6b5189e49146133ffaab501c5d0fa9f9793673cf6585"
+  },
+  "outputs": {
+    "research_workbench_2026_10_07\\H52_REPORT.md": "dceb1bb8fccc2a25d38be4d0e4348bb2eb054ca8b9ff9bf9141513cbe9e177c3",
+    "research_workbench_2026_10_07\\H53_REPORT.md": "25d1e1e6f68e26cae24ecd4c309694cc55d3bf4a33fab0a8356fee665656629c",
+    "research_workbench_2026_10_07\\results\\H53_largest_pitch_changes.csv": "1c87dcb9ff3cc4db8282b2c9404a2a2e96e998be008133015a55557835a24797",
+    "research_workbench_2026_10_07\\results\\H53_all8_status.csv": "17c0789aa3e93551e427fe4b67c7c564f5cebb0e72639bf220bd6b6ae0bddbd5",
+    "research_workbench_2026_10_07\\figures\\H53_pitch_matrix.png": "619ced6f87b4399ad15e31aaacda5eb371dfd87d9ff784b3ccb167ce6cde225c",
+    "research_workbench_2026_10_07\\figures\\H53_pitch_matrix.svg": "b7d7d519512c65e0951863e86b8d2ad6426ac3a5b6c3b272ef76450d1d1d6db8"
+  },
+  "script_sha256": "aba337c634a9f17607c01cb8b5c36cd084207a14241242dffa048354079b9564",
+  "frame_pitch_truth_claim": false
+}
