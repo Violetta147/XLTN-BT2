@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "independent_native_dynamic_frames": 1301,
+  "independent_full_fft_pcm_frames": 1301,
+  "metric_groups": 8,
+  "native_proofs": 4,
+  "new_yaapt_calls": 0,
+  "limits": "Verifies vendor final DP path, NLFER PCM energy, transport/projection/scoring; not independent reimplementation of spectral candidate generation.",
+  "verifier_sha256": "a49d00b82f391e23616011caf31341351534ceac945828532ce13b17aa6a37a3"
+}
