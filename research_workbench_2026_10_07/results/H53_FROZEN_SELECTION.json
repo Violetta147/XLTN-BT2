@@ -1,0 +1,14 @@
+{
+  "option": {
+    "id": "hard170",
+    "alpha": null,
+    "transition": 0.0
+  },
+  "external_options": [
+    "hard170",
+    "cep_a050_t015"
+  ],
+  "actual_fit_files": [],
+  "seed": null,
+  "no_test_selection": true
+}
