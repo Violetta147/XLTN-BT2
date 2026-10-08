@@ -1,0 +1,114 @@
+[
+  {
+    "file": "phone_F1.wav",
+    "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+    "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+    "runtime": "11.3.0",
+    "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+    "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+    "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+    "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+    "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+    "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+    "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "",
+    "input_pcm_sha256": "850e7e9fa0efcd76a15f83f15c7fe2d79dcaf21035819bdc2dd1ce1cb302b7c0",
+    "native_frames": 315,
+    "native_first_center": 0.04528125,
+    "parameters": {
+      "tinc": 0.01,
+      "flim": [
+        70,
+        400
+      ],
+      "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+    },
+    "transport": "temporary MAT direct local subprocess; no Drive"
+  },
+  {
+    "file": "phone_M1.wav",
+    "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+    "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+    "runtime": "11.3.0",
+    "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+    "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+    "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+    "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+    "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+    "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+    "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "",
+    "input_pcm_sha256": "6daf544525164e664583cd720d0ce6834cb034e3518224a4e79e0eb26f7a9033",
+    "native_frames": 407,
+    "native_first_center": 0.04528125,
+    "parameters": {
+      "tinc": 0.01,
+      "flim": [
+        70,
+        400
+      ],
+      "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+    },
+    "transport": "temporary MAT direct local subprocess; no Drive"
+  },
+  {
+    "file": "studio_F1.wav",
+    "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+    "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+    "runtime": "11.3.0",
+    "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+    "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+    "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+    "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+    "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+    "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+    "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "",
+    "input_pcm_sha256": "c38406a2a37adc929df4e1981d24b659e19b13e8e1628d65c1480486874a19e3",
+    "native_frames": 278,
+    "native_first_center": 0.04526077097505669,
+    "parameters": {
+      "tinc": 0.01,
+      "flim": [
+        70,
+        400
+      ],
+      "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+    },
+    "transport": "temporary MAT direct local subprocess; no Drive"
+  },
+  {
+    "file": "studio_M1.wav",
+    "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+    "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+    "runtime": "11.3.0",
+    "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+    "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+    "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+    "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+    "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+    "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+    "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "",
+    "input_pcm_sha256": "ae09a4422426158ac89d9544da94b38cb09fdd1479b4ac23564a099726370eaa",
+    "native_frames": 264,
+    "native_first_center": 0.04526077097505669,
+    "parameters": {
+      "tinc": 0.01,
+      "flim": [
+        70,
+        400
+      ],
+      "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+    },
+    "transport": "temporary MAT direct local subprocess; no Drive"
+  }
+]

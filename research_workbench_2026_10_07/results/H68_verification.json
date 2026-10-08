@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "groups": 20,
+  "checks": [
+    {
+      "file": "phone_F1.wav",
+      "option_id": "hard170",
+      "voiced_count": 147,
+      "stage_certificate": {
+        "native_frames": 315,
+        "independent_gmm_max_abs_error": 9.159339953157541e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -249.32743016205345,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pefac_whole_q0.2",
+      "voiced_count": 173,
+      "stage_certificate": {
+        "native_frames": 315,
+        "independent_gmm_max_abs_error": 9.159339953157541e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -249.32743016205345,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pefac_whole_q0.5",
+      "voiced_count": 150,
+      "stage_certificate": {
+        "native_frames": 315,
+        "independent_gmm_max_abs_error": 9.159339953157541e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -249.32743016205345,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pefac_whole_q0.8",
+      "voiced_count": 112,
+      "stage_certificate": {
+        "native_frames": 315,
+        "independent_gmm_max_abs_error": 9.159339953157541e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -249.32743016205345,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pefac_pitch_only",
+      "voiced_count": 147,
+      "stage_certificate": {
+        "native_frames": 315,
+        "independent_gmm_max_abs_error": 9.159339953157541e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -249.32743016205345,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "hard170",
+      "voiced_count": 233,
+      "stage_certificate": {
+        "native_frames": 407,
+        "independent_gmm_max_abs_error": 7.771561172376096e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -325.12271248581936,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pefac_whole_q0.2",
+      "voiced_count": 245,
+      "stage_certificate": {
+        "native_frames": 407,
+        "independent_gmm_max_abs_error": 7.771561172376096e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -325.12271248581936,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pefac_whole_q0.5",
+      "voiced_count": 215,
+      "stage_certificate": {
+        "native_frames": 407,
+        "independent_gmm_max_abs_error": 7.771561172376096e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -325.12271248581936,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pefac_whole_q0.8",
+      "voiced_count": 156,
+      "stage_certificate": {
+        "native_frames": 407,
+        "independent_gmm_max_abs_error": 7.771561172376096e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -325.12271248581936,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pefac_pitch_only",
+      "voiced_count": 233,
+      "stage_certificate": {
+        "native_frames": 407,
+        "independent_gmm_max_abs_error": 7.771561172376096e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -325.12271248581936,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "hard170",
+      "voiced_count": 123,
+      "stage_certificate": {
+        "native_frames": 278,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -222.07332638071378,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pefac_whole_q0.2",
+      "voiced_count": 140,
+      "stage_certificate": {
+        "native_frames": 278,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -222.07332638071378,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pefac_whole_q0.5",
+      "voiced_count": 134,
+      "stage_certificate": {
+        "native_frames": 278,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -222.07332638071378,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pefac_whole_q0.8",
+      "voiced_count": 124,
+      "stage_certificate": {
+        "native_frames": 278,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -222.07332638071378,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pefac_pitch_only",
+      "voiced_count": 123,
+      "stage_certificate": {
+        "native_frames": 278,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -222.07332638071378,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "hard170",
+      "voiced_count": 85,
+      "stage_certificate": {
+        "native_frames": 264,
+        "independent_gmm_max_abs_error": 1.4099832412739488e-14,
+        "independent_dp_path": true,
+        "optimal_final_cost": -151.5461056637749,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pefac_whole_q0.2",
+      "voiced_count": 105,
+      "stage_certificate": {
+        "native_frames": 264,
+        "independent_gmm_max_abs_error": 1.4099832412739488e-14,
+        "independent_dp_path": true,
+        "optimal_final_cost": -151.5461056637749,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pefac_whole_q0.5",
+      "voiced_count": 92,
+      "stage_certificate": {
+        "native_frames": 264,
+        "independent_gmm_max_abs_error": 1.4099832412739488e-14,
+        "independent_dp_path": true,
+        "optimal_final_cost": -151.5461056637749,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pefac_whole_q0.8",
+      "voiced_count": 77,
+      "stage_certificate": {
+        "native_frames": 264,
+        "independent_gmm_max_abs_error": 1.4099832412739488e-14,
+        "independent_dp_path": true,
+        "optimal_final_cost": -151.5461056637749,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pefac_pitch_only",
+      "voiced_count": 85,
+      "stage_certificate": {
+        "native_frames": 264,
+        "independent_gmm_max_abs_error": 1.4099832412739488e-14,
+        "independent_dp_path": true,
+        "optimal_final_cost": -151.5461056637749,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      }
+    }
+  ],
+  "independent_gmm_dp_projection_metrics_selection": true,
+  "source_runtime_protected_output_hashes": true,
+  "inner_summary_membership": true,
+  "changed_case_membership": true,
+  "limitation": "Certifies stored GMM features/peaks and DP; no independent upstream spectral/LTASS reconstruction or frame-F0 truth; immutable gate implementation reused."
+}
