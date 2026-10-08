@@ -1,0 +1,94 @@
+{
+  "rollback_commit": "e1f71f712794349e3bdea81517b60fe395ad9f44",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "options": [
+    {
+      "id": "hard170",
+      "reject": 0.0
+    },
+    {
+      "id": "recovery_only",
+      "reject": 0.0
+    },
+    {
+      "id": "mapped_rejection_010",
+      "reject": 0.1
+    },
+    {
+      "id": "mapped_rejection_025",
+      "reject": 0.25
+    },
+    {
+      "id": "mapped_rejection_050",
+      "reject": 0.5
+    }
+  ],
+  "new_gmm_fits": 0,
+  "new_label_mappings": 33,
+  "smoothing": [
+    1.0,
+    1.0
+  ],
+  "mapping_supervised": true,
+  "hashes": {
+    "research_workbench_2026_10_07\\mapped_rejection.py": "d5bc1482c39bec408a6c9eb654c334b54846e6e45c8ef5e6bfb912329e233085",
+    "research_workbench_2026_10_07\\component_mapping.py": "fbd8a5501e98bf8ac9667a62040d6020c2863f8c5add336b511dc8369774f30f",
+    "research_workbench_2026_10_07\\two_sided_recovery.py": "a3f77962294f2bbc73972738c4598bb13abf0131f12cc87e5540f86082b7c3b1",
+    "research_workbench_2026_10_07\\verify_two_sided_recovery.py": "542e066985e55126888e2befdc81dcfe46f697c0f857afdcb726ac1ab93a3d15",
+    "research_workbench_2026_10_07\\verify_mapped_rejection.py": "6fd8e8d6d7fe722f804cfe498cba6a74b8f96142285b1c2cf56c0c3496ff5a46",
+    "research_workbench_2026_10_07\\H58_REGISTRATION.md": "d4c11208efe0afcb1f2e2ccaa7075e4b976715a35fbd26ea1f5dd4a64f383a89",
+    "research_workbench_2026_10_07\\results\\H58_precheck.json": "bf86bcee57defae77e7f5a605688f52fe433e3a24bb5ef58488b19a73e9e2dad",
+    "research_workbench_2026_10_07\\recovery_pitch.py": "372340515d60e2d8ae3ee8b5b38734b89253317f93e149eebdeb3b4fc502be6c",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_07\\verify_srh.py": "0ebd5e8c746a447f9ecc74df0c8f2f6777c6a0323054efba2cdf2061cc572dda",
+    "research_workbench_2026_10_07\\verify_yaapt_extension_v2.py": "a49d00b82f391e23616011caf31341351534ceac945828532ce13b17aa6a37a3",
+    "research_workbench_2026_10_07\\yaapt_extension.py": "16cce1f6bf5c90d5784e799257a40357474a28b40fe57573fd6085af91893f77",
+    "research_workbench_2026_10_07\\results\\H56_models.json": "36bcb4bf5762219f3d1a54a8627525a158d8e570cb4edec7dbbdac66f03ddbd1",
+    "research_workbench_2026_10_07\\results\\H56_train_proofs.json": "231f0ce5521ab8d538ff0d94d8bf4682ecc05a795c9be4637557b888a0f5def0",
+    "research_workbench_2026_10_07\\results\\H56_train_verification.json": "41f398d12ece64b5bc9e86cbda8e66ce8afbd5b0f9b69280c7f4b04d64666509",
+    "research_workbench_2026_10_07\\results\\H56_train_experiment.json": "4ca00323caf1caad9119c77e7839e3ce1e233e640403fed3f3c2cb89471a534a",
+    "research_workbench_2026_10_07\\results\\H56_test_proofs.json": "2ef9a61e88eca8ad1efd83b32266e51968943ee77cfebff6aaabdbc73f5c2c13",
+    "research_workbench_2026_10_07\\results\\H56_test_verification.json": "d9c386b6fdac236b3d012608c0f5f44a7b5081aa4bffe77a55ff3d2ca21b1bd6",
+    "research_workbench_2026_10_07\\results\\H56_test_experiment.json": "a10cccd27c926964ff1c39665c1f3a6ad54b1ec71972e924c8385408c06045d3",
+    "TinHieuHuanLuyen\\phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "TinHieuHuanLuyen\\phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "TinHieuHuanLuyen\\studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "TinHieuHuanLuyen\\studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+    "TinHieuHuanLuyen\\phone_F1.lab": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+    "TinHieuHuanLuyen\\phone_M1.lab": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+    "TinHieuHuanLuyen\\studio_F1.lab": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+    "TinHieuHuanLuyen\\studio_M1.lab": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+    "TinHieuKiemThu\\phone_F2.wav": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+    "TinHieuKiemThu\\phone_M2.wav": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+    "TinHieuKiemThu\\studio_F2.wav": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+    "TinHieuKiemThu\\studio_M2.wav": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+    "TinHieuKiemThu\\phone_F2.lab": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565",
+    "TinHieuKiemThu\\phone_M2.lab": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
+    "TinHieuKiemThu\\studio_F2.lab": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
+    "TinHieuKiemThu\\studio_M2.lab": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
+    "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+    "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+    "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+    "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+    "research_3gt_2026_10_05\\test_3gt\\phone_F2.lab": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f",
+    "research_3gt_2026_10_05\\test_3gt\\phone_M2.lab": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238",
+    "research_3gt_2026_10_05\\test_3gt\\studio_F2.lab": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852",
+    "research_3gt_2026_10_05\\test_3gt\\studio_M2.lab": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_F1.npz": "20b7ca4aaee52dda542ab6fae0d9a743b56516adf95b720d66cd3ea6e279ce09",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_M1.npz": "e0ece1aa275519928b60ec2d8a2d29eabf550f40782390c03eebbceae4864528",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_F1.npz": "4f7ed0d11b41c6b6ff71cc05362368bf95862bd96ad6b4e4af612daa5adc1898",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_M1.npz": "29d0b1dd36f2a4ea627790a40e12e117b574a9f9e34a658ebdd738ddb4d42647",
+    "research_workbench_2026_10_07\\results\\H56_test_design_phone_F2.npz": "c1904646743e6b5b277d6aaff2489c3fb0e6d4053495ccb70495614c0917dc21",
+    "research_workbench_2026_10_07\\results\\H56_test_design_phone_M2.npz": "b9edfb689fc6fcb0632a02578b11d98b4886ef6ca4ab5d3fd18f5b54094bdbf6",
+    "research_workbench_2026_10_07\\results\\H56_test_design_studio_F2.npz": "f48a48434c21f551879de97f894374031054b9a697ade98397ef29b05c377332",
+    "research_workbench_2026_10_07\\results\\H56_test_design_studio_M2.npz": "485a13b34149276da3fe01d945649672879db72ef5fcb7e6b89505063c4156b0",
+    "research_workbench_2026_10_07\\results\\H50_verification.json": "930cf034d6410dae20dfa795de471043e483844036f50214ea16f5b31d2bf435",
+    "research_workbench_2026_10_07\\H56_REGISTRY.json": "13e9c74caa9dc166006da570d584376d511c4431b50aaa1c9809000af375b36a",
+    "research_workbench_2026_10_07\\H57_REGISTRY.json": "5d7c46d4507af4d7ed2e4912f3bfe87497362d2dcf8517fc5ab9fb17859a75dc"
+  }
+}
