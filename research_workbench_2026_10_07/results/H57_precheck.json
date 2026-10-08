@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "exact_threshold_ties_preserved": true,
+  "only_original_voiced_removed": true,
+  "kept_pitch_unchanged": true,
+  "cases": [
+    {
+      "option": "hard170",
+      "removed": 0,
+      "count": 5
+    },
+    {
+      "option": "recovery_only",
+      "removed": 0,
+      "count": 7
+    },
+    {
+      "option": "two_sided_010",
+      "removed": 1,
+      "count": 6
+    },
+    {
+      "option": "two_sided_025",
+      "removed": 3,
+      "count": 4
+    },
+    {
+      "option": "two_sided_050",
+      "removed": 4,
+      "count": 3
+    }
+  ]
+}

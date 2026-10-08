@@ -1,0 +1,15 @@
+# H57 — cùng GMM cho cả loại và khôi phục khung
+
+Prereg trước đo; rollback repository3787b2b57c7b2b8b25aceff9d8b59d8a393cbb61, acceptedhard170 giữ nguyên. H56 train fixedLOFO đã giảm estimator recovery error nhưng studio_M1 cócount86/reference82, targetFAIL. Giả thuyết: recovery-only bị hạn chế vì chỉ thêmkhung; cho GMM loại khung baseline có posterior thấp có thể giảm sai số count vàthốngkê. Không biết validF0referenceprocedure, không giả định mọiLABV phải emitF0 hoặc đổi nhãn/GT.
+
+Reuse **33GMMmodels H56** của11fitpools2/3/4 ×3seed11/29/47 và cached **recovery_bound200** posterior/masks/pitch, tất cảverified/hashprotected. No newfits/nativecalls/feature/optimizer/pitchparameters. Cached inner/outer fit vẫn loạiđúngheldfile; reuse không được dùng fulltrainmodel cho inner. Posterior mapping unsupervised từ trainingperiodicity; selection vẫn dùng trainLAB/3GT. Không DL/Drive/PDF/Jev/proseskill, không sửa notebook/frozen/input.
+
+5options: controlhard170; recovery_only(cùngH56bound200); two_sided010/025/050. Cùng originalGMMrecoveryprob>=.5 +ACF>=.6 +energy>=.01 +finiteoriginalpitch, anchoredpitchH56. Chỉ loại **originalbaselineV** nếuGMMposterior<q vớiq.1/.25/.5, strict< giữtie. Retainedpitch exactsameH56, removedNaN vànonvoiced; không prune recovered frames theoq hoặc frameGT. Ngưỡngq0ởrecovery_only khôngloạibấtkỳbaselineV. Đây là masked set change: count/mean/std vàVUV cùngđổi, không gọi chỉ sửacountcôlập vì std/mean phụthuộcsubset.
+
+Syntheticfixture đủ0/.1/.249/.25/.5/.9/ties, same-retainedpitch/recoveredframes/noinvalidF0 checks. Khôngaccuracycertification hoặc perframeBT2GT. Không randomfitmới;3seed cached vẫn giữđểkhôngcherryseed.
+
+Train300groups/240innertraces/72summaryrows, cùngpool/seedH56. Final4LOFO/4outer-inner3fold. SelectionminimaxworstfileMAPE across3seeds→mean→ID; từngseedguardmacroF1/recallV meandrop<=.01,SILtotal<=control+1, finiteMAPE. Giữ8commongates vàall8strict<2. Lossrecall do removal phảibáo, khôngtốiưucount checlassification. Teacher3GT cùngLAB khôngF0GTframe. Nestedexploratory vì lặp train/historytest; H57 địnhhướng từtrainH56 vàaudit, không được gọi freshindependenttest.
+
+Sau train verifierPASS freeze+commit/push/remoteverify. Testonlycontrol+selected+predeclared**recovery_only vàtwo_sided025**,dedup,3seeds; không xemq010/050testnếukhôngselected. Chốtqdiagnostictrướctrain, khôngfile-route/model/seedselection từtest. Serialize/reuse posterior cùngH56 fulltrainfit;test zero newfit. Báo mỗifile fullMAPEmean/std/count, MAEmean/std,F1/recalls/balancedaccuracy/SIL,removedV/UV/SIL,boundary vàall8. Thấtbại giữcontrol/nosilentpromotion.
+
+Verifier scalarstrictthreshold/mask/retainedF0/metrics/fitpools/selection/seed/gates/hash, cacheH56 đãverifiedGMM/estimator. Khôngclaim độc lập optimizer/PCMproofmới. Hồsơconfig/runtime/models/sourceproofs preserved. Lệnh two_sided_recovery.py precheck/register/train/test và verify_two_sided_recovery.py train/test. Literature mới không gọi, thiết kế từ actualcode+pairedtrain result, không referencepaperclaim. BT1bổsung vẫn sauBT2.
