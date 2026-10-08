@@ -1,0 +1,510 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 2.615830139935653,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 2.615830139935653,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 100.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 2.615830139935653,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 173.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 200.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "pitch": 300.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 100.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 173.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 2.5949999999999704,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 200.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 2.9999999999999716,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a000_t000",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a000_t015",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a000_t050",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a050_t000",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a050_t015",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a050_t050",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a100_t000",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a100_t015",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "pitch": 300.0,
+      "option_id": "cep_a100_t050",
+      "median_error_hz": 4.499999999999943,
+      "passed": true
+    }
+  ],
+  "scope": "8 synthetic harmonic signals x9 deterministic configurations; gain/DC invariance; 1.5percent biased anchors"
+}
