@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "metric_groups": 48,
+  "new_gmm_fits": 0,
+  "independent_scalar_mapping_and_responsibilities": true,
+  "scalar_removal_retained_pitch_metrics_folds_selection_checked": true,
+  "source": "H56 pitch/GMM and H58 mappings; scalar fold transitions and scaled forward-backward recomputed",
+  "verifier_sha256": "e714b615bd41b70ed4535adb3b11eea2e56dfddd6a30d3f0cdda020aac3b2a5d"
+}

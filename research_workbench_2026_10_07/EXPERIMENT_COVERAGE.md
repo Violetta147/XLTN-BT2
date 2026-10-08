@@ -30,3 +30,7 @@ Lệnh kiểm tra hiện hành dùng `verify_voicing_matrix_v2.py train` và `ve
 ## H58 — mapping cụm có giám sát, đã đo
 
 H58 học trọng số LAB V của cả ba cụm GMM chỉ từ fit pool trong mỗi fold, giữ F0/recovery H56 để cô lập rejection mapping. 5 options ×3 seed, grouped nested, permutation và held-label poisoning fixtures; 300 train/36 test metric groups được verifier kiểm độc lập. Mapping giảm loại nhầm V và Brier nhưng chưa cải thiện cấu hình chung; giữ hard170, all8 target FAIL. [Báo cáo H58](H58_REPORT.md). Không gọi mapping có LAB là unsupervised, không gọi test đã xem là independent mới.
+
+## H59 — temporal context riêng cho rejection, đã đo
+
+Chuỗi hai trạng thái với transition học từ LAB fit pool, unary H58 giữ nguyên, marginal forward-backward dùng để loại original baseline V. 6 options ×3seed, grouped nested,360 train/48 test groups; enumeration/scalar/parity và fold isolation được kiểm. Markov giảm một số lỗi phone nhưng làm studio train xấu hơn; test .25 chỉ studio_M2<2 với recall V giảm, không train-selected. Giữ hard170, all8 target FAIL. [Báo cáo H59](H59_REPORT.md). Đây là offline posterior-potential chain, không claim generative HMM/streaming hoặc calibrated valid-F0 probability.

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "selected": "hard170",
+  "all_eight_target_met": false,
+  "new_measurements": 0,
+  "historical_test_exposure": true,
+  "source_sha256": "e8254b8513d6aba5614b4fb5d3d637af32bcdae279e8e75b78195d73948855df",
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "pandas": "3.0.1"
+  },
+  "input_hashes": {
+    "research_workbench_2026_10_07\\results\\H56_models.json": "36bcb4bf5762219f3d1a54a8627525a158d8e570cb4edec7dbbdac66f03ddbd1",
+    "research_workbench_2026_10_07\\results\\H58_mappings.json": "265716db1783d540d13776873228dcc16b8237c3cbf6090c8bb39a24118b994d",
+    "research_workbench_2026_10_07\\results\\H59_transitions.json": "b859218f18fe018d70696d2bf8688cdb4ac5c3202fa8b490dd9517d4401b9795",
+    "research_workbench_2026_10_07\\results\\H59_train_verification.json": "704a0b168ef56d4d7ae08a064395db8f9a8f13e5b014763673c6f470d5fef231",
+    "research_workbench_2026_10_07\\results\\H59_train_fixed.csv": "03f9ee67f8125f951f873e1df8b6ff15d0078b30ee1cc9dbea39bbf0a1db7ee0",
+    "research_workbench_2026_10_07\\results\\H59_train_proofs.json": "e666e77593dab291fbbd381759b74211a64a0e6817031f7120b3d5f0910384cc",
+    "research_workbench_2026_10_07\\results\\H59_train_experiment.json": "645d4ac05f4af098e953783bf6e7d22daf7c98350cb93509f090f98088867c3d",
+    "research_workbench_2026_10_07\\results\\H59_test_verification.json": "e14775b259317c03008ba3b0e1f669981782cd9635c53ac53b1875bc6a6b2bca",
+    "research_workbench_2026_10_07\\results\\H59_test_fixed.csv": "0016cc4446652126c585c47f254efec984cfa9455ab1ab63b488223f89bcd292",
+    "research_workbench_2026_10_07\\results\\H59_test_proofs.json": "cf4c7ede9d0284dc0ba96caf19e05c79a2c2c4bf50e86f3a9d0fb261c3533427",
+    "research_workbench_2026_10_07\\results\\H59_test_experiment.json": "afd828186d3ccb004366b7db6f9939d2185c059b36aeefc771c16b8329737d80"
+  },
+  "outputs": {
+    "research_workbench_2026_10_07\\H59_REPORT.md": "1c7c76757ffb64653770b294de727b83bdc5a66622e9cbad875927fe9f41d70f",
+    "research_workbench_2026_10_07\\results\\H59_removed_label_audit.csv": "8b8d07813af1f27b36f832f7c0cb7abe696c4eac0b2284c8d12d2d1b266a3ab8",
+    "research_workbench_2026_10_07\\results\\H59_held_train_score_quality.csv": "532887158bbceca58f7e68e61ae07cf8102bc3954a36a7646395cd591e5dc007",
+    "research_workbench_2026_10_07\\results\\H59_changed_cases.csv": "10c306a8b055e8f944f3cd8f0978233728f35040bacc4e6ad4739b40cd85ed40",
+    "research_workbench_2026_10_07\\results\\H59_score_traces.csv": "15d1f79203a83ade85b449b1353ddd1fcab4d2c49e03c6ded846537c9627cf31",
+    "research_workbench_2026_10_07\\results\\H59_transition_audit.csv": "f0f0bb0682c5d257c936c530c2c288e355e29fc6a9134446ad81714169144ebf",
+    "research_workbench_2026_10_07\\results\\H59_seed_summary.csv": "be2f3482cf6923b294c7a28d84a17e45281a8d287aeacd1137dacec096d39e90",
+    "research_workbench_2026_10_07\\results\\H59_selected_all_files.csv": "56b8f1b789a096abb50cd9983cb1d958802828c304ac71ecc5a9f047291793d6",
+    "research_workbench_2026_10_07\\figures\\H59_context_matrix.png": "75ef994c8f69fb155ce31c1eaf893ed221ff2c1feeb0d6a2bbfed20c0af54d74",
+    "research_workbench_2026_10_07\\figures\\H59_context_matrix.svg": "75f07cce42d889e9fab6e60792da1bed601d33252507f4994f136cd7f72c62fe",
+    "research_workbench_2026_10_07\\figures\\H59_context_scores.png": "5d3893d7366e97131218fe1c8b9a37f53bf419990eb0dba54676bb83bb13c649",
+    "research_workbench_2026_10_07\\figures\\H59_context_scores.svg": "b72eeccee425b5eef0266bb1a78a3b74409bff1ab7b463caffa68244720ab922"
+  }
+}
