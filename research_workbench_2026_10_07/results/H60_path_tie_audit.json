@@ -1,0 +1,33 @@
+{
+  "initial_exact_path_verifier": "FAIL",
+  "rows": [
+    {
+      "file": "H60_native_phone_F1.npz",
+      "path_different_frames": 67,
+      "author_objective": -323.32633505176784,
+      "log_objective": -323.32633505176784,
+      "objective_gap": 0.0
+    },
+    {
+      "file": "H60_native_phone_M1.npz",
+      "path_different_frames": 30,
+      "author_objective": -444.0619747649819,
+      "log_objective": -444.0619747649819,
+      "objective_gap": 0.0
+    },
+    {
+      "file": "H60_native_studio_F1.npz",
+      "path_different_frames": 0,
+      "author_objective": -1112.5482442163855,
+      "log_objective": -1112.5482442163855,
+      "objective_gap": 0.0
+    },
+    {
+      "file": "H60_native_studio_M1.npz",
+      "path_different_frames": 5,
+      "author_objective": -1144.9872320980924,
+      "log_objective": -1144.9872320980924,
+      "objective_gap": 0.0
+    }
+  ]
+}

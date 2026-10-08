@@ -1,0 +1,21 @@
+file,time_s,center_lab,baseline_hz,maps_hz,relative_cents,interpretation
+phone_F1.wav,0.5425,v,225.76925166696077,108.30118251530092,-1271.7600217663335,Two estimator outputs; neither is frame F0 ground truth.
+phone_F1.wav,2.5025,v,211.06278024694768,104.77257872159174,-1212.493210127106,Two estimator outputs; neither is frame F0 ground truth.
+phone_F1.wav,2.2825,v,233.06797257096088,123.644687278918,-1097.4606190332279,Two estimator outputs; neither is frame F0 ground truth.
+phone_F1.wav,1.5825,v,186.21894280849608,250.64989315648785,514.4085396751482,Two estimator outputs; neither is frame F0 ground truth.
+phone_F1.wav,0.9625,v,237.9366088395598,210.06055470604596,-215.7263808575984,Two estimator outputs; neither is frame F0 ground truth.
+phone_M1.wav,3.4425,uv,138.0437578402067,94.8617073029097,-649.4734961848482,Two estimator outputs; neither is frame F0 ground truth.
+phone_M1.wav,3.1025,v,111.06561920424248,98.05652587424832,-215.67208890026606,Two estimator outputs; neither is frame F0 ground truth.
+phone_M1.wav,3.5125,v,95.82837727409543,103.6221131762043,135.36847940606887,Two estimator outputs; neither is frame F0 ground truth.
+phone_M1.wav,2.4925,v,127.33724727792367,118.30271361111211,-127.40557885618139,Two estimator outputs; neither is frame F0 ground truth.
+phone_M1.wav,2.5025,v,110.33510582319578,118.30271361111211,120.70952828568416,Two estimator outputs; neither is frame F0 ground truth.
+studio_F1.wav,1.9124943310657596,uv,267.197918696294,372.98752747516863,577.4623417018587,Two estimator outputs; neither is frame F0 ground truth.
+studio_F1.wav,1.2024943310657596,v,220.87762663814013,245.17554357725513,180.68134231719984,Two estimator outputs; neither is frame F0 ground truth.
+studio_F1.wav,1.1224943310657596,uv,321.18224395272114,295.7980803181407,-142.535338031981,Two estimator outputs; neither is frame F0 ground truth.
+studio_F1.wav,0.9524943310657596,v,249.72736402219255,234.5829226842505,-108.30710774109018,Two estimator outputs; neither is frame F0 ground truth.
+studio_F1.wav,0.7724943310657596,v,240.9420660042284,256.24647557704856,106.61503993000719,Two estimator outputs; neither is frame F0 ground truth.
+studio_M1.wav,2.0324943310657595,v,87.65777745535614,385.5492609030761,2564.35343656615,Two estimator outputs; neither is frame F0 ground truth.
+studio_M1.wav,1.5724943310657595,v,91.98469726177332,377.1286252202972,2442.7090592310933,Two estimator outputs; neither is frame F0 ground truth.
+studio_M1.wav,2.0424943310657597,v,94.20105391953462,345.2454709195404,2248.568859385055,Two estimator outputs; neither is frame F0 ground truth.
+studio_M1.wav,0.9324943310657596,uv,137.78495633153034,159.39136715832427,252.1861358893601,Two estimator outputs; neither is frame F0 ground truth.
+studio_M1.wav,1.1724943310657596,v,144.50833550004884,135.06317926516417,-117.02194752179751,Two estimator outputs; neither is frame F0 ground truth.

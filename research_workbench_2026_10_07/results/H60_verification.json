@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "groups": 20,
+  "checks": [
+    {
+      "file": "phone_F1.wav",
+      "option_id": "hard170",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 3166
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "maps_pitch",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 3166
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "maps_whole_20",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 3166
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "maps_whole_50",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 3166
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "maps_whole_80",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 3166
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "hard170",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 577
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "maps_pitch",
+      "fallback_baseline_voiced": 1,
+      "clipped_entries": 577
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "maps_whole_20",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 577
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "maps_whole_50",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 577
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "maps_whole_80",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 577
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "hard170",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 61
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "maps_pitch",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 61
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "maps_whole_20",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 61
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "maps_whole_50",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 61
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "maps_whole_80",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 61
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "hard170",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 41
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "maps_pitch",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 41
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "maps_whole_20",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 41
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "maps_whole_50",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 41
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "maps_whole_80",
+      "fallback_baseline_voiced": 0,
+      "clipped_entries": 41
+    }
+  ],
+  "independent_pcm_grid_projection_log_path_metrics_selection": true,
+  "shared_author_magnitude_phase": true,
+  "limitation": "No independent implementation of magnitude/phase spline feature math.",
+  "initial_exact_path_check": "FAIL; retained H60_path_tie_audit.json",
+  "independent_path_check": "PASS objective equivalence within1e-9; not exact trajectory parity",
+  "post_measurement_verifier_correction": true,
+  "inference_source_or_config_changed": false,
+  "verifier_v2_sha256": "304be19e04ecf5e6e6a5c274ca0f006e59f43ff453858306e34dd64a131b835b"
+}
