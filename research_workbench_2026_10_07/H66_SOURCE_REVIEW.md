@@ -1,0 +1,15 @@
+# H66 — nguồn coloured-noise harmonic estimation
+
+Rà08/10/2026, narrativeengineeringreviewmộtngười. Dùngliterature-reviewlocal vàexperimental-design, khôngsystematicreview/PRISMA hoặcfullpaperclaim. Queryweb: `harmonic fundamental frequency estimation colored noise autoregressive noise model Christensen prewhitening`; querymetadata: `site.arxiv.org/abs/2609.00065 Scientific Agent Skills`. SearchresultPDF khôngmở/tải/extract; chỉtheoHTMLprimarymetadata/abstract. Khôngthôngbáo haynhắntácgiả.
+
+| Record primary | Mức đã đọc | Kết luận có căn cứ và giới hạn |
+|---|---|---|
+| Quinn,B.G.;Nielsen,J.K.;Christensen,M.G.(2021), [Fast algorithms for fundamental frequency estimation in autoregressive noise](https://researchers.mq.edu.au/en/publications/fast-algorithms-for-fundamental-frequency-estimation-in-autoregre/), SignalProcessing180:107860, DOI10.1016/j.sigpro.2020.107860 | HTMLmetadata/abstract, Macquarie lines7–31 | Tácgiả xétjointML/F0/AR vàfastsolvers; abstract báo jointestimation tốt hơniterative trongthínghiệmcủahọ. Không suy customone-stepH66tươngđươngjointML/fastalgorithm hoặc sẽthắngBT2. |
+| EsquivelJaramillo,A.(2021), [Pre-processing of Speech Signals for Robust Parameter Estimation](https://vbn.aau.dk/en/publications/pre-processing-of-speech-signals-for-robust-parameter-estimation/), thesis, DOI10.54337/aau456472165 | HTMLmetadata/abstract, Aalborg lines22–60 | Abstract mô tảprewhiteningAR, residual-basediterativeNLS/F0, coloured/nonstationarynoise. H66chỉbướcđầunuisanceAR1; khôngfullthesis, adaptiveWiener/segmentation hoặcsupervisednoisemodel. |
+| [Robust Fundamental Frequency Estimation in Coloured Noise](https://vbn.aau.dk/en/publications/robust-fundamental-frequency-estimation-in-coloured-noise/), ICASSP2020 | HTMLrecord mở; nguồn discovery phụ | Không lấyformula/code/sốbenchmark từPDF hoặc thaymetricBT2. |
+
+H66 tựviếtformula cụthểtheoregistration: rawresidual từfit3harmonicsởanchor, scalarOLSrho clipped.95, data/dictionarycùngwhiteningrồiHann, cốđịnhrho trongboundedsearch. Đây là nhánh noise covariance, khácH54/SRH: SRH tìm harmonic/residualspectrumpeaks sauLPC của toànsignal; H66giữ harmonicregression và dùng residual sauharmonicfit đểreweightobjective. Chỉ gợi ý cơchế từabstract, khônggánformula/customchoices nàychoauthorpaper.
+
+Nguy cơ: rho còn chứaunmodelledharmonics/vocaltract/pitchmismatch, khôngchứngminhphầndưlàexternalnoise; 25ms cóítchu kỳ ởF0thấp; anchor cósai số vàlocalbounds khôngsửaoctave. Hann weighting khiến likelihood khôngphải exactstationaryGaussianjointML. Khôngclaimvariance/rhoidentifiable từgoodfit. Cần giữnegativefindings, khôngnóinhiễuđãđượcloạihoàn toàn.
+
+Skillcitationmetadata live08/10: [Kassis,T.;Agarwal,V.;He,Y.;Patel,D.;Brueckner,A.M.(2026), Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents](https://arxiv.org/abs/2609.00065), DOI10.48550/arXiv.2609.00065, arXivrecordv2revised02/09/2026, khôngjournalreferenceđượcghiởabstractđãđọc. CiteURLlatestkhôngversionsuffix. Skillbổsungquytrình/đơnvịđộc lập, khôngbằngchứngskillquality hoặcaccuracyH66. Khôngcàioptionalpackages/scriptsngoàiđãcó.

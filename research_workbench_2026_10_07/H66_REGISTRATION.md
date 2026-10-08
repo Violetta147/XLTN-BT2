@@ -1,0 +1,17 @@
+# H66 — nuisance AR(1) trong harmonic NLS, đăng ký trước BT2
+
+Rollback `211bb03ba13c1672518932768b1b864d9390ce6c`; accepted hard170 giữ. H00–H65 hoàn tất, không rerun. Giả thuyết: phần dư có tương quan một mẫu khiến weighted NLS mô hình white-noise của H61 kém phù hợp; một bước ước lượng AR(1) rồi lọc **cả waveform lẫn harmonic dictionary** có thể cải thiện F0mean/std. AR(1) mô tả e[n]=rho*e[n-1]+innovation[n]. Đây là custom one-step feasible weighting, không joint maximum-likelihood hoặc reference solver của paper.
+
+Chỉ options hard170 và ar1_nls_3. Cùng canonical PCM25ms/hop10ms, mask/count/labels/GT, harmonic order3 với DC và cos/sin. Tại anchor baseline, fit weightedLS sqrt(Hann) nhưH61; reconstruct residual r trên raw PCM. rho_raw=sum(r[1:]*r[:-1])/sum(r[:-1]^2), denominator0→0; rho=clip[-.95,.95]. Ước lượng nuisance từ **chính waveform của khung**, không LAB/reference/khung khác; không tái ước lượng rho theo từng f hoặc lặp sau refinement. Giữrho trong toàn searchgrid. Whiten vector/matrix firstrow×sqrt(1-rho²), rown=originalrow[n]-rho*originalrow[n-1], rồi applysqrt(Hann). Constant input giữanchor/rho0. Không thay window/hop, smooth, filter ngoài objective, hoặc decisionV/UV.
+
+Search nhưH61:41 offsets -100..100cents step5 quanhanchor, clip70–400; unique sorted; coarseargmin/tiesHznhỏ nhất; tối ưu bounded logHz ởhai gridneighbor, xatol1e-8,maxiter100; chọncost nhỏ nhất rồiHz nhỏ nhất. Khirho0, objective phải khớpH61; không cần đo lạiH61 để soalgorithm.
+
+Precheck mới chỉsynthetic trướcBT2:fs16k/44.1k ×F090/200/320 ×noise seeds11/29/47 =18fixtures, sum3cosines amplitude1/h phase.3h, noiseAR1rho.8 burnin200samples rồi scale std .1×signalstd; anchor+50cents. Yêu cầuerror<100cents; rho/QRobjective/wholegridcost khớpimplementationindependent rtol1e-8/atol1e-10; gain/DCinvariancepitch<.01cents,rho<1e-8; rho0objective soH61<1e-10;zero/constantfallback. Seed làfixture noise, khôngtrainingreplication. NếuFAIL giữfailure vàdừngH66, khôngnớitolerance/rerun.
+
+Prereg/source/precheck/registry commit,push,remoteSHAverify trướcBT2train. 8unique metricgroups (4cachedbaseline+4new),32innertraces,24summaryrows. Nested4outer/3inner/final4LOFO chọnminimaxworst-file AverageMAPE→mean→ID; finite/F1/recallVdrop≤.01/SIL+1guards và8gateunchanged. 0supervisedfits;588expectedframe nuisanceARfits nếumaskbaselinegiữ588. `actual_fit_files` tronginnertraces chỉsupervisedfitpool, đểtrốngkhôngcónghĩa waveformchưafit. Framesoverlapkhônglà independentreplicates; khôngrandomframesplit/speakerindependenceclaim.
+
+AverageMAPE soF0mean/F0std/F0numteacher3GT thốngkêcảfile, khôngframeGT. BáoMAEmean/std/count,macroF1,recallV/UV,balancedaccuracy,SIL,count. H61order3 metricso sánhcơchế lấyartifactcached cóhash, khôngreruninference. Test đãtừngxem,nestedexploratory. Mụctiêuall8từngfile<2%, khôngchỉmean.
+
+Verifier: độc lậpQR tạianchor tínhrawresidual/rho, lọcscalarmatrixrows,QRobjective mọigrid vàreturnedpitch/localbracket/cost; scalarfilemetrics/selection/innermembership/hashes. Khôngrerunoptimizerđộclập, ghi giới hạn. FAILkhôngpromote/testmới;eligiblethìlockconfig,commit/push/verify trước1test. KhôngDrive/DL/PDF/Jev/schedule/automaticretry hoặc sửaoriginal/frozen/GT/notebook.
+
+Nguồn và skill: xemH66_SOURCE_REVIEW.md. `experimental-design` dùngđơnvịfile/replication/isolatedchange vàprotocoltrướcđo; literature-reviewlocaldùngsourceidentity/contentlevel/querylog. Chỉworkflowinstruction, khôngoptionalDOEdependency hoặcpaidAPI.

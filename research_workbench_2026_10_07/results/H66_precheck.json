@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "BT2_used": false,
+  "tests": [
+    {
+      "fs": 16000,
+      "seed": 11,
+      "true_hz": 90,
+      "absolute_cents_error": 3.310269225541687,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "true_hz": 200,
+      "absolute_cents_error": 2.760501793620858,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 11,
+      "true_hz": 320,
+      "absolute_cents_error": 0.8197879228555975,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "true_hz": 90,
+      "absolute_cents_error": 5.896550189334136,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "true_hz": 200,
+      "absolute_cents_error": 4.684858027520622,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 29,
+      "true_hz": 320,
+      "absolute_cents_error": 2.574802313455388,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "true_hz": 90,
+      "absolute_cents_error": 3.309563296365061,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "true_hz": 200,
+      "absolute_cents_error": 1.460352777009302,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "seed": 47,
+      "true_hz": 320,
+      "absolute_cents_error": 1.5688613547906083,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "true_hz": 90,
+      "absolute_cents_error": 3.8099783183152125,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "true_hz": 200,
+      "absolute_cents_error": 2.3264010339088554,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 11,
+      "true_hz": 320,
+      "absolute_cents_error": 1.3840380604326943,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "true_hz": 90,
+      "absolute_cents_error": 0.5375603663613306,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "true_hz": 200,
+      "absolute_cents_error": 2.4267317201395504,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 29,
+      "true_hz": 320,
+      "absolute_cents_error": 1.2269479314120562,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "true_hz": 90,
+      "absolute_cents_error": 4.816287234235534,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "true_hz": 200,
+      "absolute_cents_error": 2.039309151489874,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "seed": 47,
+      "true_hz": 320,
+      "absolute_cents_error": 0.6993124305053846,
+      "independent_rho_qr_objective_grid_bracket": true,
+      "gain_dc_invariant": true,
+      "rho_zero_white_objective_parity": true,
+      "passed": true
+    }
+  ],
+  "zero_constant_fallback": true
+}
