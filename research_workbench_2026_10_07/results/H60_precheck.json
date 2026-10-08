@@ -1,0 +1,39 @@
+{
+  "synthetic_only": true,
+  "BT2_used": false,
+  "tone_tests": [
+    {
+      "fs": 16000,
+      "pitch": 90,
+      "median_cents_error": 14.620496523315552
+    },
+    {
+      "fs": 16000,
+      "pitch": 200,
+      "median_cents_error": 29.724421032081263
+    },
+    {
+      "fs": 16000,
+      "pitch": 320,
+      "median_cents_error": 40.57543042004661
+    },
+    {
+      "fs": 44100,
+      "pitch": 90,
+      "median_cents_error": 14.620496523315552
+    },
+    {
+      "fs": 44100,
+      "pitch": 200,
+      "median_cents_error": 48.83954666891753
+    },
+    {
+      "fs": 44100,
+      "pitch": 320,
+      "median_cents_error": 40.57543042004661
+    }
+  ],
+  "silence_noise_finite": true,
+  "independent_log_path_parity": true,
+  "note": "Silence finiteness is not a silence rejection accuracy claim. Deterministic algorithm, no fitted seeds."
+}

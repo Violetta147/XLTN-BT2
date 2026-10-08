@@ -1,0 +1,9 @@
+{
+  "status": "FAIL_BEFORE_BT2",
+  "configuration": "native25ms/hop10ms/grid70-400 at input sample rate",
+  "fixture": "16kHz, 90Hz five-harmonic signal, gain0.1, duration0.3s",
+  "median_absolute_cents_error": 2582.4037121340607,
+  "criterion_cents": 100,
+  "test_or_train_BT2_used": false,
+  "decision": "Reject initial short-window integration. Before preregistration use author 2048-sample/48kHz setup, retain canonical output grid. This is an explicit integration change, not relaxing the accuracy assertion."
+}

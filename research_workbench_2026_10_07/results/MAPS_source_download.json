@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-08",
+  "repository": "https://github.com/bastibe/MAPS-Scripts",
+  "commit": "d51d0e870625b4b62152900cfe627b8127c522d7",
+  "files": [
+    {
+      "file": "maps_f0.py",
+      "url": "https://raw.githubusercontent.com/bastibe/MAPS-Scripts/d51d0e870625b4b62152900cfe627b8127c522d7/maps_f0.py",
+      "sha256": "ccfd7cef0eb175d191dfc25609a9e662feefd87fda0b24cc12fa77a99bb2367c"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/bastibe/MAPS-Scripts/d51d0e870625b4b62152900cfe627b8127c522d7/LICENSE",
+      "sha256": "4b7bf4c25c9402e273d88b594f9760117ca701223c447a9498e461156ea5c03c"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/bastibe/MAPS-Scripts/d51d0e870625b4b62152900cfe627b8127c522d7/README.md",
+      "sha256": "626d6d94d716696b8e34849212ad0d660ca39d0390bb97b7947afa48ce7c0740"
+    }
+  ],
+  "method": "GitHub API metadata and pinned raw source, no PDF or dataset downloads"
+}
