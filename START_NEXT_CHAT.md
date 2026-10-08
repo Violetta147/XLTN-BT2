@@ -1,13 +1,17 @@
 # Bắt đầu chat mới — XLTN / BT2
 
-Cập nhật 08/10/2026. **Loop đã dừng theo yêu cầu người dùng sau khi hoàn tất H62. Không còn vòng thí nghiệm đang chạy; H63 chưa đăng ký hoặc đo.** Đọc hồ sơ không tự cấp yêu cầu chạy tiếp. Chỉ tiếp tục khi người dùng yêu cầu trong chat mới.
+Cập nhật 08/10/2026, sau yêu cầu tiếp tục trong chat mới. **H63 đã đăng ký, push/xác minh remote, đo train và verifier PASS; không promote, không test mới. Không có thí nghiệm đang chạy; H64 mới được nêu hướng unanchoredHPS, chưa đăng ký/đo.** Người dùng đang bổ sung câu hỏi về skill ML/pipeline/kiến trúc/thí nghiệm. Trạng thái dừng sauH62 ởbản trước là lịch sử, không thay yêu cầu tiếp tục mới.
+
+Đọc [H63_REPORT.md](research_workbench_2026_10_07/H63_REPORT.md) trước bước mới. H63 là boundedlogHPS3/5,25ms,mask/countgiữ: studio_F1 có gain1.473576→1.319059%, nhưngstudio_M1 1.909923→2.678125% ởHPS5; finalhard170, outerstudio_M1hps5, nested1.124932→1.316983%; baMAPEgatesFAIL. Preregc62ba22beeeeeead694783134cb5c307c18c4b1e vàresultsc60008241a015ab01c2893c363eae5d38a081a04 đãpush/remoteverified. KhôngrerunH63/H00–H62. Baselineall8FAIL vànotebookSHAgiữ.
+
+Đã rà nguồn PEFAC mới tại [PEFAC_SOURCE_REVIEW.md](research_workbench_2026_10_07/PEFAC_SOURCE_REVIEW.md): `MFA-X-AI/pyvoicebox` pin700aa87 dùngACF tronghàmv_fxpefac, thiếulog-frequency/amplitudecompression/GMM/DP củamãImperial pinf671f6d. Khôngcài/chạy/chấm nó nhưPEFAC. Snapshots/license/hashes lưu; MATLAB/OctavekhôngthấyPATH. Đây là sourceidentityreview, không vòngaccuracy hoặc proofmọiPEFACFAIL. Chưa cài skill mới hoặc dùngpremiumplatform.
 
 Mục tiêu còn thiếu: cùng một pipeline cho **từng file trong cả tám file có Average MAPE <2%**. Cải thiện BT2 tìm F0 trước; bài phân đoạn tiếng nói/khoảng lặng mới của thầy trong `../XLTN-BT1-BO-SUNG/` làm sau. Chưa chuyển bài hoặc tạo notebook thay bản đã nộp.
 
 ## Khôi phục nhanh
 
 1. Đọc quy tắc workspace XLTN của người dùng và [AGENTS.md](AGENTS.md) trong repository.
-2. Đọc file này, [H62_REPORT.md](research_workbench_2026_10_07/H62_REPORT.md), rồi [ma trận ba vòng](research_workbench_2026_10_07/figures/LOOP_H60_H62_train_matrix.png). Không quét lại toàn bộ STATE hoặc rerun để lấy lại context.
+2. Đọc file này, [H63_REPORT.md](research_workbench_2026_10_07/H63_REPORT.md); khi cần lịch sử đọc [H62_REPORT.md](research_workbench_2026_10_07/H62_REPORT.md) và [ma trận ba vòng](research_workbench_2026_10_07/figures/LOOP_H60_H62_train_matrix.png). Không quét lại toàn bộ STATE hoặc rerun để lấy lại context.
 3. Kiểm tra Git branch/status/HEAD/remote hiện tại. Mốc kết quả đã push và xác minh remote trước bàn giao: `bc42283fcb2ec76147a22241faf4c937aef606ba`. HEAD có thể có commit hồ sơ bàn giao sau mốc này; xác minh live, không coi checkpoint là HEAD bắt buộc.
 4. Khi cần chi tiết: [H60_REPORT](research_workbench_2026_10_07/H60_REPORT.md), [H61_REPORT](research_workbench_2026_10_07/H61_REPORT.md), [coverage](research_workbench_2026_10_07/EXPERIMENT_COVERAGE.md), [protocol](research_workbench_2026_10_07/PROTOCOL_F0.md). [STATE](research_workbench_2026_10_07/STATE.md) và [handoff cũ](docs/handoff/START_NEXT_CHAT_before_H60_H62_2026_10_08.md) là lịch sử; các dòng cũ “tiếp tục/chưa hoàn tất” không thay trạng thái dừng hiện tại.
 
@@ -53,7 +57,7 @@ Artifacts chính trong `research_workbench_2026_10_07/results/`: `H60/H61/H62_tr
 - Ground truth teacher3GT chỉ mean/std/count cả file; LAB V/UV/SIL theo đoạn. Không có F0 chuẩn từng timestamp. LABV không đồng nghĩa số khungF0 chuẩn; contourACF/MAPS/NLS và mean của file không thay framegroundtruth.
 - Bốn trainingfiles tạo nested4outer/3inner, final4LOFO. Minimax worst-file MAPE→mean→ID và guard F1/recall/SIL; tám gate giữ nguyên. Repeated selection trên4train và lịch sử đã xem test khiến kết quả exploratory. Không tuyên bố độc lập mới vì vừa freeze hoặc dùngKfold. Không random split frames hoặc coi augmentation là thêm speaker mới.
 - Nguồn dữ liệu: [provenance report](research_workbench_2026_10_07/DATASET_PROVENANCE_REPORT.md) đã thấy8WAV byte-identical với GitHubdthle; LAB nội dung khớp sau normalize newline. Hai bản stats khácmean/std, không chỉ thêmF0num; quy trình tạo reference/tác giả thu âm chưa rõ. Transcript “Anh vẫn có thể làm trọng tài”, giả thuyết4người/2nam2nữ và môi trườngphone/studio do người dùng cung cấp, speaker/session metadata chưa xác minh. Không kết luận thầy ghi nhầm hoặc testdata lỗi.
-- Đã thử ML/MFCC/H51matrix, augmentation, KEELE10speaker, YAAPT/SRH/cepstrum/temporalpath/GMMmapping, H60–H62. Không chạy lại các vòng đã hoàn tất. PEFAC/HPS hoặc AR-noise harmonic model vẫn chưa đo đầy đủ; chỉ là lựa chọn cho giả thuyết mới sau khi user yêu cầu tiếp tục, không có H63 pending.
+- Đã thử ML/MFCC/H51matrix, augmentation, KEELE10speaker, YAAPT/SRH/cepstrum/temporalpath/GMMmapping, H60–H63. Không chạy lại các vòng đã hoàn tất. BoundedHPS3/5 H63 đãđo; whole/unanchoredHPS, PEFAC thật và AR-noise harmonicmodel chưađo đầyđủ. H64chưađăngký, sourcereviewPEFAC khôngphải kếtquảđo.
 - Bước tiếp theo có giá trị: xác minh cách tạo reference/timing, hoặc dữ liệu có frameF0GT và speaker mới; nếu chọn algorithm mới cần một giả thuyết hẹp và prereg riêng. Không kết luận “data ít là nguyên nhân duy nhất” từ các failure.
 - Jev toolkit đã chép `C:/Users/LAPTOP T&T/Downloads/Jev_System_One_Reusable_Kit`; không cần đóng gói lại. Jev không được gọi ởH60–H62. Nhánh MCP lỗi lịch sử không tự retry; chỉ thử lại khi user yêu cầu. Đọc docs/jev/HUONG_DAN_JEV.md trước usecase mới, không giao tính MAPE/hash/LAB cho Jev.
 

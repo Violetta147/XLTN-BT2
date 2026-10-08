@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "stage": "source_identity_review_only",
+  "BT2_measured": false,
+  "code_executed": false,
+  "official_pin": "f671f6de6afb0206813bc539fa41b9043f68c6bd",
+  "python_pin": "700aa87f3ecfc31a46f18215b773a605278de0a2",
+  "candidate_rejected_as_reference_PEFAC": true,
+  "matlab_octave_in_PATH": {
+    "matlab": null,
+    "octave": null,
+    "octave-cli": null
+  },
+  "sources": {
+    "research_workbench_2026_10_07\\results\\PEFAC_GPL-3.0.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "research_workbench_2026_10_07\\results\\PEFAC_LGPL-3.0.txt": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+    "research_workbench_2026_10_07\\results\\PEFAC_official_v_fxpefac.m.txt": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+    "research_workbench_2026_10_07\\results\\PEFAC_python_LICENSE.txt": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+    "research_workbench_2026_10_07\\results\\PEFAC_rejected_python_v_fxpefac.py.txt": "7585279b657f0798098f9c67c7d1616f6d75be904193069fbe3c09fffa18c15e"
+  }
+}
