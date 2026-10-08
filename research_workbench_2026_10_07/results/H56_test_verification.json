@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "metric_groups": 36,
+  "serialized_gmm_models_checked": 33,
+  "scalar_gmm_and_pitch_mask_score_checks": true,
+  "legacy_fixed_lofo_parity_groups": 0,
+  "cached_features_previously_verified": true,
+  "verifier_sha256": "206bf3b4131f359fe2dc860deaaa07b2d1d226a079dde1e1533cfde82b0c5f3d",
+  "limits": "No new frame-level F0 ground truth; cached H50/H51 signal features, not a new independent corpus."
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "selected": "hard170",
+  "all_eight_target_met": false,
+  "original_notebook_unchanged": true,
+  "new_measurements": 0,
+  "diagnosis_decomposition_checked": true,
+  "input_hashes": {
+    "research_workbench_2026_10_07\\results\\H56_train_experiment.json": "4ca00323caf1caad9119c77e7839e3ce1e233e640403fed3f3c2cb89471a534a",
+    "research_workbench_2026_10_07\\results\\H56_train_verification.json": "41f398d12ece64b5bc9e86cbda8e66ce8afbd5b0f9b69280c7f4b04d64666509",
+    "research_workbench_2026_10_07\\results\\H56_train_fixed.csv": "ea9b9a438ee2ae4c212a7e44bf580ce5920e2e0c89140b4762499edeaabaaf27",
+    "research_workbench_2026_10_07\\results\\H56_train_proofs.json": "231f0ce5521ab8d538ff0d94d8bf4682ecc05a795c9be4637557b888a0f5def0",
+    "research_workbench_2026_10_07\\results\\H56_test_experiment.json": "a10cccd27c926964ff1c39665c1f3a6ad54b1ec71972e924c8385408c06045d3",
+    "research_workbench_2026_10_07\\results\\H56_test_verification.json": "d9c386b6fdac236b3d012608c0f5f44a7b5081aa4bffe77a55ff3d2ca21b1bd6",
+    "research_workbench_2026_10_07\\results\\H56_test_fixed.csv": "5278a5f6edf5c08f7639514fb2de5e3e879817cdc70b9346ee59831e4a1aac07",
+    "research_workbench_2026_10_07\\results\\H56_test_proofs.json": "2ef9a61e88eca8ad1efd83b32266e51968943ee77cfebff6aaabdbc73f5c2c13"
+  },
+  "outputs": {
+    "research_workbench_2026_10_07\\H56_REPORT.md": "b37bcdbaef04e140cfdc55b2445aff897c954b5da33ff5ec9817626f04f5b30b",
+    "research_workbench_2026_10_07\\results\\H56_count_decomposition.csv": "612810cdb88610c270a7d6fba0af43c63c51d2d6443f418f6a32622bd126ac36",
+    "research_workbench_2026_10_07\\results\\H56_boundary_audit.csv": "8bdad56fa258799d2c5bd0aa1f4d297574953166def7e394600a8539744ce3f0",
+    "research_workbench_2026_10_07\\results\\H56_recovery_cases.csv": "e2071a6f348b1854e2f5f55b34c357ef6a1bb1821fe3b63f26e9c550763ed5dd",
+    "research_workbench_2026_10_07\\results\\H56_paired_comparison.csv": "ba229e9330def7c86161e272ac94dff70e10e2175a54fb075c076186d25a8597",
+    "research_workbench_2026_10_07\\results\\H56_selected_all_files.csv": "c3dd1ae25f61701067874f17ece7371eca330cb5c39782247f66d986b66d368c",
+    "research_workbench_2026_10_07\\figures\\H56_estimator_ablation.png": "91290719a2c480d804b7db49152f5d1bfa43764792d46e112bffb3ebb75bcba9",
+    "research_workbench_2026_10_07\\figures\\H56_estimator_ablation.svg": "2d6339258075b4bf8a4e9dc17ee8a1cc3e79d90115810dea075c619b83690a5c",
+    "research_workbench_2026_10_07\\figures\\H56_recovery_matrix.png": "982d43a546781929e2be8021c7f8051ed9ba6a0b9e9eec85239933bfef13bf32",
+    "research_workbench_2026_10_07\\figures\\H56_recovery_matrix.svg": "bd1b353ae2347bf72f733b84309d0909fb6dd1790a8e77e34ec0e838c6cc8877"
+  },
+  "source_sha256": "c0ffc5c9051b51f5b4f3b2ee7f6db77e9e1c66a3eb974b6edeb9fd6872027e61"
+}

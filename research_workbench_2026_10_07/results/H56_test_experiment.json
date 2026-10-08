@@ -1,0 +1,27 @@
+{
+  "measured_commit": "530841fa73c16f7e7e8813a58e9ccb32e46e65bc",
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "actual_model_fits": 0,
+  "wall_time_s": 3.796964000001026,
+  "freeze_sha256": "a892bce9f9a19d15a51aaa5a26565737bca3a71d217c32ab0dba7bfff229c8ac",
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H56_test_design_phone_F2.npz": "c1904646743e6b5b277d6aaff2489c3fb0e6d4053495ccb70495614c0917dc21",
+    "research_workbench_2026_10_07\\results\\H56_test_design_phone_M2.npz": "b9edfb689fc6fcb0632a02578b11d98b4886ef6ca4ab5d3fd18f5b54094bdbf6",
+    "research_workbench_2026_10_07\\results\\H56_test_design_studio_F2.npz": "f48a48434c21f551879de97f894374031054b9a697ade98397ef29b05c377332",
+    "research_workbench_2026_10_07\\results\\H56_test_design_studio_M2.npz": "485a13b34149276da3fe01d945649672879db72ef5fcb7e6b89505063c4156b0",
+    "research_workbench_2026_10_07\\results\\H56_test_fixed.csv": "5278a5f6edf5c08f7639514fb2de5e3e879817cdc70b9346ee59831e4a1aac07",
+    "research_workbench_2026_10_07\\results\\H56_test_proofs.json": "2ef9a61e88eca8ad1efd83b32266e51968943ee77cfebff6aaabdbc73f5c2c13"
+  }
+}

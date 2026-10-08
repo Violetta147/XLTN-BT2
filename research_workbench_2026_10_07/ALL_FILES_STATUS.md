@@ -33,3 +33,7 @@ Average MAPE là trung bình lỗi tương đối của thống kê mean/std/cou
 ## Cập nhật H54/H55 — 08/10/2026
 
 SRH từ residual và SRH giới hạn quanh baseline đã đo/verified, nhưng cả hai final/cả bốn outer selections giữ hard170. Bảng8file ở đầu giữ nguyên:4/4train,0/4test<2. H54pitch-only100 diagnostic phone_F2=1.666665%, H55bound200 diagnostic phone_M2=4.602428%; đây là hai nhánh khác nhau, không được train chọn và đều có file khác xấu đi. Không ghép kết quả tốt từngfile để báo đạt. Xem H54_REPORT.md và H55_REPORT.md, selected_all_files CSV cùngresults. Mục tiêu từng8filestrict<2% vẫn FAIL, notebook/frozenbaseline không thay.
+
+## Cập nhật H56
+
+Đã kiểm tra same-mask estimator recovery ở33fits/3seeds/300train+36testgroups. Final vẫn chọnhard170 nên bảng8file đầu không đổi. Bound200 cóstudio_F1 fixedLOFO0.899591% vàstudio_F2 diagnostic3.437002%, nhưngstudio_M1>2 vàphone_M2xấuhơn, khôngpromote. H56_REPORT.md phânrãcount vàkhung đổiF0; đây là bằngchứng mộtphần vấnđề estimator, khôngchứngminhtestlỗi/datasmall/GTwrong. Targetall8FAIL;originalnotebookgiữ.
