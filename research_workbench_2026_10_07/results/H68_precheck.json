@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "integration_only": true,
+  "accuracy_all_pass": false,
+  "BT2_used": false,
+  "tests": [
+    {
+      "fs": 16000,
+      "true_hz": 90,
+      "median_hz": 90.59762851535545,
+      "absolute_median_cents_error": 11.457942384253323,
+      "accuracy_diagnostic_pass": true,
+      "integration_pass": true,
+      "gain_cents": 0.0,
+      "certificate": {
+        "native_frames": 111,
+        "independent_gmm_max_abs_error": 4.440892098500626e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -110.98608283959982,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      },
+      "runtime_log": {
+        "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+        "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+        "runtime": "11.3.0",
+        "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+        "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+        "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+        "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+        "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+        "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+        "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "input_pcm_sha256": "cc45296f5a56ced3ba009b6e70629f15b0c0bc1d4b45db8e6b5bfcce78e43776",
+        "native_frames": 111,
+        "native_first_center": 0.04528125,
+        "parameters": {
+          "tinc": 0.01,
+          "flim": [
+            70,
+            400
+          ],
+          "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+        },
+        "transport": "temporary MAT direct local subprocess; no Drive"
+      }
+    },
+    {
+      "fs": 16000,
+      "true_hz": 173,
+      "median_hz": 173.5342419092494,
+      "absolute_median_cents_error": 5.337992063275885,
+      "accuracy_diagnostic_pass": true,
+      "integration_pass": true,
+      "gain_cents": 0.0,
+      "certificate": {
+        "native_frames": 111,
+        "independent_gmm_max_abs_error": 3.3306690738754696e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -110.98608283959982,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      },
+      "runtime_log": {
+        "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+        "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+        "runtime": "11.3.0",
+        "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+        "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+        "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+        "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+        "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+        "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+        "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "input_pcm_sha256": "aab4618302abf839bdc0411a668ac85226a86bfe9b62ef770b742a7201fb3cd6",
+        "native_frames": 111,
+        "native_first_center": 0.04528125,
+        "parameters": {
+          "tinc": 0.01,
+          "flim": [
+            70,
+            400
+          ],
+          "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+        },
+        "transport": "temporary MAT direct local subprocess; no Drive"
+      }
+    },
+    {
+      "fs": 16000,
+      "true_hz": 300,
+      "median_hz": 150.57066557508946,
+      "absolute_median_cents_error": 1193.4261258700353,
+      "accuracy_diagnostic_pass": false,
+      "integration_pass": true,
+      "gain_cents": 0.0,
+      "certificate": {
+        "native_frames": 111,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -110.6432333917156,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      },
+      "runtime_log": {
+        "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+        "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+        "runtime": "11.3.0",
+        "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+        "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+        "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+        "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+        "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+        "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+        "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "input_pcm_sha256": "3cabd6e29998550a309bc29af4573103c2a420b20214df9bba509cfbcc6b386b",
+        "native_frames": 111,
+        "native_first_center": 0.04528125,
+        "parameters": {
+          "tinc": 0.01,
+          "flim": [
+            70,
+            400
+          ],
+          "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+        },
+        "transport": "temporary MAT direct local subprocess; no Drive"
+      }
+    },
+    {
+      "fs": 44100,
+      "true_hz": 90,
+      "median_hz": 90.59762851535545,
+      "absolute_median_cents_error": 11.457942384253323,
+      "accuracy_diagnostic_pass": true,
+      "integration_pass": true,
+      "gain_cents": 0.0,
+      "certificate": {
+        "native_frames": 111,
+        "independent_gmm_max_abs_error": 7.771561172376096e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -110.98608283959982,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      },
+      "runtime_log": {
+        "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+        "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+        "runtime": "11.3.0",
+        "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+        "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+        "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+        "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+        "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+        "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+        "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "input_pcm_sha256": "625817890941b6ca14df28481f1b5ce75361dac7f439da6a2309a4fe38b04afd",
+        "native_frames": 111,
+        "native_first_center": 0.04526077097505669,
+        "parameters": {
+          "tinc": 0.01,
+          "flim": [
+            70,
+            400
+          ],
+          "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+        },
+        "transport": "temporary MAT direct local subprocess; no Drive"
+      }
+    },
+    {
+      "fs": 44100,
+      "true_hz": 173,
+      "median_hz": 173.5342419092494,
+      "absolute_median_cents_error": 5.337992063275885,
+      "accuracy_diagnostic_pass": true,
+      "integration_pass": true,
+      "gain_cents": 0.0,
+      "certificate": {
+        "native_frames": 111,
+        "independent_gmm_max_abs_error": 3.3306690738754696e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -110.98608283959982,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      },
+      "runtime_log": {
+        "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+        "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+        "runtime": "11.3.0",
+        "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+        "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+        "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+        "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+        "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+        "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+        "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "input_pcm_sha256": "7e8f3d9735c9b068fb411bd8cf338974ef0a1f0aee856f5f83197d2b83ebf8e4",
+        "native_frames": 111,
+        "native_first_center": 0.04526077097505669,
+        "parameters": {
+          "tinc": 0.01,
+          "flim": [
+            70,
+            400
+          ],
+          "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+        },
+        "transport": "temporary MAT direct local subprocess; no Drive"
+      }
+    },
+    {
+      "fs": 44100,
+      "true_hz": 300,
+      "median_hz": 150.57066557508946,
+      "absolute_median_cents_error": 1193.4261258700353,
+      "accuracy_diagnostic_pass": false,
+      "integration_pass": true,
+      "gain_cents": 0.0,
+      "certificate": {
+        "native_frames": 111,
+        "independent_gmm_max_abs_error": 5.551115123125783e-16,
+        "independent_dp_path": true,
+        "optimal_final_cost": -110.9429135629573,
+        "limitation": "Uses stored spectral peaks/features; does not independently reconstruct spectrogram, LTASS compression or peaks."
+      },
+      "runtime_log": {
+        "exe": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\bin\\octave-cli.exe",
+        "exe_sha256": "387ac823fb5b01b3407fb34edda6ab1cdba0c9619841a0f6dee323d05a850f2d",
+        "runtime": "11.3.0",
+        "image_filter": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\imfilter.m",
+        "image_filter_sha256": "4d1cdce1aa33ef0993daf511d80eeaefe2d5359a54f3a1b9045dd03c46ee6484",
+        "image_pad": "C:\\Users\\LAPTOP T&T\\AppData\\Local\\Programs\\GNU Octave\\Octave-11.3.0\\mingw64\\share\\octave\\packages\\image-2.20.0\\padarray.m",
+        "image_pad_sha256": "16c0843322ca6ba3d99305eb887c161e04e14aa2027277bdccac7b4125896e96",
+        "source": "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\XLTN-BT2\\research_workbench_2026_10_07\\vendor\\voicebox_pefac\\v_fxpefac.m",
+        "source_sha256": "8b610d44a751ae0043d09ab4db2758a4459bf92fe2d84f43d907aa69918fe94d",
+        "bridge_sha256": "f473d4ff2d3984080fed6c66470603811a9155e9eda4638ae90b5df9d50502b2",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "",
+        "input_pcm_sha256": "f3e7babb75f2dce09025e0f5890463f56d354ce7977fb204c2aeaeb4bd6dcf30",
+        "native_frames": 111,
+        "native_first_center": 0.04526077097505669,
+        "parameters": {
+          "tinc": 0.01,
+          "flim": [
+            70,
+            400
+          ],
+          "other_parameters": "upstream defaults: fres20Hz; native analysis window; supplied GMM and DP weights"
+        },
+        "transport": "temporary MAT direct local subprocess; no Drive"
+      }
+    }
+  ],
+  "earlier_runtime_probes": {
+    "missing_dependency_exit1": "filtbankm missing; resolved by pinned upstream aliases; source unchanged",
+    "tone200_median_hz": 100.5864,
+    "tone200_pv_median": 0.7279,
+    "tone200_accuracy": "FAIL half-frequency; preserved; not an integration gate"
+  }
+}
