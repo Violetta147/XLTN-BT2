@@ -1,2 +1,3 @@
+research_workbench_2026_10_07/vendor/maps/* -text
 # Preserve the exact licensed upstream source bytes in clones/checkouts.
 research_workbench_2026_10_07/vendor/voicebox_pefac/* -text
