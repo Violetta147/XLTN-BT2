@@ -34,3 +34,14 @@ H58 học trọng số LAB V của cả ba cụm GMM chỉ từ fit pool trong m
 ## H59 — temporal context riêng cho rejection, đã đo
 
 Chuỗi hai trạng thái với transition học từ LAB fit pool, unary H58 giữ nguyên, marginal forward-backward dùng để loại original baseline V. 6 options ×3seed, grouped nested,360 train/48 test groups; enumeration/scalar/parity và fold isolation được kiểm. Markov giảm một số lỗi phone nhưng làm studio train xấu hơn; test .25 chỉ studio_M2<2 với recall V giảm, không train-selected. Giữ hard170, all8 target FAIL. [Báo cáo H59](H59_REPORT.md). Đây là offline posterior-potential chain, không claim generative HMM/streaming hoặc calibrated valid-F0 probability.
+
+
+## Cập nhật H60–H62, hoàn tất và dừng 08/10/2026
+
+| Hướng bổ sung | Phạm vi đã đo | Kết luận và nguồn |
+|---|---|---|
+| MAPS biên độ +pha | H60 reference-derived whole/pitch-only,20train groups, khôngtest mới | [H60_REPORT](H60_REPORT.md); khác nativewindow/canonical; failure giữ, finalhard170 |
+| Harmonic least-squares | H61 custom order3/5,12train groups, same mask/count | [H61_REPORT](H61_REPORT.md); gain riêng nhưng studio_M1>2; không reference fastF0Nls port |
+| Harmonic coherence choV/UV | H62 logistic base4/6 ×rejection0/.1/.25,22fits/140groups/112traces | [H62_REPORT](H62_REPORT.md); Brier tốt cả4heldfile nhưng MAPE không tốt chung; finalhard170 |
+
+[Ma trận ba vòng](figures/LOOP_H60_H62_train_matrix.png) và [summary CSV](results/LOOP_H60_H62_SUMMARY.csv) có số đã đo. Không suy từ mục “harmonics” cũ rằng mọi harmonicmethod đã thử; không suy từH61/H62 rằng fastNLS/ARnoise của tác giả đã được benchmark. H63 chưa đăng ký, loop đã dừng theo user; chưa đo PEFAC/HPS đầy đủ hoặc corpus mới. Không “thử hết” ngoài registry và không rerun để khôi phụcchat.

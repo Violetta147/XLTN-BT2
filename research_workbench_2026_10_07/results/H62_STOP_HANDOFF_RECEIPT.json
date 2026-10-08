@@ -1,0 +1,22 @@
+{
+  "status": "STOPPED_AT_USER_REQUEST",
+  "last_completed_round": "H62",
+  "H63_registered": false,
+  "experiments_pending": [],
+  "new_test_evaluations": 0,
+  "results_checkpoint": "bc42283fcb2ec76147a22241faf4c937aef606ba",
+  "submitted_notebook_sha256": "b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c",
+  "three_registries_source_input_hashes_verified": true,
+  "checked_handoff_links": 11,
+  "artifacts": {
+    "START_NEXT_CHAT.md": "d84b80d80f1c2faca01bcfef09c34fb7d694dcca6d713d4bcd908a58c8c258e4",
+    "research_workbench_2026_10_07\\STATE.md": "28e738f1d0771704501744223164fe7857e44a22c01c83d1135a0a6a9b4cf2ff",
+    "research_workbench_2026_10_07\\EXPERIMENT_COVERAGE.md": "ca14b0c7f151e14e48d189630373ea813a82427217464e616e32a727a8f47d9c",
+    "docs\\handoff\\START_NEXT_CHAT_before_H60_H62_2026_10_08.md": "5afd3b3d9efc5fe1d7f05c79946270d39ccb32fe41ef399c1e9917ed87163de2",
+    "research_workbench_2026_10_07\\H60_REPORT.md": "b8aa548613c0410287b9d6bea88a496144e9d3d02502851ec5262d231fc1b8b0",
+    "research_workbench_2026_10_07\\H61_REPORT.md": "32115f76ad7249e3930f46c434ca8bec359ff4c8f507ff5dbf8aaf873764b997",
+    "research_workbench_2026_10_07\\H62_REPORT.md": "8b51905344b9f5fae366e03608bdc1f41ef7349bdb7ecff110e7498da98b80a9",
+    "research_workbench_2026_10_07\\figures\\LOOP_H60_H62_train_matrix.png": "fed4884e2b202d68598b07a19067a7c18476c79e4e48a6a7574d05dbda8477cc",
+    "research_workbench_2026_10_07\\results\\LOOP_H60_H62_SUMMARY.csv": "82b7dd3145fc4bd3549c188a937373b19c96f289cfdf323ffb0db63db575b2e8"
+  }
+}
