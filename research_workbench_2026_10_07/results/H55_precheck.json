@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "width_cents": 100,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "width_cents": 200,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "width_cents": 400,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "width_cents": 100,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "width_cents": 200,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "width_cents": 400,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "width_cents": 100,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "width_cents": 200,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "width_cents": 400,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "width_cents": 100,
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "width_cents": 200,
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "width_cents": 400,
+      "median_error_hz": 1.4999999999999858,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "width_cents": 100,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "width_cents": 200,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "width_cents": 400,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "width_cents": 100,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "width_cents": 200,
+      "median_error_hz": 0.0,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "width_cents": 400,
+      "median_error_hz": 0.0,
+      "passed": true
+    }
+  ],
+  "native_window_ms": 100,
+  "tests": [
+    "scalar selector equality",
+    "biased-anchor known periodicity",
+    "bounded displacement",
+    "tie lower frequency",
+    "UV remains NaN",
+    "unsupported timestamp fallback"
+  ],
+  "limits": "Biased synthetic anchors are near truth; this cannot certify correction of baseline octave errors outside the bound. H54 unbounded synthetic failures remain."
+}
