@@ -1,0 +1,93 @@
+{
+  "rollback_commit": "a60f374b8c8479d6afbb31502b920ea6d549b2d6",
+  "recipe": {
+    "id": "gmm_PEZS",
+    "method": "gmm",
+    "blocks": "PEZS",
+    "columns": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "options": [
+    {
+      "id": "hard170",
+      "width": 0
+    },
+    {
+      "id": "recovery_acf",
+      "width": 0
+    },
+    {
+      "id": "recovery_bound_100",
+      "width": 100
+    },
+    {
+      "id": "recovery_bound_200",
+      "width": 200
+    },
+    {
+      "id": "recovery_bound_400",
+      "width": 400
+    }
+  ],
+  "hashes": {
+    "research_workbench_2026_10_07\\recovery_pitch.py": "372340515d60e2d8ae3ee8b5b38734b89253317f93e149eebdeb3b4fc502be6c",
+    "research_workbench_2026_10_07\\verify_recovery_pitch.py": "206bf3b4131f359fe2dc860deaaa07b2d1d226a079dde1e1533cfde82b0c5f3d",
+    "research_workbench_2026_10_07\\H56_REGISTRATION.md": "01ec8c9ced0d423abd5194b92c639056d3085a55407f7bddb5cbf6f438ddd5b3",
+    "research_workbench_2026_10_07\\results\\H56_precheck.json": "81082320f8468617de275863bbed16c76b633e382dd8b06a31023b5507276e6d",
+    "research_workbench_2026_10_07\\voicing_matrix.py": "a2b7f0713194bf9438970c4528d40b0ed3cf4e6bc06536ddfb85d2909ffa830e",
+    "research_workbench_2026_10_07\\voicing_recovery.py": "0982b3f826f180611c88bf5075f736264c7cb9b4a91f605c530463a288e6de8b",
+    "research_3gt_2026_10_05\\core.py": "b133c0962f99d71ba727834c8fc34164cf7ae6ee2b69434bbd531540917da3cb",
+    "research_workbench_2026_10_07\\verify_srh.py": "0ebd5e8c746a447f9ecc74df0c8f2f6777c6a0323054efba2cdf2061cc572dda",
+    "research_workbench_2026_10_07\\verify_yaapt_extension_v2.py": "a49d00b82f391e23616011caf31341351534ceac945828532ce13b17aa6a37a3",
+    "research_workbench_2026_10_07\\yaapt_extension.py": "16cce1f6bf5c90d5784e799257a40357474a28b40fe57573fd6085af91893f77",
+    "research_workbench_2026_10_07\\results\\H50_verification.json": "930cf034d6410dae20dfa795de471043e483844036f50214ea16f5b31d2bf435",
+    "research_workbench_2026_10_07\\results\\H51_train_verification.json": "d0e1362dececa4abbeb1f216831e9cfc4fe54f17fdfa6f477b721c17707f03b8",
+    "research_workbench_2026_10_07\\results\\H51_external_verification.json": "fae9c4da3fff330db2be82fadc59a9c07f403383e16fc3465266d10c6c4179fe",
+    "research_3gt_2026_10_05\\results\\frozen_config.json": "ef618d8b7c7f79c54e004d3bad096113217449a7819b4800f681542bf73caad8",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_F1.npz": "20b7ca4aaee52dda542ab6fae0d9a743b56516adf95b720d66cd3ea6e279ce09",
+    "research_workbench_2026_10_07\\results\\H50_design_phone_M1.npz": "e0ece1aa275519928b60ec2d8a2d29eabf550f40782390c03eebbceae4864528",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_F1.npz": "4f7ed0d11b41c6b6ff71cc05362368bf95862bd96ad6b4e4af612daa5adc1898",
+    "research_workbench_2026_10_07\\results\\H50_design_studio_M1.npz": "29d0b1dd36f2a4ea627790a40e12e117b574a9f9e34a658ebdd738ddb4d42647",
+    "research_workbench_2026_10_07\\results\\H51_predictions_phone_F1.npz": "c6bc567412fa5b73e254a2bcb9c5b79a749bc3abc217cfcbec873a1c219b851f",
+    "research_workbench_2026_10_07\\results\\H51_predictions_phone_M1.npz": "fd0cff2f0d6db2a3df6bebcc5f6312b2b3aaa7e4d4f629ab38b66cd4a39506eb",
+    "research_workbench_2026_10_07\\results\\H51_predictions_studio_F1.npz": "5d3155745441770e4ed28e8d5f7630e8fc3843d2a5263d8032d8150534fd6bb1",
+    "research_workbench_2026_10_07\\results\\H51_predictions_studio_M1.npz": "7875174ff5690f596b27ce6f252a262e4234f52bf8419d0e65c276b95cfd8f28",
+    "research_workbench_2026_10_07\\results\\H51_test_phone_F2.npz": "5f8640a20812cbcc8384b8aaa8e37969b87b72e68602801971a135caf72bbbce",
+    "research_workbench_2026_10_07\\results\\H51_test_phone_M2.npz": "5c3461c190a6dd2e2cb8dc7bf555b2fb60f42aeed15b8f3617fcecf1ab0cd45c",
+    "research_workbench_2026_10_07\\results\\H51_test_studio_F2.npz": "add7393bac5b8229f2bbcfaa68057ba2dd0a68b89674d6bed5ad7de677a94c03",
+    "research_workbench_2026_10_07\\results\\H51_test_studio_M2.npz": "a491db27153849afe31f22c2e0168533ed099fac89b1507cdc1518465fb9784c",
+    "TinHieuHuanLuyen\\phone_F1.wav": "4209a6ffe642f93b89554000fa7766135faf7c6cd97ce99b912b44af5e39db12",
+    "TinHieuHuanLuyen\\phone_M1.wav": "f6ec4c441948ea9e749ddfdf2ec88b5400261c2f7249c54baf42e00b485eab22",
+    "TinHieuHuanLuyen\\studio_F1.wav": "60deec10a9a1db91546503977892d17f34111d7090482b893dc46ebe09ec6fc5",
+    "TinHieuHuanLuyen\\studio_M1.wav": "7ad0e8baff2c69e65f680842a7cda33744358111f7662d9b6d17702b2077be78",
+    "TinHieuHuanLuyen\\phone_F1.lab": "fbc06ae858f23f2014f83afdebcafb63d9ad85b7ca3a5f7cd9219514aaa86e31",
+    "TinHieuHuanLuyen\\phone_M1.lab": "f86b3d61b8c14a90d44871db056e0ef804c7eee8be3793267daba073021bf2d5",
+    "TinHieuHuanLuyen\\studio_F1.lab": "f7f71944ff251fa33e350eba68d4cf83e1875991cadf48171b8ff93f780f0bc3",
+    "TinHieuHuanLuyen\\studio_M1.lab": "ca3700a621a3181fb791942e96b4e58c27395993350899a8e4d18754dce88e98",
+    "TinHieuKiemThu\\phone_F2.wav": "0855fdac93bcf9eb21a8381cea16e677e64fcf5c4546cafc7ab2fc561e9cc519",
+    "TinHieuKiemThu\\phone_M2.wav": "61857937c1ad0c05ef2df2933af9088b89a1109af00b181876ffe96d59d6d297",
+    "TinHieuKiemThu\\studio_F2.wav": "70ee6edf2d80b5e9f2a2ca70aaa7f650dbd05bbf064f2fb9cd4c15bd4c78cb38",
+    "TinHieuKiemThu\\studio_M2.wav": "237ea1ab4bece6893ff2d2b42962184e35d0a5e60c94188d9e3dd0b84714b681",
+    "TinHieuKiemThu\\phone_F2.lab": "0fd8f5f2d2c77b28c5178d54d467977695ce2b318240a7a5a7595d78591b3565",
+    "TinHieuKiemThu\\phone_M2.lab": "441ea4ede859850f6e840a39cf4fe795ee5ef46403fdf3e4b53c7dc291e81fec",
+    "TinHieuKiemThu\\studio_F2.lab": "0d2e63cef0de33662fbbac8930092515a5246216f05ca493fbd497d80024cd94",
+    "TinHieuKiemThu\\studio_M2.lab": "d03296f09522ffee2de570415bcf4050f736e7444706b41f8c3bf233849e2d0a",
+    "research_3gt_2026_10_05\\train_3gt\\phone_F1.lab": "a107510954481966571f3b047c9c61cc7cfba92d5e160800bebbe26765885192",
+    "research_3gt_2026_10_05\\train_3gt\\phone_M1.lab": "e535f875046910a3a0cd712f403b59dc68fbb823d2973f0f5f8c072f960a283e",
+    "research_3gt_2026_10_05\\train_3gt\\studio_F1.lab": "41a4fbb4dd1935a31b131d1bcfa025dd3d31223a5803f864d14d8afdde6989e5",
+    "research_3gt_2026_10_05\\train_3gt\\studio_M1.lab": "082f5c3ba7232c45b4c786a2c7c2658c171c76d24a67f16f7d4e0e462e19b65b",
+    "research_3gt_2026_10_05\\test_3gt\\phone_F2.lab": "cbaf9633d4b615dd3b47d93f29b2a7f8ebe5312bdac91c69cc511278d881f01f",
+    "research_3gt_2026_10_05\\test_3gt\\phone_M2.lab": "4f1bbc282e6299657a201c04d25ae34429dd92edae9dd68216d4e5e3475e6238",
+    "research_3gt_2026_10_05\\test_3gt\\studio_F2.lab": "d4686bea3c19d70d9fb47adac49144d86b8df17033202e63a0dae68025a37852",
+    "research_3gt_2026_10_05\\test_3gt\\studio_M2.lab": "3871427f4ab7345f7c0feac6ad2ff2b18fc44e4544f49c6a38b0fa60979d9975"
+  }
+}

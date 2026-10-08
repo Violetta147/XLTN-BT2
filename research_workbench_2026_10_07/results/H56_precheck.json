@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "width": 100,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "width": 200,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 100.0,
+      "width": 400,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "width": 100,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "width": 200,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 173.0,
+      "width": 400,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "width": 100,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "width": 200,
+      "passed": true
+    },
+    {
+      "fs": 16000,
+      "frequency": 300.0,
+      "width": 400,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "width": 100,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "width": 200,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 100.0,
+      "width": 400,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "width": 100,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "width": 200,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 173.0,
+      "width": 400,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "width": 100,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "width": 200,
+      "passed": true
+    },
+    {
+      "fs": 44100,
+      "frequency": 300.0,
+      "width": 400,
+      "passed": true
+    }
+  ],
+  "same_mask_across_pitch_ablations": true,
+  "unsupported_anchor_fallback": true,
+  "scope": "Periodic synthetic with near-truth anchors, not BT2 frame F0 truth"
+}
