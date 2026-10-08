@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "groups": 8,
+  "checks": [
+    {
+      "file": "phone_F1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 147
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "ar4_nls_3",
+      "voiced_frames": 147
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 233
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "ar4_nls_3",
+      "voiced_frames": 233
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 123
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "ar4_nls_3",
+      "voiced_frames": 123
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "hard170",
+      "voiced_frames": 85
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "ar4_nls_3",
+      "voiced_frames": 85
+    }
+  ],
+  "verified_voiced_frame_options": 588,
+  "independent_anchor_qr_rho_whitening_grid_objective_bracket": true,
+  "independent_scalar_metrics_selection": true,
+  "inner_summary_membership": true,
+  "mask_count_invariant": true,
+  "protected_hashes": true,
+  "limitation": "Independent QR certifies all four nuisance coefficients, conditional whitening, objective/grid/local bracket; optimizer not independently rerun; gate code unchanged."
+}
