@@ -1,0 +1,18 @@
+{
+  "measured_commit": "eeedd8371dfe4b923c0ab466f22b275714c80da7",
+  "actual_fit_files": [],
+  "seed": null,
+  "new_native_calls": 0,
+  "reused_verified_native_source": "H54 SRH100",
+  "test_tuning": false,
+  "historical_test_exposure": true,
+  "wall_time_s": 0.4152676000012434,
+  "freeze_sha256": "e766a779d2598cbb4ec33722d5062bc47aab40180d6aa2cbe8c272e962055070",
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_phone_F2.npz": "b67feb67a782873120f2b2928b97649e864cb0266ce8c5f0ce7fec9a269730de",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_phone_M2.npz": "db976d41b6395032c707a2985fcb201a41399723baecf2b3420027eae1ca0614",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_studio_F2.npz": "82db04894b3a20da89a1a8917217c9900d1859480a3bccdaec661ce5b537e18a",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_studio_M2.npz": "bdc2d4c6cbaac89638aad27b3b01bcb3dadb0f34ec293d641a1c70e4a7915367",
+    "research_workbench_2026_10_07\\results\\H55_test_fixed.csv": "a0086fb88f319fbd2316fa9ea1bf0c3a5e0a772ada0b356b4f29d6b0bed8b215"
+  }
+}

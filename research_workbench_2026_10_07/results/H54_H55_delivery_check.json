@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "registry_measurement_report_hashes_verified": true,
+  "original_notebook_unchanged": true,
+  "all_eight_target_met": false,
+  "baseline_retained": true,
+  "measurement_repeated": false,
+  "figures_visually_reviewed": [
+    "H54_srh_matrix",
+    "H54_srh_qualitative",
+    "H55_bounded_comparison"
+  ]
+}

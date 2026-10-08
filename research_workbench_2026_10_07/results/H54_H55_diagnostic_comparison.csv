@@ -1,0 +1,25 @@
+stage,file,method,average_mape
+train,phone_F1.wav,baseline,0.3400796452665748
+train,phone_M1.wav,baseline,0.776150655256238
+train,studio_F1.wav,baseline,1.4735761369091147
+train,studio_M1.wav,baseline,1.9099227607373956
+train,phone_F1.wav,SRH unbounded,13.903805979097541
+train,phone_M1.wav,SRH unbounded,5.471037457762517
+train,studio_F1.wav,SRH unbounded,3.063906512950718
+train,studio_M1.wav,SRH unbounded,3.688556374873075
+train,phone_F1.wav,SRH bound 200c,0.5656159252152018
+train,phone_M1.wav,SRH bound 200c,0.8624754573243799
+train,studio_F1.wav,SRH bound 200c,2.8462515114643203
+train,studio_M1.wav,SRH bound 200c,3.417091722295146
+test,phone_F2.wav,baseline,4.197313424641423
+test,phone_M2.wav,baseline,6.833750011939757
+test,studio_F2.wav,baseline,5.063461750390572
+test,studio_M2.wav,baseline,2.114790835039559
+test,phone_F2.wav,SRH unbounded,1.6666654620237946
+test,phone_M2.wav,SRH unbounded,7.96059717592797
+test,studio_F2.wav,SRH unbounded,3.0125530170183765
+test,studio_M2.wav,SRH unbounded,3.042066824375427
+test,phone_F2.wav,SRH bound 200c,4.108902466122935
+test,phone_M2.wav,SRH bound 200c,4.6024282759153925
+test,studio_F2.wav,SRH bound 200c,5.926086468844656
+test,studio_M2.wav,SRH bound 200c,2.7475985509185414

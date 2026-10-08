@@ -29,3 +29,7 @@ Mỗi file <2%: **False**. Mỗi test <2%: **False**.
 | test | candidate | studio_M2.wav | 155.209 | 29.5222 | 120 | 0.32909 | 2.56701 | 3.44828 | 2.11479 | 0.509102 | 0.777803 | 118 | 18 | 2 | 10 | 0.921875 | 0.9 | 0.910937 | 0.850806 | 0.918919 | 0 |
 
 Average MAPE là trung bình lỗi tương đối của thống kê mean/std/count cả file, không phải F0 từng khung. Không có per-frame pitch GT. Augmentation H47 không được chọn; hard170 đã biết từ H43. Không chỉnh GT, không sửa notebook đã nộp hoặc frozen_config gốc. Nếu test chưa đạt, giữ failure và không dò tham số trên chính test để gọi cải tiến độc lập.
+
+## Cập nhật H54/H55 — 08/10/2026
+
+SRH từ residual và SRH giới hạn quanh baseline đã đo/verified, nhưng cả hai final/cả bốn outer selections giữ hard170. Bảng8file ở đầu giữ nguyên:4/4train,0/4test<2. H54pitch-only100 diagnostic phone_F2=1.666665%, H55bound200 diagnostic phone_M2=4.602428%; đây là hai nhánh khác nhau, không được train chọn và đều có file khác xấu đi. Không ghép kết quả tốt từngfile để báo đạt. Xem H54_REPORT.md và H55_REPORT.md, selected_all_files CSV cùngresults. Mục tiêu từng8filestrict<2% vẫn FAIL, notebook/frozenbaseline không thay.

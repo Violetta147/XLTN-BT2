@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "new_measurements": 0,
+  "all_eight_strict_below_2": false,
+  "selected": "hard170",
+  "qualified_counts": {
+    "test": 0,
+    "train": 4
+  },
+  "input_hashes": {
+    "research_workbench_2026_10_07\\results\\H55_train_verification.json": "f8916cde4a3a1d076ddf150feba5008a1f37304938a81ad32650b668ba8621bd",
+    "research_workbench_2026_10_07\\results\\H55_train_fixed.csv": "4e5cfc8cb1b37fe1828446c7d567590eae8128e3975da0a672afd81a69d7d3ce",
+    "research_workbench_2026_10_07\\results\\H55_train_predictions_phone_F1.npz": "215ec1d4270fb385b0d5f02fd1cfbbc9e442e12965634d8647b1ad427136001b",
+    "research_workbench_2026_10_07\\results\\H55_train_predictions_phone_M1.npz": "6b3b5a1d081ae7eede780e0b56846b9c8e55f290200bf65a2da0658842b0513d",
+    "research_workbench_2026_10_07\\results\\H55_train_predictions_studio_F1.npz": "126d28ff757690089d747ad93f480cb98d463b175b92a055e0ed4dadccaee6d3",
+    "research_workbench_2026_10_07\\results\\H55_train_predictions_studio_M1.npz": "93b75cd552dddaee2dbad3c198932fad8d9d85c4f742884171b26f6622dffa41",
+    "research_workbench_2026_10_07\\results\\H55_test_verification.json": "423c8991bd8d660cafc70d4fe73e82bd13cfea1fa83bed7ca8b626ea5cd7bb26",
+    "research_workbench_2026_10_07\\results\\H55_test_fixed.csv": "a0086fb88f319fbd2316fa9ea1bf0c3a5e0a772ada0b356b4f29d6b0bed8b215",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_phone_F2.npz": "b67feb67a782873120f2b2928b97649e864cb0266ce8c5f0ce7fec9a269730de",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_phone_M2.npz": "db976d41b6395032c707a2985fcb201a41399723baecf2b3420027eae1ca0614",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_studio_F2.npz": "82db04894b3a20da89a1a8917217c9900d1859480a3bccdaec661ce5b537e18a",
+    "research_workbench_2026_10_07\\results\\H55_test_predictions_studio_M2.npz": "bdc2d4c6cbaac89638aad27b3b01bcb3dadb0f34ec293d641a1c70e4a7915367",
+    "research_workbench_2026_10_07\\results\\H54_train_fixed.csv": "c9fe8ff650806cc6a331ab93139ff76dc0ca9addfb7052fc170474bcc687cf05",
+    "research_workbench_2026_10_07\\results\\H54_test_fixed.csv": "f46cc22d5a7bea842304f455b43d2783770adf7325173859992dac57d3a6754d"
+  },
+  "outputs": {
+    "research_workbench_2026_10_07\\H55_REPORT.md": "09bff68e083d342f9684c1b3d36d868ae3e3d249e60be123145d2fba08e34be4",
+    "research_workbench_2026_10_07\\results\\H55_all_metrics.csv": "1855182782a72eaf969c028fbfed75b57377f3138675b27a7753bf29b02a2b17",
+    "research_workbench_2026_10_07\\results\\H55_selected_all_files.csv": "b70a4e4264c7d7fae7edd290f48beb4630d3d9b4f7fb8beea61a9b38cb60e090",
+    "research_workbench_2026_10_07\\results\\H55_pitch_changes.csv": "1564ab6d2792aa8f5479ef98f73e34f735585784b891255a548398b5a47e83a3",
+    "research_workbench_2026_10_07\\results\\H54_H55_diagnostic_comparison.csv": "95561f05311df7296c63b14ab9dd375f85ba272aae67f6da167a6c79a78a3edf",
+    "research_workbench_2026_10_07\\figures\\H55_bounded_comparison.png": "ece5a97469b673ce21561be037ef23f1a43ef6ad1de4060bf360395966f9f552",
+    "research_workbench_2026_10_07\\figures\\H55_bounded_comparison.svg": "2856a1f07a879295438aee35b969eb6d203e866cb96e3d0b5d3537f940d1a0fa"
+  },
+  "source_sha256": "a777dc2b495a498b884b8812b98738c975e31189d7f432419cfe042bcb6e9836"
+}

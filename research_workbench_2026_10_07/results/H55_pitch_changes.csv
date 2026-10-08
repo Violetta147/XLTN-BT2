@@ -1,0 +1,17 @@
+stage,file,option_id,voiced_count,changed_pitch_count,median_abs_change_cents,largest_abs_change_cents,same_mask_count_vuv_sil,frame_f0_truth_available
+train,phone_F1.wav,srh_bound_100,147,147,12.129103519319623,99.8230233820663,True,False
+train,phone_F1.wav,srh_bound_200,147,147,12.129103519319623,179.18738237173707,True,False
+train,phone_F1.wav,srh_bound_400,147,147,12.192583452257656,398.39950793410225,True,False
+train,phone_M1.wav,srh_bound_100,233,233,12.764238031511425,97.09262308702493,True,False
+train,phone_M1.wav,srh_bound_200,233,233,12.764238031511425,189.3656379827569,True,False
+train,phone_M1.wav,srh_bound_400,233,233,12.764238031511425,189.3656379827569,True,False
+train,studio_F1.wav,srh_bound_100,123,123,11.23410061463934,99.91348638293454,True,False
+train,studio_F1.wav,srh_bound_200,123,123,12.270571578955439,199.94866500729376,True,False
+train,studio_F1.wav,srh_bound_400,123,123,12.270571578955439,328.6348806626195,True,False
+train,studio_M1.wav,srh_bound_100,85,85,15.76146257229808,99.33386253249955,True,False
+train,studio_M1.wav,srh_bound_200,85,85,15.76146257229808,181.04849783990744,True,False
+train,studio_M1.wav,srh_bound_400,85,85,17.490609177876802,268.15400918411444,True,False
+test,phone_F2.wav,srh_bound_200,220,220,13.10283807193946,197.47363932882962,True,False
+test,phone_M2.wav,srh_bound_200,130,130,19.56907693351134,193.07377566911575,True,False
+test,studio_F2.wav,srh_bound_200,133,133,14.852894732290206,193.55470709198684,True,False
+test,studio_M2.wav,srh_bound_200,120,120,18.9864709909018,196.067035684132,True,False
