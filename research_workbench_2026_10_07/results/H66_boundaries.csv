@@ -1,0 +1,9 @@
+file,option_id,boundary_count,voiced_frames,boundary_fraction
+phone_F1.wav,hard170,0,147,0.0
+phone_F1.wav,ar1_nls_3,11,147,0.07482993197278912
+phone_M1.wav,hard170,0,233,0.0
+phone_M1.wav,ar1_nls_3,9,233,0.03862660944206009
+studio_F1.wav,hard170,0,123,0.0
+studio_F1.wav,ar1_nls_3,7,123,0.056910569105691054
+studio_M1.wav,hard170,0,85,0.0
+studio_M1.wav,ar1_nls_3,4,85,0.047058823529411764
