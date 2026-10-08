@@ -1,0 +1,99 @@
+{
+  "option": {
+    "id": "hard170",
+    "mode": "control",
+    "nlfer": 0.75,
+    "final_dp": true
+  },
+  "parameters": {
+    "frame_length": 35.0,
+    "tda_frame_length": 35.0,
+    "frame_space": 10.0,
+    "f0_min": 70.0,
+    "f0_max": 400.0,
+    "fft_length": 8192,
+    "bp_forder": 150,
+    "bp_low": 50.0,
+    "bp_high": 1500.0,
+    "nlfer_thresh1": 0.75,
+    "nlfer_thresh2": 0.1,
+    "shc_numharms": 3,
+    "shc_window": 40.0,
+    "shc_maxpeaks": 4,
+    "shc_pwidth": 50.0,
+    "shc_thresh1": 5.0,
+    "shc_thresh2": 1.25,
+    "f0_double": 150.0,
+    "f0_half": 150.0,
+    "dp5_k1": 11.0,
+    "dec_factor": 1,
+    "nccf_thresh1": 0.3,
+    "nccf_thresh2": 0.9,
+    "nccf_maxcands": 3,
+    "nccf_pwidth": 5,
+    "merit_boost": 0.2,
+    "merit_pivot": 0.99,
+    "merit_extra": 0.4,
+    "median_value": 7,
+    "dp_w1": 0.15,
+    "dp_w2": 0.5,
+    "dp_w3": 0.1,
+    "dp_w4": 0.9,
+    "spec_pitch_min_std": 0.05
+  },
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "hard170"
+    }
+  ],
+  "external_options": [
+    "hard170",
+    "yaapt_default"
+  ],
+  "no_test_selection": true,
+  "seed": null,
+  "actual_fit_files": []
+}

@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "action": "verify_yaapt_extension.py train",
+  "error": "AssertionError: independent decoded pitch differs from saved raw_f0",
+  "resolution": "v2 preserves vendor floating point operation order before tie-breaking; original verifier retained, measured source and outputs unchanged"
+}
