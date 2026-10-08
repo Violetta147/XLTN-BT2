@@ -1,0 +1,5 @@
+# H57 — thời điểm xác minh remote
+
+Commit prereg9fdecddb17668d5b69d7bbb5df9bb26d68adc69a được commit và `git push origin codex/train-mape-investigation` trảexit0, output `3787b2b..9fdecdd` trước train. Lần `git ls-remote` sau đó trảexit128: `fatal: unable to access 'https://github.com/Violetta147/XLTN-BT2.git/': Empty reply from server`. Runner train vẫn được gọi sau lỗi đọc này; chưa hoàn tất bước explicit remote-SHA readback trước train. Đây là thiếu sót thứ tự verification; không được ghi đủ commit/push/remoteverify trước train.
+
+Chỉ đọc lại ls-remote sau train, không rerun hoặc chỉnh thí nghiệm, đã thấy remote SHA9fdecddb17668d5b69d7bbb5df9bb26d68adc69a khớp commit source đo. Push thành công trước train và source/registry/hash cố định, nhưng xác minh SHA tường minh hoàn tất sau train. Preserve outputs. Freeze trước test vẫn phải push và xác minh remote thành công trước gọi runner test. Đây là lỗi Git network/readback và workflow của agent, không Jev/MCP retry hoặc bằng chứng thay dữ liệu/threshold sau đo.
