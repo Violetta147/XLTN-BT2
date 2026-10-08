@@ -44,4 +44,8 @@ Chuỗi hai trạng thái với transition học từ LAB fit pool, unary H58 gi
 | Harmonic least-squares | H61 custom order3/5,12train groups, same mask/count | [H61_REPORT](H61_REPORT.md); gain riêng nhưng studio_M1>2; không reference fastF0Nls port |
 | Harmonic coherence choV/UV | H62 logistic base4/6 ×rejection0/.1/.25,22fits/140groups/112traces | [H62_REPORT](H62_REPORT.md); Brier tốt cả4heldfile nhưng MAPE không tốt chung; finalhard170 |
 
-[Ma trận ba vòng](figures/LOOP_H60_H62_train_matrix.png) và [summary CSV](results/LOOP_H60_H62_SUMMARY.csv) có số đã đo. Không suy từ mục “harmonics” cũ rằng mọi harmonicmethod đã thử; không suy từH61/H62 rằng fastNLS/ARnoise của tác giả đã được benchmark. H63 chưa đăng ký, loop đã dừng theo user; chưa đo PEFAC/HPS đầy đủ hoặc corpus mới. Không “thử hết” ngoài registry và không rerun để khôi phụcchat.
+[Ma trận ba vòng](figures/LOOP_H60_H62_train_matrix.png) và [summary CSV](results/LOOP_H60_H62_SUMMARY.csv) có số đã đo. Không suy từ mục “harmonics” cũ rằng mọi harmonicmethod đã thử; không suy từH61/H62 rằng fastNLS/ARnoise của tác giả đã được benchmark. Trạng thái dừng sauH62 đã được thay bằng yêu cầu tiếp tục trong chat mới08/10; xemH63 dưới đây. Không “thử hết” ngoài registry và không rerun để khôi phụcchat.
+
+## H63 — bounded HPS, đã đo sau yêu cầu tiếp tục
+
+Custom log-HPS order3/5,PCM25ms,anchor±100cents,mask/countgiữ;12train groups/48innertraces/24summaryrows,1176frameoptions được DFT/interpolation/argmax/scalarmetrics/selection verifier kiểm. Preregc62ba22 push/remoteverified trướctrain. Finalhard170; outerstudio_M1hps5 giữfile chấm2.678125%,nested1.316983% so1.124932%; baMAPEgatesFAIL. Gainriêngstudio_F1 1.473576→1.319059; khôngpromote/khôngtestmới. [H63_REPORT](H63_REPORT.md). Chưa đo whole/unanchoredHPS hoặc PEFAC; nguồnHTML/code và giớihạn tạiHPS_SOURCE_REVIEW.md.

@@ -1,0 +1,13 @@
+file,option_id,boundary_count,voiced_frames,boundary_fraction
+phone_F1.wav,hard170,0,147,0.0
+phone_F1.wav,hps_3,14,147,0.09523809523809523
+phone_F1.wav,hps_5,8,147,0.05442176870748299
+phone_M1.wav,hard170,0,233,0.0
+phone_M1.wav,hps_3,13,233,0.055793991416309016
+phone_M1.wav,hps_5,15,233,0.06437768240343347
+studio_F1.wav,hard170,0,123,0.0
+studio_F1.wav,hps_3,8,123,0.06504065040650407
+studio_F1.wav,hps_5,4,123,0.032520325203252036
+studio_M1.wav,hard170,0,85,0.0
+studio_M1.wav,hps_3,7,85,0.08235294117647059
+studio_M1.wav,hps_5,8,85,0.09411764705882353
