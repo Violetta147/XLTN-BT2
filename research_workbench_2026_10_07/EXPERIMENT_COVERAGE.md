@@ -57,3 +57,16 @@ H64globalHPS3/5 dừngsynthetic:30/36PASS,6order5/F090HzFAIL, khôngBT2measureme
 ## H66 — nhiễu AR1 trong harmonic regression, đã hoàn tất
 
 Customone-step residualAR1weightedNLS3:18syntheticfixturePASS,8train metricgroups,588frame nuisanceARfits/0supervisedfits,QR/objective/grid/bracket/scalarmetrics/selection verifierPASS588frameoptions. Preregc804f6d push/remoteverify trướctrain. Minimax chọnar1_nls_3 final/mọiouter,giảmworst1.909923→1.849260% nhưngmean1.124932→1.313829%,phone_F1stdxấu;4/8gatesFAIL,khôngpromote/testmới. [H66_REPORT](H66_REPORT.md), [source review](H66_SOURCE_REVIEW.md). Không referencejointML/fastsolver/ARorders hoặc proofresidual=externalnoise. [Countbudget](FIXED_COUNT_TARGET_BUDGET.md) chỉ đại sốcachedH48, khôngđo/testtuning. ChưađăngkýH67,khôngrerunH00–H66.
+
+
+## Cập nhật 08/10/2026 — R01/H67/H68/R02/H69 đã hoàn tất
+
+Trạng thái mới thay các dòng lịch sử “H67 chưa đăng ký / PEFAC chưa đo”. Không có thí nghiệm đang chạy; không rerun H00–H69 hoặc R01/R02. Người dùng cho phép khảo sát tham số, nhưng bản theo yêu cầu thầy phải dùng cửa sổ tín hiệu thực sự25ms và bước10ms. hard170 chỉ là đối chứng lịch sử, không đáp ứng cửa sổ25ms. Đọc [audit cửa sổ](FRAME_25MS_AUDIT.md) và START_NEXT_CHAT.md mới.
+
+- R01: 16 suy luận Praat6 native train, đối chiếu cache; chưa tìm được cấu hình khớp cảmean/std/count. [Reference audit](REFERENCE_PROCEDURE_AUDIT.md).
+- H67: residualAR4 custom harmonicNLS3, verifierPASS8groups/588frames; studio_M1 2,194889%, baMAPEgatesFAIL; khôngtest/promote. [H67_REPORT](H67_REPORT.md).
+- H68: PEFAC thật Imperial pinf671f6d chạyOctave11.3; verifierPASS20groups. Nativewindow90,5ms; fixtureaccuracy4/6 giữ2FAIL. Mọiouter/finalhard170, gateFAIL; khôngtest/promote. [H68_REPORT](H68_REPORT.md).
+- R02: 60groups phân tích phân phối từcache, khôngF0inference; phone_M1 rawPraat9/235giátrị>400Hz đóng góp90,981744% tổngbìnhphươngđộlệch. Khôngchứngminh thầytrim hoặcframeGT. [R02_REPORT](R02_DISTRIBUTION_REPORT.md), baPNG trongfigures. Initialhashfailure vàcorrectionbeforeanalysis giữ.
+- H69: pYINthực25ms ba priors;12nativecalls,16groups,64innertraces,24summary,0supervisedfits. Default(2,18)MAPEs5,447286/6,056821/1,465577/.699716%,mean3,417350%,2/4train<2; final/outercontrol, gateFAIL,khôngtest/promote. Option(2,38)studio_M1zeroV/NaN; v1checkerFAIL, v2sửaNaN/CSVparsecuốiPASS16groups, mọi lỗi/checkernote giữ. Không đổiinference hoặcfinitegate. [H69_REPORT](H69_REPORT.md), [verification note](H69_VERIFICATION_NOTE.md).
+
+Đãpush/remoteverifypreregtrướcđo. ResultsH69 `4f15a070dbb55b9b0761c0a37847ec5f8a95a9de`; rules25ms `c2cb69520a2d178357dc36d43c4879f4956efa19`. Toàn bộtestH48chỉđọc sốđãlưu, targetall8eachfile<2%vẫnFAIL; frozen/GT/notebookgốc giữ. H70chưađăngký: có thểauditcachepYINbeta(2,8) vànănglượng khungdư trướcpreregriêng, khôngđược gọi làresult. KhôngGPU/Colab/Drive/DL/PDF/Jev/schedule. Hồsơcũđượcarchive, xemSTART_NEXT_CHAT.md đểkhôiphục.
