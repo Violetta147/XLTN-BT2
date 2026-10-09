@@ -1,0 +1,34 @@
+[
+  {
+    "file": "studio_M1.wav",
+    "original_fs": 44100,
+    "start_sample": 0,
+    "end_sample": 43683,
+    "up": 160,
+    "down": 441
+  },
+  {
+    "file": "phone_M1.wav",
+    "original_fs": 16000,
+    "start_sample": 43683,
+    "end_sample": 110243,
+    "up": 1,
+    "down": 1
+  },
+  {
+    "file": "studio_F1.wav",
+    "original_fs": 44100,
+    "start_sample": 110243,
+    "end_sample": 156055,
+    "up": 160,
+    "down": 441
+  },
+  {
+    "file": "phone_F1.wav",
+    "original_fs": 16000,
+    "start_sample": 156055,
+    "end_sample": 207895,
+    "up": 1,
+    "down": 1
+  }
+]

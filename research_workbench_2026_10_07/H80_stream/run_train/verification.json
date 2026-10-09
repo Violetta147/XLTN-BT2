@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "streams": 2,
+  "independent_FIR_resampling_concat_spectral_context": true,
+  "NNLS_KKT_max_gradient": 6.308430340606908e-16,
+  "centroid_assignment_SSE": true,
+  "temporal_global_cost_and_boundary_matching": true,
+  "ARI_contingency_and_mapping_audit": true,
+  "labels_evaluation_only": true,
+  "limitation": "Same four recordings in both orders; no unseen-source evaluation or F0 MAPE measurement."
+}

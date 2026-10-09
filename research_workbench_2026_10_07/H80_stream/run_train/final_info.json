@@ -1,0 +1,25 @@
+{
+  "status": "MEASURED",
+  "family": "H80",
+  "prereg_commit": "c21c823923983f3b60719815797331d96f8f3ade",
+  "kmeans_fits": 1,
+  "NMF_basis_fits": 0,
+  "NNLS_stream_transforms": 2,
+  "streams": 2,
+  "new_pitch_inferences": 0,
+  "test_used": false,
+  "domain_labels_used_for_fitting": false,
+  "reverse_is_same_sources_reordered": true,
+  "artifacts": {
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\evaluation_only_labels.json": "f256b6b42ed546b70bfc21f7d89b4c03a43bcd7f12a7a854dafd171c67cb1104",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\locked_clusters.json": "c9d1b7a4c05d9f4b5c6b92c5b85c3c718dcf10f94506f8f3d02f4fbe63370560",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\primary_manifest.json": "047818a2b04f198bb2ebee10550e88d567b16c342ca5f8a394e5b06d962fcfe4",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\primary_proof.npz": "c15293e4611b8fe6174d4910094680ab00e55ba0af0c3672bb455be1b8df1caf",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\primary_stream.wav": "6247d14236d442c40ff7658847d686fc4823a393bcf2a891e594664c48146dce",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\reverse_manifest.json": "1183cb0771a0107254a848a1c32ca403d2af093cd4fa0ff6fa7360d0dcca24b4",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\reverse_proof.npz": "a377b6751435f055c8c76915b134ab96d0615eb813232197ca6c563e5ddc1b65",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\reverse_stream.wav": "00db2127c2d250e4f3c9a4e75ab9b6e81b6ac0bb22a7d0f100e4d6c4203c9c5e",
+    "research_workbench_2026_10_07\\H80_stream\\run_train\\stream_metrics.csv": "ef59af6154e5b6b2be8784afc0f30c2c4dbee1ec7678c892cb9fbd8bb944316d"
+  },
+  "limitation": "Both streams reuse four training recordings; reverse is an order diagnostic, not unseen-file validation or improved F0 MAPE."
+}
