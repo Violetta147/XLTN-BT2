@@ -1,0 +1,76 @@
+{
+  "status": "MEASURED",
+  "family": "H78",
+  "prereg_commit": "b2b446344eb4a789d1b7b4fdf3eb2d83eafccb3e",
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "energy07"
+    }
+  ],
+  "new_supervised_fits": 24,
+  "reused_pooled_models": 11,
+  "reused_domain_expert_roles": 2,
+  "new_metric_groups": 88,
+  "cached_groups": 48,
+  "metric_groups": 136,
+  "inner_rows": 64,
+  "selected_summary_rows": 12,
+  "selected_config": "energy07",
+  "native_inferences": 0,
+  "feature_extraction_repeated": false,
+  "test_used": false,
+  "artifacts": {
+    "research_workbench_2026_10_07\\H78_context\\run_train\\all_train_metrics.csv": "d2c0f8d9555b1f8e2aa8b6d055661544fe2c32436c6d202ed48802497842b66f",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\assets.json": "855c52779314d32198f5a2cbaeaac42c25f30f3cd566e8b0d31b17aacc8fecd9",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\contexts.json": "85834bed5a819b3327b690281ebb976caf9cb233b0310e8500d2b7031fff3c6b",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\gate_diagnostics.csv": "12df9b65980979290248705b669c990b80747c40470cb33a97f5c4049b20f2ca",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\inner_traces.csv": "2c78b1bc6e119a8285bbefa57bd832e99b0928567ae06bb4baa305bcee78f440",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\new_models.json": "5708805727101c0f5ab10bb4d1dcaf163175f08c617a374c05b2a3a7ff191927",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\prediction_proofs.json": "7b3286b746104ad80e5830d47daa257f1209bbc2fe6b9dd68f735bc701622eea",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\selected_metrics.csv": "1c3ccfb64e235d34346c1dbe8d527e3b18adf1eb0365cfd439f0215eba35a895"
+  },
+  "limitation": "Gate learns domain metadata on only two to four file-context rows; low-energy context is not measured SNR; no causal proof or neural attention."
+}

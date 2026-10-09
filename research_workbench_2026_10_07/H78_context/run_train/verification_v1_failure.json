@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "kind": "verifier_csv_parser",
+  "source": "verify.py line72",
+  "reason": "keep_default_na=False retains blank numeric fields as strings after one contextual inner fold predicted zero F0 frames; numpy.isclose rejected string/float subtraction.",
+  "measurements_modified": false,
+  "training_rerun": false
+}

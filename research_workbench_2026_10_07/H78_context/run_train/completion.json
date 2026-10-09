@@ -1,0 +1,25 @@
+{
+  "status": "VERIFIED",
+  "verification": "verify_v2.py",
+  "target": "NOT_COMPLETED",
+  "selected": "energy07",
+  "new_candidate_fulltrain_4of4": "soft_gate_C1",
+  "test_run": false,
+  "artifacts": {
+    "research_workbench_2026_10_07\\H78_context\\verify_v2.py": "2eac15d30e6ec02bdd9472cad5275c13a4606219a048ecfedb1b5679adb904a0",
+    "research_workbench_2026_10_07\\H78_REPORT.md": "5527e6f48d2e1b2c2aca273b26e5566bc73bb1e91a5b4e766658af067f262bbc",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\all_train_metrics.csv": "d2c0f8d9555b1f8e2aa8b6d055661544fe2c32436c6d202ed48802497842b66f",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\assets.json": "855c52779314d32198f5a2cbaeaac42c25f30f3cd566e8b0d31b17aacc8fecd9",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\contexts.json": "85834bed5a819b3327b690281ebb976caf9cb233b0310e8500d2b7031fff3c6b",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\final_info.json": "b396ac4ed44e1e117b2f83ce8750e6afd0efa17a44035733b7cfe13fb71b75c2",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\gate_diagnostics.csv": "12df9b65980979290248705b669c990b80747c40470cb33a97f5c4049b20f2ca",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\inner_traces.csv": "2c78b1bc6e119a8285bbefa57bd832e99b0928567ae06bb4baa305bcee78f440",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\new_models.json": "5708805727101c0f5ab10bb4d1dcaf163175f08c617a374c05b2a3a7ff191927",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\notes.txt": "5527e6f48d2e1b2c2aca273b26e5566bc73bb1e91a5b4e766658af067f262bbc",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\prediction_proofs.json": "7b3286b746104ad80e5830d47daa257f1209bbc2fe6b9dd68f735bc701622eea",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\selected_metrics.csv": "1c3ccfb64e235d34346c1dbe8d527e3b18adf1eb0365cfd439f0215eba35a895",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\verification.json": "ec0c49fd8cbe625fd31257f84065766bf6a0af3245589c65b0979fd43a3be733",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\verification_parser_repair.md": "0615a77ade40fbc0a996188c89b10523ffa9e819c711c6d703b5de3663adf4eb",
+    "research_workbench_2026_10_07\\H78_context\\run_train\\verification_v1_failure.json": "0e6c351f2c576dc636cc31414965522b07eef2dcf8ba6a5623d80feccf93ea2d"
+  }
+}
