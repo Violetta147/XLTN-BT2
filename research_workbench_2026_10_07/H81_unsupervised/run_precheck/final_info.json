@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "synthetic_gmm_fits": 1,
+  "balanced_subsample": true,
+  "scaler_gaussian_density_posterior": true,
+  "voiced_mapping_uses_periodicity_only": true
+}
