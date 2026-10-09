@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "checks": [
+    {
+      "fs": 16000,
+      "scalar_rms_quantile_parity": true,
+      "dc_gain_invariance": true,
+      "zero_finite": true,
+      "inclusive_threshold_boundary": true,
+      "frame_samples": 400,
+      "hop_samples": 160
+    },
+    {
+      "fs": 44100,
+      "scalar_rms_quantile_parity": true,
+      "dc_gain_invariance": true,
+      "zero_finite": true,
+      "inclusive_threshold_boundary": true,
+      "frame_samples": 1102,
+      "hop_samples": 441
+    }
+  ]
+}
