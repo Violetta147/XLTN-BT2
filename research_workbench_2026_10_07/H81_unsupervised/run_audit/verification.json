@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "posthoc_train_metrics": 4,
+  "cached_controls": 4,
+  "teacher_labels_only_after_freeze": true,
+  "independent_metrics_attribution_hashes": true,
+  "test_used": false
+}

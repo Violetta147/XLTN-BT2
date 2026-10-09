@@ -1,0 +1,8 @@
+H81 post-freeze teacher audit, 09/10/2026.
+Prereg 8382b57aa68907338520f0b399e00f65feab8b77; freeze f7cc824de0b2be09478fecff02ddfafa3a750252; both pushed and remote verified before their subsequent measurements.
+15 new GMM fits / 45 initializations / 12 held-density rows; k4 selected acoustically without LAB/statistics parsing. No pitch inference or feature extraction new.
+Posthoc only: four train metric groups plus four cached H72 controls. Mapping/model/predictions unchanged. No test.
+Train Average MAPE 13.895041101285846,18.83665768990267,16.67618758430888,11.51778934058661 percent; mean15.231418929021002. 0/4 below2; F1/recallV guard FAIL. Hypothesis FAIL, arithmetic verifiers PASS.
+Full-train component0 has279 frames and all279 are LAB-V (posthoc attribution); not unseen-file purity or pitch ground truth. Only279/614 LAB-V are in that component.
+Whole pipeline comparison: default cached prior beta(2,18) plus new no-energy mapping differs from retained beta(2,8)/energy07. Do not attribute degradation solely to GMM.
+No source/registry/freeze alterations or retuning after audit. Retain best H71/H72 trainmean1.3055077829774693/testmean2.196093695956088,7/8 files; goal unmet.

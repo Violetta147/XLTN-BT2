@@ -1,0 +1,14 @@
+{
+  "status": "AUDITED_AFTER_FREEZE",
+  "family": "H81",
+  "freeze_commit": "f7cc824de0b2be09478fecff02ddfafa3a750252",
+  "locked_model_sha256": "6d0c25e462dc36e366c6238e4015c961a1c20f58ae92e5347a132abe5f64eefa",
+  "posthoc_train_groups": 4,
+  "cached_controls": 4,
+  "selection_unchanged": true,
+  "test_used": false,
+  "artifacts": {
+    "research_workbench_2026_10_07\\H81_unsupervised\\run_audit\\all_train_metrics.csv": "e70b02b6523fedeef394291f2e34fc5d11373d4f4bcff7d219fae2ace4432681",
+    "research_workbench_2026_10_07\\H81_unsupervised\\run_audit\\component_audit.csv": "64fd6b856c5dd6bfa51887a77f074927559988272c772db0452971bf9299e689"
+  }
+}

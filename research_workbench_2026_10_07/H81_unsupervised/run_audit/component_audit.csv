@@ -1,0 +1,17 @@
+file,component,frames,v,uv,sil,mapped_voiced
+phone_F1.wav,0,89,89,0,0,True
+phone_F1.wav,1,19,1,11,7,False
+phone_F1.wav,2,164,33,38,93,False
+phone_F1.wav,3,50,30,20,0,True
+phone_M1.wav,0,95,95,0,0,True
+phone_M1.wav,1,45,13,18,14,False
+phone_M1.wav,2,233,99,42,92,False
+phone_M1.wav,3,41,37,2,2,True
+studio_F1.wav,0,57,57,0,0,True
+studio_F1.wav,1,108,4,7,97,False
+studio_F1.wav,2,71,48,11,12,False
+studio_F1.wav,3,48,14,6,28,True
+studio_M1.wav,0,38,38,0,0,True
+studio_M1.wav,1,96,1,13,82,False
+studio_M1.wav,2,49,38,7,4,False
+studio_M1.wav,3,88,17,5,66,True
