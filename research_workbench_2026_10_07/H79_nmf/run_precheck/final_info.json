@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "synthetic_nmf_fits": 1,
+  "synthetic_log": {
+    "fit_files": [
+      "synthetic"
+    ],
+    "ranges": [
+      [
+        "synthetic",
+        0,
+        48
+      ]
+    ],
+    "noise_component": 2,
+    "noise_proxy_scores": [
+      1.038733997920934,
+      0.5663525350767972,
+      1.26049670674585,
+      0.9646314858248117
+    ],
+    "iterations": 2000,
+    "reconstruction_error": 0.18287072929160295,
+    "warnings": [
+      "Maximum number of iterations 2000 reached. Increase it to improve convergence."
+    ]
+  },
+  "scalar_spectrum_overlap_add": true,
+  "unity_mask_identity": true,
+  "nonnegative_factorization_mask": true
+}
