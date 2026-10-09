@@ -1,76 +1,27 @@
-# Bắt đầu chat mới — XLTN / BT2
+# Khôi phục BT2 sau H71 — cập nhật 09/10/2026
 
-Cập nhật 08/10/2026, sau **R01, H67, H68, R02 và H69**: tất cả hoàn tất, chưa có thuật toán được promote, không có tiến trình thí nghiệm đang chạy. Không chạy lại H00–H69 hoặc R01/R02 để khôi phục. Bài phân đoạn mới trong `../XLTN-BT1-BO-SUNG/` vẫn làm sau BT2.
+H70 và H71 đã hoàn tất, kiểm tra độc lập PASS, chưa thay baseline được chấp nhận và chưa đo test mới. Không có thí nghiệm đang chạy. Người dùng muốn tiếp tục cải thiện BT2 trước bài phân đoạn mới, cho phép khảo sát tham số và yêu cầu trả lời theo **prose style**: các đoạn văn tiếng Việt liền mạch, giải thích kết quả cùng giới hạn. Không chạy lại H00–H71 hoặc R01/R02 để khôi phục trạng thái.
 
-Thông tin mới từ người dùng: **thầy yêu cầu cửa sổ tín hiệu thực sự 25 ms, bước 10 ms**; người dùng cho phép khảo sát tham số tùy ý trong nghiên cứu. hard170 không đáp ứng cửa sổ thực sự 25 ms, dù metric được tính trên lưới 25/10 ms. Không gọi nó là bản nộp phù hợp. Đọc [audit cửa sổ](research_workbench_2026_10_07/FRAME_25MS_AUDIT.md) và quy tắc mới trong AGENTS.md trước phép thử tiếp theo.
+Đọc [AGENTS.md](AGENTS.md), [H71_REPORT](research_workbench_2026_10_07/H71_REPORT.md), [H70_REPORT](research_workbench_2026_10_07/H70_REPORT.md) và [audit cửa sổ](research_workbench_2026_10_07/FRAME_25MS_AUDIT.md). Pipeline theo yêu cầu thầy phải dùng cửa sổ tín hiệu thực sự 25 ms, bước 10 ms. hard170 là đối chứng nghiên cứu lịch sử dùng cửa sổ dài hơn, không phải bản nộp phù hợp. Hồ sơ R01/H67/H68/R02/H69 và runtime Octave nằm trong [bàn giao trước H70/H71](docs/handoff/START_NEXT_CHAT_before_H70_H71_2026_10_09.md); các dòng “chưa đăng ký” ở hồ sơ cũ là lịch sử.
 
-## Khôi phục nhanh
+H70 thêm một bước lọc năng lượng trên cache pYIN H69 prior `(2,8)`, không chạy lại pYIN. Tính RMS sau trừ mean mỗi khung, chia phân vị 95% RMS của chính file bằng nội suy tuyến tính, floor 1e-12. Giữ khung nếu pYIN nhận hữu thanh và tỷ số năng lượng ít nhất bằng ngưỡng; F0 khung còn lại giữ nguyên. Không dùng nhãn, cửa sổ Praat hoặc ngưỡng riêng theo tên file. Chuẩn hóa cần toàn file, chưa phải streaming. Ngưỡng 0,08 cho mean train 1,617918%, ba trong bốn file dưới 2%; loại cả 60 khung SIL bị raw pYIN nhận nhầm hữu thanh, đồng thời mất 11 khung V. Verifier PASS 32 nhóm, 128 inner traces và 24 summary; không native inference hoặc supervised fit.
 
-1. Đọc hướng dẫn workspace XLTN của người dùng, [AGENTS.md](AGENTS.md) và file này. Không quét toàn bộ STATE hoặc chạy lại thí nghiệm.
-2. Đọc [H69_REPORT](research_workbench_2026_10_07/H69_REPORT.md), [R02_DISTRIBUTION_REPORT](research_workbench_2026_10_07/R02_DISTRIBUTION_REPORT.md) và [REFERENCE_PROCEDURE_AUDIT](research_workbench_2026_10_07/REFERENCE_PROCEDURE_AUDIT.md). Khi cần ba hướng đã hoàn tất, đọc [H67_REPORT](research_workbench_2026_10_07/H67_REPORT.md) / [H68_REPORT](research_workbench_2026_10_07/H68_REPORT.md).
-3. Kiểm tra Git branch, status, HEAD và SHA remote. Mốc kết quả H69 đã push và xác minh: `4f15a070dbb55b9b0761c0a37847ec5f8a95a9de`; quy tắc 25 ms tại `c2cb69520a2d178357dc36d43c4879f4956efa19`. Có commit bàn giao sau các mốc này; xác minh live, không coi chúng là HEAD bắt buộc.
-4. Xem [coverage](research_workbench_2026_10_07/EXPERIMENT_COVERAGE.md), [protocol](research_workbench_2026_10_07/PROTOCOL_F0.md) nếu cần. [Bàn giao trước vòng mới](docs/handoff/START_NEXT_CHAT_before_R01_H67_H69_2026_10_08.md) và STATE chứa các trạng thái lịch sử như “H67 chưa đăng ký / PEFAC chưa đo”; không coi đó là trạng thái hiện tại.
+H71 khảo sát bảy ngưỡng trung gian 0,045–0,075 bằng nguyên F0 H69 và RMS H70, không trích lại năng lượng để đo. Ngưỡng thống nhất **0,07** đưa cả bốn file train xuống dưới 2%: phone_F1 **1,955313%**, phone_M1 **0,838965%**, studio_F1 **1,883484%**, studio_M1 **0,544270%**, trung bình **1,305508%**. Đây là lựa chọn trên chính bốn file train, chưa chứng minh đạt tám file. Count 151/231/122/82 so chuẩn 148/232/127/82. SIL bị dự đoán hữu thanh giảm từ 60 của raw pYIN còn một ở studio_F1, đồng thời mất chín khung V. Macro F1 0,849625, recall V 0,903908, recall UV 0,845241, balanced accuracy 0,874575; MAE F0mean/std 1,239681/0,373099 Hz. Không gọi 59 khung SIL bị loại là 59 cao độ được sửa đúng; dữ liệu không có F0 chuẩn từng khung.
 
-Repo: `C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/XLTN-BT2`; branch `codex/train-mape-investigation`; remote `https://github.com/Violetta147/XLTN-BT2.git`. PowerShell; Python chính `C:/Users/violet/miniconda3/python.exe`. Venv pYIN: `C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/.venv-bt2-pyin/Scripts/python.exe` (librosa 0.11.0, Python 3.13.11). Không cần GPU hoặc Colab trong các vòng vừa rồi.
+Chẩn đoán H71 chỉ chọn trong pipeline 25 ms: mỗi vòng chọn ngưỡng bằng ba file rồi đánh giá file giữ lại. MAPE held là **2,780824/0,838965/2,497637/0,544270%**, trung bình **1,665424%**, chỉ hai file dưới 2%. Các ngưỡng outer là 0,06 / 0,07 / 0,08 / 0,07, không dùng làm routing theo filename. Theo guard nghiên cứu lịch sử, final và cả bốn outer vẫn chọn hard170; tám gate không đổi, ba gate cải thiện MAPE FAIL, năm điều kiện còn lại PASS vì candidate giữ đối chứng. `eligible=false`, `champion_promoted=false`; không suy `each_nested_file_below_2=true` của hard170 thành pYIN đã PASS trên held file. F1/recall V thấp hơn đối chứng và lựa chọn held chưa ổn định là giới hạn cần giữ.
 
-```powershell
-git -c 'safe.directory=C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/XLTN-BT2' status --short --branch
-git -c 'safe.directory=C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/XLTN-BT2' rev-parse HEAD
-git -c 'safe.directory=C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/XLTN-BT2' ls-remote origin refs/heads/codex/train-mape-investigation
-```
+H71 có 44 nhóm metric, gồm 16 nhóm đối chứng đã lưu và 28 nhóm ngưỡng mới; 176 inner traces, 24 summary, không native inference, không energy extraction mới để đo hoặc supervised fit. Waveform precheck H70 được kiểm hash và tái sử dụng, chỉ kiểm thêm boundary của grid mới. Verifier PASS 44 nhóm ngay lần đầu, gồm scalar RMS/p95 như xác minh cache, ngưỡng/mask/F0 giữ nguyên, metric, endpoint parity, khung loại, nhãn/time, lựa chọn, gate và hash. Không triển khai lại pYIN.
 
-## Những việc đã hoàn tất
+Prereg H70 `138d618688d37748aa0ec1a4fc80f9886156c2e0`, results `6595c8e91bb40892bd1b56584b0021cb7ea216cb`, report prose `92956e9e26c012888f61cf05cde62f27e0e9bab6`; prereg H71 `3e30d332ef43c71670cedcca441b26de6c857b44`, results `f1096385ccae031b22bcca07d14751f5ab4b9d14`. Tất cả đã push và xác minh remote; có commit bàn giao sau các mốc này, kiểm HEAD live. Sources và bằng chứng H70/H71 nằm trong `research_workbench_2026_10_07/`, kết quả trong `results/`. Đọc receipt, CSV và NPZ thay vì chạy lại lệnh đo.
 
-| Vòng | Phạm vi và kết quả | Giới hạn cần giữ |
-|---|---|---|
-| R01 | 16 suy luận train mới bằng Praat 6.1.38 raw AC/CC, bước mặc định/10 ms; đối chiếu Praat7/pYIN/Harvest đã lưu. Không phương án nào khớp cả ba thống kê ở cả bốn file. | Không biết phần mềm, phiên bản, ngưỡng hoặc cách đếm của thầy. Không có phân phối/F0 từng khung của thầy. |
-| H67 | Custom harmonic regression với nhiễu residual AR4; 36 fixture PASS, 8 nhóm metric/588 nuisance fits, verifier PASS. AR4 MAPEs .441333/1.057928/1.254905/2.194889%; final hard170, outer studio_M1 chọn AR4 rồi thất bại. | Ba gate MAPE FAIL, không test/promote. Không joint-ML/reference implementation; mask/anchor vẫn kế thừa cửa sổ dài của hard170. |
-| H68 | **PEFAC thật** từ Imperial sap-voicebox pin f671f6d, chạy Octave; bốn train native inferences, 20 nhóm metric. Final/mọi outer hard170; verifier GMM/DP/projection/metric PASS. Whole pv>.5 MAPEs 28.360641/19.356367/9.549223/9.605462%. | Cửa sổ native khoảng 90,5 ms, không phù hợp bài 25 ms. Precheck tích hợp PASS nhưng độ chính xác chỉ 4/6 fixture (300→150,57 Hz); giữ cả thất bại. Không độc lập tính lại toàn bộ spectrogram hoặc MATLAB parity. |
-| R02 | Phân tích 60 nhóm từ cache, 44 kiểm tra native-stat parity và ba hình histogram/ECDF/ratio; không suy luận F0 mới. | Chỉ có ba thống kê chuẩn, không tự vẽ “phân phối chuẩn của thầy”. Initial registry-hash failure trước thống kê đã lưu; sửa hash rồi push trước phân tích. |
-| H69 | pYIN **thực sự 25 ms**, ba beta priors `(2,8)/(2,18)/(2,38)`, 12 train inferences/16 metric groups. `(2,18)` tốt nhất thống nhất: 5.447286/6.056821/1.465577/.699716%, mean 3.417350%; 2/4 train dưới 2%. | `(2,38)` có 0 khung V trên studio_M1, metric NaN, không hợp lệ. V1 verifier dừng do NaN; v2 cuối PASS16 nhóm sau sửa parse/so giá trị thiếu, mọi lỗi trung gian lưu. Gate FAIL, không test/promote. |
+Repo `C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/XLTN-BT2`, branch `codex/train-mape-investigation`, remote `https://github.com/Violetta147/XLTN-BT2.git`. Dùng PowerShell và Git với `-c 'safe.directory=C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/XLTN-BT2'`. Kiểm status, rev-parse HEAD và ls-remote trước làm tiếp. Python chính `C:/Users/violet/miniconda3/python.exe`; venv pYIN `C:/Users/LAPTOP T&T/VIOLETTA/Documents/ChatGPT/XLTN/.venv-bt2-pyin/Scripts/python.exe`.
 
-H67 prereg `79538f49e4b47ecc23a4ab529b446e69fba73bf0`, results `a9e55b4fd54df974c37b4a461e021bbf56bee268`. H68 đo sau prereg và commit phục hồi `.gitattributes` `dffb1d44a1cbbfdb37b1800618a13207d89a30cd`, results `2793d22f583b392f7b1a9e9e256a4cc51b26b8af`. R01 prereg `8a7af15cfc2df4c89d769327e21b41c7d773dfa4`, results `9b760e9842a2c2f8abc87f0c11869cb6d5a8bed3`. R02 trước phân tích `93d5fac170e6d682b5d3005a0fd5672b2ddd8470`, results/audit `71adee56b7e5b35326eafd7a8ce6fb3ff8128679`. H69 prereg `ee4b08b682f69d29e37f7ed0725bb2823a514fe4`, results `4f15a070dbb55b9b0761c0a37847ec5f8a95a9de`. Các mốc trên đã push và xác minh remote trong phiên. Không sửa source/registry cũ sau đo; verifier H69v2 là file mới và có [ghi chú](research_workbench_2026_10_07/H69_VERIFICATION_NOTE.md).
+Mục tiêu **mỗi file trong cả tám file có Average MAPE <2%** chưa được chứng minh. Test đã từng xem trong lịch sử; MAPE cached H48 của hard170 là 4,197313/6,833750/5,063462/2,114791%, không phải test của H71. H70/H71 chưa đo test vì chưa eligible. Không chọn ngưỡng trên test, random split frames hoặc gọi nested trên bốn file là xác nhận độc lập mới. Mean train thấp không thay điều kiện từng file hoặc tám gate.
 
-GNU Octave 11.3.0 đã cài local, executable thực tế `C:/Users/LAPTOP T&T/AppData/Local/Programs/GNU Octave/Octave-11.3.0/mingw64/bin/octave-cli.exe`, image 2.20.0. Installer không dùng thư mục đích đề nghị; lấy path thực tế từ log. PEFAC vendor 520 m-files cùng giấy phép/provenance, không dùng hàm ACF mang tên PEFAC từ pyvoicebox đã bị loại ở source review. `.gitattributes` giữ **cả** rules MAPS và PEFAC `-text`.
+H72 chưa đăng ký hoặc chạy. Hướng có giá trị tiếp theo phải giải quyết sự chồng lấn giữa tiếng nói yếu và im lặng, có thể khảo sát tính tuần hoàn/probability từ cache pYIN với giả thuyết mới. Không tiếp tục thu hẹp grid chỉ để ép vừa bốn file. Đăng ký cấu hình, rollback, tiêu chí và hash rồi commit/push/xác minh remote trước đo. Dữ liệu độc lập có F0 frame GT, speaker mới và quy trình tạo thống kê của thầy vẫn thiếu; không suy rằng GT sai hoặc dữ liệu ít là nguyên nhân duy nhất.
 
-## Pattern đã tìm thấy
+Notebook gốc `../turn-in-assignment - Copy/BT2_ACF_best_no_energy_set.ipynb` giữ SHA256 `b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c`; source chọn 20/25/30 ms bằng train, outputs bằng 0, chưa hardcode 25 ms. Không sửa notebook, frozen, WAV, LAB hoặc teacher3GT. [Coverage](research_workbench_2026_10_07/EXPERIMENT_COVERAGE.md) và STATE chứa lịch sử; không quét toàn bộ để restart loop.
 
-- Praat raw AC 75–600 trên phone_M1: **9/235 F0 >400 Hz**, chiếm **90,981744%** tổng bình phương độ lệch; std 70,982954 Hz so chuẩn 16,8 Hz. Độ rộng (p95−p05)/3,2897073 =16,690747 Hz gần chuẩn, nhưng IQR không khớp. Đây là pattern đuôi phân phối, không chứng minh thầy đã trim hoặc dữ liệu Gaussian. Xóa chín điểm còn 226, không bằng count chuẩn 232.
-- Praat filtered/pYIN native 40 ms có std gần chuẩn ở bốn train file nhưng count thiếu/thừa tùy file, không khớp cả ba thống kê. Praat CC auto bước khoảng 3,33 ms tạo count gần gấp ba so 10 ms; Praat AC auto ở floor75 là 10 ms và trùng kết quả 10 ms. Khác biệt count có thể đến từ mật độ thời gian và quyết định V/UV, chưa biết quy trình thầy.
-- H69 pYIN25 mặc định: std 20,632340/16,578512/36,992202/26,576790 Hz gần chuẩn 20,6/16,8/36,8/26,4; count126/196/131/83 so148/232/127/82. Với `(2,8)`, count157/235/144/134: phone_M1 tốt riêng, nhưng SIL bị gọi V ở studio nhiều (15/45).
-- Hai bản teacher stats thay đổi mean/std theo cả hai chiều; không có phép dịch hoặc scale thống nhất đã xác nhận. LAB V counts cũng không bằng teacher F0num ở cả tám file. Không suy diễn thầy dùng sai thuật toán hoặc GT sai.
+Tuyệt đối không Google Drive/G Drive, deep learning, PDF/PDF extraction, lịch chạy tự động hoặc merge main. Local CPU đủ, không cần Colab/GPU ở các vòng vừa rồi. Jev không tham gia H70/H71; lỗi MCP lịch sử không tự retry. Mỗi thay đổi đã kiểm tra commit riêng, push và xác minh remote. Dùng experimental-design; tham chiếu [Scientific Agent Skills](https://arxiv.org/abs/2609.00065), DOI 10.48550/arXiv.2609.00065 đã thêm vào prereg/report, metadata HTML v2 kiểm ngày 09/10. Không cần skill viết riêng để trả lời bằng prose.
 
-Xem hình R02 trong `research_workbench_2026_10_07/figures/`. Không dùng thống kê cả file để chứng nhận F0 từng khung; không cắt giá trị để ép khớp GT.
-
-## Baseline và mục tiêu còn thiếu
-
-hard170 là **đối chứng nghiên cứu lịch sử không tuân thủ cửa sổ 25 ms**: Praat7 filtered ACF, range70–400, voicing .30; NAMDF gần Praat trong200 cents; có nhánh 40 ms khi high-frequency ratio<=.05 và Praat>=170 Hz; V/UV/anchor Praat cũng dùng cửa sổ dài hơn. Lưới chấm25/10ms và population std không làm native window trở thành25ms.
-
-| File train | Average MAPE (%) | File test đã lưu H48 | Average MAPE (%) |
-|---|---:|---|---:|
-| phone_F1 | .340080 | phone_F2 | 4.197313 |
-| phone_M1 | .776151 | phone_M2 | 6.833750 |
-| studio_F1 | 1.473576 | studio_F2 | 5.063462 |
-| studio_M1 | 1.909923 | studio_M2 | 2.114791 |
-
-Mục tiêu **từng file trong cả tám file <2% vẫn FAIL**; 4/4 train và 0/4 test của đối chứng lịch sử không đủ. Test ở bảng này chỉ đọc số đã lưu; R01/H67/H68/R02/H69 không suy luận test mới. Nested trên bốn train vẫn exploratory do lịch sử chọn nhiều cấu hình và test đã từng xem. Không random-split frames, chọn theo test hoặc ghép cấu hình theo tên file.
-
-Baseline ACF25 full-train đã lưu tại `research_3gt_2026_10_05/results/baseline_summary.json`: MAPE29,834711%, F1.848791, SIL45; AMDF_energy25:12,270267%, F1.869716, SIL0. pYIN25 mặc định H69 thấp hơn về MAPE mô tả nhưng F1.816298, SIL3; đây không phải phép so nested giống nhau hoặc baseline mới đã được chấp nhận. Chưa audit đầy đủ mọi pipeline lịch sử về cửa sổ thực sự25ms, không tuyên bố H69 tốt nhất toàn bộ lịch sử.
-
-Notebook đã nộp: `../turn-in-assignment - Copy/BT2_ACF_best_no_energy_set.ipynb`, SHA256 `b643a1cdf6ac67d3e1dcacf9ce45ea4c49625da114e8c07f402c3fca5d13f85c`, outputs hiện bằng0. Source chọn frame từ20/25/30 bằngtrain, không hardcode25; không suy từ defaultframing30 rằng runtimecuối30. Không sửa notebook đó hoặc gọi source/charts nghiên cứu là output notebook đã nộp.
-
-## Hướng tiếp theo, chưa đo
-
-H70 **chưa đăng ký/chưa chạy**. Hướng hẹp hợp lý: từ cache H69 kiểm tra các khung dư của `(2,8)` có tập trung ở năng lượng thấp không, rồi đăng ký riêng phép loại bằng năng lượng trên cùng cửa sổ25ms nếu có bằng chứng. Không dùng mask Praat hoặc cửa sổ dài để đáp ứng25ms. Có thể nghiên cứu tham số khác, nhưng khóa giả thuyết/config/gate/hash và push/xác minh remote trước đo; giữ các failure và không chạy lại family đã hoàn tất. Ưu tiên một pipeline thống nhất, không routephone/studio theo tên file.
-
-Nếu muốn thử MathWorks pitch NCF/PEF/CEP/LHS/SRH: docs hỗ trợ `WindowLength`/`OverlapLength` nên có thể cấu hình25/10, nhưng **chưa có MATLAB/license và chưa đo**; `loc` là vị trí mẫu cuối cửa sổ, không phải tâm. Không coi đây là phần mềm thầy đã dùng. Không mua license hoặc đòi GPU chỉ để chạy phép thử CPU này.
-
-## Những ràng buộc giữ nguyên
-
-Tuyệt đối khôngGoogleDrive/GDrive. Local; Colab chỉ khi cần và chuyển trực tiếp qua Chrome, không quaDrive. Khôngdeep learning, khôngPDF/extractPDF, khôngprose/reader-firstskill, khôngschedule/automaticretry. Không sửa WAV/LAB/teacher3GT, baselinefrozen hoặc notebookgốc. Mỗi thay đổi đã kiểm tra commit riêng, push và xác minh SHAremote; không merge main. Jev không tham gia các vòng vừa rồi; lỗi MCP lịch sử không tự retry. Đọc docs/jev/HUONG_DAN_JEV.md trước usecase mới.
-
-Dùng experimental-design và literature-review local với HTML/abstract/mã nguồn, khôngclaim đọc fullpaper. [Scientific Agent Skills](https://arxiv.org/abs/2609.00065), DOI10.48550/arXiv.2609.00065. Mười skill ML/DL/research đã cài trong `docs/skills/ML_RESEARCH_SKILLS_2026-10-08.md`; có skilldeep learning không thay quy tắc cấmDL cho BT2.
-
-## Prompt tiếp tục
-
-> Đọc AGENTS.md và START_NEXT_CHAT.md trong XLTN-BT2, khôi phục sau H69/R02 rồi tiếp tục cải thiện BT2 trước bài phân đoạn mới. Không chạy lại H00–H69 hoặc R01/R02. Có thể khảo sát tham số tự do, nhưng pipeline cuối phải dùng cửa sổ tín hiệu thực sự25ms/bước10ms. Giữ mục tiêu mỗi file trong cả8file AverageMAPE<2%, chọn trêntrain theofile, prereg/commit/push/xác minhremote trướcđo; giữ failures và giới hạn test đã từng xem.
+Prompt tiếp tục: Đọc AGENTS.md và START_NEXT_CHAT.md, khôi phục sau H71 rồi tiếp tục cải thiện BT2 trước bài phân đoạn mới. Không rerun H00–H71 hoặc R01/R02. Có thể khảo sát tham số; pipeline cuối phải thực sự 25 ms/bước 10 ms. Giữ mục tiêu từng file trong cả tám file <2%, guard và protocol; đăng ký/push/xác minh remote trước đo, giữ failures, báo train/held/test riêng. Trả lời bằng các đoạn prose tiếng Việt liền mạch.

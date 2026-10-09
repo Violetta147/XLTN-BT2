@@ -1,5 +1,7 @@
 # Quy tắc làm việc cho BT2
 
+- Yêu cầu ngày 09/10/2026: trả lời theo prose style, dùng các đoạn văn tiếng Việt liền mạch để giải thích kết quả và giới hạn. Không cần áp dụng skill viết riêng; số liệu chi tiết vẫn lưu CSV/artifact để tra cứu.
+
 - Chạy trên máy local, dùng `TinHieuHuanLuyen/` và `TinHieuKiemThu/` trong working folder. Tuyệt đối không truy cập, mount, đọc, ghi, đồng bộ hoặc thao tác với Google Drive/G Drive dưới bất kỳ hình thức nào.
 - Nếu máy local thiếu tài nguyên, có thể dùng Google Colab trong Chrome của người dùng cho thí nghiệm đã định; chuyển dữ liệu cần thiết trực tiếp, không qua Google Drive/G Drive. Giữ nguyên cách chia dữ liệu, cấu hình và metric, rồi lưu kết quả về working folder để đối chiếu và commit.
 - Không dùng deep learning. Chỉ dùng dữ liệu và thuật toán tín hiệu/học máy cổ điển cần thiết cho bài.
