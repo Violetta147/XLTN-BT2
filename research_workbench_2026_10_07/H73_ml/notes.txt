@@ -1,0 +1,1 @@
+H73 planned 09/10/2026: supervised logistic rejection using one energy feature versus five simultaneous features on actual25ms pYIN candidates. All training pools are complete files. Test never selects parameters. Existing H72 control and native caches reused. Precheck and measurement receipts will be appended after verification.
