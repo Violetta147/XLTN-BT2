@@ -1,0 +1,49 @@
+{
+  "family": "H72",
+  "prereg_commit": "a0bacfca87763985e71912db9129bbf9a32f89d6",
+  "registry_sha256": "ce21295d1a369ac00272cb5a67ade495dfb0e8a6eca62090cac6573c63eca4a8",
+  "locked_config": {
+    "pipeline_id": "pyin25_beta2_8_energy_0.07",
+    "beta_parameters": [
+      2,
+      8
+    ],
+    "energy_threshold": 0.07,
+    "frame_ms": 25,
+    "hop_ms": 10,
+    "center": false,
+    "padding": false,
+    "resampling": false,
+    "fmin": 70,
+    "fmax": 400,
+    "energy": "centered_RMS/own_file_linear_p95_floor1e-12",
+    "selection": "one configuration selected from four train files in H71; no test selection"
+  },
+  "actual_native_inferences": 4,
+  "actual_supervised_fits": 0,
+  "train_inference_repeated": false,
+  "parameter_search_on_test": false,
+  "train_groups_reused": 4,
+  "test_groups_new": 4,
+  "user_all8_target_pass": false,
+  "train_below_2": 4,
+  "test_below_2": 3,
+  "champion_promoted": false,
+  "historical_H71_decision_modified": false,
+  "historical_test_exposure": true,
+  "protocol_change": "User clarified goal: train and test each-file criterion; LOFO is retained diagnostic, not a prerequisite for frozen test evaluation.",
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1"
+  },
+  "wall_time_s": 10.538602399999945,
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H72_test_proof_phone_F2.npz": "d185529922a0629d803f823c1bdb7d1bff843924962069d4bff964239d596374",
+    "research_workbench_2026_10_07\\results\\H72_test_proof_phone_M2.npz": "c6d979f7261eb56f176295d1c7a9ee4567fbc00e93f05c69e18e78998ed27bf9",
+    "research_workbench_2026_10_07\\results\\H72_test_proof_studio_F2.npz": "69b3f1329b688df8e4c020638c085228102756bf60dae0804c881aee62a5b341",
+    "research_workbench_2026_10_07\\results\\H72_test_proof_studio_M2.npz": "184430dedb9e1a1444fd68f770e8c0b91de5f82dc0aa02a145490fd0f2a2fd74",
+    "research_workbench_2026_10_07\\results\\H72_all_files.csv": "db6a58a4276f04c1e0336940807ec40e663bb4001ce3421dd56be0fd5f6e91bc",
+    "research_workbench_2026_10_07\\results\\H72_runtime_logs.json": "e10b62326f1d175ad8100ec09f3802765756e73b0f56e09904d4ab7b1e2ecc73"
+  }
+}

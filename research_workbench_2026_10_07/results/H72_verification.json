@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "test_groups": 4,
+  "train_cached_groups": 4,
+  "checks": [
+    {
+      "file": "phone_F2.wav",
+      "voiced_count": 221,
+      "native_certificate": {
+        "frames": 478,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true
+      },
+      "scalar_energy_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M2.wav",
+      "voiced_count": 126,
+      "native_certificate": {
+        "frames": 278,
+        "frame_samples": 400,
+        "hop_samples": 160,
+        "actual_frame_ms": 25.0,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true
+      },
+      "scalar_energy_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F2.wav",
+      "voiced_count": 136,
+      "native_certificate": {
+        "frames": 313,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true
+      },
+      "scalar_energy_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M2.wav",
+      "voiced_count": 116,
+      "native_certificate": {
+        "frames": 236,
+        "frame_samples": 1102,
+        "hop_samples": 441,
+        "actual_frame_ms": 24.988662131519273,
+        "actual_hop_ms": 10.0,
+        "independent_start_center_range_mask_probability": true
+      },
+      "scalar_energy_mask_unchanged_pitch_metrics": true
+    }
+  ],
+  "locked_config_and_train_parity": true,
+  "scalar_RMS_quantile_timestamp_mask_metric": true,
+  "PCM_source_runtime_protected_output_hashes": true,
+  "all8_criterion_verified": true,
+  "limitation": "Native pYIN candidate probabilities/Viterbi are pinned source-backed, not independently reimplemented; test historically exposed; original H71 gates preserved."
+}
