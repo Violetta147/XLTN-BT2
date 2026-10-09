@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "supervised_fits": 0,
+  "checks": [
+    {
+      "option_id": "bridge10_edge0",
+      "bridge_verified": true,
+      "octave_edge_rejection_verified": true
+    },
+    {
+      "option_id": "bridge10_edge10",
+      "bridge_verified": true,
+      "octave_edge_rejection_verified": true
+    },
+    {
+      "option_id": "bridge10_edge25",
+      "bridge_verified": true,
+      "octave_edge_rejection_verified": true
+    }
+  ],
+  "fast_anchor_change_and_max_distance_verified": true
+}
