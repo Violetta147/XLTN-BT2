@@ -1,0 +1,187 @@
+[
+  {
+    "fit_files": [
+      "phone_F1.wav",
+      "phone_M1.wav",
+      "studio_F1.wav",
+      "studio_M1.wav"
+    ],
+    "ranges": [
+      [
+        "phone_F1.wav",
+        0,
+        322
+      ],
+      [
+        "phone_M1.wav",
+        322,
+        736
+      ],
+      [
+        "studio_F1.wav",
+        736,
+        1020
+      ],
+      [
+        "studio_M1.wav",
+        1020,
+        1291
+      ]
+    ],
+    "noise_component": 3,
+    "noise_proxy_scores": [
+      0.10320627788160368,
+      0.02465248731278319,
+      0.04991505673216337,
+      0.11660858947501748
+    ],
+    "iterations": 332,
+    "reconstruction_error": 4.212391541272468,
+    "warnings": [],
+    "held": "full"
+  },
+  {
+    "fit_files": [
+      "phone_M1.wav",
+      "studio_F1.wav",
+      "studio_M1.wav"
+    ],
+    "ranges": [
+      [
+        "phone_M1.wav",
+        0,
+        414
+      ],
+      [
+        "studio_F1.wav",
+        414,
+        698
+      ],
+      [
+        "studio_M1.wav",
+        698,
+        969
+      ]
+    ],
+    "noise_component": 1,
+    "noise_proxy_scores": [
+      0.04767373563055922,
+      0.10111867656760797,
+      0.03812827594740712,
+      0.022101110905046743
+    ],
+    "iterations": 160,
+    "reconstruction_error": 3.7475074874557084,
+    "warnings": [],
+    "held": "phone_F1.wav",
+    "transform_warnings": []
+  },
+  {
+    "fit_files": [
+      "phone_F1.wav",
+      "studio_F1.wav",
+      "studio_M1.wav"
+    ],
+    "ranges": [
+      [
+        "phone_F1.wav",
+        0,
+        322
+      ],
+      [
+        "studio_F1.wav",
+        322,
+        606
+      ],
+      [
+        "studio_M1.wav",
+        606,
+        877
+      ]
+    ],
+    "noise_component": 0,
+    "noise_proxy_scores": [
+      0.14278283067357034,
+      0.014084298629341555,
+      0.018236235643545845,
+      0.07954607639404514
+    ],
+    "iterations": 166,
+    "reconstruction_error": 3.323283068997802,
+    "warnings": [],
+    "held": "phone_M1.wav",
+    "transform_warnings": []
+  },
+  {
+    "fit_files": [
+      "phone_F1.wav",
+      "phone_M1.wav",
+      "studio_M1.wav"
+    ],
+    "ranges": [
+      [
+        "phone_F1.wav",
+        0,
+        322
+      ],
+      [
+        "phone_M1.wav",
+        322,
+        736
+      ],
+      [
+        "studio_M1.wav",
+        736,
+        1007
+      ]
+    ],
+    "noise_component": 2,
+    "noise_proxy_scores": [
+      0.11799306300736263,
+      0.026387207573491195,
+      0.1433370543837974,
+      0.049706719534898504
+    ],
+    "iterations": 308,
+    "reconstruction_error": 3.3083169197187043,
+    "warnings": [],
+    "held": "studio_F1.wav",
+    "transform_warnings": []
+  },
+  {
+    "fit_files": [
+      "phone_F1.wav",
+      "phone_M1.wav",
+      "studio_F1.wav"
+    ],
+    "ranges": [
+      [
+        "phone_F1.wav",
+        0,
+        322
+      ],
+      [
+        "phone_M1.wav",
+        322,
+        736
+      ],
+      [
+        "studio_F1.wav",
+        736,
+        1020
+      ]
+    ],
+    "noise_component": 2,
+    "noise_proxy_scores": [
+      0.04375285951202194,
+      0.08734301228489454,
+      0.0995483205765722,
+      0.03669266568260445
+    ],
+    "iterations": 139,
+    "reconstruction_error": 3.6529464579322317,
+    "warnings": [],
+    "held": "studio_M1.wav",
+    "transform_warnings": []
+  }
+]

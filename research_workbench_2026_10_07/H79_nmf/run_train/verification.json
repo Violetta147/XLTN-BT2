@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "nmf_models": 5,
+  "decompositions": 8,
+  "new_pitch_metrics": 4,
+  "cached_controls": 4,
+  "independent_fft_contributions_masks_overlap_add_audio_identity": true,
+  "labels_used_only_for_audit_and_scoring": true,
+  "original_pyin_not_rerun": true,
+  "limitation": "Verifier checks factorization and inference arithmetic; no refit optimizer or per-frame pitch truth, no proof that the designated component is pure noise."
+}

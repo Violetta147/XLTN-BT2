@@ -1,0 +1,206 @@
+[
+  {
+    "file": "phone_F1.wav",
+    "librosa": "0.11.0",
+    "frame_samples": 400,
+    "hop_samples": 160,
+    "fs": 16000,
+    "actual_frame_ms": 25.0,
+    "actual_hop_ms": 10.0,
+    "rounding": "Python round, nearest ties-to-even",
+    "beta_parameters": [
+      2,
+      8
+    ],
+    "center": false,
+    "audio_padding": false,
+    "other_parameters": {
+      "fmin": 70,
+      "fmax": 400,
+      "n_thresholds": 100,
+      "beta_parameters": [
+        2,
+        8
+      ],
+      "boltzmann_parameter": 2,
+      "resolution": 0.1,
+      "max_transition_rate": 35.92,
+      "switch_prob": 0.01,
+      "no_trough_prob": 0.01,
+      "fill_na": "NaN",
+      "center": false,
+      "pad_mode": "constant"
+    },
+    "warnings": [
+      "With fmin=70.000, sr=16000 and frame_length=400, less than two periods of fmin fit into the frame, which can cause inaccurate pitch detection. Consider increasing to fmin=80.000 or frame_length=459."
+    ],
+    "source_hashes": {
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\core\\pitch.py": "f45cc429f9daa2276d750fa4f100641eae45991daf6e70050073088b86516b87",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\sequence.py": "1253a1427630506928873c82d00ae0fdf1a6a35ba7653252d3bad8f2d37052e6",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\utils.py": "8b0f2d79e2e26519f52c206e5124e7cb4f3f18663501e9d753116d68eb9a8140",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\decorators.py": "dde0c49dd690bcd6e61ba5460005798fd4d069c27797c152406b7b90e4fb935b",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\mviewbuf.cp313-win_amd64.pyd": "dd46de99099749ea1af30b4b3327f1711ba85a03dd442c43512ef9321c6964b1",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_devicearray.cp313-win_amd64.pyd": "fa4a4d52c5a416e1ac170fe85e24d67dc3294f5b612a2b80a61ec965c70168c8",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dispatcher.cp313-win_amd64.pyd": "6d200b3d6d29d07ce1baa2f11de2955f3aa0542ff774d7a61f77439df8b0611e",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dynfunc.cp313-win_amd64.pyd": "0a02a47c47e65fbe515cf5c3c426c22e4b1a460bc9ba10d853d1e009cfa929c0",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_helperlib.cp313-win_amd64.pyd": "cdc597493890be4ff572f5717544c95693db57ed9eb63bf633cccd33acc8bafc",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll": "3dbb62c44af49e645fb6979d8c9b8e16509a1f0a4da105d7bdd6e153e5f7005a"
+    },
+    "PCM_sha256": "5344c66e8295adfcfe77539e4945dbb40ac909216d75bff091ee2e7f60dfc730",
+    "frame_count": 322,
+    "limitation": "70Hz has fewer than two periods in 25ms; quality warning retained, not concealed or circumvented with longer windows."
+  },
+  {
+    "file": "phone_M1.wav",
+    "librosa": "0.11.0",
+    "frame_samples": 400,
+    "hop_samples": 160,
+    "fs": 16000,
+    "actual_frame_ms": 25.0,
+    "actual_hop_ms": 10.0,
+    "rounding": "Python round, nearest ties-to-even",
+    "beta_parameters": [
+      2,
+      8
+    ],
+    "center": false,
+    "audio_padding": false,
+    "other_parameters": {
+      "fmin": 70,
+      "fmax": 400,
+      "n_thresholds": 100,
+      "beta_parameters": [
+        2,
+        8
+      ],
+      "boltzmann_parameter": 2,
+      "resolution": 0.1,
+      "max_transition_rate": 35.92,
+      "switch_prob": 0.01,
+      "no_trough_prob": 0.01,
+      "fill_na": "NaN",
+      "center": false,
+      "pad_mode": "constant"
+    },
+    "warnings": [
+      "With fmin=70.000, sr=16000 and frame_length=400, less than two periods of fmin fit into the frame, which can cause inaccurate pitch detection. Consider increasing to fmin=80.000 or frame_length=459."
+    ],
+    "source_hashes": {
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\core\\pitch.py": "f45cc429f9daa2276d750fa4f100641eae45991daf6e70050073088b86516b87",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\sequence.py": "1253a1427630506928873c82d00ae0fdf1a6a35ba7653252d3bad8f2d37052e6",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\utils.py": "8b0f2d79e2e26519f52c206e5124e7cb4f3f18663501e9d753116d68eb9a8140",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\decorators.py": "dde0c49dd690bcd6e61ba5460005798fd4d069c27797c152406b7b90e4fb935b",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\mviewbuf.cp313-win_amd64.pyd": "dd46de99099749ea1af30b4b3327f1711ba85a03dd442c43512ef9321c6964b1",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_devicearray.cp313-win_amd64.pyd": "fa4a4d52c5a416e1ac170fe85e24d67dc3294f5b612a2b80a61ec965c70168c8",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dispatcher.cp313-win_amd64.pyd": "6d200b3d6d29d07ce1baa2f11de2955f3aa0542ff774d7a61f77439df8b0611e",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dynfunc.cp313-win_amd64.pyd": "0a02a47c47e65fbe515cf5c3c426c22e4b1a460bc9ba10d853d1e009cfa929c0",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_helperlib.cp313-win_amd64.pyd": "cdc597493890be4ff572f5717544c95693db57ed9eb63bf633cccd33acc8bafc",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll": "3dbb62c44af49e645fb6979d8c9b8e16509a1f0a4da105d7bdd6e153e5f7005a"
+    },
+    "PCM_sha256": "55e49690f03af3f60931e8750256a9c642c2e0b36e493e81e881e3fdfc9e1a01",
+    "frame_count": 414,
+    "limitation": "70Hz has fewer than two periods in 25ms; quality warning retained, not concealed or circumvented with longer windows."
+  },
+  {
+    "file": "studio_F1.wav",
+    "librosa": "0.11.0",
+    "frame_samples": 1102,
+    "hop_samples": 441,
+    "fs": 44100,
+    "actual_frame_ms": 24.988662131519273,
+    "actual_hop_ms": 10.0,
+    "rounding": "Python round, nearest ties-to-even",
+    "beta_parameters": [
+      2,
+      8
+    ],
+    "center": false,
+    "audio_padding": false,
+    "other_parameters": {
+      "fmin": 70,
+      "fmax": 400,
+      "n_thresholds": 100,
+      "beta_parameters": [
+        2,
+        8
+      ],
+      "boltzmann_parameter": 2,
+      "resolution": 0.1,
+      "max_transition_rate": 35.92,
+      "switch_prob": 0.01,
+      "no_trough_prob": 0.01,
+      "fill_na": "NaN",
+      "center": false,
+      "pad_mode": "constant"
+    },
+    "warnings": [
+      "With fmin=70.000, sr=44100 and frame_length=1102, less than two periods of fmin fit into the frame, which can cause inaccurate pitch detection. Consider increasing to fmin=80.036 or frame_length=1261."
+    ],
+    "source_hashes": {
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\core\\pitch.py": "f45cc429f9daa2276d750fa4f100641eae45991daf6e70050073088b86516b87",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\sequence.py": "1253a1427630506928873c82d00ae0fdf1a6a35ba7653252d3bad8f2d37052e6",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\utils.py": "8b0f2d79e2e26519f52c206e5124e7cb4f3f18663501e9d753116d68eb9a8140",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\decorators.py": "dde0c49dd690bcd6e61ba5460005798fd4d069c27797c152406b7b90e4fb935b",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\mviewbuf.cp313-win_amd64.pyd": "dd46de99099749ea1af30b4b3327f1711ba85a03dd442c43512ef9321c6964b1",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_devicearray.cp313-win_amd64.pyd": "fa4a4d52c5a416e1ac170fe85e24d67dc3294f5b612a2b80a61ec965c70168c8",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dispatcher.cp313-win_amd64.pyd": "6d200b3d6d29d07ce1baa2f11de2955f3aa0542ff774d7a61f77439df8b0611e",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dynfunc.cp313-win_amd64.pyd": "0a02a47c47e65fbe515cf5c3c426c22e4b1a460bc9ba10d853d1e009cfa929c0",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_helperlib.cp313-win_amd64.pyd": "cdc597493890be4ff572f5717544c95693db57ed9eb63bf633cccd33acc8bafc",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll": "3dbb62c44af49e645fb6979d8c9b8e16509a1f0a4da105d7bdd6e153e5f7005a"
+    },
+    "PCM_sha256": "0cfd6c437956fd2484afe5f21190df45278d19c4647ea3135e6d28793f2f2ac1",
+    "frame_count": 284,
+    "limitation": "70Hz has fewer than two periods in 25ms; quality warning retained, not concealed or circumvented with longer windows."
+  },
+  {
+    "file": "studio_M1.wav",
+    "librosa": "0.11.0",
+    "frame_samples": 1102,
+    "hop_samples": 441,
+    "fs": 44100,
+    "actual_frame_ms": 24.988662131519273,
+    "actual_hop_ms": 10.0,
+    "rounding": "Python round, nearest ties-to-even",
+    "beta_parameters": [
+      2,
+      8
+    ],
+    "center": false,
+    "audio_padding": false,
+    "other_parameters": {
+      "fmin": 70,
+      "fmax": 400,
+      "n_thresholds": 100,
+      "beta_parameters": [
+        2,
+        8
+      ],
+      "boltzmann_parameter": 2,
+      "resolution": 0.1,
+      "max_transition_rate": 35.92,
+      "switch_prob": 0.01,
+      "no_trough_prob": 0.01,
+      "fill_na": "NaN",
+      "center": false,
+      "pad_mode": "constant"
+    },
+    "warnings": [
+      "With fmin=70.000, sr=44100 and frame_length=1102, less than two periods of fmin fit into the frame, which can cause inaccurate pitch detection. Consider increasing to fmin=80.036 or frame_length=1261."
+    ],
+    "source_hashes": {
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\core\\pitch.py": "f45cc429f9daa2276d750fa4f100641eae45991daf6e70050073088b86516b87",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\sequence.py": "1253a1427630506928873c82d00ae0fdf1a6a35ba7653252d3bad8f2d37052e6",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\utils.py": "8b0f2d79e2e26519f52c206e5124e7cb4f3f18663501e9d753116d68eb9a8140",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\librosa\\util\\decorators.py": "dde0c49dd690bcd6e61ba5460005798fd4d069c27797c152406b7b90e4fb935b",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\mviewbuf.cp313-win_amd64.pyd": "dd46de99099749ea1af30b4b3327f1711ba85a03dd442c43512ef9321c6964b1",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_devicearray.cp313-win_amd64.pyd": "fa4a4d52c5a416e1ac170fe85e24d67dc3294f5b612a2b80a61ec965c70168c8",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dispatcher.cp313-win_amd64.pyd": "6d200b3d6d29d07ce1baa2f11de2955f3aa0542ff774d7a61f77439df8b0611e",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_dynfunc.cp313-win_amd64.pyd": "0a02a47c47e65fbe515cf5c3c426c22e4b1a460bc9ba10d853d1e009cfa929c0",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\numba\\_helperlib.cp313-win_amd64.pyd": "cdc597493890be4ff572f5717544c95693db57ed9eb63bf633cccd33acc8bafc",
+      "C:\\Users\\LAPTOP T&T\\VIOLETTA\\Documents\\ChatGPT\\XLTN\\.venv-bt2-pyin\\Lib\\site-packages\\llvmlite\\binding\\llvmlite.dll": "3dbb62c44af49e645fb6979d8c9b8e16509a1f0a4da105d7bdd6e153e5f7005a"
+    },
+    "PCM_sha256": "332b7fd5fce92d8c7ed70008d91b93fa975753f2d33302625ac81f344142751b",
+    "frame_count": 271,
+    "limitation": "70Hz has fewer than two periods in 25ms; quality warning retained, not concealed or circumvented with longer windows."
+  }
+]
