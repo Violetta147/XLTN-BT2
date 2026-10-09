@@ -1,0 +1,237 @@
+{
+  "status": "PASS",
+  "groups": 32,
+  "checks": [
+    {
+      "file": "phone_F1.wav",
+      "option_id": "hard170",
+      "voiced_count": 147,
+      "assignment_compliant": false,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0",
+      "voiced_count": 157,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0.01",
+      "voiced_count": 157,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0.02",
+      "voiced_count": 157,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0.04",
+      "voiced_count": 157,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0.08",
+      "voiced_count": 149,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0.16",
+      "voiced_count": 133,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_F1.wav",
+      "option_id": "pyin8_energy_0.32",
+      "voiced_count": 110,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "hard170",
+      "voiced_count": 233,
+      "assignment_compliant": false,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0",
+      "voiced_count": 235,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0.01",
+      "voiced_count": 235,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0.02",
+      "voiced_count": 235,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0.04",
+      "voiced_count": 235,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0.08",
+      "voiced_count": 226,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0.16",
+      "voiced_count": 200,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "phone_M1.wav",
+      "option_id": "pyin8_energy_0.32",
+      "voiced_count": 155,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "hard170",
+      "voiced_count": 123,
+      "assignment_compliant": false,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0",
+      "voiced_count": 144,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0.01",
+      "voiced_count": 135,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0.02",
+      "voiced_count": 129,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0.04",
+      "voiced_count": 127,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0.08",
+      "voiced_count": 121,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0.16",
+      "voiced_count": 117,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_F1.wav",
+      "option_id": "pyin8_energy_0.32",
+      "voiced_count": 108,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "hard170",
+      "voiced_count": 85,
+      "assignment_compliant": false,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0",
+      "voiced_count": 134,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0.01",
+      "voiced_count": 90,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0.02",
+      "voiced_count": 90,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0.04",
+      "voiced_count": 85,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0.08",
+      "voiced_count": 82,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0.16",
+      "voiced_count": 79,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    },
+    {
+      "file": "studio_M1.wav",
+      "option_id": "pyin8_energy_0.32",
+      "voiced_count": 73,
+      "assignment_compliant": true,
+      "scalar_rms_quantile_mask_unchanged_pitch_metrics": true
+    }
+  ],
+  "independent_scalar_rms_linear_quantile": true,
+  "mask_pitch_metrics_cached_control_parity": true,
+  "removed_energy_inner_summary_membership": true,
+  "selections_and_immutable_gates": true,
+  "protected_source_runtime_output_hashes": true,
+  "new_native_inferences": 0,
+  "limitation": "No reimplementation of pYIN or new per-frame F0 ground truth; strict selection is exploratory finite minimax diagnostic, not promotion."
+}
