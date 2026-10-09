@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "synthetic_models": 3,
+  "native_preference_recovery_energy_strength_boundaries": true,
+  "checks": [
+    {
+      "rows": 80,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 9.252354438160637e-11
+    },
+    {
+      "rows": 80,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.1559615410716706e-09
+    },
+    {
+      "rows": 80,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.8019632491445698e-09
+    }
+  ]
+}
