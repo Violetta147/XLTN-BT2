@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "BT2_test_used": false,
+  "supervised_fits": 0,
+  "train_groups_reused": 4,
+  "locked_config": {
+    "family": "H77",
+    "model": "H75 recover5_C1 fit all four train files",
+    "decoder": "bridge10_edge25",
+    "frame_ms": 25,
+    "hop_ms": 10,
+    "energy": 0.07,
+    "periodicity": 0.6,
+    "probability": 0.5,
+    "context": {
+      "bridge_hops": 10,
+      "max_anchor_ratio": 1.15,
+      "max_edge_ratio": 1.1,
+      "octave_factors": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "fmin": 70,
+      "fmax": 400,
+      "anchor": "H75 C1 accepted native intersect energy07"
+    },
+    "edge_hops": 25,
+    "fit_on_test": false,
+    "source_selection": "one candidate locked from H76 full-train all-file results; H76 held selection remains energy07"
+  },
+  "model_sha256": "8ba7d0626958e1bd1cb96a519965e1830d560fdbcd7e9801808472befed0097d",
+  "H76_historical_selection_unchanged": true,
+  "prechecks_reused_without_rerun": true
+}
