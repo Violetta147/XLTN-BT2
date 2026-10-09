@@ -1,0 +1,1 @@
+Unexecuted context clustering sketch, 09/10/2026. User clarified that the requested next work is source decomposition and concatenated-stream recognition (options 2 and 3). This draft was never preregistered, fitted, prechecked, or measured. It is retained as design history, not H79 evidence or a runnable verified pipeline.
