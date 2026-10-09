@@ -22,6 +22,12 @@
 - hard170 là đối chứng nghiên cứu lịch sử, không phải bản nộp tuân thủ cửa sổ 25 ms: nó dùng Praat và nhánh pitch có cửa sổ dài hơn. Không thay số đo hoặc gate lịch sử để che khác biệt này. Xem `research_workbench_2026_10_07/FRAME_25MS_AUDIT.md`.
 - Mục tiêu hiện tại là **mỗi file trong cả tám file có Average MAPE <2%**. Kết quả train tốt hoặc mean bốn file thấp không thay điều kiện từng file. Không tự sửa notebook gốc thành bản nộp khi chưa có pipeline được kiểm chứng phù hợp.
 
+## Làm rõ mục tiêu train/test ngày 09/10/2026
+
+- Người dùng xác nhận mục tiêu là từng file trong cả bốn train và bốn test có Average MAPE <2%; không yêu cầu mọi vòng LOFO cũng dưới2%. LOFO là chẩn đoán độ ổn định của quy trình chọn tham số, không phải điều kiện bắt buộc chặn phép đánh giá cấu hình cuối trên test.
+- Được dùng cả bốn file train để chốt một cấu hình thống nhất rồi đăng ký/khóa, commit/push/xác minh remote trước đo test. Không chọn hoặc sửa tham số bằng test. Nếu test đã từng xem trong lịch sử, báo rõ giới hạn đó.
+- Giữ nguyên source, registry, gate, receipt và kết luận H00–H71. Quy tắc mới áp dụng cho phép đánh giá kế tiếp, không chuyển `eligible=false` của H71 thành PASS. Vẫn báo V/UV/SIL, mean/std/count và mọi failure; không gọi một lần test là phép xác nhận chưa từng tiếp xúc.
+
 ## Literature review và mục tiêu mới
 
 - Người dùng yêu cầu mở rộng paper-based classical algorithms, dùng scientific skills và tránh token từ PDF extraction. Đọc `.agents/skills/literature-review/SKILL.md` và PROVENANCE.md cho workflow local trước vòng review mới. Subset này có instruction/references, không có optional scripts/CLI/dependencies; không giả chúng đã cài.
