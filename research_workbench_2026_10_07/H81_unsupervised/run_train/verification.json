@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "gmm_models": 15,
+  "held_density_groups": 12,
+  "selected_k": 4,
+  "independent_scaler_cholesky_density_posterior_BIC_selection": true,
+  "frozen_centroid_mapping_native_pitch_predictions": true,
+  "LAB_or_teacher_statistics_parsed": false,
+  "limitation": "Certifies arithmetic and cached inputs; does not refit EM or establish semantic component truth."
+}

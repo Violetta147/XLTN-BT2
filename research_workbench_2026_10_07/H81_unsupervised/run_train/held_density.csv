@@ -1,0 +1,13 @@
+k,file,fit_pool,negative_log_density
+2,phone_F1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav,9.341286622259323
+3,phone_F1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav,9.01841808080097
+4,phone_F1.wav,phone_M1.wav|studio_F1.wav|studio_M1.wav,8.771124333488698
+2,phone_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav,9.573142772464063
+3,phone_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav,9.445280795231586
+4,phone_M1.wav,phone_F1.wav|studio_F1.wav|studio_M1.wav,9.22021337613932
+2,studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav,10.309490136819468
+3,studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav,9.787395017566535
+4,studio_F1.wav,phone_F1.wav|phone_M1.wav|studio_M1.wav,9.731651951677893
+2,studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav,10.520618171246275
+3,studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav,10.204883624806795
+4,studio_M1.wav,phone_F1.wav|phone_M1.wav|studio_F1.wav,9.826606952325982
