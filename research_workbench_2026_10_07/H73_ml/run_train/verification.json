@@ -1,0 +1,275 @@
+{
+  "status": "PASS",
+  "supervised_fits": 44,
+  "checks": [
+    {
+      "rows": 392,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 7.160069249519204e-11
+    },
+    {
+      "rows": 392,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 6.25332826336915e-10
+    },
+    {
+      "rows": 392,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.1659563373297395e-09
+    },
+    {
+      "rows": 392,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.3150288413872276e-09
+    },
+    {
+      "rows": 301,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 8.851780511971973e-10
+    },
+    {
+      "rows": 301,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.5026108080202895e-10
+    },
+    {
+      "rows": 301,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 7.320464500362897e-10
+    },
+    {
+      "rows": 301,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 8.256753598875657e-10
+    },
+    {
+      "rows": 291,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.733381594462063e-10
+    },
+    {
+      "rows": 291,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.6209648011026988e-09
+    },
+    {
+      "rows": 291,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.2529020430480083e-09
+    },
+    {
+      "rows": 291,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.4624792252903506e-09
+    },
+    {
+      "rows": 379,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 3.3457470157022523e-10
+    },
+    {
+      "rows": 379,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 5.212043731229688e-10
+    },
+    {
+      "rows": 379,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 3.093967061443424e-10
+    },
+    {
+      "rows": 379,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.433159461103918e-09
+    },
+    {
+      "rows": 369,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.501610786533759e-10
+    },
+    {
+      "rows": 369,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.65949732817278e-09
+    },
+    {
+      "rows": 369,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.7061854088552525e-09
+    },
+    {
+      "rows": 369,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.6389431437266042e-09
+    },
+    {
+      "rows": 278,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 4.2050108898503036e-14
+    },
+    {
+      "rows": 278,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.5439268533438095e-09
+    },
+    {
+      "rows": 278,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.6172154303167913e-10
+    },
+    {
+      "rows": 278,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 3.8796163506491736e-10
+    },
+    {
+      "rows": 536,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 6.482066351338215e-10
+    },
+    {
+      "rows": 536,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 4.427989494971083e-09
+    },
+    {
+      "rows": 536,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 2.1939999646039088e-10
+    },
+    {
+      "rows": 536,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 6.925701259376518e-11
+    },
+    {
+      "rows": 526,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 8.206376153944693e-13
+    },
+    {
+      "rows": 526,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 6.40012261185728e-10
+    },
+    {
+      "rows": 526,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 3.394126798269639e-09
+    },
+    {
+      "rows": 526,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 4.1478033349545083e-10
+    },
+    {
+      "rows": 435,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.1175755474362908e-09
+    },
+    {
+      "rows": 435,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.9227719307412177e-08
+    },
+    {
+      "rows": 435,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.121354299326627e-10
+    },
+    {
+      "rows": 435,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 7.699580082704951e-10
+    },
+    {
+      "rows": 513,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 1.0884204425833031e-12
+    },
+    {
+      "rows": 513,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 3.2653546974859913e-09
+    },
+    {
+      "rows": 513,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 4.1233943614974503e-10
+    },
+    {
+      "rows": 513,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 6.330343106974958e-10
+    },
+    {
+      "rows": 670,
+      "features": 1,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 4.792170851062714e-10
+    },
+    {
+      "rows": 670,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 5.2898882610935645e-09
+    },
+    {
+      "rows": 670,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 6.326044243998296e-10
+    },
+    {
+      "rows": 670,
+      "features": 5,
+      "weighted_scaler_verified": true,
+      "max_normalized_gradient": 4.2732842963815387e-10
+    }
+  ],
+  "weighted_scaler_logistic_gradient": true,
+  "source_cache_labels_fitpool_masks_pitch_metrics": true,
+  "selection_pool_independence": true,
+  "inner_summary_copies_verified": true,
+  "limitation": "Optimizer not refitted; four files and historical exposure limit generalization; energy/periodicity features are handcrafted, their combination weights are learned."
+}

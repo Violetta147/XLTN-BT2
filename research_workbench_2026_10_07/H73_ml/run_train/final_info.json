@@ -1,0 +1,74 @@
+{
+  "status": "MEASURED",
+  "family": "H73",
+  "prereg_commit": "90e70644fc16260f5793442e93895c56661dac48",
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "logistic_energy_C1"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "logistic5_C10"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "energy07"
+    }
+  ],
+  "actual_supervised_fits": 44,
+  "metric_groups": 180,
+  "inner_rows": 80,
+  "selected_summary_rows": 12,
+  "test_used": false,
+  "native_inferences": 0,
+  "feature_extraction_repeated": false,
+  "sklearn": "1.8.0",
+  "selected_config": "energy07",
+  "artifacts": {
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\all_train_metrics.csv": "6ac64d5319acb698b2da6193249158938115e0a22f3d70d9b37c736768de13e1",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\bank_phone_F1.npz": "c98cf33557575cfc28293461a4f9026f3f345ca55919867655dd0f4ec0bc1f7b",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\bank_phone_M1.npz": "930f9de8e7df445a2cde9058d97368b6db2c58e8cc6401c4b1b64775ecf31d29",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\bank_studio_F1.npz": "02e8081f6cae923c926316882cb6c7ef3d1087466a552bf36476fdafb82d835e",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\bank_studio_M1.npz": "b7b4a4af0593f0e432ba12c9b9a9fe93e143043a74814e5b9214c04a3efc9d61",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\inner_traces.csv": "688ad19010f695ef4000f5393c8deb6a922feb9ba86a12031d48a5619141cc4f",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\models.json": "69557a2f00ee148982f4faf0c8e9f9c27d26c3e833453019182047ca4ae0563d",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\prediction_proofs.json": "782fc61c0c49cf6e34ca8391532e993c55156a904c43fdb4f98bf0cd09ccbd20",
+    "research_workbench_2026_10_07\\H73_ml\\run_train\\selected_metrics.csv": "4127ab9504ae6d9bacae3e851812d7d75c605c59c3f8d4f313bb631de5949614"
+  },
+  "limitation": "Only pYIN voiced candidates can be retained; classifier cannot recover frames with no cached F0; LAB V/UV/SIL is not per-frame pitch GT."
+}
