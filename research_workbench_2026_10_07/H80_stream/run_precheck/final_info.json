@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "synthetic_fits": 0,
+  "bruteforce_temporal_optimum": true,
+  "matching_corner_cases": true,
+  "physical_resampling_concat_lengths": true
+}
