@@ -1,0 +1,70 @@
+{
+  "status": "MEASURED",
+  "family": "H76",
+  "prereg_commit": "9db8bda67e43864d9509e57f8be0fa1a90c3834b",
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "bridge10_edge10"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "energy07"
+    }
+  ],
+  "supervised_fits": 0,
+  "native_inferences": 0,
+  "feature_extraction_repeated": false,
+  "metric_groups": 180,
+  "new_decoder_groups": 132,
+  "cached_groups": 48,
+  "inner_rows": 80,
+  "selected_summary_rows": 12,
+  "selected_config": "energy07",
+  "test_used": false,
+  "artifacts": {
+    "research_workbench_2026_10_07\\H76_decode\\run_train\\all_train_metrics.csv": "cf2e987b2fa7add6439c2be9b529a4cd005d8674e362a36527e67a79d5bd8bcb",
+    "research_workbench_2026_10_07\\H76_decode\\run_train\\inner_traces.csv": "908aae7cc0f788aace056a8cc1c96c084cf80ec5c2f5f24b4cedb2258847e000",
+    "research_workbench_2026_10_07\\H76_decode\\run_train\\prediction_proofs.json": "df5b6e6d647b2606453ff01298564ab828f06f865f23939930dd8299c11e62b4",
+    "research_workbench_2026_10_07\\H76_decode\\run_train\\selected_metrics.csv": "588254bc12243af9cc402f674d52735379b7690d96f402ea5abe9509fb16025e"
+  },
+  "limitation": "Offline temporal interpolation/extrapolation from estimated native anchors, not frame F0 ground truth."
+}

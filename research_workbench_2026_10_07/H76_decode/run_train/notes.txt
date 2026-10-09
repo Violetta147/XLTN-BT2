@@ -1,0 +1,1 @@
+H76 measured once, scalar verifier PASS132 new/48cached. Held selection energy07. Bridge10_edge25 fulltrain MAPE1,730014/1,437832/1,747907/1,340805% (4/4). No new test measured in H76; next frozen candidate evaluation must be new prereg, keep historical selection.

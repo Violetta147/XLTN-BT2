@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "decoder_groups": 132,
+  "cached_groups": 48,
+  "scalar_context_pitch_mask_metric": true,
+  "native_decisions_pitch_unchanged": true,
+  "fit_pool_independence": true,
+  "selection_copy_parity_hashes": true,
+  "limitation": "Interpolated F0 from estimated anchors is not frame ground truth; original classifier optimizer not refitted."
+}

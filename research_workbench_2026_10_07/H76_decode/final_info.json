@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "family": "H76",
+  "train_verification": "PASS",
+  "selected_config": "energy07",
+  "new_test_inferences": 0,
+  "test_source": "results/H72_all_files.csv",
+  "target_achieved": false,
+  "champion_promoted": false,
+  "files_below_two": 7,
+  "files_total": 8,
+  "alternative_full_train_all_below_two": "bridge10_edge25",
+  "alternative_test_measured": false
+}
