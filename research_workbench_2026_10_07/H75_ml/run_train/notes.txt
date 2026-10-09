@@ -1,0 +1,1 @@
+H75 measured once; verifier PASS33 fits. Full C1 MAPE2,416904/11,032951/1,447456/2,777443%. Recovered12 LAB-V phone_M1 frames but std worsened22,027265Hz. Selected energy07, reuse H72 test; no promote.

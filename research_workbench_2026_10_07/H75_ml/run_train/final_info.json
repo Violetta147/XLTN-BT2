@@ -1,0 +1,74 @@
+{
+  "status": "MEASURED",
+  "family": "H75",
+  "prereg_commit": "0c1b9efac04b17d4724c553055d8ae657bfceb0c",
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "energy07"
+    }
+  ],
+  "actual_supervised_fits": 33,
+  "metric_groups": 136,
+  "inner_rows": 64,
+  "selected_summary_rows": 12,
+  "test_used": false,
+  "native_inferences": 0,
+  "feature_extraction_repeated": false,
+  "sklearn": "1.8.0",
+  "selected_config": "energy07",
+  "artifacts": {
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\all_train_metrics.csv": "15f49b4d35479ea2cee023321da335f51bf0e9243327f1be7f0766bbe49aa4aa",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\bank_phone_F1.npz": "83b555118ea1f913e5731f16635c8d720d03f9b3bc2781368948757d0b7b1ae6",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\bank_phone_M1.npz": "026beb5ad57bdccf358d1b2ba20cc6ec1bbd7fd9d872ce04b37d90b2931eebf5",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\bank_studio_F1.npz": "8123c16378fa07859da759654975241b36c58b36b6f0a56aa1a0aab18f81af21",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\bank_studio_M1.npz": "cce4b77a1aabec3a7e18e01a678284b045faafcd8c2b3c6151cd3beed11b9958",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\inner_traces.csv": "6a71225473d720b01c344f20acfbe6dac7a8469ef8e65a6961b51a1004a2d0a0",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\models.json": "826447f8e9922457e2a96a500a0a84fb15a54ca9f80935ffe8479a170609b8da",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\prediction_proofs.json": "bd49f9f00a4bb712bcb6d334cc1af751bd6dbe9b7133a7bb3f3c14bd07cb4b0d",
+    "research_workbench_2026_10_07\\H75_ml\\run_train\\selected_metrics.csv": "1c3ccfb64e235d34346c1dbe8d527e3b18adf1eb0365cfd439f0215eba35a895"
+  },
+  "limitation": "Classifier learns all frames with a native or ACF candidate; native F0 preferred, ACF25 fallback only on energy >=.07 and periodicity >=.6; LAB is not per-frame pitch GT."
+}

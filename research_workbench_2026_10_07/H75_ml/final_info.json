@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "family": "H75",
+  "train_verification": "PASS",
+  "selected_config": "energy07",
+  "new_test_inferences": 0,
+  "test_source": "results/H72_all_files.csv",
+  "test_receipt_sha256": "6712e64ecdc6b36faf245d0d741be83fd121a7db786868612413d8e6f5ea4b7c",
+  "target_achieved": false,
+  "champion_promoted": false,
+  "files_below_two": 7,
+  "files_total": 8
+}
