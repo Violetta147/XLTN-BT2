@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE",
+  "family": "H77",
+  "verification": "PASS",
+  "evaluated_config": "bridge10_edge25",
+  "train_mean_mape": 1.5641395733154397,
+  "test_mean_mape": 2.4107960839415474,
+  "files_below_two": 5,
+  "files_total": 8,
+  "target_achieved": false,
+  "champion_promoted": false,
+  "retained_config": "energy07",
+  "retained_train_mean_mape": 1.3055077829774693,
+  "retained_test_mean_mape": 2.196093695956088,
+  "retained_files_below_two": 7
+}

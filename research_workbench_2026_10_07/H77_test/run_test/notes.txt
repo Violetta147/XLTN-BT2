@@ -1,0 +1,1 @@
+H77 measured once, independent verifier PASS. Train mean 1.564140%, test mean 2.410796%, only1/4 test and5/8 total below2. Retain energy07 with7/8, no promote or further test search.

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "phone_F2.wav",
+      "frames": 478,
+      "features_acf25_independent": true,
+      "classifier_decoder_metric": true,
+      "recovered": 11,
+      "bridge": 4,
+      "edge": 7
+    },
+    {
+      "file": "phone_M2.wav",
+      "frames": 278,
+      "features_acf25_independent": true,
+      "classifier_decoder_metric": true,
+      "recovered": 0,
+      "bridge": 0,
+      "edge": 0
+    },
+    {
+      "file": "studio_F2.wav",
+      "frames": 313,
+      "features_acf25_independent": true,
+      "classifier_decoder_metric": true,
+      "recovered": 1,
+      "bridge": 0,
+      "edge": 1
+    },
+    {
+      "file": "studio_M2.wav",
+      "frames": 236,
+      "features_acf25_independent": true,
+      "classifier_decoder_metric": true,
+      "recovered": 2,
+      "bridge": 2,
+      "edge": 0
+    }
+  ],
+  "new_test_files": 4,
+  "cached_train_groups": 4,
+  "target_achieved": false,
+  "test_search": false,
+  "feature_candidate_classifier_decoder_statistics_hashes": true,
+  "limitation": "Test has historical exposure; no independent pitch ground truth; original classifier optimizer and native pYIN not refitted."
+}
