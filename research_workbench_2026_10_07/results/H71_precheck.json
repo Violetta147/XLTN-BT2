@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "reused_H70_waveform_precheck_sha256": "a5a2de828ca7ff10358adef4e60a9b639a0a12101571b6a5119feed4bd72b207",
+  "new_synthetic_threshold_boundary_checks": 10,
+  "waveform_precheck_not_repeated": true
+}
