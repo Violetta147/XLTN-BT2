@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "synthetic_fits": 3,
+  "checks": [
+    {
+      "rows": 100,
+      "features": 5,
+      "weighted_scaler": true,
+      "max_normalized_gradient": 4.059212412831082e-09
+    },
+    {
+      "rows": 100,
+      "features": 17,
+      "weighted_scaler": true,
+      "max_normalized_gradient": 9.740090328724805e-10
+    },
+    {
+      "rows": 8,
+      "features": 2,
+      "weighted_scaler": true,
+      "max_normalized_gradient": 3.8710367689098746e-09
+    }
+  ],
+  "context_quantile_interactions_soft_mixture": true,
+  "prediction_ignores_names_labels_teacher_stats": true
+}

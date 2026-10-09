@@ -1,0 +1,4 @@
+Captured from completed synthetic precheck console; no rerun.
+C:\Users\violet\miniconda3\Lib\site-packages\sklearn\preprocessing\_data.py:1068: RuntimeWarning: invalid value encountered in sqrt
+  xp.sqrt(self.var_), copy=False, constant_mask=constant_mask
+PASS H78 synthetic context/scaler/gate mixture; no BT2 fitting
