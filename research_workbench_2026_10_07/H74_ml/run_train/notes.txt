@@ -1,0 +1,1 @@
+H74 hoàn tất một lượt. Verifier PASS 33 forest/3168 cây. Các cấu hình không vượt control; chọn energy07 và reuse H72 test, không test forest. Giữ mọi failure, không promote.

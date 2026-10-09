@@ -1,0 +1,71 @@
+{
+  "status": "MEASURED",
+  "family": "H74",
+  "prereg_commit": "f016fde60c7c779edd009cac4440c1eaea903ffa",
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "energy07"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "energy07"
+    }
+  ],
+  "actual_supervised_fits": 33,
+  "actual_trees_fitted": 3168,
+  "metric_groups": 136,
+  "inner_rows": 64,
+  "selected_summary_rows": 12,
+  "test_used": false,
+  "native_inferences": 0,
+  "feature_extraction_repeated": false,
+  "sklearn": "1.8.0",
+  "selected_config": "energy07",
+  "artifacts": {
+    "research_workbench_2026_10_07\\H74_ml\\run_train\\all_train_metrics.csv": "341cf5d5296aa6a609821efedfa4f408100d8d2ae4709b27b24b2d31420071b0",
+    "research_workbench_2026_10_07\\H74_ml\\run_train\\inner_traces.csv": "6bf92dbdd7b623f00d240cc5c956de43c28dd99147e31d76f5e8aba91a3236f1",
+    "research_workbench_2026_10_07\\H74_ml\\run_train\\models.json": "f5ebd2cd0807ab089e21c42b8425d3b6917d4409f2adde2c103c8f7750cfda39",
+    "research_workbench_2026_10_07\\H74_ml\\run_train\\prediction_proofs.json": "3798fd03e3173068140f0b6f0280424b4ea54dc027691600f699cb3fca7b46a6",
+    "research_workbench_2026_10_07\\H74_ml\\run_train\\selected_metrics.csv": "1c3ccfb64e235d34346c1dbe8d527e3b18adf1eb0365cfd439f0215eba35a895"
+  },
+  "limitation": "Classifier only rejects native pYIN candidates; file LAB is not per-frame pitch GT; control has historical all-train exposure."
+}

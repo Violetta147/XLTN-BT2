@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "supervised_fits": 33,
+  "trees": 3168,
+  "nodes": 32170,
+  "checks": [
+    {
+      "rows": 392,
+      "trees": 96,
+      "nodes": 638,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 392,
+      "trees": 96,
+      "nodes": 1080,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 392,
+      "trees": 96,
+      "nodes": 1126,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 301,
+      "trees": 96,
+      "nodes": 610,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 301,
+      "trees": 96,
+      "nodes": 940,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 301,
+      "trees": 96,
+      "nodes": 942,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 291,
+      "trees": 96,
+      "nodes": 612,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 291,
+      "trees": 96,
+      "nodes": 1016,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 291,
+      "trees": 96,
+      "nodes": 1034,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 379,
+      "trees": 96,
+      "nodes": 666,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 379,
+      "trees": 96,
+      "nodes": 732,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 379,
+      "trees": 96,
+      "nodes": 732,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 369,
+      "trees": 96,
+      "nodes": 668,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 369,
+      "trees": 96,
+      "nodes": 982,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 369,
+      "trees": 96,
+      "nodes": 1020,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 278,
+      "trees": 96,
+      "nodes": 602,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 278,
+      "trees": 96,
+      "nodes": 902,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 278,
+      "trees": 96,
+      "nodes": 924,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 536,
+      "trees": 96,
+      "nodes": 672,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 536,
+      "trees": 96,
+      "nodes": 1266,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 536,
+      "trees": 96,
+      "nodes": 1386,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 526,
+      "trees": 96,
+      "nodes": 672,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 526,
+      "trees": 96,
+      "nodes": 1416,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 526,
+      "trees": 96,
+      "nodes": 1616,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 435,
+      "trees": 96,
+      "nodes": 650,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 435,
+      "trees": 96,
+      "nodes": 1182,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 435,
+      "trees": 96,
+      "nodes": 1310,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 513,
+      "trees": 96,
+      "nodes": 672,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 513,
+      "trees": 96,
+      "nodes": 1108,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 513,
+      "trees": 96,
+      "nodes": 1136,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 670,
+      "trees": 96,
+      "nodes": 672,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 670,
+      "trees": 96,
+      "nodes": 1480,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 670,
+      "trees": 96,
+      "nodes": 1706,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    }
+  ],
+  "source_inputs_masks_pitch_metrics": true,
+  "bootstrap_seeds_weighted_node_classes": true,
+  "fit_pool_independence": true,
+  "control_parity_selection_copies": true,
+  "limitation": "Tree split optimization not independently refitted; synthetic and direct node-count checks verify prediction representation, not generalization."
+}
