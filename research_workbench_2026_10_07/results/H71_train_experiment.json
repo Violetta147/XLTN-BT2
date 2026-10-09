@@ -1,0 +1,256 @@
+{
+  "family": "H71",
+  "prereg_commit": "3e30d332ef43c71670cedcca441b26de6c857b44",
+  "registry_sha256": "99261d7ff76e95bbf99ce7657c64d7ccc6a5708406cbd5f3ad059862cd91f2ee",
+  "selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "hard170"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "hard170"
+    }
+  ],
+  "strict_diagnostic_selections": [
+    {
+      "outer_held": "final",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "pyin8_energy_0.07"
+    },
+    {
+      "outer_held": "phone_F1.wav",
+      "selection_files": [
+        "phone_M1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "pyin8_energy_0.06"
+    },
+    {
+      "outer_held": "phone_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "studio_F1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "pyin8_energy_0.07"
+    },
+    {
+      "outer_held": "studio_F1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_M1.wav"
+      ],
+      "option_id": "pyin8_energy_0.08"
+    },
+    {
+      "outer_held": "studio_M1.wav",
+      "selection_files": [
+        "phone_F1.wav",
+        "phone_M1.wav",
+        "studio_F1.wav"
+      ],
+      "option_id": "pyin8_energy_0.07"
+    }
+  ],
+  "summaries": {
+    "accepted": {
+      "train": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    },
+    "candidate": {
+      "train": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "lofo": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      },
+      "nested": {
+        "average_mape": 1.1249322995423308,
+        "F0mean_mape": 0.5861763528021307,
+        "F0std_mape": 0.8099072850716745,
+        "F0num_mape": 1.978713260753187,
+        "F0mean_abs_error": 1.0706158846934102,
+        "F0std_abs_error": 0.195549982035212,
+        "macro_f1": 0.8939767953182111,
+        "balanced_accuracy": 0.9143345740584509,
+        "recall_v": 0.9292698961299919,
+        "recall_uv": 0.8993992519869097,
+        "TP": 575,
+        "TN": 167,
+        "FP": 13,
+        "FN": 39,
+        "false_voiced_sil": 0,
+        "F0num": 588
+      }
+    }
+  },
+  "decision": {
+    "checks": {
+      "train_mape_relative_10_percent": false,
+      "nested_mape_relative_5_percent": false,
+      "nested_f1_drop_at_most_01": true,
+      "nested_recall_v_drop_at_most_01": true,
+      "nested_sil_increase_at_most_1": true,
+      "nested_no_file_mape_worse_by_over_2pp": true,
+      "nested_phone_f1_std_not_worse": true,
+      "selected_lofo_mape_relative_5_percent": false
+    },
+    "eligible": false,
+    "each_nested_file_below_2": true,
+    "champion_promoted": false
+  },
+  "actual_native_inferences": 0,
+  "actual_supervised_fits": 0,
+  "groups": 44,
+  "new_energy_only_groups": 28,
+  "test_used": false,
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "new_energy_extraction": 0,
+  "normalization": "Cached H70 own-file centered RMS / linear p95 RMS; denominator floor1e-12; unlabeled full-file transform",
+  "runtime": {
+    "python": "3.13.11",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1"
+  },
+  "wall_time_s": 0.14726389999998446,
+  "artifacts": {
+    "research_workbench_2026_10_07\\results\\H71_proof_phone_F1.npz": "646087948ebae8d51cf60db75495ab367c5366b1090da9e95effdacc69c9bab5",
+    "research_workbench_2026_10_07\\results\\H71_proof_phone_M1.npz": "09a0890dbb3235864e42006319c111846642a920233bd90820fb8c65a5e3e565",
+    "research_workbench_2026_10_07\\results\\H71_proof_studio_F1.npz": "c484630891c34d28266cd10fecacb4f3da5a6b4beb194c0b8b14d8a9cf7c1aac",
+    "research_workbench_2026_10_07\\results\\H71_proof_studio_M1.npz": "948c45389bd9930721329331181a5114eda0362b052b567f3a58a23b2f161ba1",
+    "research_workbench_2026_10_07\\results\\H71_fixed.csv": "71342cc8ca9e21df1f52c013293953f0afb9ddca5bc156f178f87e8217dc9eba",
+    "research_workbench_2026_10_07\\results\\H71_inner_traces.csv": "d3277f5a5e087870b7fe9cd7e3e129fcd0ec49b75eef95a7240cbdadcbe5e620",
+    "research_workbench_2026_10_07\\results\\H71_metrics.csv": "f67bc8998a15071897f2bad7e6ceee0d0f192eaff9d9c3b3959512f2452efc9b",
+    "research_workbench_2026_10_07\\results\\H71_energy_frames.csv": "6be391d8568a8c0d92ee94671f07d21c69a10652c5bc423413f58be594ddb0e7",
+    "research_workbench_2026_10_07\\results\\H71_removed_frames.csv": "0432594e63eba049c67e76c9760d0c062758cf24f17395e60706d8a7c82aa892"
+  }
+}
