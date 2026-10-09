@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "BT2_used": false,
+  "synthetic_models": 3,
+  "checks": [
+    {
+      "rows": 100,
+      "trees": 96,
+      "nodes": 618,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 100,
+      "trees": 96,
+      "nodes": 1032,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    },
+    {
+      "rows": 100,
+      "trees": 96,
+      "nodes": 1048,
+      "bootstrap_weighted_class_totals": true,
+      "scalar_routing": true
+    }
+  ]
+}
