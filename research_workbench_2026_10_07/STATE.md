@@ -1,3 +1,7 @@
+## Trạng thái hiện tại — 12/10/2026: tạm dừng cải tiến theo yêu cầu người dùng
+
+Người dùng yêu cầu “Tạm thời dừng cải tiến”. Không mở H82, không fit/tuning/test mới và không chạy lại H00–H81/R01/R02. Chỉ tiếp tục tối ưu khi có yêu cầu rõ. Giữ pipeline H71/H72 và toàn bộ số đo đã khóa; mục tiêu từng file train/test dưới 2% chưa hoàn thành. Việc đọc, giải thích, tổng hợp tài liệu hiện có hoặc chuẩn bị bài phân đoạn có thể làm theo yêu cầu tiếp theo. START_NEXT_CHAT.md là bàn giao hiện hành; các mục lịch sử bên dưới không cấp quyền tự tiếp tục.
+
 # Hiện hành sau H66 — 08/10/2026
 
 H66 custom residualAR1 harmonicNLS3 đã hoàn tất sau yêu cầu tiếp tục. Preregc804f6d push/remoteverify trước train;results63e740b vàcachedcountbudgetauditcf6157b push/remoteverified. 18newsyntheticfixturePASS,8metricgroups/32innertraces/24summaryrows,588frameoptionsQRverifierPASS. Final/mọiouterar1_nls_3:worst1.909923→1.849260%,mean1.124932→1.313829%,phone_F1std .089632→2.566557%;4/8gatesFAIL,khôngpromote/testmới. Mask/count/VUVmetrics giữ;297/588rho chạm.95. 0supervisedfits,588perframewaveformARfits,khôngnói“nofit”. ĐọcH66_REPORT.md/H66_SOURCE_REVIEW.md/FIXED_COUNT_TARGET_BUDGET.md;cachedH48countbudget khôngtestinference/paramtuning. Baselineall8vẫnFAIL;khôngrerunH00–H66. Khôngthínghiệmđangchạy,H67chưađăngký. Original/frozen/GT/notebookgiữ;localCPU/noDrive/DL/PDF/Jev/schedule. Cácmục bên dưới làlịch sử.

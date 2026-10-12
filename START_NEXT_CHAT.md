@@ -1,6 +1,8 @@
-# Khôi phục BT2 sau H81 — cập nhật 09/10/2026
+# BT2 tạm dừng cải tiến sau H81 — cập nhật 12/10/2026
 
-H00–H81 và R01/R02 đã hoàn tất; không chạy lại. Không có thí nghiệm đang chạy; H82 chưa đăng ký. Người dùng muốn tiếp tục cải thiện BT2 trước bài phân đoạn mới và giải thích bằng prose tiếng Việt. Mục tiêu vẫn mỗi file trong cả bốn train và bốn test Average MAPE<2%; LOFO là chẩn đoán, không phải điều kiện mọi fold<2% để được test một cấu hình đã khóa.
+Ngày 12/10/2026, người dùng yêu cầu: “Tạm thời dừng cải tiến”. Yêu cầu này thay thế chỉ dẫn tiếp tục cải tiến trước đó. Không tự mở H82 hoặc bất kỳ vòng tối ưu, fit, tuning hay đánh giá test mới nào; chỉ tiếp tục cải tiến khi người dùng yêu cầu rõ. Có thể đọc, giải thích pipeline hiện có, tổng hợp báo cáo hoặc chuẩn bị bài phân đoạn theo yêu cầu tiếp theo. Đây là tạm dừng theo yêu cầu, không phải mục tiêu đã hoàn thành.
+
+H00–H81 và R01/R02 đã hoàn tất; không chạy lại. Không có thí nghiệm đang chạy; H82 chưa đăng ký. Giữ các số đo, source và kết luận đã khóa. Mục tiêu chưa đạt vẫn là mỗi file trong cả bốn train và bốn test Average MAPE<2%; LOFO là chẩn đoán, không phải điều kiện mọi fold<2% để được test một cấu hình đã khóa. Giải thích bằng prose tiếng Việt.
 
 Đọc AGENTS.md, research_workbench_2026_10_07/H81_REPORT.md, H81_unsupervised/REGISTRATION.md/REGISTRY.json, run_train/freeze_receipt.json và run_audit/completion.json trước successor. Đọc H78_H80_SYNTHESIS.md, H78_REPORT.md/H79_REPORT.md/H80_REPORT.md và FRAME_25MS_AUDIT.md nếu cần lịch sử hướng học chung/phân rã/ghép file. Bàn giao trước H81 được lưu nguyên bytes tại docs/handoff/START_NEXT_CHAT_before_H81_2026_10_09.md; archive là lịch sử, không phải cấu hình đang chạy.
 
