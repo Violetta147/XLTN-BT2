@@ -21,7 +21,7 @@ Bốn lượt leave-one-file-out theo file, cùng frame 25 ms/hop 10 ms, cùng L
 | 05: thêm median F0 ba khung | 0.8747 | **0.9166** | 2.9663 | **6.6175** | **3** |
 | 06: giao điểm Gaussian có nhãn | 0.8695 | 0.9128 | 4.2787 | 14.5808 | 51 |
 
-Không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F0std và SIL đặt trước, nên chưa đổi cấu hình cuối. Các kết quả 01/03 cho thấy GMM không nhãn bỏ lỡ nhiều V, nhưng nới ngưỡng đơn không đủ: nhận thêm UV/SIL và F0 bất thường. Cổng năng lượng xử lý SIL rất tốt; sai số F0mean còn lại ở `phone_F1` và `studio_M1`. [Chẩn đoán F0](EXPERIMENT_04_DIAGNOSIS.md) cho thấy đó không chỉ là vấn đề SIL.
+Trong nhóm **thí nghiệm 01–06** trong bảng trên, không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F0std và SIL đặt trước. Các kết quả 01/03 cho thấy GMM không nhãn bỏ lỡ nhiều V, nhưng nới ngưỡng đơn không đủ: nhận thêm UV/SIL và F0 bất thường. Cổng năng lượng xử lý SIL rất tốt; sai số F0mean còn lại ở `phone_F1` và `studio_M1`. [Chẩn đoán F0](EXPERIMENT_04_DIAGNOSIS.md) cho thấy đó không chỉ là vấn đề SIL.
 
 ## So sánh thuật toán ở đúng 25 ms
 
@@ -36,3 +36,4 @@ Audit training-only đã đối chiếu từng file/fold: LAB có 614 frame V, c
 Audit xác nhận NumF0 theo mã, nhưng điều kiện `MinNumF0 < NumF0 < MaxNumF0` vẫn không kiểm tra được vì tài liệu thầy đưa chưa định nghĩa hai giới hạn hoặc phạm vi đếm. Không lấy cực trị bốn file làm giới hạn và không dùng TEST để chọn. Việc tiếp theo có ý nghĩa là lấy định nghĩa Min/Max từ đề/thầy khi có; cho đến lúc đó giữ nguyên cấu hình và báo rõ yêu cầu còn thiếu.
 
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
+
