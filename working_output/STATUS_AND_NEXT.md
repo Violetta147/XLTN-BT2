@@ -1,11 +1,11 @@
-# Trạng thái BT2 và bước kế tiếp (29/09/2026)
+# Trạng thái BT2 và bước kế tiếp (14/10/2026)
 
 ## Hiện trạng có thể quay lại
 
 - Toàn bộ WAV/LAB, bản export output và ba notebook chạy local nằm trong working folder. Output nhúng đã bỏ khỏi notebook để giảm từ khoảng 5.44 MB còn khoảng 289 KB hiện tại; bản gốc và 89 output có thể khôi phục/đối chiếu từ Git và `working_output/`.
 - [AGENTS.md](../AGENTS.md) cấm tuyệt đối Google Drive/G Drive, yêu cầu mỗi thay đổi một commit, training-only validation và điểm quay lại. Colab trong Chrome chỉ là phương án dự phòng khi máy thiếu tài nguyên; các lượt đo hiện tại chạy local.
 - Ba notebook đã có ma trận nhầm lẫn V/UV và biểu đồ F1/BA, sai số F0, NumF0 theo file. Hình waveform/F0 từng file mặc định tắt (`SHOW_DETAILED_TEST_PLOTS = False`) và có thể bật lại. [Ảnh xem trước](visualization_review/) được lưu ngoài notebook.
-- Notebook AMDF đã cố định cấu hình cuối ở 25 ms, Gaussian từ training; **cổng năng lượng chưa được áp dụng vào notebook**. [Biên bản tích hợp 09](INTEGRATION_09_RESULT.md) và [số QA](integration_09_qa.json) lưu kiểm tra code. Điểm quay lại trước thay đổi cấu hình: `328a9ce`; các script thí nghiệm nằm riêng và đều đã commit.
+- Notebook AMDF đã cố định cấu hình cuối ở 25 ms/Gaussian và tích hợp cổng năng lượng đã đạt LOFO. [Biên bản tích hợp 09](INTEGRATION_09_RESULT.md), [biên bản tích hợp 10](INTEGRATION_10_RESULT.md) và [QA training](integration_10_training_qa.json) lưu kiểm tra. Điểm quay lại ngay trước cổng năng lượng: `b740738`; các script thí nghiệm nằm riêng và đều đã commit.
 
 ## Sáu phép thử AMDF 25 ms trên training
 
@@ -27,10 +27,10 @@ Không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F
 
 [Thí nghiệm 07](EXPERIMENT_07_RESULT.md) tái fit ba phương pháp ngưỡng của từng notebook trên ba file training rồi đánh giá file còn lại. AMDF cao hơn ACF về macro F1 **0.8695 so với 0.8363**, BA **0.9128 so với 0.8709**, F0mean MAE **4.28 so với 5.13 Hz** và F0std MAE **14.58 so với 16.41 Hz**. ACF ít false voiced trên SIL hơn: **44 so với 51**. Điều kiện vượt trội đặt trước không đạt cho cả hai; chưa chọn thuật toán cuối.
 
-[Thí nghiệm 08](EXPERIMENT_08_RESULT.md) thêm đúng cổng năng lượng V/SIL cho AMDF Gaussian 25 ms, dùng cùng bốn fold training. Ứng viên **đạt cổng so với ACF 25 ms**: F1 **0.8646 so với 0.8363**, BA **0.9206 so với 0.8709**, F0mean MAE **2.93 so với 5.13 Hz**, F0std MAE **6.50 so với 16.41 Hz**, false voiced SIL **1 so với 44**. Ngưỡng fit từ đủ training đã đóng băng: `T_pitch=0.4124933063`, `T_energy=0.0615446159` với RMS chuẩn hóa bằng phân vị 95% từng file. Đây là ứng viên trên validation, chưa đưa vào notebook, chưa có TEST độc lập. NumF0 tổng giảm **600→545** so với ACF; điều kiện MinNumF0/MaxNumF0 của thầy chưa xác định.
+[Thí nghiệm 08](EXPERIMENT_08_RESULT.md) thêm đúng cổng năng lượng V/SIL cho AMDF Gaussian 25 ms, dùng cùng bốn fold training. Ứng viên **đạt cổng so với ACF 25 ms**: F1 **0.8646 so với 0.8363**, BA **0.9206 so với 0.8709**, F0mean MAE **2.93 so với 5.13 Hz**, F0std MAE **6.50 so với 16.41 Hz**, false voiced SIL **1 so với 44**. Ngưỡng fit từ đủ training đã đóng băng: `T_pitch=0.4124933063`, `T_energy=0.0615446159` với RMS chuẩn hóa bằng phân vị 95% từng file. [Tích hợp 10](INTEGRATION_10_RESULT.md) đưa gate vào notebook và xác nhận toàn bộ code cell chạy; TEST chỉ dùng mô tả sau khi khóa cấu hình. NumF0 tổng giảm **600→545** so với ACF; điều kiện MinNumF0/MaxNumF0 của thầy chưa xác định.
 
 ## Bước tiếp theo duy nhất nên xét
 
-Thêm **riêng** cổng năng lượng V/SIL từ thí nghiệm 08 vào notebook AMDF 25 ms trong một commit mới. Giữ nguyên score AMDF, ngưỡng Gaussian, frame/hop và cách tính metric; xác nhận các ngưỡng chỉ học từ training và số local khớp script LOFO trước khi xem TEST. Nếu chạy TEST để kiểm tra code sau khi đóng băng cấu hình, ghi rõ đó là kết quả mô tả vì bảng TEST trước đã được xem.
+Làm một kiểm tra dữ liệu training-only cho ràng buộc `MinNumF0 < NumF0 < MaxNumF0`: đối chiếu số khung V theo LAB với NumF0 ước lượng của từng file/fold, rồi xác định phần nào có thể suy ra từ đề và phần nào cần thầy định nghĩa. Không tự chọn giới hạn từ TEST. Nếu giới hạn không thể suy ra, tiếp tục ghi rõ đây là yêu cầu còn thiếu; không dùng nó để chỉnh thuật toán.
 
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.

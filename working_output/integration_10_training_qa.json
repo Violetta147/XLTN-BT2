@@ -1,0 +1,265 @@
+{
+  "purpose": "training-only code parity with frozen full-training thresholds; not a new validation estimate",
+  "notebook": "BT2_AMDF_implement_executed_original - Copy.ipynb",
+  "data": "TinHieuHuanLuyen",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.3.5",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "config": {
+    "frame_ms": 25,
+    "hop_ms": 10,
+    "method": "Gaussian",
+    "T_pitch": 0.41249330632749887,
+    "T_energy": 0.061544615883604575
+  },
+  "training_selection": [
+    {
+      "Frame (ms)": 20,
+      "Chosen method": "Histogram V/UV intersection",
+      "Threshold": 0.3818223425,
+      "Accuracy V/UV": 0.8664987406,
+      "Balanced accuracy V/UV": 0.8842290988
+    },
+    {
+      "Frame (ms)": 25,
+      "Chosen method": "Gaussian",
+      "Threshold": 0.4124933063,
+      "Accuracy V/UV": 0.8967254408,
+      "Balanced accuracy V/UV": 0.9096634093
+    },
+    {
+      "Frame (ms)": 30,
+      "Chosen method": "Gaussian",
+      "Threshold": 0.4204052645,
+      "Accuracy V/UV": 0.9055415617,
+      "Balanced accuracy V/UV": 0.9153637351
+    }
+  ],
+  "rows": [
+    {
+      "file": "phone_F1.wav",
+      "before": {
+        "TP": 139,
+        "TN": 66,
+        "FP": 3,
+        "FN": 14,
+        "macro_f1": 0.9141394608121943,
+        "balanced_accuracy": 0.9325092355782894,
+        "NumF0": 144,
+        "F0mean_abs_error_hz": 7.3428757406308875,
+        "F0std_abs_error_hz": 16.512096494882506,
+        "FP_SIL": 2
+      },
+      "after": {
+        "TP": 139,
+        "TN": 66,
+        "FP": 3,
+        "FN": 14,
+        "macro_f1": 0.9141394608121943,
+        "balanced_accuracy": 0.9325092355782894,
+        "NumF0": 142,
+        "F0mean_abs_error_hz": 7.66309397192731,
+        "F0std_abs_error_hz": 11.771594661624256,
+        "FP_SIL": 0
+      }
+    },
+    {
+      "file": "phone_M1.wav",
+      "before": {
+        "TP": 206,
+        "TN": 56,
+        "FP": 6,
+        "FN": 38,
+        "macro_f1": 0.8107287449392713,
+        "balanced_accuracy": 0.8737440507667901,
+        "NumF0": 213,
+        "F0mean_abs_error_hz": 1.7996569517704017,
+        "F0std_abs_error_hz": 7.694707872023798,
+        "FP_SIL": 1
+      },
+      "after": {
+        "TP": 206,
+        "TN": 56,
+        "FP": 6,
+        "FN": 38,
+        "macro_f1": 0.8107287449392713,
+        "balanced_accuracy": 0.8737440507667901,
+        "NumF0": 212,
+        "F0mean_abs_error_hz": 1.0122609904840516,
+        "F0std_abs_error_hz": 5.049378893349946,
+        "FP_SIL": 0
+      }
+    },
+    {
+      "file": "studio_F1.wav",
+      "before": {
+        "TP": 117,
+        "TN": 23,
+        "FP": 1,
+        "FN": 6,
+        "macro_f1": 0.9194394425741799,
+        "balanced_accuracy": 0.9547764227642277,
+        "NumF0": 140,
+        "F0mean_abs_error_hz": 0.7172113425096143,
+        "F0std_abs_error_hz": 15.923279886911196,
+        "FP_SIL": 22
+      },
+      "after": {
+        "TP": 116,
+        "TN": 24,
+        "FP": 0,
+        "FN": 7,
+        "macro_f1": 0.9217192848992012,
+        "balanced_accuracy": 0.9715447154471545,
+        "NumF0": 116,
+        "F0mean_abs_error_hz": 1.081734184996634,
+        "F0std_abs_error_hz": 4.122471720395737,
+        "FP_SIL": 0
+      }
+    },
+    {
+      "file": "studio_M1.wav",
+      "before": {
+        "TP": 82,
+        "TN": 23,
+        "FP": 2,
+        "FN": 12,
+        "macro_f1": 0.8440074906367041,
+        "balanced_accuracy": 0.8961702127659574,
+        "NumF0": 109,
+        "F0mean_abs_error_hz": 7.972433978135214,
+        "F0std_abs_error_hz": 17.18595431277167,
+        "FP_SIL": 25
+      },
+      "after": {
+        "TP": 78,
+        "TN": 25,
+        "FP": 0,
+        "FN": 16,
+        "macro_f1": 0.8322762508809021,
+        "balanced_accuracy": 0.9148936170212766,
+        "NumF0": 78,
+        "F0mean_abs_error_hz": 2.5633759394030875,
+        "F0std_abs_error_hz": 1.5406531386048599,
+        "FP_SIL": 0
+      }
+    }
+  ],
+  "parity": "labels, score, relative RMS, predictions, counts, NumF0, false voiced SIL and both F0 errors matched experiment scripts on four training files",
+  "test_descriptive_not_independent": [
+    {
+      "TP": 189,
+      "FN": 46,
+      "FP": 13,
+      "TN": 54,
+      "file": "phone_F2.wav",
+      "F0mean_GT": 145.0,
+      "F0mean_est": 146.8902815394,
+      "abs_error_mean": 1.8902815394,
+      "F0std_GT": 33.7,
+      "F0std_est": 34.5566322414,
+      "abs_error_std": 0.8566322414,
+      "NumF0": 204,
+      "correct_vu": 243,
+      "n_vu": 302,
+      "accuracy_vu": 0.8046357616,
+      "correct_all": 417,
+      "n_all": 478,
+      "accuracy_all": 0.8723849372,
+      "sil_false_voiced": 2,
+      "macro_f1_vu": 0.7558475726
+    },
+    {
+      "TP": 112,
+      "FN": 22,
+      "FP": 2,
+      "TN": 63,
+      "file": "phone_M2.wav",
+      "F0mean_GT": 129.0,
+      "F0mean_est": 127.2751523677,
+      "abs_error_mean": 1.7248476323,
+      "F0std_GT": 18.6,
+      "F0std_est": 17.9399771202,
+      "abs_error_std": 0.6600228798,
+      "NumF0": 114,
+      "correct_vu": 175,
+      "n_vu": 199,
+      "accuracy_vu": 0.8793969849,
+      "correct_all": 254,
+      "n_all": 278,
+      "accuracy_all": 0.9136690647,
+      "sil_false_voiced": 0,
+      "macro_f1_vu": 0.8716129032
+    },
+    {
+      "TP": 128,
+      "FN": 9,
+      "FP": 1,
+      "TN": 22,
+      "file": "studio_F2.wav",
+      "F0mean_GT": 200.0,
+      "F0mean_est": 197.6148225138,
+      "abs_error_mean": 2.3851774862,
+      "F0std_GT": 46.1,
+      "F0std_est": 50.2611710928,
+      "abs_error_std": 4.1611710928,
+      "NumF0": 129,
+      "correct_vu": 150,
+      "n_vu": 160,
+      "accuracy_vu": 0.9375,
+      "correct_all": 303,
+      "n_all": 313,
+      "accuracy_all": 0.9680511182,
+      "sil_false_voiced": 0,
+      "macro_f1_vu": 0.8886104149
+    },
+    {
+      "TP": 111,
+      "FN": 17,
+      "FP": 2,
+      "TN": 18,
+      "file": "studio_M2.wav",
+      "F0mean_GT": 155.0,
+      "F0mean_est": 152.6741367089,
+      "abs_error_mean": 2.3258632911,
+      "F0std_GT": 30.8,
+      "F0std_est": 31.8185322216,
+      "abs_error_std": 1.0185322216,
+      "NumF0": 113,
+      "correct_vu": 129,
+      "n_vu": 148,
+      "accuracy_vu": 0.8716216216,
+      "correct_all": 217,
+      "n_all": 236,
+      "accuracy_all": 0.9194915254,
+      "sil_false_voiced": 0,
+      "macro_f1_vu": 0.7878536401
+    }
+  ],
+  "test_aggregate_descriptive_not_independent": [
+    {
+      "files": 4,
+      "F0mean MAE": 2.0815424873,
+      "F0mean RMSE": 2.1004151579,
+      "F0mean MAPE": 0.0133346983,
+      "F0std MAE": 1.6740896089,
+      "F0std RMSE": 2.2091967855,
+      "F0std MAPE": 0.0460594246,
+      "Macro F1 (V/UV)": 0.8259811327
+    }
+  ],
+  "test_note": "Ran after training config frozen, only to verify per-file and aggregate notebook reporting. TEST was inspected in earlier work and these values are descriptive, not independent evaluation and were not used to select this change.",
+  "training_selection_unchanged_vs_previous_notebook_run": true,
+  "execution_scope": {
+    "training_parity": "cells 1,3,5,7,9,10,14; process_file_amdf definition from cell 19; checked all four training files against experiment scripts",
+    "descriptive_test_report": "cells 1,3,5 plus process_file_amdf definition from cell 19, report cells 21 and 23",
+    "visual_cells": "not rerun; unchanged in this intervention",
+    "full_notebook_code_cells": "all 14 code cells executed in order in a fresh local process; display and plt.show suppressed, plots created and closed headlessly to avoid retaining outputs"
+  },
+  "full_notebook_run_note": "Resolved the earlier process exit by closing all matplotlib figures after each code cell. A fresh full-code-cell run completed all 14 cells, including TEST reports and plot construction. No notebook outputs were written back; TEST metrics remain descriptive only."
+}
