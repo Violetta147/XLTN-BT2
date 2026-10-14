@@ -5,7 +5,7 @@
 - Toàn bộ WAV/LAB, bản export output và ba notebook chạy local nằm trong working folder. Output nhúng đã bỏ khỏi notebook để giảm từ khoảng 5.44 MB còn khoảng 289 KB hiện tại; bản gốc và 89 output có thể khôi phục/đối chiếu từ Git và `working_output/`.
 - [AGENTS.md](../AGENTS.md) cấm tuyệt đối Google Drive/G Drive, yêu cầu mỗi thay đổi một commit, training-only validation và điểm quay lại. Colab trong Chrome chỉ là phương án dự phòng khi máy thiếu tài nguyên; các lượt đo hiện tại chạy local.
 - Ba notebook đã có ma trận nhầm lẫn V/UV và biểu đồ F1/BA, sai số F0, NumF0 theo file. Hình waveform/F0 từng file mặc định tắt (`SHOW_DETAILED_TEST_PLOTS = False`) và có thể bật lại. [Ảnh xem trước](visualization_review/) được lưu ngoài notebook.
-- Notebook AMDF đã cố định cấu hình cuối ở 25 ms/Gaussian và tích hợp cổng năng lượng đã đạt LOFO. [Biên bản tích hợp 09](INTEGRATION_09_RESULT.md), [biên bản tích hợp 10](INTEGRATION_10_RESULT.md) và [QA training](integration_10_training_qa.json) lưu kiểm tra. Điểm quay lại ngay trước cổng năng lượng: `b740738`; các script thí nghiệm nằm riêng và đều đã commit.
+- Notebook AMDF đã cố định cấu hình cuối ở 25 ms/Gaussian và tích hợp cổng năng lượng đã đạt LOFO. [Biên bản tích hợp 09](INTEGRATION_09_RESULT.md), [biên bản tích hợp 10](INTEGRATION_10_RESULT.md) và [QA training](integration_10_training_qa.json) lưu kiểm tra. Điểm quay lại ngay trước cổng năng lượng: `26c7c7d`; các script thí nghiệm nằm riêng và đều đã commit.
 
 ## Sáu phép thử AMDF 25 ms trên training
 

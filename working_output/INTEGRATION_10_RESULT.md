@@ -1,6 +1,6 @@
 # Tích hợp 10: AMDF 25 ms với cổng năng lượng
 
-- Điểm quay lại: `b740738` (kế hoạch tích hợp đã commit). Notebook giờ học `T_energy` chỉ từ các file `TinHieuHuanLuyen`: RMS mỗi frame chia cho phân vị 95% RMS của cùng file; chọn ngưỡng để tối đa balanced accuracy V/SIL trung bình theo file, hòa chọn ngưỡng thấp. Frame 25 ms, hop 10 ms, AMDF score, ngưỡng Gaussian pitch, estimator F0 và metric được giữ nguyên.
+- Điểm quay lại trước thay đổi thuật toán: `26c7c7d` (kế hoạch tích hợp sau khi đồng bộ commit remote). Notebook giờ học `T_energy` chỉ từ các file `TinHieuHuanLuyen`: RMS mỗi frame chia cho phân vị 95% RMS của cùng file; chọn ngưỡng để tối đa balanced accuracy V/SIL trung bình theo file, hòa chọn ngưỡng thấp. Frame 25 ms, hop 10 ms, AMDF score, ngưỡng Gaussian pitch, estimator F0 và metric được giữ nguyên.
 - Ngưỡng từ notebook khớp đúng ngưỡng khóa từ đủ training: `T_pitch=0.41249330632749887`; `T_energy=0.061544615883604575`. Bảng chọn phương pháp/ngưỡng 20/25/30 ms khớp bản trước; không đổi phần fit pitch.
 - Kiểm tra đầy đủ: chạy **14/14 code cell** theo thứ tự trong tiến trình Python mới, từ working folder. Tất cả đồ thị được tạo ở backend không giao diện, đóng sau mỗi cell để không nhúng output lớn trở lại notebook. Phiên bản môi trường và dữ liệu theo file ở [integration_10_training_qa.json](integration_10_training_qa.json).
 
