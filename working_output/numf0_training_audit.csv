@@ -1,0 +1,5 @@
+file,frames_total,frames_unlabeled,LAB_V,LAB_UV,LAB_SIL,pred_voiced_all,TP_V_pred,FP_UV_pred,FP_SIL_pred,pred_unlabeled,NumF0,validF0_LAB_V,validF0_LAB_UV,validF0_LAB_SIL,validF0_unlabeled,invalidF0_predicted,saved_NumF0
+phone_F1.wav,322,0,153,69,100,143,139,3,1,0,143,139,3,1,0,0,143
+phone_M1.wav,414,0,244,62,108,209,203,6,0,0,209,203,6,0,0,0,209
+studio_F1.wav,284,0,123,24,137,115,115,0,0,0,115,115,0,0,0,0,115
+studio_M1.wav,271,0,94,25,152,78,78,0,0,0,78,78,0,0,0,0,78

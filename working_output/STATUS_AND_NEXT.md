@@ -29,8 +29,10 @@ Không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F
 
 [Thí nghiệm 08](EXPERIMENT_08_RESULT.md) thêm đúng cổng năng lượng V/SIL cho AMDF Gaussian 25 ms, dùng cùng bốn fold training. Ứng viên **đạt cổng so với ACF 25 ms**: F1 **0.8646 so với 0.8363**, BA **0.9206 so với 0.8709**, F0mean MAE **2.93 so với 5.13 Hz**, F0std MAE **6.50 so với 16.41 Hz**, false voiced SIL **1 so với 44**. Ngưỡng fit từ đủ training đã đóng băng: `T_pitch=0.4124933063`, `T_energy=0.0615446159` với RMS chuẩn hóa bằng phân vị 95% từng file. [Tích hợp 10](INTEGRATION_10_RESULT.md) đưa gate vào notebook và xác nhận toàn bộ code cell chạy; TEST chỉ dùng mô tả sau khi khóa cấu hình. NumF0 tổng giảm **600→545** so với ACF; điều kiện MinNumF0/MaxNumF0 của thầy chưa xác định.
 
-## Bước tiếp theo duy nhất nên xét
+## Audit NumF0 hoàn tất
 
-Làm một kiểm tra dữ liệu training-only cho ràng buộc `MinNumF0 < NumF0 < MaxNumF0`: đối chiếu số khung V theo LAB với NumF0 ước lượng của từng file/fold, rồi xác định phần nào có thể suy ra từ đề và phần nào cần thầy định nghĩa. Không tự chọn giới hạn từ TEST. Nếu giới hạn không thể suy ra, tiếp tục ghi rõ đây là yêu cầu còn thiếu; không dùng nó để chỉnh thuật toán.
+Audit training-only đã đối chiếu từng file/fold: LAB có 614 frame V, còn AMDF+energy dự đoán 545 frame voiced và tạo đúng 545 F0 hữu hạn/dương. Trong đó 535 F0 rơi trên LAB V, 9 trên UV, 1 trên SIL; không có frame chưa gán nhãn hay F0 dự đoán không hợp lệ. Số này khớp cột NumF0 đã lưu. Chi tiết, lệnh, mã và môi trường: [kết quả audit](NUMF0_AUDIT_RESULT.md), [CSV](numf0_training_audit.csv), [script](audit_numf0_training.py).
+
+Audit xác nhận NumF0 theo mã, nhưng điều kiện `MinNumF0 < NumF0 < MaxNumF0` vẫn không kiểm tra được vì tài liệu thầy đưa chưa định nghĩa hai giới hạn hoặc phạm vi đếm. Không lấy cực trị bốn file làm giới hạn và không dùng TEST để chọn. Việc tiếp theo có ý nghĩa là lấy định nghĩa Min/Max từ đề/thầy khi có; cho đến lúc đó giữ nguyên cấu hình và báo rõ yêu cầu còn thiếu.
 
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
