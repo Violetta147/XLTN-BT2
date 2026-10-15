@@ -1,0 +1,36 @@
+{
+  "training_only": true,
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "four fold leave one file out; fixed thresholds from experiment 08",
+  "median_window_frames": 3,
+  "files": 4,
+  "baseline_mean": {
+    "macro_f1": 0.86462632395,
+    "balanced_accuracy": 0.9206197593000001,
+    "recall_V": 0.876302632175,
+    "recall_UV": 0.9649368864,
+    "F0mean_abs_error_hz": 2.9286197560000002,
+    "F0std_abs_error_hz": 6.50216177
+  },
+  "candidate_mean": {
+    "macro_f1": 0.8646263239365338,
+    "balanced_accuracy": 0.9206197592948743,
+    "recall_V": 0.8763026321942367,
+    "recall_UV": 0.9649368863955119,
+    "F0mean_abs_error_hz": 2.9286197559809146,
+    "F0std_abs_error_hz": 6.502161769252168
+  },
+  "baseline_NumF0": 545,
+  "candidate_NumF0": 545,
+  "baseline_FP_SIL": 1,
+  "candidate_FP_SIL": 1,
+  "restored_LAB_V": 0,
+  "restored_LAB_SIL": 0,
+  "restored_LAB_UV": 0,
+  "changed_voiced_decisions": 0,
+  "python": "3.11.9",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3",
+  "keep_by_preregistered_rule": false
+}

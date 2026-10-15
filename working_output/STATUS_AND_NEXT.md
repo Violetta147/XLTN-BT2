@@ -37,5 +37,7 @@ Audit xác nhận NumF0 theo mã, nhưng điều kiện `MinNumF0 < NumF0 < MaxN
 
 Chẩn đoán frame bị cổng năng lượng loại đã hoàn tất: 59 frame của bốn fold được loại, gồm 50 SIL, 3 UV và 6 V; sáu V bị loại đều nằm trong hai file studio. Cổng giảm NumF0 từ 604 xuống 545 so với AMDF Gaussian không gate, khớp chính xác số frame bị loại. Phân bố relative RMS và số đếm theo file ở [báo cáo chẩn đoán](ENERGY_GATE_DIAGNOSIS_RESULT.md) và [CSV](energy_gate_removed_frames.csv). Không thay đổi cấu hình.
 
+[Thí nghiệm 11](EXPERIMENT_11_RESULT.md) thử median relative RMS 3 frame với cùng ngưỡng LOFO, nhưng quyết định voiced không đổi ở bất cứ frame nào; tiêu chí khôi phục V không đạt. Đã giữ kết quả thất bại, không thay đổi notebook. Chưa có căn cứ để thử tiếp biến thể gate khác trước khi có định nghĩa MinNumF0/MaxNumF0 từ đề/thầy.
+
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
 
