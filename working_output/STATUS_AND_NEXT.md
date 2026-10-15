@@ -39,5 +39,7 @@ Chẩn đoán frame bị cổng năng lượng loại đã hoàn tất: 59 frame
 
 [Thí nghiệm 11](EXPERIMENT_11_RESULT.md) thử median relative RMS 3 frame với cùng ngưỡng LOFO, nhưng quyết định voiced không đổi ở bất cứ frame nào; tiêu chí khôi phục V không đạt. Đã giữ kết quả thất bại, không thay đổi notebook. Chưa có căn cứ để thử tiếp biến thể gate khác trước khi có định nghĩa MinNumF0/MaxNumF0 từ đề/thầy.
 
+Audit quy trình LOFO của thí nghiệm 08 xác nhận LAB holdout không đi vào bước fit threshold. Có một điều kiện triển khai cần nêu: RMS từng file được chuẩn hóa theo percentile 95 tính từ toàn recording, nên validation hiện mô phỏng suy luận offline trên file hoàn chỉnh, không phải streaming. [Báo cáo audit quy trình](VALIDATION_PROTOCOL_AUDIT_RESULT.md).
+
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
 
