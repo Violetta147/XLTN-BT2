@@ -1,0 +1,13 @@
+{
+  "training_only": true,
+  "files": 4,
+  "pitch_only_voiced": 604,
+  "after_energy_voiced": 545,
+  "removed_total": 59,
+  "removed_LAB_V": 6,
+  "removed_LAB_UV": 3,
+  "removed_LAB_SIL": 50,
+  "python": "3.11.9",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3"
+}

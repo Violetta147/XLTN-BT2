@@ -35,5 +35,7 @@ Audit training-only đã đối chiếu từng file/fold: LAB có 614 frame V, c
 
 Audit xác nhận NumF0 theo mã, nhưng điều kiện `MinNumF0 < NumF0 < MaxNumF0` vẫn không kiểm tra được vì tài liệu thầy đưa chưa định nghĩa hai giới hạn hoặc phạm vi đếm. Không lấy cực trị bốn file làm giới hạn và không dùng TEST để chọn. Việc tiếp theo có ý nghĩa là lấy định nghĩa Min/Max từ đề/thầy khi có; cho đến lúc đó giữ nguyên cấu hình và báo rõ yêu cầu còn thiếu.
 
+Chẩn đoán frame bị cổng năng lượng loại đã hoàn tất: 59 frame của bốn fold được loại, gồm 50 SIL, 3 UV và 6 V; sáu V bị loại đều nằm trong hai file studio. Cổng giảm NumF0 từ 604 xuống 545 so với AMDF Gaussian không gate, khớp chính xác số frame bị loại. Phân bố relative RMS và số đếm theo file ở [báo cáo chẩn đoán](ENERGY_GATE_DIAGNOSIS_RESULT.md) và [CSV](energy_gate_removed_frames.csv). Không thay đổi cấu hình.
+
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
 

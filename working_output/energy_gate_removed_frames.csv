@@ -1,0 +1,5 @@
+file,pitch_only_voiced,after_energy_voiced,removed_total,removed_LAB_V,removed_LAB_UV,removed_LAB_SIL,energy_threshold,removed_V_relative_RMS_median,removed_V_relative_RMS_min,removed_V_relative_RMS_max,removed_UV_relative_RMS_median,removed_UV_relative_RMS_min,removed_UV_relative_RMS_max,removed_SIL_relative_RMS_median,removed_SIL_relative_RMS_min,removed_SIL_relative_RMS_max
+phone_F1.wav,143,143,0,0,0,0,0.05466060584,,,,,,,,,
+phone_M1.wav,210,209,1,0,0,1,0.05773046923,,,,,,,0.0402574193,0.0402574193,0.0402574193
+studio_F1.wav,142,115,27,2,1,24,0.06683658872,0.05334463069,0.04240257517,0.06428668621,0.04082559057,0.04082559057,0.04082559057,0.007547699119,0.001190344837,0.01121185654
+studio_M1.wav,109,78,31,4,2,25,0.06154461588,0.0329232956,0.02695264834,0.0420040475,0.02636378308,0.02608524363,0.02664232253,0.003512838734,0.001384410143,0.01412476971
