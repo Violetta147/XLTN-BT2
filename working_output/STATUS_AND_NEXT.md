@@ -37,7 +37,9 @@ Audit xác nhận NumF0 theo mã, nhưng điều kiện `MinNumF0 < NumF0 < MaxN
 
 Chẩn đoán frame bị cổng năng lượng loại đã hoàn tất: 59 frame của bốn fold được loại, gồm 50 SIL, 3 UV và 6 V; sáu V bị loại đều nằm trong hai file studio. Cổng giảm NumF0 từ 604 xuống 545 so với AMDF Gaussian không gate, khớp chính xác số frame bị loại. Phân bố relative RMS và số đếm theo file ở [báo cáo chẩn đoán](ENERGY_GATE_DIAGNOSIS_RESULT.md) và [CSV](energy_gate_removed_frames.csv). Không thay đổi cấu hình.
 
-[Thí nghiệm 11](EXPERIMENT_11_RESULT.md) thử median relative RMS 3 frame với cùng ngưỡng LOFO, nhưng quyết định voiced không đổi ở bất cứ frame nào; tiêu chí khôi phục V không đạt. Đã giữ kết quả thất bại, không thay đổi notebook. Chưa có căn cứ để thử tiếp biến thể gate khác trước khi có định nghĩa MinNumF0/MaxNumF0 từ đề/thầy.
+[Thí nghiệm 11](EXPERIMENT_11_RESULT.md) thử median relative RMS 3 frame với cùng ngưỡng LOFO, nhưng quyết định voiced không đổi ở bất cứ frame nào; tiêu chí khôi phục V không đạt. Đã giữ kết quả thất bại, không thay đổi notebook.
+
+[Thí nghiệm 15](EXPERIMENT_15_RESULT.md) thử rescue frame low-energy có AMDF dip mạnh theo ngưỡng fit trong mỗi LOFO fold. Không đạt cổng: recall V chỉ tăng 0.004, trong khi BA giảm 0.013, F0std MAE tăng 2.412 Hz và FP SIL tăng 1→27. Không tích hợp; giữ energy gate hiện tại.
 
 Audit quy trình LOFO của thí nghiệm 08 xác nhận LAB holdout không đi vào bước fit threshold. Có một điều kiện triển khai cần nêu: RMS từng file được chuẩn hóa theo percentile 95 tính từ toàn recording, nên validation hiện mô phỏng suy luận offline trên file hoàn chỉnh, không phải streaming. [Báo cáo audit quy trình](VALIDATION_PROTOCOL_AUDIT_RESULT.md).
 
