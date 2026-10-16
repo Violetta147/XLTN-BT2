@@ -57,7 +57,8 @@ base = baseline.sort_index()
 for column in ('TP', 'TN', 'FP', 'FN', 'NumF0', 'FP_SIL', 'prediction_sha256'):
     assert np.array_equal(frame[column].to_numpy(), base[column].to_numpy()), column
 for column in ('macro_f1', 'recall_V', 'recall_UV', 'balanced_accuracy'):
-    assert np.allclose(frame[column], base[column], rtol=0, atol=1e-12), column
+    # Baseline CSV rounds values to 10 significant digits.
+    assert np.allclose(frame[column], base[column], rtol=0, atol=1e-9), column
 
 summary = {
     'data': 'TinHieuHuanLuyen only', 'files': len(frame), 'frame_ms': ns['FINAL_FRAME_MS'],
