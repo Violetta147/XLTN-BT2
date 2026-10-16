@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import sklearn
 
+sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parents[1]
 NOTEBOOK = ROOT / 'BT2_AMDF_implement_executed_original - Copy.ipynb'
 nb = json.loads(NOTEBOOK.read_text(encoding='utf-8'))
