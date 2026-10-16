@@ -27,6 +27,6 @@ Bốn tên `phone_F1`, `phone_M1`, `studio_F1`, `studio_M1` thuộc **tập hu�
 
 ## Yêu cầu thầy và bước tiếp
 
-Đề bài trong ảnh yêu cầu chọn **một** trong ACF/AMDF, frame **25 ms**, shift **10 ms**, số F0 ước lượng nằm giữa MinNumF0 và MaxNumF0, báo F0mean/F0std. Ảnh chưa cho giá trị hoặc cách tính MinNumF0/MaxNumF0; không tự đặt giới hạn. ACF local cuối dùng 25 ms; AMDF local cuối dùng 30 ms; GMM ACF 20 ms và GMM AMDF 25 ms. Các cấu hình khác 25 ms nên để ở phần khảo sát, chưa coi là cấu hình nộp cuối phù hợp đề.
+Đề bài trong ảnh yêu cầu chọn **một** trong ACF/AMDF, frame **25 ms**, shift **10 ms**, số F0 ước lượng nằm giữa MinNumF0 và MaxNumF0, báo F0mean/F0std. Ảnh chưa cho giá trị hoặc cách tính MinNumF0/MaxNumF0; không tự đặt giới hạn. Notebook AMDF hiện hành cố định 25 ms/10 ms; AMDF 30 ms là cấu hình ban đầu. Notebook GMM khảo sát cả ACF và AMDF ở 20/25/30 ms; các cấu hình ngoài 25 ms chỉ nên để ở phần khảo sát, chưa coi là cấu hình nộp cuối phù hợp đề.
 
 Thí nghiệm ngưỡng trễ AMDF 25 ms đã được chạy theo [kế hoạch 01](EXPERIMENT_01_PLAN.md); kết quả và tiêu chí đạt/không đạt được lưu trong [báo cáo 01](EXPERIMENT_01_RESULT.md). Các thí nghiệm sau đó và tích hợp median F0 cũng đã hoàn tất. Trước khi xác nhận cấu hình nộp cuối, còn cần định nghĩa hoặc giá trị MinNumF0/MaxNumF0 từ đề/thầy; hiện không có căn cứ để tự đặt các giới hạn này. Số TEST đã xem được nêu kèm giới hạn khi diễn giải, không dùng lại để chọn tham số.
