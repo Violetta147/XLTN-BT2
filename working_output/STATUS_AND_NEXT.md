@@ -45,5 +45,7 @@ Audit quy trình LOFO của thí nghiệm 08 xác nhận LAB holdout không đi 
 
 Đã tích hợp median5 F0 vào notebook AMDF sau khi median5 đạt cổng LOFO training-only ở [thí nghiệm 13](EXPERIMENT_13_RESULT.md). QA chạy các cell training và xử lý 4 file training, không ghép cặp hay xử lý WAV/LAB TEST; hash mask dự đoán, TP/TN/FP/FN, macro F1, BA, recall, NumF0 và FP_SIL giữ nguyên so với median3. Trên cùng bốn file training với ngưỡng full-training, F0mean MAE giảm 2.234→1.850 Hz và F0std MAE 3.510→2.740 Hz. Đây là kiểm tra tích hợp in-sample; validation vẫn là LOFO của thí nghiệm 13. Xem [biên bản tích hợp 13](INTEGRATION_13_RESULT.md).
 
+Vì median5 được chọn sau khi xem LOFO ở thí nghiệm 13, [thí nghiệm nested 14](EXPERIMENT_14_RESULT.md) chọn cửa sổ chỉ trong inner LOFO rồi đo ở outer held-out. Inner procedure chọn median5 ở cả 4 fold; outer F0mean/F0std MAE trung bình là 1.710/3.892 Hz, thấp hơn median3 cố định 2.116/4.609 Hz. Kết quả chỉ dùng training, chưa phải xác nhận độc lập ngoài bốn file.
+
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
 
