@@ -1,0 +1,29 @@
+{
+  "tag": "after",
+  "data": "TinHieuHuanLuyen only",
+  "files": 4,
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "T_pitch": 0.41249330632749887,
+  "T_energy": 0.061544615883604575,
+  "macro_f1_mean": 0.8697159353828922,
+  "BA_mean": 0.9231729047033777,
+  "recall_V_mean": 0.8814089230112432,
+  "recall_UV_mean": 0.9649368863955119,
+  "F0mean_MAE_raw": 3.080116271702771,
+  "F0mean_MAE_used": 2.2336590183027134,
+  "F0std_MAE_raw": 5.6210246034937,
+  "F0std_MAE_used": 3.509634461165625,
+  "NumF0_total": 548,
+  "FP_SIL_total": 0,
+  "prediction_hashes": {
+    "phone_F1.wav": "d7f58126ee19be0a6b472c3f1bec6abdcc39c443af4f4a0cd34b273b11548803",
+    "phone_M1.wav": "d801e6fea65e48d71b9d131f4db6600fc6693ac2b73db1113249af38b5569826",
+    "studio_F1.wav": "c6e972593a4eead30aec3c803bce80497d4202db9ed42c88f87d82a8db552f85",
+    "studio_M1.wav": "ae9bee276c517cfb462145e1e077ca1c153169d3ece8477812b104756eadfe05"
+  },
+  "python": "3.11.9",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3",
+  "scikit_learn": "1.9.1"
+}
