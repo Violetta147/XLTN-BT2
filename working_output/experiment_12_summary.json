@@ -1,0 +1,18 @@
+{
+  "training_only": true,
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "four fold leave one file out; thresholds from experiment 08",
+  "files": 4,
+  "mean_raw_F0mean_MAE_hz": 2.9286197559809146,
+  "mean_median3_F0mean_MAE_hz": 2.1162481829776105,
+  "mean_raw_F0std_MAE_hz": 6.502161769252168,
+  "mean_median3_F0std_MAE_hz": 4.609465808727366,
+  "NumF0_total": 545,
+  "FP_SIL_total": 1,
+  "keep_by_preregistered_rule": true,
+  "python": "3.11.9",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3",
+  "scikit_learn": "1.9.1"
+}

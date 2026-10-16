@@ -41,5 +41,7 @@ Chẩn đoán frame bị cổng năng lượng loại đã hoàn tất: 59 frame
 
 Audit quy trình LOFO của thí nghiệm 08 xác nhận LAB holdout không đi vào bước fit threshold. Có một điều kiện triển khai cần nêu: RMS từng file được chuẩn hóa theo percentile 95 tính từ toàn recording, nên validation hiện mô phỏng suy luận offline trên file hoàn chỉnh, không phải streaming. [Báo cáo audit quy trình](VALIDATION_PROTOCOL_AUDIT_RESULT.md).
 
+[Thí nghiệm 12](EXPERIMENT_12_RESULT.md) giữ nguyên quyết định V/UV/SIL và chỉ median F0 ba frame trong run voiced. Trung bình LOFO training, F0mean MAE cải thiện 2.929→2.116 Hz, F0std MAE 6.502→4.609 Hz; cả macro F1/BA, NumF0, SIL FP không đổi. Có file MAE tăng, nên đây là cải thiện trung bình trên bốn file chứ không phải từng file. Có thể tích hợp bước hậu xử lý này sau khi rà đúng cell notebook và xác nhận đầu ra.
+
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
 
