@@ -21,7 +21,7 @@ Bốn lượt leave-one-file-out theo file, cùng frame 25 ms/hop 10 ms, cùng L
 | 05: thêm median F0 ba khung | 0.8747 | **0.9166** | 2.9663 | **6.6175** | **3** |
 | 06: giao điểm Gaussian có nhãn | 0.8695 | 0.9128 | 4.2787 | 14.5808 | 51 |
 
-Trong nhóm **thí nghiệm 01–06** trong bảng trên, không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F0std và SIL đặt trước. Các kết quả 01/03 cho thấy GMM không nhãn bỏ lỡ nhiều V, nhưng nới ngưỡng đơn không đủ: nhận thêm UV/SIL và F0 bất thường. Cổng năng lượng xử lý SIL rất tốt; sai số F0mean còn lại ở `phone_F1` và `studio_M1`. [Chẩn đoán F0](EXPERIMENT_04_DIAGNOSIS.md) cho thấy đó không chỉ là vấn đề SIL.
+Trong phạm vi **thí nghiệm 01–06** của bảng trên, không cấu hình mới nào đạt **đồng thời** cổng F1, BA, F0mean, F0std và SIL đặt trước. Câu này chỉ tổng kết sáu phép thử đó; thí nghiệm 08 được đánh giá riêng ở phần sau. Các kết quả 01/03 cho thấy GMM không nhãn bỏ lỡ nhiều V, nhưng nới ngưỡng đơn không đủ: nhận thêm UV/SIL và F0 bất thường. Cổng năng lượng xử lý SIL rất tốt; sai số F0mean còn lại ở `phone_F1` và `studio_M1`. [Chẩn đoán F0](EXPERIMENT_04_DIAGNOSIS.md) cho thấy đó không chỉ là vấn đề SIL.
 
 ## So sánh thuật toán ở đúng 25 ms
 
