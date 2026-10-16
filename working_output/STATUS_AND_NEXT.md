@@ -41,6 +41,8 @@ Chẩn đoán frame bị cổng năng lượng loại đã hoàn tất: 59 frame
 
 [Thí nghiệm 15](EXPERIMENT_15_RESULT.md) thử rescue frame low-energy có AMDF dip mạnh theo ngưỡng fit trong mỗi LOFO fold. Không đạt cổng: recall V chỉ tăng 0.004, trong khi BA giảm 0.013, F0std MAE tăng 2.412 Hz và FP SIL tăng 1→27. Không tích hợp; giữ energy gate hiện tại.
 
+[Thí nghiệm 16](EXPERIMENT_16_RESULT.md) thêm điều kiện ZCR vào nhánh rescue, nhưng cũng không đạt: recall V chỉ tăng 0.004, F0std MAE tăng 2.245 Hz và FP SIL tăng 1→21. Không tích hợp; giữ cấu hình AMDF+energy+median5.
+
 Audit quy trình LOFO của thí nghiệm 08 xác nhận LAB holdout không đi vào bước fit threshold. Có một điều kiện triển khai cần nêu: RMS từng file được chuẩn hóa theo percentile 95 tính từ toàn recording, nên validation hiện mô phỏng suy luận offline trên file hoàn chỉnh, không phải streaming. [Báo cáo audit quy trình](VALIDATION_PROTOCOL_AUDIT_RESULT.md).
 
 [Thí nghiệm 12](EXPERIMENT_12_RESULT.md) giữ nguyên quyết định V/UV/SIL và chỉ median F0 ba frame trong run voiced. Trung bình LOFO training, F0mean MAE cải thiện 2.929→2.116 Hz, F0std MAE 6.502→4.609 Hz; cả macro F1/BA, NumF0, SIL FP không đổi. Có file MAE tăng, nên đây là cải thiện trung bình trên bốn file chứ không phải từng file. Bước này đã được tích hợp sau khi rà cell notebook và xác nhận đầu ra; xem [biên bản tích hợp 12](INTEGRATION_12_RESULT.md).
