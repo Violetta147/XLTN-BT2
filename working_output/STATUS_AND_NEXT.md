@@ -53,3 +53,6 @@ Vì median5 được chọn sau khi xem LOFO ở thí nghiệm 13, [thí nghiệ
 
 Với yêu cầu thầy, cấu hình nộp cuối phải chọn **một** trong ACF/AMDF ở 25 ms/10 ms. ACF gốc 25 ms hiện là baseline phù hợp khung đề; AMDF ban đầu 30 ms và GMM ACF 20 ms chỉ nên để ở phần khảo sát. [Ghi chú thầy và đối chiếu bạn học](PEER_COMPARISON.md) chưa cho công thức/giá trị MinNumF0 và MaxNumF0, nên chưa thể kết luận điều kiện số F0 ước lượng đã đạt. Cần làm rõ điều kiện này trước khi nộp.
 
+
+
+Audit 17 kiểm tra dataflow notebook ACF/GMM: ba threshold và metric V/UV được fit/tính trên cùng các frame LAB training; sau đó cùng các metric in-sample chọn threshold method và frame length. Đây là lựa chọn in-sample, không phải validation. Theo mã, TEST chỉ được mở sau khi đã chọn cấu hình và không quyết định lựa chọn trong notebook; tuy nhiên TEST của dự án đã từng được xem để định hướng nên không gọi đó là đánh giá độc lập. Chi tiết: [kế hoạch](EXPERIMENT_17_PLAN.md), [kết quả](EXPERIMENT_17_RESULT.md). Không thay đổi thuật toán. Nếu dùng notebook này làm khảo sát, giữ kết luận metric training là in-sample; mọi so sánh lựa chọn method tiếp theo phải dùng LOFO training-only và khóa frame 25 ms theo đề.
