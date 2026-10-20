@@ -15,3 +15,7 @@
 Không dùng các con số training hiện trên bảng để kết luận frame length hoặc phương pháp nào tổng quát hóa tốt hơn. Giữ notebook như khảo sát minh họa. Nếu cần so sánh lựa chọn threshold, đánh giá trên bốn file training bằng LOFO, mỗi fold fit threshold và chọn phương pháp chỉ trên ba file còn lại; giữ frame 25 ms cố định theo đề. Vì lựa chọn method trong LOFO cũng là một bước chọn mô hình, báo rõ đây là validation training-only với chỉ bốn file, và không lặp lại lựa chọn theo TEST.
 
 Không phát sinh thay đổi thuật toán, nên không có metric trước/sau hoặc cấu hình nào được thay thế.
+
+## Bổ sung đối chiếu với thí nghiệm 07
+
+Đề xuất ở phần trên đã được thực hiện trong [thí nghiệm 07](EXPERIMENT_07_RESULT.md): frame khóa 25 ms, mỗi LOFO fold fit các ngưỡng/chọn phương pháp trên ba file training, rồi đo file held-out. Script `experiment_07_acf_amdf_25ms.py` xác nhận đúng dataflow này. Do frame 25 ms là yêu cầu đề bài, không cần chọn lại frame qua validation; vì thế không chạy lặp thí nghiệm threshold method. Audit 17 vẫn chỉ ra metric in-sample của notebook khảo sát không phải validation và không nên dùng làm bằng chứng tổng quát hóa.
