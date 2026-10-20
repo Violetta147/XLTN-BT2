@@ -1,0 +1,19 @@
+{
+  "data": "TinHieuHuanLuyen only",
+  "files": [
+    "phone_F1.wav",
+    "phone_M1.wav",
+    "studio_F1.wav",
+    "studio_M1.wav"
+  ],
+  "frames_checked": 1291,
+  "frame_count_mismatches": [],
+  "timestamp_mismatches": [],
+  "tolerance": 1e-09,
+  "max_abs_score_delta": 7.771561172376096e-16,
+  "max_abs_lag_delta_samples": 9.094947017729282e-13,
+  "score_over_tolerance": 0,
+  "lag_over_tolerance": 0,
+  "numpy": "2.3.5",
+  "scipy": "1.17.1"
+}
