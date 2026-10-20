@@ -1,0 +1,16 @@
+{
+  "data": "TinHieuHuanLuyen only",
+  "files": [
+    "phone_F1.wav",
+    "phone_M1.wav",
+    "studio_F1.wav",
+    "studio_M1.wav"
+  ],
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "compared_frames_per_notebook": 1291,
+  "comparisons": 2,
+  "label_differences": 0,
+  "first_differences": [],
+  "numpy": "2.3.5"
+}
