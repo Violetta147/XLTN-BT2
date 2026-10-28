@@ -1,0 +1,44 @@
+{
+  "training_only": true,
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "cv": "four-fold outer leave-one-training-file-out",
+  "threshold_rule": "maximize mean per-file V recall on the three training files; require total training FP_SIL <= 1; ties: fewer training FP_SIL, then higher T_energy",
+  "baseline": {
+    "commit": "942499810070c27c71ed338592ff2015b56faa2d",
+    "source": "experiment_14_outer_lofo.csv and experiment_14_summary.json",
+    "mean_macro_f1": 0.8646263239365338,
+    "mean_balanced_accuracy": 0.9206197592948743,
+    "mean_recall_V": 0.8763026321942367,
+    "mean_recall_UV": 0.9649368863955119,
+    "F0mean_MAE_hz": 1.7099205635386134,
+    "F0std_MAE_hz": 3.8924433843296304,
+    "NumF0_total": 545,
+    "FP_SIL_total": 1
+  },
+  "candidate": {
+    "mean_macro_f1": 0.8587515572556527,
+    "mean_balanced_accuracy": 0.9165347919746129,
+    "mean_recall_V": 0.8681326975537138,
+    "mean_recall_UV": 0.9649368863955119,
+    "F0mean_MAE_hz": 2.1382138930452577,
+    "F0std_MAE_hz": 3.4193430968512972,
+    "NumF0_total": 539,
+    "FP_SIL_total": 0
+  },
+  "preregistered_gates": {
+    "macro_f1_drop_le_0_005": false,
+    "balanced_accuracy_drop_le_0_005": true,
+    "recall_V_gain_ge_0_01": false,
+    "FP_SIL_total_le_3": true,
+    "F0mean_MAE_increase_le_0_25": false,
+    "F0std_MAE_increase_le_0_25": true
+  },
+  "keep_candidate": false,
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.3.5",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.9.1"
+  }
+}
