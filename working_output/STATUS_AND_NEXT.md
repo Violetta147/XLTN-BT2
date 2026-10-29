@@ -72,3 +72,5 @@ Audit 20 so sánh cách đọc LAB và gán nhãn frame của hai notebook với
 [Thí nghiệm 23](EXPERIMENT_23_RESULT.md) thử median7 thay median5 trong outer LOFO training-only. F0std MAE xấu hơn 0.204 Hz trung bình; F0mean MAE xấu hơn 0.082 Hz và một file xấu hơn 1.264 Hz. Trượt tiêu chí nên loại median7, giữ baseline median5. Prediction mask, NumF0 và metric phân loại giữ nguyên. Không dùng TEST, không tích hợp.
 
 [Thí nghiệm 24](EXPERIMENT_24_RESULT.md) nested LOFO thử gate độ tin cậy theo khoảng cách hai cực tiểu AMDF. Kiểm tra parity baseline qua 4/4 fold khớp EXP14; inner selection chọn không gate ở cả 4 fold. Ngưỡng q=0.10 làm macro F1 trung bình inner giảm 0.8621→0.7860, BA 0.9187→0.8739, recall V xuống 0.7828. Không đạt cổng F0std; loại ý tưởng gate và giữ baseline. Không dùng TEST hoặc G Drive, không tích hợp.
+
+[Thí nghiệm 25](EXPERIMENT_25_RESULT.md) nested LOFO thử gate spectral flatness cao. Inner LOFO chọn không gate ở cả 4 outer fold; ngay q=0.95 làm macro F1 0.8621→0.7298, BA 0.9187→0.8378, recall V 0.8724→0.6864, và loại trung bình 45.75 frame voiced mỗi file. Bác bỏ gate, giữ baseline; baseline khớp EXP24. Không dùng TEST hoặc G Drive, không tích hợp.
