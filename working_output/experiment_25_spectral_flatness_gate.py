@@ -12,7 +12,7 @@ import sklearn
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from experiment_04_energy_gate import FILES, fit_energy_threshold, load_with_energy
-from experiment_24_amdf_confidence_gate import evaluate, fit_pitch_threshold
+from experiment_24_amdf_confidence_gate import fit_pitch_threshold, median5_f0
 from validate_saved_results import load_wav
 
 QUANTILES = (0.50, 0.60, 0.70, 0.80, 0.90, 0.95)
@@ -50,10 +50,35 @@ def fit_flatness_cutoff(files, pitch, energy, quantile):
 
 def score(item, pitch, energy, cutoff=None):
     baseline = baseline_prediction(item, pitch, energy)
-    # Reuse EXP24's audited metric helper: margin <= threshold is equivalent
-    # to flatness >= cutoff after mapping margin := -flatness, threshold := -cutoff.
-    item['margin'] = -item['spectral_flatness']
-    return evaluate(item, pitch, energy, None if cutoff is None else -cutoff)
+    pred = baseline.copy()
+    if cutoff is not None:
+        pred[baseline & (item['spectral_flatness'] >= cutoff)] = False
+    labels = item['labels']
+    scored = np.isin(labels, ('v', 'uv'))
+    truth_v, pred_v = labels[scored] == 'v', pred[scored]
+    tp = int((truth_v & pred_v).sum())
+    tn = int((~truth_v & ~pred_v).sum())
+    fp = int((~truth_v & pred_v).sum())
+    fn = int((truth_v & ~pred_v).sum())
+    f1_v = 2 * tp / (2 * tp + fp + fn) if 2 * tp + fp + fn else 0.0
+    f1_uv = 2 * tn / (2 * tn + fp + fn) if 2 * tn + fp + fn else 0.0
+    recall_v = tp / (tp + fn) if tp + fn else 0.0
+    recall_uv = tn / (tn + fp) if tn + fp else 0.0
+    f0 = median5_f0(item, pred)
+    f0 = f0[np.isfinite(f0) & (f0 > 0)]
+    f0mean_mae = abs(float(f0.mean()) - item['stats']['F0mean']) if len(f0) else float('inf')
+    f0std_mae = abs(float(f0.std()) - item['stats']['F0std']) if len(f0) else float('inf')
+    return {
+        'prediction': pred,
+        'TP': tp, 'TN': tn, 'FP': fp, 'FN': fn,
+        'macro_f1': (f1_v + f1_uv) / 2,
+        'balanced_accuracy': (recall_v + recall_uv) / 2,
+        'recall_V': recall_v, 'recall_UV': recall_uv,
+        'NumF0': int(len(f0)),
+        'FP_SIL': int(((labels == 'sil') & pred).sum()),
+        'rejected_voiced': int((baseline & ~pred).sum()),
+        'F0mean_MAE_hz': f0mean_mae, 'F0std_MAE_hz': f0std_mae,
+    }
 
 
 def select_quantile(outer_train):
@@ -108,12 +133,14 @@ def main():
     for _, row in outer.iterrows():
         ref = reference.loc[row['held_out_file']]
         pairs = (
-            ('macro_f1', 'baseline_macro_f1'),
-            ('balanced_accuracy', 'baseline_balanced_accuracy'),
-            ('recall_V', 'baseline_recall_V'), ('recall_UV', 'baseline_recall_UV'),
-            ('NumF0', 'baseline_NumF0'), ('FP_SIL', 'baseline_FP_SIL'),
-            ('F0mean_MAE_hz', 'baseline_F0mean_MAE_hz'),
-            ('F0std_MAE_hz', 'baseline_F0std_MAE_hz'),
+            ('baseline_macro_f1', 'baseline_macro_f1'),
+            ('baseline_balanced_accuracy', 'baseline_balanced_accuracy'),
+            ('baseline_recall_V', 'baseline_recall_V'),
+            ('baseline_recall_UV', 'baseline_recall_UV'),
+            ('baseline_NumF0', 'baseline_NumF0'),
+            ('baseline_FP_SIL', 'baseline_FP_SIL'),
+            ('baseline_F0mean_MAE_hz', 'baseline_F0mean_MAE_hz'),
+            ('baseline_F0std_MAE_hz', 'baseline_F0std_MAE_hz'),
         )
         for ref_key, actual_key in pairs:
             assert np.isclose(float(row[actual_key]), float(ref[ref_key]), atol=1e-8, rtol=1e-8), (
