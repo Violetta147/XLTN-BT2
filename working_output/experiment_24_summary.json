@@ -1,0 +1,33 @@
+{
+  "training_only": true,
+  "test_used": false,
+  "cv": "nested four-fold outer LOFO; three-fold inner LOFO per outer fold",
+  "frame_ms": 25,
+  "hop_ms": 10,
+  "baseline_parity_with_experiment_14": true,
+  "mean_baseline_F0mean_MAE_hz": 1.7099205635386134,
+  "mean_candidate_F0mean_MAE_hz": 1.7099205635386134,
+  "mean_F0mean_MAE_change_hz": 0.0,
+  "mean_baseline_F0std_MAE_hz": 3.8924433843296304,
+  "mean_candidate_F0std_MAE_hz": 3.8924433843296304,
+  "mean_F0std_MAE_improvement_hz": -0.0,
+  "mean_macro_f1_change": 0.0,
+  "mean_balanced_accuracy_change": 0.0,
+  "mean_recall_V_change": 0.0,
+  "mean_recall_UV_change": 0.0,
+  "baseline_NumF0_total": 545,
+  "candidate_NumF0_total": 545,
+  "FP_SIL_total": 1,
+  "max_single_file_F0_MAE_worsening_hz": 0.0,
+  "selected_quantiles_by_outer_fold": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "keep_candidate": false,
+  "python": "3.11.9",
+  "numpy": "2.3.5",
+  "pandas": "3.0.3",
+  "scikit_learn": "1.9.1"
+}
